@@ -5,58 +5,72 @@
 		<titleStmt>
 			<title>Supplement to the Dazangjing, Electronic version, No. 47 中論文句釋</title>
 			<title xml:lang="zh-Hant">大藏經補編數位版, No. 47 中論文句釋</title>
-			<author>僧成釋 常浩譯</author>
+			<author>僧成釋　常浩譯</author>
 			<respStmt>
 				<resp>Electronic Version by</resp>
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>BuBian</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>BuBian</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">9</idno>.<idno type="no">47</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-16 22:53:15 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 9, No. 47</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">中論文句釋</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2015-01-22">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1299,46 +1313,46 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0778a1301" to="#end0778a1301"><lem wit="#wit1" resp="#resp2">三</lem><rdg wit="#wit2">（三）</rdg></app>
-<app from="#beg0811a0501" to="#end0811a0501"><lem wit="#wit1" resp="#resp2">子</lem><rdg wit="#wit2"><space quantity="1" unit="chars"/></rdg></app>
-<app from="#beg0821a0601" to="#end0821a0601"><lem wit="#wit1" resp="#resp2">二</lem><rdg wit="#wit2">三</rdg></app>
+<app from="#beg0778a1301" to="#end0778a1301"><lem wit="#wit.cbeta" resp="#resp3">三</lem><rdg wit="#wit.orig">（三）</rdg></app>
+<app from="#beg0811a0501" to="#end0811a0501"><lem wit="#wit.cbeta" resp="#resp3">子</lem><rdg wit="#wit.orig"><space quantity="1" unit="chars"/></rdg></app>
+<app from="#beg0821a0601" to="#end0821a0601"><lem wit="#wit.cbeta" resp="#resp3">二</lem><rdg wit="#wit.orig">三</rdg></app>
 </p>
 </cb:div>
 <cb:div type="bubian-notes">
 <head>大藏經補編 校註</head>
 <p>
-<note n="0845001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845001">《明句中論疏》，梵文為 prasannapadā nāma mādhyamikavṛttiḥ，原作《淨明句論品題中觀疏》。法尊法師似飜《顯句論》，業師山口益博士譯《淨明句論中論釋》，今則折衷繁略如是飜。又本疏，藏傳見丹珠爾部，作 mula-madhyamakavṛṭi-prasannapadānāma, dbu-ma Rtsa-Baḥiḥ Grel-Pa Tshig-gsal-Ba Shes-Bya-Pa，飜《根本中道偈明頌》。法尊法師應係據此藏傳。至其梵本，印度 Buddhist Text and Anthropological Society 校刊本，有庖僧（Louis de La Valle Poussin）教授校，俄國聖彼得堡帝國學士院刊，佛教文庫（Bibliotheca Buddhica）第四卷本。前者校訂草率，不堪應用。後者對照藏譯，復考梵、巴、藏有關諸文獻，稽徵十餘載而成，允為善本。迄今五十餘年矣！有零散英、德、法、日譯。其中，業師山口益博士所譯為最，都十一品。今即取庖僧教授校本，參酌業師日譯並俄國學士院院士 Stcherbatsky 著 The Conception of Buddhist Nirvāna 一書附錄英譯觀因緣品而試飜者。（注譯亦多出此三書，不敢掠美。）幸賢達匡正，俾獲機版行定稿時修訂也。</note>
-<note n="0845002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845002"><p>月稱（Candrakirti, Zla-Ba Grags-Pa）論師，南印薩曼多（Samanta）產。出家後，從跋毘耶（Bhavya, Legs-Ldan）諸弟子暨佛護（Buddhapālita）弟子羯磨羅佛提（Kam alabuddhi）習龍樹宗義，受諸優婆提舍，成學界巨擘，座主那爛陀，顯性空正義，是曰應成中觀。其著書據傳有：</p><p>1. Madhyamakāvatāra，《入中論》。具頌文與自疏長行，現存僅藏傳。而頌文則曾由法尊法師譯漢。演培法師《入中論頌講記》，應係用法尊法師譯文者。《講記》誠佳構，唯講中多立三支比量，竊疑未必當然。以月稱榜「應成」（prasangika），而非如清辯之標「自續」（svatanrika）也。又中有謂小乘言六識，大乘言八識，似亦失甄。蓋稽諸「五蘊論」，世親著固於識蘊言八識，月稱著則但同小乘言六識也。</p><p>2.本譯原本，《明句中論疏》。</p><p>3. Yuktiṣaṣṭikāvṛtti，《六十頌如理論疏》。藏譯僅存。</p><p>4. Catuḥsatakatikā，《四百論廣註》。藏譯現存。梵本僅斷片。業師山口博士已日譯布其第九破常品，餘正在大谷大學講授。</p><p>5. sūnyatasaptativṛtti，《空七十論疏》。藏譯僅存。</p><p>6. Panncaskandhaprakaraṇa，《五蘊論》。藏譯僅存。</p><p>7. Madhyamakaprajñāvatāra，《入中觀般若論》。藏譯僅存。</p><p>8. Trisaraṇasaptati，《三皈七十論》。藏譯謹存。</p></note>
-<note n="0845003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845003">此依梵本校訂者庖僧挾入。庖僧則採自藏傳論疏部之一般形式。</note>
-<note n="0845004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845004">此中（四）、（四、一）「彼……者」，（四、二）、（四、三）之「彼」字，其原語為關係指稱詞 yad，而「彼……者」為主格。Stcherkatsky 以「……that Nāgājuna……who」迻英。業師山口博士以「軌範師龍樹は」譯日。「彼」為屬格（俗曰所有格），Stcherbatsky 以「whose」迻英，業師以「彼龍樹論師の」譯日。今如是飜，與（四、四）「斯龍樹」相呼應，於漢文為簡明，且近原文。</note>
-<note n="0845005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845005">二邊，自生命、宇宙論言為「八不」中「不生不滅」之生、滅。自存在論言為有、無。自知識論言，即能知所知、能相所相。今捨二邊意即二邊涅槃而入不二中道（Madhyamā pratipad）。唯此中道，一如 Stcherbatsky 所註明，辭雖同而義趣不同於小乘，即 S. N. III. 135 中所示「一切有與都無」間之中道，而為即「中觀」（Mādhyamikas）之中道。其義為緣起，性空（Madhyamā pratipad＝sūnyatā＝pratītyasamutpāda）。參見四諦品第十八偈。而月稱更指出以下諸詞為同義異形（visesasamjñā），antad-vayarahi-tatva＝sarvasvabhāvānutpatti＝pratī-tya-samutpāda＝Sūnyatā＝upādāyapra-jñapti＝madhyamāpratipad。因此，Stcher-batsky 指出德譯《中論》為《中道論》即「Die Mittlere Lehre」語意含糊，與小乘中道混故。此想係指德人 Walleser 所譯漢傳《青目釋》一書之書名等也。</note>
-<note n="0845006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845006">saddharmakosa。</note>
-<note n="0845007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845007">原為 darsana，古譯「見」。章炳麟似曾謂哲學宜為見，且龍樹所述者為智見，故作如是飜。</note>
-<note n="0845008" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845008">（八、一）此二可為同義語。</note>
-<note n="0845009" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845009">即中觀論頌也。</note>
-<note n="0845010" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0845010">究理風，原為 tarkanilao Stcherbatsky 譯英作 The fires of dialectics。並指此乃嘲弄究理論者清辯，而影射其中觀心論疏「思擇焰」（Tarkajvāla）者。</note>
-<note n="0846011" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0846011">本偈亦見安慧造中邊分別論釋疏，Sthiramati Madhyāntavibhāngaṭikā，法人 M. Sylvain Levi 尼泊爾發見殘缺本，業師山口博士校刊並譯。於唯識學界，誠殊勳也。</note>
-<note n="0847012" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0847012">本偈羅什譯《青目釋》為：「不生亦不滅，不常亦不斷，不一亦不異，不來亦不出。能說是因緣，善滅諸戲論。我稽首禮佛，諸說中第一。」瞿曇般若流支譯《順中論》作「不滅亦不生，不斷亦不常，不一不異義，不來亦不去，佛已說因緣，斷諸戲論法。故我稽首禮，說法師中勝。」波羅頗蜜多羅譯《般若燈論釋》作「不滅亦不起，不斷亦不常，非一非種種，不來亦不去，緣起戲論息，說者善滅故。禮彼婆伽婆，諸說中最上。」今復據原文改譯如上者，並非標新立異，而有以下諸故：（1）以四兮字殿八不四句者，讚歎緣起，形容緣起也。（2）第五句着一「將」字者，示緣起及其形容詞均屬「業格」，一如下文所釋故。着一「是」字者，「是」猶云「如此這般底」，屬指示形容詞，用以上指八不四句，下指「戲論滅而吉」一句，示彼等皆為緣起之形容詞也。換言之，依原文意，應作「將不滅不生……戲論滅而吉祥之緣起開顯之佛……」云云。但為照顧其為偈文並原偈語序，故未如是譯也。</note>
-<note n="0847013" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0847013">本偈，安慧造《中邊分別論釋疏》亦引用。《智心髓集》第一偈，吉祥尊（sīnātha）釋 nātha 語義時所引。</note>
-<note n="0848014" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848014">月稱所作此種緣起語義解釋，與世親於《俱舍論》卷九所作者同。pratīty＝prāpti, apekṣa. samutpāda＝prādurbhāva. pratītyasamutpāda＝hetupratyayāpekṣo bhāvānāmutpādaḥ。</note>
-<note n="0848015" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848015">即大德室利羅多（srīlabdha, srīlābha）經部毘婆沙師等人。《西域記》卷五云：「室利羅多，唐言勝受。於是製造經部《毘婆沙論》。」至於其所以為室利羅多一派人者，以此下所述，與《俱舍論》世間品卷九所出緣起語源異說相同，而稱友《俱舍論釋》（荻原雲來校本，二九六頁）且明記此異說為室利羅多所說也。</note>
-<note n="0848016" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848016">稱友《俱舍論釋》，謂此為《緣起經》文。</note>
-<note n="0848017" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848017">與此同樣之評難，早為世親所提出。見《俱舍論》卷九。</note>
-<note n="0848018" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848018">指清辯。</note>
-<note n="0848019" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848019">指佛護。</note>
-<note n="0848020" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848020">指室利羅多。</note>
-<note n="0848021" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0848021"><p>漢譯《般若燈論》釋歸敬偈文為略抄。歸敬偈後釋緣起語義者，僅「緣起者種種因緣和合得起，故名緣起」而已。藏傳《般若燈論》，則於清辯自釋緣起語義前，先揭此月稱所舉二說。即：</p><p>（1）pratītyasamutpāda＝prāpyasamutpāda;</p><p>（2）pratītyasamutpāda＝prati prati vināsinām utpādah。（ses-rab-sgron-ma, Bibliotheca Indica, New Series, No. 1396, edited by Max Walleser, P. 3-4）</p></note>
-<note n="0849022" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0849022">如後出第一偈「諸法不自生」下所詳，清辯所持自續方軌，必備宗因喻三支比量。今此不然，故持應成之月稱，於此以子之矛，攻子之盾也。</note>
-<note n="0849023" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0849023">《六十頌如理論》，第十九偈。</note>
-<note n="0850024" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0850024">今茲所舉，見上引藏傳《般若燈論》第四頁。</note>
+<note n="0845001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845001">《明句中論疏》，梵文為 prasannapadā nāma mādhyamikavṛttiḥ，原作《淨明句論品題中觀疏》。法尊法師似飜《顯句論》，業師山口益博士譯《淨明句論中論釋》，今則折衷繁略如是飜。又本疏，藏傳見丹珠爾部，作 mula-madhyamakavṛṭi-prasannapadānāma, dbu-ma Rtsa-Baḥiḥ Grel-Pa Tshig-gsal-Ba Shes-Bya-Pa，飜《根本中道偈明頌》。法尊法師應係據此藏傳。至其梵本，印度 Buddhist Text and Anthropological Society 校刊本，有庖僧（Louis de La Valle Poussin）教授校，俄國聖彼得堡帝國學士院刊，佛教文庫（Bibliotheca Buddhica）第四卷本。前者校訂草率，不堪應用。後者對照藏譯，復考梵、巴、藏有關諸文獻，稽徵十餘載而成，允為善本。迄今五十餘年矣！有零散英、德、法、日譯。其中，業師山口益博士所譯為最，都十一品。今即取庖僧教授校本，參酌業師日譯並俄國學士院院士 Stcherbatsky 著 The Conception of Buddhist Nirvāna 一書附錄英譯觀因緣品而試飜者。（注譯亦多出此三書，不敢掠美。）幸賢達匡正，俾獲機版行定稿時修訂也。</note>
+<note n="0845002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845002"><p>月稱（Candrakirti, Zla-Ba Grags-Pa）論師，南印薩曼多（Samanta）產。出家後，從跋毘耶（Bhavya, Legs-Ldan）諸弟子暨佛護（Buddhapālita）弟子羯磨羅佛提（Kam alabuddhi）習龍樹宗義，受諸優婆提舍，成學界巨擘，座主那爛陀，顯性空正義，是曰應成中觀。其著書據傳有：</p><p>1. Madhyamakāvatāra，《入中論》。具頌文與自疏長行，現存僅藏傳。而頌文則曾由法尊法師譯漢。演培法師《入中論頌講記》，應係用法尊法師譯文者。《講記》誠佳構，唯講中多立三支比量，竊疑未必當然。以月稱榜「應成」（prasangika），而非如清辯之標「自續」（svatanrika）也。又中有謂小乘言六識，大乘言八識，似亦失甄。蓋稽諸「五蘊論」，世親著固於識蘊言八識，月稱著則但同小乘言六識也。</p><p>2.本譯原本，《明句中論疏》。</p><p>3. Yuktiṣaṣṭikāvṛtti，《六十頌如理論疏》。藏譯僅存。</p><p>4. Catuḥsatakatikā，《四百論廣註》。藏譯現存。梵本僅斷片。業師山口博士已日譯布其第九破常品，餘正在大谷大學講授。</p><p>5. sūnyatasaptativṛtti，《空七十論疏》。藏譯僅存。</p><p>6. Panncaskandhaprakaraṇa，《五蘊論》。藏譯僅存。</p><p>7. Madhyamakaprajñāvatāra，《入中觀般若論》。藏譯僅存。</p><p>8. Trisaraṇasaptati，《三皈七十論》。藏譯謹存。</p></note>
+<note n="0845003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845003">此依梵本校訂者庖僧挾入。庖僧則採自藏傳論疏部之一般形式。</note>
+<note n="0845004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845004">此中（四）、（四、一）「彼……者」，（四、二）、（四、三）之「彼」字，其原語為關係指稱詞 yad，而「彼……者」為主格。Stcherkatsky 以「……that Nāgājuna……who」迻英。業師山口博士以「軌範師龍樹は」譯日。「彼」為屬格（俗曰所有格），Stcherbatsky 以「whose」迻英，業師以「彼龍樹論師の」譯日。今如是飜，與（四、四）「斯龍樹」相呼應，於漢文為簡明，且近原文。</note>
+<note n="0845005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845005">二邊，自生命、宇宙論言為「八不」中「不生不滅」之生、滅。自存在論言為有、無。自知識論言，即能知所知、能相所相。今捨二邊意即二邊涅槃而入不二中道（Madhyamā pratipad）。唯此中道，一如 Stcherbatsky 所註明，辭雖同而義趣不同於小乘，即 S. N. III. 135 中所示「一切有與都無」間之中道，而為即「中觀」（Mādhyamikas）之中道。其義為緣起，性空（Madhyamā pratipad＝sūnyatā＝pratītyasamutpāda）。參見四諦品第十八偈。而月稱更指出以下諸詞為同義異形（visesasamjñā），antad-vayarahi-tatva＝sarvasvabhāvānutpatti＝pratī-tya-samutpāda＝Sūnyatā＝upādāyapra-jñapti＝madhyamāpratipad。因此，Stcher-batsky 指出德譯《中論》為《中道論》即「Die Mittlere Lehre」語意含糊，與小乘中道混故。此想係指德人 Walleser 所譯漢傳《青目釋》一書之書名等也。</note>
+<note n="0845006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845006">saddharmakosa。</note>
+<note n="0845007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845007">原為 darsana，古譯「見」。章炳麟似曾謂哲學宜為見，且龍樹所述者為智見，故作如是飜。</note>
+<note n="0845008" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845008">（八、一）此二可為同義語。</note>
+<note n="0845009" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845009">即中觀論頌也。</note>
+<note n="0845010" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0845010">究理風，原為 tarkanilao Stcherbatsky 譯英作 The fires of dialectics。並指此乃嘲弄究理論者清辯，而影射其中觀心論疏「思擇焰」（Tarkajvāla）者。</note>
+<note n="0846011" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0846011">本偈亦見安慧造中邊分別論釋疏，Sthiramati Madhyāntavibhāngaṭikā，法人 M. Sylvain Levi 尼泊爾發見殘缺本，業師山口博士校刊並譯。於唯識學界，誠殊勳也。</note>
+<note n="0847012" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0847012">本偈羅什譯《青目釋》為：「不生亦不滅，不常亦不斷，不一亦不異，不來亦不出。能說是因緣，善滅諸戲論。我稽首禮佛，諸說中第一。」瞿曇般若流支譯《順中論》作「不滅亦不生，不斷亦不常，不一不異義，不來亦不去，佛已說因緣，斷諸戲論法。故我稽首禮，說法師中勝。」波羅頗蜜多羅譯《般若燈論釋》作「不滅亦不起，不斷亦不常，非一非種種，不來亦不去，緣起戲論息，說者善滅故。禮彼婆伽婆，諸說中最上。」今復據原文改譯如上者，並非標新立異，而有以下諸故：（1）以四兮字殿八不四句者，讚歎緣起，形容緣起也。（2）第五句着一「將」字者，示緣起及其形容詞均屬「業格」，一如下文所釋故。着一「是」字者，「是」猶云「如此這般底」，屬指示形容詞，用以上指八不四句，下指「戲論滅而吉」一句，示彼等皆為緣起之形容詞也。換言之，依原文意，應作「將不滅不生……戲論滅而吉祥之緣起開顯之佛……」云云。但為照顧其為偈文並原偈語序，故未如是譯也。</note>
+<note n="0847013" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0847013">本偈，安慧造《中邊分別論釋疏》亦引用。《智心髓集》第一偈，吉祥尊（sīnātha）釋 nātha 語義時所引。</note>
+<note n="0848014" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848014">月稱所作此種緣起語義解釋，與世親於《俱舍論》卷九所作者同。pratīty＝prāpti, apekṣa. samutpāda＝prādurbhāva. pratītyasamutpāda＝hetupratyayāpekṣo bhāvānāmutpādaḥ。</note>
+<note n="0848015" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848015">即大德室利羅多（srīlabdha, srīlābha）經部毘婆沙師等人。《西域記》卷五云：「室利羅多，唐言勝受。於是製造經部《毘婆沙論》。」至於其所以為室利羅多一派人者，以此下所述，與《俱舍論》世間品卷九所出緣起語源異說相同，而稱友《俱舍論釋》（荻原雲來校本，二九六頁）且明記此異說為室利羅多所說也。</note>
+<note n="0848016" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848016">稱友《俱舍論釋》，謂此為《緣起經》文。</note>
+<note n="0848017" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848017">與此同樣之評難，早為世親所提出。見《俱舍論》卷九。</note>
+<note n="0848018" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848018">指清辯。</note>
+<note n="0848019" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848019">指佛護。</note>
+<note n="0848020" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848020">指室利羅多。</note>
+<note n="0848021" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0848021"><p>漢譯《般若燈論》釋歸敬偈文為略抄。歸敬偈後釋緣起語義者，僅「緣起者種種因緣和合得起，故名緣起」而已。藏傳《般若燈論》，則於清辯自釋緣起語義前，先揭此月稱所舉二說。即：</p><p>（1）pratītyasamutpāda＝prāpyasamutpāda;</p><p>（2）pratītyasamutpāda＝prati prati vināsinām utpādah。（ses-rab-sgron-ma, Bibliotheca Indica, New Series, No. 1396, edited by Max Walleser, P. 3-4）</p></note>
+<note n="0849022" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0849022">如後出第一偈「諸法不自生」下所詳，清辯所持自續方軌，必備宗因喻三支比量。今此不然，故持應成之月稱，於此以子之矛，攻子之盾也。</note>
+<note n="0849023" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0849023">《六十頌如理論》，第十九偈。</note>
+<note n="0850024" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0850024">今茲所舉，見上引藏傳《般若燈論》第四頁。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0778a1301" resp="#resp1" type="add" target="#nkr_note_add_0778a1301">三【CB】，<!-- check:檢查括號是否保留 -->（三）【補編】</note>
-<note n="0811a0501" resp="#resp1" type="add" target="#nkr_note_add_0811a0501">子【CB】，<space quantity="1" unit="chars"/>【補編】</note>
-<note n="0821a0601" resp="#resp1" type="add" target="#nkr_note_add_0821a0601">二【CB】，三【補編】</note>
+<note n="0778a1301" resp="#resp2" type="add" target="#nkr_note_add_0778a1301">三【CB】，<!-- check:檢查括號是否保留 -->（三）【補編】</note>
+<note n="0811a0501" resp="#resp2" type="add" target="#nkr_note_add_0811a0501">子【CB】，<space quantity="1" unit="chars"/>【補編】</note>
+<note n="0821a0601" resp="#resp2" type="add" target="#nkr_note_add_0821a0601">二【CB】，三【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

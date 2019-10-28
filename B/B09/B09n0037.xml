@@ -12,79 +12,93 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>BuBian</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>BuBian</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">9</idno>.<idno type="no">37</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 9, No. 37</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">集量論釋略抄</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB08504">
-	<charName>CBETA CHARACTER CB08504</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[舀*炎]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>燄</value>
-	</charProp>
-	<mapping type="unicode">U+269A8</mapping>
-	<mapping cb:dec="991544" type="PUA">U+F2138</mapping>
-</char>
-<char xml:id="CB30039">
-	<charName>CBETA CHARACTER CB30039</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[烈-列+執]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>熱</value>
-	</charProp>
-	<mapping type="unicode">U+24360</mapping>
-	<mapping cb:dec="1013079" type="PUA">U+F7557</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB08504">
+				<charName>CBETA CHARACTER CB08504</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[舀*炎]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>燄</value>
+				</charProp>
+				<mapping type="unicode">U+269A8</mapping>
+				<mapping cb:dec="991544" type="PUA">U+F2138</mapping>
+			</char>
+			<char xml:id="CB30039">
+				<charName>CBETA CHARACTER CB30039</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[烈-列+執]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>熱</value>
+				</charProp>
+				<mapping type="unicode">U+24360</mapping>
+				<mapping cb:dec="1013079" type="PUA">U+F7557</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2015-01-22">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1000,101 +1014,101 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0235a0501" to="#end0235a0501"><lem wit="#wit1" resp="#resp3">緣</lem><rdg wit="#wit2">綠</rdg></app>
+<app from="#beg0235a0501" to="#end0235a0501"><lem wit="#wit.cbeta" resp="#resp4">緣</lem><rdg wit="#wit.orig">綠</rdg></app>
 </p>
 </cb:div>
 <cb:div type="bubian-notes">
 <head>大藏經補編 校註</head>
 <p>
-<note n="0184001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0184001">費氏著書譯此頌文。首句中云 Tshad-mar gyur-pa 本意堪為量者。費譯量所化生。誤。見 History of Indian logic, P. 276。</note>
-<note n="0184002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0184002">集量原名具云 Tshad-mahi mdo kun-las btus-pa。意謂從一切量本論集成者。舊解以為解釋諸量故名集量。誤。</note>
-<note n="0186003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186003">費氏著書引此本頌并有詳解。見 History of Indian logic, p. 277。頌第二句末勘奈旦本作 Bsres-paḥo。引文錯為 Mibsres-paho 遂以離分別與不屬名類為二事。大誤。</note>
-<note n="0186004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186004">此段同俱舍論。見寧刻本卷二。二十一頁左。</note>
-<note n="0186005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186005">金本末句作色為根行境。</note>
-<note n="0187006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0187006">費氏著書以此句屬下。錯斷句讀謂。破瑜伽師現量之說。大誤。見 History of Indian logic. p. 278。</note>
-<note n="0188007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0188007">此依原文 Phyi-rol-pahi don 譯。</note>
-<note n="0189008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0189008">成唯識論具引此頌。見寧刻本卷二十七頁右。又參照佛地經寧刻本卷三。九頁左。</note>
-<note n="0189009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0189009">次有一頌半說憶念亦具二相。後即廣破異義。皆從畧。</note>
-<note n="0191001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0191001">見 History of Indian logic, p. 280。</note>
-<note n="0192002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192002">此段兩譯文異。今依寶本抄。次有二頌就勝論宗空等觸義辨比量不緣自相。今畧。</note>
-<note n="0192003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192003">費氏著書引此二句於破聲量一段中。別以果性。自性。不可得。釋因三相。勘論無文。殆係誤引法稱之說以為陳那當爾也。見 History of Indian logic. pp. 280-281, 288, 311。</note>
-<note n="0194004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194004">以下四頌破所比異義。費氏書中畧引其說。而有錯解。見 History of Indian logic, p. 281。</note>
-<note n="0196005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0196005">原文音譯 Utpala 謂青蓮華也。</note>
-<note n="0197006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0197006">次有五頌半釋成因相與所相不離之義。後即廣破異說。皆從畧。</note>
-<note n="0199001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199001">見 History of Indian logic, p. 282。</note>
-<note n="0199002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199002">金本此段原文……bstan-bcos-la ma ltos-pa。譯意不待論宗。寶本無此不字 ma。</note>
-<note n="0199003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199003">費氏著書引此一頌而釋義不全。見 History of Indian logic, p. 282。</note>
-<note n="0200004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0200004">次有三頌破正理宗及成難論所說異義。今畧。</note>
-<note n="0200005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0200005">金本此句無不字。</note>
-<note n="0200006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0200006">兩本頌釋文皆不順。今取意抄。</note>
-<note n="0201007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201007">見 History of Indian logic, p. 283。</note>
-<note n="0202008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202008">此句唯見金本。</note>
-<note n="0202009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202009">金本此句云「餘復待成立」。與理門文合。而與釋不順。</note>
-<note n="0204010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0204010">此段唯見金本。</note>
-<note n="0204011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0204011">此二破頌數論二種比量。遮顯原云 bsal-te-ḥohs-pa 具相原云 rnam-ldan 意同舊云反破方便。順成方便。文釋繁廣。今刪。</note>
-<note n="0206012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206012">見 History of Indian logic, p. 285。</note>
-<note n="0206013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206013">Ibid., p. 283。</note>
-<note n="0207014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0207014">此下一段兩本文異。今准理門抄意。</note>
-<note n="0208015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0208015">寶本此句作若一邊亦不離。連下文讀。</note>
-<note n="0209016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209016">寶本此句無教字。</note>
-<note n="0209017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209017">此云無害從金本 Gnod-pa-med-pa 譯。次四頌半（金本三頌半）。以異門釋相違。後即廣破異說。皆從略。</note>
-<note n="0212001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212001">金本自下三品皆無品名。費氏書依金本。而謂此為因喻品。係臆測之誤。見 History of Indian logic, pp. 276, 286。</note>
-<note n="0212002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212002">Ibid., p. 286。引此半頌。末字 nyid 錯作 nyis。遂以為因有二種。誤。</note>
-<note n="0212003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212003">此二句。金本作「是故遮止非。以為異品相」。</note>
-<note n="0213004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213004">此段寶本文句。全同理門。隱晦難解。今從金本。合原作 rjes-hgro 通指二喻合法而言。奘譯理門乃分為合離二事。</note>
-<note n="0213005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213005">金本此句作或如因法但說隨一。與奘譯理門同。</note>
-<note n="0213006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213006">金本缺此句頌。</note>
-<note n="0213007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213007">費氏著書誤引此至下倒合有二云云。以為喻有二類之證。章句全錯。見 History of Indian logic, p. 286。</note>
-<note n="0214008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214008">Ibid., p. 286。引此文。未明决擇五分之意。</note>
-<note n="0214009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214009">Ibid., p. 287。誤以為破譬喻量。</note>
-<note n="0215010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215010">相類原文。寶本作 nyer-hjal。金本作 dpe-ba。今依理門擇。</note>
-<note n="0215011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215011">金本以此數字連下此復二字。為一句頌。</note>
-<note n="0215012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215012">金本缺此半頌。</note>
-<note n="0215013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215013">金本此段文句。全同理門。但與釋不順。今從寶本。</note>
-<note n="0215014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215014">次下數句。金本無文。</note>
-<note n="0216015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0216015">原文云合 rjes-su hgro-ba 併指同異二喻合法而言。</note>
-<note n="0217016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217016">次下廣破異說。今畧。</note>
-<note n="0220001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0220001">History of Indian logic, pp. 288-9。釋此品。但列十四過類名目。開至不至相似為二。缺常住相似。無異相似衍無窮相似。配列梵名亦有錯誤。</note>
-<note n="0220002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0220002">此句依金本抄。寶本意云。若非不成而相至者。所立已成。此是誰因。</note>
-<note n="0221003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221003">此處版本不明。寶本曲尼版作言覺二因中。奈旦版作覺因等中。</note>
-<note n="0221004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221004">金本此句作 med-par rtogs-pa。意云分別為無。</note>
-<note n="0223005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223005">以下奈旦版金本譯文脫畧。直接分別相似。</note>
-<note n="0225006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225006">此下奈旦版金本始有文。</note>
-<note n="0227007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227007">金本此句作頌文。</note>
-<note n="0228008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0228008">此即觀所緣釋論所云因明者說有無相隨為因也。</note>
-<note n="0228009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0228009">金本文句全異。意云。增不成不定。於因是相似。</note>
-<note n="0228010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0228010">金本譯音作 shintenttaka。如實論所謂尸利沙樹也。實是葛藤之類。</note>
-<note n="0229011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229011">寶本句末有相似 mtshuns 一字。</note>
-<note n="0230012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230012">寶本無此名目。</note>
-<note n="0231013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231013">金本此句全異。意云。如是則成大難。</note>
-<note n="0231014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231014">此字諸本皆作 me-rtogs（無分別）。勘理門論。應是 mo-rtags（女聲）之誤。今改正。</note>
-<note n="0231015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231015">原作 ma-nin-gi rtags 即中性聲也。</note>
-<note n="0231016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231016">正理畧分原作 rigs-pa -phra-mo。正理廣分原作 rigs-pa-brtag。依下所釋。此指正理經首卷及餘卷而言。</note>
-<note n="0231017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231017">金本此句作正理勝論及數論諸廣分云云。與前各品所破次第相合。</note>
-<note n="0232018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232018">次有九言二頌。總結全論。從畧。</note>
-<note n="0236001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236001">今人木村泰賢解正理經負處。以為全同如實。於此負處。即沿用因與立義相違之名。勘集量論。正理經以宗違為宗過。如實論以為因過。不可混也。參照木村所著印度六派哲學。（九版本）四八七頁。</note>
-<note n="0237002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0237002">參照宇井伯壽。印度哲學研究。第一卷。二二二至二二六頁。宇井以如實為一論總名。反質難為其一品。又以反質難為梵文 Jati（過類）翻譯。又以為墮負應與道理難等別行。皆誤。</note>
-<note n="0239003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239003">見費氏 History of Indian logic, pp. 115-116. A. B. Keith, Indian Logic and Atomism, p. 27。</note>
-<note n="0240004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240004">參照印度哲學研究。第二卷。四三八。四六五。五三九頁。印度六派哲學。四五四。四五五頁。二氏皆譯名為問題相似。但依藏譯作 skabsmtshuṅs 而不作 phyogs-daṅ-mtshuṅs 也。</note>
-<note n="0240005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240005">參照印度哲學研究。第二卷。四三八。四六五。四六六。五三九。五四〇頁。又印度六派哲學。四五六。四五七頁。History of Indian logic, p. 64。宇井不審所立相似之意。以為非觸因不合。木村又解作循環論法。費氏又以與方便相似顛倒說之。皆誤。</note>
-<note n="0241006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241006">費氏書中引金本頌句云。我根意義四法相合。以為與現存經本不符。其實寶本此句。無此意字也。參照 History of Indian logic, p. 279. note。</note>
-<note n="0243007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243007">參照印度哲學研究。第一卷。二九一頁以下。</note>
-<note n="0243008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243008">印度哲學研究。第一卷。一四～一六頁。Indian Logic and Atomism, p. 36。</note>
-<note n="0243009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243009">印度哲學研究。第三卷。四八七～四九一頁。</note>
-<note n="0243010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243010">印度哲學研究。第一卷。三三〇～三三二頁。</note>
-<note n="0244011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244011">宇井伯壽。The Vaiśeṣika Philosophy, pp. 9-10。</note>
-<note n="0244012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244012">參照印度哲學研究。第一卷。三〇六頁。The Vaiśeṣika Philosophy, pp. 156-157。但以為和合可攝一義和合。誤。</note>
-<note n="0245013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245013">七種名數不全。勘四譯本翻譯名義大集。數論章。4580 以下有相類之名目。作害相屬。物主相屬。能所依相屬。因果相屬。分全相屬。亦祗五種。</note>
-<note n="0245014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245014">A. B. Keith, Sāmkhya system, p. 104。高桑純天譯。印度哲學概論。三五一。三五二頁。</note>
-<note n="0245015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245015">Indian Logic and Atomism, p. 90。</note>
-<note n="0246016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0246016">History of Indian logic, p. 278。</note>
-<note n="0246017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0246017">翻譯名義大集。彌曼薩章。4586。全同此文寶本。</note>
+<note n="0184001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0184001">費氏著書譯此頌文。首句中云 Tshad-mar gyur-pa 本意堪為量者。費譯量所化生。誤。見 History of Indian logic, P. 276。</note>
+<note n="0184002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0184002">集量原名具云 Tshad-mahi mdo kun-las btus-pa。意謂從一切量本論集成者。舊解以為解釋諸量故名集量。誤。</note>
+<note n="0186003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186003">費氏著書引此本頌并有詳解。見 History of Indian logic, p. 277。頌第二句末勘奈旦本作 Bsres-paḥo。引文錯為 Mibsres-paho 遂以離分別與不屬名類為二事。大誤。</note>
+<note n="0186004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186004">此段同俱舍論。見寧刻本卷二。二十一頁左。</note>
+<note n="0186005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186005">金本末句作色為根行境。</note>
+<note n="0187006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0187006">費氏著書以此句屬下。錯斷句讀謂。破瑜伽師現量之說。大誤。見 History of Indian logic. p. 278。</note>
+<note n="0188007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0188007">此依原文 Phyi-rol-pahi don 譯。</note>
+<note n="0189008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0189008">成唯識論具引此頌。見寧刻本卷二十七頁右。又參照佛地經寧刻本卷三。九頁左。</note>
+<note n="0189009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0189009">次有一頌半說憶念亦具二相。後即廣破異義。皆從畧。</note>
+<note n="0191001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0191001">見 History of Indian logic, p. 280。</note>
+<note n="0192002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192002">此段兩譯文異。今依寶本抄。次有二頌就勝論宗空等觸義辨比量不緣自相。今畧。</note>
+<note n="0192003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192003">費氏著書引此二句於破聲量一段中。別以果性。自性。不可得。釋因三相。勘論無文。殆係誤引法稱之說以為陳那當爾也。見 History of Indian logic. pp. 280-281, 288, 311。</note>
+<note n="0194004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194004">以下四頌破所比異義。費氏書中畧引其說。而有錯解。見 History of Indian logic, p. 281。</note>
+<note n="0196005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0196005">原文音譯 Utpala 謂青蓮華也。</note>
+<note n="0197006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0197006">次有五頌半釋成因相與所相不離之義。後即廣破異說。皆從畧。</note>
+<note n="0199001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199001">見 History of Indian logic, p. 282。</note>
+<note n="0199002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199002">金本此段原文……bstan-bcos-la ma ltos-pa。譯意不待論宗。寶本無此不字 ma。</note>
+<note n="0199003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199003">費氏著書引此一頌而釋義不全。見 History of Indian logic, p. 282。</note>
+<note n="0200004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0200004">次有三頌破正理宗及成難論所說異義。今畧。</note>
+<note n="0200005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0200005">金本此句無不字。</note>
+<note n="0200006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0200006">兩本頌釋文皆不順。今取意抄。</note>
+<note n="0201007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201007">見 History of Indian logic, p. 283。</note>
+<note n="0202008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202008">此句唯見金本。</note>
+<note n="0202009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202009">金本此句云「餘復待成立」。與理門文合。而與釋不順。</note>
+<note n="0204010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0204010">此段唯見金本。</note>
+<note n="0204011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0204011">此二破頌數論二種比量。遮顯原云 bsal-te-ḥohs-pa 具相原云 rnam-ldan 意同舊云反破方便。順成方便。文釋繁廣。今刪。</note>
+<note n="0206012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206012">見 History of Indian logic, p. 285。</note>
+<note n="0206013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206013">Ibid., p. 283。</note>
+<note n="0207014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0207014">此下一段兩本文異。今准理門抄意。</note>
+<note n="0208015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0208015">寶本此句作若一邊亦不離。連下文讀。</note>
+<note n="0209016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209016">寶本此句無教字。</note>
+<note n="0209017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209017">此云無害從金本 Gnod-pa-med-pa 譯。次四頌半（金本三頌半）。以異門釋相違。後即廣破異說。皆從略。</note>
+<note n="0212001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212001">金本自下三品皆無品名。費氏書依金本。而謂此為因喻品。係臆測之誤。見 History of Indian logic, pp. 276, 286。</note>
+<note n="0212002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212002">Ibid., p. 286。引此半頌。末字 nyid 錯作 nyis。遂以為因有二種。誤。</note>
+<note n="0212003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212003">此二句。金本作「是故遮止非。以為異品相」。</note>
+<note n="0213004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213004">此段寶本文句。全同理門。隱晦難解。今從金本。合原作 rjes-hgro 通指二喻合法而言。奘譯理門乃分為合離二事。</note>
+<note n="0213005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213005">金本此句作或如因法但說隨一。與奘譯理門同。</note>
+<note n="0213006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213006">金本缺此句頌。</note>
+<note n="0213007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213007">費氏著書誤引此至下倒合有二云云。以為喻有二類之證。章句全錯。見 History of Indian logic, p. 286。</note>
+<note n="0214008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214008">Ibid., p. 286。引此文。未明决擇五分之意。</note>
+<note n="0214009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214009">Ibid., p. 287。誤以為破譬喻量。</note>
+<note n="0215010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215010">相類原文。寶本作 nyer-hjal。金本作 dpe-ba。今依理門擇。</note>
+<note n="0215011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215011">金本以此數字連下此復二字。為一句頌。</note>
+<note n="0215012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215012">金本缺此半頌。</note>
+<note n="0215013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215013">金本此段文句。全同理門。但與釋不順。今從寶本。</note>
+<note n="0215014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215014">次下數句。金本無文。</note>
+<note n="0216015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0216015">原文云合 rjes-su hgro-ba 併指同異二喻合法而言。</note>
+<note n="0217016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217016">次下廣破異說。今畧。</note>
+<note n="0220001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0220001">History of Indian logic, pp. 288-9。釋此品。但列十四過類名目。開至不至相似為二。缺常住相似。無異相似衍無窮相似。配列梵名亦有錯誤。</note>
+<note n="0220002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0220002">此句依金本抄。寶本意云。若非不成而相至者。所立已成。此是誰因。</note>
+<note n="0221003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221003">此處版本不明。寶本曲尼版作言覺二因中。奈旦版作覺因等中。</note>
+<note n="0221004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221004">金本此句作 med-par rtogs-pa。意云分別為無。</note>
+<note n="0223005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223005">以下奈旦版金本譯文脫畧。直接分別相似。</note>
+<note n="0225006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225006">此下奈旦版金本始有文。</note>
+<note n="0227007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227007">金本此句作頌文。</note>
+<note n="0228008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0228008">此即觀所緣釋論所云因明者說有無相隨為因也。</note>
+<note n="0228009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0228009">金本文句全異。意云。增不成不定。於因是相似。</note>
+<note n="0228010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0228010">金本譯音作 shintenttaka。如實論所謂尸利沙樹也。實是葛藤之類。</note>
+<note n="0229011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229011">寶本句末有相似 mtshuns 一字。</note>
+<note n="0230012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230012">寶本無此名目。</note>
+<note n="0231013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231013">金本此句全異。意云。如是則成大難。</note>
+<note n="0231014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231014">此字諸本皆作 me-rtogs（無分別）。勘理門論。應是 mo-rtags（女聲）之誤。今改正。</note>
+<note n="0231015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231015">原作 ma-nin-gi rtags 即中性聲也。</note>
+<note n="0231016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231016">正理畧分原作 rigs-pa -phra-mo。正理廣分原作 rigs-pa-brtag。依下所釋。此指正理經首卷及餘卷而言。</note>
+<note n="0231017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231017">金本此句作正理勝論及數論諸廣分云云。與前各品所破次第相合。</note>
+<note n="0232018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232018">次有九言二頌。總結全論。從畧。</note>
+<note n="0236001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236001">今人木村泰賢解正理經負處。以為全同如實。於此負處。即沿用因與立義相違之名。勘集量論。正理經以宗違為宗過。如實論以為因過。不可混也。參照木村所著印度六派哲學。（九版本）四八七頁。</note>
+<note n="0237002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0237002">參照宇井伯壽。印度哲學研究。第一卷。二二二至二二六頁。宇井以如實為一論總名。反質難為其一品。又以反質難為梵文 Jati（過類）翻譯。又以為墮負應與道理難等別行。皆誤。</note>
+<note n="0239003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239003">見費氏 History of Indian logic, pp. 115-116. A. B. Keith, Indian Logic and Atomism, p. 27。</note>
+<note n="0240004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240004">參照印度哲學研究。第二卷。四三八。四六五。五三九頁。印度六派哲學。四五四。四五五頁。二氏皆譯名為問題相似。但依藏譯作 skabsmtshuṅs 而不作 phyogs-daṅ-mtshuṅs 也。</note>
+<note n="0240005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240005">參照印度哲學研究。第二卷。四三八。四六五。四六六。五三九。五四〇頁。又印度六派哲學。四五六。四五七頁。History of Indian logic, p. 64。宇井不審所立相似之意。以為非觸因不合。木村又解作循環論法。費氏又以與方便相似顛倒說之。皆誤。</note>
+<note n="0241006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241006">費氏書中引金本頌句云。我根意義四法相合。以為與現存經本不符。其實寶本此句。無此意字也。參照 History of Indian logic, p. 279. note。</note>
+<note n="0243007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243007">參照印度哲學研究。第一卷。二九一頁以下。</note>
+<note n="0243008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243008">印度哲學研究。第一卷。一四～一六頁。Indian Logic and Atomism, p. 36。</note>
+<note n="0243009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243009">印度哲學研究。第三卷。四八七～四九一頁。</note>
+<note n="0243010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243010">印度哲學研究。第一卷。三三〇～三三二頁。</note>
+<note n="0244011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244011">宇井伯壽。The Vaiśeṣika Philosophy, pp. 9-10。</note>
+<note n="0244012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244012">參照印度哲學研究。第一卷。三〇六頁。The Vaiśeṣika Philosophy, pp. 156-157。但以為和合可攝一義和合。誤。</note>
+<note n="0245013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245013">七種名數不全。勘四譯本翻譯名義大集。數論章。4580 以下有相類之名目。作害相屬。物主相屬。能所依相屬。因果相屬。分全相屬。亦祗五種。</note>
+<note n="0245014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245014">A. B. Keith, Sāmkhya system, p. 104。高桑純天譯。印度哲學概論。三五一。三五二頁。</note>
+<note n="0245015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245015">Indian Logic and Atomism, p. 90。</note>
+<note n="0246016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0246016">History of Indian logic, p. 278。</note>
+<note n="0246017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0246017">翻譯名義大集。彌曼薩章。4586。全同此文寶本。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0235a0501" resp="#resp2" type="add" target="#nkr_note_add_0235a0501">緣【CB】，綠【補編】</note>
+<note n="0235a0501" resp="#resp3" type="add" target="#nkr_note_add_0235a0501">緣【CB】，綠【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

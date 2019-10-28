@@ -12,87 +12,101 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">26</idno>.<idno type="no">10</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 26, No. 10</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">自說經</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00145">
-	<charName>CBETA CHARACTER CB00145</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[少/兔]</value>
-	</charProp>
-	<mapping type="unicode">U+3779</mapping>
-	<mapping cb:dec="983185" type="PUA">U+F0091</mapping>
-</char>
-<char xml:id="CB00416">
-	<charName>CBETA CHARACTER CB00416</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[竺-二+帚]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>帚</value>
-	</charProp>
-	<mapping type="normal_unicode">U+7B92</mapping>
-	<mapping cb:dec="983456" type="PUA">U+F01A0</mapping>
-</char>
-<char xml:id="CB22010">
-	<charName>CBETA CHARACTER CB22010</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[癩-負+頁]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>癩</value>
-	</charProp>
-	<mapping cb:dec="1005050" type="PUA">U+F55FA</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00145">
+				<charName>CBETA CHARACTER CB00145</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[少/兔]</value>
+				</charProp>
+				<mapping type="unicode">U+3779</mapping>
+				<mapping cb:dec="983185" type="PUA">U+F0091</mapping>
+			</char>
+			<char xml:id="CB00416">
+				<charName>CBETA CHARACTER CB00416</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[竺-二+帚]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>帚</value>
+				</charProp>
+				<mapping type="normal_unicode">U+7B92</mapping>
+				<mapping cb:dec="983456" type="PUA">U+F01A0</mapping>
+			</char>
+			<char xml:id="CB22010">
+				<charName>CBETA CHARACTER CB22010</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[癩-負+頁]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>癩</value>
+				</charProp>
+				<mapping cb:dec="1005050" type="PUA">U+F55FA</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-09-17">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1840,159 +1854,159 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0073a0701" to="#end0073a0701"><lem wit="#wit1" resp="#resp3">鍾</lem><rdg wit="#wit2">鐘</rdg></app>
-<app from="#beg0097a1301" to="#end0097a1301"><lem wit="#wit1" resp="#resp3">議</lem><rdg wit="#wit2">義</rdg></app>
-<app from="#beg0099a0201" to="#end0099a0201"><lem wit="#wit1" resp="#resp3">話</lem><rdg wit="#wit2">詁</rdg></app>
-<app from="#beg0122a0101" to="#end0122a0101"><lem wit="#wit1" resp="#resp3">減</lem><rdg wit="#wit2">滅</rdg></app>
-<app from="#beg0127a1201" to="#end0127a1201"><lem wit="#wit1" resp="#resp3">鉢</lem><rdg wit="#wit2">城</rdg></app>
-<app from="#beg0156a1301" to="#end0156a1301"><lem wit="#wit1" resp="#resp3">無</lem><rdg wit="#wit2">有</rdg></app>
-<app from="#beg0158a1101" to="#end0158a1101"><lem wit="#wit1" resp="#resp3">茸</lem><rdg wit="#wit2">葺</rdg></app>
-<app from="#beg0158a1401" to="#end0158a1401"><lem wit="#wit1" resp="#resp3">茸</lem><rdg wit="#wit2">葺</rdg></app>
-<app from="#beg0158a1402" to="#end0158a1402"><lem wit="#wit1" resp="#resp3">唯</lem><rdg wit="#wit2">雖</rdg></app>
-<app from="#beg0159a0101" to="#end0159a0101"><lem wit="#wit1" resp="#resp3">茸</lem><rdg wit="#wit2">葺</rdg></app>
-<app from="#beg0159a0201" to="#end0159a0201"><lem wit="#wit1" resp="#resp3">茸</lem><rdg wit="#wit2">葺</rdg></app>
-<app from="#beg0159a0401" to="#end0159a0401"><lem wit="#wit1" resp="#resp3">茸</lem><rdg wit="#wit2">葺</rdg></app>
-<app from="#beg0159a1001" to="#end0159a1001"><lem wit="#wit1" resp="#resp3">茸</lem><rdg wit="#wit2">葺</rdg></app>
+<app from="#beg0073a0701" to="#end0073a0701"><lem wit="#wit.cbeta" resp="#resp4">鍾</lem><rdg wit="#wit.orig">鐘</rdg></app>
+<app from="#beg0097a1301" to="#end0097a1301"><lem wit="#wit.cbeta" resp="#resp4">議</lem><rdg wit="#wit.orig">義</rdg></app>
+<app from="#beg0099a0201" to="#end0099a0201"><lem wit="#wit.cbeta" resp="#resp4">話</lem><rdg wit="#wit.orig">詁</rdg></app>
+<app from="#beg0122a0101" to="#end0122a0101"><lem wit="#wit.cbeta" resp="#resp4">減</lem><rdg wit="#wit.orig">滅</rdg></app>
+<app from="#beg0127a1201" to="#end0127a1201"><lem wit="#wit.cbeta" resp="#resp4">鉢</lem><rdg wit="#wit.orig">城</rdg></app>
+<app from="#beg0156a1301" to="#end0156a1301"><lem wit="#wit.cbeta" resp="#resp4">無</lem><rdg wit="#wit.orig">有</rdg></app>
+<app from="#beg0158a1101" to="#end0158a1101"><lem wit="#wit.cbeta" resp="#resp4">茸</lem><rdg wit="#wit.orig">葺</rdg></app>
+<app from="#beg0158a1401" to="#end0158a1401"><lem wit="#wit.cbeta" resp="#resp4">茸</lem><rdg wit="#wit.orig">葺</rdg></app>
+<app from="#beg0158a1402" to="#end0158a1402"><lem wit="#wit.cbeta" resp="#resp4">唯</lem><rdg wit="#wit.orig">雖</rdg></app>
+<app from="#beg0159a0101" to="#end0159a0101"><lem wit="#wit.cbeta" resp="#resp4">茸</lem><rdg wit="#wit.orig">葺</rdg></app>
+<app from="#beg0159a0201" to="#end0159a0201"><lem wit="#wit.cbeta" resp="#resp4">茸</lem><rdg wit="#wit.orig">葺</rdg></app>
+<app from="#beg0159a0401" to="#end0159a0401"><lem wit="#wit.cbeta" resp="#resp4">茸</lem><rdg wit="#wit.orig">葺</rdg></app>
+<app from="#beg0159a1001" to="#end0159a1001"><lem wit="#wit.cbeta" resp="#resp4">茸</lem><rdg wit="#wit.orig">葺</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0107017" resp="#resp2" type="mod" target="#nkr_note_mod_0107017">「男子所為事」之原語 Purisakicea 在註釋二六〇頁譯有 methuna Paṭisevana。此即為婬行。</note>
-<note n="0158003" resp="#resp2" type="mod" target="#nkr_note_mod_0158003">註釋三九九頁 Sūkara-maddava 為豚之柔脂多生之肉與在大註疏（Mahāṭṭhakathā）中所說。然某者云 Sūkara-maddava 非為豚肉而為由豚所蹂躪之筍。又某者云為由豚所蹂處而生之「蛇傘」蕈。然又某者有謂 sūkara-maddava 為某種味美之物。然今在依長阿含三卷遊行經（大正藏、一卷一八頁）為旃檀樹耳（茸）。</note>
+<note n="0107017" resp="#resp3" type="mod" target="#nkr_note_mod_0107017">「男子所為事」之原語 Purisakicea 在註釋二六〇頁譯有 methuna Paṭisevana。此即為婬行。</note>
+<note n="0158003" resp="#resp3" type="mod" target="#nkr_note_mod_0158003">註釋三九九頁 Sūkara-maddava 為豚之柔脂多生之肉與在大註疏（Mahāṭṭhakathā）中所說。然某者云 Sūkara-maddava 非為豚肉而為由豚所蹂躪之筍。又某者云為由豚所蹂處而生之「蛇傘」蕈。然又某者有謂 sūkara-maddava 為某種味美之物。然今在依長阿含三卷遊行經（大正藏、一卷一八頁）為旃檀樹耳（茸）。</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0057001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057001">由第一經至第三經 Mahāvagga I, 1, 1-7. PP. 1-2 參照。五分律十五卷（大正藏、二二卷一〇二～一〇三頁），四分律三十一卷（大正藏、二二卷七八一頁、七八六頁），根本說一切有部毘奈耶破僧事五卷（大正藏、二四卷一二六頁），眾許摩訶帝經七卷（大正藏、三卷九五二頁），佛本行集經三十一卷（大正藏、三卷七九九頁）等參照。</note>
-<note n="0058002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058002">Sahetudhamma 亦可成為有因之法。</note>
-<note n="0059003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059003">Compare: MV. 1. 2. 1-3. PP. 2-3。</note>
-<note n="0059004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059004">憍慢性〔者〕之原語為 huhuṅkajātika, huhuñka 如見聞他之言動而為「忿」之聲音謂甚為憍慢。Seidenstīcker 在德譯（Das Buch der Feierlichen worte des Enhabenen）之三頁譯此為 standesstolz。尚於註釋 Paramattha-dipani P. 52 詳之。</note>
-<note n="0059005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059005">「交禮」亦可譯為交好。</note>
-<note n="0060006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060006">前半見 Compare: S. N. Vol. VP. 79。</note>
-<note n="0061007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061007">雜阿含四十九卷（大正藏、二卷三六二頁），別譯雜阿含十五卷（大正藏、二卷四八〇頁）參照。</note>
-<note n="0061008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061008">akkulopakkulo 為恐嚇之言。見註釋六六頁。</note>
-<note n="0061009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061009">雜阿含三十八卷（大正藏、二卷二七八頁），別譯雜阿含一卷（大正藏、二卷三七六頁）參照。</note>
-<note n="0062010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062010">舊妻之原語 Purāṇa-dutiyikā 謂為出家前之妻。故二、本二即為此。見註釋七二頁。</note>
-<note n="0062011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062011">Compare: MV. L. 20, 15 P. 31。</note>
-<note n="0062012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062012">「中間之八日」之原語為 amtaraṭṭhaka 如依註釋七四頁云為磨伽月之最終四日與頗勒窶拏月之最初四日。此時期為印度之極寒期成為修習行宗教祭事。</note>
-<note n="0063013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063013">Compare: M. N. 7 Vatthūpama Sutta Vol. I. P. 39 雜阿含四十四卷（大正藏、二卷三二一頁）參照。</note>
-<note n="0064014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064014">著樹皮衣婆醯之略。</note>
-<note n="0065015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065015">Compare: D, NII Kevaddha Sutta Vol. I. P. 223; S. NI. 3. T. Sarā Vol, I. P. 15. 長阿含十六卷堅固經（大正藏、一卷一〇二頁）一部參照。</note>
-<note n="0068001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068001">Compare: MV. I, 3. 1-4 P. 3 五分律十五卷（大正藏、二二卷一〇三頁），四分律三十二卷（大正藏、二二卷七八六頁），四分律十二卷（大正藏、二二卷六四七頁）（只有優陀那），根本說一切有部毘奈耶破僧事經五卷（大正藏、二四卷一二五～一二六頁），佛本行集經三十一卷（大正藏、三卷八〇〇頁），眾許摩訶帝經七卷（大正藏、三卷九五二頁），方廣大莊嚴經十卷（大正藏、三卷六〇一頁），修行本起經下（大正藏、三卷四七一頁），過去現在因果經三卷（大正藏、三卷六四四頁），太子瑞應本起經下（大正藏、三卷四七一頁），過去現在因果經三卷（大正藏、三卷六四四頁），太子瑞應本起經下（大正藏、三卷四七九頁）等參照。</note>
-<note n="0069002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069002">雜阿含十六卷（大正藏、二卷一一〇頁）一部參照。</note>
-<note n="0069003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069003">佛本行集經三十一卷（大正藏、三卷八〇〇頁），眾許摩訶帝經七卷（大正藏、三卷九五一頁）參照。</note>
-<note n="0070004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070004">Compare: Dhammapada 131, PP. 19-20，法句經刀杖品（大正藏、四卷五六五頁）參照。</note>
-<note n="0070005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070005">「求安樂生類」之原語 Sukhakāmam, bhūtam 在底本亦無，依暹羅本附加於此。</note>
-<note n="0071006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0071006">「本質」之原語 upadhi 依奇魯達斯釋有五蘊、欲、煩惱、業之意義。元來此語為煩惱或取之意，後來關係於涅槃依此語譯，遂至為指身體又身體之本質。如此在此語之解脫明顯得見出變遷之跡象。</note>
-<note n="0072007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0072007">妻女為女人普行沙門之略。夫則為普行沙門之略。</note>
-<note n="0072008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0072008">「限欲飲」可譯為至飽。</note>
-<note n="0073009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0073009">註譯一、二一頁有 Parijiṇṇā（老、朽）。德譯一、一四頁參照。</note>
-<note n="0076010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076010">硬或軟食物，可譯為嚼食或噉食。</note>
-<note n="0076011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076011">「身體為健耶，（所得之）飲食足以繫命耶」可譯為起居安否，身體安泰耶？</note>
-<note n="0076012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076012">「我七年之間，在血壺之中」原文雖在後有，為明其意義先行譯出。</note>
-<note n="0077013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0077013">Compare: Cullavagga VII, 5 PP, 183-184; Jataka 10 Vol. I. P. 140，佛本行經五十九卷（大正藏、三卷九二四頁），撰集百緣經九卷、八九（大正藏、四卷二四九頁）參照。</note>
-<note n="0082001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082001">增一阿含九卷慚愧品（大正藏、二卷五九一頁），出曜經二十四卷（大正藏、二卷七三九～七四〇頁），佛本行經五十七卷（大正藏、三卷九一五～九一六頁）參照。</note>
-<note n="0083002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083002">「否、大德！」之本文雖為 evaṁ bhante 對否定之問從和文之例而譯。（應作唯然，暹羅本亦作唯然）。</note>
-<note n="0089003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0089003">增一阿含三卷弟子品（大正藏、二卷五五八頁）一部參照。</note>
-<note n="0090004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0090004">梭之原語在協會本雖有 vāsala 而可為暹羅本之 tasala。</note>
-<note n="0092005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0092005">「某者如次」亦可為某者等如是。今為使易解如是譯之。</note>
-<note n="0093006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0093006">瑜伽師地論十九卷偈（大正藏、三十卷三八五頁）參照。</note>
-<note n="0093007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0093007">佛本行經三十二卷（大正藏、三卷八〇五頁）參照。</note>
-<note n="0094008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0094008">在協會本意難通。仍從暹羅本。</note>
-<note n="0094009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0094009">暹羅本脚註，在本經註釋二一五頁有「不喜非有」。</note>
-<note n="0096001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0096001">中阿含十卷彌醯經（大正藏、一卷四九一頁），Compare: A. N. IX, 3, Vol. IV PP. 350-359。</note>
-<note n="0096002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0096002">「今正思為善時」可譯為今正思為適時。</note>
-<note n="0097003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0097003">三惡不善之覺即欲覺、恚覺、害覺，亦可譯為如漢譯三惡不善之念即欲念、恚念與害念。</note>
-<note n="0099004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0099004">「知足之話」「遠離之話」之原語 Santutthikathā, Pavivekadatha 底本雖無，依暹羅本而補足。</note>
-<note n="0099005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0099005">數息觀之原語 ānāpānasati 若按文字譯之為出息入息念。</note>
-<note n="0101006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0101006">Compare: Dhammapada 42 P. 6。</note>
-<note n="0101007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0101007">雜阿含五十卷（大正藏、二卷三六七頁），別譯雜阿含十五卷（大正藏、二卷四八五頁），增一阿含四十五卷不善品（大正藏、二卷七九三頁）參照。</note>
-<note n="0102008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0102008">「擊」之原語 āsādeti 存有使辱之意。</note>
-<note n="0103009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0103009">Compare: Theragātha V, 191, P. 25 前記雜阿含、別譯雜阿含參照。</note>
-<note n="0103010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0103010">MV, X, II, 6-7 PP. 352-353. 五分律二十四卷（大正藏、二卷一六〇頁）參照。</note>
-<note n="0103011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0103011">「煩」之原語 ākiṇṇa 此處亦可譯為被圍繞。</note>
-<note n="0104012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0104012">「貴象」之原語 hatthināga 亦可譯為大象。</note>
-<note n="0105013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0105013">「優者」nāga 指佛。</note>
-<note n="0105014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0105014">Compare: Dhammapada V. 185, P. 27; D. N. XIV Mahāpadāna Sutta Vol. II. PP. 49-50 法句經述佛品（大正藏、四卷五六七頁）參照。</note>
-<note n="0106015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0106015">「寂默」之原語 mona 亦可譯為智。</note>
-<note n="0106016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0106016">義足經須陀利經三卷（大正藏、四卷一七六頁），六度集經五卷（大正藏、三卷三〇頁）參照。</note>
-<note n="0107017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0107017">「男子所為事」之原語 Purisakicea 在註釋二六〇頁譯有 methuna Paṭisevana。此即為媱行。</note>
-<note n="0108018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0108018">Compare: Suttanipāta 641, P. 127; Dhammapata 306, P. 44; Itivittaka48. P. 42. 法句經地獄品（大正藏、四卷五七〇頁）參照。</note>
-<note n="0108019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0108019">前記義足經參照。</note>
-<note n="0108020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0108020">「以矢」之原語 Sarehi 在底本雖無有，採用註釋二六三頁。前記義足經譯為箭。</note>
-<note n="0109021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0109021">「法、律」dhammavinaya 為教之意。以下同斷。</note>
-<note n="0109022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0109022">「生命若無苦」為生而不苦之意。</note>
-<note n="0110023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0110023">「支柱」為渴愛之意。</note>
-<note n="0112001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0112001">Compare: S. N. III, 18 Mallikā Vol. I. P. 75。</note>
-<note n="0113002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0113002">「勝鬘」之原名音譯 Mallikā 可為末利。</note>
-<note n="0114003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0114003">佛本行集經十一卷（大正藏、三卷七〇一頁），眾許摩訶帝經三卷（大正藏、三卷九四〇頁），過去現在因果經一卷（大正藏、三卷六二七頁）等參照。</note>
-<note n="0114004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0114004">Compare: S. N. XI, 2, 4. Daliddo Vol. I. PP, 231-232. 雜阿含四十六卷（大正藏、二卷三三三頁），別譯雜阿含三卷（大正藏、二卷三九〇頁）一部參照。</note>
-<note n="0115005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0115005">Compare: S. N. I. VI, II, I Tathāgatena vutta I, vol, P. 423, MV I, 6. 29 P. 11。</note>
-<note n="0117006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0117006">Compare: Cv. IX, 1-2 PP. 238-240; A. N. XIX Vol. IV PP. 197-204; A. N. XX Vol. IV PP. 204-208. 增一阿含三十七卷八難品（四）（大正藏、二卷七五二～七五三頁），增一阿含四十四卷十不善品（二）（大正藏、二卷七八六頁），中阿含八卷修羅經（大正藏、一卷四七五～四七七頁），中阿含九卷瞻波經（大正藏、一卷四七八～四七九頁），中阿含二恒永經（大正藏、一卷八一七頁），法海經（大正藏、一卷八一八頁），海八德經（大正藏、一卷八一九頁），五分律二十八卷（大正藏、二二卷一八〇～一八一頁），四分律三十六卷（大正藏、二二卷八二四～八二五頁），十誦律三十三卷（大正藏、二三卷二三九～二四〇頁），摩訶僧祇律二十七卷（大正藏、二二卷四四七頁）等參照。</note>
-<note n="0121007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0121007">「名與族」之原語 nāmagotta 亦將可譯為姓名。</note>
-<note n="0122008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0122008">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
-<note n="0122009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0122009">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
-<note n="0122010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0122010">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
-<note n="0122011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0122011">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
-<note n="0123012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0123012">在摩訶僧祇律五卷（大正藏、二二卷二六三頁）亦有。</note>
-<note n="0123013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0123013">Compare: MV. V. 13, 1-10 PP. 194-197. 五分律二十一卷（大正藏、二二卷八四五頁），十誦律二十五卷（大正藏、二三卷一八一頁），摩訶僧祇律二十三卷（大正藏、二三卷四一五～四一六頁）等參照。</note>
-<note n="0126014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0126014">在於 Suttanipāta。</note>
-<note n="0127015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0127015">Compare: Cv. VII, 3, 17 P. 198. 四分律四十六卷（大正藏、二二卷九〇九頁）類似之文，在佛傳律本甚多。</note>
-<note n="0128016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0128016">五分律二十五卷（大正藏、二二卷一六四頁）亦有。</note>
-<note n="0128017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0128017">Compare: Mv. X, 39. 149; Jātaka IX, 2. Vol. III. P. 488。</note>
-<note n="0131001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131001">Compare: D. N. XVI Mahāparinibbāna-Suttānta Vol. II. PP. 23-26; S. N. LI. 10 Cetiya Vol. V. PP. 258-262; A. N. VIII 70, 1-9 vol IV. PP. 308-311. 長阿含二卷遊行經（大正藏、一卷一五頁）參照。</note>
-<note n="0134002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0134002">「生命之素因」之原語 āyusaṅkhāra 為將生思想之意。</note>
-<note n="0134003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0134003">瑜伽師地論十九卷偈（大正藏、三十卷三八三頁）參照。</note>
-<note n="0134004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0134004">「平等」之原語 tula 在德英兩譯雖俱解為短之意，今不從彼。而在用 Sambhavaṁ 切斷而譯。</note>
-<note n="0135005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0135005">Compare: S. N. III, 2, I Jatilo Vol. PP. 77-79. 雜阿含四十二卷（大正藏、二卷三〇五～三〇六頁），別譯雜阿含四卷（大正藏、二卷三九九頁）參照。</note>
-<note n="0136006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0136006">「我之臣下」之原語 mamapurisa 在右所引用之漢譯為我家人、我所使人。</note>
-<note n="0136007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0136007">「徘徊者」之原語 ocaraka 得譯為放浪人、偵探、搜索者。W. Geiger 此譯為 die Spāher。Editschrift fiir Buddhismus 1928（3）S. 301。</note>
-<note n="0137008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0137008">Compare: Thera-gāthā V. 180 P. 23。</note>
-<note n="0137009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0137009">Compare: D. N. IX Paṭṭhapāda-Sutta Vol. I PP. 187-188; M. N. L XIII Cuḷa-mālunkya-Sutta vol; I. PP. 426-431. 長阿含十七卷布吒婆樓經（大正藏、一卷一一一頁），中阿含六十卷箭喻經（大正藏、一卷八〇四～八〇五頁）一部參照。[11]引用經亦有。</note>
-<note n="0138010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0138010">如來之原語 tathāgata 為有情生類之意。</note>
-<note n="0139011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0139011">長阿含十九卷世紀經（大正藏、一卷一二六～一二九頁），大樓炭經三卷（大正藏、一卷三三五頁），起世因本經五卷（大正藏、一卷三九〇頁）參照。</note>
-<note n="0143012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0143012">瑜伽師地論十九卷偈（大正藏、三十卷三八四頁）參照。尋之原語 vitakka 舊譯為覺。</note>
-<note n="0143013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0143013">「四軛」之原語 Catuyuga 與四流為同一內容。</note>
-<note n="0144014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0144014">用 anusikkino 切斷 yeva 為 yeca。暹羅本參照。</note>
-<note n="0151001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151001">Compare: S. N. XXI, 6 Bhaddi Vol. II P. 279. 雜阿含三十八卷（大正藏、二卷二七八頁），別譯雜阿含一卷（大正藏、二卷三七四頁）參照。</note>
-<note n="0151002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151002">對否定之同從和之例而譯。</note>
-<note n="0151003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151003">Compare: S. N. XLI. 5 Kānabhū Vol. IV P. 391 P. 202. 雜阿含二十一卷（大正藏、二卷一四九頁）參照。</note>
-<note n="0152004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152004">瑜伽師地論十九卷偈（大正藏、三十卷三八四頁）參照。</note>
-<note n="0152005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152005">「妄想」之原語 Papañea 可譯為戲論。</note>
-<note n="0155006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155006">「可能之相」之原語 bhabbarūpa 可譯為善相。</note>
-<note n="0157001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0157001">Compare: Itivuttaka 43 P. 37。</note>
-<note n="0158002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0158002">Compare: D. N. XVI Mahāparinibbāna-Suttanta Vol. II. PP. 41-43; 47-48. 長阿含三卷遊行經（大正藏、一卷一八～二〇頁）參照。</note>
-<note n="0158002" resp="#resp1" type="mod" target="#nkr_note_mod_0158002">Compare: D. N. XVI Mahāparinibbāna-Suttanta Vol. II. PP. 41-43; 47-48. 長阿含三卷遊行經（大正藏、一卷一八【南傳】，～二〇頁）參照。</note>
-<note n="0158003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0158003">註釋三九九頁 Sūkara-maddava 為豚之柔脂多生之肉與在大註疏（Mahāṭṭhakathā）中所說。然某者云 Sūkara-maddava 非為豚肉而為由豚所蹂躪之筍。又某者云為由豚所蹂處而生之「蛇傘」蕈。然又某者有謂 sūkara-maddava 為某種味美之物。然今在依長阿含三卷遊行經（大正藏、一卷一八頁）為旃檀樹耳（葺）。</note>
-<note n="0161004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161004">「在比丘眾之羣中被尊之師」之原文 Satthā purakkhato bhikkhugaṇassa majjhe 可謂為師在比丘眾之羣中為先立。</note>
-<note n="0161005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161005">四層者為四層之衣。</note>
-<note n="0162006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0162006">瑜伽師地論十九卷偈（大正藏、三十卷三八五頁）參照。</note>
-<note n="0162007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0162007">Compare: D. N. XVI. Mahāparinibbāna-Suttanta Vol. II. PP. 10-15, MV. VI, 28 PP. 226-230. 長阿含二卷遊行經（大正藏、一卷一二～一三頁）參照。</note>
-<note n="0162007" resp="#resp1" type="mod" target="#nkr_note_mod_0162007">Compare: D. N. XVI. Mahāparinibbāna-Suttanta Vol. II. PP. 10-15, MV. VI, 28 PP. 226-230. 長阿含二卷遊行經（大正藏、一卷一二【南傳】，～一三頁）參照。</note>
-<note n="0168008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0168008">「否、如是之事此應有」在本文雖為 no h'etaṁ 在對否定之問從和文之例如是譯。</note>
-<note n="0169009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169009">喜之原語 Piya 可譯為愛著。</note>
-<note n="0169010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169010">雜阿含三十八卷（大正藏、二卷二八〇頁），別譯雜阿含一卷（大正藏、二卷三七八頁）參照。</note>
-<note n="0170011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0170011">雜阿含三十八卷（大正藏、二卷二八〇頁），別譯雜阿含一卷（大正藏、二卷三七八頁）參照。</note>
+<note n="0057001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057001">由第一經至第三經 Mahāvagga I, 1, 1-7. PP. 1-2 參照。五分律十五卷（大正藏、二二卷一〇二～一〇三頁），四分律三十一卷（大正藏、二二卷七八一頁、七八六頁），根本說一切有部毘奈耶破僧事五卷（大正藏、二四卷一二六頁），眾許摩訶帝經七卷（大正藏、三卷九五二頁），佛本行集經三十一卷（大正藏、三卷七九九頁）等參照。</note>
+<note n="0058002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058002">Sahetudhamma 亦可成為有因之法。</note>
+<note n="0059003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059003">Compare: MV. 1. 2. 1-3. PP. 2-3。</note>
+<note n="0059004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059004">憍慢性〔者〕之原語為 huhuṅkajātika, huhuñka 如見聞他之言動而為「忿」之聲音謂甚為憍慢。Seidenstīcker 在德譯（Das Buch der Feierlichen worte des Enhabenen）之三頁譯此為 standesstolz。尚於註釋 Paramattha-dipani P. 52 詳之。</note>
+<note n="0059005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059005">「交禮」亦可譯為交好。</note>
+<note n="0060006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060006">前半見 Compare: S. N. Vol. VP. 79。</note>
+<note n="0061007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061007">雜阿含四十九卷（大正藏、二卷三六二頁），別譯雜阿含十五卷（大正藏、二卷四八〇頁）參照。</note>
+<note n="0061008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061008">akkulopakkulo 為恐嚇之言。見註釋六六頁。</note>
+<note n="0061009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061009">雜阿含三十八卷（大正藏、二卷二七八頁），別譯雜阿含一卷（大正藏、二卷三七六頁）參照。</note>
+<note n="0062010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062010">舊妻之原語 Purāṇa-dutiyikā 謂為出家前之妻。故二、本二即為此。見註釋七二頁。</note>
+<note n="0062011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062011">Compare: MV. L. 20, 15 P. 31。</note>
+<note n="0062012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062012">「中間之八日」之原語為 amtaraṭṭhaka 如依註釋七四頁云為磨伽月之最終四日與頗勒窶拏月之最初四日。此時期為印度之極寒期成為修習行宗教祭事。</note>
+<note n="0063013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063013">Compare: M. N. 7 Vatthūpama Sutta Vol. I. P. 39 雜阿含四十四卷（大正藏、二卷三二一頁）參照。</note>
+<note n="0064014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064014">著樹皮衣婆醯之略。</note>
+<note n="0065015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065015">Compare: D, NII Kevaddha Sutta Vol. I. P. 223; S. NI. 3. T. Sarā Vol, I. P. 15. 長阿含十六卷堅固經（大正藏、一卷一〇二頁）一部參照。</note>
+<note n="0068001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068001">Compare: MV. I, 3. 1-4 P. 3 五分律十五卷（大正藏、二二卷一〇三頁），四分律三十二卷（大正藏、二二卷七八六頁），四分律十二卷（大正藏、二二卷六四七頁）（只有優陀那），根本說一切有部毘奈耶破僧事經五卷（大正藏、二四卷一二五～一二六頁），佛本行集經三十一卷（大正藏、三卷八〇〇頁），眾許摩訶帝經七卷（大正藏、三卷九五二頁），方廣大莊嚴經十卷（大正藏、三卷六〇一頁），修行本起經下（大正藏、三卷四七一頁），過去現在因果經三卷（大正藏、三卷六四四頁），太子瑞應本起經下（大正藏、三卷四七一頁），過去現在因果經三卷（大正藏、三卷六四四頁），太子瑞應本起經下（大正藏、三卷四七九頁）等參照。</note>
+<note n="0069002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069002">雜阿含十六卷（大正藏、二卷一一〇頁）一部參照。</note>
+<note n="0069003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069003">佛本行集經三十一卷（大正藏、三卷八〇〇頁），眾許摩訶帝經七卷（大正藏、三卷九五一頁）參照。</note>
+<note n="0070004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070004">Compare: Dhammapada 131, PP. 19-20，法句經刀杖品（大正藏、四卷五六五頁）參照。</note>
+<note n="0070005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070005">「求安樂生類」之原語 Sukhakāmam, bhūtam 在底本亦無，依暹羅本附加於此。</note>
+<note n="0071006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0071006">「本質」之原語 upadhi 依奇魯達斯釋有五蘊、欲、煩惱、業之意義。元來此語為煩惱或取之意，後來關係於涅槃依此語譯，遂至為指身體又身體之本質。如此在此語之解脫明顯得見出變遷之跡象。</note>
+<note n="0072007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0072007">妻女為女人普行沙門之略。夫則為普行沙門之略。</note>
+<note n="0072008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0072008">「限欲飲」可譯為至飽。</note>
+<note n="0073009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0073009">註譯一、二一頁有 Parijiṇṇā（老、朽）。德譯一、一四頁參照。</note>
+<note n="0076010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076010">硬或軟食物，可譯為嚼食或噉食。</note>
+<note n="0076011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076011">「身體為健耶，（所得之）飲食足以繫命耶」可譯為起居安否，身體安泰耶？</note>
+<note n="0076012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076012">「我七年之間，在血壺之中」原文雖在後有，為明其意義先行譯出。</note>
+<note n="0077013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0077013">Compare: Cullavagga VII, 5 PP, 183-184; Jataka 10 Vol. I. P. 140，佛本行經五十九卷（大正藏、三卷九二四頁），撰集百緣經九卷、八九（大正藏、四卷二四九頁）參照。</note>
+<note n="0082001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082001">增一阿含九卷慚愧品（大正藏、二卷五九一頁），出曜經二十四卷（大正藏、二卷七三九～七四〇頁），佛本行經五十七卷（大正藏、三卷九一五～九一六頁）參照。</note>
+<note n="0083002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083002">「否、大德！」之本文雖為 evaṁ bhante 對否定之問從和文之例而譯。（應作唯然，暹羅本亦作唯然）。</note>
+<note n="0089003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0089003">增一阿含三卷弟子品（大正藏、二卷五五八頁）一部參照。</note>
+<note n="0090004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0090004">梭之原語在協會本雖有 vāsala 而可為暹羅本之 tasala。</note>
+<note n="0092005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0092005">「某者如次」亦可為某者等如是。今為使易解如是譯之。</note>
+<note n="0093006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0093006">瑜伽師地論十九卷偈（大正藏、三十卷三八五頁）參照。</note>
+<note n="0093007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0093007">佛本行經三十二卷（大正藏、三卷八〇五頁）參照。</note>
+<note n="0094008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0094008">在協會本意難通。仍從暹羅本。</note>
+<note n="0094009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0094009">暹羅本脚註，在本經註釋二一五頁有「不喜非有」。</note>
+<note n="0096001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0096001">中阿含十卷彌醯經（大正藏、一卷四九一頁），Compare: A. N. IX, 3, Vol. IV PP. 350-359。</note>
+<note n="0096002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0096002">「今正思為善時」可譯為今正思為適時。</note>
+<note n="0097003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0097003">三惡不善之覺即欲覺、恚覺、害覺，亦可譯為如漢譯三惡不善之念即欲念、恚念與害念。</note>
+<note n="0099004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0099004">「知足之話」「遠離之話」之原語 Santutthikathā, Pavivekadatha 底本雖無，依暹羅本而補足。</note>
+<note n="0099005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0099005">數息觀之原語 ānāpānasati 若按文字譯之為出息入息念。</note>
+<note n="0101006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0101006">Compare: Dhammapada 42 P. 6。</note>
+<note n="0101007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0101007">雜阿含五十卷（大正藏、二卷三六七頁），別譯雜阿含十五卷（大正藏、二卷四八五頁），增一阿含四十五卷不善品（大正藏、二卷七九三頁）參照。</note>
+<note n="0102008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0102008">「擊」之原語 āsādeti 存有使辱之意。</note>
+<note n="0103009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0103009">Compare: Theragātha V, 191, P. 25 前記雜阿含、別譯雜阿含參照。</note>
+<note n="0103010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0103010">MV, X, II, 6-7 PP. 352-353. 五分律二十四卷（大正藏、二卷一六〇頁）參照。</note>
+<note n="0103011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0103011">「煩」之原語 ākiṇṇa 此處亦可譯為被圍繞。</note>
+<note n="0104012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0104012">「貴象」之原語 hatthināga 亦可譯為大象。</note>
+<note n="0105013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0105013">「優者」nāga 指佛。</note>
+<note n="0105014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0105014">Compare: Dhammapada V. 185, P. 27; D. N. XIV Mahāpadāna Sutta Vol. II. PP. 49-50 法句經述佛品（大正藏、四卷五六七頁）參照。</note>
+<note n="0106015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0106015">「寂默」之原語 mona 亦可譯為智。</note>
+<note n="0106016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0106016">義足經須陀利經三卷（大正藏、四卷一七六頁），六度集經五卷（大正藏、三卷三〇頁）參照。</note>
+<note n="0107017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0107017">「男子所為事」之原語 Purisakicea 在註釋二六〇頁譯有 methuna Paṭisevana。此即為媱行。</note>
+<note n="0108018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0108018">Compare: Suttanipāta 641, P. 127; Dhammapata 306, P. 44; Itivittaka48. P. 42. 法句經地獄品（大正藏、四卷五七〇頁）參照。</note>
+<note n="0108019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0108019">前記義足經參照。</note>
+<note n="0108020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0108020">「以矢」之原語 Sarehi 在底本雖無有，採用註釋二六三頁。前記義足經譯為箭。</note>
+<note n="0109021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0109021">「法、律」dhammavinaya 為教之意。以下同斷。</note>
+<note n="0109022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0109022">「生命若無苦」為生而不苦之意。</note>
+<note n="0110023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0110023">「支柱」為渴愛之意。</note>
+<note n="0112001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0112001">Compare: S. N. III, 18 Mallikā Vol. I. P. 75。</note>
+<note n="0113002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0113002">「勝鬘」之原名音譯 Mallikā 可為末利。</note>
+<note n="0114003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0114003">佛本行集經十一卷（大正藏、三卷七〇一頁），眾許摩訶帝經三卷（大正藏、三卷九四〇頁），過去現在因果經一卷（大正藏、三卷六二七頁）等參照。</note>
+<note n="0114004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0114004">Compare: S. N. XI, 2, 4. Daliddo Vol. I. PP, 231-232. 雜阿含四十六卷（大正藏、二卷三三三頁），別譯雜阿含三卷（大正藏、二卷三九〇頁）一部參照。</note>
+<note n="0115005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0115005">Compare: S. N. I. VI, II, I Tathāgatena vutta I, vol, P. 423, MV I, 6. 29 P. 11。</note>
+<note n="0117006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0117006">Compare: Cv. IX, 1-2 PP. 238-240; A. N. XIX Vol. IV PP. 197-204; A. N. XX Vol. IV PP. 204-208. 增一阿含三十七卷八難品（四）（大正藏、二卷七五二～七五三頁），增一阿含四十四卷十不善品（二）（大正藏、二卷七八六頁），中阿含八卷修羅經（大正藏、一卷四七五～四七七頁），中阿含九卷瞻波經（大正藏、一卷四七八～四七九頁），中阿含二恒永經（大正藏、一卷八一七頁），法海經（大正藏、一卷八一八頁），海八德經（大正藏、一卷八一九頁），五分律二十八卷（大正藏、二二卷一八〇～一八一頁），四分律三十六卷（大正藏、二二卷八二四～八二五頁），十誦律三十三卷（大正藏、二三卷二三九～二四〇頁），摩訶僧祇律二十七卷（大正藏、二二卷四四七頁）等參照。</note>
+<note n="0121007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0121007">「名與族」之原語 nāmagotta 亦將可譯為姓名。</note>
+<note n="0122008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0122008">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
+<note n="0122009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0122009">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
+<note n="0122010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0122010">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
+<note n="0122011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0122011">在底本雖單獨只有 dhammo 在暹羅本則有 dhammavinayo。</note>
+<note n="0123012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0123012">在摩訶僧祇律五卷（大正藏、二二卷二六三頁）亦有。</note>
+<note n="0123013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0123013">Compare: MV. V. 13, 1-10 PP. 194-197. 五分律二十一卷（大正藏、二二卷八四五頁），十誦律二十五卷（大正藏、二三卷一八一頁），摩訶僧祇律二十三卷（大正藏、二三卷四一五～四一六頁）等參照。</note>
+<note n="0126014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0126014">在於 Suttanipāta。</note>
+<note n="0127015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0127015">Compare: Cv. VII, 3, 17 P. 198. 四分律四十六卷（大正藏、二二卷九〇九頁）類似之文，在佛傳律本甚多。</note>
+<note n="0128016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0128016">五分律二十五卷（大正藏、二二卷一六四頁）亦有。</note>
+<note n="0128017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0128017">Compare: Mv. X, 39. 149; Jātaka IX, 2. Vol. III. P. 488。</note>
+<note n="0131001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131001">Compare: D. N. XVI Mahāparinibbāna-Suttānta Vol. II. PP. 23-26; S. N. LI. 10 Cetiya Vol. V. PP. 258-262; A. N. VIII 70, 1-9 vol IV. PP. 308-311. 長阿含二卷遊行經（大正藏、一卷一五頁）參照。</note>
+<note n="0134002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0134002">「生命之素因」之原語 āyusaṅkhāra 為將生思想之意。</note>
+<note n="0134003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0134003">瑜伽師地論十九卷偈（大正藏、三十卷三八三頁）參照。</note>
+<note n="0134004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0134004">「平等」之原語 tula 在德英兩譯雖俱解為短之意，今不從彼。而在用 Sambhavaṁ 切斷而譯。</note>
+<note n="0135005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0135005">Compare: S. N. III, 2, I Jatilo Vol. PP. 77-79. 雜阿含四十二卷（大正藏、二卷三〇五～三〇六頁），別譯雜阿含四卷（大正藏、二卷三九九頁）參照。</note>
+<note n="0136006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0136006">「我之臣下」之原語 mamapurisa 在右所引用之漢譯為我家人、我所使人。</note>
+<note n="0136007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0136007">「徘徊者」之原語 ocaraka 得譯為放浪人、偵探、搜索者。W. Geiger 此譯為 die Spāher。Editschrift fiir Buddhismus 1928（3）S. 301。</note>
+<note n="0137008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0137008">Compare: Thera-gāthā V. 180 P. 23。</note>
+<note n="0137009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0137009">Compare: D. N. IX Paṭṭhapāda-Sutta Vol. I PP. 187-188; M. N. L XIII Cuḷa-mālunkya-Sutta vol; I. PP. 426-431. 長阿含十七卷布吒婆樓經（大正藏、一卷一一一頁），中阿含六十卷箭喻經（大正藏、一卷八〇四～八〇五頁）一部參照。[11]引用經亦有。</note>
+<note n="0138010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0138010">如來之原語 tathāgata 為有情生類之意。</note>
+<note n="0139011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0139011">長阿含十九卷世紀經（大正藏、一卷一二六～一二九頁），大樓炭經三卷（大正藏、一卷三三五頁），起世因本經五卷（大正藏、一卷三九〇頁）參照。</note>
+<note n="0143012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0143012">瑜伽師地論十九卷偈（大正藏、三十卷三八四頁）參照。尋之原語 vitakka 舊譯為覺。</note>
+<note n="0143013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0143013">「四軛」之原語 Catuyuga 與四流為同一內容。</note>
+<note n="0144014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0144014">用 anusikkino 切斷 yeva 為 yeca。暹羅本參照。</note>
+<note n="0151001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151001">Compare: S. N. XXI, 6 Bhaddi Vol. II P. 279. 雜阿含三十八卷（大正藏、二卷二七八頁），別譯雜阿含一卷（大正藏、二卷三七四頁）參照。</note>
+<note n="0151002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151002">對否定之同從和之例而譯。</note>
+<note n="0151003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151003">Compare: S. N. XLI. 5 Kānabhū Vol. IV P. 391 P. 202. 雜阿含二十一卷（大正藏、二卷一四九頁）參照。</note>
+<note n="0152004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152004">瑜伽師地論十九卷偈（大正藏、三十卷三八四頁）參照。</note>
+<note n="0152005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152005">「妄想」之原語 Papañea 可譯為戲論。</note>
+<note n="0155006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155006">「可能之相」之原語 bhabbarūpa 可譯為善相。</note>
+<note n="0157001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0157001">Compare: Itivuttaka 43 P. 37。</note>
+<note n="0158002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0158002">Compare: D. N. XVI Mahāparinibbāna-Suttanta Vol. II. PP. 41-43; 47-48. 長阿含三卷遊行經（大正藏、一卷一八～二〇頁）參照。</note>
+<note n="0158002" resp="#resp2" type="mod" target="#nkr_note_mod_0158002">Compare: D. N. XVI Mahāparinibbāna-Suttanta Vol. II. PP. 41-43; 47-48. 長阿含三卷遊行經（大正藏、一卷一八【南傳】，～二〇頁）參照。</note>
+<note n="0158003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0158003">註釋三九九頁 Sūkara-maddava 為豚之柔脂多生之肉與在大註疏（Mahāṭṭhakathā）中所說。然某者云 Sūkara-maddava 非為豚肉而為由豚所蹂躪之筍。又某者云為由豚所蹂處而生之「蛇傘」蕈。然又某者有謂 sūkara-maddava 為某種味美之物。然今在依長阿含三卷遊行經（大正藏、一卷一八頁）為旃檀樹耳（葺）。</note>
+<note n="0161004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161004">「在比丘眾之羣中被尊之師」之原文 Satthā purakkhato bhikkhugaṇassa majjhe 可謂為師在比丘眾之羣中為先立。</note>
+<note n="0161005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161005">四層者為四層之衣。</note>
+<note n="0162006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0162006">瑜伽師地論十九卷偈（大正藏、三十卷三八五頁）參照。</note>
+<note n="0162007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0162007">Compare: D. N. XVI. Mahāparinibbāna-Suttanta Vol. II. PP. 10-15, MV. VI, 28 PP. 226-230. 長阿含二卷遊行經（大正藏、一卷一二～一三頁）參照。</note>
+<note n="0162007" resp="#resp2" type="mod" target="#nkr_note_mod_0162007">Compare: D. N. XVI. Mahāparinibbāna-Suttanta Vol. II. PP. 10-15, MV. VI, 28 PP. 226-230. 長阿含二卷遊行經（大正藏、一卷一二【南傳】，～一三頁）參照。</note>
+<note n="0168008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0168008">「否、如是之事此應有」在本文雖為 no h'etaṁ 在對否定之問從和文之例如是譯。</note>
+<note n="0169009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169009">喜之原語 Piya 可譯為愛著。</note>
+<note n="0169010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169010">雜阿含三十八卷（大正藏、二卷二八〇頁），別譯雜阿含一卷（大正藏、二卷三七八頁）參照。</note>
+<note n="0170011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0170011">雜阿含三十八卷（大正藏、二卷二八〇頁），別譯雜阿含一卷（大正藏、二卷三七八頁）參照。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0073a0701" resp="#resp2" type="add" target="#nkr_note_add_0073a0701">鍾【CB】，鐘【南傳】</note>
-<note n="0097a1301" resp="#resp2" type="add" target="#nkr_note_add_0097a1301">議【CB】，義【南傳】</note>
-<note n="0099a0201" resp="#resp2" type="add" target="#nkr_note_add_0099a0201">話【CB】，詁【南傳】</note>
-<note n="0122a0101" resp="#resp2" type="add" target="#nkr_note_add_0122a0101">減【CB】，滅【南傳】</note>
-<note n="0127a1201" resp="#resp2" type="add" target="#nkr_note_add_0127a1201">鉢【CB】，城【南傳】</note>
-<note n="0156a1301" resp="#resp2" type="add" target="#nkr_note_add_0156a1301">無【CB】，有【南傳】</note>
-<note n="0158a1101" resp="#resp2" type="add" target="#nkr_note_add_0158a1101">茸【CB】，葺【南傳】</note>
-<note n="0158a1401" resp="#resp2" type="add" target="#nkr_note_add_0158a1401">茸【CB】，葺【南傳】</note>
-<note n="0158a1402" resp="#resp2" type="add" target="#nkr_note_add_0158a1402">唯【CB】，雖【南傳】</note>
-<note n="0159a0101" resp="#resp2" type="add" target="#nkr_note_add_0159a0101">茸【CB】，葺【南傳】</note>
-<note n="0159a0201" resp="#resp2" type="add" target="#nkr_note_add_0159a0201">茸【CB】，葺【南傳】</note>
-<note n="0159a0401" resp="#resp2" type="add" target="#nkr_note_add_0159a0401">茸【CB】，葺【南傳】</note>
-<note n="0159a1001" resp="#resp2" type="add" target="#nkr_note_add_0159a1001">茸【CB】，葺【南傳】</note>
+<note n="0073a0701" resp="#resp3" type="add" target="#nkr_note_add_0073a0701">鍾【CB】，鐘【南傳】</note>
+<note n="0097a1301" resp="#resp3" type="add" target="#nkr_note_add_0097a1301">議【CB】，義【南傳】</note>
+<note n="0099a0201" resp="#resp3" type="add" target="#nkr_note_add_0099a0201">話【CB】，詁【南傳】</note>
+<note n="0122a0101" resp="#resp3" type="add" target="#nkr_note_add_0122a0101">減【CB】，滅【南傳】</note>
+<note n="0127a1201" resp="#resp3" type="add" target="#nkr_note_add_0127a1201">鉢【CB】，城【南傳】</note>
+<note n="0156a1301" resp="#resp3" type="add" target="#nkr_note_add_0156a1301">無【CB】，有【南傳】</note>
+<note n="0158a1101" resp="#resp3" type="add" target="#nkr_note_add_0158a1101">茸【CB】，葺【南傳】</note>
+<note n="0158a1401" resp="#resp3" type="add" target="#nkr_note_add_0158a1401">茸【CB】，葺【南傳】</note>
+<note n="0158a1402" resp="#resp3" type="add" target="#nkr_note_add_0158a1402">唯【CB】，雖【南傳】</note>
+<note n="0159a0101" resp="#resp3" type="add" target="#nkr_note_add_0159a0101">茸【CB】，葺【南傳】</note>
+<note n="0159a0201" resp="#resp3" type="add" target="#nkr_note_add_0159a0201">茸【CB】，葺【南傳】</note>
+<note n="0159a0401" resp="#resp3" type="add" target="#nkr_note_add_0159a0401">茸【CB】，葺【南傳】</note>
+<note n="0159a1001" resp="#resp3" type="add" target="#nkr_note_add_0159a1001">茸【CB】，葺【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

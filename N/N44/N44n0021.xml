@@ -12,51 +12,65 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">44</idno>.<idno type="no">21</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 44, No. 21</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">所行藏經</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-11-07">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -688,77 +702,77 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0279a0701" to="#end0279a0701"><lem wit="#wit1" resp="#resp3">波</lem><rdg wit="#wit2">婆</rdg></app>
-<app from="#beg0303a0501" to="#end0303a0501"><lem wit="#wit1" resp="#resp3">波</lem><rdg wit="#wit2">婆</rdg></app>
-<app from="#beg0305a0501" to="#end0305a0501"><lem wit="#wit1" resp="#resp3">波</lem><rdg wit="#wit2">婆</rdg></app>
+<app from="#beg0279a0701" to="#end0279a0701"><lem wit="#wit.cbeta" resp="#resp4">波</lem><rdg wit="#wit.orig">婆</rdg></app>
+<app from="#beg0303a0501" to="#end0303a0501"><lem wit="#wit.cbeta" resp="#resp4">波</lem><rdg wit="#wit.orig">婆</rdg></app>
+<app from="#beg0305a0501" to="#end0305a0501"><lem wit="#wit.cbeta" resp="#resp4">波</lem><rdg wit="#wit.orig">婆</rdg></app>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0266001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266001">底本之 vivinakānane 不得譯，依在暹羅本有 vivanakānane 譯之。</note>
-<note n="0266002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266002">底本之 tadā maṁ 亦被想像為 tadā naṁ？在暹羅本亦有 tadā maṁ，且在 Jtm 與此相當之處有 tasya（= bodhisattvasya）tapaḥprakarṣāt pravisṛtena yasasāsamāvarjitahṛdayaḥ śakro devendrḥ 之故 maṁ 應訂正為 me。</note>
-<note n="0267003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0267003">底本之 khetta 應為 puññakkhetta 之略，其次付以 * 號者亦然。</note>
-<note n="0267004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0267004">底本 muddikāmo 誤，暹羅本有 muddakāmo。次之有 * 者底本亦為 muddito 暹羅本有 muddato。</note>
-<note n="0268005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0268005">me yācakam anupatte（暹羅本 anuppatte）之 me 為於格，見 Pis-chala 415。</note>
-<note n="0268006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0268006">底本之 anucchava 與 anucchavika 同義。</note>
-<note n="0269007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269007">在底本雖有 Kopāhanā mudusabhā，在暹羅本則有 Ko pākana mudū subhā，依此譯之。</note>
-<note n="0269008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269008">底本之 ratti 在暹羅本則有 rattiṁ，此為正。</note>
-<note n="0269009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269009">底本之 yadicchikaṁ 應倣照暹羅本之 yad icchakaṁ。</note>
-<note n="0269010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269010">底本之 na pāhaṁ 在暹羅本寫為一字之故應成為 'n apāhaṁ（na aprārthaṁ）之意。</note>
-<note n="0269011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269011">vajjaṁ 在暹羅本有 vejjaṁ，通於此意。</note>
-<note n="0269012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269012">ūnadhanaṁ 雖得譯為少財，可見註釋為有財。</note>
-<note n="0270013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0270013">在底本有 niccayo 為 nicayo 之誤。暹羅本亦作後者。</note>
-<note n="0271014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0271014">在底本有（nikkhanto）yaññavāṭako，在暹羅本有 yaññavā tato 共如為誤。恐應成為 yaññavāṭato。</note>
-<note n="0272015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272015">vimaṁsayāmi 由 Skt. vimarsayāmi→vimassayāmi 更為使變化者。</note>
-<note n="0272016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272016">為師威王之醫師。在暹羅本有 Sivaka。</note>
-<note n="0272017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272017">在底本雖有 dantayi，在暹羅本則有 dandhayi，依於此。</note>
-<note n="0275018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275018">在底本 ubbidhā，在暹羅本有 ubbhiggā，應成為 ubbiddhā（= Sktụdviddhā）之誤。</note>
-<note n="0276019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0276019">底本之 cubho 見 'C ubho。</note>
-<note n="0277020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0277020">底本之 Pāto 成為梵語之 prātas。</note>
-<note n="0279021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0279021">底本 nahāru 在暹羅本有 nhāru。</note>
-<note n="0279022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0279022">在底本雖有 idaṁ pāramī，在暹羅本有 imaṁ pārami。</note>
-<note n="0282001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0282001">在底本雖有 ahosi，取暹羅本之 ahosiṁ。</note>
-<note n="0282002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0282002">底本之 ālaka 不見於辭典，在 Hemacandra; Desīnāmamālā I, 73 有 āla 之語附以 alpasrotas 之意。今依此在暹羅本有 āḷhake 此亦應成為誤。</note>
-<note n="0283003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0283003">sarīrakicca 普通雖為火葬之意，在此處不適。返回原意譯之。</note>
-<note n="0285004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285004">底本之 kapi māgantvā 應為 kapi-m-āgantvā。</note>
-<note n="0285005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285005">mutteti 是 mūrtayati（Skt）。</note>
-<note n="0286006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0286006">底本之 gahareyyum 不正確，於暹羅本有 garaheyyu 者為宜。</note>
-<note n="0287007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0287007">底本暹羅本雖皆為 tassa，不僅成為多餘之字不得譯，應改為 taṁ。</note>
-<note n="0287008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0287008">dubbhi 成為 dambhin（Skt）成為稀有之變化。</note>
-<note n="0287009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0287009">底本之 nimmini 在暹羅本有 nimminiṁ。</note>
-<note n="0287010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0287010">tiṭṭha te so mahārāja 之 te 為利害為格，so 第二人稱從屬為例譯之。</note>
-<note n="0288011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288011">在底本雖有 dhammadhammadevaputtacariyaṁ，依在暹羅本有 dhammadevaputtacariyaṁ。</note>
-<note n="0288012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288012">底本之 dasa pāvake 為誤，在暹羅本有 dasa pāpake。</note>
-<note n="0288013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288013">底本之 samimhā 為 sāmyati 之 I. Pl. iṣ aor.（cfḷabhimhā Geiger, Pāli Literatur undSprache 166）依荻原雲來博士之教示。</note>
-<note n="0289014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0289014">底本之 bakkho 為誤，在暹羅本有 bhakkho 方為正。Skt. bhakṣyo 相當。</note>
-<note n="0289015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0289015">底本之 bhijjissati 在暹羅本有 bhijjīssatī。metre 之關係上後者為正。</note>
-<note n="0289016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0289016">顯示親愛之意。</note>
-<note n="0290017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0290017">底本之 niyantaṁ 在暹羅本有 niyyantaṁ，兩者皆可。</note>
-<note n="0293001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0293001">底本之 patikaro 在暹羅本有 paṭikaro，此在普通梵語而成為 prat ikaro，於此不能譯。此為 r 與 I 混同而被視 i 和 t 為同一故而成為 Parikara→Palikara→Paḷikara→Patikara？</note>
-<note n="0293002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0293002">底本之 mālāvacchañ ca 在暹羅本有 mālāgacchañ ca（摩羅之叢），ārāma 非為於格，又有 ca 故，並非為「在園植摩羅樹」之意，作園而用 ropayati 之語。</note>
-<note n="0294003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0294003">底本之 kacci te bhante khamanīyaṁ 在暹羅本有 kacci khamanīyaṁ tava。</note>
-<note n="0294004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0294004">底本之 nāsito 在暹羅本有 nāsiyo。依此視為與 nāsyo（Skt）相當者。</note>
-<note n="0294005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0294005">sā gati jaṭila-hiḷitā 之最後之合成語可視為鬼語位置變遷而如此譯之。</note>
-<note n="0296006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0296006">底本之 ajāy, ahaṁ 在暹羅本有 ajāyi'haṁ。</note>
-<note n="0297007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0297007">在暹羅本為 mūgapakkha-cariya。</note>
-<note n="0297008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0297008">vutāya 應被用為能動意義之過去分詞，此語雖無用例，不然則以意義不通而如是譯之。</note>
-<note n="0298009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0298009">成為一種之惡兆。</note>
-<note n="0299010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0299010">底本之 orapāraṁ 在暹羅本有 orā pāraṁ，應為河之上游與下游之意。</note>
-<note n="0299011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0299011">底本之 vaṭṭāpoṭaka 在暹羅本有 vaṭṭakapotaka，此語甚良。</note>
-<note n="0301012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301012">底本之 vicintayitvā 在暹羅本有 vicintayitvāna。</note>
-<note n="0301013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301013">底本之 addasa 在暹羅本有 addasaṁ。</note>
-<note n="0301014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301014">pamocesiṁ 被用為希求法之 aorist 之例。與 M-Vastu, I, P. 224, 10 praviśensuḥ 對照。</note>
-<note n="0302015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0302015">vaṭṭa 譯為輪雖為不良，依前後之關係可譯為球。</note>
-<note n="0302016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0302016">tyā 乃為吠陀之 tya 而與 te 相等。</note>
+<note n="0266001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266001">底本之 vivinakānane 不得譯，依在暹羅本有 vivanakānane 譯之。</note>
+<note n="0266002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266002">底本之 tadā maṁ 亦被想像為 tadā naṁ？在暹羅本亦有 tadā maṁ，且在 Jtm 與此相當之處有 tasya（= bodhisattvasya）tapaḥprakarṣāt pravisṛtena yasasāsamāvarjitahṛdayaḥ śakro devendrḥ 之故 maṁ 應訂正為 me。</note>
+<note n="0267003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0267003">底本之 khetta 應為 puññakkhetta 之略，其次付以 * 號者亦然。</note>
+<note n="0267004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0267004">底本 muddikāmo 誤，暹羅本有 muddakāmo。次之有 * 者底本亦為 muddito 暹羅本有 muddato。</note>
+<note n="0268005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0268005">me yācakam anupatte（暹羅本 anuppatte）之 me 為於格，見 Pis-chala 415。</note>
+<note n="0268006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0268006">底本之 anucchava 與 anucchavika 同義。</note>
+<note n="0269007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269007">在底本雖有 Kopāhanā mudusabhā，在暹羅本則有 Ko pākana mudū subhā，依此譯之。</note>
+<note n="0269008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269008">底本之 ratti 在暹羅本則有 rattiṁ，此為正。</note>
+<note n="0269009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269009">底本之 yadicchikaṁ 應倣照暹羅本之 yad icchakaṁ。</note>
+<note n="0269010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269010">底本之 na pāhaṁ 在暹羅本寫為一字之故應成為 'n apāhaṁ（na aprārthaṁ）之意。</note>
+<note n="0269011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269011">vajjaṁ 在暹羅本有 vejjaṁ，通於此意。</note>
+<note n="0269012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269012">ūnadhanaṁ 雖得譯為少財，可見註釋為有財。</note>
+<note n="0270013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0270013">在底本有 niccayo 為 nicayo 之誤。暹羅本亦作後者。</note>
+<note n="0271014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0271014">在底本有（nikkhanto）yaññavāṭako，在暹羅本有 yaññavā tato 共如為誤。恐應成為 yaññavāṭato。</note>
+<note n="0272015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272015">vimaṁsayāmi 由 Skt. vimarsayāmi→vimassayāmi 更為使變化者。</note>
+<note n="0272016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272016">為師威王之醫師。在暹羅本有 Sivaka。</note>
+<note n="0272017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272017">在底本雖有 dantayi，在暹羅本則有 dandhayi，依於此。</note>
+<note n="0275018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275018">在底本 ubbidhā，在暹羅本有 ubbhiggā，應成為 ubbiddhā（= Sktụdviddhā）之誤。</note>
+<note n="0276019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0276019">底本之 cubho 見 'C ubho。</note>
+<note n="0277020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0277020">底本之 Pāto 成為梵語之 prātas。</note>
+<note n="0279021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0279021">底本 nahāru 在暹羅本有 nhāru。</note>
+<note n="0279022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0279022">在底本雖有 idaṁ pāramī，在暹羅本有 imaṁ pārami。</note>
+<note n="0282001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0282001">在底本雖有 ahosi，取暹羅本之 ahosiṁ。</note>
+<note n="0282002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0282002">底本之 ālaka 不見於辭典，在 Hemacandra; Desīnāmamālā I, 73 有 āla 之語附以 alpasrotas 之意。今依此在暹羅本有 āḷhake 此亦應成為誤。</note>
+<note n="0283003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0283003">sarīrakicca 普通雖為火葬之意，在此處不適。返回原意譯之。</note>
+<note n="0285004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285004">底本之 kapi māgantvā 應為 kapi-m-āgantvā。</note>
+<note n="0285005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285005">mutteti 是 mūrtayati（Skt）。</note>
+<note n="0286006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0286006">底本之 gahareyyum 不正確，於暹羅本有 garaheyyu 者為宜。</note>
+<note n="0287007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0287007">底本暹羅本雖皆為 tassa，不僅成為多餘之字不得譯，應改為 taṁ。</note>
+<note n="0287008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0287008">dubbhi 成為 dambhin（Skt）成為稀有之變化。</note>
+<note n="0287009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0287009">底本之 nimmini 在暹羅本有 nimminiṁ。</note>
+<note n="0287010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0287010">tiṭṭha te so mahārāja 之 te 為利害為格，so 第二人稱從屬為例譯之。</note>
+<note n="0288011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288011">在底本雖有 dhammadhammadevaputtacariyaṁ，依在暹羅本有 dhammadevaputtacariyaṁ。</note>
+<note n="0288012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288012">底本之 dasa pāvake 為誤，在暹羅本有 dasa pāpake。</note>
+<note n="0288013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288013">底本之 samimhā 為 sāmyati 之 I. Pl. iṣ aor.（cfḷabhimhā Geiger, Pāli Literatur undSprache 166）依荻原雲來博士之教示。</note>
+<note n="0289014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0289014">底本之 bakkho 為誤，在暹羅本有 bhakkho 方為正。Skt. bhakṣyo 相當。</note>
+<note n="0289015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0289015">底本之 bhijjissati 在暹羅本有 bhijjīssatī。metre 之關係上後者為正。</note>
+<note n="0289016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0289016">顯示親愛之意。</note>
+<note n="0290017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0290017">底本之 niyantaṁ 在暹羅本有 niyyantaṁ，兩者皆可。</note>
+<note n="0293001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0293001">底本之 patikaro 在暹羅本有 paṭikaro，此在普通梵語而成為 prat ikaro，於此不能譯。此為 r 與 I 混同而被視 i 和 t 為同一故而成為 Parikara→Palikara→Paḷikara→Patikara？</note>
+<note n="0293002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0293002">底本之 mālāvacchañ ca 在暹羅本有 mālāgacchañ ca（摩羅之叢），ārāma 非為於格，又有 ca 故，並非為「在園植摩羅樹」之意，作園而用 ropayati 之語。</note>
+<note n="0294003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0294003">底本之 kacci te bhante khamanīyaṁ 在暹羅本有 kacci khamanīyaṁ tava。</note>
+<note n="0294004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0294004">底本之 nāsito 在暹羅本有 nāsiyo。依此視為與 nāsyo（Skt）相當者。</note>
+<note n="0294005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0294005">sā gati jaṭila-hiḷitā 之最後之合成語可視為鬼語位置變遷而如此譯之。</note>
+<note n="0296006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0296006">底本之 ajāy, ahaṁ 在暹羅本有 ajāyi'haṁ。</note>
+<note n="0297007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0297007">在暹羅本為 mūgapakkha-cariya。</note>
+<note n="0297008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0297008">vutāya 應被用為能動意義之過去分詞，此語雖無用例，不然則以意義不通而如是譯之。</note>
+<note n="0298009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0298009">成為一種之惡兆。</note>
+<note n="0299010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0299010">底本之 orapāraṁ 在暹羅本有 orā pāraṁ，應為河之上游與下游之意。</note>
+<note n="0299011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0299011">底本之 vaṭṭāpoṭaka 在暹羅本有 vaṭṭakapotaka，此語甚良。</note>
+<note n="0301012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301012">底本之 vicintayitvā 在暹羅本有 vicintayitvāna。</note>
+<note n="0301013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301013">底本之 addasa 在暹羅本有 addasaṁ。</note>
+<note n="0301014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301014">pamocesiṁ 被用為希求法之 aorist 之例。與 M-Vastu, I, P. 224, 10 praviśensuḥ 對照。</note>
+<note n="0302015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0302015">vaṭṭa 譯為輪雖為不良，依前後之關係可譯為球。</note>
+<note n="0302016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0302016">tyā 乃為吠陀之 tya 而與 te 相等。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0279a0701" resp="#resp2" type="add" target="#nkr_note_add_0279a0701">波【CB】，婆【南傳】</note>
-<note n="0303a0501" resp="#resp2" type="add" target="#nkr_note_add_0303a0501">波【CB】，婆【南傳】</note>
-<note n="0305a0501" resp="#resp2" type="add" target="#nkr_note_add_0305a0501">波【CB】，婆【南傳】</note>
+<note n="0279a0701" resp="#resp3" type="add" target="#nkr_note_add_0279a0701">波【CB】，婆【南傳】</note>
+<note n="0303a0501" resp="#resp3" type="add" target="#nkr_note_add_0303a0501">波【CB】，婆【南傳】</note>
+<note n="0305a0501" resp="#resp3" type="add" target="#nkr_note_add_0305a0501">波【CB】，婆【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

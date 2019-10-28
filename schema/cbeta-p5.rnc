@@ -336,8 +336,6 @@ att.divLike.attribute.part =
   }?
 att.editLike.attributes =
   att.dimensions.attributes,
-  att.editLike.attribute.cert,
-  att.editLike.attribute.resp,
   att.editLike.attribute.evidence,
   att.editLike.attribute.source
 att.editLike.attribute.cert =
@@ -381,6 +379,7 @@ att.editLike.attribute.source =
 att.global.attributes =
   att.global.linking.attributes,
   att.global.facs.attributes,
+  att.global.responsibility.attributes,
   att.global.attribute.xmlid,
   att.global.attribute.n,
   att.global.attribute.xmllang,
@@ -427,6 +426,36 @@ att.global.attribute.xmlbase =
   ##       resolve relative URI references into absolute URI
   ##       references.
   attribute xml:base { xsd:anyURI }?
+
+
+att.global.responsibility.attributes =
+  att.global.responsibility.attribute.cert,
+  att.global.responsibility.attribute.resp
+
+att.global.responsibility.attribute.cert =
+  ## (certainty) signifies the degree of certainty associated with the intervention or interpretation.
+  attribute cert {
+    xsd:double
+    | (
+       ##
+       "high"
+       | 
+         ##
+         "medium"
+       | 
+         ##
+         "low"
+       | 
+         ##
+         "unknown")
+  }?
+
+att.global.responsibility.attribute.resp =
+  ## (responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.
+  attribute resp {
+    list { xsd:anyURI+ }
+  }?
+
 att.handFeatures.attributes =
   att.handFeatures.attribute.scribe,
   att.handFeatures.attribute.script,
@@ -1731,10 +1760,7 @@ tei_note =
     attribute ns1:provider { text }?,
     attribute type { xsd:Name }?,
     attribute subtype { xsd:Name }?,
-    
-    ## (responsible party) indicates who is responsible for the annotation: author, editor, translator, etc.
-    attribute resp { xsd:anyURI }?,
-    
+        
     ## indicates whether the copy text shows the exact place of reference for the note.
     [ a:defaultValue = "true" ] attribute anchored { xsd:boolean }?,
     
@@ -2410,7 +2436,7 @@ tei_idno =
   ## (identifying number) supplies any standard or non-standard number used to identify a
   ## bibliographic item.
   element idno {
-    text,
+    (text | tei_model.gLike | tei_idno)*,
     att.global.attributes,
     
     ## categorizes the number, for example as an ISBN or other
@@ -2553,6 +2579,8 @@ tei_model.editorialDeclPart =
   | tei_segmentation
   | tei_stdVals
   | tei_interpretation
+  | tei_punctuation
+
 tei_editorialDecl =
   
   ## (editorial practice declaration) provides details of editorial principles and practices applied
@@ -4124,11 +4152,7 @@ tei_witDetail =
     attribute target {
       list { xsd:anyURI+ }
     },
-    
-    ## (responsible party) identifies the individual responsible for  identifying the
-    ## witness
-    attribute resp { xsd:anyURI }?,
-    
+        
     ## (witnesses) indicates the sigil or sigla for the witnesses to which the
     ## detail refers.
     attribute wit {
@@ -4249,8 +4273,8 @@ att.textCritical.attributes =
   att.textCritical.attribute.type,
   att.textCritical.attribute.cause,
   att.textCritical.attribute.varSeq,
-  att.textCritical.attribute.resp,
   att.textCritical.attribute.hand
+
 att.textCritical.attribute.wit =
   
   ## (witness or witnesses) contains a list of one or more pointers indicating the witnesses
@@ -4504,9 +4528,6 @@ tei_handShift =
     ## identifies the new hand.
     attribute new { xsd:anyURI }?,
     
-    ## signifies the editor or transcriber responsible for identifying
-    ## the change of hand.
-    attribute resp { xsd:anyURI }?,
     empty
   }
 tei_am =
@@ -4549,9 +4570,6 @@ tei_space =
         "vertical"
     }?,
     
-    ## (responsible party) indicates the individual responsible for identifying and measuring
-    ## the space.
-    attribute resp { xsd:anyURI }?,
     empty
   }
 tei_subst =
@@ -6262,13 +6280,8 @@ tei_t =
     tei_yin*,
     
     ##
-    attribute resp { xsd:anyURI }?,
-    
-    ##
     attribute place { text }?,
     
-    ## describes the certainty of the assignment
-    attribute cert { text }?,
     empty
   }
 tei_fan =
@@ -6366,4 +6379,36 @@ tei_repository =
 		empty
 	}
 
+tei_punctuation =
+  ## specifies editorial practice adopted with respect to punctuation marks in the original. [2.3.3. The Editorial Practices Declaration 3.2. Treatment of Punctuation]
+  element punctuation {
+    tei_model.pLike*,
+    att.declarable.attributes,
+    att.global.attributes,
+    
+    ## indicates whether or not punctation marks have been retained as content within the text.
+    attribute marks {
+      
+      ## no punctuation marks have been retained
+      "none"
+      | 
+        ## some punctuation marks have been retained
+        "some"
+      | 
+        ## all punctuation marks have been retained
+        "all"
+    }?,
+    
+    ## indicates the positioning of punctuation marks that are associated with marked up text as being encoded within the element surrounding the text or immediately before or after it.
+    attribute placement {
+      
+      ## punctuation marks found at the start or end of a marked up text component are included within its surrounding element;
+      "internal"
+      | 
+        ## punctuation marks found at the start or end of a marked up text component appear immediately before or after the surrounding element
+        "external"
+    }?,
+    empty
+  }
+  
 start = tei_TEI

@@ -12,87 +12,101 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>37卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">65</idno>.<idno type="no">33</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 65, No. 33</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">大王統史</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00145">
-	<charName>CBETA CHARACTER CB00145</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[少/兔]</value>
-	</charProp>
-	<mapping type="unicode">U+3779</mapping>
-	<mapping cb:dec="983185" type="PUA">U+F0091</mapping>
-</char>
-<char xml:id="CB00501">
-	<charName>CBETA CHARACTER CB00501</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[馬*犬]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>馱</value>
-	</charProp>
-	<mapping type="unicode">U+4B7E</mapping>
-	<mapping cb:dec="983541" type="PUA">U+F01F5</mapping>
-</char>
-<char xml:id="CB22010">
-	<charName>CBETA CHARACTER CB22010</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[癩-負+頁]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>癩</value>
-	</charProp>
-	<mapping cb:dec="1005050" type="PUA">U+F55FA</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00145">
+				<charName>CBETA CHARACTER CB00145</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[少/兔]</value>
+				</charProp>
+				<mapping type="unicode">U+3779</mapping>
+				<mapping cb:dec="983185" type="PUA">U+F0091</mapping>
+			</char>
+			<char xml:id="CB00501">
+				<charName>CBETA CHARACTER CB00501</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[馬*犬]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>馱</value>
+				</charProp>
+				<mapping type="unicode">U+4B7E</mapping>
+				<mapping cb:dec="983541" type="PUA">U+F01F5</mapping>
+			</char>
+			<char xml:id="CB22010">
+				<charName>CBETA CHARACTER CB22010</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[癩-負+頁]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>癩</value>
+				</charProp>
+				<mapping cb:dec="1005050" type="PUA">U+F55FA</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-12-12">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -3553,282 +3567,282 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0208a0701" to="#end0208a0701"><lem wit="#wit1" resp="#resp3">刺</lem><rdg wit="#wit2">剌</rdg></app>
-<app from="#beg0211a0601" to="#end0211a0601"><lem wit="#wit1" resp="#resp3">豐</lem><rdg wit="#wit2">豊</rdg></app>
-<app from="#beg0212a1201" to="#end0212a1201"><lem wit="#wit1" resp="#resp3">刺</lem><rdg wit="#wit2">剌</rdg></app>
-<app from="#beg0229a0601" to="#end0229a0601"><lem wit="#wit1" resp="#resp3">撒</lem><rdg wit="#wit2">撤</rdg></app>
-<app from="#beg0230a0701" to="#end0230a0701"><lem wit="#wit1" resp="#resp3">撒</lem><rdg wit="#wit2">撤</rdg></app>
-<app from="#beg0233a0901" to="#end0233a0901"><lem wit="#wit1" resp="#resp3">豐</lem><rdg wit="#wit2">豊</rdg></app>
-<app from="#beg0282a0401" to="#end0282a0401"><lem wit="#wit1" resp="#resp3">己</lem><rdg wit="#wit2">已</rdg></app>
-<app from="#beg0283a0201" to="#end0283a0201"><lem wit="#wit1" resp="#resp3">己</lem><rdg wit="#wit2">已</rdg></app>
-<app from="#beg0284a1301" to="#end0284a1301"><lem wit="#wit1" resp="#resp3">榻</lem><rdg wit="#wit2">塌</rdg></app>
-<app from="#beg0285a1401" to="#end0285a1401"><lem wit="#wit1" resp="#resp3">己</lem><rdg wit="#wit2">已</rdg></app>
-<app from="#beg0291a0701" to="#end0291a0701"><lem wit="#wit1" resp="#resp3">刺</lem><rdg wit="#wit2">剌</rdg></app>
-<app from="#beg0291a1101" to="#end0291a1101"><lem wit="#wit1" resp="#resp3">鳴</lem><rdg wit="#wit2">嗚</rdg></app>
-<app from="#beg0297a1101" to="#end0297a1101"><lem wit="#wit1" resp="#resp3">遣</lem><rdg wit="#wit2">遺</rdg></app>
-<app from="#beg0302a0701" to="#end0302a0701"><lem wit="#wit1" resp="#resp3">刺</lem><rdg wit="#wit2">剌</rdg></app>
-<app from="#beg0330a0201" to="#end0330a0201"><lem wit="#wit1" resp="#resp3">摶</lem><rdg wit="#wit2">搏</rdg></app>
-<app from="#beg0343a0501" to="#end0343a0501"><lem wit="#wit1" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit2">[01]</rdg></app>
-<app from="#beg0352a1301" to="#end0352a1301"><lem wit="#wit1" resp="#resp3">池</lem><rdg wit="#wit2">地</rdg></app>
-<app from="#beg0355a1401" to="#end0355a1401"><lem wit="#wit1" resp="#resp3">豐</lem><rdg wit="#wit2">豊</rdg></app>
-<app from="#beg0367a0601" to="#end0367a0601"><lem wit="#wit1" resp="#resp3">捕</lem><rdg wit="#wit2">補</rdg></app>
+<app from="#beg0208a0701" to="#end0208a0701"><lem wit="#wit.cbeta" resp="#resp4">刺</lem><rdg wit="#wit.orig">剌</rdg></app>
+<app from="#beg0211a0601" to="#end0211a0601"><lem wit="#wit.cbeta" resp="#resp4">豐</lem><rdg wit="#wit.orig">豊</rdg></app>
+<app from="#beg0212a1201" to="#end0212a1201"><lem wit="#wit.cbeta" resp="#resp4">刺</lem><rdg wit="#wit.orig">剌</rdg></app>
+<app from="#beg0229a0601" to="#end0229a0601"><lem wit="#wit.cbeta" resp="#resp4">撒</lem><rdg wit="#wit.orig">撤</rdg></app>
+<app from="#beg0230a0701" to="#end0230a0701"><lem wit="#wit.cbeta" resp="#resp4">撒</lem><rdg wit="#wit.orig">撤</rdg></app>
+<app from="#beg0233a0901" to="#end0233a0901"><lem wit="#wit.cbeta" resp="#resp4">豐</lem><rdg wit="#wit.orig">豊</rdg></app>
+<app from="#beg0282a0401" to="#end0282a0401"><lem wit="#wit.cbeta" resp="#resp4">己</lem><rdg wit="#wit.orig">已</rdg></app>
+<app from="#beg0283a0201" to="#end0283a0201"><lem wit="#wit.cbeta" resp="#resp4">己</lem><rdg wit="#wit.orig">已</rdg></app>
+<app from="#beg0284a1301" to="#end0284a1301"><lem wit="#wit.cbeta" resp="#resp4">榻</lem><rdg wit="#wit.orig">塌</rdg></app>
+<app from="#beg0285a1401" to="#end0285a1401"><lem wit="#wit.cbeta" resp="#resp4">己</lem><rdg wit="#wit.orig">已</rdg></app>
+<app from="#beg0291a0701" to="#end0291a0701"><lem wit="#wit.cbeta" resp="#resp4">刺</lem><rdg wit="#wit.orig">剌</rdg></app>
+<app from="#beg0291a1101" to="#end0291a1101"><lem wit="#wit.cbeta" resp="#resp4">鳴</lem><rdg wit="#wit.orig">嗚</rdg></app>
+<app from="#beg0297a1101" to="#end0297a1101"><lem wit="#wit.cbeta" resp="#resp4">遣</lem><rdg wit="#wit.orig">遺</rdg></app>
+<app from="#beg0302a0701" to="#end0302a0701"><lem wit="#wit.cbeta" resp="#resp4">刺</lem><rdg wit="#wit.orig">剌</rdg></app>
+<app from="#beg0330a0201" to="#end0330a0201"><lem wit="#wit.cbeta" resp="#resp4">摶</lem><rdg wit="#wit.orig">搏</rdg></app>
+<app from="#beg0343a0501" to="#end0343a0501"><lem wit="#wit.cbeta" resp="#resp4"><space quantity="0"/></lem><rdg wit="#wit.orig">[01]</rdg></app>
+<app from="#beg0352a1301" to="#end0352a1301"><lem wit="#wit.cbeta" resp="#resp4">池</lem><rdg wit="#wit.orig">地</rdg></app>
+<app from="#beg0355a1401" to="#end0355a1401"><lem wit="#wit.cbeta" resp="#resp4">豐</lem><rdg wit="#wit.orig">豊</rdg></app>
+<app from="#beg0367a0601" to="#end0367a0601"><lem wit="#wit.cbeta" resp="#resp4">捕</lem><rdg wit="#wit.orig">補</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0174002" resp="#resp2" type="mod" target="#nkr_note_mod_0174002">不遠死於梵天界。</note>
+<note n="0174002" resp="#resp3" type="mod" target="#nkr_note_mod_0174002">不遠死於梵天界。</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0148001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148001">當為印度曆之第二月。</note>
-<note n="0148002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148002">作三十名友人之童子等一團體稱跋陀羅〔善賢〕組。</note>
-<note n="0148003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148003">有優樓頻羅、那提、伽耶之三兄弟迦葉導一千之結鬘行者。</note>
-<note n="0148004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148004">印度曆之第一月。</note>
-<note n="0148005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148005">今之錫蘭島。</note>
-<note n="0150006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150006">協會本為鬱達求羅波耶。</note>
-<note n="0150007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150007">印度曆之第一月。</note>
-<note n="0151008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151008">註為水生類、陸生類、及為龍蛇之類。</note>
-<note n="0152009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152009">或為高價。</note>
-<note n="0153010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0153010">以下總就現在而言。即今之摩訶眉伽林園所立之意。</note>
-<note n="0154001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0154001">Mahāsammatarāja 譯為世界最初之王，卡許摩訶，卡所許，大平等、大同意、民主、大王等。</note>
-<note n="0154002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0154002">卡魯利耶尼與瓦羅卡魯利耶尼。</note>
-<note n="0154003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0154003">協會本，為卡魯耶那迦。</note>
-<note n="0155004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155004">梵語 Ikṣvāku 懿摩〔師〕，伊摩，甘庶、為釋迦族之祖次摩訶三摩多為重要之王。</note>
-<note n="0155005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155005">釋尊之祖父。星賀賀努。</note>
-<note n="0155006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155006">釋迦族之分族拘利族之都城。</note>
-<note n="0155007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155007">協會本，為安迦那。</note>
-<note n="0156008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0156008">師子頰有四王八子，他書不出此名。</note>
-<note n="0159001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0159001">印度曆之第四月。</note>
-<note n="0160002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0160002">成阿羅漢果。</note>
-<note n="0160003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0160003">於夜明臥於臥牀，頭安枕之剎那而得阿羅漢果故皆非行住坐臥任何之一。</note>
-<note n="0161004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161004">依提伽之解釋。</note>
-<note n="0162001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0162001">無妨為適當。</note>
-<note n="0163002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163002">行此羯磨者於信者之面前應取消謝罪言予之言是非法。</note>
-<note n="0163003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163003">akhila，無障礙，除煩惱邪障之自由人，阿羅漢等。</note>
-<note n="0166004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0166004">法、義、辭、樂說此四者謂無礙智。</note>
-<note n="0169001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169001">提伽本之二七-二八之間插入次之二偈。但此二偈之一語亦未加註解之點察看，或想非後日之竄入耶？（一）於彼都有死處之鹿豬鳥類，行大斷食而彼等自行死去。（二）此處牛等導欄伴來豹等，而護侍鹿與豬之畑池。</note>
-<note n="0169002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169002">以下之偈號數有二之齟齬。</note>
-<note n="0172003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0172003">法句經之不放逸品。</note>
-<note n="0174001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0174001">於錫蘭本九七上半偈，攝於「阿育王之轉教」章中。然考前後之關係雖為各半偈故見無分之要，隨協會本讓於次章。</note>
-<note n="0174002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0174002">不遠死於於梵天界。</note>
-<note n="0175003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0175003">謂未參與第二結集事。</note>
-<note n="0177004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0177004">婆羅門謂再生者。</note>
-<note n="0178005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0178005">於錫蘭本一五四偈只上半存而下半缺。隨以下之半偈有各各之齟齬，一五五偈之上半，屬於目犍連子帝須長老之出世章，下半則屬於次之章。余如此訂正。</note>
-<note n="0181006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181006">此一偈之上半為錫蘭本。由 PTS 之原典補之。</note>
-<note n="0182007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182007">六學處是受式沙摩那戒法，謂不婬、不盜、不殺、不虛誑語、不飲諸酒，不非時食之六者。而年大之婦女出家者亦受此六戒，二年間守此檢胎之有無，然後授比丘尼大戒。</note>
-<note n="0182008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182008">協會本有阿優波羅。</note>
-<note n="0183009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0183009">協會本有昆提。</note>
-<note n="0186010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186010">本生經第三一九話。</note>
-<note n="0191001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0191001">二〇節參照。</note>
-<note n="0192002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192002">協會本則為摩西羅提波伽。</note>
-<note n="0194001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194001">協會本為庫宛那。</note>
-<note n="0196002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0196002">名阿努羅是侍臣。</note>
-<note n="0199001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199001">是毘闍耶王之弟。</note>
-<note n="0200002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0200002">甘露飯王，是淨飯王之弟。</note>
-<note n="0200003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0200003">協會本為溝那伽摩伽。</note>
-<note n="0204001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0204001">協會本為頓波羅。</note>
-<note n="0209002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209002">母方之祖父兄弟之意。</note>
-<note n="0210003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0210003">此偈原文為種種甚難定譯，改用錫蘭本譯出。</note>
-<note n="0212001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212001">協會本為木達西瓦。</note>
-<note n="0214002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214002">印度曆之第九月。</note>
-<note n="0216001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0216001">協會本為阿羅瓦羅。</note>
-<note n="0217002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217002">中部第一三〇經（漢譯南傳藏十二．一七二頁）。</note>
-<note n="0217003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217003">相應部因緣篇第四（同十四．二二二頁）。</note>
-<note n="0217004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217004">增支部七集六八（二二．三一九頁）。</note>
-<note n="0218005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218005">同四集二四（同二〇．四六頁）。</note>
-<note n="0218006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218006">律大品一．六（同三．一〇頁）。</note>
-<note n="0219007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219007">長部一（同六．一頁）。</note>
-<note n="0221001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221001">印度曆之第三月。</note>
-<note n="0221002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221002">協會本為西羅峰。</note>
-<note n="0224001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224001">中部第二七經（漢譯南傳藏九．二四三頁）。</note>
-<note n="0225002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225002">增支部二集第四（同一九．八三頁）。</note>
-<note n="0226003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0226003">相應部五六。</note>
-<note n="0227001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227001">相應部一二．一九（漢譯南傳藏一四．二七頁）？</note>
-<note n="0232002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232002">協會本為魯奢蘭陀。</note>
-<note n="0233003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0233003">協會本為摩訶諾瑪。</note>
-<note n="0234004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0234004">協會本為康陀伽蘭陀。</note>
-<note n="0235005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0235005">協會本為摩訶孫波。</note>
-<note n="0237006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0237006">協會本為沙波難陀。</note>
-<note n="0239007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239007">錫蘭本之一九一-一二〇之二十偈於協會本無，協會本之一九一及二一〇之兩偈於錫蘭本中無。此部分依協會本。</note>
-<note n="0239008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239008">本譯及協會本之一九二偈是錫蘭本二一一偈。即有一九之齟齬。</note>
-<note n="0239009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239009">相應部三．七八、七九師子品（漢譯南傳一五．一二六～一二七頁）？</note>
-<note n="0239009" resp="#resp1" type="mod" target="#nkr_note_mod_0239009">相應部三．七八、七九師子品（漢譯南傳一五．一二六【南傳】，～一二七頁）？</note>
-<note n="0240010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240010">相應部三之九六。（同一五．二〇三頁）</note>
-<note n="0240011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240011">此一偈錫蘭本中無，故以下之章末為一八之齟齬。</note>
-<note n="0240012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240012">協會本為提伽桑達那。</note>
-<note n="0242001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242001">印度曆之第四月。</note>
-<note n="0242002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242002">相應部中有數經，其中指何者不得考。</note>
-<note n="0243003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243003">指律藏中之犍度篇。入安居犍度章是大品第三章。</note>
-<note n="0244001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244001">印度曆之第八月。</note>
-<note n="0245002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245002">協會本有：「傳語由王得云云。」</note>
-<note n="0249001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249001">印度曆之第七月。</note>
-<note n="0252002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252002">印度曆之第八月。</note>
-<note n="0253001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253001">「有惡印者」之意，指何而不明。</note>
-<note n="0254002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254002">印度曆之第九月。</note>
-<note n="0256003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256003">畢宿。</note>
-<note n="0260001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260001">協會本為提莎羅伽。</note>
-<note n="0260002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260002">三十七年應是阿育王在位之年數。然合上記之十八、十二、四、三、四為四十一年。此繼目中間之年為一年與為二年所生之差。</note>
-<note n="0261003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0261003">協會本為摩訶波利。</note>
-<note n="0262004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0262004">依協會本，三三偈於「阿濕縛庾闍月之白分第八日，〔長老〕入滅。由此之日而冠彼之名」。而此相當錫蘭本之三三、三四兩偈。而錫蘭本之三六偈之上句，為「六十夏〔彼〕又提耶山已雨安居」而不全之意義，由此如省此，至以下章終止，生一偈半之齟齬。</note>
-<note n="0263005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263005">五八偈由三句而成。</note>
-<note n="0264001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264001">協會本為摩訶西瓦。</note>
-<note n="0265002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265002">協會本為摩庫羅伽。</note>
-<note n="0265003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265003">協會本為吉利內羅瓦哈那伽。</note>
-<note n="0267004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0267004">此章，協會本為五王章，錫蘭本為六王章。此前者為摩訶西瓦，蘇羅提薩、塞那、古達伽、阿塞羅，耶羅羅之中塞那、古達伽之二王名為一王之名處理。</note>
-<note n="0269001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269001">協會本為寇陀。</note>
-<note n="0271002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0271002">次章八六偈以下參照。</note>
-<note n="0274001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0274001">協會本為羅美耶越沙婆。</note>
-<note n="0274002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0274002">於外被藏皮膜之意，佛之三十二相之一。</note>
-<note n="0275003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275003">協會本為昆陀利。</note>
-<note n="0277004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0277004">「蘇羅」是勇敢之意，起此名於四一隅尼密羅因塞所表現的事實，提伽註此。</note>
-<note n="0277005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0277005">協會本為尼多羅義提伽。</note>
-<note n="0278006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0278006">協會本為庫頓毘揚伽那。</note>
-<note n="0279007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0279007">協會本為那庫羅那伽。</note>
-<note n="0279008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0279008">協會本為伽義陀。</note>
-<note n="0280009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0280009">協會本為睹羅達羅。</note>
-<note n="0283001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0283001">協會本為奢瓦摩羅。</note>
-<note n="0284002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0284002">協會本為「皮膚」。</note>
-<note n="0285003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285003">年少之僧等推舉臥塌於頭上，如斯擔出。</note>
-<note n="0290001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0290001">單謂同逝瑟多月。</note>
-<note n="0290002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0290002">協會本為波周陀。</note>
-<note n="0291003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0291003">於一本中有庫蘭達瓦毘。協會本、錫蘭本共為庫羅達瓦毘。</note>
-<note n="0297001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0297001">在提伽有「百四十六年」。協會本為「百三十六年」。</note>
-<note n="0297002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0297002">以籌食卷交換而給食。隨八籌食是八人分之食。</note>
-<note n="0297003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0297003">協會本為毘羅尼。</note>
-<note n="0299004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0299004">言獅子、牛、象、水瓶、扇、幡、螺、燈之八種。</note>
-<note n="0301001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301001">依提伽，先植大菩提樹之日，來大精舍之摩魯毘耶帝須與摩訶哂陀兩長老之間交談之傳說，為刻於金牒之古傳說。</note>
-<note n="0303002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0303002">在協會本，於此之上有「信士！今汝亦行此之道」之半偈，隨以下錫蘭本之半偈為齟齬。</note>
-<note n="0303003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0303003">上之九偈參照。</note>
-<note n="0303004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0303004">五-八偈以下參照。</note>
-<note n="0305001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0305001">由阿耨達地流出之河〔註〕。</note>
-<note n="0305002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0305002">五味中之第三為生酥。</note>
-<note n="0305003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0305003">上之三、四偈參照。</note>
-<note n="0305004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0305004">原語 rasodaka 雖為〔味水〕，隨原書舊英譯為椰子樹液，與伽毘陀樹液相混合則成為如塑膠堅固之物。</note>
-<note n="0305005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0305005">行定礎式。</note>
-<note n="0308006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0308006">註為金甎。</note>
-<note n="0308007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0308007">經集第二品第四經。</note>
-<note n="0312001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0312001">王雖對一塊土不付代價亦不用來建造此塔，然此比丘（二一以下）持來一握之土塊奉獻。王以素馨花獻與比丘，比丘由受此花之供養為支付土塊代價。</note>
-<note n="0312002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0312002">協會本為寇提瓦羅。</note>
-<note n="0313003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0313003">四二～五〇提伽亦未加註，非後日之入竈四一偈完畢，雖有「傳王命之言」，以下應有彼王命，却沒有。概為逸脫耶？</note>
-<note n="0316004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316004">長部第二〇經（漢譯南傳藏七．二一二頁）。</note>
-<note n="0316005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316005">中部第六一經（同一〇．一七二頁）。</note>
-<note n="0316006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316006">經集第二小品第四經（同二七．七〇頁）。</note>
-<note n="0316007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316007">大般涅槃經第三誦品之九（同七．五七頁），自說經六．七（同二六．一三四）參照。</note>
-<note n="0316008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316008">大般涅槃經四．六（同七．七九頁）自說經八．五（同二六．一五八頁）參照。</note>
-<note n="0316009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316009">大般涅槃經四．三五（同七．八七頁）參照。</note>
-<note n="0316010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316010">大般涅槃經三．二一（同七．八一頁）自說經八．五（同二六．一六〇頁）參照。</note>
-<note n="0316011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316011">本生經第五四七（同四二．一七四頁）參照。</note>
-<note n="0319001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0319001">協會本為難多多羅。</note>
-<note n="0322002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0322002">nāga〔那伽〕是龍、象，人中殊勝者等之意，此兩那伽之戰是瓦蘇羅多陀〔龍〕與蘇努陀羅〔人〕舍利之爭。</note>
-<note n="0323003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0323003">般闍西迦為五髻天子。見天子之名提波魯。然此一偈得譯為「般奢西迦續彈奏琵琶而立於彼所，奏樂器之提波魯化作音樂堂」。</note>
-<note n="0326004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0326004">於協會本為一二五偈，加入「如斯諸佛不可思議，諸佛之法〔亦〕不可思議。不可思議持淨信心者，果報亦不可思議」。一七章五六偈參照。</note>
-<note n="0328001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0328001">提羅弗陀阿婆耶長老此為大戰士之後身。「長老子無畏」之意，一三偈之提羅陀阿婆耶亦同義。</note>
-<note n="0329002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0329002">協會本為寇陀。</note>
-<note n="0330003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0330003">協會本為摩羅耶摩訶提婆長老。</note>
-<note n="0331004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0331004">協會本為鬱伽那伽羅。</note>
-<note n="0334001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0334001">協會本為伽羅伽雷那。</note>
-<note n="0334002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0334002">協會本為伽蘭波伽。</note>
-<note n="0334003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0334003">協會本為蘭伽提沙。</note>
-<note n="0335004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335004">協會本為蘭伽加。</note>
-<note n="0335005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335005">協會本為六衣。</note>
-<note n="0335006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335006">協會本為昆奢羅喜那加。</note>
-<note n="0335007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335007">施捨比丘尼等所欲之米穀。</note>
-<note n="0335008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335008">協會本為庫倫達瓦蘇伽。</note>
-<note n="0336009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336009">協會本為康摩訶羅他伽。</note>
-<note n="0336010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336010">協會本為羅哈那庫羅。</note>
-<note n="0336011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336011">協會本為提沙。</note>
-<note n="0336012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336012">四三、四四上之一偈半協會本中無。</note>
-<note n="0337013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337013">協會本為窟毘羅伽羅摩訶提沙。</note>
-<note n="0337014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337014">托鉢所得食物不觸，而給在家人食是非法。然此長老先自食少分，餘施王。</note>
-<note n="0337015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337015">協會本為尸羅蘇波康達伽。</note>
-<note n="0337016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337016">協會本為普羅哈陀。</note>
-<note n="0337017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337017">協會本為達提伽。</note>
-<note n="0339018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339018">第十章九七偈參照。</note>
-<note n="0343001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343001">協會本為洽羅伽瑪。</note>
-<note n="0343002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343002">在協會本之一四偈上句，有「謂與己妻飲毒而死」隨以下半偈之有齟齬，至二六偈之上句。</note>
-<note n="0344003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344003">協會本為尼利耶。</note>
-<note n="0344004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344004">二六偈之下句在協會本無。</note>
-<note n="0344005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344005">協會本為具達康那．達沙。</note>
-<note n="0344006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344006">協會本為安巴頭伽。</note>
-<note n="0346007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0346007">協會本為姆奢羅。</note>
-<note n="0347008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0347008">協會本為摩訶達提伽。</note>
-<note n="0348009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0348009">協會本為具普康達。</note>
-<note n="0348010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0348010">協會本為福瓦奢。</note>
-<note n="0348011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0348011">協會本為曼多瓦毘。</note>
-<note n="0350001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0350001">協會本為摩訶伽門提池。</note>
-<note n="0350002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0350002">協會本為伽尼羅伽努．提沙。</note>
-<note n="0350003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0350003">協會本為後那伽。</note>
-<note n="0350004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0350004">協會本為秋羅伽羅伽。</note>
-<note n="0351005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0351005">協會本為月面西瓦。</note>
-<note n="0351006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0351006">本生經第二五〇與第四〇四均有。</note>
-<note n="0352007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0352007">協會本為漢伽羅毘提伽。</note>
-<note n="0353008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353008">阿巴耶吉利伊哈羅與摩訶伊哈羅。</note>
-<note n="0353009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353009">蒟醬在熱帶地常嚙口之物，葛草之葉，檳榔子實作碎之物，加入少量石灰。</note>
-<note n="0354010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354010">協會本為波達。</note>
-<note n="0355011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355011">協會本為阿努羅園。</note>
-<note n="0355012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355012">協會本為波達。</note>
-<note n="0355013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355013">協會本為洽央提。</note>
-<note n="0355014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355014">協會本為摩訶尼伽瓦提。</note>
-<note n="0355015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355015">協會本為摩訶羅霉提。</note>
-<note n="0355016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355016">協會本為庫哈羅。</note>
-<note n="0355017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355017">協會本為洽耶達曼伽那。</note>
-<note n="0355018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355018">協會本為阿吉瓦達摩那伽。</note>
-<note n="0357019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357019">協會本為後那。</note>
-<note n="0357020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357020">協會本為羅姆伽。</note>
-<note n="0357021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357021">協會本為賽伽羅伽。</note>
-<note n="0357022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357022">協會本為構達巴巴達。</note>
-<note n="0357023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357023">協會本為達那威利。</note>
-<note n="0357024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357024">協會本為吉利哈利伽。</note>
-<note n="0360001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0360001">協會本為摩訶摩尼。</note>
-<note n="0360002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0360002">協會本為波提、提沙。</note>
-<note n="0360003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0360003">協會本十八年。</note>
-<note n="0361004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361004">協會本為難達提沙。</note>
-<note n="0361005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361005">協會本為庫奢那伽。</note>
-<note n="0361006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361006">協會本為昆奢那伽。</note>
-<note n="0361007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361007">一那利伽量謂四掌量。飢饉人人之一日食量一那利伽謂為被減之事耶？</note>
-<note n="0362008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0362008">協會本為加普伽。</note>
-<note n="0362009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0362009">協會本為庫羅提沙。</note>
-<note n="0362010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0362010">協會本為姆羅那伽。</note>
-<note n="0363011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0363011">協會本為耶多魯耶。</note>
-<note n="0364012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0364012">協會本為達摩哈羅伽。</note>
-<note n="0364013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0364013">Andhaka-vinda-sutta 雜阿含四四卷一四經空閑處。</note>
-<note n="0367014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0367014">Padhānabhūmi 入於三昧真實修行場所之意。</note>
-<note n="0373001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373001">協會本為耶羅伽乞羅。</note>
-<note n="0373002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373002">協會本為塔園。</note>
-<note n="0373003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373003">協會本為富羅毘提。</note>
-<note n="0373004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373004">協會本為瑪尼喜羅．摩訶伽瑪。</note>
-<note n="0373005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373005">協會本為洽魯羅。</note>
-<note n="0373006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373006">協會本為丹瑪蘭瑪。</note>
-<note n="0373007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373007">協會本缺。</note>
-<note n="0373008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373008">協會本為瓦哈那。</note>
-<note n="0373009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373009">協會本為摩訶伽羅伽。</note>
+<note n="0148001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148001">當為印度曆之第二月。</note>
+<note n="0148002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148002">作三十名友人之童子等一團體稱跋陀羅〔善賢〕組。</note>
+<note n="0148003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148003">有優樓頻羅、那提、伽耶之三兄弟迦葉導一千之結鬘行者。</note>
+<note n="0148004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148004">印度曆之第一月。</note>
+<note n="0148005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148005">今之錫蘭島。</note>
+<note n="0150006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150006">協會本為鬱達求羅波耶。</note>
+<note n="0150007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150007">印度曆之第一月。</note>
+<note n="0151008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151008">註為水生類、陸生類、及為龍蛇之類。</note>
+<note n="0152009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152009">或為高價。</note>
+<note n="0153010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0153010">以下總就現在而言。即今之摩訶眉伽林園所立之意。</note>
+<note n="0154001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0154001">Mahāsammatarāja 譯為世界最初之王，卡許摩訶，卡所許，大平等、大同意、民主、大王等。</note>
+<note n="0154002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0154002">卡魯利耶尼與瓦羅卡魯利耶尼。</note>
+<note n="0154003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0154003">協會本，為卡魯耶那迦。</note>
+<note n="0155004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155004">梵語 Ikṣvāku 懿摩〔師〕，伊摩，甘庶、為釋迦族之祖次摩訶三摩多為重要之王。</note>
+<note n="0155005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155005">釋尊之祖父。星賀賀努。</note>
+<note n="0155006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155006">釋迦族之分族拘利族之都城。</note>
+<note n="0155007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155007">協會本，為安迦那。</note>
+<note n="0156008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0156008">師子頰有四王八子，他書不出此名。</note>
+<note n="0159001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0159001">印度曆之第四月。</note>
+<note n="0160002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0160002">成阿羅漢果。</note>
+<note n="0160003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0160003">於夜明臥於臥牀，頭安枕之剎那而得阿羅漢果故皆非行住坐臥任何之一。</note>
+<note n="0161004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161004">依提伽之解釋。</note>
+<note n="0162001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0162001">無妨為適當。</note>
+<note n="0163002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163002">行此羯磨者於信者之面前應取消謝罪言予之言是非法。</note>
+<note n="0163003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163003">akhila，無障礙，除煩惱邪障之自由人，阿羅漢等。</note>
+<note n="0166004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0166004">法、義、辭、樂說此四者謂無礙智。</note>
+<note n="0169001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169001">提伽本之二七-二八之間插入次之二偈。但此二偈之一語亦未加註解之點察看，或想非後日之竄入耶？（一）於彼都有死處之鹿豬鳥類，行大斷食而彼等自行死去。（二）此處牛等導欄伴來豹等，而護侍鹿與豬之畑池。</note>
+<note n="0169002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169002">以下之偈號數有二之齟齬。</note>
+<note n="0172003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0172003">法句經之不放逸品。</note>
+<note n="0174001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0174001">於錫蘭本九七上半偈，攝於「阿育王之轉教」章中。然考前後之關係雖為各半偈故見無分之要，隨協會本讓於次章。</note>
+<note n="0174002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0174002">不遠死於於梵天界。</note>
+<note n="0175003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0175003">謂未參與第二結集事。</note>
+<note n="0177004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0177004">婆羅門謂再生者。</note>
+<note n="0178005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0178005">於錫蘭本一五四偈只上半存而下半缺。隨以下之半偈有各各之齟齬，一五五偈之上半，屬於目犍連子帝須長老之出世章，下半則屬於次之章。余如此訂正。</note>
+<note n="0181006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181006">此一偈之上半為錫蘭本。由 PTS 之原典補之。</note>
+<note n="0182007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182007">六學處是受式沙摩那戒法，謂不婬、不盜、不殺、不虛誑語、不飲諸酒，不非時食之六者。而年大之婦女出家者亦受此六戒，二年間守此檢胎之有無，然後授比丘尼大戒。</note>
+<note n="0182008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182008">協會本有阿優波羅。</note>
+<note n="0183009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0183009">協會本有昆提。</note>
+<note n="0186010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186010">本生經第三一九話。</note>
+<note n="0191001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0191001">二〇節參照。</note>
+<note n="0192002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192002">協會本則為摩西羅提波伽。</note>
+<note n="0194001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194001">協會本為庫宛那。</note>
+<note n="0196002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0196002">名阿努羅是侍臣。</note>
+<note n="0199001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199001">是毘闍耶王之弟。</note>
+<note n="0200002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0200002">甘露飯王，是淨飯王之弟。</note>
+<note n="0200003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0200003">協會本為溝那伽摩伽。</note>
+<note n="0204001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0204001">協會本為頓波羅。</note>
+<note n="0209002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209002">母方之祖父兄弟之意。</note>
+<note n="0210003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0210003">此偈原文為種種甚難定譯，改用錫蘭本譯出。</note>
+<note n="0212001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212001">協會本為木達西瓦。</note>
+<note n="0214002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214002">印度曆之第九月。</note>
+<note n="0216001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0216001">協會本為阿羅瓦羅。</note>
+<note n="0217002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217002">中部第一三〇經（漢譯南傳藏十二．一七二頁）。</note>
+<note n="0217003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217003">相應部因緣篇第四（同十四．二二二頁）。</note>
+<note n="0217004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217004">增支部七集六八（二二．三一九頁）。</note>
+<note n="0218005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218005">同四集二四（同二〇．四六頁）。</note>
+<note n="0218006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218006">律大品一．六（同三．一〇頁）。</note>
+<note n="0219007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219007">長部一（同六．一頁）。</note>
+<note n="0221001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221001">印度曆之第三月。</note>
+<note n="0221002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221002">協會本為西羅峰。</note>
+<note n="0224001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224001">中部第二七經（漢譯南傳藏九．二四三頁）。</note>
+<note n="0225002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225002">增支部二集第四（同一九．八三頁）。</note>
+<note n="0226003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0226003">相應部五六。</note>
+<note n="0227001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227001">相應部一二．一九（漢譯南傳藏一四．二七頁）？</note>
+<note n="0232002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232002">協會本為魯奢蘭陀。</note>
+<note n="0233003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0233003">協會本為摩訶諾瑪。</note>
+<note n="0234004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0234004">協會本為康陀伽蘭陀。</note>
+<note n="0235005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0235005">協會本為摩訶孫波。</note>
+<note n="0237006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0237006">協會本為沙波難陀。</note>
+<note n="0239007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239007">錫蘭本之一九一-一二〇之二十偈於協會本無，協會本之一九一及二一〇之兩偈於錫蘭本中無。此部分依協會本。</note>
+<note n="0239008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239008">本譯及協會本之一九二偈是錫蘭本二一一偈。即有一九之齟齬。</note>
+<note n="0239009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239009">相應部三．七八、七九師子品（漢譯南傳一五．一二六～一二七頁）？</note>
+<note n="0239009" resp="#resp2" type="mod" target="#nkr_note_mod_0239009">相應部三．七八、七九師子品（漢譯南傳一五．一二六【南傳】，～一二七頁）？</note>
+<note n="0240010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240010">相應部三之九六。（同一五．二〇三頁）</note>
+<note n="0240011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240011">此一偈錫蘭本中無，故以下之章末為一八之齟齬。</note>
+<note n="0240012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240012">協會本為提伽桑達那。</note>
+<note n="0242001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242001">印度曆之第四月。</note>
+<note n="0242002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242002">相應部中有數經，其中指何者不得考。</note>
+<note n="0243003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243003">指律藏中之犍度篇。入安居犍度章是大品第三章。</note>
+<note n="0244001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244001">印度曆之第八月。</note>
+<note n="0245002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245002">協會本有：「傳語由王得云云。」</note>
+<note n="0249001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249001">印度曆之第七月。</note>
+<note n="0252002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252002">印度曆之第八月。</note>
+<note n="0253001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253001">「有惡印者」之意，指何而不明。</note>
+<note n="0254002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254002">印度曆之第九月。</note>
+<note n="0256003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256003">畢宿。</note>
+<note n="0260001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260001">協會本為提莎羅伽。</note>
+<note n="0260002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260002">三十七年應是阿育王在位之年數。然合上記之十八、十二、四、三、四為四十一年。此繼目中間之年為一年與為二年所生之差。</note>
+<note n="0261003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0261003">協會本為摩訶波利。</note>
+<note n="0262004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0262004">依協會本，三三偈於「阿濕縛庾闍月之白分第八日，〔長老〕入滅。由此之日而冠彼之名」。而此相當錫蘭本之三三、三四兩偈。而錫蘭本之三六偈之上句，為「六十夏〔彼〕又提耶山已雨安居」而不全之意義，由此如省此，至以下章終止，生一偈半之齟齬。</note>
+<note n="0263005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263005">五八偈由三句而成。</note>
+<note n="0264001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264001">協會本為摩訶西瓦。</note>
+<note n="0265002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265002">協會本為摩庫羅伽。</note>
+<note n="0265003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265003">協會本為吉利內羅瓦哈那伽。</note>
+<note n="0267004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0267004">此章，協會本為五王章，錫蘭本為六王章。此前者為摩訶西瓦，蘇羅提薩、塞那、古達伽、阿塞羅，耶羅羅之中塞那、古達伽之二王名為一王之名處理。</note>
+<note n="0269001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269001">協會本為寇陀。</note>
+<note n="0271002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0271002">次章八六偈以下參照。</note>
+<note n="0274001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0274001">協會本為羅美耶越沙婆。</note>
+<note n="0274002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0274002">於外被藏皮膜之意，佛之三十二相之一。</note>
+<note n="0275003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275003">協會本為昆陀利。</note>
+<note n="0277004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0277004">「蘇羅」是勇敢之意，起此名於四一隅尼密羅因塞所表現的事實，提伽註此。</note>
+<note n="0277005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0277005">協會本為尼多羅義提伽。</note>
+<note n="0278006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0278006">協會本為庫頓毘揚伽那。</note>
+<note n="0279007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0279007">協會本為那庫羅那伽。</note>
+<note n="0279008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0279008">協會本為伽義陀。</note>
+<note n="0280009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0280009">協會本為睹羅達羅。</note>
+<note n="0283001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0283001">協會本為奢瓦摩羅。</note>
+<note n="0284002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0284002">協會本為「皮膚」。</note>
+<note n="0285003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285003">年少之僧等推舉臥塌於頭上，如斯擔出。</note>
+<note n="0290001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0290001">單謂同逝瑟多月。</note>
+<note n="0290002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0290002">協會本為波周陀。</note>
+<note n="0291003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0291003">於一本中有庫蘭達瓦毘。協會本、錫蘭本共為庫羅達瓦毘。</note>
+<note n="0297001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0297001">在提伽有「百四十六年」。協會本為「百三十六年」。</note>
+<note n="0297002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0297002">以籌食卷交換而給食。隨八籌食是八人分之食。</note>
+<note n="0297003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0297003">協會本為毘羅尼。</note>
+<note n="0299004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0299004">言獅子、牛、象、水瓶、扇、幡、螺、燈之八種。</note>
+<note n="0301001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301001">依提伽，先植大菩提樹之日，來大精舍之摩魯毘耶帝須與摩訶哂陀兩長老之間交談之傳說，為刻於金牒之古傳說。</note>
+<note n="0303002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0303002">在協會本，於此之上有「信士！今汝亦行此之道」之半偈，隨以下錫蘭本之半偈為齟齬。</note>
+<note n="0303003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0303003">上之九偈參照。</note>
+<note n="0303004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0303004">五-八偈以下參照。</note>
+<note n="0305001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0305001">由阿耨達地流出之河〔註〕。</note>
+<note n="0305002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0305002">五味中之第三為生酥。</note>
+<note n="0305003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0305003">上之三、四偈參照。</note>
+<note n="0305004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0305004">原語 rasodaka 雖為〔味水〕，隨原書舊英譯為椰子樹液，與伽毘陀樹液相混合則成為如塑膠堅固之物。</note>
+<note n="0305005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0305005">行定礎式。</note>
+<note n="0308006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0308006">註為金甎。</note>
+<note n="0308007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0308007">經集第二品第四經。</note>
+<note n="0312001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0312001">王雖對一塊土不付代價亦不用來建造此塔，然此比丘（二一以下）持來一握之土塊奉獻。王以素馨花獻與比丘，比丘由受此花之供養為支付土塊代價。</note>
+<note n="0312002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0312002">協會本為寇提瓦羅。</note>
+<note n="0313003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0313003">四二～五〇提伽亦未加註，非後日之入竈四一偈完畢，雖有「傳王命之言」，以下應有彼王命，却沒有。概為逸脫耶？</note>
+<note n="0316004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316004">長部第二〇經（漢譯南傳藏七．二一二頁）。</note>
+<note n="0316005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316005">中部第六一經（同一〇．一七二頁）。</note>
+<note n="0316006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316006">經集第二小品第四經（同二七．七〇頁）。</note>
+<note n="0316007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316007">大般涅槃經第三誦品之九（同七．五七頁），自說經六．七（同二六．一三四）參照。</note>
+<note n="0316008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316008">大般涅槃經四．六（同七．七九頁）自說經八．五（同二六．一五八頁）參照。</note>
+<note n="0316009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316009">大般涅槃經四．三五（同七．八七頁）參照。</note>
+<note n="0316010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316010">大般涅槃經三．二一（同七．八一頁）自說經八．五（同二六．一六〇頁）參照。</note>
+<note n="0316011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316011">本生經第五四七（同四二．一七四頁）參照。</note>
+<note n="0319001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0319001">協會本為難多多羅。</note>
+<note n="0322002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0322002">nāga〔那伽〕是龍、象，人中殊勝者等之意，此兩那伽之戰是瓦蘇羅多陀〔龍〕與蘇努陀羅〔人〕舍利之爭。</note>
+<note n="0323003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0323003">般闍西迦為五髻天子。見天子之名提波魯。然此一偈得譯為「般奢西迦續彈奏琵琶而立於彼所，奏樂器之提波魯化作音樂堂」。</note>
+<note n="0326004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0326004">於協會本為一二五偈，加入「如斯諸佛不可思議，諸佛之法〔亦〕不可思議。不可思議持淨信心者，果報亦不可思議」。一七章五六偈參照。</note>
+<note n="0328001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0328001">提羅弗陀阿婆耶長老此為大戰士之後身。「長老子無畏」之意，一三偈之提羅陀阿婆耶亦同義。</note>
+<note n="0329002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0329002">協會本為寇陀。</note>
+<note n="0330003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0330003">協會本為摩羅耶摩訶提婆長老。</note>
+<note n="0331004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0331004">協會本為鬱伽那伽羅。</note>
+<note n="0334001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0334001">協會本為伽羅伽雷那。</note>
+<note n="0334002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0334002">協會本為伽蘭波伽。</note>
+<note n="0334003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0334003">協會本為蘭伽提沙。</note>
+<note n="0335004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335004">協會本為蘭伽加。</note>
+<note n="0335005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335005">協會本為六衣。</note>
+<note n="0335006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335006">協會本為昆奢羅喜那加。</note>
+<note n="0335007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335007">施捨比丘尼等所欲之米穀。</note>
+<note n="0335008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335008">協會本為庫倫達瓦蘇伽。</note>
+<note n="0336009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336009">協會本為康摩訶羅他伽。</note>
+<note n="0336010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336010">協會本為羅哈那庫羅。</note>
+<note n="0336011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336011">協會本為提沙。</note>
+<note n="0336012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336012">四三、四四上之一偈半協會本中無。</note>
+<note n="0337013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337013">協會本為窟毘羅伽羅摩訶提沙。</note>
+<note n="0337014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337014">托鉢所得食物不觸，而給在家人食是非法。然此長老先自食少分，餘施王。</note>
+<note n="0337015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337015">協會本為尸羅蘇波康達伽。</note>
+<note n="0337016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337016">協會本為普羅哈陀。</note>
+<note n="0337017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337017">協會本為達提伽。</note>
+<note n="0339018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339018">第十章九七偈參照。</note>
+<note n="0343001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343001">協會本為洽羅伽瑪。</note>
+<note n="0343002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343002">在協會本之一四偈上句，有「謂與己妻飲毒而死」隨以下半偈之有齟齬，至二六偈之上句。</note>
+<note n="0344003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344003">協會本為尼利耶。</note>
+<note n="0344004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344004">二六偈之下句在協會本無。</note>
+<note n="0344005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344005">協會本為具達康那．達沙。</note>
+<note n="0344006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344006">協會本為安巴頭伽。</note>
+<note n="0346007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0346007">協會本為姆奢羅。</note>
+<note n="0347008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0347008">協會本為摩訶達提伽。</note>
+<note n="0348009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0348009">協會本為具普康達。</note>
+<note n="0348010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0348010">協會本為福瓦奢。</note>
+<note n="0348011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0348011">協會本為曼多瓦毘。</note>
+<note n="0350001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0350001">協會本為摩訶伽門提池。</note>
+<note n="0350002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0350002">協會本為伽尼羅伽努．提沙。</note>
+<note n="0350003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0350003">協會本為後那伽。</note>
+<note n="0350004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0350004">協會本為秋羅伽羅伽。</note>
+<note n="0351005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0351005">協會本為月面西瓦。</note>
+<note n="0351006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0351006">本生經第二五〇與第四〇四均有。</note>
+<note n="0352007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0352007">協會本為漢伽羅毘提伽。</note>
+<note n="0353008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353008">阿巴耶吉利伊哈羅與摩訶伊哈羅。</note>
+<note n="0353009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353009">蒟醬在熱帶地常嚙口之物，葛草之葉，檳榔子實作碎之物，加入少量石灰。</note>
+<note n="0354010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354010">協會本為波達。</note>
+<note n="0355011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355011">協會本為阿努羅園。</note>
+<note n="0355012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355012">協會本為波達。</note>
+<note n="0355013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355013">協會本為洽央提。</note>
+<note n="0355014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355014">協會本為摩訶尼伽瓦提。</note>
+<note n="0355015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355015">協會本為摩訶羅霉提。</note>
+<note n="0355016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355016">協會本為庫哈羅。</note>
+<note n="0355017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355017">協會本為洽耶達曼伽那。</note>
+<note n="0355018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355018">協會本為阿吉瓦達摩那伽。</note>
+<note n="0357019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357019">協會本為後那。</note>
+<note n="0357020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357020">協會本為羅姆伽。</note>
+<note n="0357021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357021">協會本為賽伽羅伽。</note>
+<note n="0357022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357022">協會本為構達巴巴達。</note>
+<note n="0357023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357023">協會本為達那威利。</note>
+<note n="0357024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357024">協會本為吉利哈利伽。</note>
+<note n="0360001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0360001">協會本為摩訶摩尼。</note>
+<note n="0360002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0360002">協會本為波提、提沙。</note>
+<note n="0360003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0360003">協會本十八年。</note>
+<note n="0361004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361004">協會本為難達提沙。</note>
+<note n="0361005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361005">協會本為庫奢那伽。</note>
+<note n="0361006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361006">協會本為昆奢那伽。</note>
+<note n="0361007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361007">一那利伽量謂四掌量。飢饉人人之一日食量一那利伽謂為被減之事耶？</note>
+<note n="0362008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0362008">協會本為加普伽。</note>
+<note n="0362009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0362009">協會本為庫羅提沙。</note>
+<note n="0362010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0362010">協會本為姆羅那伽。</note>
+<note n="0363011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0363011">協會本為耶多魯耶。</note>
+<note n="0364012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0364012">協會本為達摩哈羅伽。</note>
+<note n="0364013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0364013">Andhaka-vinda-sutta 雜阿含四四卷一四經空閑處。</note>
+<note n="0367014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0367014">Padhānabhūmi 入於三昧真實修行場所之意。</note>
+<note n="0373001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373001">協會本為耶羅伽乞羅。</note>
+<note n="0373002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373002">協會本為塔園。</note>
+<note n="0373003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373003">協會本為富羅毘提。</note>
+<note n="0373004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373004">協會本為瑪尼喜羅．摩訶伽瑪。</note>
+<note n="0373005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373005">協會本為洽魯羅。</note>
+<note n="0373006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373006">協會本為丹瑪蘭瑪。</note>
+<note n="0373007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373007">協會本缺。</note>
+<note n="0373008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373008">協會本為瓦哈那。</note>
+<note n="0373009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373009">協會本為摩訶伽羅伽。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0208a0701" resp="#resp2" type="add" target="#nkr_note_add_0208a0701">刺【CB】，剌【南傳】</note>
-<note n="0211a0601" resp="#resp2" type="add" target="#nkr_note_add_0211a0601">豐【CB】，豊【南傳】</note>
-<note n="0212a1201" resp="#resp2" type="add" target="#nkr_note_add_0212a1201">刺【CB】，剌【南傳】</note>
-<note n="0229a0601" resp="#resp2" type="add" target="#nkr_note_add_0229a0601">撒【CB】，撤【南傳】</note>
-<note n="0230a0701" resp="#resp2" type="add" target="#nkr_note_add_0230a0701">撒【CB】，撤【南傳】</note>
-<note n="0233a0901" resp="#resp2" type="add" target="#nkr_note_add_0233a0901">豐【CB】，豊【南傳】</note>
-<note n="0282a0401" resp="#resp2" type="add" target="#nkr_note_add_0282a0401">己【CB】，已【南傳】</note>
-<note n="0283a0201" resp="#resp2" type="add" target="#nkr_note_add_0283a0201">己【CB】，已【南傳】</note>
-<note n="0284a1301" resp="#resp2" type="add" target="#nkr_note_add_0284a1301">榻【CB】，塌【南傳】</note>
-<note n="0285a1401" resp="#resp2" type="add" target="#nkr_note_add_0285a1401">己【CB】，已【南傳】</note>
-<note n="0291a0701" resp="#resp2" type="add" target="#nkr_note_add_0291a0701">刺【CB】，剌【南傳】</note>
-<note n="0291a1101" resp="#resp2" type="add" target="#nkr_note_add_0291a1101">鳴【CB】，嗚【南傳】</note>
-<note n="0297a1101" resp="#resp2" type="add" target="#nkr_note_add_0297a1101">遣【CB】，遺【南傳】</note>
-<note n="0302a0701" resp="#resp2" type="add" target="#nkr_note_add_0302a0701">刺【CB】，剌【南傳】</note>
-<note n="0330a0201" resp="#resp2" type="add" target="#nkr_note_add_0330a0201">摶【CB】，搏【南傳】</note>
-<note n="0343a0501" resp="#resp2" type="add" target="#nkr_note_add_0343a0501">［－］【CB】，[01]【南傳】</note>
-<note n="0352a1301" resp="#resp2" type="add" target="#nkr_note_add_0352a1301">池【CB】，地【南傳】</note>
-<note n="0355a1401" resp="#resp2" type="add" target="#nkr_note_add_0355a1401">豐【CB】，豊【南傳】</note>
-<note n="0367a0601" resp="#resp2" type="add" target="#nkr_note_add_0367a0601">捕【CB】，補【南傳】</note>
+<note n="0208a0701" resp="#resp3" type="add" target="#nkr_note_add_0208a0701">刺【CB】，剌【南傳】</note>
+<note n="0211a0601" resp="#resp3" type="add" target="#nkr_note_add_0211a0601">豐【CB】，豊【南傳】</note>
+<note n="0212a1201" resp="#resp3" type="add" target="#nkr_note_add_0212a1201">刺【CB】，剌【南傳】</note>
+<note n="0229a0601" resp="#resp3" type="add" target="#nkr_note_add_0229a0601">撒【CB】，撤【南傳】</note>
+<note n="0230a0701" resp="#resp3" type="add" target="#nkr_note_add_0230a0701">撒【CB】，撤【南傳】</note>
+<note n="0233a0901" resp="#resp3" type="add" target="#nkr_note_add_0233a0901">豐【CB】，豊【南傳】</note>
+<note n="0282a0401" resp="#resp3" type="add" target="#nkr_note_add_0282a0401">己【CB】，已【南傳】</note>
+<note n="0283a0201" resp="#resp3" type="add" target="#nkr_note_add_0283a0201">己【CB】，已【南傳】</note>
+<note n="0284a1301" resp="#resp3" type="add" target="#nkr_note_add_0284a1301">榻【CB】，塌【南傳】</note>
+<note n="0285a1401" resp="#resp3" type="add" target="#nkr_note_add_0285a1401">己【CB】，已【南傳】</note>
+<note n="0291a0701" resp="#resp3" type="add" target="#nkr_note_add_0291a0701">刺【CB】，剌【南傳】</note>
+<note n="0291a1101" resp="#resp3" type="add" target="#nkr_note_add_0291a1101">鳴【CB】，嗚【南傳】</note>
+<note n="0297a1101" resp="#resp3" type="add" target="#nkr_note_add_0297a1101">遣【CB】，遺【南傳】</note>
+<note n="0302a0701" resp="#resp3" type="add" target="#nkr_note_add_0302a0701">刺【CB】，剌【南傳】</note>
+<note n="0330a0201" resp="#resp3" type="add" target="#nkr_note_add_0330a0201">摶【CB】，搏【南傳】</note>
+<note n="0343a0501" resp="#resp3" type="add" target="#nkr_note_add_0343a0501">［－］【CB】，[01]【南傳】</note>
+<note n="0352a1301" resp="#resp3" type="add" target="#nkr_note_add_0352a1301">池【CB】，地【南傳】</note>
+<note n="0355a1401" resp="#resp3" type="add" target="#nkr_note_add_0355a1401">豐【CB】，豊【南傳】</note>
+<note n="0367a0601" resp="#resp3" type="add" target="#nkr_note_add_0367a0601">捕【CB】，補【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

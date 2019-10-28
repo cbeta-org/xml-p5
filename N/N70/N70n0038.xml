@@ -12,51 +12,65 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">70</idno>.<idno type="no">38</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 70, No. 38</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">阿育王刻文</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-12-23">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1354,311 +1368,311 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0225a0301" to="#end0225a0301"><lem wit="#wit1" resp="#resp3">柬</lem><rdg wit="#wit2">東</rdg></app>
-<app from="#beg0236a1201" to="#end0236a1201"><lem wit="#wit1" resp="#resp3">己</lem><rdg wit="#wit2">已</rdg></app>
-<app from="#beg0242a1001" to="#end0242a1001"><lem wit="#wit1" resp="#resp3">己</lem><rdg wit="#wit2">已</rdg></app>
-<app from="#beg0242a1101" to="#end0242a1101"><lem wit="#wit1" resp="#resp3">己</lem><rdg wit="#wit2">已</rdg></app>
+<app from="#beg0225a0301" to="#end0225a0301"><lem wit="#wit.cbeta" resp="#resp4">柬</lem><rdg wit="#wit.orig">東</rdg></app>
+<app from="#beg0236a1201" to="#end0236a1201"><lem wit="#wit.cbeta" resp="#resp4">己</lem><rdg wit="#wit.orig">已</rdg></app>
+<app from="#beg0242a1001" to="#end0242a1001"><lem wit="#wit.cbeta" resp="#resp4">己</lem><rdg wit="#wit.orig">已</rdg></app>
+<app from="#beg0242a1101" to="#end0242a1101"><lem wit="#wit.cbeta" resp="#resp4">己</lem><rdg wit="#wit.orig">已</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0199010" resp="#resp2" type="mod" target="#nkr_note_mod_0199010">監察，此 gananasi ananpayisaṁti（K）, gaṇanasi anapeśaṁti（Sh）, gaṇanasi anapayiśati（M）, āñapayisati gaṇanāyaṁ（G）, gaṇanasi ānapayisati（Dh）。gaṇana 又 gaṇanā 是用於勘定計算之意義故，關於計算應命令而譯，或者敷演此法勅。有說譯為命令記錄，因此其意不明確，但對第三章非言前述官吏之本職，勿論應見為法之教勒而出巡按。又伽那那或伽那那是有監督、注意、考量之意思，今人民如奉行法之教勒，應解為命令收稅官之監督視察之意，或者對於考量亦可。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[10]，今於此處加上[10]之註標。）</note>
-<note n="0209015" resp="#resp2" type="mod" target="#nkr_note_mod_0209015">現世 hida（K, Dh, J）, ia（Sh, M）, idha（G）。後世 palata（K, Dh, J）, paratra（Sh, M）, paratrā（G）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[15]，今於此處加上[15]之註標。）</note>
-<note n="0236004" resp="#resp2" type="mod" target="#nkr_note_mod_0236004">括弧內之天愛在 J 皆為唯王。</note>
-<note n="0243002" resp="#resp2" type="mod" target="#nkr_note_mod_0243002">有自信 asvatha。別刻法勅第二章對朕起信賴之信賴是同一之文字，但今解為信賴自己之意義。然，亦不妨見為信賴於王之意義。</note>
+<note n="0199010" resp="#resp3" type="mod" target="#nkr_note_mod_0199010">監察，此 gananasi ananpayisaṁti（K）, gaṇanasi anapeśaṁti（Sh）, gaṇanasi anapayiśati（M）, āñapayisati gaṇanāyaṁ（G）, gaṇanasi ānapayisati（Dh）。gaṇana 又 gaṇanā 是用於勘定計算之意義故，關於計算應命令而譯，或者敷演此法勅。有說譯為命令記錄，因此其意不明確，但對第三章非言前述官吏之本職，勿論應見為法之教勒而出巡按。又伽那那或伽那那是有監督、注意、考量之意思，今人民如奉行法之教勒，應解為命令收稅官之監督視察之意，或者對於考量亦可。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[10]，今於此處加上[10]之註標。）</note>
+<note n="0209015" resp="#resp3" type="mod" target="#nkr_note_mod_0209015">現世 hida（K, Dh, J）, ia（Sh, M）, idha（G）。後世 palata（K, Dh, J）, paratra（Sh, M）, paratrā（G）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[15]，今於此處加上[15]之註標。）</note>
+<note n="0236004" resp="#resp3" type="mod" target="#nkr_note_mod_0236004">括弧內之天愛在 J 皆為唯王。</note>
+<note n="0243002" resp="#resp3" type="mod" target="#nkr_note_mod_0243002">有自信 asvatha。別刻法勅第二章對朕起信賴之信賴是同一之文字，但今解為信賴自己之意義。然，亦不妨見為信賴於王之意義。</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0195001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195001">法勅 dhaṁma-lipi（K）, dhrama-dipi（Sh, M）, dhaṁma-lipī（G, J）利美或提美唯是所寫物之意，但今皆譯為勅。</note>
-<note n="0195002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195002">天愛喜見王 Devānaṁpiya Piyadasi（lāja）（K）, Devanapria（priadrasi）raya（Sh）, Devanaṁpriya Priyadraśi raja（M）, Devānaṁpriya Priyadasi rāja（G）, Devānaṁpiya Piyadaśi lāja（Dh, J）天愛是諸天即諸神所愛者，或諸神所親之意，喜見是有親愛面容之意。天愛古昔是指愚人之用法，但在阿育王前後之時代，一般是用於指王。不論唯天愛或喜見，天愛、喜見皆是王之稱號。以下之法勅應見其一一之用例。於此 Sh 唯記為天愛王，K 即無王字，天愛喜見王在法勅上早就知道是指阿育王。一九一五年瑪須奇所發見，小摩崖法勅之斷片，此亦依見有天愛阿育，遂為不動之史實。</note>
-<note n="0195003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195003">今刻是令書寫之意。此語之原語與前面之利美或提美而思之，當知此二語原來是由波斯語而來的。阿育王或其王朝是受波斯之影響，此由其他方面亦可指出。J 是在啟賓羅山（Khepiṁgalasi pavatasi）所刻的。Dh 是存在於山部而山名之部分因破損而不得解讀。然，兩者是不同一山名之理，是不待言的。</note>
-<note n="0195004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195004">生物 jiva（K, Sh, M）, jīva（G, Dh, J）是有生命之意。生類 pāna（K, Dh, J）, praṇa（Sh, M）, prāṇa（G）有呼吸之物的意思。</note>
-<note n="0195005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195005">宴聚 samāja（K, G, Dh, J）, samaja（Sh, M）是國王如與人民之宴會。令飽美食及舞踏音樂相撲等為樂之二種。在印度古代，王不花費而使人民歡喜之慣例，阿育王大約最初令行此，然後而行法之教勒，對於前者而廢之，於此法勅可以了知，對於後者以此特別關係於行而言。</note>
-<note n="0195006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195006">大膳寮 mahānasa（K, G, J）, mahanasa（Sh, M）。</note>
-<note n="0195007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195007">羹 supa（K, Sh, M）sūpa（G, D, J）是肉汁為作此而殺生類，此言用於宴聚。</note>
-<note n="0195008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195008">孔雀 Majūla（K, J）, majura（Sh, M）, mora（G）。鹿 miga（K, J）mruga（Sh）, mriga（M）, maga（G）。</note>
-<note n="0197001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0197001">Coḍa, Paṁdiya = Pāḍa. Sātiyaputa = Satiyaputra = Satiyaputa, Kelalaputa = Keraḍaputra = Keralaputra = Ketalaputa, Taṁbapaṁni, Aṁtiyoga = Aṁtiyoka = Atiyoga = Antiochus II Theos of Syria, B. C. 261, 246 周達、般提耶及最後其他之諸王，為複數之記，其他為單數之記。檀婆般尼通常指現在之錫蘭。以上是南部印度之諸王，以下是指西北方。臾那是伊奧尼亞以印度方式之表現的文字，不外是謂希臘人。安提噢普斯是西利亞之王，歷山大王之崩後其將勢禮宇庫斯尼加睹如所建之國。故言為臾那王。安提奧普斯二世是西利亞第三代之王，嗣於安提奧普斯一世。</note>
-<note n="0197002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0197002">鄰邦人 aṁta（K, Sh, J）, ata（M）, pracaṁta（G）此語原來是限界之意思，大約是指限界之內外，因此應是指邊疆人。參照別刻法勅第二章註[03]。於此是阿育王之領土外的意思。</note>
-<note n="0197003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0197003">療院 cikisaka（K）, cikisa（Sh, M）, cikīcha（G）若唯是醫療之意思者，雖不為院言為醫療者，此可見如聖德太子施療院。</note>
-<note n="0198004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0198004">唯 Sh 此同言樹根云云之一文，是令植樹木之省略。樹木 lukha（K, Dh, J）, rucha（Sh）, racha（G）及井泉 kupa（Sh）, kūpa（G）, udupana（K, Dh, J）此以照應印度之氣候是可以想像。</note>
-<note n="0199001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199001">灌頂過十二年之年 duvāḍasa-vasābhisitena（K）, badaya-vaṣabhisitena（Sh）, duvaḍasavaṣabhisitena（M）, dbāda a-vāsābhisitena（G）, duvādasa-vasābhisitena（Dh, J）灌頂式是即位式或與戴冠式同樣。譯為過十二年之年的原文表示時之副詞句，所述為具格（instrumental case）。在印度表示時格，此以外用業格（accusative case），或用其他之格，但具格及業格之二最明顯。勿論於嚴密之區別甚為困難，因此雖有不少例外，但大約業格是中間、具格是過之，大致以此得區別。</note>
-<note n="0199002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199002">收稅官 yuta 王室處理御地稅之事，掌其收入及徵稅如地方官吏。司直官 lajūka（K）, rajuka（Sh）, rājūka（G）, lajuka（J）是掌司法及徵稅之官吏。字義為持繩（rajju）者之意，有定土地之境界，以職司裁判上。參照石柱法勅甲第四章。地方長官 pādesika（K, J）, pradeśika（Sh, M）, prādesika（G）如掌租稅、警察、俸給之高官。然，如本章并依下章可知，此等之官吏不唯現，今所言之役職，特別於本章關係法之教勒之故，單於字義及他書所述唯是此等官吏，依其役職項目而判斷應不正當，因此譯語唯為原語之避開音譯之目的，而試譯而已。</note>
-<note n="0199003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199003">法之教勒 dhaṁmanusathi（K）, dhramanuśati（Sh, M）, dhaṁmānusasṭi（G）, dhaṁmānusathi（Dh）以法教之意思，見為善戒惡之意思，譯為教勒。法之教誨、教誡、教勸任何之一亦可。此教勒之內容即有次括弧內之文。</note>
-<note n="0199004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199004">巡按 anusaṁyāna（K, G）, anusaṁyana（Sh, M）, anusayāna（Dh, J）此為法之教勒而出巡回。</note>
-<note n="0199005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199005">事務 kaṁma（K, G, Dh, J）, kraṁma（Sh）, krama（M）此應是右之官吏，各各本職之事務。此事務之外命出巡按之事。</note>
-<note n="0199006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199006">婆羅門、沙門 baṁbhana-samana（K, Dh, J）, bramaṇa-śramaṇa（Sh, M）, bāṁhaṇa-samaṇa（G）亦有沙門、婆羅門之順序。在阿含幾乎皆為沙門、婆羅門之順序。</note>
-<note n="0199007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199007">言節費用而積蓄是少欲知足之意思。</note>
-<note n="0199008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199008">會議 palisā（K, Dh）, pariṣa（Sh, M）, parisā（G）原來為會合會眾之意思，與大臣會議（mantri-pariṣad）同一解釋。於此 Mahāmāta-parisā 即大官之會議。參照第六章註[08]。</note>
-<note n="0199009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199009">依理證與文證 hetuvatā cā viyaṁjanate（K）, hetuto ca vaṁñanato ca, （Sh）, hetute ca viyaṁjanate ca（M）, hetuto ca vyaṁjanato ca（G）, hetute ca viyaṁjanate（Dh, J）。hetu 因、原因 viyaṁjana 是言名句文時之文的意。後者指法勅之文句，第三類小石柱法勅及第四類小摩崖法勅以見出其用例，佛教言文證之意思，因此對前者之指理證應不相違，因在此為理由之意義。</note>
-<note n="0199010" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0199010">監察，此 gananasi ananpayisaṁti（K）, gaṇanasi anapeśaṁti（Sh）, gaṇanasi anapayiśati（M）, āñapayisati gaṇanāyaṁ（G）, gaṇanasi ānapayisati（Dh）。gaṇana 又 gaṇanā 是用於勘定計算之意義故，關於計算應命令而譯，或者敷演此法勅。有說譯為命令記錄，因此其意不明確，但對第三章非言前述官吏之本職，勿論應見為法之教勒而出巡按。又伽那那或伽那那是有監督、注意、考量之意思，今人民如奉行法之教勒，應解為命令收稅官之監督視察之意，或者對於考量亦可。</note>
-<note n="0202001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202001">有情 bhuta（K, Sh, M）, bhūta（G, Dh, J）譯為眾生文字，在此是與生類相對而用，大致指人類之意思。</note>
-<note n="0202002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202002">非禮 asaṁpaṭipati（K, Sh, Dh）, asapaṭipati（M）, asaṁpratipatī（G）。</note>
-<note n="0202003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202003">法之宣行 dhaṁma-calana（K, Dh, J）, dhrama-caraṇa（Sh, M）, dhaṁma-caraṇa（G）闍羅那是進行。</note>
-<note n="0202004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202004">天宮之光景 vimana-dasanā（K）, Vimana-draśana（Sh, M）, vimāna-darśanā（G）, vimana-dasana（Dh）義瑪那又義瑪阿那是言梵天神之宮殿時之宮殿，於同時指梵天神之住，所支配之天世界。光景之原語應是見者或使見之意義。諸象 hathini（K）, astini（Sh, M）hathīni（Dh）, hastidasaṇā（G），此最後者是諸象之光景的意思。象是牽引四天王之車，或菩薩由兜率天下入母胎所取之狀態，應指此任何之一。甚多火蘊 agi-kaṁdhāni（K, Dh）, joti-kaṁdhani（Sh）, agi-kaṁdhani（M）, agi-khaṁdhāni（G）火蘊是火集之意。譬喻是形容優秀出色的人，又用於形容天優秀之諸神故，於此亦指諸神之意思。其他有天上之形相故，皆是此種類物之理。所花費，見前所言之宴聚，以法勸人民，法勿論言佛教之法故，天宮等亦皆不相違於佛教的。</note>
-<note n="0202005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202005">鼓響 bheli-ghosa（K, Dh）, bherī-ghoṣa（Sh, M）, bherī-ghosa（G）鼓言大鼓，但此戰之前行布告之時，又是一般瞧熱鬧而鳴之物，古昔是於宴聚之際而鳴之物。勿論在廣義，亦含括戰鬥時大鼓之意思，但於同時見天官之光景，為進行法之宣行，此代為法響。</note>
-<note n="0203006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203006">K 無有對耆宿柔順之一句，Sh 是對父母并耆宿柔順。</note>
-<note n="0203007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203007">至壞劫止 āva-savaṭa-kapā（G）此唯 G 有之句其他皆為至劫止，即至劫終，或唯此劫中。</note>
-<note n="0203008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203008">法之教誨 dhaṁmānusāsana（K, Dh, G）, dhramanuśaśana（Sh, M）。</note>
-<note n="0203009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203009">Sh 最後之部分，想（ñana）示為開始刻立。</note>
-<note n="0205001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205001">至壞劫止與同第四章註[07]。</note>
-<note n="0205002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205002">為惡實易 papaṁ hi sukaraṁ（Sh）, sukaraṁ hi pāpaṁ（G）唯 Sh 與 G 之二唯有此文，其他為 pāpe hi nāmā supadālaye（K）, pape hi mana supadarave（M）, pāpe hi nāma supadālaye（Dh）, ……supadālaye（J）。supadālaye = supadarave之形并其意義。學者之間有異說，但於 Mahāvyutpatti, 245, 983（7390）有 pradalita 於漢譯譯為裂，與其文字想是同一語源故，見為裂、摧、滅等意思，想譯為「實為惡當滅也」。</note>
-<note n="0205003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205003">法大官 dhaṁma-mahāmāta（K, Dh, G）, dhraṁma-mahamatra（Sh）, dhrama-mahamata（M）。大官是通常見相當於大臣為高官。法大官是阿育王之創設，其職掌於此見其詳細所述。</note>
-<note n="0205004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205004">一切之宗派 sava-pāsaṁḍa（K, Dh, J）, savra-praṣaṁḍa（Sh, M）。此宗派之字是於佛教言外道所當之字。不論宗派、宗義、宗徒令為其意味是通例。</note>
-<note n="0205005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205005">羅提伽人、美提尼迦人唯省略為 K 字。此等皆住印度之西北部者。</note>
-<note n="0205006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205006">專心於法者 dhaṁma-yuta（K, Dh, G）, dhrama-yuta（Sh, M）專心之原語優達為第三章註[02]之收稅官其同一，亦與解說達磨優達謂官吏之名，但此語之應用，於法勅文之任何處，唯由其前後之關係上而不解釋之。於此亦明瞭。</note>
-<note n="0205007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205007">從僕與主人 bhaṭa-m-aya（K, Sh, M, Dh）, bhata-m-aya（G）。婆達是金，傭是僕人。</note>
-<note n="0205008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205008">婆羅門與毘舍 baṁbhan-ibha（K）, bramaṇ-ibha（Sh）, bramaṇ-ibhya（M）, bābhan-ibhiya（Dh）。伊美耶是相當於梵語之 ibhya，言農工商階級之毘舍（vaisya）。因此於此之婆羅門與沙門並稱之婆羅門，是對於純宗家的，想是從事多少生計之職業，指世間的婆羅門。</note>
-<note n="0205009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205009">為無障礙 apalibodhāye（K, Dh）, apaligodhaye（Sh）, apalibodhaye（M）, aparigodhāya（G）paligodha = palibodha = parigodha = paribodha 是同一語之轉化，漢譯譯為貪、障礙，於 Mahāvyutpatti, 245, 122 註記（pp. 45-6）所詳論。</note>
-<note n="0205010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205010">配與囚人之費 baṁdhana-badhasā paṭividhānāye（K, Dh）, badhana-badhasa paṭividhanaye（Sh, M）, baṁdhana-badhasa paṭividhānāya（G）對初字有縛繫之意。相當於 patividhāna 是 Mahāvyutpatti, 245, 190 的 pratividhānaṁ，於復舊之事為回答之意思，配與似有異，但下之第八章用於配與金之意，於此亦分與金錢之意而解之。勿論為配與之義，為連續於下唯為配與。</note>
-<note n="0205011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205011">其任何之物 anubadhā（K）, anubadha（M）, anubaṁdha（Dh）以見從格（ablative case）從 respectively 之意的解說。然，一切學者無有一致之解釋。</note>
-<note n="0208001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0208001">裁斷政務 aṭha-kaṁma（K, Dh, j）, aṭha-kama（Sh）, athra-krama（M）, atha-kaṁma（G），單為事務之意思。聽聞上奏 paṭivedanā（K, Dh, J, G）, pativedana（Sh, M）此亦唯為了知之意義。關於任何事王所應為故，裁斷及聽聞以添加而譯之。</note>
-<note n="0208002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0208002">飼獸寮 vaca（K, Dh, J, G）, vraca（Sh, M）此語不明，大致是梵語之 vraja 即謂牛舍、家畜舍之意義。參照第十二章註[10]。</note>
-<note n="0208003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0208003">鑾輿 vinita（K, Sh, M）, vinīta（Dh, J, G）或言乘車。</note>
-<note n="0208004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0208004">上奏官 paṭivedaka（K, Sh, M, Dh, J, G）。</note>
-<note n="0209005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209005">唯 Sh，然者，朕不論在何處當裁斷關於蒼生之政務，即時不能不以此奏聞於朕，雖至返復誤刻，於譯文省略之，又 G 是右之文前為政務應奏聞於朕而為設奏聞（sṭitā）。更於最後之節 K 唯看朕之諸皇子諸王妃而己。Sh 與 M 是曾孫之省略。</note>
-<note n="0209006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209006">恩賜 dāpaka（K, Dh, J, G）, dapaka（Sh, M）。詔勅 sāvaka（K, Dh, J）, śravaka（Sh, M）, srāvāpa（G）。</note>
-<note n="0209007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209007">緊急事件 atiyāyika（K, Dh, J）, ācāyika（Sh, M）, acayika（G）。</note>
-<note n="0209008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209008">會議 palisā（K, Dh）, pariṣa（Sh, M）, parisā（G）。參照第三章註[08]。</note>
-<note n="0209009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209009">諍論 vivāda（K, Dh, J, G）, vivada（Sh, M）。保留 nijhati（K, Sh）, nijati（M）, nijhatī（Dh, G）。</note>
-<note n="0209010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209010">精勵 uṭhāna（K, Dh, J）, uṭhana（Sh, M）, usṭāna（G）。政務之裁斷 aṭha-saṁtilana（K）, aṭhasaṁtiraṇa（Sh, M）, aṭha-saṁtīlana（Dh, J）, aṭha-saṁtīraṇa（G）。</note>
-<note n="0209011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209011">滿悅 tosa（K, Dh, J, G）, toṣa（Sh, M）。</note>
-<note n="0209012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209012">崇高之事業 kaṁmatalā（K, J）, kramatara（Sh, M）, kaṁmatara（G），字義較好之業的意思。</note>
-<note n="0209013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209013">一 kiti（K, Sh, M）, kiṁti（Dh, G），此語是如何之意味為疑問詞，但用時有願如何為等之意義。以下凡一以專、願之何者而譯之。</note>
-<note n="0209014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209014">返還債務 ananiyaṁ yehaṁ（K）, anaṇiyaṁ vraceyaṁ（Sh）, aṇaṇiyaṁ yehaṁ（M）, ānaniyaṁ yehaṁ, （Dh）, ānaṁṇam gacheyaṁ（G）。字義是無債務之意義，債務是指借錢為本來之意，此語善負義務，用示譬喻的語。</note>
-<note n="0209015" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0209015">現世 hida（K, Dh, J）, ia（Sh, M）, idha（G）。後世 palata（K, Dh, J）, paratra（Sh, M）, paratrā（G）。</note>
-<note n="0211001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211001">對一切之宗派，參照第五章註[03]。於此奉事宗派是指宗教家，在此而用複數。</note>
-<note n="0212002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212002">克己 sayama（K, Sh, M, Dh, J），節制又制御亦可。心清淨 bhāva-sudhai（K, Dh, J, G）, bhava-śudhai（Sh, M）, bhāva 為本性、本質之意而譯為心。</note>
-<note n="0212003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212003">俗人 jana（K, Sh, M, G）, munisa（Dh, J）奢那在前而譯為蒼生之文字為同一，指一般人，牟尼沙勿論亦是一般人。於此與宗派者相對而用故取俗人之譯語。除 Dh 及 J 顯示言為單數，因此次之彼等一定是指俗人。學者以等看為指示俗人之代名詞，其俗人等行一切是彼等之義務，或行其一部分而譯想不太正當。宗教家皆須克己心與心清淨，最少亦有一部分故，希彼等不外住一切處。其理由於以下而述。</note>
-<note n="0212004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212004">樂欲 chaṁda（K, Sh, M, Dh, J, G）。貪欲 lāga（K, Dh, J）, raga（Sh, M）, rāga（G）。</note>
-<note n="0212005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212005">報恩 kitanāta（K）, kiṭrañata（Sh）, kiṭanata（M）, kata-ṁñata（G），堅固之誠信 diḍha-bhatitā（K）, driḍha（Sh, M）, bhatita（Sh, M）, daḍha-bhatitā（G）。Dh 與 J 是此二者省略。</note>
-<note n="0212006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212006">賤人 nica（K, Sh, M, G）, nīca（Dh, J）。</note>
-<note n="0213001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213001">此第八章之斷片於碰培蘇吧羅之摩崖斷片亦存在。</note>
-<note n="0213002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213002">娛樂巡行 vihāla-yāta（K, Dh）, vihara-yatra（Sh, M）, vihāra-yātā（G）。義哈羅於此為休養氣晴之意。</note>
-<note n="0213003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213003">狩獵 migaviya（K, Dh）, mrugaya（Sh）, mrigaviya（M）, magavya（G）。</note>
-<note n="0213004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213004">往三菩提 nikhamithā sambodhi（K）, nikrami sabodhi（Sh, M）, nikhami saṁbodhi（Dh）, ayāya saṁbodbiṁ（G）, nikhamitha sa ……（S）。三菩提通常譯為正覺或等覺，佛陀之大悟或指其內容。覺是智又道之意。然，不考慮王與佛陀同得悟故，在此應解入正道之意。學者之說，總之王解為得佛陀証悟之意，王成佛陀之三菩提解為參詣佛陀伽耶之菩提樹之意思，如此成為二說，大致因為其他甚少適切之文例及教理上之根據，而生異說不得斷定解釋。今，直譯為往三菩提，推定為入正道程度之意而已。</note>
-<note n="0213005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213005">譯為訪問其文字是見之意義。蒼生之狀態譯為接見。沙門、婆羅門之狀態說不定同是接見，但阿育王雖為王者重要的人，亦想不辭而訪問故，特譯為訪問。</note>
-<note n="0213006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213006">金錢之配與 hilaṁna-patividhāne（K, Dh, J）, hiraña-praṭividhane（Sh）, hiña-paṭividhane（M）, hiraṁṇa-paṭividhāna（G）, hiraṁna-paṭividhāne（S）。參照第五章註[09]。</note>
-<note n="0213007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213007">適宜此 tatopaya（K, Sh, M）, tadopaya（Dh, G）。其後，多譯為此繼續次節，但今不從此。</note>
-<note n="0213008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213008">爾來 bhuya（K, Sh, M, Dh, J, G），此語通常為越發之意思，於 Mahāvyurpatti, 245, 342 以 bhūyas = bhūya 以後譯之，今採用此。</note>
-<note n="0213009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213009">於〔治世〕之後期有種種之異說，但據其中之一說，為字義是於其他部分之意義。</note>
-<note n="0215001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215001">娶與嫁 avāha vivāha（K）, avaha vivaha（Sh, M）, avāha-vīvāha（G）。阿瓦哈是男迎女，即娶妻義瓦哈女於男方，即嫁出。</note>
-<note n="0215002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215002">祈願 maṁgala（K, Sh, Dh, G）, magala（M），曼迦羅通常為吉祥之意，但此是言祈願吉祥，立願而祈應該含有行巫、咒術。</note>
-<note n="0215003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215003">譯為男子之文字是與譯蒼生為同一，次之婦女子之對照上而為男子。</note>
-<note n="0215004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215004">婦女子 abaka-janiyo（K）, striyaka（Sh）, abaka-janika（M）, ithī（Dh）, mahiḍāyo（G），第一與第三是母與妻之意義，他是女人之意思。</note>
-<note n="0215005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215005">瑣細 khuda（K, M, Dh）, chuda（G）, Sh 為愚（putika）。</note>
-<note n="0215006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215006">而此不過唯得少果而已 K, Sh, M 之文，Dh, J, G 而且行祈願唯得少果而已。</note>
-<note n="0215007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215007">尊崇、節制、布施之前 G 是有善。</note>
-<note n="0215008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215008">Dh, J, G 是省略了朋友、知己乃至鄰人。</note>
-<note n="0215009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215009">「此是善」以下之 G 文「此是善」，應為予至此法祈願之目的圓成止，而且有既言「布施是善」。然，其法施又得比較法恩（dhamanugaha, dhaṁmānugaha）之布施，或無報恩之存在。故於朋友或於知已、親族、同僚（sahāya）互相於各機會：「此是應為之事。此是善。由此得達於天。」而互相教誡。然，不管何物見為如得天，更為有價值，於 Dh 特 J是有破損之箇所，但與 G 同一文是明白可知，故 G, Dh, J 是同一種類以 K, Sh, M 之同一種類者有異。</note>
-<note n="0215010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215010">K 又目的達成之後，缺更為之一句。</note>
-<note n="0217001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217001">名聲 yaṣa（K）, yaśa（Sh, M）, yasa（Dh, G）。榮譽 kiti（K）, kitri（Sh）, kiṭi（M, Dh）, kīti（G）。此兩者之區別而說為生前之名聲，死後之榮譽，應該是適當。</note>
-<note n="0217002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217002">言柔順於法柔順單是柔順於法之意，此所言之顯示在巴利語等亦多存在，次之隨順實行法，又應以隨行比較而解之。參照第十三章註[18]。柔順原來是希望聽聞之意思，有時譯為敬信。對於父母亦用此語，於此而譯為柔順者，今亦同用一譯語。</note>
-<note n="0217003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217003">如何為名聲，若希求榮譽之一句唯 G 缺失。</note>
-<note n="0217004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217004">Dh 及 J 是除最初之一，二次省略天愛喜見王，單唯記為天愛。</note>
-<note n="0217005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217005">為次下之事 etakāya（K, Dh）, etakaya（Sh, M）, etakāya（G）學者譯為此，以此連結上文，以此連結下文而解之見為適當。</note>
-<note n="0218006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218006">為對於後世 pālaṁtikyāye（K）, paratrikaye（Sh, M）, pālatikāye（Dh, J）, pāratrikāya（G）。原來是為對彼處之意義，唯此而言不必是沒有理由不得不見為後世之意思。然，於前章現世即對於世界相對而用，而後世即於彼處言得天，故由巴利阿含之用例而見者可解為現世及後世。</note>
-<note n="0218007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218007">小身之輩 khudaka vaga（K）, khudraka vagra（Sh）, khudaka vagra（M）, chudaka jana（G）。vaga = vagra = varga 為群之意，特別此以亦有指有司之一群而解說。然，於此用為與人同一，他所亦為同一視故，想應單看為通常人方可，在 Dh 與 J 沒記相當於輩或人之文字。</note>
-<note n="0219001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219001">此第十一章、第十二章、第十三章之三章於 dh 及 J 不存在。返而存於乙之別刻法勅二章。</note>
-<note n="0219002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219002">法之布施於第九章註[09]有，與 G 文中之法施同。由法親善 dhrama-saṁstave（Sh, M）, dhaṁma-saṁstave（G）。K 唯缺此一。法之分與 dhama-ṣavibhaga（K）, dhrama-saṁvibhaga（Sh, M）, dhaṁma- saṁvibhāga（G）。由法之結緣 dhaṁma-ṣaṁbadha（K）, dhrama-saṁbaṁdha（Sh, M）, dhaṁma-saṁbaddha（G）。</note>
-<note n="0219003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219003">由柔順、布施、不屠殺之各前有 sādhu 之一字。然兄弟之次缺主人。反之 K, Sh, M 缺親族。</note>
-<note n="0220001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0220001">崇敬 pujā（K）, puja（Sh, M）, pūjā（G）。此字用於禮拜、供養之意，現今亦用於祭禮之意思。於此與布施並用故亦為崇敬方法之意思。G 崇敬一切之宗派，又與布施種種之崇敬為崇敬彼等。</note>
-<note n="0220002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0220002">出家者 pavajita（K, G）, pravajita（Sh, M），在家者 gahatha（K）, grahatha（Sh）, gehatha（M）, gharasta（G）。</note>
-<note n="0220003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0220003">於一，一宗派切之本質增長云云一句雖存後文，此譯與他學者之譯少有不同。此之意思是布施或由崇敬而得起本質增長，如是解為布施或崇敬，應是正當。本質增長 śalā-vaḍhi（K）, sala-vaḍhi（Sh, M）, sāra-vaḍhī（G）。</note>
-<note n="0221004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221004">語言之制御 vaca-guti（K, Sh, M）, vaci-gutī（G）。</note>
-<note n="0221005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221005">讚揚自之宗派 ata-paśada-vā pujā（K, vā 不用）, ata-praṣaṁḍa-puja（Sh）, ata-praṣaḍa-puja（M）, ātpa-pāsaṁḍa-pūjā（G），讚揚與前之崇敬同一文字，不妨解為同一，為此語言之制御內容，此特譯為讚揚。崇敬指以言語表示。</note>
-<note n="0221006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221006">穩和 lahuka（K, Sh, M, G）。</note>
-<note n="0221007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221007">Sh 如是為者卻更強力地害自之崇派，卻反復如是錯誤而為。</note>
-<note n="0221008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221008">敬信譯為柔順，是同一語之動詞形。一致和合 ṣmavāya（K）, sayama（Sh）, samavaya（M）, samavāya（G）。</note>
-<note n="0221009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221009">多聞 bahuṣuta（K）, bahuśruta（Sh, M）, bahusrutā（G）。聞是學習或知之意味。教義之善亦 kayānāgā（K）, kalaṇagama（Sh）, kayaṇagama（M）, kalāṇāgamā（G）。教義阿含即譯為傳承，通常阿含為音譯。</note>
-<note n="0221010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221010">監婦大官 ithidhiyakha-mahāmātā（K）, istridhiyakṣa-mahamatra（Sh）, istrijakṣa-mahamatra（M）, ithijhakṣa-mahāmātā（G）。飼獸苑官 vaca-bhumikyā（K）, vraca-bhumika（Sh, M）, vaca-bhūmikū（K）。參照第六章註[02]。</note>
-<note n="0221011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221011">一部屬 nikyāyā（K）, nikaye（Sh, M）, nikāyā（G）。</note>
-<note n="0223001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223001">迦陵迦國 Kaliṁgā（G）、Kaligyā（K）、Kaliga（Sh, M）。孟加拉灣頭西海岸一帶之地方，相當於現今之奧利沙。</note>
-<note n="0223002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223002">十五萬數之數是唯（mita, matra, mātra）之意。</note>
-<note n="0223003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223003">法之遵奉 dhrama-śilana（Sh）。西羅那言返復而行，又為研究之意義，於此前者之意味應是適當。但此字之原字說有讀為保護（palana）。然，其他用字相當於此 dhaṁmavāya（K. G）、dhramavaye（M）。此複合詞後字之意義不明確。對於法之愛慕 dhaṁma-kāmatā（K）, dhrama-kamata（Sh）。</note>
-<note n="0223004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223004">悔謝 anuṣaya（K）。Sh 為 anusocana。為憂恨之意。G 半數受破損似有 anusaya。</note>
-<note n="0224005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224005">長者 agabhuti（K）, agrabhuṭi（Sh, M）。</note>
-<note n="0224006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224006">愛者之別離 abhilatānaṁ vinikhamane（K）, abhiratana nikramaṇaṁ（Sh）, abhiratanāṁ vinikramaṇi（M）, abhiratānaṁ vinikhamaṇa（G）。</note>
-<note n="0224007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224007">善保全者 pi ṣuvihitānaṁ（K）, pi suvihitanaṁ（Sh, M）。</note>
-<note n="0224008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224008">部眾 nikāyā（K, G）, nikaya（M）。</note>
-<note n="0224009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224009">Sh 是缺「除臾那人之間，此等之婆羅門及沙門之部眾沒有無住之地方，即於任何地方之人人」雖有缺人人之部。又四文無不有信仰，但為否定辭之一是衍字。</note>
-<note n="0224010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224010">林住種族 Aṭavi（Sh, M）, Aṭaviyo（K）。在提康地方之中央而住之種族。愛撫使反省 anuneti anunijapeti（Sh）, anunayati anunijhapayati（M）。</note>
-<note n="0224011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224011">雖來悔恨 anutape pi（Sh, M）。若用權力即同迦陵迦之征伐為來悔恨而終之意。</note>
-<note n="0224012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224012">不得傷害 akṣati（Sh）, achati（G）。公平 ṣamacaliya（K）, samacariya（Sh）, samacaira（G）。柔和 madava（K）, mādava（G）. Sh 為 rabhasiye。此語通常是性急又快活之意，但此見為於格 locative case，由前者之意義解為暴力之意，於暴力之狀態有說譯為公平。</note>
-<note n="0224013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224013">由旬 yojana（K, Sh, M）一由旬言約九英里。</note>
-<note n="0224014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0224014">Aṁtiyoga or Atiyoga（K）, Aṁtiyoka（Sh）。參照第二章註。Tulamaya（K）, Turamaya（Sh）, Turamāya（G）= Ptolemy II Hhiladelphos of Egypt, B. C. 285-247; Aṁtekina（K, G）, Aṁtikini（Sh）= Antigonus Gonatas of Macedonia, B. C. 276-239; Makā（K）Maka（Sh, M）Magā（G）= Makas of Cyrene, B. C. cir. 300-250; Alikyaṣueale（K）, Alikasudara（Sh, M）= Alexander of Epirus, B. C. 272-cir. 255，大致為 Alexander of Corinth, B. C. 252-cir. 244。此等諸王之年代，由於學者多少舉不同之數字。今唯由一說。</note>
-<note n="0225015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225015">Yona-kaṁboja（K, Sh, M）; Nābhaka-Nabhapaṁti（K）, Nabhaka-Nabhitina（Sh）, Nabhaka-Nabhapaṁti（M）; Bhoja-Pitinikya（K）, Bhoja Pitinika（Sh, M）。以上西北并西南印度地方。Aṁdhra- Pārimda（G）, Adha-Pālada（K）, Aṁdhra-Palida（Sh）是南印度。</note>
-<note n="0225016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225016">使臣 duta（K, Sh, M）, dūti（G）。</note>
-<note n="0225017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225017">以喜悅為本質之勝利 vijaye piti-lase（K）, vijaya priti-rasa（Sh）, vijaya pīti-rasa（G）。</note>
-<note n="0225018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225018">無不得新之勝利者，在原文無不得新之勝利為勝利。參照第十章註[02]。</note>
-<note n="0225019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225019">勝利雖是自然而得，ṣayakasi no（= yeva）vijayaṣi（K）, spakaspi yo（= yeva）vijaye（Sh）, sarasake eva vijaye（G）, sarasake 以取 sva-rasa-ka 之解說。此語有好，嗜好之意義，但於 Mahāvyutpatti, 245-1006，如譯為自然滅 svarasa-nirodha，亦有自然的意味。</note>
-<note n="0225020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225020">對於法之愛樂 K 是對於努力（uyāma）之愛樂，Sh 於一切之捨離（cati）愛樂者以示對於法之愛樂。</note>
-<note n="0225021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225021">G 之摩崖於本章最後之左側面 tesa 及 pipā 之斷片的文字刻有二行。又其右側面在有「持一切世間之安樂，即一切名為白象」之文字。Dh 摩崖之第六章之終了亦留有「 白象」之一語。於此等崖面像刻有白象，但示後破損而失。Dh 之摩崖可見象前半身之彫出。</note>
-<note n="0229001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229001">為有妙味 madhuliyāye（K）, madhuriyaye（Sh, M）, mādhuliyāye（J）, mādhūratāya（G）。</note>
-<note n="0229002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229002">全部之刻 asamati likhite（K）, asamataṁ likhitaṁ（Sh）, asamati likhite（J）, asamātam likhitam（G）。是本來於不完全所刻之意味。K 之摩崖北面有象之像似刻，於其下存有最上象（gajatame）之文字。Dh 及 G 之摩崖亦有其像。參照第十三章[21]。象是白象由點而見，是指菩薩由兜率天下降入母胎時，以取其形想是不會錯。</note>
-<note n="0230001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230001">此第一章本來別刻法勅第二，次之第二章應為其第一，古昔以來，既如是轉換，以學者之間所行，今亦從之。現今亦有改此，今唯從古者，亦有轉換者，必要記憶之。</note>
-<note n="0230002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230002">睹沙利 Tosalī，沙摩婆 Samāpā。</note>
-<note n="0230003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230003">都市執義官之大官 mahāmāta nagala-viyohālaka。都市執義官於其都市為歲判檢事職之大官，言 paura-vyāvahārika 同一。於 Mahāvyutpatti, 186, 42 有 pauravyavahārika，但單譯為守邑，其意義不明確。以下於原字之次無括弧時，Dh 及 J 之兩者示為共通之文。</note>
-<note n="0230004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230004">最上之方法 mokhya duvāla（Dh）, mokhiya duvāla（J）。於 J 無關於此事之一句。然，下第二章存有兩者。</note>
-<note n="0230005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230005">敬愛 panaya。</note>
-<note n="0230006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230006">一切之人皆是此朕之子 save munise pajā mamā（Dh）, sava-munā me pajā（J），此是有名之句。</note>
-<note n="0231007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231007">然，卿等應得及此事之範圍而其力不得達到 no ca pāpunātha āva-gamuke iyaṁ aṭhe（Dh）, no cu tuphe etaṁ pāpunātha āva-gamuke iyaṁ aṭhe（J）。此文，學者譯為「而卿等不得達此〔朕〕目的如何範圍」之意義，而以 pāpunātha 為汝等知之意，以 āva-gamuke iyaṁ aṭhe 如何之範圍至以達此事，或為不奉此事之意，但前者是達到又得之意，是本來的事，由此見出為知之意的文字。在此文，其本來之意義，想不妨解為，為官吏故，達為官吏之力的意思譯之。又後者即言及得此事之範圍，原來一切人是朕之子以含括一切人而解之。官吏之一一，其職目上，凡一切不得盡其力之意義。與次句之連絡上學者之譯想是不適宜。</note>
-<note n="0231008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231008">卿等雖然常善行 tuphe suvihitā pi（Dh）, tuphe suvitā pi（J）。同樣於學者，譯為同十四章法勅第十三章註[07]，於此見職目善保之意義可如前後之文勢上。</note>
-<note n="0231009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231009">於治民之事 nitiyaṁ（Dh）。於 J 無此字，其替為常常 bahuka（J）。niti 者相當行政，政治等之大字。於此一文章其意義存有不明之點，但據一說而如是譯之。得苦役 palikilesaṁ pāpunāti 達至苦，又得苦之意。達得之動詞共註[07]應比較而見之。忽然 akasmā是偶然，又無理由之意。後文為理由而譯出。</note>
-<note n="0231010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231010">中正之道 majhaṁ。</note>
-<note n="0231011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231011">嫉姤 isa、憤怒 āsulopa、不仁 niṭhūliya，Mahāvyutpatti, 146, 7, 取 niṣṭhura 之譯語。輕卒 tulanā（Dh）, tulā（J）。懈怠 anāvūti（Dh）, anāvuti（J）。懶惰 ālasiya、困憊 kilamatha、性情 jāta，奢他單為種類之意亦不知。</note>
-<note n="0231012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231012">於 J 如此見之高官是於卿等「天愛之教勒是如斯如斯」與告「卿等有返還負朕義務」之觀念。</note>
-<note n="0231013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231013">大災 mahā-apāya，阿婆耶是佛教之意味為惡趣。於此亦與天相對見為惡趣之意義，當然亦可。</note>
-<note n="0231014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231014">得王之嘉納 lājāladhi（Dh）, lājādhi（J）。</note>
-<note n="0231015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231015">若人不得為此所作者，於何處皆不使滿足朕之意 duāhale hi imasa kaṁmasa me kute mano-atileke（Dh）, duāhale etasa kaṁmasa sa me kute mano-atilehe（J）。此一文之意味由學者有異解，其讀法且有不一致。今從其中之一說而譯之。</note>
-<note n="0231016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231016">每提沙星座之日 tisa-nakhatena（Dh）, anu-tisaṁ（J）, tisa = tiṣya 又 tiṣyā。</note>
-<note n="0232017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232017">無理由而受障礙 akasmā palibodhe（Dh）。參照註[09]及十四章法勅第五章註[09]。</note>
-<note n="0232018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232018">不粗暴 akhakhasa（Dh），不狂惡 acamda 其所之穩和 sakhinālambhe（Dh）。J 最後之文字有代為不粗野 aphalusa。</note>
-<note n="0232019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232019">宇周尼 Ujeni = Ujjeyinī。</note>
-<note n="0232020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232020">太守皇子 kumāla。</note>
-<note n="0232021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232021">多迦尸羅 Takhasilā = Taksa'silā。</note>
-<note n="0232022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232022">相當此等之大官之處，於 J 是依語而有，乃應由此王勅之意味。</note>
-<note n="0236001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236001">以朕之詔 Lāja-vacanika（J）。學者見此與具格同一，由王之語，解為由王詔意。或導奉王之詔，或於王詔所任命之意而解，見大官之形容句亦說不一定可知之。</note>
-<note n="0236002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236002">J 是錯誤，朕猶如為朕之諸皇子，一切皆得利益安樂一文以返復之。</note>
-<note n="0236003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236003">邊疆人 aṁta 於十四章法勅第二章註[02]所言，此時想是指國境內邊疆之民。未歸順 avijita 是本來為未征服之意者，因此亦如何指未征服諸隣邦人，此第二章全體所說住國境外，他國人即阿育王之政治所及而不得適用，阿育王之法遵行上想為明瞭故，於此解為邊疆人之意，又譯為未歸順者。於印度古來國境截然區分故。若以地點言之，邊疆人亦好、隣邦人亦好，時不得明確區別亦不少。</note>
-<note n="0236004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236004">括孤內之天愛在 J 皆為唯王。</note>
-<note n="0236005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236005">依朕而無危怖 anuvigina mamāye kuvevū（Dh）, anuvigina hveyū mamiyāye（J）。依朕唯受安樂 sukhaṁmeva lahevu mamate（Dh）, sukhaṁmeva laheyū mamate（J）, mamate 是由予之意。</note>
-<note n="0236006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236006">了達 pāpunevu（Dh）, pāpuneyu（J），參照別刻法勅第一章註[07]。於此見出知之意義。</note>
-<note n="0236007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236007">朕之不動決意及誓言 dhiti patiṁñā ca mamā ajalā（Dh）, mama dhiti patiṁna ca acala（J）。J 又此句因此朕如斯教勒卿等令知朕之所欲文中之所欲於下返復。</note>
-<note n="0236008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236008">凡於地方之有司 desāvutika（Dh）, sakala-desā-āyutika（J）。以此有司由國都婆多利弗城及宇弟伊尼與多屈奢尸羅所派遣之大官為同一說，但 āyuti 如不必然。存於十四章法勅第三章之地方長官比較見之。</note>
-<note n="0237009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0237009">各四個月期之 anucatuṁmāsaṁ。J 是提沙日之間亦應傾聽之，有機會者一人亦應使傾聽之。</note>
-<note n="0239001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239001">此石柱法勅，甲是存於六個之石柱，其各個幾乎一致，無所異故，此見做一種省略一一之別記。</note>
-<note n="0239002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239002">最上又應無上 aga 之譯語。對於法之愛慕 dhaṁma-kāmatā，在十四章法勅第十三章之初頭亦同一。觀想 palīkhā 此為佛教語與觀察為同意義。敬信 susūsā 參照十四章法勅第十章註[02]及第十二章註[08]。怖畏 bhaya，精勤 usāha。</note>
-<note n="0239003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239003">難得正行 dusaṁpaṭ pādaye。</note>
-<note n="0239004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239004">對於法之希求 dhaṁmapekha。</note>
-<note n="0239005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239005">逐日 suve suve。明日明日之意，日日或為日夜之意。</note>
-<note n="0239006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239006">易犯罪者得勸道 alaṁ capalaṁ samādapayitave。關於 capala 參照 Childers, Pali-Dictionary s. v. ；關於 samādapayitave 參照 Mahāvyutpatti, 245, 428。</note>
-<note n="0239007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239007">對邊疆人之大官 aṁta-mahāmāta 參照，別刻法勅第二章。</note>
-<note n="0239008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239008">保護 Pālana，處理 vidhāna，與樂 sukhiyanā, sukhīyana，〔語言〕制御 goti。參照，十四章法勅第十二章註[04]。規制 vidhi。</note>
-<note n="0241001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241001">少漏 apāsinava = apa-āsinava。āsinava 相當於巴利語之 āsava，梵語之 āsrava而譯為漏。為煩惱之異名。此言與耆那教之 anhaya 同一視，但 aṇhaya 或 āsrava 為同一語根。但在佛教解為流出漏之意，在耆那教解為流入之意。故罪惡或煩惱流入與流出為不同一之想法。眾善 bahu kayāna，慈愍 daya，真諦 sace，此是真實之意義，但佛教的因解為少深真理等之意。清淨 socaya，此甚多情形下是關於身口意之三業。Childers, Dictionary, s. v。</note>
-<note n="0241002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241002">眼之布施 cakhu-dāna。有見為肉眼天眼慧眼之三眼說，但為三眼不若說為五眼方可。然，對照次句上，此是與人類蒼生者不是指三眼五眼。單見為知見之意。</note>
-<note n="0241003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241003">二足類四足類 dupada-catupada。鳥類水樓類 pakhi-vālicala。</note>
-<note n="0241004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241004">利行 anugaha。十四章法勅第九章註[09]譯為法恩之恩或與報恩同字。此字是恩寵恩惠之意，依行施與受施以適當而譯之。</note>
-<note n="0241005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241005">乃至對生命亦供養 āpāna-dākhināye，又是 pāna-dakhināye。</note>
-<note n="0242001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242001">難自省 dupaṭivekhe。水野弘元著巴利語辭典正字為 dupp acṭive dha。</note>
-<note n="0242002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242002">導於漏者 āsinava-gāmin。應照參道諦言以導苦滅道諦時之導字。關於狂惡等，參照別刻法勅第一章註[11]及[18]。</note>
-<note n="0242003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242003">不滅亡 māpalibhasayisaṁ。</note>
-<note n="0242004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242004">最後之部是前之捨離，對於觀不德，實際上，彼此之善行其性質應考慮而行以使反省。</note>
-<note n="0243001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243001">對於司直官，參照十四章法勅第三章。以生類蒼生由幾百千之生類而成蒼生、亦有此解說。司直官役職上、此亦可見為別的。</note>
-<note n="0243002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243002">有自信 asvatha。別刻法勅第二章對朕起信賴之信賴是同一之文字，但今解為信賴自已之意義。然，亦不妨見為信賴於王之意義。</note>
-<note n="0243003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243003">得與恩惠，於前章譯為利行文字之動詞形。斷訟 abhihāla，此字是有持來、取、捧，等之意，但在此用於共處罰，於後文亦與於司法公平及於處罰公平 viyohāla-samatā ca daṁḍa-samatā 相對，可想為與司法同種之意義故，關於法律之手續，因此司直官役職上、訴訟而裁斷持來之意。</note>
-<note n="0243004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243004">任自由裁量 ata-patiye me kaṭe. ata-patiya 是自主或為自主之意義，獨立又指不拘束。故譯自由裁量是完全之意。</note>
-<note n="0243005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243005">與安樂及起苦惱 sukhīyana-dukhīyana。</note>
-<note n="0243006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243006">由專心於法之人人 dhaṁmayutena，此亦有解為達磨優陀官吏名稱之說。參照十四章法勅第五章註[06]。然，大致不見此官名。亦有解說專心為法。</note>
-<note n="0244007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244007">知朕所欲之有司 pulisani pi me chaṁdaṁnāni。</note>
-<note n="0244008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244008">當教示彼等之彼等 kāni 亦有說為蒼生，但文勢上想是指司直官。</note>
-<note n="0244009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244009">立自信與本章註[02]同一語。</note>
-<note n="0244010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244010">對其處罰，所裁決死刑之確定有 tīlita-daṁḍa pata-vadha。恩赦 yota，通常解為綬刑。但亦有異說。</note>
-<note n="0244011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244011">使彼等觀念其生命 kāni nijhapayisaṁti jīvitāye tānaṁ，此有異說之句。彼等是指司直，使觀念購死刑囚生命賠償金之說，亦有解說勸之意義。由法勅文全體見，又由此前後見之，不得解為出贖罪金救死刑囚。阿育王當時，是否有如是風習，史家所言之程度不明確。使觀念在十四章法勅第十三章註[10]譯為令反省，於別刻法勅第一章註[12]譯為令觀念是同一之文字，在佛教言行靜慮又禪定，即若同作觀念者，死刑囚解為令觀念之意。由次之布施、斷食、後世利益安樂之點而想，亦不解為以金贖命之意義。或令觀念不到之時 nāsaṁtaṁ vā nijhapayitā，此解說為無人勸之意，因此為布施等說見死刑囚之行為，nijhapayitā 在他三石柱之文為 nijhapayitave 故，此從為格（dative case）之說，應解為如前觀念之意義。</note>
-<note n="0244012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244012">於時之終了後 niludhasi pi kālasi，即對此多異說，但在文勢上，今如是譯之。</note>
-<note n="0247001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0247001">生物 jāta 在此活生之物的意義。在別刻法勅第一章註[11]，此字譯為性情，此亦解為活生物之意義。</note>
-<note n="0247002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0247002">以下生物之原語以順次舉之。suke, sālikā, alune, cakavāke, haṁse, naṁdīmukhe, gelaṭe, jatūkā, aṁbā-kapīlikā, daḷī（daḍī）anaṭhika-mache, vedaveyake, gaṁgā-pupuṭake, saṁkuja-mache, kaphaṭa-sayake, paṁna-sase, simale, saṁḍake, okapiṁde, palasate, seta-kapote, gāma-kapote。四肢類同前之四足類。參照石柱法勅甲第二章註[08]。</note>
-<note n="0247003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0247003">牝山羊 ajakā，牝羊 eḷakā（eḍakā），牝豚 sūkalī，懷孕者 gabhin，哺乳者之 pāyamīnā，仔 potake。</note>
-<note n="0247004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0247004">家鷄 kukuṭe，籾殼 tuse，由四個月成三季各滿月之日 tīsu cātuṁ- māsīsu 以一年分為夏雨季冬之三季，一季為四個月，其最初之日即滿月之日。故此譯為三之四個月季的最初日亦可。提沙日是在別刻法勅第一章及第二章與提沙星座之日同，提修耶或言提修耶〔長音〕。此是月泰西耶（Taiṣa）亦言飽西耶（Pauṣa），言由十二月半之一月半。各布薩日 anupasatham。布薩是佛教之行事，婆羅門亦有，但少有不同。參照小石柱法勅二註五。普那瓦斯 punāvau = punarvasu。此是二十八宿之第五，或第七之名，普那如瓦須之日是指何日不明瞭。</note>
-<note n="0248005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248005">釋放囚人 bamdhana-mokha。參照十四章法勅第五章。</note>
-<note n="0249001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249001">近親者遠方者 patiyāsaṁna apakaṭha。</note>
-<note n="0249002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249002">省慮 paṭivekhāmi，參照石柱法勅第十三章註[01]。</note>
-<note n="0249003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249003">凡部眾 sava-nikāya，參照十四章法勅第十三章註[09]。</note>
-<note n="0249004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249004">躬自使親近 atanā（或 atana）pacūpagamane（或 pacupagamane）是，乃自接近之意。此亦有唯看為宗派之說，亦有直看為蒼生之說，以上所言直看為一切亦可。</note>
-<note n="0250001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250001">此一章唯存於提利睹普羅石柱，其他不存在。而此是總括阿育王之所為者，與他石柱法勅之區別，此為乙。全部大致破損甚少故，完讀容易。於括弧內之文字是補破損之簡處而讀之。</note>
-<note n="0250002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250002">為適當 Anulupā。</note>
-<note n="0251003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251003">令聽聞法之聽聞 dhaṁma-sāvanāni sāvāpayāmi。sāvana 是聞之意，由令人聞者，可譯為宣說。參照十四章法勅第十章註[02]。</note>
-<note n="0251004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251004">諸有司者亦如何 yathā pulisā pi……，此最初之 ya 及 ā 之間因不明確，ya 之處不為 yathā 而為 vyūthā，此有為官名之說。</note>
-<note n="0251005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251005">法柱 dhaṁma-thaṁbha 刻法勅是指石柱。法宣說 dhaṁma-sāvana 此亦為補讀，應比較註[03]。對司直官、法大官參照既所述。</note>
-<note n="0251006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251006">榕樹 nigoha = nyagrodha 通稱為尼具羅陀樹。菴羅樹林 aṁbā-vaḍikyā。aṁbā = āmra 菴婆是芒果。</note>
-<note n="0251007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251007">〔每〕庫沙 aḍha-kosikyāni = aṣta-krosīkāṇi。庫羅尸耶（krośa）是現今言為庫斯（kos）。一由旬（約九哩）八分之一。而庫沙為行軍一日之行程。阿陀（aḍha）為半之意，有解說為每半庫沙意。然，由此井泉、休憩舍等為太過多。休憩舍 niṁsiḍhaya（niṁsidhiya）。此有解說為下飲水之段階，印度之風俗上，此謂不必要故，解為休憩所方可以。</note>
-<note n="0251008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251008">與樂法 sukhāyanā 應比較石柱法勅甲第二章註[05]。</note>
-<note n="0252009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252009">為好利 ānugahika 參照石柱法勅甲第二章註[04]。</note>
-<note n="0252010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252010">特殊之法大官是譯者之加筆。法大官之下有如是各各專任之大官，統轄於此等法大官又其等全體應為法大官。本節最初之法大官與最後之法大官是同一，中間之此等為同一是學者之說。又此處之文為朕……命（me kaṭe），由朕……如是為而譯之。他亦有此例。</note>
-<note n="0252011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252011">佛教僧伽之事 saṁghatha。saṁgha 雖不限於佛教，但法勅指佛教者。在耆那教亦有使用此文字之例。尼犍陀 nigaṁṭha 當時，此是耆那教。古昔為耆那教以前之一派。於漢譯有尼犍子，此是音譯，子當然有陀方可以。尼犍陀與邪命外道是有別，有不注意的人而混此為一。於此言佛教、婆羅門、邪命外道、耆那教之四派及其他種種之宗派應注意之。</note>
-<note n="0252012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252012">布施之頒行 dāna-visaga。</note>
-<note n="0252013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252013">求滿足處 tuṭhāyatanāni。tuṭha 是見 tuṣṭi 雖亦為有 tuṣṭa，其任何亦為滿足、知足之意。ayatana 是譯為處之字。如通常言處是解為生長之義，生起滿足，即蒼生之希求物之意義。</note>
-<note n="0252014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252014">法之敢行與法之遵行 dhaṁmāpadāne dhaṁmānupaṭīpati。對此字參照石柱法勅甲第二章。</note>
-<note n="0253015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253015">法之規正 dhaṁma-niyama 靜觀 nijhati 於柱法勅甲第四章註[11]所言觀念同一意義，靜慮相當於禪定。然，為其內容，如舉存在點少有異。</note>
-<note n="0253016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253016">最後之次節，有關此天愛詔，由此，以刻之止一文，在石柱之刻於全體之最後。然，如學者所言，天愛之處與目的之所者殊更此一文以示置本節之最初附有符號故，又意義上那樣，想為適當故顯有原刻者之意而如是配列。明白是原刻者之誤刻。</note>
-<note n="0256001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256001">此處 hetā 恐怕是王領土內之意義。或指見為國都亦可。</note>
-<note n="0256002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256002">菴婆樹林 aṁbā-vaḍikā 參照石柱法勅乙第七章註[06]。精舍 ālame = ārāma。此字原意為園之意，此亦有解說為遊園之意，在佛教用為精舍之意味，例如祗園精舍可知。頒施舍 dānagahe 參照石柱法勅乙第七章註[12]。達那伽哈是布施舍之意，不為布施之家的意義，頒為布施家之意。勿論言如是家上含有行布施。</note>
-<note n="0256003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256003">Tīvala, Kāluvākī 迦如瓦奇非個人之名而為姓。由此可知，提瓦羅皇子。</note>
-<note n="0256004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256004">願 vinati = vijñapti 此為刻文破損不明，以補讀之字。</note>
-<note n="0257001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257001">憍賞彌，通例在漢字音譯為憍賞彌，與佛教關係很深之古都市，現今言憍賞。法勅此由四行而成，第二行與第三行之最初數字不明確，又第一行之最後并其他多少有不明，大致確定。</note>
-<note n="0257002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257002">諸大官 mahāmāta。此第一行在最後之文字，學者讀此為主格（nominative case）。然，最後之綴結果唯 -ta 是否而終不明確。勅命（ānapayati）得取目的格，今特於大官讀為業格（accusative case）。</note>
-<note n="0257003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257003">命和合 samage kaṭe。就這樣為和合之意義，今以原來之例言者，kate 是用為命之意義。而不明之部分不過是唯數綴故，僧伽又比丘比丘尼，由朕不論怎樣，然者，朕當令持僧伽於和合，即想像為應命的意義。</note>
-<note n="0257004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257004">僧伽中應不容此 saṁghasi no lahiye。其次，第三行最初有不明之各處，此亦與前同不為數綴故，不遵比丘之作法，所謂不示字為賊住者或外道之意思，可以想像的。想像為賊住者或非行者次句應能聯絡。</note>
-<note n="0257005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257005">令著白衣 odātāni dusāni sanaṁdhāpayitu。令著白衣，言令還俗。白衣非比丘，指在家者為常例。</note>
-<note n="0257006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257006">非於精舍之處 anāvāsasi. āvāsa 是指比丘比丘尼之住處，相當於精舍或僧院。取消此故，言比丘住處以外。阿瓦提沙是布薩時用為結果或界區 sīma 之同一故，此看為相同者，由精舍亦指為廣大地域。anāvāsa 是用 Cullavagga, 1, 27; 2, 1, 3; 2, 1, 4; 4, 1 等文字。破僧伽是五逆罪或五無間業之一的重罪。由此得知當時有破僧伽之傾向。</note>
-<note n="0259001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0259001">刪至是有名現存之塔處。此法勅由八行而成，第一行完全欠缺，第二行唯見……yā bheta……ghe……mage kaṭe，第三行以下大致可以讀。第二行最初之耶，皆為不解。亦有人讀耶呣。次 bheta 是 bhetave（破）。因此可想像有否定辭。其次為 samghe……samage kaṭe，沙摩啟、迦提如前註，此前由朕（me）見為有存，看為朕命僧伽和合之意。mage 照樣是道之意故，亦有人解此為比丘并比丘尼所作為之道意，恐怕不適當。</note>
-<note n="0260001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260001">沙如那陀是昔之鹿野苑，現今如是呼。此法勅由十一行而成之中，於第一行天之一字，第二行之最後唯 el，第三行之開始有 pata 而缺數字，其餘大致可以讀。第一行雖為天愛詔，但第二行於任何人……之處唯讀之，其他完全不得想像。第三行缺國都巴達利弗陀之名，此由前之憍賞彌法勅考察之，於巴達利弗陀應為勅命大官等。詔於大官之後文而見亦明之。</note>
-<note n="0260002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260002">比丘僧伽、比丘尼僧伽 bhikhu-saṁgha, bhikhunī-saṁgha 分裂時而如是言，此亦為合一僧伽。</note>
-<note n="0260003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260003">公所 saṁsalana。</note>
-<note n="0260004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260004">為得確信 visvamsayitave 於別刻法勅第二章起信賴而譯之文字與同語源之文字，於本文譯文中依譯者之加筆而意義可明白。然，學者之說有與此不同。</note>
-<note n="0260005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260005">每度之布薩 anuposathaṁ 參照石柱法勅甲第五章註[04]。往布薩 posathāye yāti。前者亦可解每布薩日之意味，指布薩之日可見為指布薩之式。詣擁有目的格。又從後者見者，於此法勅文布薩之原語是 posatha，此是不可疑。故見此 uposatha 是錯誤，言每度之布薩可見為 anu-posathaṁ。巴利語是 uposatha。在佛教以外各半月之十四日十五日八日有布薩日之慣習，於佛教亦同樣採用，但不久各半月一回，十四日或十五日為讀誦波羅提木叉，為每月二回之布薩日。故每度之布薩為月二回。</note>
-<note n="0261006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0261006">地方 āhāla。城塞邊境地方 koṭaviṣava。奇奢瓦比阿哈羅狹窄，而此處言為塞砦地方。</note>
-<note n="0261007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0261007">離去〔三衣〕vivāsayātha。此當然，令離去三衣而住，而譯為之方可。此文字由 vi-vas而來的，此之使役法三人稱單數 vivāsayati 之複數命今法。同一語源之 vas 有著、住二意義，學者於此為住之意，而前接辭 vi 為離之意思，由此示為離僧院，即解為放遂之意思，更由於此語根所作直接法三人稱單數 vivasati 是相當於巴利語之 vippavasati 說為通例。然，vippavasati 離居之意味同時，此共用具格時，亦用為離衣之意，Suttavibhaṅga, I. P. 198（Nissaggiya, 2, 1）等如是用之，并於 Childers 之辭書亦有而明白。又此為名詞者，vippavasa，取付上取消之前接辭而為 avippavasa 者，比丘即不離三衣而用於不脫三衣之意，律藏中之一術語（Mahāvagga, 2, 12. 1; Childers, Dictionary, s. v）更不付取消為名詞於梵語為 vipravasa，此亦離三衣之意為律之術語亦於 mahāvyutpatti, 260, 4，根本說一切有部毘奈耶第十九、離三衣學處第二亦如此。然，如此之際離三衣又令離，同時離住又含離住之意，離三衣於同時解為離三衣而住之意。故 vivāsayati 即於梵語或巴利語解為離三衣而住，單解為離居，想不若典據上更適宜。因此於前文言令著白衣、言不住於精舍處之兩者，依此一語是所意之事。如學者之解離僧院而住亦有不得不含勿論離三衣而住，僧伽之性質上，為當然故。此說決定不能不完全不當。尚，最後之文有令離三衣 vivāsapayāthā，此應嚴密是令離三衣之意。有為三重之使役法。</note>
-<note n="0261008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0261008">準合此教勅之文 etena viyaṁjanena。參照十四章法勅第三章註[09]。</note>
-<note n="0263001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263001">藍毘尼 Luṁmini，所謂 Lumbinī-vana 即藍毘尼園，釋尊降誕之土地。現今為藍毘尼提 Rummindeī。</note>
-<note n="0263002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263002">佛陀釋迦牟尼 Budhe Sakyamunī。薄伽梵 Bhagavam。</note>
-<note n="0263003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263003">此石作有馬像 silā vigadabhī cākālāpita。此句不明。vigada 果然為馬耶？存有不確定之點。silā-vigaḍa-bhīcā 此想為石柵之說方可以。</note>
-<note n="0264004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264004">免納稅金 ubalika, bali 是言宗教的稅金。八分一 aṭha-bhāgiya，通常是納四分之一。或由時代而有六分之一，亦有三分之一。</note>
-<note n="0264001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264001">或言尼具利瓦法勅。庫那迦瑪那是 Konākamana = Konāgamana = Kanakamuni。所謂拘那含牟尼佛，過去七佛之第五佛。</note>
-<note n="0264002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264002">塔 thube。在巴利語 thūpa，梵語言 stūpa。相當於塔婆為土饅頭形之小丘陵程度。通常應該是納遺骨。此點與支提不同。支提（cetiya）無遺骨。</note>
-<note n="0264003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264003">再度 dutiyaṁ 亦有解說為二倍之意味。此方反而可以亦說不知。然，有時阿育王以前既有建塔。又王由以前而曾建。不論如何，此時以前已有塔之點沒有不同。</note>
-<note n="0264004-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264004-1">括弧內學者之補讀。</note>
-<note n="0265001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265001">明白 prakāsa（R）. 其他無此字。釋迦信者 sake（R）。優婆塞 upāsake（S, B）。沙啟之文字因不能明確的讀，以他之說讀為此言 savake。然，今從讀沙啟之說。次，參照二之相當文。沙啟是釋種為佛教從。若沙瓦啟是聲聞。其他明瞭為優婆塞。優婆塞是在家者，指佛教信者，故沙啟亦用為與此同一意義。</note>
-<note n="0266002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266002">朕近於僧伽 hakaṁsagha upete（R）, mamayā saghe upayāte（B）, saṁghaṁ upagate（M）, mayā saṁghe upayīte（Br, S）缺此句，J 破損不能讀。此句之意味實在難明確。唯優婆塞為近僧伽之意味，又入於僧伽言與比丘同樣意義，此點不明然。若前者不能明白區別為優婆塞，故應重複，若為後者有進取王政，自是否得為比丘甚為可疑。義淨三藏於印度所見阿育王之像言有著比丘之衣，為著比丘之衣於何處之點亦無為比丘之理。在印度不為比丘者，不得著比丘之衣。或學者論梁之武帝著僧服講經之例，此是不足取說。意義完全不同。近來他之學者在律藏大品（Mahāvagga, 3, 7, 8）承認比丘迦提加（bhikkhu-gatika）故，提出阿育王恐怕是此比丘迦提加之說。比丘迦提加大致在大品只出現一次，其他未曾見出，因此不得明瞭了解，恐是與比丘住同一精舍的人，或於精舍與比丘共住人之意義，完全不為比丘，或期間，於精舍與比丘共住之間，與比丘同一，而又，過此何時出精舍，其時指非比丘而生活之人。阿育王不得確証比丘迦提加故，一切是推定為止。常常猶如不為比丘迦提加，如斯種類者想定（若有此者）言近於僧伽之意義。言其像著比丘之衣，其他幾乎一切大致可以說明，又得領解。故今比丘迦提加又與此相似而解之。</note>
-<note n="0266003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266003">一年有餘 sātileke chavachare（R）, savachale sādhike（S）。此後者 savachale 之 va 字處多少不明確亦如見有他字。因此成為此種種之讀，種種之說。於中，此 saḍvachale即讀為六年，依此法勅之年代，因此為阿育王之年代論說之根據。以前，此論曾出現與此前者之比較得明其不正確，現今，此六年說不能承認。</note>
-<note n="0266004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266004">閻浮提 Jaṁbudipa（R, B）. Jaṁbudīpa（S）。雖指此地球全體之世界，於此是印度之意義。</note>
-<note n="0266005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266005">與諸天交往之人人 yā amisā devā husute（R）, aṁmisam-devā saṁta munisā（S）, amisā devehi……（B）。諸天之意不明確，恐是指十四章法勅第五章所言。</note>
-<note n="0266006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266006">唯依大身 mahatatā（R）, mahatatā va（S）, mahataneva（B），小身 khudaka（R. S. B）。</note>
-<note n="0266007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266007">高族 uḍāla（R. S. B）。</note>
-<note n="0266008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266008">D 之一節唯 R 存在。此過於突然，前不連絡明了。然，見於小石柱法勅二沙如那陀法勅存有其同文。</note>
-<note n="0266009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266009">B 是缺 E 之一節。又 S 以 E 之一節置於 C 之前。</note>
-<note n="0266010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266010"><p>E之一節很難解。舉原文對照如下：</p><table cols="4"><row><cell><space quantity="3" unit="chars"/>vyuṭhenā sāvane kaṭe</cell><cell>200 50 6</cell><cell>sata vivasa ta</cell><cell>（R）</cell></row><row><cell>iyaṁ ca savane vivuthena, duve sapaṁnā lāti-satā vivithā ti</cell><cell></cell><cell>200 50 6</cell><cell>（S）</cell></row><row><cell>iyaṁ ca sāvaṇe sāvāpite vyūthena, </cell><cell>200 50 6</cell><cell></cell><cell>（Br）</cell></row><row><cell>iyaṁ ca sāvane…………，</cell><cell>200 50 6</cell><cell></cell><cell>（S）</cell></row><row><cell>i……<space quantity="2" unit="chars"/>sāvane…………，theana, </cell><cell>200 50 6</cell><cell></cell><cell>（J）</cell></row></table><p>此中，vyuthenā 是與 vivuthena 同一，又 vivāsā 是與 vivuthā 同一。vivāsa 是名詞，vivutha 是形是過去分詞，同一意義是不相違。任何之語根 vas 在前小石柱法勅二沙如那陀法勅註[07]所說同一。因此，於此言而見，vivāsa 可解為離三衣而住之意，vivutha = vyuṭha 可想為離三衣而住之意義。故，vyuṭhena sāvane kaṭe 是離三衣而住者為之作教勅，即為渙發之意，iyaṁ ca savane vivuthena，然此教勅由離三衣而住而〔發〕之意 iyaṁ ca sāvāpite vyūthena，此教勅由離三衣而住者而說，令彼（聞為其直譯，令聞之人與聞之人依何者之立場，何者皆可譯）之意。沙瓦禮令聞之意義不論是說教、勅語、宣言，指何者皆不妨故，唯此文字不得不指王之教勅之理，全體之文意，王所說是明了。故離三衣而住者，阿育王自身解為指自身而言。因此離三衣而住為依朕之意。然，何故對於特言顯離三衣而住是無明確理解之處。因此，此前所述，可想是有關比丘迦提加（bhikkhu-gatika）而來的。故入此想法而見者，解為指不為比丘迦提加期間之王自身者，大致可以領解。然者，殊更如是言顯何為亦所不明然。更，次句離三衣而住為二百五十六之意義。最後之 ta 應讀為 ti。此二百五十六指何為數耶？且 vivāsa, vivutha 為逝去之意義，此以佛滅作解說，二百五十六是佛滅後阿育王發此法勅止之年數。如此，今完全避開之，無此主張之人。又 vivutha 等由布教師之意，由二百五十六人之布教師發出此宣言，若二百五十六人之布教師出發布教，有說由二百五十六人之布教師所發之意思。此外亦有種種解釋，但 duve sapaṁnā lāti-satā vivuthā ti 之 lāti = ratti = rātrī 是夜間之意，明白可承認，甚多失其根據又為誤字以外，其說不成立。故為二百五十六之數字二百五十六夜即言二百五十六日之意。即，離三衣而住者言為二百五十六日之意味。第二文於 S 文字之舉數，更記數字是印度之方式不為異例。此 E 之一節由 S 而想，又由次之三而見者，於 B 之一節直繼續者，決不是破僧伽者令離三衣而繼續 D 一節之趣意。然，夜時，二百五十六日即一年三分之二以上，又熱心近於僧伽言精勤一年有餘，唯約半分之期間雖為比丘迦提加，如 B 一節所述之得果報者，假令小身，又僅精勤，此應努力依實例，勤之趣意，想為此一節所加。學者費二百五十六夜巡禮，又解花費祈願，因此有進行巡禮之朕，發此教勅，又花費祈願之朕發此教勅雖不成其意味，但此意義於 B 之一節或在此法勅全體看，其聯絡而想必無不適切。二百五十六日間出巡禮又費祈願，實統政治之王，實際上是否可能耶，應思之？又如費祈願，在佛教之趣意上為何意味是難令領解。恐不外是西洋宗教之想法而解。殊 vyuṭha 可以見為梵語之 vyusta，其意依據 Baudhāyana-dharmasūtra, 4, 5. 30, having spent the night（in prayer）而解者，佛教的狀態想之即不很適宜。因此，今不從此等之說。結果，vyuṭha, vivāsa 等之文字缺其用例，為不明之文字，無適確之解說。</p></note>
-<note n="0271001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0271001">阿育 Asoka 於此最初出王之名。古來法勅全部為阿育王之物，於此不要證明，今有此更為確實。</note>
-<note n="0272002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272002">佛陀釋迦信者 Budha-Śake。</note>
-<note n="0272003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272003">曾〔人人與〕諸天交往，但今亦有交往者 pure ye amisā devā husu te dāni misibhūtā。</note>
-<note n="0272004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272004">繁榮 bhadake，元來是形容詞。</note>
-<note n="0272005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272005">此法勅與其他之法勅有多少不同之處，特別此獨立譯出資助與其比較。</note>
-<note n="0272001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272001">A 之一節是前之一及二不存在。但此刻法勅 Br, Ś, J 之 J 中，J 嚴重缺損。斯瓦那奇利 Suvaṁṇagiri，太守皇子 Ayaputa，於刻法勅第一章及第二章同一。Ayaputa = Āryaputra 言為皇子。是伊尸羅 Isila。</note>
-<note n="0273002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273002">唯 Br 通常有天愛如是詔為天愛命 āṇapayati。其他為如是詔。</note>
-<note n="0273003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273003">一年間 ekaṁ savacharaṁ（Br）, ekam savacha……（S）。J 亦應如是。今，因為破損不得讀。此年數唯此有而為重要者。</note>
-<note n="0273004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273004">唯依大身 mahātpeneva。</note>
-<note n="0273005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273005">努力 kāmaṁ。</note>
-<note n="0273006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273006">C D 之二節，此法勅不存在。</note>
-<note n="0273007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273007">確固 drahyitavyaṁ（Br）。通常譯為堅固之字，確固有慈愍，又慈愍以言確固之意。</note>
-<note n="0273008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273008">弟子 aṁtevāsin（Br, J）. 軌範師 ācariya（Br, Ś, J）。通常音譯為阿闍梨。言為師。</note>
-<note n="0273009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273009">適當 yathārahaṁ（Br, J）。</note>
-<note n="0273010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273010">古來之本質 porāṇā pakitī（Br, J）。吧奇提是本性、自性之意。</note>
-<note n="0273011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273011">Br 亦導長壽之次，正直人云云，而刻者所述，以一切終了，Ś 與 J，人云云之前後尚存多少之文是很明瞭。然，不幸而多破損，不得讀。軌範師又尊敬弟子是言其親族應行正行。弟子與師互相尊敬是佛教僧伽之法則。</note>
-<note n="0273012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273012">如此者即天愛之教法 hevaṁ dhaṁme Devāṇaṁpiyasa。此唯 J 有此句。</note>
-<note n="0274013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0274013">刻者 lipikara，羌吧達 Capada，於他之說見羌是名之部分，見吧達是名。三文亦皆於本文，刻者，實是由刻者，而唯一字與其此字體以加魯修提之字體刻之。其他皆是普羅夫米字體。故此刻者是常用加魯修提之字體的人，於此不外特別是示為自加刻之。</note>
-<note n="0275001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275001">此法勅是吧普如法勅，但亦言婆伊羅睹第二法勅。摩揭陀國之天愛王 Priyadasi lājā Māgadhe。</note>
-<note n="0275002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275002">敬禮 abhivādetūnaṁ。</note>
-<note n="0275003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275003">恭敬 gālave 亦可譯尊重。</note>
-<note n="0276004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0276004">如此正法得久住 hevaṁ sadhaṁme cila-ṭhitīke hosatī ti。此或由經引用之句。增支部存有似此之句。A. 3, pp. 247, 340; 4, p. 84。</note>
-<note n="0276005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0276005">於毘奈耶最勝〔法說〕（Vinaya-samukase）對於指何，尚未明確，但一說存於律藏中之大品（Mahāvagga），指初轉法輪。譯為最勝 samukase 與巴利語言 saṁukkaṁsika同。sāmukkaṁsika 於巴利阿含多用 sāmukkaṁsika dhammadesanā，必是指四諦說之例。故沙呣加闍為最勝說之意義，想是指四諦說，而由於毘奈耶所見，此見為指初轉法輪，想是適宜。聖種經（Aliya-vasāṇi）在巴利語 Ariya-vaṁsā（A. 2, p. 27）。當來怖畏經（Anāgata-bhayāni）於巴利亦同名（A. 3, p. 103）牟尼偈（Muni-gāthā）是 Muni-sutta（SṆip. 1, 12, p. 36）。寂默行經（Moneya-sūte）是 Nālaka-sutta（S. Nip. 3, 2, p. 131）。優波帝沙問經（Upatisa-pasine）是 Sāriputta-sutta（S. Nip. 4, 16, p. 186）說羅睺羅經（Lāghulovāde）是 Rāhulovāda-sutta 相當（M. 1, p. 414）。然，對此亦存有唱異說之學者，其異說是一般學者所承認。</note>
-<note n="0276006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0276006">法門 dhaṁma-paliyāya，通常言法門是經中說而指其說，茲於此指經見為其直接之意味。恐怕此等是指經中之教說。</note>
-<note n="0276007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0276007">比丘、比丘尼、優婆塞、優婆夷稱為四眾。</note>
-<note n="0278001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0278001">此第一、為榕樹洞院又斯達磨洞院，第二、為加羅提加洞院又言修瓦周普利洞院，第三、為斯毘耶洞院又言加如那奢宇婆如洞院。</note>
-<note n="0278002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0278002">於第三予指其他之施主，又亦指王而解之。</note>
-<note n="0278003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0278003">美麗 supiya。</note>
-<note n="0279004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0279004">此第三之刻文終了刻有卍字、劍、魚。</note>
-<note n="0279001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0279001">十車 Dasaratha 王是阿育王之孫，承認有其王位，但阿育王直續為王，或隔一代而為王，不明。然，依耆那教之傳說，繼阿育王之王，同王之孫 Saṁprati，此王言保護耆那教，其外對於十車王之王無所知。刪普羅提佛教亦知之，雖有阿育王之次王說，十車王之關係不明。故阿育王以後之孔雀王朝欠缺明瞭。然，此王朝紀元前百八十五年頃，由其將軍普修耶密多羅所滅亡，普修耶密多羅確實建霜迦王朝。普修耶密多羅是迫害佛教而保護婆羅門之王。</note>
+<note n="0195001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195001">法勅 dhaṁma-lipi（K）, dhrama-dipi（Sh, M）, dhaṁma-lipī（G, J）利美或提美唯是所寫物之意，但今皆譯為勅。</note>
+<note n="0195002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195002">天愛喜見王 Devānaṁpiya Piyadasi（lāja）（K）, Devanapria（priadrasi）raya（Sh）, Devanaṁpriya Priyadraśi raja（M）, Devānaṁpriya Priyadasi rāja（G）, Devānaṁpiya Piyadaśi lāja（Dh, J）天愛是諸天即諸神所愛者，或諸神所親之意，喜見是有親愛面容之意。天愛古昔是指愚人之用法，但在阿育王前後之時代，一般是用於指王。不論唯天愛或喜見，天愛、喜見皆是王之稱號。以下之法勅應見其一一之用例。於此 Sh 唯記為天愛王，K 即無王字，天愛喜見王在法勅上早就知道是指阿育王。一九一五年瑪須奇所發見，小摩崖法勅之斷片，此亦依見有天愛阿育，遂為不動之史實。</note>
+<note n="0195003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195003">今刻是令書寫之意。此語之原語與前面之利美或提美而思之，當知此二語原來是由波斯語而來的。阿育王或其王朝是受波斯之影響，此由其他方面亦可指出。J 是在啟賓羅山（Khepiṁgalasi pavatasi）所刻的。Dh 是存在於山部而山名之部分因破損而不得解讀。然，兩者是不同一山名之理，是不待言的。</note>
+<note n="0195004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195004">生物 jiva（K, Sh, M）, jīva（G, Dh, J）是有生命之意。生類 pāna（K, Dh, J）, praṇa（Sh, M）, prāṇa（G）有呼吸之物的意思。</note>
+<note n="0195005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195005">宴聚 samāja（K, G, Dh, J）, samaja（Sh, M）是國王如與人民之宴會。令飽美食及舞踏音樂相撲等為樂之二種。在印度古代，王不花費而使人民歡喜之慣例，阿育王大約最初令行此，然後而行法之教勒，對於前者而廢之，於此法勅可以了知，對於後者以此特別關係於行而言。</note>
+<note n="0195006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195006">大膳寮 mahānasa（K, G, J）, mahanasa（Sh, M）。</note>
+<note n="0195007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195007">羹 supa（K, Sh, M）sūpa（G, D, J）是肉汁為作此而殺生類，此言用於宴聚。</note>
+<note n="0195008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195008">孔雀 Majūla（K, J）, majura（Sh, M）, mora（G）。鹿 miga（K, J）mruga（Sh）, mriga（M）, maga（G）。</note>
+<note n="0197001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0197001">Coḍa, Paṁdiya = Pāḍa. Sātiyaputa = Satiyaputra = Satiyaputa, Kelalaputa = Keraḍaputra = Keralaputra = Ketalaputa, Taṁbapaṁni, Aṁtiyoga = Aṁtiyoka = Atiyoga = Antiochus II Theos of Syria, B. C. 261, 246 周達、般提耶及最後其他之諸王，為複數之記，其他為單數之記。檀婆般尼通常指現在之錫蘭。以上是南部印度之諸王，以下是指西北方。臾那是伊奧尼亞以印度方式之表現的文字，不外是謂希臘人。安提噢普斯是西利亞之王，歷山大王之崩後其將勢禮宇庫斯尼加睹如所建之國。故言為臾那王。安提奧普斯二世是西利亞第三代之王，嗣於安提奧普斯一世。</note>
+<note n="0197002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0197002">鄰邦人 aṁta（K, Sh, J）, ata（M）, pracaṁta（G）此語原來是限界之意思，大約是指限界之內外，因此應是指邊疆人。參照別刻法勅第二章註[03]。於此是阿育王之領土外的意思。</note>
+<note n="0197003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0197003">療院 cikisaka（K）, cikisa（Sh, M）, cikīcha（G）若唯是醫療之意思者，雖不為院言為醫療者，此可見如聖德太子施療院。</note>
+<note n="0198004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0198004">唯 Sh 此同言樹根云云之一文，是令植樹木之省略。樹木 lukha（K, Dh, J）, rucha（Sh）, racha（G）及井泉 kupa（Sh）, kūpa（G）, udupana（K, Dh, J）此以照應印度之氣候是可以想像。</note>
+<note n="0199001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199001">灌頂過十二年之年 duvāḍasa-vasābhisitena（K）, badaya-vaṣabhisitena（Sh）, duvaḍasavaṣabhisitena（M）, dbāda a-vāsābhisitena（G）, duvādasa-vasābhisitena（Dh, J）灌頂式是即位式或與戴冠式同樣。譯為過十二年之年的原文表示時之副詞句，所述為具格（instrumental case）。在印度表示時格，此以外用業格（accusative case），或用其他之格，但具格及業格之二最明顯。勿論於嚴密之區別甚為困難，因此雖有不少例外，但大約業格是中間、具格是過之，大致以此得區別。</note>
+<note n="0199002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199002">收稅官 yuta 王室處理御地稅之事，掌其收入及徵稅如地方官吏。司直官 lajūka（K）, rajuka（Sh）, rājūka（G）, lajuka（J）是掌司法及徵稅之官吏。字義為持繩（rajju）者之意，有定土地之境界，以職司裁判上。參照石柱法勅甲第四章。地方長官 pādesika（K, J）, pradeśika（Sh, M）, prādesika（G）如掌租稅、警察、俸給之高官。然，如本章并依下章可知，此等之官吏不唯現，今所言之役職，特別於本章關係法之教勒之故，單於字義及他書所述唯是此等官吏，依其役職項目而判斷應不正當，因此譯語唯為原語之避開音譯之目的，而試譯而已。</note>
+<note n="0199003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199003">法之教勒 dhaṁmanusathi（K）, dhramanuśati（Sh, M）, dhaṁmānusasṭi（G）, dhaṁmānusathi（Dh）以法教之意思，見為善戒惡之意思，譯為教勒。法之教誨、教誡、教勸任何之一亦可。此教勒之內容即有次括弧內之文。</note>
+<note n="0199004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199004">巡按 anusaṁyāna（K, G）, anusaṁyana（Sh, M）, anusayāna（Dh, J）此為法之教勒而出巡回。</note>
+<note n="0199005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199005">事務 kaṁma（K, G, Dh, J）, kraṁma（Sh）, krama（M）此應是右之官吏，各各本職之事務。此事務之外命出巡按之事。</note>
+<note n="0199006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199006">婆羅門、沙門 baṁbhana-samana（K, Dh, J）, bramaṇa-śramaṇa（Sh, M）, bāṁhaṇa-samaṇa（G）亦有沙門、婆羅門之順序。在阿含幾乎皆為沙門、婆羅門之順序。</note>
+<note n="0199007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199007">言節費用而積蓄是少欲知足之意思。</note>
+<note n="0199008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199008">會議 palisā（K, Dh）, pariṣa（Sh, M）, parisā（G）原來為會合會眾之意思，與大臣會議（mantri-pariṣad）同一解釋。於此 Mahāmāta-parisā 即大官之會議。參照第六章註[08]。</note>
+<note n="0199009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199009">依理證與文證 hetuvatā cā viyaṁjanate（K）, hetuto ca vaṁñanato ca, （Sh）, hetute ca viyaṁjanate ca（M）, hetuto ca vyaṁjanato ca（G）, hetute ca viyaṁjanate（Dh, J）。hetu 因、原因 viyaṁjana 是言名句文時之文的意。後者指法勅之文句，第三類小石柱法勅及第四類小摩崖法勅以見出其用例，佛教言文證之意思，因此對前者之指理證應不相違，因在此為理由之意義。</note>
+<note n="0199010" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0199010">監察，此 gananasi ananpayisaṁti（K）, gaṇanasi anapeśaṁti（Sh）, gaṇanasi anapayiśati（M）, āñapayisati gaṇanāyaṁ（G）, gaṇanasi ānapayisati（Dh）。gaṇana 又 gaṇanā 是用於勘定計算之意義故，關於計算應命令而譯，或者敷演此法勅。有說譯為命令記錄，因此其意不明確，但對第三章非言前述官吏之本職，勿論應見為法之教勒而出巡按。又伽那那或伽那那是有監督、注意、考量之意思，今人民如奉行法之教勒，應解為命令收稅官之監督視察之意，或者對於考量亦可。</note>
+<note n="0202001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202001">有情 bhuta（K, Sh, M）, bhūta（G, Dh, J）譯為眾生文字，在此是與生類相對而用，大致指人類之意思。</note>
+<note n="0202002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202002">非禮 asaṁpaṭipati（K, Sh, Dh）, asapaṭipati（M）, asaṁpratipatī（G）。</note>
+<note n="0202003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202003">法之宣行 dhaṁma-calana（K, Dh, J）, dhrama-caraṇa（Sh, M）, dhaṁma-caraṇa（G）闍羅那是進行。</note>
+<note n="0202004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202004">天宮之光景 vimana-dasanā（K）, Vimana-draśana（Sh, M）, vimāna-darśanā（G）, vimana-dasana（Dh）義瑪那又義瑪阿那是言梵天神之宮殿時之宮殿，於同時指梵天神之住，所支配之天世界。光景之原語應是見者或使見之意義。諸象 hathini（K）, astini（Sh, M）hathīni（Dh）, hastidasaṇā（G），此最後者是諸象之光景的意思。象是牽引四天王之車，或菩薩由兜率天下入母胎所取之狀態，應指此任何之一。甚多火蘊 agi-kaṁdhāni（K, Dh）, joti-kaṁdhani（Sh）, agi-kaṁdhani（M）, agi-khaṁdhāni（G）火蘊是火集之意。譬喻是形容優秀出色的人，又用於形容天優秀之諸神故，於此亦指諸神之意思。其他有天上之形相故，皆是此種類物之理。所花費，見前所言之宴聚，以法勸人民，法勿論言佛教之法故，天宮等亦皆不相違於佛教的。</note>
+<note n="0202005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202005">鼓響 bheli-ghosa（K, Dh）, bherī-ghoṣa（Sh, M）, bherī-ghosa（G）鼓言大鼓，但此戰之前行布告之時，又是一般瞧熱鬧而鳴之物，古昔是於宴聚之際而鳴之物。勿論在廣義，亦含括戰鬥時大鼓之意思，但於同時見天官之光景，為進行法之宣行，此代為法響。</note>
+<note n="0203006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203006">K 無有對耆宿柔順之一句，Sh 是對父母并耆宿柔順。</note>
+<note n="0203007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203007">至壞劫止 āva-savaṭa-kapā（G）此唯 G 有之句其他皆為至劫止，即至劫終，或唯此劫中。</note>
+<note n="0203008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203008">法之教誨 dhaṁmānusāsana（K, Dh, G）, dhramanuśaśana（Sh, M）。</note>
+<note n="0203009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203009">Sh 最後之部分，想（ñana）示為開始刻立。</note>
+<note n="0205001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205001">至壞劫止與同第四章註[07]。</note>
+<note n="0205002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205002">為惡實易 papaṁ hi sukaraṁ（Sh）, sukaraṁ hi pāpaṁ（G）唯 Sh 與 G 之二唯有此文，其他為 pāpe hi nāmā supadālaye（K）, pape hi mana supadarave（M）, pāpe hi nāma supadālaye（Dh）, ……supadālaye（J）。supadālaye = supadarave之形并其意義。學者之間有異說，但於 Mahāvyutpatti, 245, 983（7390）有 pradalita 於漢譯譯為裂，與其文字想是同一語源故，見為裂、摧、滅等意思，想譯為「實為惡當滅也」。</note>
+<note n="0205003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205003">法大官 dhaṁma-mahāmāta（K, Dh, G）, dhraṁma-mahamatra（Sh）, dhrama-mahamata（M）。大官是通常見相當於大臣為高官。法大官是阿育王之創設，其職掌於此見其詳細所述。</note>
+<note n="0205004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205004">一切之宗派 sava-pāsaṁḍa（K, Dh, J）, savra-praṣaṁḍa（Sh, M）。此宗派之字是於佛教言外道所當之字。不論宗派、宗義、宗徒令為其意味是通例。</note>
+<note n="0205005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205005">羅提伽人、美提尼迦人唯省略為 K 字。此等皆住印度之西北部者。</note>
+<note n="0205006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205006">專心於法者 dhaṁma-yuta（K, Dh, G）, dhrama-yuta（Sh, M）專心之原語優達為第三章註[02]之收稅官其同一，亦與解說達磨優達謂官吏之名，但此語之應用，於法勅文之任何處，唯由其前後之關係上而不解釋之。於此亦明瞭。</note>
+<note n="0205007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205007">從僕與主人 bhaṭa-m-aya（K, Sh, M, Dh）, bhata-m-aya（G）。婆達是金，傭是僕人。</note>
+<note n="0205008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205008">婆羅門與毘舍 baṁbhan-ibha（K）, bramaṇ-ibha（Sh）, bramaṇ-ibhya（M）, bābhan-ibhiya（Dh）。伊美耶是相當於梵語之 ibhya，言農工商階級之毘舍（vaisya）。因此於此之婆羅門與沙門並稱之婆羅門，是對於純宗家的，想是從事多少生計之職業，指世間的婆羅門。</note>
+<note n="0205009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205009">為無障礙 apalibodhāye（K, Dh）, apaligodhaye（Sh）, apalibodhaye（M）, aparigodhāya（G）paligodha = palibodha = parigodha = paribodha 是同一語之轉化，漢譯譯為貪、障礙，於 Mahāvyutpatti, 245, 122 註記（pp. 45-6）所詳論。</note>
+<note n="0205010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205010">配與囚人之費 baṁdhana-badhasā paṭividhānāye（K, Dh）, badhana-badhasa paṭividhanaye（Sh, M）, baṁdhana-badhasa paṭividhānāya（G）對初字有縛繫之意。相當於 patividhāna 是 Mahāvyutpatti, 245, 190 的 pratividhānaṁ，於復舊之事為回答之意思，配與似有異，但下之第八章用於配與金之意，於此亦分與金錢之意而解之。勿論為配與之義，為連續於下唯為配與。</note>
+<note n="0205011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205011">其任何之物 anubadhā（K）, anubadha（M）, anubaṁdha（Dh）以見從格（ablative case）從 respectively 之意的解說。然，一切學者無有一致之解釋。</note>
+<note n="0208001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0208001">裁斷政務 aṭha-kaṁma（K, Dh, j）, aṭha-kama（Sh）, athra-krama（M）, atha-kaṁma（G），單為事務之意思。聽聞上奏 paṭivedanā（K, Dh, J, G）, pativedana（Sh, M）此亦唯為了知之意義。關於任何事王所應為故，裁斷及聽聞以添加而譯之。</note>
+<note n="0208002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0208002">飼獸寮 vaca（K, Dh, J, G）, vraca（Sh, M）此語不明，大致是梵語之 vraja 即謂牛舍、家畜舍之意義。參照第十二章註[10]。</note>
+<note n="0208003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0208003">鑾輿 vinita（K, Sh, M）, vinīta（Dh, J, G）或言乘車。</note>
+<note n="0208004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0208004">上奏官 paṭivedaka（K, Sh, M, Dh, J, G）。</note>
+<note n="0209005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209005">唯 Sh，然者，朕不論在何處當裁斷關於蒼生之政務，即時不能不以此奏聞於朕，雖至返復誤刻，於譯文省略之，又 G 是右之文前為政務應奏聞於朕而為設奏聞（sṭitā）。更於最後之節 K 唯看朕之諸皇子諸王妃而己。Sh 與 M 是曾孫之省略。</note>
+<note n="0209006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209006">恩賜 dāpaka（K, Dh, J, G）, dapaka（Sh, M）。詔勅 sāvaka（K, Dh, J）, śravaka（Sh, M）, srāvāpa（G）。</note>
+<note n="0209007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209007">緊急事件 atiyāyika（K, Dh, J）, ācāyika（Sh, M）, acayika（G）。</note>
+<note n="0209008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209008">會議 palisā（K, Dh）, pariṣa（Sh, M）, parisā（G）。參照第三章註[08]。</note>
+<note n="0209009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209009">諍論 vivāda（K, Dh, J, G）, vivada（Sh, M）。保留 nijhati（K, Sh）, nijati（M）, nijhatī（Dh, G）。</note>
+<note n="0209010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209010">精勵 uṭhāna（K, Dh, J）, uṭhana（Sh, M）, usṭāna（G）。政務之裁斷 aṭha-saṁtilana（K）, aṭhasaṁtiraṇa（Sh, M）, aṭha-saṁtīlana（Dh, J）, aṭha-saṁtīraṇa（G）。</note>
+<note n="0209011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209011">滿悅 tosa（K, Dh, J, G）, toṣa（Sh, M）。</note>
+<note n="0209012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209012">崇高之事業 kaṁmatalā（K, J）, kramatara（Sh, M）, kaṁmatara（G），字義較好之業的意思。</note>
+<note n="0209013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209013">一 kiti（K, Sh, M）, kiṁti（Dh, G），此語是如何之意味為疑問詞，但用時有願如何為等之意義。以下凡一以專、願之何者而譯之。</note>
+<note n="0209014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209014">返還債務 ananiyaṁ yehaṁ（K）, anaṇiyaṁ vraceyaṁ（Sh）, aṇaṇiyaṁ yehaṁ（M）, ānaniyaṁ yehaṁ, （Dh）, ānaṁṇam gacheyaṁ（G）。字義是無債務之意義，債務是指借錢為本來之意，此語善負義務，用示譬喻的語。</note>
+<note n="0209015" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0209015">現世 hida（K, Dh, J）, ia（Sh, M）, idha（G）。後世 palata（K, Dh, J）, paratra（Sh, M）, paratrā（G）。</note>
+<note n="0211001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211001">對一切之宗派，參照第五章註[03]。於此奉事宗派是指宗教家，在此而用複數。</note>
+<note n="0212002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212002">克己 sayama（K, Sh, M, Dh, J），節制又制御亦可。心清淨 bhāva-sudhai（K, Dh, J, G）, bhava-śudhai（Sh, M）, bhāva 為本性、本質之意而譯為心。</note>
+<note n="0212003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212003">俗人 jana（K, Sh, M, G）, munisa（Dh, J）奢那在前而譯為蒼生之文字為同一，指一般人，牟尼沙勿論亦是一般人。於此與宗派者相對而用故取俗人之譯語。除 Dh 及 J 顯示言為單數，因此次之彼等一定是指俗人。學者以等看為指示俗人之代名詞，其俗人等行一切是彼等之義務，或行其一部分而譯想不太正當。宗教家皆須克己心與心清淨，最少亦有一部分故，希彼等不外住一切處。其理由於以下而述。</note>
+<note n="0212004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212004">樂欲 chaṁda（K, Sh, M, Dh, J, G）。貪欲 lāga（K, Dh, J）, raga（Sh, M）, rāga（G）。</note>
+<note n="0212005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212005">報恩 kitanāta（K）, kiṭrañata（Sh）, kiṭanata（M）, kata-ṁñata（G），堅固之誠信 diḍha-bhatitā（K）, driḍha（Sh, M）, bhatita（Sh, M）, daḍha-bhatitā（G）。Dh 與 J 是此二者省略。</note>
+<note n="0212006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212006">賤人 nica（K, Sh, M, G）, nīca（Dh, J）。</note>
+<note n="0213001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213001">此第八章之斷片於碰培蘇吧羅之摩崖斷片亦存在。</note>
+<note n="0213002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213002">娛樂巡行 vihāla-yāta（K, Dh）, vihara-yatra（Sh, M）, vihāra-yātā（G）。義哈羅於此為休養氣晴之意。</note>
+<note n="0213003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213003">狩獵 migaviya（K, Dh）, mrugaya（Sh）, mrigaviya（M）, magavya（G）。</note>
+<note n="0213004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213004">往三菩提 nikhamithā sambodhi（K）, nikrami sabodhi（Sh, M）, nikhami saṁbodhi（Dh）, ayāya saṁbodbiṁ（G）, nikhamitha sa ……（S）。三菩提通常譯為正覺或等覺，佛陀之大悟或指其內容。覺是智又道之意。然，不考慮王與佛陀同得悟故，在此應解入正道之意。學者之說，總之王解為得佛陀証悟之意，王成佛陀之三菩提解為參詣佛陀伽耶之菩提樹之意思，如此成為二說，大致因為其他甚少適切之文例及教理上之根據，而生異說不得斷定解釋。今，直譯為往三菩提，推定為入正道程度之意而已。</note>
+<note n="0213005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213005">譯為訪問其文字是見之意義。蒼生之狀態譯為接見。沙門、婆羅門之狀態說不定同是接見，但阿育王雖為王者重要的人，亦想不辭而訪問故，特譯為訪問。</note>
+<note n="0213006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213006">金錢之配與 hilaṁna-patividhāne（K, Dh, J）, hiraña-praṭividhane（Sh）, hiña-paṭividhane（M）, hiraṁṇa-paṭividhāna（G）, hiraṁna-paṭividhāne（S）。參照第五章註[09]。</note>
+<note n="0213007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213007">適宜此 tatopaya（K, Sh, M）, tadopaya（Dh, G）。其後，多譯為此繼續次節，但今不從此。</note>
+<note n="0213008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213008">爾來 bhuya（K, Sh, M, Dh, J, G），此語通常為越發之意思，於 Mahāvyurpatti, 245, 342 以 bhūyas = bhūya 以後譯之，今採用此。</note>
+<note n="0213009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213009">於〔治世〕之後期有種種之異說，但據其中之一說，為字義是於其他部分之意義。</note>
+<note n="0215001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215001">娶與嫁 avāha vivāha（K）, avaha vivaha（Sh, M）, avāha-vīvāha（G）。阿瓦哈是男迎女，即娶妻義瓦哈女於男方，即嫁出。</note>
+<note n="0215002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215002">祈願 maṁgala（K, Sh, Dh, G）, magala（M），曼迦羅通常為吉祥之意，但此是言祈願吉祥，立願而祈應該含有行巫、咒術。</note>
+<note n="0215003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215003">譯為男子之文字是與譯蒼生為同一，次之婦女子之對照上而為男子。</note>
+<note n="0215004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215004">婦女子 abaka-janiyo（K）, striyaka（Sh）, abaka-janika（M）, ithī（Dh）, mahiḍāyo（G），第一與第三是母與妻之意義，他是女人之意思。</note>
+<note n="0215005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215005">瑣細 khuda（K, M, Dh）, chuda（G）, Sh 為愚（putika）。</note>
+<note n="0215006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215006">而此不過唯得少果而已 K, Sh, M 之文，Dh, J, G 而且行祈願唯得少果而已。</note>
+<note n="0215007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215007">尊崇、節制、布施之前 G 是有善。</note>
+<note n="0215008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215008">Dh, J, G 是省略了朋友、知己乃至鄰人。</note>
+<note n="0215009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215009">「此是善」以下之 G 文「此是善」，應為予至此法祈願之目的圓成止，而且有既言「布施是善」。然，其法施又得比較法恩（dhamanugaha, dhaṁmānugaha）之布施，或無報恩之存在。故於朋友或於知已、親族、同僚（sahāya）互相於各機會：「此是應為之事。此是善。由此得達於天。」而互相教誡。然，不管何物見為如得天，更為有價值，於 Dh 特 J是有破損之箇所，但與 G 同一文是明白可知，故 G, Dh, J 是同一種類以 K, Sh, M 之同一種類者有異。</note>
+<note n="0215010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215010">K 又目的達成之後，缺更為之一句。</note>
+<note n="0217001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217001">名聲 yaṣa（K）, yaśa（Sh, M）, yasa（Dh, G）。榮譽 kiti（K）, kitri（Sh）, kiṭi（M, Dh）, kīti（G）。此兩者之區別而說為生前之名聲，死後之榮譽，應該是適當。</note>
+<note n="0217002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217002">言柔順於法柔順單是柔順於法之意，此所言之顯示在巴利語等亦多存在，次之隨順實行法，又應以隨行比較而解之。參照第十三章註[18]。柔順原來是希望聽聞之意思，有時譯為敬信。對於父母亦用此語，於此而譯為柔順者，今亦同用一譯語。</note>
+<note n="0217003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217003">如何為名聲，若希求榮譽之一句唯 G 缺失。</note>
+<note n="0217004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217004">Dh 及 J 是除最初之一，二次省略天愛喜見王，單唯記為天愛。</note>
+<note n="0217005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217005">為次下之事 etakāya（K, Dh）, etakaya（Sh, M）, etakāya（G）學者譯為此，以此連結上文，以此連結下文而解之見為適當。</note>
+<note n="0218006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218006">為對於後世 pālaṁtikyāye（K）, paratrikaye（Sh, M）, pālatikāye（Dh, J）, pāratrikāya（G）。原來是為對彼處之意義，唯此而言不必是沒有理由不得不見為後世之意思。然，於前章現世即對於世界相對而用，而後世即於彼處言得天，故由巴利阿含之用例而見者可解為現世及後世。</note>
+<note n="0218007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218007">小身之輩 khudaka vaga（K）, khudraka vagra（Sh）, khudaka vagra（M）, chudaka jana（G）。vaga = vagra = varga 為群之意，特別此以亦有指有司之一群而解說。然，於此用為與人同一，他所亦為同一視故，想應單看為通常人方可，在 Dh 與 J 沒記相當於輩或人之文字。</note>
+<note n="0219001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219001">此第十一章、第十二章、第十三章之三章於 dh 及 J 不存在。返而存於乙之別刻法勅二章。</note>
+<note n="0219002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219002">法之布施於第九章註[09]有，與 G 文中之法施同。由法親善 dhrama-saṁstave（Sh, M）, dhaṁma-saṁstave（G）。K 唯缺此一。法之分與 dhama-ṣavibhaga（K）, dhrama-saṁvibhaga（Sh, M）, dhaṁma- saṁvibhāga（G）。由法之結緣 dhaṁma-ṣaṁbadha（K）, dhrama-saṁbaṁdha（Sh, M）, dhaṁma-saṁbaddha（G）。</note>
+<note n="0219003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219003">由柔順、布施、不屠殺之各前有 sādhu 之一字。然兄弟之次缺主人。反之 K, Sh, M 缺親族。</note>
+<note n="0220001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0220001">崇敬 pujā（K）, puja（Sh, M）, pūjā（G）。此字用於禮拜、供養之意，現今亦用於祭禮之意思。於此與布施並用故亦為崇敬方法之意思。G 崇敬一切之宗派，又與布施種種之崇敬為崇敬彼等。</note>
+<note n="0220002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0220002">出家者 pavajita（K, G）, pravajita（Sh, M），在家者 gahatha（K）, grahatha（Sh）, gehatha（M）, gharasta（G）。</note>
+<note n="0220003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0220003">於一，一宗派切之本質增長云云一句雖存後文，此譯與他學者之譯少有不同。此之意思是布施或由崇敬而得起本質增長，如是解為布施或崇敬，應是正當。本質增長 śalā-vaḍhi（K）, sala-vaḍhi（Sh, M）, sāra-vaḍhī（G）。</note>
+<note n="0221004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221004">語言之制御 vaca-guti（K, Sh, M）, vaci-gutī（G）。</note>
+<note n="0221005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221005">讚揚自之宗派 ata-paśada-vā pujā（K, vā 不用）, ata-praṣaṁḍa-puja（Sh）, ata-praṣaḍa-puja（M）, ātpa-pāsaṁḍa-pūjā（G），讚揚與前之崇敬同一文字，不妨解為同一，為此語言之制御內容，此特譯為讚揚。崇敬指以言語表示。</note>
+<note n="0221006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221006">穩和 lahuka（K, Sh, M, G）。</note>
+<note n="0221007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221007">Sh 如是為者卻更強力地害自之崇派，卻反復如是錯誤而為。</note>
+<note n="0221008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221008">敬信譯為柔順，是同一語之動詞形。一致和合 ṣmavāya（K）, sayama（Sh）, samavaya（M）, samavāya（G）。</note>
+<note n="0221009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221009">多聞 bahuṣuta（K）, bahuśruta（Sh, M）, bahusrutā（G）。聞是學習或知之意味。教義之善亦 kayānāgā（K）, kalaṇagama（Sh）, kayaṇagama（M）, kalāṇāgamā（G）。教義阿含即譯為傳承，通常阿含為音譯。</note>
+<note n="0221010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221010">監婦大官 ithidhiyakha-mahāmātā（K）, istridhiyakṣa-mahamatra（Sh）, istrijakṣa-mahamatra（M）, ithijhakṣa-mahāmātā（G）。飼獸苑官 vaca-bhumikyā（K）, vraca-bhumika（Sh, M）, vaca-bhūmikū（K）。參照第六章註[02]。</note>
+<note n="0221011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221011">一部屬 nikyāyā（K）, nikaye（Sh, M）, nikāyā（G）。</note>
+<note n="0223001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223001">迦陵迦國 Kaliṁgā（G）、Kaligyā（K）、Kaliga（Sh, M）。孟加拉灣頭西海岸一帶之地方，相當於現今之奧利沙。</note>
+<note n="0223002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223002">十五萬數之數是唯（mita, matra, mātra）之意。</note>
+<note n="0223003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223003">法之遵奉 dhrama-śilana（Sh）。西羅那言返復而行，又為研究之意義，於此前者之意味應是適當。但此字之原字說有讀為保護（palana）。然，其他用字相當於此 dhaṁmavāya（K. G）、dhramavaye（M）。此複合詞後字之意義不明確。對於法之愛慕 dhaṁma-kāmatā（K）, dhrama-kamata（Sh）。</note>
+<note n="0223004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223004">悔謝 anuṣaya（K）。Sh 為 anusocana。為憂恨之意。G 半數受破損似有 anusaya。</note>
+<note n="0224005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224005">長者 agabhuti（K）, agrabhuṭi（Sh, M）。</note>
+<note n="0224006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224006">愛者之別離 abhilatānaṁ vinikhamane（K）, abhiratana nikramaṇaṁ（Sh）, abhiratanāṁ vinikramaṇi（M）, abhiratānaṁ vinikhamaṇa（G）。</note>
+<note n="0224007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224007">善保全者 pi ṣuvihitānaṁ（K）, pi suvihitanaṁ（Sh, M）。</note>
+<note n="0224008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224008">部眾 nikāyā（K, G）, nikaya（M）。</note>
+<note n="0224009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224009">Sh 是缺「除臾那人之間，此等之婆羅門及沙門之部眾沒有無住之地方，即於任何地方之人人」雖有缺人人之部。又四文無不有信仰，但為否定辭之一是衍字。</note>
+<note n="0224010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224010">林住種族 Aṭavi（Sh, M）, Aṭaviyo（K）。在提康地方之中央而住之種族。愛撫使反省 anuneti anunijapeti（Sh）, anunayati anunijhapayati（M）。</note>
+<note n="0224011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224011">雖來悔恨 anutape pi（Sh, M）。若用權力即同迦陵迦之征伐為來悔恨而終之意。</note>
+<note n="0224012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224012">不得傷害 akṣati（Sh）, achati（G）。公平 ṣamacaliya（K）, samacariya（Sh）, samacaira（G）。柔和 madava（K）, mādava（G）. Sh 為 rabhasiye。此語通常是性急又快活之意，但此見為於格 locative case，由前者之意義解為暴力之意，於暴力之狀態有說譯為公平。</note>
+<note n="0224013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224013">由旬 yojana（K, Sh, M）一由旬言約九英里。</note>
+<note n="0224014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0224014">Aṁtiyoga or Atiyoga（K）, Aṁtiyoka（Sh）。參照第二章註。Tulamaya（K）, Turamaya（Sh）, Turamāya（G）= Ptolemy II Hhiladelphos of Egypt, B. C. 285-247; Aṁtekina（K, G）, Aṁtikini（Sh）= Antigonus Gonatas of Macedonia, B. C. 276-239; Makā（K）Maka（Sh, M）Magā（G）= Makas of Cyrene, B. C. cir. 300-250; Alikyaṣueale（K）, Alikasudara（Sh, M）= Alexander of Epirus, B. C. 272-cir. 255，大致為 Alexander of Corinth, B. C. 252-cir. 244。此等諸王之年代，由於學者多少舉不同之數字。今唯由一說。</note>
+<note n="0225015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225015">Yona-kaṁboja（K, Sh, M）; Nābhaka-Nabhapaṁti（K）, Nabhaka-Nabhitina（Sh）, Nabhaka-Nabhapaṁti（M）; Bhoja-Pitinikya（K）, Bhoja Pitinika（Sh, M）。以上西北并西南印度地方。Aṁdhra- Pārimda（G）, Adha-Pālada（K）, Aṁdhra-Palida（Sh）是南印度。</note>
+<note n="0225016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225016">使臣 duta（K, Sh, M）, dūti（G）。</note>
+<note n="0225017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225017">以喜悅為本質之勝利 vijaye piti-lase（K）, vijaya priti-rasa（Sh）, vijaya pīti-rasa（G）。</note>
+<note n="0225018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225018">無不得新之勝利者，在原文無不得新之勝利為勝利。參照第十章註[02]。</note>
+<note n="0225019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225019">勝利雖是自然而得，ṣayakasi no（= yeva）vijayaṣi（K）, spakaspi yo（= yeva）vijaye（Sh）, sarasake eva vijaye（G）, sarasake 以取 sva-rasa-ka 之解說。此語有好，嗜好之意義，但於 Mahāvyutpatti, 245-1006，如譯為自然滅 svarasa-nirodha，亦有自然的意味。</note>
+<note n="0225020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225020">對於法之愛樂 K 是對於努力（uyāma）之愛樂，Sh 於一切之捨離（cati）愛樂者以示對於法之愛樂。</note>
+<note n="0225021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225021">G 之摩崖於本章最後之左側面 tesa 及 pipā 之斷片的文字刻有二行。又其右側面在有「持一切世間之安樂，即一切名為白象」之文字。Dh 摩崖之第六章之終了亦留有「 白象」之一語。於此等崖面像刻有白象，但示後破損而失。Dh 之摩崖可見象前半身之彫出。</note>
+<note n="0229001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229001">為有妙味 madhuliyāye（K）, madhuriyaye（Sh, M）, mādhuliyāye（J）, mādhūratāya（G）。</note>
+<note n="0229002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229002">全部之刻 asamati likhite（K）, asamataṁ likhitaṁ（Sh）, asamati likhite（J）, asamātam likhitam（G）。是本來於不完全所刻之意味。K 之摩崖北面有象之像似刻，於其下存有最上象（gajatame）之文字。Dh 及 G 之摩崖亦有其像。參照第十三章[21]。象是白象由點而見，是指菩薩由兜率天下降入母胎時，以取其形想是不會錯。</note>
+<note n="0230001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230001">此第一章本來別刻法勅第二，次之第二章應為其第一，古昔以來，既如是轉換，以學者之間所行，今亦從之。現今亦有改此，今唯從古者，亦有轉換者，必要記憶之。</note>
+<note n="0230002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230002">睹沙利 Tosalī，沙摩婆 Samāpā。</note>
+<note n="0230003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230003">都市執義官之大官 mahāmāta nagala-viyohālaka。都市執義官於其都市為歲判檢事職之大官，言 paura-vyāvahārika 同一。於 Mahāvyutpatti, 186, 42 有 pauravyavahārika，但單譯為守邑，其意義不明確。以下於原字之次無括弧時，Dh 及 J 之兩者示為共通之文。</note>
+<note n="0230004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230004">最上之方法 mokhya duvāla（Dh）, mokhiya duvāla（J）。於 J 無關於此事之一句。然，下第二章存有兩者。</note>
+<note n="0230005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230005">敬愛 panaya。</note>
+<note n="0230006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230006">一切之人皆是此朕之子 save munise pajā mamā（Dh）, sava-munā me pajā（J），此是有名之句。</note>
+<note n="0231007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231007">然，卿等應得及此事之範圍而其力不得達到 no ca pāpunātha āva-gamuke iyaṁ aṭhe（Dh）, no cu tuphe etaṁ pāpunātha āva-gamuke iyaṁ aṭhe（J）。此文，學者譯為「而卿等不得達此〔朕〕目的如何範圍」之意義，而以 pāpunātha 為汝等知之意，以 āva-gamuke iyaṁ aṭhe 如何之範圍至以達此事，或為不奉此事之意，但前者是達到又得之意，是本來的事，由此見出為知之意的文字。在此文，其本來之意義，想不妨解為，為官吏故，達為官吏之力的意思譯之。又後者即言及得此事之範圍，原來一切人是朕之子以含括一切人而解之。官吏之一一，其職目上，凡一切不得盡其力之意義。與次句之連絡上學者之譯想是不適宜。</note>
+<note n="0231008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231008">卿等雖然常善行 tuphe suvihitā pi（Dh）, tuphe suvitā pi（J）。同樣於學者，譯為同十四章法勅第十三章註[07]，於此見職目善保之意義可如前後之文勢上。</note>
+<note n="0231009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231009">於治民之事 nitiyaṁ（Dh）。於 J 無此字，其替為常常 bahuka（J）。niti 者相當行政，政治等之大字。於此一文章其意義存有不明之點，但據一說而如是譯之。得苦役 palikilesaṁ pāpunāti 達至苦，又得苦之意。達得之動詞共註[07]應比較而見之。忽然 akasmā是偶然，又無理由之意。後文為理由而譯出。</note>
+<note n="0231010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231010">中正之道 majhaṁ。</note>
+<note n="0231011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231011">嫉姤 isa、憤怒 āsulopa、不仁 niṭhūliya，Mahāvyutpatti, 146, 7, 取 niṣṭhura 之譯語。輕卒 tulanā（Dh）, tulā（J）。懈怠 anāvūti（Dh）, anāvuti（J）。懶惰 ālasiya、困憊 kilamatha、性情 jāta，奢他單為種類之意亦不知。</note>
+<note n="0231012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231012">於 J 如此見之高官是於卿等「天愛之教勒是如斯如斯」與告「卿等有返還負朕義務」之觀念。</note>
+<note n="0231013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231013">大災 mahā-apāya，阿婆耶是佛教之意味為惡趣。於此亦與天相對見為惡趣之意義，當然亦可。</note>
+<note n="0231014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231014">得王之嘉納 lājāladhi（Dh）, lājādhi（J）。</note>
+<note n="0231015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231015">若人不得為此所作者，於何處皆不使滿足朕之意 duāhale hi imasa kaṁmasa me kute mano-atileke（Dh）, duāhale etasa kaṁmasa sa me kute mano-atilehe（J）。此一文之意味由學者有異解，其讀法且有不一致。今從其中之一說而譯之。</note>
+<note n="0231016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231016">每提沙星座之日 tisa-nakhatena（Dh）, anu-tisaṁ（J）, tisa = tiṣya 又 tiṣyā。</note>
+<note n="0232017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232017">無理由而受障礙 akasmā palibodhe（Dh）。參照註[09]及十四章法勅第五章註[09]。</note>
+<note n="0232018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232018">不粗暴 akhakhasa（Dh），不狂惡 acamda 其所之穩和 sakhinālambhe（Dh）。J 最後之文字有代為不粗野 aphalusa。</note>
+<note n="0232019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232019">宇周尼 Ujeni = Ujjeyinī。</note>
+<note n="0232020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232020">太守皇子 kumāla。</note>
+<note n="0232021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232021">多迦尸羅 Takhasilā = Taksa'silā。</note>
+<note n="0232022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232022">相當此等之大官之處，於 J 是依語而有，乃應由此王勅之意味。</note>
+<note n="0236001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236001">以朕之詔 Lāja-vacanika（J）。學者見此與具格同一，由王之語，解為由王詔意。或導奉王之詔，或於王詔所任命之意而解，見大官之形容句亦說不一定可知之。</note>
+<note n="0236002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236002">J 是錯誤，朕猶如為朕之諸皇子，一切皆得利益安樂一文以返復之。</note>
+<note n="0236003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236003">邊疆人 aṁta 於十四章法勅第二章註[02]所言，此時想是指國境內邊疆之民。未歸順 avijita 是本來為未征服之意者，因此亦如何指未征服諸隣邦人，此第二章全體所說住國境外，他國人即阿育王之政治所及而不得適用，阿育王之法遵行上想為明瞭故，於此解為邊疆人之意，又譯為未歸順者。於印度古來國境截然區分故。若以地點言之，邊疆人亦好、隣邦人亦好，時不得明確區別亦不少。</note>
+<note n="0236004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236004">括孤內之天愛在 J 皆為唯王。</note>
+<note n="0236005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236005">依朕而無危怖 anuvigina mamāye kuvevū（Dh）, anuvigina hveyū mamiyāye（J）。依朕唯受安樂 sukhaṁmeva lahevu mamate（Dh）, sukhaṁmeva laheyū mamate（J）, mamate 是由予之意。</note>
+<note n="0236006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236006">了達 pāpunevu（Dh）, pāpuneyu（J），參照別刻法勅第一章註[07]。於此見出知之意義。</note>
+<note n="0236007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236007">朕之不動決意及誓言 dhiti patiṁñā ca mamā ajalā（Dh）, mama dhiti patiṁna ca acala（J）。J 又此句因此朕如斯教勒卿等令知朕之所欲文中之所欲於下返復。</note>
+<note n="0236008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236008">凡於地方之有司 desāvutika（Dh）, sakala-desā-āyutika（J）。以此有司由國都婆多利弗城及宇弟伊尼與多屈奢尸羅所派遣之大官為同一說，但 āyuti 如不必然。存於十四章法勅第三章之地方長官比較見之。</note>
+<note n="0237009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0237009">各四個月期之 anucatuṁmāsaṁ。J 是提沙日之間亦應傾聽之，有機會者一人亦應使傾聽之。</note>
+<note n="0239001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239001">此石柱法勅，甲是存於六個之石柱，其各個幾乎一致，無所異故，此見做一種省略一一之別記。</note>
+<note n="0239002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239002">最上又應無上 aga 之譯語。對於法之愛慕 dhaṁma-kāmatā，在十四章法勅第十三章之初頭亦同一。觀想 palīkhā 此為佛教語與觀察為同意義。敬信 susūsā 參照十四章法勅第十章註[02]及第十二章註[08]。怖畏 bhaya，精勤 usāha。</note>
+<note n="0239003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239003">難得正行 dusaṁpaṭ pādaye。</note>
+<note n="0239004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239004">對於法之希求 dhaṁmapekha。</note>
+<note n="0239005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239005">逐日 suve suve。明日明日之意，日日或為日夜之意。</note>
+<note n="0239006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239006">易犯罪者得勸道 alaṁ capalaṁ samādapayitave。關於 capala 參照 Childers, Pali-Dictionary s. v. ；關於 samādapayitave 參照 Mahāvyutpatti, 245, 428。</note>
+<note n="0239007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239007">對邊疆人之大官 aṁta-mahāmāta 參照，別刻法勅第二章。</note>
+<note n="0239008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239008">保護 Pālana，處理 vidhāna，與樂 sukhiyanā, sukhīyana，〔語言〕制御 goti。參照，十四章法勅第十二章註[04]。規制 vidhi。</note>
+<note n="0241001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241001">少漏 apāsinava = apa-āsinava。āsinava 相當於巴利語之 āsava，梵語之 āsrava而譯為漏。為煩惱之異名。此言與耆那教之 anhaya 同一視，但 aṇhaya 或 āsrava 為同一語根。但在佛教解為流出漏之意，在耆那教解為流入之意。故罪惡或煩惱流入與流出為不同一之想法。眾善 bahu kayāna，慈愍 daya，真諦 sace，此是真實之意義，但佛教的因解為少深真理等之意。清淨 socaya，此甚多情形下是關於身口意之三業。Childers, Dictionary, s. v。</note>
+<note n="0241002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241002">眼之布施 cakhu-dāna。有見為肉眼天眼慧眼之三眼說，但為三眼不若說為五眼方可。然，對照次句上，此是與人類蒼生者不是指三眼五眼。單見為知見之意。</note>
+<note n="0241003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241003">二足類四足類 dupada-catupada。鳥類水樓類 pakhi-vālicala。</note>
+<note n="0241004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241004">利行 anugaha。十四章法勅第九章註[09]譯為法恩之恩或與報恩同字。此字是恩寵恩惠之意，依行施與受施以適當而譯之。</note>
+<note n="0241005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241005">乃至對生命亦供養 āpāna-dākhināye，又是 pāna-dakhināye。</note>
+<note n="0242001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242001">難自省 dupaṭivekhe。水野弘元著巴利語辭典正字為 dupp acṭive dha。</note>
+<note n="0242002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242002">導於漏者 āsinava-gāmin。應照參道諦言以導苦滅道諦時之導字。關於狂惡等，參照別刻法勅第一章註[11]及[18]。</note>
+<note n="0242003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242003">不滅亡 māpalibhasayisaṁ。</note>
+<note n="0242004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242004">最後之部是前之捨離，對於觀不德，實際上，彼此之善行其性質應考慮而行以使反省。</note>
+<note n="0243001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243001">對於司直官，參照十四章法勅第三章。以生類蒼生由幾百千之生類而成蒼生、亦有此解說。司直官役職上、此亦可見為別的。</note>
+<note n="0243002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243002">有自信 asvatha。別刻法勅第二章對朕起信賴之信賴是同一之文字，但今解為信賴自已之意義。然，亦不妨見為信賴於王之意義。</note>
+<note n="0243003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243003">得與恩惠，於前章譯為利行文字之動詞形。斷訟 abhihāla，此字是有持來、取、捧，等之意，但在此用於共處罰，於後文亦與於司法公平及於處罰公平 viyohāla-samatā ca daṁḍa-samatā 相對，可想為與司法同種之意義故，關於法律之手續，因此司直官役職上、訴訟而裁斷持來之意。</note>
+<note n="0243004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243004">任自由裁量 ata-patiye me kaṭe. ata-patiya 是自主或為自主之意義，獨立又指不拘束。故譯自由裁量是完全之意。</note>
+<note n="0243005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243005">與安樂及起苦惱 sukhīyana-dukhīyana。</note>
+<note n="0243006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243006">由專心於法之人人 dhaṁmayutena，此亦有解為達磨優陀官吏名稱之說。參照十四章法勅第五章註[06]。然，大致不見此官名。亦有解說專心為法。</note>
+<note n="0244007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244007">知朕所欲之有司 pulisani pi me chaṁdaṁnāni。</note>
+<note n="0244008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244008">當教示彼等之彼等 kāni 亦有說為蒼生，但文勢上想是指司直官。</note>
+<note n="0244009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244009">立自信與本章註[02]同一語。</note>
+<note n="0244010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244010">對其處罰，所裁決死刑之確定有 tīlita-daṁḍa pata-vadha。恩赦 yota，通常解為綬刑。但亦有異說。</note>
+<note n="0244011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244011">使彼等觀念其生命 kāni nijhapayisaṁti jīvitāye tānaṁ，此有異說之句。彼等是指司直，使觀念購死刑囚生命賠償金之說，亦有解說勸之意義。由法勅文全體見，又由此前後見之，不得解為出贖罪金救死刑囚。阿育王當時，是否有如是風習，史家所言之程度不明確。使觀念在十四章法勅第十三章註[10]譯為令反省，於別刻法勅第一章註[12]譯為令觀念是同一之文字，在佛教言行靜慮又禪定，即若同作觀念者，死刑囚解為令觀念之意。由次之布施、斷食、後世利益安樂之點而想，亦不解為以金贖命之意義。或令觀念不到之時 nāsaṁtaṁ vā nijhapayitā，此解說為無人勸之意，因此為布施等說見死刑囚之行為，nijhapayitā 在他三石柱之文為 nijhapayitave 故，此從為格（dative case）之說，應解為如前觀念之意義。</note>
+<note n="0244012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244012">於時之終了後 niludhasi pi kālasi，即對此多異說，但在文勢上，今如是譯之。</note>
+<note n="0247001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0247001">生物 jāta 在此活生之物的意義。在別刻法勅第一章註[11]，此字譯為性情，此亦解為活生物之意義。</note>
+<note n="0247002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0247002">以下生物之原語以順次舉之。suke, sālikā, alune, cakavāke, haṁse, naṁdīmukhe, gelaṭe, jatūkā, aṁbā-kapīlikā, daḷī（daḍī）anaṭhika-mache, vedaveyake, gaṁgā-pupuṭake, saṁkuja-mache, kaphaṭa-sayake, paṁna-sase, simale, saṁḍake, okapiṁde, palasate, seta-kapote, gāma-kapote。四肢類同前之四足類。參照石柱法勅甲第二章註[08]。</note>
+<note n="0247003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0247003">牝山羊 ajakā，牝羊 eḷakā（eḍakā），牝豚 sūkalī，懷孕者 gabhin，哺乳者之 pāyamīnā，仔 potake。</note>
+<note n="0247004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0247004">家鷄 kukuṭe，籾殼 tuse，由四個月成三季各滿月之日 tīsu cātuṁ- māsīsu 以一年分為夏雨季冬之三季，一季為四個月，其最初之日即滿月之日。故此譯為三之四個月季的最初日亦可。提沙日是在別刻法勅第一章及第二章與提沙星座之日同，提修耶或言提修耶〔長音〕。此是月泰西耶（Taiṣa）亦言飽西耶（Pauṣa），言由十二月半之一月半。各布薩日 anupasatham。布薩是佛教之行事，婆羅門亦有，但少有不同。參照小石柱法勅二註五。普那瓦斯 punāvau = punarvasu。此是二十八宿之第五，或第七之名，普那如瓦須之日是指何日不明瞭。</note>
+<note n="0248005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248005">釋放囚人 bamdhana-mokha。參照十四章法勅第五章。</note>
+<note n="0249001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249001">近親者遠方者 patiyāsaṁna apakaṭha。</note>
+<note n="0249002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249002">省慮 paṭivekhāmi，參照石柱法勅第十三章註[01]。</note>
+<note n="0249003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249003">凡部眾 sava-nikāya，參照十四章法勅第十三章註[09]。</note>
+<note n="0249004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249004">躬自使親近 atanā（或 atana）pacūpagamane（或 pacupagamane）是，乃自接近之意。此亦有唯看為宗派之說，亦有直看為蒼生之說，以上所言直看為一切亦可。</note>
+<note n="0250001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250001">此一章唯存於提利睹普羅石柱，其他不存在。而此是總括阿育王之所為者，與他石柱法勅之區別，此為乙。全部大致破損甚少故，完讀容易。於括弧內之文字是補破損之簡處而讀之。</note>
+<note n="0250002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250002">為適當 Anulupā。</note>
+<note n="0251003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251003">令聽聞法之聽聞 dhaṁma-sāvanāni sāvāpayāmi。sāvana 是聞之意，由令人聞者，可譯為宣說。參照十四章法勅第十章註[02]。</note>
+<note n="0251004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251004">諸有司者亦如何 yathā pulisā pi……，此最初之 ya 及 ā 之間因不明確，ya 之處不為 yathā 而為 vyūthā，此有為官名之說。</note>
+<note n="0251005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251005">法柱 dhaṁma-thaṁbha 刻法勅是指石柱。法宣說 dhaṁma-sāvana 此亦為補讀，應比較註[03]。對司直官、法大官參照既所述。</note>
+<note n="0251006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251006">榕樹 nigoha = nyagrodha 通稱為尼具羅陀樹。菴羅樹林 aṁbā-vaḍikyā。aṁbā = āmra 菴婆是芒果。</note>
+<note n="0251007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251007">〔每〕庫沙 aḍha-kosikyāni = aṣta-krosīkāṇi。庫羅尸耶（krośa）是現今言為庫斯（kos）。一由旬（約九哩）八分之一。而庫沙為行軍一日之行程。阿陀（aḍha）為半之意，有解說為每半庫沙意。然，由此井泉、休憩舍等為太過多。休憩舍 niṁsiḍhaya（niṁsidhiya）。此有解說為下飲水之段階，印度之風俗上，此謂不必要故，解為休憩所方可以。</note>
+<note n="0251008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251008">與樂法 sukhāyanā 應比較石柱法勅甲第二章註[05]。</note>
+<note n="0252009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252009">為好利 ānugahika 參照石柱法勅甲第二章註[04]。</note>
+<note n="0252010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252010">特殊之法大官是譯者之加筆。法大官之下有如是各各專任之大官，統轄於此等法大官又其等全體應為法大官。本節最初之法大官與最後之法大官是同一，中間之此等為同一是學者之說。又此處之文為朕……命（me kaṭe），由朕……如是為而譯之。他亦有此例。</note>
+<note n="0252011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252011">佛教僧伽之事 saṁghatha。saṁgha 雖不限於佛教，但法勅指佛教者。在耆那教亦有使用此文字之例。尼犍陀 nigaṁṭha 當時，此是耆那教。古昔為耆那教以前之一派。於漢譯有尼犍子，此是音譯，子當然有陀方可以。尼犍陀與邪命外道是有別，有不注意的人而混此為一。於此言佛教、婆羅門、邪命外道、耆那教之四派及其他種種之宗派應注意之。</note>
+<note n="0252012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252012">布施之頒行 dāna-visaga。</note>
+<note n="0252013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252013">求滿足處 tuṭhāyatanāni。tuṭha 是見 tuṣṭi 雖亦為有 tuṣṭa，其任何亦為滿足、知足之意。ayatana 是譯為處之字。如通常言處是解為生長之義，生起滿足，即蒼生之希求物之意義。</note>
+<note n="0252014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252014">法之敢行與法之遵行 dhaṁmāpadāne dhaṁmānupaṭīpati。對此字參照石柱法勅甲第二章。</note>
+<note n="0253015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253015">法之規正 dhaṁma-niyama 靜觀 nijhati 於柱法勅甲第四章註[11]所言觀念同一意義，靜慮相當於禪定。然，為其內容，如舉存在點少有異。</note>
+<note n="0253016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253016">最後之次節，有關此天愛詔，由此，以刻之止一文，在石柱之刻於全體之最後。然，如學者所言，天愛之處與目的之所者殊更此一文以示置本節之最初附有符號故，又意義上那樣，想為適當故顯有原刻者之意而如是配列。明白是原刻者之誤刻。</note>
+<note n="0256001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256001">此處 hetā 恐怕是王領土內之意義。或指見為國都亦可。</note>
+<note n="0256002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256002">菴婆樹林 aṁbā-vaḍikā 參照石柱法勅乙第七章註[06]。精舍 ālame = ārāma。此字原意為園之意，此亦有解說為遊園之意，在佛教用為精舍之意味，例如祗園精舍可知。頒施舍 dānagahe 參照石柱法勅乙第七章註[12]。達那伽哈是布施舍之意，不為布施之家的意義，頒為布施家之意。勿論言如是家上含有行布施。</note>
+<note n="0256003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256003">Tīvala, Kāluvākī 迦如瓦奇非個人之名而為姓。由此可知，提瓦羅皇子。</note>
+<note n="0256004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256004">願 vinati = vijñapti 此為刻文破損不明，以補讀之字。</note>
+<note n="0257001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257001">憍賞彌，通例在漢字音譯為憍賞彌，與佛教關係很深之古都市，現今言憍賞。法勅此由四行而成，第二行與第三行之最初數字不明確，又第一行之最後并其他多少有不明，大致確定。</note>
+<note n="0257002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257002">諸大官 mahāmāta。此第一行在最後之文字，學者讀此為主格（nominative case）。然，最後之綴結果唯 -ta 是否而終不明確。勅命（ānapayati）得取目的格，今特於大官讀為業格（accusative case）。</note>
+<note n="0257003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257003">命和合 samage kaṭe。就這樣為和合之意義，今以原來之例言者，kate 是用為命之意義。而不明之部分不過是唯數綴故，僧伽又比丘比丘尼，由朕不論怎樣，然者，朕當令持僧伽於和合，即想像為應命的意義。</note>
+<note n="0257004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257004">僧伽中應不容此 saṁghasi no lahiye。其次，第三行最初有不明之各處，此亦與前同不為數綴故，不遵比丘之作法，所謂不示字為賊住者或外道之意思，可以想像的。想像為賊住者或非行者次句應能聯絡。</note>
+<note n="0257005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257005">令著白衣 odātāni dusāni sanaṁdhāpayitu。令著白衣，言令還俗。白衣非比丘，指在家者為常例。</note>
+<note n="0257006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257006">非於精舍之處 anāvāsasi. āvāsa 是指比丘比丘尼之住處，相當於精舍或僧院。取消此故，言比丘住處以外。阿瓦提沙是布薩時用為結果或界區 sīma 之同一故，此看為相同者，由精舍亦指為廣大地域。anāvāsa 是用 Cullavagga, 1, 27; 2, 1, 3; 2, 1, 4; 4, 1 等文字。破僧伽是五逆罪或五無間業之一的重罪。由此得知當時有破僧伽之傾向。</note>
+<note n="0259001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0259001">刪至是有名現存之塔處。此法勅由八行而成，第一行完全欠缺，第二行唯見……yā bheta……ghe……mage kaṭe，第三行以下大致可以讀。第二行最初之耶，皆為不解。亦有人讀耶呣。次 bheta 是 bhetave（破）。因此可想像有否定辭。其次為 samghe……samage kaṭe，沙摩啟、迦提如前註，此前由朕（me）見為有存，看為朕命僧伽和合之意。mage 照樣是道之意故，亦有人解此為比丘并比丘尼所作為之道意，恐怕不適當。</note>
+<note n="0260001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260001">沙如那陀是昔之鹿野苑，現今如是呼。此法勅由十一行而成之中，於第一行天之一字，第二行之最後唯 el，第三行之開始有 pata 而缺數字，其餘大致可以讀。第一行雖為天愛詔，但第二行於任何人……之處唯讀之，其他完全不得想像。第三行缺國都巴達利弗陀之名，此由前之憍賞彌法勅考察之，於巴達利弗陀應為勅命大官等。詔於大官之後文而見亦明之。</note>
+<note n="0260002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260002">比丘僧伽、比丘尼僧伽 bhikhu-saṁgha, bhikhunī-saṁgha 分裂時而如是言，此亦為合一僧伽。</note>
+<note n="0260003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260003">公所 saṁsalana。</note>
+<note n="0260004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260004">為得確信 visvamsayitave 於別刻法勅第二章起信賴而譯之文字與同語源之文字，於本文譯文中依譯者之加筆而意義可明白。然，學者之說有與此不同。</note>
+<note n="0260005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260005">每度之布薩 anuposathaṁ 參照石柱法勅甲第五章註[04]。往布薩 posathāye yāti。前者亦可解每布薩日之意味，指布薩之日可見為指布薩之式。詣擁有目的格。又從後者見者，於此法勅文布薩之原語是 posatha，此是不可疑。故見此 uposatha 是錯誤，言每度之布薩可見為 anu-posathaṁ。巴利語是 uposatha。在佛教以外各半月之十四日十五日八日有布薩日之慣習，於佛教亦同樣採用，但不久各半月一回，十四日或十五日為讀誦波羅提木叉，為每月二回之布薩日。故每度之布薩為月二回。</note>
+<note n="0261006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0261006">地方 āhāla。城塞邊境地方 koṭaviṣava。奇奢瓦比阿哈羅狹窄，而此處言為塞砦地方。</note>
+<note n="0261007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0261007">離去〔三衣〕vivāsayātha。此當然，令離去三衣而住，而譯為之方可。此文字由 vi-vas而來的，此之使役法三人稱單數 vivāsayati 之複數命今法。同一語源之 vas 有著、住二意義，學者於此為住之意，而前接辭 vi 為離之意思，由此示為離僧院，即解為放遂之意思，更由於此語根所作直接法三人稱單數 vivasati 是相當於巴利語之 vippavasati 說為通例。然，vippavasati 離居之意味同時，此共用具格時，亦用為離衣之意，Suttavibhaṅga, I. P. 198（Nissaggiya, 2, 1）等如是用之，并於 Childers 之辭書亦有而明白。又此為名詞者，vippavasa，取付上取消之前接辭而為 avippavasa 者，比丘即不離三衣而用於不脫三衣之意，律藏中之一術語（Mahāvagga, 2, 12. 1; Childers, Dictionary, s. v）更不付取消為名詞於梵語為 vipravasa，此亦離三衣之意為律之術語亦於 mahāvyutpatti, 260, 4，根本說一切有部毘奈耶第十九、離三衣學處第二亦如此。然，如此之際離三衣又令離，同時離住又含離住之意，離三衣於同時解為離三衣而住之意。故 vivāsayati 即於梵語或巴利語解為離三衣而住，單解為離居，想不若典據上更適宜。因此於前文言令著白衣、言不住於精舍處之兩者，依此一語是所意之事。如學者之解離僧院而住亦有不得不含勿論離三衣而住，僧伽之性質上，為當然故。此說決定不能不完全不當。尚，最後之文有令離三衣 vivāsapayāthā，此應嚴密是令離三衣之意。有為三重之使役法。</note>
+<note n="0261008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0261008">準合此教勅之文 etena viyaṁjanena。參照十四章法勅第三章註[09]。</note>
+<note n="0263001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263001">藍毘尼 Luṁmini，所謂 Lumbinī-vana 即藍毘尼園，釋尊降誕之土地。現今為藍毘尼提 Rummindeī。</note>
+<note n="0263002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263002">佛陀釋迦牟尼 Budhe Sakyamunī。薄伽梵 Bhagavam。</note>
+<note n="0263003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263003">此石作有馬像 silā vigadabhī cākālāpita。此句不明。vigada 果然為馬耶？存有不確定之點。silā-vigaḍa-bhīcā 此想為石柵之說方可以。</note>
+<note n="0264004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264004">免納稅金 ubalika, bali 是言宗教的稅金。八分一 aṭha-bhāgiya，通常是納四分之一。或由時代而有六分之一，亦有三分之一。</note>
+<note n="0264001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264001">或言尼具利瓦法勅。庫那迦瑪那是 Konākamana = Konāgamana = Kanakamuni。所謂拘那含牟尼佛，過去七佛之第五佛。</note>
+<note n="0264002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264002">塔 thube。在巴利語 thūpa，梵語言 stūpa。相當於塔婆為土饅頭形之小丘陵程度。通常應該是納遺骨。此點與支提不同。支提（cetiya）無遺骨。</note>
+<note n="0264003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264003">再度 dutiyaṁ 亦有解說為二倍之意味。此方反而可以亦說不知。然，有時阿育王以前既有建塔。又王由以前而曾建。不論如何，此時以前已有塔之點沒有不同。</note>
+<note n="0264004-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264004-1">括弧內學者之補讀。</note>
+<note n="0265001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265001">明白 prakāsa（R）. 其他無此字。釋迦信者 sake（R）。優婆塞 upāsake（S, B）。沙啟之文字因不能明確的讀，以他之說讀為此言 savake。然，今從讀沙啟之說。次，參照二之相當文。沙啟是釋種為佛教從。若沙瓦啟是聲聞。其他明瞭為優婆塞。優婆塞是在家者，指佛教信者，故沙啟亦用為與此同一意義。</note>
+<note n="0266002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266002">朕近於僧伽 hakaṁsagha upete（R）, mamayā saghe upayāte（B）, saṁghaṁ upagate（M）, mayā saṁghe upayīte（Br, S）缺此句，J 破損不能讀。此句之意味實在難明確。唯優婆塞為近僧伽之意味，又入於僧伽言與比丘同樣意義，此點不明然。若前者不能明白區別為優婆塞，故應重複，若為後者有進取王政，自是否得為比丘甚為可疑。義淨三藏於印度所見阿育王之像言有著比丘之衣，為著比丘之衣於何處之點亦無為比丘之理。在印度不為比丘者，不得著比丘之衣。或學者論梁之武帝著僧服講經之例，此是不足取說。意義完全不同。近來他之學者在律藏大品（Mahāvagga, 3, 7, 8）承認比丘迦提加（bhikkhu-gatika）故，提出阿育王恐怕是此比丘迦提加之說。比丘迦提加大致在大品只出現一次，其他未曾見出，因此不得明瞭了解，恐是與比丘住同一精舍的人，或於精舍與比丘共住人之意義，完全不為比丘，或期間，於精舍與比丘共住之間，與比丘同一，而又，過此何時出精舍，其時指非比丘而生活之人。阿育王不得確証比丘迦提加故，一切是推定為止。常常猶如不為比丘迦提加，如斯種類者想定（若有此者）言近於僧伽之意義。言其像著比丘之衣，其他幾乎一切大致可以說明，又得領解。故今比丘迦提加又與此相似而解之。</note>
+<note n="0266003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266003">一年有餘 sātileke chavachare（R）, savachale sādhike（S）。此後者 savachale 之 va 字處多少不明確亦如見有他字。因此成為此種種之讀，種種之說。於中，此 saḍvachale即讀為六年，依此法勅之年代，因此為阿育王之年代論說之根據。以前，此論曾出現與此前者之比較得明其不正確，現今，此六年說不能承認。</note>
+<note n="0266004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266004">閻浮提 Jaṁbudipa（R, B）. Jaṁbudīpa（S）。雖指此地球全體之世界，於此是印度之意義。</note>
+<note n="0266005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266005">與諸天交往之人人 yā amisā devā husute（R）, aṁmisam-devā saṁta munisā（S）, amisā devehi……（B）。諸天之意不明確，恐是指十四章法勅第五章所言。</note>
+<note n="0266006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266006">唯依大身 mahatatā（R）, mahatatā va（S）, mahataneva（B），小身 khudaka（R. S. B）。</note>
+<note n="0266007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266007">高族 uḍāla（R. S. B）。</note>
+<note n="0266008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266008">D 之一節唯 R 存在。此過於突然，前不連絡明了。然，見於小石柱法勅二沙如那陀法勅存有其同文。</note>
+<note n="0266009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266009">B 是缺 E 之一節。又 S 以 E 之一節置於 C 之前。</note>
+<note n="0266010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266010"><p>E之一節很難解。舉原文對照如下：</p><table cols="4"><row><cell><space quantity="3" unit="chars"/>vyuṭhenā sāvane kaṭe</cell><cell>200 50 6</cell><cell>sata vivasa ta</cell><cell>（R）</cell></row><row><cell>iyaṁ ca savane vivuthena, duve sapaṁnā lāti-satā vivithā ti</cell><cell></cell><cell>200 50 6</cell><cell>（S）</cell></row><row><cell>iyaṁ ca sāvaṇe sāvāpite vyūthena, </cell><cell>200 50 6</cell><cell></cell><cell>（Br）</cell></row><row><cell>iyaṁ ca sāvane…………，</cell><cell>200 50 6</cell><cell></cell><cell>（S）</cell></row><row><cell>i……<space quantity="2" unit="chars"/>sāvane…………，theana, </cell><cell>200 50 6</cell><cell></cell><cell>（J）</cell></row></table><p>此中，vyuthenā 是與 vivuthena 同一，又 vivāsā 是與 vivuthā 同一。vivāsa 是名詞，vivutha 是形是過去分詞，同一意義是不相違。任何之語根 vas 在前小石柱法勅二沙如那陀法勅註[07]所說同一。因此，於此言而見，vivāsa 可解為離三衣而住之意，vivutha = vyuṭha 可想為離三衣而住之意義。故，vyuṭhena sāvane kaṭe 是離三衣而住者為之作教勅，即為渙發之意，iyaṁ ca savane vivuthena，然此教勅由離三衣而住而〔發〕之意 iyaṁ ca sāvāpite vyūthena，此教勅由離三衣而住者而說，令彼（聞為其直譯，令聞之人與聞之人依何者之立場，何者皆可譯）之意。沙瓦禮令聞之意義不論是說教、勅語、宣言，指何者皆不妨故，唯此文字不得不指王之教勅之理，全體之文意，王所說是明了。故離三衣而住者，阿育王自身解為指自身而言。因此離三衣而住為依朕之意。然，何故對於特言顯離三衣而住是無明確理解之處。因此，此前所述，可想是有關比丘迦提加（bhikkhu-gatika）而來的。故入此想法而見者，解為指不為比丘迦提加期間之王自身者，大致可以領解。然者，殊更如是言顯何為亦所不明然。更，次句離三衣而住為二百五十六之意義。最後之 ta 應讀為 ti。此二百五十六指何為數耶？且 vivāsa, vivutha 為逝去之意義，此以佛滅作解說，二百五十六是佛滅後阿育王發此法勅止之年數。如此，今完全避開之，無此主張之人。又 vivutha 等由布教師之意，由二百五十六人之布教師發出此宣言，若二百五十六人之布教師出發布教，有說由二百五十六人之布教師所發之意思。此外亦有種種解釋，但 duve sapaṁnā lāti-satā vivuthā ti 之 lāti = ratti = rātrī 是夜間之意，明白可承認，甚多失其根據又為誤字以外，其說不成立。故為二百五十六之數字二百五十六夜即言二百五十六日之意。即，離三衣而住者言為二百五十六日之意味。第二文於 S 文字之舉數，更記數字是印度之方式不為異例。此 E 之一節由 S 而想，又由次之三而見者，於 B 之一節直繼續者，決不是破僧伽者令離三衣而繼續 D 一節之趣意。然，夜時，二百五十六日即一年三分之二以上，又熱心近於僧伽言精勤一年有餘，唯約半分之期間雖為比丘迦提加，如 B 一節所述之得果報者，假令小身，又僅精勤，此應努力依實例，勤之趣意，想為此一節所加。學者費二百五十六夜巡禮，又解花費祈願，因此有進行巡禮之朕，發此教勅，又花費祈願之朕發此教勅雖不成其意味，但此意義於 B 之一節或在此法勅全體看，其聯絡而想必無不適切。二百五十六日間出巡禮又費祈願，實統政治之王，實際上是否可能耶，應思之？又如費祈願，在佛教之趣意上為何意味是難令領解。恐不外是西洋宗教之想法而解。殊 vyuṭha 可以見為梵語之 vyusta，其意依據 Baudhāyana-dharmasūtra, 4, 5. 30, having spent the night（in prayer）而解者，佛教的狀態想之即不很適宜。因此，今不從此等之說。結果，vyuṭha, vivāsa 等之文字缺其用例，為不明之文字，無適確之解說。</p></note>
+<note n="0271001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0271001">阿育 Asoka 於此最初出王之名。古來法勅全部為阿育王之物，於此不要證明，今有此更為確實。</note>
+<note n="0272002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272002">佛陀釋迦信者 Budha-Śake。</note>
+<note n="0272003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272003">曾〔人人與〕諸天交往，但今亦有交往者 pure ye amisā devā husu te dāni misibhūtā。</note>
+<note n="0272004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272004">繁榮 bhadake，元來是形容詞。</note>
+<note n="0272005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272005">此法勅與其他之法勅有多少不同之處，特別此獨立譯出資助與其比較。</note>
+<note n="0272001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272001">A 之一節是前之一及二不存在。但此刻法勅 Br, Ś, J 之 J 中，J 嚴重缺損。斯瓦那奇利 Suvaṁṇagiri，太守皇子 Ayaputa，於刻法勅第一章及第二章同一。Ayaputa = Āryaputra 言為皇子。是伊尸羅 Isila。</note>
+<note n="0273002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273002">唯 Br 通常有天愛如是詔為天愛命 āṇapayati。其他為如是詔。</note>
+<note n="0273003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273003">一年間 ekaṁ savacharaṁ（Br）, ekam savacha……（S）。J 亦應如是。今，因為破損不得讀。此年數唯此有而為重要者。</note>
+<note n="0273004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273004">唯依大身 mahātpeneva。</note>
+<note n="0273005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273005">努力 kāmaṁ。</note>
+<note n="0273006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273006">C D 之二節，此法勅不存在。</note>
+<note n="0273007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273007">確固 drahyitavyaṁ（Br）。通常譯為堅固之字，確固有慈愍，又慈愍以言確固之意。</note>
+<note n="0273008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273008">弟子 aṁtevāsin（Br, J）. 軌範師 ācariya（Br, Ś, J）。通常音譯為阿闍梨。言為師。</note>
+<note n="0273009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273009">適當 yathārahaṁ（Br, J）。</note>
+<note n="0273010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273010">古來之本質 porāṇā pakitī（Br, J）。吧奇提是本性、自性之意。</note>
+<note n="0273011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273011">Br 亦導長壽之次，正直人云云，而刻者所述，以一切終了，Ś 與 J，人云云之前後尚存多少之文是很明瞭。然，不幸而多破損，不得讀。軌範師又尊敬弟子是言其親族應行正行。弟子與師互相尊敬是佛教僧伽之法則。</note>
+<note n="0273012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273012">如此者即天愛之教法 hevaṁ dhaṁme Devāṇaṁpiyasa。此唯 J 有此句。</note>
+<note n="0274013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0274013">刻者 lipikara，羌吧達 Capada，於他之說見羌是名之部分，見吧達是名。三文亦皆於本文，刻者，實是由刻者，而唯一字與其此字體以加魯修提之字體刻之。其他皆是普羅夫米字體。故此刻者是常用加魯修提之字體的人，於此不外特別是示為自加刻之。</note>
+<note n="0275001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275001">此法勅是吧普如法勅，但亦言婆伊羅睹第二法勅。摩揭陀國之天愛王 Priyadasi lājā Māgadhe。</note>
+<note n="0275002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275002">敬禮 abhivādetūnaṁ。</note>
+<note n="0275003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275003">恭敬 gālave 亦可譯尊重。</note>
+<note n="0276004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0276004">如此正法得久住 hevaṁ sadhaṁme cila-ṭhitīke hosatī ti。此或由經引用之句。增支部存有似此之句。A. 3, pp. 247, 340; 4, p. 84。</note>
+<note n="0276005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0276005">於毘奈耶最勝〔法說〕（Vinaya-samukase）對於指何，尚未明確，但一說存於律藏中之大品（Mahāvagga），指初轉法輪。譯為最勝 samukase 與巴利語言 saṁukkaṁsika同。sāmukkaṁsika 於巴利阿含多用 sāmukkaṁsika dhammadesanā，必是指四諦說之例。故沙呣加闍為最勝說之意義，想是指四諦說，而由於毘奈耶所見，此見為指初轉法輪，想是適宜。聖種經（Aliya-vasāṇi）在巴利語 Ariya-vaṁsā（A. 2, p. 27）。當來怖畏經（Anāgata-bhayāni）於巴利亦同名（A. 3, p. 103）牟尼偈（Muni-gāthā）是 Muni-sutta（SṆip. 1, 12, p. 36）。寂默行經（Moneya-sūte）是 Nālaka-sutta（S. Nip. 3, 2, p. 131）。優波帝沙問經（Upatisa-pasine）是 Sāriputta-sutta（S. Nip. 4, 16, p. 186）說羅睺羅經（Lāghulovāde）是 Rāhulovāda-sutta 相當（M. 1, p. 414）。然，對此亦存有唱異說之學者，其異說是一般學者所承認。</note>
+<note n="0276006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0276006">法門 dhaṁma-paliyāya，通常言法門是經中說而指其說，茲於此指經見為其直接之意味。恐怕此等是指經中之教說。</note>
+<note n="0276007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0276007">比丘、比丘尼、優婆塞、優婆夷稱為四眾。</note>
+<note n="0278001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0278001">此第一、為榕樹洞院又斯達磨洞院，第二、為加羅提加洞院又言修瓦周普利洞院，第三、為斯毘耶洞院又言加如那奢宇婆如洞院。</note>
+<note n="0278002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0278002">於第三予指其他之施主，又亦指王而解之。</note>
+<note n="0278003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0278003">美麗 supiya。</note>
+<note n="0279004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0279004">此第三之刻文終了刻有卍字、劍、魚。</note>
+<note n="0279001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0279001">十車 Dasaratha 王是阿育王之孫，承認有其王位，但阿育王直續為王，或隔一代而為王，不明。然，依耆那教之傳說，繼阿育王之王，同王之孫 Saṁprati，此王言保護耆那教，其外對於十車王之王無所知。刪普羅提佛教亦知之，雖有阿育王之次王說，十車王之關係不明。故阿育王以後之孔雀王朝欠缺明瞭。然，此王朝紀元前百八十五年頃，由其將軍普修耶密多羅所滅亡，普修耶密多羅確實建霜迦王朝。普修耶密多羅是迫害佛教而保護婆羅門之王。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0225a0301" resp="#resp2" type="add" target="#nkr_note_add_0225a0301">柬【CB】，東【南傳】</note>
-<note n="0236a1201" resp="#resp2" type="add" target="#nkr_note_add_0236a1201">己【CB】，已【南傳】</note>
-<note n="0242a1001" resp="#resp2" type="add" target="#nkr_note_add_0242a1001">己【CB】，已【南傳】</note>
-<note n="0242a1101" resp="#resp2" type="add" target="#nkr_note_add_0242a1101">己【CB】，已【南傳】</note>
+<note n="0225a0301" resp="#resp3" type="add" target="#nkr_note_add_0225a0301">柬【CB】，東【南傳】</note>
+<note n="0236a1201" resp="#resp3" type="add" target="#nkr_note_add_0236a1201">己【CB】，已【南傳】</note>
+<note n="0242a1001" resp="#resp3" type="add" target="#nkr_note_add_0242a1001">己【CB】，已【南傳】</note>
+<note n="0242a1101" resp="#resp3" type="add" target="#nkr_note_add_0242a1101">己【CB】，已【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

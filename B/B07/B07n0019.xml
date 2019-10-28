@@ -12,66 +12,80 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>BuBian</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>BuBian</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">7</idno>.<idno type="no">19</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 7, No. 19</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">南傳念安般經</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB03240">
-	<charName>CBETA CHARACTER CB03240</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[旃-丹+冉]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>旃</value>
-	</charProp>
-	<mapping type="unicode">U+3ACB</mapping>
-	<mapping cb:dec="986280" type="PUA">U+F0CA8</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB03240">
+				<charName>CBETA CHARACTER CB03240</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[旃-丹+冉]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>旃</value>
+				</charProp>
+				<mapping type="unicode">U+3ACB</mapping>
+				<mapping cb:dec="986280" type="PUA">U+F0CA8</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2014-06-12">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -344,25 +358,25 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0140a0101" to="#end0140a0101"><lem wit="#wit1" resp="#resp3">淨</lem><rdg wit="#wit2">凈</rdg></app>
+<app from="#beg0140a0101" to="#end0140a0101"><lem wit="#wit.cbeta" resp="#resp4">淨</lem><rdg wit="#wit.orig">凈</rdg></app>
 </p>
 </cb:div>
 <cb:div type="bubian-notes">
 <head>大藏經補編 校註</head>
 <p>
-<note n="0139001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0139001">參看大安般守意經康僧會序。按巴利文安謂 āna 般謂 apāna．意字於漢末三國時或即念字之別譯．或為末那之譯文。如安世高八正道經第七諦意．當後譯之正念。該經並謂「第七諦意者曰增三十七品離意」．則所言亦見於大安般守意經。據此則守意者為 Sati-upaṭṭhāna。唯安世高所譯之七處三觀經中有守身守口聲守意之語．則守意者為 Manokamman paccupaṭṭhitaṃ。據安般守意經本文．則意似指末那．或當後譯之心字。</note>
-<note n="0139002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0139002">五事毗婆沙論卷上．雜阿毗曇心論卷一．俱舍論卷二十二。</note>
-<note n="0139003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0139003">見出三藏記集．道安大十二門經序。</note>
-<note n="0139004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0139004">沙門十慧經為我國自撰佛書之最早者。今佚．出三藏記集僅存其序文。十慧者．即安般守意經之十黠。</note>
-<note n="0140005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0140005">引安般守意經謝敷序文中語。</note>
-<note n="0146006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0146006">assassati 前接字之 a 字有入義．passassati 前接字之 pa 字有出義．解脫道論想據此以譯。清淨道論釋此．不知何以恰相反對。今以彼論為南傳．從之以見南方佛教之真相。參看忽滑谷快天「禪學思想史」卷上．一二六至一三七頁。</note>
-<note n="0148007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148007">按解脫道論譯文「知一切身我入息如是學」（下闕）係照原文直譯。惟了知一切身等為十六特勝。即念安般時力學所得之果．故今改之．俾稍明晰。</note>
+<note n="0139001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0139001">參看大安般守意經康僧會序。按巴利文安謂 āna 般謂 apāna．意字於漢末三國時或即念字之別譯．或為末那之譯文。如安世高八正道經第七諦意．當後譯之正念。該經並謂「第七諦意者曰增三十七品離意」．則所言亦見於大安般守意經。據此則守意者為 Sati-upaṭṭhāna。唯安世高所譯之七處三觀經中有守身守口聲守意之語．則守意者為 Manokamman paccupaṭṭhitaṃ。據安般守意經本文．則意似指末那．或當後譯之心字。</note>
+<note n="0139002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0139002">五事毗婆沙論卷上．雜阿毗曇心論卷一．俱舍論卷二十二。</note>
+<note n="0139003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0139003">見出三藏記集．道安大十二門經序。</note>
+<note n="0139004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0139004">沙門十慧經為我國自撰佛書之最早者。今佚．出三藏記集僅存其序文。十慧者．即安般守意經之十黠。</note>
+<note n="0140005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0140005">引安般守意經謝敷序文中語。</note>
+<note n="0146006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0146006">assassati 前接字之 a 字有入義．passassati 前接字之 pa 字有出義．解脫道論想據此以譯。清淨道論釋此．不知何以恰相反對。今以彼論為南傳．從之以見南方佛教之真相。參看忽滑谷快天「禪學思想史」卷上．一二六至一三七頁。</note>
+<note n="0148007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148007">按解脫道論譯文「知一切身我入息如是學」（下闕）係照原文直譯。惟了知一切身等為十六特勝。即念安般時力學所得之果．故今改之．俾稍明晰。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0140a0101" resp="#resp2" type="add" target="#nkr_note_add_0140a0101">淨【CB】，凈【補編】</note>
+<note n="0140a0101" resp="#resp3" type="add" target="#nkr_note_add_0140a0101">淨【CB】，凈【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

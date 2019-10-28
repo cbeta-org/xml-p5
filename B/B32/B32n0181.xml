@@ -12,50 +12,64 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">32</idno>.<idno type="no">181</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 32, No. 181</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">諸宗教理同異釋</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2016-04-06">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -561,29 +575,29 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0519a0601" to="#end0519a0601"><lem wit="#wit1" resp="#resp2">兹</lem><rdg wit="#wit2">玆</rdg></app>
-<app from="#beg0520a1301" to="#end0520a1301"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0520c0901" to="#end0520c0901"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0523c0201" to="#end0523c0201"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0524b1301" to="#end0524b1301"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0524b1401" to="#end0524b1401"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0524b1701" to="#end0524b1701"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0524b1801" to="#end0524b1801"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0524c0301" to="#end0524c0301"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
+<app from="#beg0519a0601" to="#end0519a0601"><lem wit="#wit.cbeta" resp="#resp3">兹</lem><rdg wit="#wit.orig">玆</rdg></app>
+<app from="#beg0520a1301" to="#end0520a1301"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0520c0901" to="#end0520c0901"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0523c0201" to="#end0523c0201"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0524b1301" to="#end0524b1301"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0524b1401" to="#end0524b1401"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0524b1701" to="#end0524b1701"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0524b1801" to="#end0524b1801"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0524c0301" to="#end0524c0301"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0519a0601" resp="#resp1" type="add" target="#nkr_note_add_0519a0601">兹【CB】，玆【補編】</note>
-<note n="0520a1301" resp="#resp1" type="add" target="#nkr_note_add_0520a1301">已【CB】，巳【補編】</note>
-<note n="0520c0901" resp="#resp1" type="add" target="#nkr_note_add_0520c0901">已【CB】，巳【補編】</note>
-<note n="0523c0201" resp="#resp1" type="add" target="#nkr_note_add_0523c0201">已【CB】，巳【補編】</note>
-<note n="0524b1301" resp="#resp1" type="add" target="#nkr_note_add_0524b1301">已【CB】，巳【補編】</note>
-<note n="0524b1401" resp="#resp1" type="add" target="#nkr_note_add_0524b1401">已【CB】，巳【補編】</note>
-<note n="0524b1701" resp="#resp1" type="add" target="#nkr_note_add_0524b1701">已【CB】，巳【補編】</note>
-<note n="0524b1801" resp="#resp1" type="add" target="#nkr_note_add_0524b1801">已【CB】，巳【補編】</note>
-<note n="0524c0301" resp="#resp1" type="add" target="#nkr_note_add_0524c0301">已【CB】，巳【補編】</note>
+<note n="0519a0601" resp="#resp2" type="add" target="#nkr_note_add_0519a0601">兹【CB】，玆【補編】</note>
+<note n="0520a1301" resp="#resp2" type="add" target="#nkr_note_add_0520a1301">已【CB】，巳【補編】</note>
+<note n="0520c0901" resp="#resp2" type="add" target="#nkr_note_add_0520c0901">已【CB】，巳【補編】</note>
+<note n="0523c0201" resp="#resp2" type="add" target="#nkr_note_add_0523c0201">已【CB】，巳【補編】</note>
+<note n="0524b1301" resp="#resp2" type="add" target="#nkr_note_add_0524b1301">已【CB】，巳【補編】</note>
+<note n="0524b1401" resp="#resp2" type="add" target="#nkr_note_add_0524b1401">已【CB】，巳【補編】</note>
+<note n="0524b1701" resp="#resp2" type="add" target="#nkr_note_add_0524b1701">已【CB】，巳【補編】</note>
+<note n="0524b1801" resp="#resp2" type="add" target="#nkr_note_add_0524b1801">已【CB】，巳【補編】</note>
+<note n="0524c0301" resp="#resp2" type="add" target="#nkr_note_add_0524c0301">已【CB】，巳【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

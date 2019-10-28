@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.cbeta.org/ns/1.0" xml:id="ZW05n0045">
 <teiHeader>
-<fileDesc>
+	<fileDesc>
 		<titleStmt>
 			<title>Buddhist Texts not contained in the Tripiṭaka, Electronic version, No. 45 小誦</title>
 			<title xml:lang="zh-Hant">藏外佛教文獻數位版, No. 45 小誦</title>
@@ -11,57 +11,68 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.5 $<date>$Date: 2010/03/17 08:57:29 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>ZangWai</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2010/03/17 08:57:29 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Buddhist Texts not contained in the Tripiṭaka Vol. 5, No. 45</bibl>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Fang Guangchang</p>
-		<p xml:lang="zh-Hant" cb:type="ly">方廣錩大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<revisionDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>ZangWai</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">ZW</idno>.<idno type="vol">5</idno>.<idno type="no">45</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:24:06 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Buddhist Texts not contained in the Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">藏外佛教文獻</title>
+				<title level="m" xml:lang="zh-Hant">小誦</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Fang Guangchang</p>
+			<p xml:lang="zh-Hant" cb:type="ly">方廣錩大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【藏外】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
+		<langUsage>
+			<language ident="en">English</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
+		</langUsage>
+	</profileDesc>
+	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2009-12-25T14:17:42">Zhou Bang-Xin (ed.) Created initial TEI XML version with BASICX.BAT</change>
-<!--
-$Log: ZW05n0045.xml,v $
-Revision 1.5  2010/03/17 08:57:29  amtbgrace
-modified: 修改檔頭資訊
-
-Revision 1.4  2010/01/19 05:58:12  amtbgrace
-modified: 修改本書書名英文翻譯的單字為: not contained
-
-Revision 1.3  2009/12/28 06:12:00  amtbgrace
-modified: 校注插入XML作業。
-
-Revision 1.2  2009/12/28 05:37:14  amtbgrace
-modified: 修訂錯誤標記與目錄。
-
-Revision 1.1  2009/12/25 06:51:01  amtbgrace
-modified: 執行 basicx.bat  將 bm 轉 xml
-
--->
-</revisionDesc>
+		<change when="2009-12-25T14:17:42">
+			Zhou Bang-Xin (ed.) Created initial TEI XML version with BASICX.BAT
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone unit="juan" n="1"/>
@@ -376,7 +387,7 @@ modified: 執行 basicx.bat  將 bm 轉 xml
 <cb:div type="zangwai-notes">
 <head>方廣錩 校註</head>
 <p>
-<note n="0037001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0037001">「三受」指苦受、樂受、捨受（不苦不樂）之三種感受。此三受與五識相應者，稱為身受；與意識相應者，稱為心受。</note>
+<note n="0037001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0037001">「三受」指苦受、樂受、捨受（不苦不樂）之三種感受。此三受與五識相應者，稱為身受；與意識相應者，稱為心受。</note>
 </p>
 </cb:div>
 </back></text></TEI>

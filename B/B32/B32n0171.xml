@@ -12,96 +12,110 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>BuBian</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>BuBian</name></respStmt>
 		</editionStmt>
 		<extent>2卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">32</idno>.<idno type="no">171</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 32, No. 171</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">八宗綱要鈔</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB02617">
-	<charName>CBETA CHARACTER CB02617</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[目*候]</value>
-	</charProp>
-	<mapping type="unicode">U+2C45F</mapping>
-	<mapping cb:dec="985657" type="PUA">U+F0A39</mapping>
-</char>
-<char xml:id="CB05482">
-	<charName>CBETA CHARACTER CB05482</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[火*帚]</value>
-	</charProp>
-	<mapping type="unicode">U+3DCC</mapping>
-	<mapping cb:dec="988522" type="PUA">U+F156A</mapping>
-</char>
-<char xml:id="CB18916">
-	<charName>CBETA CHARACTER CB18916</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[言*(壹-豆+儿)]</value>
-	</charProp>
-	<mapping type="normal_unicode">U+8AAD</mapping>
-	<mapping cb:dec="1001956" type="PUA">U+F49E4</mapping>
-</char>
-<char xml:id="CB18923">
-	<charName>CBETA CHARACTER CB18923</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[宋-木+(大-一+三)]</value>
-	</charProp>
-	<mapping cb:dec="1001963" type="PUA">U+F49EB</mapping>
-</char>
-<char xml:id="CB22481">
-	<charName>CBETA CHARACTER CB22481</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[縣-系]</value>
-	</charProp>
-	<mapping cb:dec="1005521" type="PUA">U+F57D1</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB02617">
+				<charName>CBETA CHARACTER CB02617</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[目*候]</value>
+				</charProp>
+				<mapping type="unicode">U+2C45F</mapping>
+				<mapping cb:dec="985657" type="PUA">U+F0A39</mapping>
+			</char>
+			<char xml:id="CB05482">
+				<charName>CBETA CHARACTER CB05482</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[火*帚]</value>
+				</charProp>
+				<mapping type="unicode">U+3DCC</mapping>
+				<mapping cb:dec="988522" type="PUA">U+F156A</mapping>
+			</char>
+			<char xml:id="CB18916">
+				<charName>CBETA CHARACTER CB18916</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[言*(壹-豆+儿)]</value>
+				</charProp>
+				<mapping type="normal_unicode">U+8AAD</mapping>
+				<mapping cb:dec="1001956" type="PUA">U+F49E4</mapping>
+			</char>
+			<char xml:id="CB18923">
+				<charName>CBETA CHARACTER CB18923</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[宋-木+(大-一+三)]</value>
+				</charProp>
+				<mapping cb:dec="1001963" type="PUA">U+F49EB</mapping>
+			</char>
+			<char xml:id="CB22481">
+				<charName>CBETA CHARACTER CB22481</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[縣-系]</value>
+				</charProp>
+				<mapping cb:dec="1005521" type="PUA">U+F57D1</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2016-04-06">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1550,274 +1564,274 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0003a0201" to="#end0003a0201"><lem wit="#wit1" resp="#resp2"><space quantity="0"/></lem><rdg wit="#wit2">一、</rdg></app>
-<app from="#beg0003a0401" to="#end0003a0401"><lem wit="#wit1" resp="#resp2"><space quantity="0"/></lem><rdg wit="#wit2">一、</rdg></app>
-<app from="#beg0003a0701" to="#end0003a0701"><lem wit="#wit1" resp="#resp2"><space quantity="0"/></lem><rdg wit="#wit2">一、</rdg></app>
-<app from="#beg0003a1001" to="#end0003a1001"><lem wit="#wit1" resp="#resp2"><space quantity="0"/></lem><rdg wit="#wit2">一、</rdg></app>
-<app from="#beg0003a1301" to="#end0003a1301"><lem wit="#wit1" resp="#resp2"><space quantity="0"/></lem><rdg wit="#wit2">一、</rdg></app>
-<app from="#beg0018a0701" to="#end0018a0701"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0025a0301" to="#end0025a0301"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0037a1101" to="#end0037a1101"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0067a0601" to="#end0067a0601"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0077a1201" to="#end0077a1201"><lem wit="#wit1" resp="#resp2">辦</lem><rdg wit="#wit2">辨</rdg></app>
+<app from="#beg0003a0201" to="#end0003a0201"><lem wit="#wit.cbeta" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit.orig">一、</rdg></app>
+<app from="#beg0003a0401" to="#end0003a0401"><lem wit="#wit.cbeta" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit.orig">一、</rdg></app>
+<app from="#beg0003a0701" to="#end0003a0701"><lem wit="#wit.cbeta" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit.orig">一、</rdg></app>
+<app from="#beg0003a1001" to="#end0003a1001"><lem wit="#wit.cbeta" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit.orig">一、</rdg></app>
+<app from="#beg0003a1301" to="#end0003a1301"><lem wit="#wit.cbeta" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit.orig">一、</rdg></app>
+<app from="#beg0018a0701" to="#end0018a0701"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0025a0301" to="#end0025a0301"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0037a1101" to="#end0037a1101"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0067a0601" to="#end0067a0601"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0077a1201" to="#end0077a1201"><lem wit="#wit.cbeta" resp="#resp3">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
 </p>
 </cb:div>
 <cb:div type="bubian-notes">
 <head>大藏經補編 校註</head>
 <p>
-<note n="0009001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0009001">薄伽（薄伽梵 bhagavat）</note>
-<note n="0009002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0009002">俱舍（阿毘達磨俱舍論卷一 大正 29. 6a） </note>
-<note n="0009003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0009003">牟尼（釋迦牟尼 śākhyamuni）</note>
-<note n="0010001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0010001">智度論（大智度論卷四 大正 25. 85a）</note>
-<note n="0010002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0010002">莊嚴論（大乘莊嚴經論卷四 大正 31. 009c） </note>
-<note n="0010003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0010003">素坦覽（sūtra）</note>
-<note n="0010004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0010004">毘奈耶（vinaya）</note>
-<note n="0010005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0010005">阿毘達磨（abhidharma）</note>
-<note n="0011001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011001">如來（tathāgata）</note>
-<note n="0011002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011002">莊嚴論（大乘莊嚴經論 卷四 大正 31. 609c）</note>
-<note n="0011003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011003">迦葉波（mahākāśyapaの畧）</note>
-<note n="0011004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011004">畢鉢（畢鉢羅窟 pippalaguhā）</note>
-<note n="0011005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011005">阿逸多（ajita）</note>
-<note n="0011006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011006">摩阿迦葉（mahākāśyapa）</note>
-<note n="0011007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011007">阿難（ānanda）</note>
-<note n="0011008" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011008">末田（末田地 madhyāntika）</note>
-<note n="0011009" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0011009">商那（商那和須 śānavāsika）</note>
-<note n="0012001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0012001">優婆毱多（upagupta）</note>
-<note n="0012002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0012002">摩訶提婆（mahādeva）</note>
-<note n="0012003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0012003">婆麤富羅（犢子 vātsīputra）</note>
-<note n="0013001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0013001">馬鳴（aśvaghoṣita）</note>
-<note n="0013002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0013002">閻浮（閻浮提 jambudvīpa）</note>
-<note n="0013003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0013003">龍樹（nāgārjuna）</note>
-<note n="0013004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0013004">無著（asaṅga）</note>
-<note n="0013005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0013005">都率（tuṣita）</note>
-<note n="0013006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0013006">慈氏（彌勤，慈尊 māitreya）</note>
-<note n="0014001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014001">阿瑜遮那（阿瑜遮，阿瑜闍 ayojjhā，巴，ayodhyā，）</note>
-<note n="0014002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014002">瑜伽論（瑜伽師論百卷 大正 30）</note>
-<note n="0014003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014003">世親（vasubandhu）</note>
-<note n="0014004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014004">訶梨跋摩（harivarman）</note>
-<note n="0014005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014005">眾賢（saṅghabhadra）</note>
-<note n="0014006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014006">護法（dharmapāla）</note>
-<note n="0014007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014007">清辨（bhāvaviveka）</note>
-<note n="0014008" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014008">戒賢（śīlabhadra）</note>
-<note n="0014009" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0014009">智光（jñānaprabha）</note>
-<note n="0015001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0015001">迦騰（迦葉摩騰 kāśyapamātaṅga）</note>
-<note n="0015002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0015002">竺（印度），蘭（法蘭 dharmarakṣa）</note>
-<note n="0015003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0015003">韋陀（veda）</note>
-<note n="0015004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0015004">覺賢（佛陀跋陀羅 buddhabhadra）</note>
-<note n="0015005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0015005">曇無（曇無讖 dharmarakṣa）</note>
-<note n="0016001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0016001">欽明天皇第六年（AḌ.545）</note>
-<note n="0016002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0016002">聖德太子（572-622）</note>
-<note n="0017001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0017001">玄昉（-746）</note>
-<note n="0017002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0017002">道璿（702-760）</note>
-<note n="0017003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0017003">鑑真（688-763）</note>
-<note n="0017004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0017004">傳教大師（最澄 767-822）</note>
-<note n="0017005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0017005">弘法大師（空海 774-835）</note>
-<note n="0019001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0019001">阿毘達磨俱舍論（abhidharmakośaśāstra 大正 29）</note>
-<note n="0020001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0020001">發智論（阿毘達磨發智論二十卷 大正 26）</note>
-<note n="0020002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0020002">世親（vasubandhu）</note>
-<note n="0020003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0020003">薩婆多部（sarvāstivāda）</note>
-<note n="0020004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0020004">婆沙（大毘婆沙論 大正 27）</note>
-<note n="0020005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0020005">迦濕彌羅（kaśmīra）</note>
-<note n="0020006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0020006">迦膩色迦（kaniṣka）</note>
-<note n="0020007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0020007">脇尊者（pārśva）</note>
-<note n="0021001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0021001">世友（vasumitra）</note>
-<note n="0021002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0021002">咀怛覽（sūtra）</note>
-<note n="0021003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0021003">毘奈那（vinaya）</note>
-<note n="0021004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0021004">阿毘達磨（abhidharma）</note>
-<note n="0021005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0021005">羅漢（阿羅漢 arhat）</note>
-<note n="0021006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0021006">夜叉（yakṣa）</note>
-<note n="0022001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0022001">悟入（skandhila）</note>
-<note n="0022002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0022002">眾賢（saṁghabhadra）</note>
-<note n="0023001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0023001">真諦（paramārtha）</note>
-<note n="0023002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0023002">玄奘（600-664）</note>
-<note n="0023003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0023003">普光 俱舍論記 三十卷（大正 41）法寶 俱舍論疏 三十卷（大正 41）</note>
-<note n="0023004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0023004">俱舍論 卷二十九（大正 29. 152b）</note>
-<note n="0023005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0023005">俱舍論 卷四（大正 29. 22c）</note>
-<note n="0024001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0024001">法救（dharmatrāta）</note>
-<note n="0024002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0024002">妙音（ghoṣa）</note>
-<note n="0024003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0024003">世友（vasumitra） </note>
-<note n="0024004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0024004">覺天（buddhadeva）</note>
-<note n="0025001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0025001">伽陀（gāthā）</note>
-<note n="0026001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0026001">三摩地（samādhi）</note>
-<note n="0027001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0027001">聲聞（śrāvaka）</note>
-<note n="0027002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0027002">緣覺（pratyekabuddha）</note>
-<note n="0027003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0027003">菩薩（bodhisattva）</note>
-<note n="0027004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0027004">劫（kalpa）</note>
-<note n="0027005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0027005">波羅蜜（pāramitā）</note>
-<note n="0028001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0028001">成實論（大正 32. 239b）</note>
-<note n="0028002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0028002">俱摩羅陀（kumāralāta）</note>
-<note n="0028003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0028003">訶梨跋摩（harivarman）</note>
-<note n="0028004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0028004">羅什（鳩摩羅什 kumārajīva）</note>
-<note n="0029001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0029001">曇無德部（法藏部 dharmagupta）</note>
-<note n="0029002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0029002">法雲（467-529）</note>
-<note n="0029003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0029003">智藏（458-522）</note>
-<note n="0029004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0029004">僧旻（467-527）</note>
-<note n="0030001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0030001">預流（須陀洹 srotāpanna）</note>
-<note n="0030002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0030002">一來（斯陀含 sakridāgāmin）</note>
-<note n="0030003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0030003">不還（阿那含 anāgāmin）</note>
-<note n="0031001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0031001">毘尼（毘奈耶 vinaya）</note>
-<note n="0032001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0032001">薩婆多（sarvāstivāda）</note>
-<note n="0032002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0032002">曇無德（dharmagupta）</note>
-<note n="0032003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0032003">僧祇（mahāsāṁghika）</note>
-<note n="0032004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0032004">彌沙塞（mahīśāsaka）</note>
-<note n="0032005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0032005">迦葉遺（kāśyapīya）</note>
-<note n="0032006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0032006">毘尼母（vinayamātṛikā）</note>
-<note n="0032007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0032007">摩得勤伽（mātṛikā）</note>
-<note n="0033001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0033001">智首（657-635）</note>
-<note n="0033002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0033002">南山（道宣 596-667）</note>
-<note n="0033003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0033003">法時（dharmakāla）</note>
-<note n="0033004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0033004">覺明（Buddhayaśas）</note>
-<note n="0033005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0033005">榮叡（-748）</note>
-<note n="0034001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0034001">鑒真（688-763）</note>
-<note n="0034002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0034002">聖武天皇（724-748 在位）</note>
-<note n="0034003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0034003">毘廬舍那（vāirocana）</note>
-<note n="0035001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0035001">法進（709-778） </note>
-<note n="0035002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0035002">豐安（-840）</note>
-<note n="0035003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0035003">法礪（569-635）</note>
-<note n="0037001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0037001">羯磨（karma）</note>
-<note n="0037002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0037002">犍度（khandha, 巴）</note>
-<note n="0037003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0037003">比丘（bhikkhu, 巴）（bhikṣu）</note>
-<note n="0037004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0037004">比丘尼（bhikkhunī, 巴）（bhikṣuṇī）</note>
-<note n="0038001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0038001">波羅夷（pārājika, 巴）</note>
-<note n="0038002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0038002">尼薩耆波逸提（nissaggiya pācittiya, 巴）</note>
-<note n="0038003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0038003">波逸提（pācittiya, 巴）</note>
-<note n="0038004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0038004">提舍尼（pāṭidesanīya, 巴）</note>
-<note n="0038005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0038005">蘭若（阿蘭若 āraṇya）</note>
-<note n="0038006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0038006">突吉羅（dukkaṭa, 巴 duṣkṛita）</note>
-<note n="0039001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0039001">偷蘭遮（thūlaccaya, 巴）</note>
-<note n="0040001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0040001">迦絺那（kathina） </note>
-<note n="0040002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0040002">俱腅彌（kosambī, 巴）</note>
-<note n="0040003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0040003">瞻波（campeyya, 巴）</note>
-<note n="0042001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0042001">式叉摩那（śikṣamāṇā）</note>
-<note n="0042002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0042002">沙彌（śrāmaṇera,-ka）</note>
-<note n="0042003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0042003">沙彌尼（'srāmanenikā）</note>
-<note n="0042004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0042004">優婆塞（upāsaka）</note>
-<note n="0042005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0042005">優婆夷（upāsikā）</note>
-<note n="0043001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0043001">薩婆多毘尼毘婆沙－（大正 23. 508c 取意）</note>
-<note n="0043002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0043002">阿含（āgama）</note>
-<note n="0044001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0044001">四分律行持鈔資持記 上－上（大正 40. 160b）</note>
-<note n="0044002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0044002">沓婆（沓婆摩羅子 dabbamallaputta, 巴）</note>
-<note n="0046001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0046001">業疏（四分律業疏卍續 64．5．626 左上）</note>
-<note n="0049001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0049001">唯識論（成唯識論十卷） </note>
-<note n="0049002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0049002">深密（解深密經） </note>
-<note n="0049003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0049003">阿毘達磨（大乘阿毘達磨經）</note>
-<note n="0049004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0049004">攝論（攝大乘論）</note>
-<note n="0049005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0049005">成唯識論述記 卷一本（大正43. 229c） </note>
-<note n="0049006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0049006">瑜伽論（瑜伽師地論百卷） </note>
-<note n="0050001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0050001">彌勤（māitreya）慈氏</note>
-<note n="0050002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0050002">阿瑜遮國（ayodhyā）瑜遮那</note>
-<note n="0050003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0050003">無著（asaṅga）</note>
-<note n="0050004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0050004">世親（vasubandhu）</note>
-<note n="0050005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0050005">護法（dharmapāla）</note>
-<note n="0051001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0051001">戒賢（śīlabhadra）</note>
-<note n="0051002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0051002">玄奘（600-664）</note>
-<note n="0051003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0051003">窺基（慈恩 632-682）</note>
-<note n="0051004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0051004">惠沼（-714）</note>
-<note n="0051005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0051005">智周（676-733）</note>
-<note n="0052001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0052001">義淵（-728）</note>
-<note n="0052002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0052002">玄昉（-746）</note>
-<note n="0052003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0052003">善珠（723-797）</note>
-<note n="0056001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0056001">西明（西明寺圓測）</note>
-<note n="0057001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0057001">末那識（manovijñāna）</note>
-<note n="0057002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0057002">阿頼耶識（ālayavijñāna）</note>
-<note n="0059001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0059001">成唯識論述記 卷一本（大正 43. 243c）</note>
-<note n="0060001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0060001">四分義極略私記 卷上（大正 71. 454c）引用</note>
-<note n="0060002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0060002">安慧（sthiramati）</note>
-<note n="0060003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0060003">難陀（nanda）</note>
-<note n="0060004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0060004">陳那（dinnāga）</note>
-<note n="0061001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0061001">三十頌（唯識三十論頌 大正 31. 61a）</note>
-<note n="0061002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0061002">（大正 31. 61a）</note>
-<note n="0062001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0062001">唯識論（成唯識論 卷八 大正 31. 45c）</note>
-<note n="0062002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0062002">成唯識論 卷九（大正 31. 48a）</note>
-<note n="0062003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0062003">唯識論（成唯識論 卷十 大正 31. 58a）</note>
-<note n="0064001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0064001">龍樹（nāgārjuna）</note>
-<note n="0064002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0064002">提婆（deva, 聖提婆 āryadeva）</note>
-<note n="0066001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0066001">善吉（須菩提 subhūti）</note>
-<note n="0066002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0066002">身子（舍利佛 śāriputra）</note>
-<note n="0070001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070001">文殊師利（mañjuśrī）</note>
-<note n="0070002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070002">馬鳴（aśvaghoṣa）</note>
-<note n="0070003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070003">龍智（nāgabodhi）</note>
-<note n="0070004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070004">清辨（bhāvaviveka）</note>
-<note n="0070005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070005">智光（jñānaprabha）</note>
-<note n="0070006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070006">師子光（siṁharśmi）</note>
-<note n="0070007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070007">羅睺羅（羅睺羅跋陀羅 rāhulabhadra）</note>
-<note n="0070008" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070008">沙車（莎車國 yarkand）</note>
-<note n="0070009" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0070009">羅什（鳩摩羅什 kumārajīua 344-413）</note>
-<note n="0071001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0071001">生（道生 -434）</note>
-<note n="0071002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0071002">肇（僧肇 384-414）</note>
-<note n="0071003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0071003">嘉祥（吉藏 549-623）</note>
-<note n="0071004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0071004">道慈（-747）</note>
-<note n="0071005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0071005">善議（729-812）</note>
-<note n="0071006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0071006">勤操（754-827）</note>
-<note n="0071007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0071007">安澄（763-814）</note>
-<note n="0072001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072001">義淨（635-725）</note>
-<note n="0072002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072002">南海寄歸內法傳卷一（大正 .54. 205c 取意，文）</note>
-<note n="0072003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072003">道詮（-876）</note>
-<note n="0072004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072004">法華（羅什譯妙法蓮華經，八卷）</note>
-<note n="0072005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072005">伊人法師（湛然 711-782）</note>
-<note n="0072006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072006">止觀義例卷上（大正 46. 452c）</note>
-<note n="0072007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072007">大經（大般涅槃經 四十卷（北本）三十六卷（南本））</note>
-<note n="0072008" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0072008">大品（大品般若經三十卷）</note>
-<note n="0073001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0073001">天台智者（智顗 538-597）</note>
-<note n="0073002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0073002">南岳慧思（515-577）</note>
-<note n="0073003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0073003">智度論第二十七卷（大正 25. 360b 取意）</note>
-<note n="0073004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0073004">中論卷四（大正 30. 33b）</note>
-<note n="0073005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0073005">章安（灌頂 561-632）</note>
-<note n="0074001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074001">妙樂（湛然 711-782）</note>
-<note n="0074002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074002">止觀（摩訶止觀二十卷）</note>
-<note n="0074003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074003">玄義（法華玄義二十卷）</note>
-<note n="0074004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074004">文句（法華文句二十卷） </note>
-<note n="0074005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074005">輔行（止觀輔行四十卷）</note>
-<note n="0074006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074006">釋籤（法華玄義釋籤二十卷）</note>
-<note n="0074007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074007">疏記（法華文句記三十卷）</note>
-<note n="0074008" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074008">知禮（960-1028） </note>
-<note n="0074009" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074009">傳教（最澄 767-822）</note>
-<note n="0074010" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074010">義真（781-833）</note>
-<note n="0074011" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074011">慈覺（圓仁 794-864）</note>
-<note n="0074012" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0074012">智證（圓珍 814-891）</note>
-<note n="0076001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0076001">昆勒論（蜫勒論 petakopadeśa）</note>
-<note n="0076002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0076002">迦旃（迦旃延 kātyāyana）</note>
-<note n="0083001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0083001">閻浮（閻浮提 jambudvīpa）</note>
-<note n="0083002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0083002">智儼（602-668） </note>
-<note n="0084001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0084001">香象（法藏 643-712）</note>
-<note n="0084002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0084002">清涼（澄觀 737-838）</note>
-<note n="0084003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0084003">圭峯（宗密 780-841）</note>
-<note n="0085001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0085001">良辨（689-773）</note>
-<note n="0087001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0087001">如來藏（tathāgatagarbha）</note>
-<note n="0089001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0089001">須彌（sumcru）</note>
-<note n="0092001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0092001">大日經（大毘盧遮那成佛神變加持經七卷）</note>
-<note n="0092002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0092002">蘇悉地經（蘇悉地羯羅經三卷）</note>
-<note n="0092003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0092003">金剛薩埵（vajrasattva）</note>
-<note n="0092004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0092004">金剛智（671-741）</note>
-<note n="0092005" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0092005">一行（673-727）</note>
-<note n="0092006" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0092006">不空（705-774）</note>
-<note n="0092007" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0092007">惠果（746-805）</note>
-<note n="0093001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0093001">弘法大師（空海 774-835） </note>
-<note n="0093002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0093002">阿闍梨（ācārya）</note>
-<note n="0094001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0094001">大日如來（mahāvāirocanatathāgata）</note>
-<note n="0094002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0094002">三摩耶（samaya）</note>
-<note n="0094003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0094003">曼荼（曼荼羅 maṇḍala）</note>
-<note n="0097001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0097001">菩提達磨（bodhidharma）</note>
-<note n="0097002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0097002">道璿（702-760）</note>
-<note n="0098001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0098001">菩提留支（bodhiruci）</note>
-<note n="0098002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0098002">曇鸞（476-542）</note>
-<note n="0098003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0098003">道綽（562-645）</note>
-<note n="0098004" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0098004">善導（613-681）</note>
+<note n="0009001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0009001">薄伽（薄伽梵 bhagavat）</note>
+<note n="0009002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0009002">俱舍（阿毘達磨俱舍論卷一 大正 29. 6a） </note>
+<note n="0009003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0009003">牟尼（釋迦牟尼 śākhyamuni）</note>
+<note n="0010001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0010001">智度論（大智度論卷四 大正 25. 85a）</note>
+<note n="0010002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0010002">莊嚴論（大乘莊嚴經論卷四 大正 31. 009c） </note>
+<note n="0010003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0010003">素坦覽（sūtra）</note>
+<note n="0010004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0010004">毘奈耶（vinaya）</note>
+<note n="0010005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0010005">阿毘達磨（abhidharma）</note>
+<note n="0011001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011001">如來（tathāgata）</note>
+<note n="0011002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011002">莊嚴論（大乘莊嚴經論 卷四 大正 31. 609c）</note>
+<note n="0011003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011003">迦葉波（mahākāśyapaの畧）</note>
+<note n="0011004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011004">畢鉢（畢鉢羅窟 pippalaguhā）</note>
+<note n="0011005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011005">阿逸多（ajita）</note>
+<note n="0011006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011006">摩阿迦葉（mahākāśyapa）</note>
+<note n="0011007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011007">阿難（ānanda）</note>
+<note n="0011008" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011008">末田（末田地 madhyāntika）</note>
+<note n="0011009" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0011009">商那（商那和須 śānavāsika）</note>
+<note n="0012001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0012001">優婆毱多（upagupta）</note>
+<note n="0012002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0012002">摩訶提婆（mahādeva）</note>
+<note n="0012003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0012003">婆麤富羅（犢子 vātsīputra）</note>
+<note n="0013001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0013001">馬鳴（aśvaghoṣita）</note>
+<note n="0013002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0013002">閻浮（閻浮提 jambudvīpa）</note>
+<note n="0013003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0013003">龍樹（nāgārjuna）</note>
+<note n="0013004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0013004">無著（asaṅga）</note>
+<note n="0013005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0013005">都率（tuṣita）</note>
+<note n="0013006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0013006">慈氏（彌勤，慈尊 māitreya）</note>
+<note n="0014001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014001">阿瑜遮那（阿瑜遮，阿瑜闍 ayojjhā，巴，ayodhyā，）</note>
+<note n="0014002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014002">瑜伽論（瑜伽師論百卷 大正 30）</note>
+<note n="0014003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014003">世親（vasubandhu）</note>
+<note n="0014004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014004">訶梨跋摩（harivarman）</note>
+<note n="0014005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014005">眾賢（saṅghabhadra）</note>
+<note n="0014006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014006">護法（dharmapāla）</note>
+<note n="0014007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014007">清辨（bhāvaviveka）</note>
+<note n="0014008" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014008">戒賢（śīlabhadra）</note>
+<note n="0014009" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0014009">智光（jñānaprabha）</note>
+<note n="0015001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0015001">迦騰（迦葉摩騰 kāśyapamātaṅga）</note>
+<note n="0015002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0015002">竺（印度），蘭（法蘭 dharmarakṣa）</note>
+<note n="0015003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0015003">韋陀（veda）</note>
+<note n="0015004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0015004">覺賢（佛陀跋陀羅 buddhabhadra）</note>
+<note n="0015005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0015005">曇無（曇無讖 dharmarakṣa）</note>
+<note n="0016001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0016001">欽明天皇第六年（AḌ.545）</note>
+<note n="0016002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0016002">聖德太子（572-622）</note>
+<note n="0017001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0017001">玄昉（-746）</note>
+<note n="0017002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0017002">道璿（702-760）</note>
+<note n="0017003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0017003">鑑真（688-763）</note>
+<note n="0017004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0017004">傳教大師（最澄 767-822）</note>
+<note n="0017005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0017005">弘法大師（空海 774-835）</note>
+<note n="0019001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0019001">阿毘達磨俱舍論（abhidharmakośaśāstra 大正 29）</note>
+<note n="0020001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0020001">發智論（阿毘達磨發智論二十卷 大正 26）</note>
+<note n="0020002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0020002">世親（vasubandhu）</note>
+<note n="0020003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0020003">薩婆多部（sarvāstivāda）</note>
+<note n="0020004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0020004">婆沙（大毘婆沙論 大正 27）</note>
+<note n="0020005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0020005">迦濕彌羅（kaśmīra）</note>
+<note n="0020006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0020006">迦膩色迦（kaniṣka）</note>
+<note n="0020007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0020007">脇尊者（pārśva）</note>
+<note n="0021001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0021001">世友（vasumitra）</note>
+<note n="0021002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0021002">咀怛覽（sūtra）</note>
+<note n="0021003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0021003">毘奈那（vinaya）</note>
+<note n="0021004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0021004">阿毘達磨（abhidharma）</note>
+<note n="0021005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0021005">羅漢（阿羅漢 arhat）</note>
+<note n="0021006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0021006">夜叉（yakṣa）</note>
+<note n="0022001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0022001">悟入（skandhila）</note>
+<note n="0022002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0022002">眾賢（saṁghabhadra）</note>
+<note n="0023001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0023001">真諦（paramārtha）</note>
+<note n="0023002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0023002">玄奘（600-664）</note>
+<note n="0023003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0023003">普光 俱舍論記 三十卷（大正 41）法寶 俱舍論疏 三十卷（大正 41）</note>
+<note n="0023004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0023004">俱舍論 卷二十九（大正 29. 152b）</note>
+<note n="0023005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0023005">俱舍論 卷四（大正 29. 22c）</note>
+<note n="0024001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0024001">法救（dharmatrāta）</note>
+<note n="0024002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0024002">妙音（ghoṣa）</note>
+<note n="0024003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0024003">世友（vasumitra） </note>
+<note n="0024004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0024004">覺天（buddhadeva）</note>
+<note n="0025001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0025001">伽陀（gāthā）</note>
+<note n="0026001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0026001">三摩地（samādhi）</note>
+<note n="0027001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0027001">聲聞（śrāvaka）</note>
+<note n="0027002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0027002">緣覺（pratyekabuddha）</note>
+<note n="0027003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0027003">菩薩（bodhisattva）</note>
+<note n="0027004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0027004">劫（kalpa）</note>
+<note n="0027005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0027005">波羅蜜（pāramitā）</note>
+<note n="0028001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0028001">成實論（大正 32. 239b）</note>
+<note n="0028002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0028002">俱摩羅陀（kumāralāta）</note>
+<note n="0028003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0028003">訶梨跋摩（harivarman）</note>
+<note n="0028004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0028004">羅什（鳩摩羅什 kumārajīva）</note>
+<note n="0029001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0029001">曇無德部（法藏部 dharmagupta）</note>
+<note n="0029002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0029002">法雲（467-529）</note>
+<note n="0029003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0029003">智藏（458-522）</note>
+<note n="0029004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0029004">僧旻（467-527）</note>
+<note n="0030001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0030001">預流（須陀洹 srotāpanna）</note>
+<note n="0030002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0030002">一來（斯陀含 sakridāgāmin）</note>
+<note n="0030003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0030003">不還（阿那含 anāgāmin）</note>
+<note n="0031001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0031001">毘尼（毘奈耶 vinaya）</note>
+<note n="0032001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0032001">薩婆多（sarvāstivāda）</note>
+<note n="0032002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0032002">曇無德（dharmagupta）</note>
+<note n="0032003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0032003">僧祇（mahāsāṁghika）</note>
+<note n="0032004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0032004">彌沙塞（mahīśāsaka）</note>
+<note n="0032005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0032005">迦葉遺（kāśyapīya）</note>
+<note n="0032006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0032006">毘尼母（vinayamātṛikā）</note>
+<note n="0032007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0032007">摩得勤伽（mātṛikā）</note>
+<note n="0033001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0033001">智首（657-635）</note>
+<note n="0033002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0033002">南山（道宣 596-667）</note>
+<note n="0033003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0033003">法時（dharmakāla）</note>
+<note n="0033004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0033004">覺明（Buddhayaśas）</note>
+<note n="0033005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0033005">榮叡（-748）</note>
+<note n="0034001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0034001">鑒真（688-763）</note>
+<note n="0034002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0034002">聖武天皇（724-748 在位）</note>
+<note n="0034003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0034003">毘廬舍那（vāirocana）</note>
+<note n="0035001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0035001">法進（709-778） </note>
+<note n="0035002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0035002">豐安（-840）</note>
+<note n="0035003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0035003">法礪（569-635）</note>
+<note n="0037001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0037001">羯磨（karma）</note>
+<note n="0037002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0037002">犍度（khandha, 巴）</note>
+<note n="0037003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0037003">比丘（bhikkhu, 巴）（bhikṣu）</note>
+<note n="0037004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0037004">比丘尼（bhikkhunī, 巴）（bhikṣuṇī）</note>
+<note n="0038001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0038001">波羅夷（pārājika, 巴）</note>
+<note n="0038002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0038002">尼薩耆波逸提（nissaggiya pācittiya, 巴）</note>
+<note n="0038003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0038003">波逸提（pācittiya, 巴）</note>
+<note n="0038004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0038004">提舍尼（pāṭidesanīya, 巴）</note>
+<note n="0038005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0038005">蘭若（阿蘭若 āraṇya）</note>
+<note n="0038006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0038006">突吉羅（dukkaṭa, 巴 duṣkṛita）</note>
+<note n="0039001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0039001">偷蘭遮（thūlaccaya, 巴）</note>
+<note n="0040001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0040001">迦絺那（kathina） </note>
+<note n="0040002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0040002">俱腅彌（kosambī, 巴）</note>
+<note n="0040003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0040003">瞻波（campeyya, 巴）</note>
+<note n="0042001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0042001">式叉摩那（śikṣamāṇā）</note>
+<note n="0042002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0042002">沙彌（śrāmaṇera,-ka）</note>
+<note n="0042003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0042003">沙彌尼（'srāmanenikā）</note>
+<note n="0042004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0042004">優婆塞（upāsaka）</note>
+<note n="0042005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0042005">優婆夷（upāsikā）</note>
+<note n="0043001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0043001">薩婆多毘尼毘婆沙－（大正 23. 508c 取意）</note>
+<note n="0043002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0043002">阿含（āgama）</note>
+<note n="0044001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0044001">四分律行持鈔資持記 上－上（大正 40. 160b）</note>
+<note n="0044002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0044002">沓婆（沓婆摩羅子 dabbamallaputta, 巴）</note>
+<note n="0046001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0046001">業疏（四分律業疏卍續 64．5．626 左上）</note>
+<note n="0049001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0049001">唯識論（成唯識論十卷） </note>
+<note n="0049002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0049002">深密（解深密經） </note>
+<note n="0049003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0049003">阿毘達磨（大乘阿毘達磨經）</note>
+<note n="0049004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0049004">攝論（攝大乘論）</note>
+<note n="0049005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0049005">成唯識論述記 卷一本（大正43. 229c） </note>
+<note n="0049006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0049006">瑜伽論（瑜伽師地論百卷） </note>
+<note n="0050001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0050001">彌勤（māitreya）慈氏</note>
+<note n="0050002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0050002">阿瑜遮國（ayodhyā）瑜遮那</note>
+<note n="0050003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0050003">無著（asaṅga）</note>
+<note n="0050004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0050004">世親（vasubandhu）</note>
+<note n="0050005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0050005">護法（dharmapāla）</note>
+<note n="0051001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0051001">戒賢（śīlabhadra）</note>
+<note n="0051002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0051002">玄奘（600-664）</note>
+<note n="0051003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0051003">窺基（慈恩 632-682）</note>
+<note n="0051004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0051004">惠沼（-714）</note>
+<note n="0051005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0051005">智周（676-733）</note>
+<note n="0052001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0052001">義淵（-728）</note>
+<note n="0052002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0052002">玄昉（-746）</note>
+<note n="0052003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0052003">善珠（723-797）</note>
+<note n="0056001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0056001">西明（西明寺圓測）</note>
+<note n="0057001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0057001">末那識（manovijñāna）</note>
+<note n="0057002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0057002">阿頼耶識（ālayavijñāna）</note>
+<note n="0059001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0059001">成唯識論述記 卷一本（大正 43. 243c）</note>
+<note n="0060001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0060001">四分義極略私記 卷上（大正 71. 454c）引用</note>
+<note n="0060002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0060002">安慧（sthiramati）</note>
+<note n="0060003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0060003">難陀（nanda）</note>
+<note n="0060004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0060004">陳那（dinnāga）</note>
+<note n="0061001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0061001">三十頌（唯識三十論頌 大正 31. 61a）</note>
+<note n="0061002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0061002">（大正 31. 61a）</note>
+<note n="0062001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0062001">唯識論（成唯識論 卷八 大正 31. 45c）</note>
+<note n="0062002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0062002">成唯識論 卷九（大正 31. 48a）</note>
+<note n="0062003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0062003">唯識論（成唯識論 卷十 大正 31. 58a）</note>
+<note n="0064001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0064001">龍樹（nāgārjuna）</note>
+<note n="0064002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0064002">提婆（deva, 聖提婆 āryadeva）</note>
+<note n="0066001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0066001">善吉（須菩提 subhūti）</note>
+<note n="0066002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0066002">身子（舍利佛 śāriputra）</note>
+<note n="0070001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070001">文殊師利（mañjuśrī）</note>
+<note n="0070002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070002">馬鳴（aśvaghoṣa）</note>
+<note n="0070003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070003">龍智（nāgabodhi）</note>
+<note n="0070004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070004">清辨（bhāvaviveka）</note>
+<note n="0070005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070005">智光（jñānaprabha）</note>
+<note n="0070006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070006">師子光（siṁharśmi）</note>
+<note n="0070007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070007">羅睺羅（羅睺羅跋陀羅 rāhulabhadra）</note>
+<note n="0070008" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070008">沙車（莎車國 yarkand）</note>
+<note n="0070009" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0070009">羅什（鳩摩羅什 kumārajīua 344-413）</note>
+<note n="0071001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0071001">生（道生 -434）</note>
+<note n="0071002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0071002">肇（僧肇 384-414）</note>
+<note n="0071003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0071003">嘉祥（吉藏 549-623）</note>
+<note n="0071004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0071004">道慈（-747）</note>
+<note n="0071005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0071005">善議（729-812）</note>
+<note n="0071006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0071006">勤操（754-827）</note>
+<note n="0071007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0071007">安澄（763-814）</note>
+<note n="0072001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072001">義淨（635-725）</note>
+<note n="0072002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072002">南海寄歸內法傳卷一（大正 .54. 205c 取意，文）</note>
+<note n="0072003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072003">道詮（-876）</note>
+<note n="0072004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072004">法華（羅什譯妙法蓮華經，八卷）</note>
+<note n="0072005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072005">伊人法師（湛然 711-782）</note>
+<note n="0072006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072006">止觀義例卷上（大正 46. 452c）</note>
+<note n="0072007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072007">大經（大般涅槃經 四十卷（北本）三十六卷（南本））</note>
+<note n="0072008" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0072008">大品（大品般若經三十卷）</note>
+<note n="0073001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0073001">天台智者（智顗 538-597）</note>
+<note n="0073002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0073002">南岳慧思（515-577）</note>
+<note n="0073003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0073003">智度論第二十七卷（大正 25. 360b 取意）</note>
+<note n="0073004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0073004">中論卷四（大正 30. 33b）</note>
+<note n="0073005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0073005">章安（灌頂 561-632）</note>
+<note n="0074001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074001">妙樂（湛然 711-782）</note>
+<note n="0074002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074002">止觀（摩訶止觀二十卷）</note>
+<note n="0074003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074003">玄義（法華玄義二十卷）</note>
+<note n="0074004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074004">文句（法華文句二十卷） </note>
+<note n="0074005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074005">輔行（止觀輔行四十卷）</note>
+<note n="0074006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074006">釋籤（法華玄義釋籤二十卷）</note>
+<note n="0074007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074007">疏記（法華文句記三十卷）</note>
+<note n="0074008" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074008">知禮（960-1028） </note>
+<note n="0074009" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074009">傳教（最澄 767-822）</note>
+<note n="0074010" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074010">義真（781-833）</note>
+<note n="0074011" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074011">慈覺（圓仁 794-864）</note>
+<note n="0074012" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0074012">智證（圓珍 814-891）</note>
+<note n="0076001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0076001">昆勒論（蜫勒論 petakopadeśa）</note>
+<note n="0076002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0076002">迦旃（迦旃延 kātyāyana）</note>
+<note n="0083001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0083001">閻浮（閻浮提 jambudvīpa）</note>
+<note n="0083002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0083002">智儼（602-668） </note>
+<note n="0084001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0084001">香象（法藏 643-712）</note>
+<note n="0084002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0084002">清涼（澄觀 737-838）</note>
+<note n="0084003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0084003">圭峯（宗密 780-841）</note>
+<note n="0085001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0085001">良辨（689-773）</note>
+<note n="0087001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0087001">如來藏（tathāgatagarbha）</note>
+<note n="0089001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0089001">須彌（sumcru）</note>
+<note n="0092001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0092001">大日經（大毘盧遮那成佛神變加持經七卷）</note>
+<note n="0092002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0092002">蘇悉地經（蘇悉地羯羅經三卷）</note>
+<note n="0092003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0092003">金剛薩埵（vajrasattva）</note>
+<note n="0092004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0092004">金剛智（671-741）</note>
+<note n="0092005" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0092005">一行（673-727）</note>
+<note n="0092006" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0092006">不空（705-774）</note>
+<note n="0092007" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0092007">惠果（746-805）</note>
+<note n="0093001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0093001">弘法大師（空海 774-835） </note>
+<note n="0093002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0093002">阿闍梨（ācārya）</note>
+<note n="0094001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0094001">大日如來（mahāvāirocanatathāgata）</note>
+<note n="0094002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0094002">三摩耶（samaya）</note>
+<note n="0094003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0094003">曼荼（曼荼羅 maṇḍala）</note>
+<note n="0097001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0097001">菩提達磨（bodhidharma）</note>
+<note n="0097002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0097002">道璿（702-760）</note>
+<note n="0098001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0098001">菩提留支（bodhiruci）</note>
+<note n="0098002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0098002">曇鸞（476-542）</note>
+<note n="0098003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0098003">道綽（562-645）</note>
+<note n="0098004" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0098004">善導（613-681）</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0003a0201" resp="#resp1" type="add" target="#nkr_note_add_0003a0201">［－］【CB】，一【補編】</note>
-<note n="0003a0401" resp="#resp1" type="add" target="#nkr_note_add_0003a0401">［－］【CB】，一【補編】</note>
-<note n="0003a0701" resp="#resp1" type="add" target="#nkr_note_add_0003a0701">［－］【CB】，一【補編】</note>
-<note n="0003a1001" resp="#resp1" type="add" target="#nkr_note_add_0003a1001">［－］【CB】，一【補編】</note>
-<note n="0003a1301" resp="#resp1" type="add" target="#nkr_note_add_0003a1301">［－］【CB】，一【補編】</note>
-<note n="0018a0701" resp="#resp1" type="add" target="#nkr_note_add_0018a0701">已【CB】，巳【補編】</note>
-<note n="0025a0301" resp="#resp1" type="add" target="#nkr_note_add_0025a0301">已【CB】，巳【補編】</note>
-<note n="0037a1101" resp="#resp1" type="add" target="#nkr_note_add_0037a1101">已【CB】，巳【補編】</note>
-<note n="0067a0601" resp="#resp1" type="add" target="#nkr_note_add_0067a0601">已【CB】，巳【補編】</note>
-<note n="0077a1201" resp="#resp1" type="add" target="#nkr_note_add_0077a1201">辦【CB】，辨【補編】</note>
+<note n="0003a0201" resp="#resp2" type="add" target="#nkr_note_add_0003a0201">［－］【CB】，一【補編】</note>
+<note n="0003a0401" resp="#resp2" type="add" target="#nkr_note_add_0003a0401">［－］【CB】，一【補編】</note>
+<note n="0003a0701" resp="#resp2" type="add" target="#nkr_note_add_0003a0701">［－］【CB】，一【補編】</note>
+<note n="0003a1001" resp="#resp2" type="add" target="#nkr_note_add_0003a1001">［－］【CB】，一【補編】</note>
+<note n="0003a1301" resp="#resp2" type="add" target="#nkr_note_add_0003a1301">［－］【CB】，一【補編】</note>
+<note n="0018a0701" resp="#resp2" type="add" target="#nkr_note_add_0018a0701">已【CB】，巳【補編】</note>
+<note n="0025a0301" resp="#resp2" type="add" target="#nkr_note_add_0025a0301">已【CB】，巳【補編】</note>
+<note n="0037a1101" resp="#resp2" type="add" target="#nkr_note_add_0037a1101">已【CB】，巳【補編】</note>
+<note n="0067a0601" resp="#resp2" type="add" target="#nkr_note_add_0067a0601">已【CB】，巳【補編】</note>
+<note n="0077a1201" resp="#resp2" type="add" target="#nkr_note_add_0077a1201">辦【CB】，辨【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

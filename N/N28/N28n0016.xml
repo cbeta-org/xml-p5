@@ -12,62 +12,76 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">28</idno>.<idno type="no">16</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 28, No. 16</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">長老尼偈經</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00984">
-	<charName>CBETA CHARACTER CB00984</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[敖/力]</value>
-	</charProp>
-	<mapping type="unicode">U+20895</mapping>
-	<mapping cb:dec="984024" type="PUA">U+F03D8</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00984">
+				<charName>CBETA CHARACTER CB00984</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[敖/力]</value>
+				</charProp>
+				<mapping type="unicode">U+20895</mapping>
+				<mapping cb:dec="984024" type="PUA">U+F03D8</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-09-24">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1065,69 +1079,69 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0251a0501" to="#end0251a0501"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0260a0701" to="#end0260a0701"><lem wit="#wit1" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit2">[03]</rdg></app>
+<app from="#beg0251a0501" to="#end0251a0501"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0260a0701" to="#end0260a0701"><lem wit="#wit.cbeta" resp="#resp4"><space quantity="0"/></lem><rdg wit="#wit.orig">[03]</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0244004" resp="#resp2" type="mod" target="#nkr_note_mod_0244004">「分」（pakkha）分陰曆一個月為二分，由朔至望之半月為白分，由既望至晦之半月為黑分。鉻分之八日、十四日、十五日（8. 14. 15. 23. 30）稱為布薩日，信男信女一晝夜間持八齋戒，所謂八齋戒。</note>
-<note n="0262003" resp="#resp2" type="mod" target="#nkr_note_mod_0262003">此五者稱為五蓋（mivarana）。（CBETA 按：漢譯南傳大藏經此頁對應之註標[04]與章節校注內容不符，故今將此處的[04]註標修訂成[03]註標。）</note>
-<note n="0262004" resp="#resp2" type="mod" target="#nkr_note_mod_0262004">與三七同。（CBETA 按：漢譯南傳大藏經此頁對應之註標[05]與章節校注內容不符，故今將此處的[05]註標修訂成[04]註標。）</note>
+<note n="0244004" resp="#resp3" type="mod" target="#nkr_note_mod_0244004">「分」（pakkha）分陰曆一個月為二分，由朔至望之半月為白分，由既望至晦之半月為黑分。鉻分之八日、十四日、十五日（8. 14. 15. 23. 30）稱為布薩日，信男信女一晝夜間持八齋戒，所謂八齋戒。</note>
+<note n="0262003" resp="#resp3" type="mod" target="#nkr_note_mod_0262003">此五者稱為五蓋（mivarana）。（CBETA 按：漢譯南傳大藏經此頁對應之註標[04]與章節校注內容不符，故今將此處的[04]註標修訂成[03]註標。）</note>
+<note n="0262004" resp="#resp3" type="mod" target="#nkr_note_mod_0262004">與三七同。（CBETA 按：漢譯南傳大藏經此頁對應之註標[05]與章節校注內容不符，故今將此處的[05]註標修訂成[04]註標。）</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0240001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240001">修行成為羅漢之中途，說四向四果之法。</note>
-<note n="0240002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240002">說信、精進、念、定、慧之五根。</note>
-<note n="0240003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240003">煩惱譬喻為魔王及其眷屬。</note>
-<note n="0240004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240004">羅漢死不再生，故說為持最後身。</note>
-<note n="0241005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241005">此尼為信女時，為他人舂米以維生計，而其夫身軀如傴僂，故為三曲。</note>
-<note n="0243001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243001">善脫尼（Sumuttā）之意，此非固有名詞，此尼原如為人舂米，故云善脫。</note>
-<note n="0243002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243002">偈中云「我」。以「彼女」同一人善脫尼。</note>
-<note n="0244003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244003">阿達伽尸（Aḍḍhakāsi）為伽尸國之半之意。伽尸國之半為其詳價，此尼原為遊女。</note>
-<note n="0244004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244004">「分」（pakkha）分陰厝一個月為二分，由朔至望之半月為白分，由既望至晦之半月為黑分。鉻分之八日、十四日、十五日（8. 14. 15. 23. 30）稱為布薩日，信男信女一晝夜間持八齋戒，所謂八齋戒。</note>
-<note n="0244005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244005">（Pātihāriya-pakkha）神變月分，神足月分又名三長齋月，此有種種異說。普通以正五九三月為準。一說以布薩日之前後七日九日十三日十六日四日為準。</note>
-<note n="0244006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244006">以下之三一偈為信女守八齋戒願求生天之福。今為比丘尼，則欲制胸中之苦悶。</note>
-<note n="0245007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245007">三三偈為無畏尼之子所唱。三四偈為尼自身之偈。</note>
-<note n="0248001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248001">三偈之中，最初一偈為佛告誡喪失愛女而哭泣之婦。後之二偈為彼婦出家得信時所唱之偈。</note>
-<note n="0248002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248002">五四～五六為宿於白淨尼經行處樹木之天神所唱之偈。尼之說法善巧，立於王舍城之街頭說法，路人不傾耳靜聽，故唱此偈。</note>
-<note n="0249003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249003">五七～五九為魔王前來誘惑世羅尼（Alarri 阿臈毘尼），尼於回答時唱此偈。參照 S. I. p. 129; 雜、四五、一（大正藏、二、三二五），別雜一二、一（同上、四五三），長老尼偈一四一、一四二偈。</note>
-<note n="0249004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249004">六〇～六二為魔王之誘惑與尼之排擊與上同。參照 S. I. p. 129; 雜、四五、二（大正藏、二、三二六），別雜一二、二（同上、四五三）。</note>
-<note n="0251001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251001">指迦葉與尼自身之二人。</note>
-<note n="0252001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252001">參照三九、四〇。</note>
-<note n="0253002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253002">尋（思量）、伺（熟慮）。二者通常解有粗細之分別。此二者為到色界初禪時所有，初禪以下即無。故說「得無尋」是指二禪以上而言。</note>
-<note n="0253003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253003">師子尼為師子長老之妹，參照長老偈八三。</note>
-<note n="0255004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0255004">無我（parato = anattato）。</note>
-<note n="0255005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0255005">「無欲體堅固」，（Thitivatthujanejamhi），以上一句原文頗為難解，PTS 本總舉六種異例，其中倫敦印度省圖書館藏寫本之文為 dhitavatthu jane jammi = dhi tava atthu janejammi（卑鄙之人，汝等有災），此與長老尼偈註之「鬆弛諸肢故，汝等卑劣人有災」之註解一致。雖然如此解釋，但何故此處插入此句，難予了解。因此 Rhys Davids 夫人譯為「在確固基礎上為勝者，是不可動的」。</note>
-<note n="0256006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256006">底本為 Sabba-gandhehi，「由一切香氣」，此則不成意義。蓋 dandha（香）與 gantha（結節）為一音之差。此處思為煩惱之義。</note>
-<note n="0259001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0259001">一二七～一三〇之四偈，為波羅遮那尼為五百人之母所說之偈。一三一、一三二之二偈為五百之母出家後一一唱出之偈。</note>
-<note n="0260002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260002">一三九之一偈為魔王誘惑懺摩尼所唱者，一四〇以下五偈為答此由尼所唱之偈。</note>
-<note n="0262003" resp="#resp1" type="orig" target="#nkr_note_orig_0262003">[03]</note>
-<note n="0262004" resp="#resp1" type="orig" target="#nkr_note_orig_0262004">[04]</note>
-<note n="0264001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264001">與一一七同。</note>
-<note n="0264002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264002">與 S. I. p. 133 同處於（Bhikkhuni-Samyutta）中，記有 Calā, Upaeālā, Sisūpeala，三姊妹受惡魔誘惑之事，舉出若干偈，但與此一八二以下並不一致，例如長老尼偈一八三、一八四為說遮羅（Cala）者，於 S. 中為說 Sisūpacala 者，長老尼偈一九七、一九八及二〇〇、二〇一為說尸羅婆遮羅（Sisupacālā）者，於 S. 中為說鳥婆遮羅（Upacālā）者。</note>
-<note n="0265003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265003">破壞者（Antaka）者，於 S. 中為說鳥婆遮羅（Upacala）者。</note>
-<note n="0265004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265004">參照一八五。</note>
-<note n="0267001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0267001">參照 S. I. p. 133；雜阿含四五、九（大正藏二、三二八），別譯雜阿含一二、九（同四五五）。</note>
-<note n="0269001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269001">瓦達長老之偈，於長老偈三三五～三三九亦有。</note>
-<note n="0273001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273001">參照 S. I. PP. 131-132 雜阿含四五、四（大正藏二、三二六）別譯雜阿含一二、四（同上，四五四）。</note>
-<note n="0275001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275001">二四〇以下參照中、二三水淨梵志經（大正藏一、五七五）。</note>
-<note n="0282001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0282001">由三一二偈以下，在此孫陀利偈中出現之人物，（一）父婆羅門善生、後出家（三二二偈）、（二）母婆斯搋初失七人之兒而憂悲、後出家（三一三偈以下）、（三）女孫陀利出家（三二八偈）、（四）尼長老、孫陀利之師、（五）御者出家（三二六偈）。</note>
-<note n="0283002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0283002">生質（upadhi）為生本，指煩惱渴愛再生之因而言。無生質為入涅槃之義。</note>
-<note n="0284003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0284003">此或係指孫陀利尼之師尼而言。</note>
-<note n="0296001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0296001">應知其前生曾為男子。</note>
-<note n="0296002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0296002">此次出生為女子。</note>
-<note n="0304001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0304001">參照「復有聲聞人布施，如須彌陀比丘尼，與二同學為迦那伽牟尼佛作精舍」（大智度論三三卷大正藏、二五、三〇五a）。</note>
+<note n="0240001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240001">修行成為羅漢之中途，說四向四果之法。</note>
+<note n="0240002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240002">說信、精進、念、定、慧之五根。</note>
+<note n="0240003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240003">煩惱譬喻為魔王及其眷屬。</note>
+<note n="0240004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240004">羅漢死不再生，故說為持最後身。</note>
+<note n="0241005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241005">此尼為信女時，為他人舂米以維生計，而其夫身軀如傴僂，故為三曲。</note>
+<note n="0243001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243001">善脫尼（Sumuttā）之意，此非固有名詞，此尼原如為人舂米，故云善脫。</note>
+<note n="0243002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243002">偈中云「我」。以「彼女」同一人善脫尼。</note>
+<note n="0244003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244003">阿達伽尸（Aḍḍhakāsi）為伽尸國之半之意。伽尸國之半為其詳價，此尼原為遊女。</note>
+<note n="0244004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244004">「分」（pakkha）分陰厝一個月為二分，由朔至望之半月為白分，由既望至晦之半月為黑分。鉻分之八日、十四日、十五日（8. 14. 15. 23. 30）稱為布薩日，信男信女一晝夜間持八齋戒，所謂八齋戒。</note>
+<note n="0244005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244005">（Pātihāriya-pakkha）神變月分，神足月分又名三長齋月，此有種種異說。普通以正五九三月為準。一說以布薩日之前後七日九日十三日十六日四日為準。</note>
+<note n="0244006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244006">以下之三一偈為信女守八齋戒願求生天之福。今為比丘尼，則欲制胸中之苦悶。</note>
+<note n="0245007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245007">三三偈為無畏尼之子所唱。三四偈為尼自身之偈。</note>
+<note n="0248001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248001">三偈之中，最初一偈為佛告誡喪失愛女而哭泣之婦。後之二偈為彼婦出家得信時所唱之偈。</note>
+<note n="0248002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248002">五四～五六為宿於白淨尼經行處樹木之天神所唱之偈。尼之說法善巧，立於王舍城之街頭說法，路人不傾耳靜聽，故唱此偈。</note>
+<note n="0249003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249003">五七～五九為魔王前來誘惑世羅尼（Alarri 阿臈毘尼），尼於回答時唱此偈。參照 S. I. p. 129; 雜、四五、一（大正藏、二、三二五），別雜一二、一（同上、四五三），長老尼偈一四一、一四二偈。</note>
+<note n="0249004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249004">六〇～六二為魔王之誘惑與尼之排擊與上同。參照 S. I. p. 129; 雜、四五、二（大正藏、二、三二六），別雜一二、二（同上、四五三）。</note>
+<note n="0251001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251001">指迦葉與尼自身之二人。</note>
+<note n="0252001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252001">參照三九、四〇。</note>
+<note n="0253002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253002">尋（思量）、伺（熟慮）。二者通常解有粗細之分別。此二者為到色界初禪時所有，初禪以下即無。故說「得無尋」是指二禪以上而言。</note>
+<note n="0253003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253003">師子尼為師子長老之妹，參照長老偈八三。</note>
+<note n="0255004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0255004">無我（parato = anattato）。</note>
+<note n="0255005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0255005">「無欲體堅固」，（Thitivatthujanejamhi），以上一句原文頗為難解，PTS 本總舉六種異例，其中倫敦印度省圖書館藏寫本之文為 dhitavatthu jane jammi = dhi tava atthu janejammi（卑鄙之人，汝等有災），此與長老尼偈註之「鬆弛諸肢故，汝等卑劣人有災」之註解一致。雖然如此解釋，但何故此處插入此句，難予了解。因此 Rhys Davids 夫人譯為「在確固基礎上為勝者，是不可動的」。</note>
+<note n="0256006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256006">底本為 Sabba-gandhehi，「由一切香氣」，此則不成意義。蓋 dandha（香）與 gantha（結節）為一音之差。此處思為煩惱之義。</note>
+<note n="0259001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0259001">一二七～一三〇之四偈，為波羅遮那尼為五百人之母所說之偈。一三一、一三二之二偈為五百之母出家後一一唱出之偈。</note>
+<note n="0260002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260002">一三九之一偈為魔王誘惑懺摩尼所唱者，一四〇以下五偈為答此由尼所唱之偈。</note>
+<note n="0262003" resp="#resp2" type="orig" target="#nkr_note_orig_0262003">[03]</note>
+<note n="0262004" resp="#resp2" type="orig" target="#nkr_note_orig_0262004">[04]</note>
+<note n="0264001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264001">與一一七同。</note>
+<note n="0264002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264002">與 S. I. p. 133 同處於（Bhikkhuni-Samyutta）中，記有 Calā, Upaeālā, Sisūpeala，三姊妹受惡魔誘惑之事，舉出若干偈，但與此一八二以下並不一致，例如長老尼偈一八三、一八四為說遮羅（Cala）者，於 S. 中為說 Sisūpacala 者，長老尼偈一九七、一九八及二〇〇、二〇一為說尸羅婆遮羅（Sisupacālā）者，於 S. 中為說鳥婆遮羅（Upacālā）者。</note>
+<note n="0265003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265003">破壞者（Antaka）者，於 S. 中為說鳥婆遮羅（Upacala）者。</note>
+<note n="0265004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265004">參照一八五。</note>
+<note n="0267001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0267001">參照 S. I. p. 133；雜阿含四五、九（大正藏二、三二八），別譯雜阿含一二、九（同四五五）。</note>
+<note n="0269001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269001">瓦達長老之偈，於長老偈三三五～三三九亦有。</note>
+<note n="0273001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273001">參照 S. I. PP. 131-132 雜阿含四五、四（大正藏二、三二六）別譯雜阿含一二、四（同上，四五四）。</note>
+<note n="0275001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275001">二四〇以下參照中、二三水淨梵志經（大正藏一、五七五）。</note>
+<note n="0282001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0282001">由三一二偈以下，在此孫陀利偈中出現之人物，（一）父婆羅門善生、後出家（三二二偈）、（二）母婆斯搋初失七人之兒而憂悲、後出家（三一三偈以下）、（三）女孫陀利出家（三二八偈）、（四）尼長老、孫陀利之師、（五）御者出家（三二六偈）。</note>
+<note n="0283002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0283002">生質（upadhi）為生本，指煩惱渴愛再生之因而言。無生質為入涅槃之義。</note>
+<note n="0284003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0284003">此或係指孫陀利尼之師尼而言。</note>
+<note n="0296001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0296001">應知其前生曾為男子。</note>
+<note n="0296002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0296002">此次出生為女子。</note>
+<note n="0304001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0304001">參照「復有聲聞人布施，如須彌陀比丘尼，與二同學為迦那伽牟尼佛作精舍」（大智度論三三卷大正藏、二五、三〇五a）。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0251a0501" resp="#resp2" type="add" target="#nkr_note_add_0251a0501">辦【CB】，辨【南傳】</note>
-<note n="0260a0701" resp="#resp2" type="add" target="#nkr_note_add_0260a0701">［－］【CB】，[03]【南傳】</note>
+<note n="0251a0501" resp="#resp3" type="add" target="#nkr_note_add_0251a0501">辦【CB】，辨【南傳】</note>
+<note n="0260a0701" resp="#resp3" type="add" target="#nkr_note_add_0260a0701">［－］【CB】，[03]【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

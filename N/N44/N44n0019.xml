@@ -12,51 +12,65 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>2卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">44</idno>.<idno type="no">19</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 44, No. 19</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">無礙解道(第3卷-第4卷)</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-11-07">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -2511,101 +2525,101 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0038a0801" to="#end0038a0801"><lem wit="#wit1" resp="#resp3">支</lem><rdg wit="#wit2">技</rdg></app>
-<app from="#beg0060a0601" to="#end0060a0601"><lem wit="#wit1" resp="#resp3">塵</lem><rdg wit="#wit2">麈</rdg></app>
-<app from="#beg0133a1401" to="#end0133a1401"><lem wit="#wit1" resp="#resp3">未</lem><rdg wit="#wit2">末</rdg></app>
+<app from="#beg0038a0801" to="#end0038a0801"><lem wit="#wit.cbeta" resp="#resp4">支</lem><rdg wit="#wit.orig">技</rdg></app>
+<app from="#beg0060a0601" to="#end0060a0601"><lem wit="#wit.cbeta" resp="#resp4">塵</lem><rdg wit="#wit.orig">麈</rdg></app>
+<app from="#beg0133a1401" to="#end0133a1401"><lem wit="#wit.cbeta" resp="#resp4">未</lem><rdg wit="#wit.orig">末</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0134004" resp="#resp2" type="mod" target="#nkr_note_mod_0134004">證果（phalasacchikiriyā）在底本有「證道」magga。為誤植，依暹羅本改正。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[04]，今於此處加上[04]之註標。）</note>
+<note n="0134004" resp="#resp3" type="mod" target="#nkr_note_mod_0134004">證果（phalasacchikiriyā）在底本有「證道」magga。為誤植，依暹羅本改正。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[04]，今於此處加上[04]之註標。）</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0001001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001001">俱存論（yuganandha-kathā）「俱存」者，名為寂止、正觀。此以下稱為「俱存品」，只採用部分之名以為品名。</note>
-<note n="0001002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001002">瞿私多園（Ghosītārāma）於 PTS. Dic 亦有 Ghositā。在暹羅本及底本皆有 sī。</note>
-<note n="0001003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001003">在底本有「阿羅漢得」（arahattapattiṁ）。</note>
-<note n="0007004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0007004">雖言十六行相實則列舉十七。但見下文最後之三未詳說。</note>
-<note n="0011005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0011005">雖言十六行相以上列舉之處成為十四。</note>
-<note n="0011006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0011006">傾心底本雖作 āpajjati 在隨暹羅本為 āvajjati。</note>
-<note n="0029001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0029001">無願之義云云 底本脫落此一句，依暹羅本補之。</note>
-<note n="0030002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030002">現前解<space quantity="1" unit="chars"/>底本暹羅本雖均作為 abhiropana- 如其他之用例應改為 abhiniropana-。</note>
-<note n="0031003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031003">退轉<space quantity="1" unit="chars"/>在底本雖有「識之義」依於暹羅本及其他用例改正之。</note>
-<note n="0031004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031004">地之義<space quantity="1" unit="chars"/>底本雖作「等之義」依其他之用例及暹羅本改正為 bhummaṭṭha。</note>
-<note n="0031005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031005">善解脫<space quantity="1" unit="chars"/>在底本雖有「善清淨」依暹羅本及其他之用例改正之。</note>
-<note n="0031006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031006">覺<space quantity="1" unit="chars"/>底本雖有 bhuñjana，依暹羅本及其他之用例應改正為 bujjhana。以下倣此。</note>
-<note n="0032007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0032007">足<space quantity="1" unit="chars"/>底本雖作 padaha 依暹羅本及其他之用例改正為 pāda- 其次思惟之足亦同。</note>
-<note n="0035008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0035008">住之次，底本有 vacanaṁ 異本有 cavanaṁ, caraṁ 等語以在文脈上應為不須要故不譯。</note>
-<note n="0036009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0036009">有量、徧纏底本雖作 pamāṇabandhā，依暹羅本改為 pamāṇavantā。</note>
-<note n="0041001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0041001">尊者 ariya 或被思考指為阿利安族。非尊者準此可知。</note>
-<note n="0041002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0041002">墮者（vinipātika）vinipāta 即謂在地獄等之墮者。</note>
-<note n="0042003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0042003">信根徧習在底本雖有 saddhindriyaṁ paribhāvitā，但隨暹羅本應讀為 saddhindriyaparibhāvitā。以下倣此。</note>
-<note n="0047004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0047004">此之省略文準第四項乃至第七項可知。</note>
-<note n="0061001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061001">以上已於「轉法輪經」。</note>
-<note n="0064002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064002">以上，已於別經。</note>
-<note n="0065003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065003">已於第二之別經。</note>
-<note n="0069004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069004">以上已列舉五。應「脫一切智智」。</note>
-<note n="0077001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0077001">「吞」底本、暹羅本皆作 Paccāgamanti，改正為 Paccācamanti。</note>
-<note n="0078001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0078001">審慮力<space quantity="1" unit="chars"/>底本作 nijjhanti，應採用暹羅本之 nijjhatti。</note>
-<note n="0081002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0081002">此之一句底本脫落。</note>
-<note n="0085003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0085003">隨順（ninna）Mvyut, 30, 3 及參照註記。</note>
-<note n="0085004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0085004">趣向（poṇa）Mvyut, 30, 4 參照。</note>
-<note n="0085005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0085005">臨入（pabbhāra）Mvyut, 30, 4 參照。</note>
-<note n="0085006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0085006">明所成<space quantity="1" unit="chars"/>底本雖為 vijāmayā，乃為 vijjāmayā 之誤植。</note>
-<note n="0086007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086007">勝羣處（āsabhaṁ ṭhanaṁ），Mvyut, 245, 716 參照。</note>
-<note n="0087008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0087008">非一<space quantity="1" unit="chars"/>底本之 anekavidita 乃為 anekavihita 之誤植。</note>
-<note n="0091001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0091001">底本脫「想」。</note>
-<note n="0099002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0099002">底本 udāna 為 uddāna 之誤。</note>
-<note n="0100001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0100001">無等慧<space quantity="1" unit="chars"/>底本暹羅本雖俱作 assāmantapaññaṁ，但在 Mvyut. 48, 36 有語成為 asamaprajña（adi）以適合於今之文而採用。</note>
-<note n="0100002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0100002">捷慧 hāsapaññā 與所謂之 āśuprajña 相等。（Mvyut. 48, 36 參照）。</note>
-<note n="0107003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0107003">此下在底本有重複文，依暹羅本改正之。</note>
-<note n="0108004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0108004">第八人（aṭṭhamaka）指由阿羅漢數住於第八者，位於善異生與預流者之中間。</note>
-<note n="0109005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0109005">隨從<space quantity="1" unit="chars"/>在底本雖有 pacchā samannāgatā，今採用在暹羅本中有 pacchāgatā。</note>
-<note n="0111006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0111006">在別本有「所問」其義亦通。</note>
-<note n="0111007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0111007">超越<space quantity="1" unit="chars"/>在底本及暹羅本雖有 atighaṁsitvā（cati+ghars？），意義不明，今依別本。</note>
-<note n="0111008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0111008">於原文以下之五語（niddiṭṭhakāraṇā upakkhitakā te Bhagavato Sampajjanti）未詳。</note>
-<note n="0114009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0114009">已在如註[02]所言在此處 hāsapañña 雖為 āśuprajñā 之轉成，而今見為 harṣaprajñā 使「捷」通於「喜」。</note>
-<note n="0115010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0115010">除<space quantity="1" unit="chars"/>底本於此處及以下雖作 vimodeti，但依暹羅本此為 vinodeti 之誤。</note>
-<note n="0115011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0115011">不忍<space quantity="1" unit="chars"/>在底本有 vāseti 成為 nādhivāseti 之誤植。</note>
-<note n="0116012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0116012">宿緣（pubbayoga）與所謂之宿業同。</note>
-<note n="0116013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0116013">開展<space quantity="1" unit="chars"/>在底本雖作 pabhijjhati，依暹羅本應採用 pabhijjati。</note>
-<note n="0118014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0118014">獨等覺者（paccekasambuddha）同於所謂獨覺。</note>
-<note n="0120001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0120001">徧流 visavitā 未詳。今只依 vi+sru 所見之說。D. II. 213 之 visaritā 參照。恐非為「神境」（rddhi-）viṣaya 之轉訛耶？</note>
-<note n="0121002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0121002">動轉 ijjhati 在此處使之通於 iñjati。</note>
-<note n="0122003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0122003">多端<space quantity="1" unit="chars"/>底本之 anekaviditaṁ 為 -vihitaṁ 之誤植。</note>
-<note n="0125004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0125004">有色<space quantity="1" unit="chars"/>底本暹羅本雖俱有 rūpam，應改為 rūpiṁ。（就本註及次註 D. I, P. 77 其他參照）</note>
-<note n="0125005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0125005">具一切之支節<space quantity="1" unit="chars"/>底本及暹羅本之 sabbaṅga-paccaṅgaṁ 應改為 -paccaṅgiṁ。</note>
-<note n="0125006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0125006">使諸根圓滿<space quantity="1" unit="chars"/>底本雖為 abhinindriyaṁ，但無寧採用暹羅本之 ahinindriyaṁ。</note>
-<note n="0126007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0126007">象〔軍〕<space quantity="1" unit="chars"/>底本之 hatthivaṇṇaṁ vā 應依暹羅本改為 hatthiṁ pi。</note>
-<note n="0127008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0127008">底本在此之下雖為「定遍滿神通……乃至……」，若如此之返覆之句存在「……乃至……」則成為「衍」〔繁復眾多〕，見暹羅本。</note>
-<note n="0128009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0128009">界（dhātu）在此處應見「慈」之類語。DA. I. 253 參照。</note>
-<note n="0129010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0129010">此之五人底本暹羅本俱只舉四人。</note>
-<note n="0131001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131001">此一句在底本脫落，今依暹羅本補之。</note>
-<note n="0132002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0132002">在底本暹羅本俱缺此一句，依下文及其他個處之用語補之。</note>
-<note n="0134003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0134003">散亂者<space quantity="1" unit="chars"/>在底本有「無散亂者」，依暹羅本改正。</note>
-<note n="0134004" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0134004">證果（phalasacchikiriyā）在底本有「證道」magga。為誤植，依暹羅本改正。</note>
-<note n="0135001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0135001">圓滿因緣<space quantity="1" unit="chars"/>暹羅本作舍衛國因緣。</note>
-<note n="0136002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0136002">於最捨轉變<space quantity="1" unit="chars"/>Mvyut. 40, 9（神氏編 975）參照。</note>
-<note n="0138003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0138003">此處缺十二依止之說明。</note>
-<note n="0142001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0142001">以下至本論之終乃與大品第四根論二八中之文一致。（漢譯南傳藏四三．第四根論-二五節以後參照）。</note>
-<note n="0146001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0146001">本論與大品第一、智論第二十七章之文（參閱漢譯南傳藏四三、智論第二十七章-一六九頁）幾乎一致。</note>
-<note n="0152001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152001">在北傳此語，解為正性離生。見 Mvyut, 245, 98-100 與其之註記。</note>
-<note n="0154002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0154002">死魔之餌之意。</note>
-<note n="0155003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155003">勝義 paramatthaṁ 在一本有 peramattaṁ，應譯為「勝性」又「勝我」？</note>
-<note n="0158001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0158001">「無欲」之原語 nicchāta 恐由 na+iccha+tā 而成立，應為一形容詞之習慣語。（Saññata 參照）PTS，Dic，之說（nis+psāta）如何？</note>
-<note n="0159002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0159002">存以（vijjati）說明為「明」（vijjā）。</note>
-<note n="0161003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161003">漢譯南傳藏四三、大品第五解脫論十五節參照。</note>
+<note n="0001001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001001">俱存論（yuganandha-kathā）「俱存」者，名為寂止、正觀。此以下稱為「俱存品」，只採用部分之名以為品名。</note>
+<note n="0001002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001002">瞿私多園（Ghosītārāma）於 PTS. Dic 亦有 Ghositā。在暹羅本及底本皆有 sī。</note>
+<note n="0001003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001003">在底本有「阿羅漢得」（arahattapattiṁ）。</note>
+<note n="0007004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0007004">雖言十六行相實則列舉十七。但見下文最後之三未詳說。</note>
+<note n="0011005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0011005">雖言十六行相以上列舉之處成為十四。</note>
+<note n="0011006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0011006">傾心底本雖作 āpajjati 在隨暹羅本為 āvajjati。</note>
+<note n="0029001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0029001">無願之義云云 底本脫落此一句，依暹羅本補之。</note>
+<note n="0030002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030002">現前解<space quantity="1" unit="chars"/>底本暹羅本雖均作為 abhiropana- 如其他之用例應改為 abhiniropana-。</note>
+<note n="0031003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031003">退轉<space quantity="1" unit="chars"/>在底本雖有「識之義」依於暹羅本及其他用例改正之。</note>
+<note n="0031004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031004">地之義<space quantity="1" unit="chars"/>底本雖作「等之義」依其他之用例及暹羅本改正為 bhummaṭṭha。</note>
+<note n="0031005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031005">善解脫<space quantity="1" unit="chars"/>在底本雖有「善清淨」依暹羅本及其他之用例改正之。</note>
+<note n="0031006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031006">覺<space quantity="1" unit="chars"/>底本雖有 bhuñjana，依暹羅本及其他之用例應改正為 bujjhana。以下倣此。</note>
+<note n="0032007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0032007">足<space quantity="1" unit="chars"/>底本雖作 padaha 依暹羅本及其他之用例改正為 pāda- 其次思惟之足亦同。</note>
+<note n="0035008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0035008">住之次，底本有 vacanaṁ 異本有 cavanaṁ, caraṁ 等語以在文脈上應為不須要故不譯。</note>
+<note n="0036009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0036009">有量、徧纏底本雖作 pamāṇabandhā，依暹羅本改為 pamāṇavantā。</note>
+<note n="0041001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0041001">尊者 ariya 或被思考指為阿利安族。非尊者準此可知。</note>
+<note n="0041002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0041002">墮者（vinipātika）vinipāta 即謂在地獄等之墮者。</note>
+<note n="0042003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0042003">信根徧習在底本雖有 saddhindriyaṁ paribhāvitā，但隨暹羅本應讀為 saddhindriyaparibhāvitā。以下倣此。</note>
+<note n="0047004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0047004">此之省略文準第四項乃至第七項可知。</note>
+<note n="0061001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061001">以上已於「轉法輪經」。</note>
+<note n="0064002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064002">以上，已於別經。</note>
+<note n="0065003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065003">已於第二之別經。</note>
+<note n="0069004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069004">以上已列舉五。應「脫一切智智」。</note>
+<note n="0077001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0077001">「吞」底本、暹羅本皆作 Paccāgamanti，改正為 Paccācamanti。</note>
+<note n="0078001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0078001">審慮力<space quantity="1" unit="chars"/>底本作 nijjhanti，應採用暹羅本之 nijjhatti。</note>
+<note n="0081002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0081002">此之一句底本脫落。</note>
+<note n="0085003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0085003">隨順（ninna）Mvyut, 30, 3 及參照註記。</note>
+<note n="0085004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0085004">趣向（poṇa）Mvyut, 30, 4 參照。</note>
+<note n="0085005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0085005">臨入（pabbhāra）Mvyut, 30, 4 參照。</note>
+<note n="0085006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0085006">明所成<space quantity="1" unit="chars"/>底本雖為 vijāmayā，乃為 vijjāmayā 之誤植。</note>
+<note n="0086007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086007">勝羣處（āsabhaṁ ṭhanaṁ），Mvyut, 245, 716 參照。</note>
+<note n="0087008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0087008">非一<space quantity="1" unit="chars"/>底本之 anekavidita 乃為 anekavihita 之誤植。</note>
+<note n="0091001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0091001">底本脫「想」。</note>
+<note n="0099002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0099002">底本 udāna 為 uddāna 之誤。</note>
+<note n="0100001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0100001">無等慧<space quantity="1" unit="chars"/>底本暹羅本雖俱作 assāmantapaññaṁ，但在 Mvyut. 48, 36 有語成為 asamaprajña（adi）以適合於今之文而採用。</note>
+<note n="0100002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0100002">捷慧 hāsapaññā 與所謂之 āśuprajña 相等。（Mvyut. 48, 36 參照）。</note>
+<note n="0107003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0107003">此下在底本有重複文，依暹羅本改正之。</note>
+<note n="0108004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0108004">第八人（aṭṭhamaka）指由阿羅漢數住於第八者，位於善異生與預流者之中間。</note>
+<note n="0109005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0109005">隨從<space quantity="1" unit="chars"/>在底本雖有 pacchā samannāgatā，今採用在暹羅本中有 pacchāgatā。</note>
+<note n="0111006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0111006">在別本有「所問」其義亦通。</note>
+<note n="0111007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0111007">超越<space quantity="1" unit="chars"/>在底本及暹羅本雖有 atighaṁsitvā（cati+ghars？），意義不明，今依別本。</note>
+<note n="0111008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0111008">於原文以下之五語（niddiṭṭhakāraṇā upakkhitakā te Bhagavato Sampajjanti）未詳。</note>
+<note n="0114009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0114009">已在如註[02]所言在此處 hāsapañña 雖為 āśuprajñā 之轉成，而今見為 harṣaprajñā 使「捷」通於「喜」。</note>
+<note n="0115010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0115010">除<space quantity="1" unit="chars"/>底本於此處及以下雖作 vimodeti，但依暹羅本此為 vinodeti 之誤。</note>
+<note n="0115011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0115011">不忍<space quantity="1" unit="chars"/>在底本有 vāseti 成為 nādhivāseti 之誤植。</note>
+<note n="0116012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0116012">宿緣（pubbayoga）與所謂之宿業同。</note>
+<note n="0116013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0116013">開展<space quantity="1" unit="chars"/>在底本雖作 pabhijjhati，依暹羅本應採用 pabhijjati。</note>
+<note n="0118014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0118014">獨等覺者（paccekasambuddha）同於所謂獨覺。</note>
+<note n="0120001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0120001">徧流 visavitā 未詳。今只依 vi+sru 所見之說。D. II. 213 之 visaritā 參照。恐非為「神境」（rddhi-）viṣaya 之轉訛耶？</note>
+<note n="0121002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0121002">動轉 ijjhati 在此處使之通於 iñjati。</note>
+<note n="0122003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0122003">多端<space quantity="1" unit="chars"/>底本之 anekaviditaṁ 為 -vihitaṁ 之誤植。</note>
+<note n="0125004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0125004">有色<space quantity="1" unit="chars"/>底本暹羅本雖俱有 rūpam，應改為 rūpiṁ。（就本註及次註 D. I, P. 77 其他參照）</note>
+<note n="0125005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0125005">具一切之支節<space quantity="1" unit="chars"/>底本及暹羅本之 sabbaṅga-paccaṅgaṁ 應改為 -paccaṅgiṁ。</note>
+<note n="0125006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0125006">使諸根圓滿<space quantity="1" unit="chars"/>底本雖為 abhinindriyaṁ，但無寧採用暹羅本之 ahinindriyaṁ。</note>
+<note n="0126007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0126007">象〔軍〕<space quantity="1" unit="chars"/>底本之 hatthivaṇṇaṁ vā 應依暹羅本改為 hatthiṁ pi。</note>
+<note n="0127008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0127008">底本在此之下雖為「定遍滿神通……乃至……」，若如此之返覆之句存在「……乃至……」則成為「衍」〔繁復眾多〕，見暹羅本。</note>
+<note n="0128009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0128009">界（dhātu）在此處應見「慈」之類語。DA. I. 253 參照。</note>
+<note n="0129010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0129010">此之五人底本暹羅本俱只舉四人。</note>
+<note n="0131001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131001">此一句在底本脫落，今依暹羅本補之。</note>
+<note n="0132002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0132002">在底本暹羅本俱缺此一句，依下文及其他個處之用語補之。</note>
+<note n="0134003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0134003">散亂者<space quantity="1" unit="chars"/>在底本有「無散亂者」，依暹羅本改正。</note>
+<note n="0134004" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0134004">證果（phalasacchikiriyā）在底本有「證道」magga。為誤植，依暹羅本改正。</note>
+<note n="0135001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0135001">圓滿因緣<space quantity="1" unit="chars"/>暹羅本作舍衛國因緣。</note>
+<note n="0136002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0136002">於最捨轉變<space quantity="1" unit="chars"/>Mvyut. 40, 9（神氏編 975）參照。</note>
+<note n="0138003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0138003">此處缺十二依止之說明。</note>
+<note n="0142001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0142001">以下至本論之終乃與大品第四根論二八中之文一致。（漢譯南傳藏四三．第四根論-二五節以後參照）。</note>
+<note n="0146001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0146001">本論與大品第一、智論第二十七章之文（參閱漢譯南傳藏四三、智論第二十七章-一六九頁）幾乎一致。</note>
+<note n="0152001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152001">在北傳此語，解為正性離生。見 Mvyut, 245, 98-100 與其之註記。</note>
+<note n="0154002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0154002">死魔之餌之意。</note>
+<note n="0155003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155003">勝義 paramatthaṁ 在一本有 peramattaṁ，應譯為「勝性」又「勝我」？</note>
+<note n="0158001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0158001">「無欲」之原語 nicchāta 恐由 na+iccha+tā 而成立，應為一形容詞之習慣語。（Saññata 參照）PTS，Dic，之說（nis+psāta）如何？</note>
+<note n="0159002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0159002">存以（vijjati）說明為「明」（vijjā）。</note>
+<note n="0161003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161003">漢譯南傳藏四三、大品第五解脫論十五節參照。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0038a0801" resp="#resp2" type="add" target="#nkr_note_add_0038a0801">支【CB】，技【南傳】</note>
-<note n="0060a0601" resp="#resp2" type="add" target="#nkr_note_add_0060a0601">塵【CB】，麈【南傳】</note>
-<note n="0133a1401" resp="#resp2" type="add" target="#nkr_note_add_0133a1401">未【CB】，末【南傳】</note>
+<note n="0038a0801" resp="#resp3" type="add" target="#nkr_note_add_0038a0801">支【CB】，技【南傳】</note>
+<note n="0060a0601" resp="#resp3" type="add" target="#nkr_note_add_0060a0601">塵【CB】，麈【南傳】</note>
+<note n="0133a1401" resp="#resp3" type="add" target="#nkr_note_add_0133a1401">未【CB】，末【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

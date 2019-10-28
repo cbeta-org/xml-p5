@@ -12,78 +12,92 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>19卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">47</idno>.<idno type="no">23</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 47, No. 23</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">小義釋</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB02455">
-	<charName>CBETA CHARACTER CB02455</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[卓*戈]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>戟</value>
-	</charProp>
-	<mapping type="unicode">U+39B8</mapping>
-	<mapping cb:dec="985495" type="PUA">U+F0997</mapping>
-</char>
-<char xml:id="CB22010">
-	<charName>CBETA CHARACTER CB22010</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[癩-負+頁]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>癩</value>
-	</charProp>
-	<mapping cb:dec="1005050" type="PUA">U+F55FA</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB02455">
+				<charName>CBETA CHARACTER CB02455</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[卓*戈]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>戟</value>
+				</charProp>
+				<mapping type="unicode">U+39B8</mapping>
+				<mapping cb:dec="985495" type="PUA">U+F0997</mapping>
+			</char>
+			<char xml:id="CB22010">
+				<charName>CBETA CHARACTER CB22010</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[癩-負+頁]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>癩</value>
+				</charProp>
+				<mapping cb:dec="1005050" type="PUA">U+F55FA</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-11-08">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -6360,290 +6374,290 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0033a0101" to="#end0033a0101"><lem wit="#wit1" resp="#resp3">裟</lem><rdg wit="#wit2">娑</rdg></app>
-<app from="#beg0077a1101" to="#end0077a1101"><lem wit="#wit1" resp="#resp3">剌</lem><rdg wit="#wit2">刺</rdg></app>
-<app from="#beg0090a1201" to="#end0090a1201"><lem wit="#wit1" resp="#resp3">幢</lem><rdg wit="#wit2">憧</rdg></app>
-<app from="#beg0165a1101" to="#end0165a1101"><lem wit="#wit1" resp="#resp3">妄</lem><rdg wit="#wit2">忘</rdg></app>
-<app from="#beg0188a0301" to="#end0188a0301"><lem wit="#wit1" resp="#resp3">捨</lem><rdg wit="#wit2">拾</rdg></app>
-<app from="#beg0211a1201" to="#end0211a1201"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0213a1101" to="#end0213a1101"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0213a1102" to="#end0213a1102"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0213a1201" to="#end0213a1201"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0214a0101" to="#end0214a0101"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0214a0301" to="#end0214a0301"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0215a1201" to="#end0215a1201"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0236a1101" to="#end0236a1101"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0236a1201" to="#end0236a1201"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0268a0601" to="#end0268a0601"><lem wit="#wit1" resp="#resp3">十六</lem><rdg wit="#wit2">第十七　</rdg></app>
-<app from="#beg0289a1401" to="#end0289a1401"><lem wit="#wit1" resp="#resp3">妄</lem><rdg wit="#wit2">忘</rdg></app>
-<app from="#beg0306a1201" to="#end0306a1201"><lem wit="#wit1" resp="#resp3">辦</lem><rdg wit="#wit2">辨</rdg></app>
-<app from="#beg0342a0701" to="#end0342a0701"><lem wit="#wit1" resp="#resp3">剌</lem><rdg wit="#wit2">刺</rdg></app>
-<app from="#beg0359a1001" to="#end0359a1001"><lem wit="#wit1" resp="#resp3">賈</lem><rdg wit="#wit2">賣</rdg></app>
+<app from="#beg0033a0101" to="#end0033a0101"><lem wit="#wit.cbeta" resp="#resp4">裟</lem><rdg wit="#wit.orig">娑</rdg></app>
+<app from="#beg0077a1101" to="#end0077a1101"><lem wit="#wit.cbeta" resp="#resp4">剌</lem><rdg wit="#wit.orig">刺</rdg></app>
+<app from="#beg0090a1201" to="#end0090a1201"><lem wit="#wit.cbeta" resp="#resp4">幢</lem><rdg wit="#wit.orig">憧</rdg></app>
+<app from="#beg0165a1101" to="#end0165a1101"><lem wit="#wit.cbeta" resp="#resp4">妄</lem><rdg wit="#wit.orig">忘</rdg></app>
+<app from="#beg0188a0301" to="#end0188a0301"><lem wit="#wit.cbeta" resp="#resp4">捨</lem><rdg wit="#wit.orig">拾</rdg></app>
+<app from="#beg0211a1201" to="#end0211a1201"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0213a1101" to="#end0213a1101"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0213a1102" to="#end0213a1102"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0213a1201" to="#end0213a1201"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0214a0101" to="#end0214a0101"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0214a0301" to="#end0214a0301"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0215a1201" to="#end0215a1201"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0236a1101" to="#end0236a1101"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0236a1201" to="#end0236a1201"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0268a0601" to="#end0268a0601"><lem wit="#wit.cbeta" resp="#resp4">十六</lem><rdg wit="#wit.orig">第十七　</rdg></app>
+<app from="#beg0289a1401" to="#end0289a1401"><lem wit="#wit.cbeta" resp="#resp4">妄</lem><rdg wit="#wit.orig">忘</rdg></app>
+<app from="#beg0306a1201" to="#end0306a1201"><lem wit="#wit.cbeta" resp="#resp4">辦</lem><rdg wit="#wit.orig">辨</rdg></app>
+<app from="#beg0342a0701" to="#end0342a0701"><lem wit="#wit.cbeta" resp="#resp4">剌</lem><rdg wit="#wit.orig">刺</rdg></app>
+<app from="#beg0359a1001" to="#end0359a1001"><lem wit="#wit.cbeta" resp="#resp4">賈</lem><rdg wit="#wit.orig">賣</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0031013" resp="#resp2" type="mod" target="#nkr_note_mod_0031013">比丘（bhikkhu）（由 bhikkhati＜desid. √bhaj）而來者，bhikkhu 為 bhinna＜√bhid 有（破壞）之意味，此不過世俗的語源之解釋而已。</note>
-<note n="0080006" resp="#resp2" type="mod" target="#nkr_note_mod_0080006">瞋恚（Paṭigha）在 Paṭigha 之字，瞋恚之外，亦有「對」，「礙」等之意義。今雖未詳審彼是某意，而假定如上之譯出。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[06]，今於此處加上[06]之註標。）</note>
-<note n="0101019" resp="#resp2" type="mod" target="#nkr_note_mod_0101019">婆羅門（brāhmaṇa = prākrit, Bāhamaṇa）（拒外）bāhita＜bāheti 由拒外而來不過俗的語源解釋。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[19]，今於此處加上[19]之註標。）</note>
-<note n="0104021" resp="#resp2" type="mod" target="#nkr_note_mod_0104021">本偈雖是由 Thag. 202 之引用，文句有多少之相違。MNd. 22; 460; CNd. 24; 420 等參照。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[21]，今於此處加上[21]之註標。）</note>
-<note n="0322009" resp="#resp2" type="mod" target="#nkr_note_mod_0322009">世間利益行（lokatthacariyā）PTS 而有 lokuttara-cariyā。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[09]，今於此處加上[09]之註標。）</note>
+<note n="0031013" resp="#resp3" type="mod" target="#nkr_note_mod_0031013">比丘（bhikkhu）（由 bhikkhati＜desid. √bhaj）而來者，bhikkhu 為 bhinna＜√bhid 有（破壞）之意味，此不過世俗的語源之解釋而已。</note>
+<note n="0080006" resp="#resp3" type="mod" target="#nkr_note_mod_0080006">瞋恚（Paṭigha）在 Paṭigha 之字，瞋恚之外，亦有「對」，「礙」等之意義。今雖未詳審彼是某意，而假定如上之譯出。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[06]，今於此處加上[06]之註標。）</note>
+<note n="0101019" resp="#resp3" type="mod" target="#nkr_note_mod_0101019">婆羅門（brāhmaṇa = prākrit, Bāhamaṇa）（拒外）bāhita＜bāheti 由拒外而來不過俗的語源解釋。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[19]，今於此處加上[19]之註標。）</note>
+<note n="0104021" resp="#resp3" type="mod" target="#nkr_note_mod_0104021">本偈雖是由 Thag. 202 之引用，文句有多少之相違。MNd. 22; 460; CNd. 24; 420 等參照。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[21]，今於此處加上[21]之註標。）</note>
+<note n="0322009" resp="#resp3" type="mod" target="#nkr_note_mod_0322009">世間利益行（lokatthacariyā）PTS 而有 lokuttara-cariyā。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[09]，今於此處加上[09]之註標。）</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0001001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001001">對此序偈之五十六偈由小義釋未作何等解說之點觀之，此之序偈或在小義釋成立後為被附加之物亦未可知。最低限度此之序偈應為在部派分裂後即現今巴利佛教之南方上座部別立後而被製作附加者。蓋相當此等之序偈之偈在他派之文獻亦未見出一偈。尚對序偈中之各各應注意之點於經集之此部分註記參照。</note>
-<note n="0013001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0013001">有關六佛法大義釋一、一九五頁參照。</note>
-<note n="0023002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0023002">七有。須陀洹之最劣者亦言極七反之生，而在惡趣世間不但絕對不墮，在人天世間亦只為今後最高七回生起而在其後稱為般涅槃。故須陀洹除七有而在其以上無輪迴事。有關此點及在有關次之二註 Visuddhi-magga P. 709f. 及俱舍論賢聖品（大正二九、一二三a以下）等參照。</note>
-<note n="0023003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0023003">二有云云。如斯陀含義釋為一來，此只向人世間來一回而今後往人天世間一次生起後而為般涅槃。故斯陀含只殘留二有之輪迴。</note>
-<note n="0023004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0023004">一有。如阿那含雖義譯為不還，在此人世間已不還來，一回生於色界天由其處般涅槃。故阿那含只有向色界之一有生起，無向欲界生起煩惱。</note>
-<note n="0025005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0025005">本偈雖由 Thag. 202 之引用，文句則有多少相違。</note>
-<note n="0026006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0026006">阿羅漢若為無學，在此處亦舉為有學是誤解。</note>
-<note n="0028007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0028007">令現起之事欲（Paccupaṭṭhitā）是除去地獄，為其餘之惡趣有情、人、四大王天乃至都率天。</note>
-<note n="0028008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0028008">化作之事欲（nimmitā）是化樂天。</note>
-<note n="0028009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0028009">由他而化作之事欲（Paranimmitā）是他化自在天。</note>
-<note n="0028010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0028010">本偈為 J. III, 450 之引用。MNd. 2; 28; Mahāvastu III. 190 等參照。</note>
-<note n="0030011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030011">不樂味（anassādato）在 MNd. 53 同文之個所雖為 assādato 在今之情況則不正確。</note>
-<note n="0030012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030012">不出離（anissaraṇato）在 MNd. 53 之同文個所雖為 nissaraṇato 在今之位則不正確。</note>
-<note n="0031013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031013">比丘（bhikkhu）（由 bhikkhati＜desid. √bhaj）而來者，bhikkhu 為 bhinna＜√bhid 有（破壞）之意味，此不過世俗的語源之解釋而己。</note>
-<note n="0032014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0032014">本偈由 Sn. 514 之引用。MNd. 71; Mahāvastu III, 395; 佛本行集經卷三九（大正三、八三四a）等參照。</note>
-<note n="0033015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0033015">曼陀羅（maṇḍalā）在底本雖有 maṇḍalu，今從 PTS 本 Intro. XXIV。但此時，曼陀羅為何意義不明。</note>
-<note n="0033016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0033016">黃色之（Paṇḍu）在底本雖有 bhaṇḍa，今從 PTS 本。</note>
-<note n="0040001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040001">作用者（Vicaritā）在底本雖有（Viparītā）（使顛倒），今從 PTS 本及 MNd. 49 之同文之句。</note>
-<note n="0040002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040002">有關有二十事有身見，本卷二五六頁參照。</note>
-<note n="0040003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040003">有關十事有邪見，本卷三七五- 三七六頁參照。</note>
-<note n="0040004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040004">有關十事有邊見，大義釋一、七三頁註[26]參照。</note>
-<note n="0041005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0041005">以下之文由 S. V, 158（S. 47, 11, mahāpurisa）之引用。雜阿含六一四經（大正二、一七二a）參照。</note>
-<note n="0042006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0042006">前義釋之註[15]參照。</note>
-<note n="0042007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0042007">前義釋之註[16]參照。</note>
-<note n="0045001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045001">以下之文由 A. III, 338f 之引用。在引文中有多少之省略。</note>
-<note n="0045002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045002">以下之文由 A. III, 339 之引用。</note>
-<note n="0045003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045003">以下之文由 S. II, 263 之引用。</note>
-<note n="0046004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0046004">以下之文由 S. V, 91 之引用。</note>
-<note n="0046005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0046005">以下「世尊知見」為止之文，於底本雖揭與前之註[03]同一引用文：「又世尊如斯說」，明顯是誤。今從 PTS 本。</note>
-<note n="0048006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048006">象務者是崇拜象，是立誓為象之模倣者。就其他亦可推知。</note>
-<note n="0051007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0051007">自義問（attatthapucchā）他義問（paratthapucchā）之二語在 MNd. 340 之同文個所雖使為過去問（atītapucchā）未來問（anāgaṭapucchā），恐為誤傳吧。可以如今。</note>
-<note n="0051008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0051008">第一義問（paramatthapucchā）MNd. 340 同文之個所雖為兩義問（ubhayatthapucchā），而如現在的為正。</note>
-<note n="0055009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055009">令依止生，此即令依止老（yad eva te jātinissitā tad eva te jarānissitā）底本應相當於此文處為 devate jātinissitāya devate jātinissitā va devate jaranissitāya，又其次之 yad eva te jarānissitā tad eva te byādhinissitā（令依止於老此即令依止於病）應相當為 devate jaranisstā vā devate byādhinissitāya。以下亦同樣應知。此等之情況，底本之文其意義完全不通，明顯是誤傳誤記之禍。今由 PTS 本而讀之。</note>
-<note n="0065010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065010">本偈雖由 S. I, 169 之引用，在文句有多少之相違。雜阿含一一八四經（大正藏二、三二一b），別譯雜阿含九九經（大正藏二、四〇九b）參照。</note>
-<note n="0065011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065011">灰（bhasmani）在底本雖有 gamani 意義不通。今從 PTS 本及引用原文。</note>
-<note n="0065012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065012">心（hadayaṁ）在底本雖有 tapparassa，今從 PTS 本及引用原文。</note>
-<note n="0065013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065013">火（joti）在底本及 PTS 本雖有 jāti，今從引用原文。</note>
-<note n="0073001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0073001">本偈是由 Sn. 529 之引用。MNd. 93; 205; Mahāvastu III, 397；佛本行集經卷三九（大正藏三、八三四c）參照。</note>
-<note n="0074002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0074002">無壞亂之意（abhinna-manaso）在底本雖有 ādina-manaso，今如在大義釋一、二九五頁註[21]之理由而為如斯讀之。</note>
-<note n="0076003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076003">以下之三偈是由 Dhp. 321-323 之引用。MNd. 243; 法句經卷下（大正藏四、五七〇b），法句譬喻經卷三（大正藏四、六〇〇b以下）參照。</note>
-<note n="0076004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076004">本偈是由 S. III, 84 之引用。MNd. 243；參照。</note>
-<note n="0077005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0077005">本偈是由 Sn. 516 之引用。MNd. 244; Netti. 170; Mahāvastu III, 395f；佛本行集經卷（大正藏三、八三四a）參照。</note>
-<note n="0080006" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0080006">瞋恚（Paṭigha）在 Paṭigha 之字，瞋恚之外，亦有「對」，「礙」等之意義。今雖未詳審彼是某意，而假定如上之譯出。</note>
-<note n="0080007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0080007">四取界是欲取、見取、戒禁取、我語取之四取。</note>
-<note n="0085008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0085008">本偈 It. P. 55f; MNd. 58; 335 參照。</note>
-<note n="0085009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0085009">本偈是由 It. P. 56 之引用。MNd. 58; 335 參照。</note>
-<note n="0086010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086010">次之二偈是由 Dhp. 268-269 之引用。MNd. 58; 336；法句經卷下（大正藏四、五六九a）法句譬喻經卷三（大正藏三、八三四b）參照。</note>
-<note n="0086011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086011">本偈是由 Sn. 527 之引用。MNd. 58; 336; Mahāvastu III, 399; 佛本行集經卷三九（大正藏三、八三四b）參照。</note>
-<note n="0089012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0089012">有關一蘊有、四蘊有、五蘊有，大意釋一、二五頁之註[11]參照。</note>
-<note n="0090013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0090013">教訓（anusaṭṭhiṁ or anusiṭṭhiṁ）在底本及 PTS 本，於一切狀況雖為 anusandhiṁ，此明顯是誤，今參照 MNd. 140 訂正。</note>
-<note n="0090014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0090014">大仙（mahesi = mahāisi）說明為大求者（mahāesin）不過俗的語源解釋。</note>
-<note n="0095015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0095015">慧蘊（paññākkhandhaṁ）底本令此語脫漏。</note>
-<note n="0097016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0097016">前方註[13]參照。以下如斯狀況一切同樣故而不一一註記。</note>
-<note n="0099017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0099017">雖依語而禮拜（vācāya vā namassāmi）底本雖闕此句，從底本一一三頁之同文而補入。</note>
-<note n="0099018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0099018">本偈是由 Sn. 522 之引用。MNd. 202; CNd. 373; MA. I, 153; SA. I, 77; Mahāvastu III, 397；佛本行集經卷三九（大正藏三、八三四b）等參照。</note>
-<note n="0101019" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0101019">婆羅門（brāhmaṇa = prākrit, Bāhamaṇa）（拒外）bāhita＜bāheti 由拒外而來不過俗的語源解釋。</note>
-<note n="0101020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0101020">本偈是由 Sn. 519 之引用。MNd. 87; CNd. 113; Mahāvastu III, 396；佛本行集經卷三九（大正三、八三四b）參照。</note>
-<note n="0104021" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0104021">本偈雖是由 Thag. 202 之引用，文句有多少之相違。MNd. 22; 460; CNd. 24; 420 等參照。</note>
-<note n="0114001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0114001">以下 Vibh. 422 參照。</note>
-<note n="0115002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0115002">以下之文該當作為 Sn 之句之說明如亦不適當，在底本乃如斯之記載。</note>
-<note n="0115003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0115003">有關本偈，前之義釋註[20]參照。</note>
-<note n="0116004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0116004">本偈是出處不明。PTS. I, 133; 134; II, 31; MNd. 360; CNd. 127; 242 參照。</note>
-<note n="0117005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0117005">權力者（vibbāvī）在底本雖有 visavī 意義不通。今從 PTS 本註記之一異本。</note>
-<note n="0117006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0117006">有用者（alamattho）在底本有 alamatto。應用此字時雖極多，實際應正為 alamattho。</note>
-<note n="0118007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0118007">以下之文是 M. I, 45 之略引用。中阿含九一、周那問見經（大正藏一、五七四b）參照。</note>
-<note n="0118008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0118008">本偈是由 Dhp. 165 之引用。MNd. 32; KV. 525; 527; 法句經卷上（大正藏四、五六六a）參照。</note>
-<note n="0118009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0118009">以下之文由 M. III, 6 之引用。中阿含一四四經（大正藏一、六五三b）參照。</note>
-<note n="0120010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0120010">無著（na sajjati）在底本雖有 nappajjati，今從 PTS 本。</note>
-<note n="0120011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0120011">無著（asajjamāno）在底本雖有 apajjamāno，今從 PTS 本。</note>
-<note n="0129001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0129001">前義釋之註[05]參照。</note>
-<note n="0129002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0129002">前義釋之註[05]參照。</note>
-<note n="0130003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0130003">有關本偈，前義釋之註[04]參照。</note>
-<note n="0133004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0133004">有關三十二無用論，於大義釋一、二九三頁之註[06]參照。</note>
-<note n="0133005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0133005">惑（kathāhi）於該當 Sn. 之原文 kathā 之語為 kathaṁkathā 之略，雖是用為疑惑之意義，今 kathā 不是疑惑之意義，是「論」又「說」之意義而說明者。</note>
-<note n="0134006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0134006">七有想解脫是指四禪定及下三無色定者。</note>
-<note n="0136007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0136007">生於無所有處天有情之壽量是六萬劫。A. I, 268; Vibh. 426 等參照。</note>
-<note n="0139008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0139008">微風（parittā vātā）此語在底本雖無，由本卷三六五頁之文補入。</note>
-<note n="0139009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0139009">彼分、超越、鎮伏之三捨斷，於後世之註釋時代為彼分（tadaṅga）鎮伏（vikkhambhana）正斷（samuccheda）安息（paṭippassaddhi）出離（nissaraṇa）之五捨斷。有關此等之意義 DhaA. 352f；解脫道論卷一（大正藏三二、三九九c以下）參照。</note>
-<note n="0148001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148001">以下之四偈是由 Sn. 436-439 之引用。MNd. 96; 174; 333f, Mahāvastu II, 240; Lalitavistara; 方廣大莊嚴經卷七（大正藏三、五八二c），佛本行集經卷二五（大正藏三、七六九c），大智度論卷五，卷一五（大正藏二五、九九b，一六九a）參照。</note>
-<note n="0160002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0160002">以下之文 Sn. III, 27；雜阿含七七經（大正藏二、一九c）參照。</note>
-<note n="0165001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0165001">此一句於 Sn. 已置於次偈即在 Sn. 1085 之最初。然由文意上言，則如本義釋為妥當。</note>
-<note n="0181001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181001">不輪轉（na vattī ti）底本及 PTS 本雖有 na vattati 此明顯成為 na vatti iti 之誤。vatti 為 vattati 之 aorist，以下全部同樣。</note>
-<note n="0181002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181002">億（koṭi）koṭi 實際雖是一千萬，在漢譯普通為一億，故今亦從彼已譯為億。以下全同。</note>
-<note n="0183003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0183003">以下之文是由 S. II, 170 之引用。雜阿含九五三經（大正藏二、二四三a），別譯雜阿含三三四經、三三五經（大正藏二、四八六c以下）參照。</note>
-<note n="0183004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0183004 #note_star_1">不應輪轉（na vattissatī）在底本及 PTS 本雖單有 na vattissati 亦是誤。</note>
-<note n="0192001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192001">權力者，於底本一一四頁同語之註參照。</note>
-<note n="0192002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192002">有用者，同上。</note>
-<note n="0192003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192003">本偈由 Sn. 531 之引用。CNd. 201; 佛本行集經卷三九（大正藏三、八三四c）參照。</note>
-<note n="0192004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192004">雄者（vīro）引用之原文有 dhīro。</note>
-<note n="0192005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192005">不冀求諸欲（na kāme pattheti）在底本雖有 kāmā setthāti，今參照讀 PTS 本。</note>
-<note n="0193006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0193006">以下之文 A. V, 8; 110; 320; 322; 354 等參照。</note>
-<note n="0194007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194007">廣慧者（bhūripañño）在 Sn. 已為 vocative 即 bhūripañña（廣慧者）。</note>
-<note n="0195008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195008">土地（jagatī）在底本雖有 jarā，改由 PTS 本。</note>
-<note n="0198009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0198009">本偈與 Sn. 949 是同一偈。故本偈之義釋亦幾乎同於 Sn. 949 之義釋於大義釋二、二二二頁。</note>
-<note n="0206001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206001">於底本此前雖有 saṅgatā ti（來集）之句，今為妥善上而省略。</note>
-<note n="0206002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206002">本偈是由 Sn. 531 之引用。CNd. 187; 355；佛本行集經卷三（大正藏三、八三四c）參照。</note>
-<note n="0212001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212001">以下之諸偈出處不明。恐是四尼柯耶成立以後而製作者。MNd. 505; J. I, 117f; Vm. 388; DhpA. I. 246; Divyāvadāna P. 491；說一切有部毘奈耶卷三一（大正藏二二、七九七a）等參照。</note>
-<note n="0213002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213002">本偈由 S. I, 195 = Thag. 1249 之引用。CNd. 293；雜阿含一二一一經（大正藏二、三二九c以下），別譯雜阿含二二八經（大正藏二、四五七c）參照。</note>
-<note n="0213003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213003">山側（nagassa passe）S. 及 Thag. 雖為 nāgassa passe，如底本之 nagassa passe 為正。</note>
-<note n="0213004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213004">本偈由 Sn. 715 之引用。mahāvastu III, 388 參照。</note>
-<note n="0213005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213005">愛著（visaṭā）在底本雖有 paripatā，今從 PTS 本及引用原文。</note>
-<note n="0214006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214006">歸依所（saraṇa）底本之 carana 是誤植。</note>
-<note n="0218007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218007">心平等性（cittasamatā）在底本雖有 cittasamatho，今從 MNd. 501 之同文。</note>
-<note n="0218008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218008">心安息性（cittappassaddhatā）在底本雖有 cittappasādatā，今從 PTS 本及 MNd. 501 之同文。</note>
-<note n="0226001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0226001">大本經（Mahāpadāniya-Suttanta）是長部第十四經（D. II, Iff.）。長阿含第一，大本經（大正藏一、一b以下）七佛經（大正藏一、一五〇），毘婆尸佛經（大正藏一、一五四），七佛父母姓字經（大正藏一、一五九）等相當。於底本雖為 Mahādhaniya-Sutta，今從 PTS 本。</note>
-<note n="0227002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227002">大善見經（Mahāsudassana-Sutta）是長部第十七經（D. II, 160ff.）。J. I, 391f；長阿含卷三（大正藏一、二一b以下），中阿含六八，大善見王經（大正一、五一五b以下）等參照。</note>
-<note n="0227003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227003">大典尊經（Mahāgovinda-Sutta）是長部第十九經（D. II, 220ff.）。J. III, 469; Mahāvastu III, 197ff；長阿含經第三，典尊經（大正藏一、三〇b以下），大堅固婆羅門緣起經（大正藏一、二〇七）等參照。</note>
-<note n="0227004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227004">大天捺林經（Makhādeva-Sutta）是中部第八十三經（M. II, 74ff.）。J. I, 137；中阿含六七，大天捺林經（大正藏一、五一一c以下）增一阿含卷四八（大正藏二、八〇六c以下）等參照。在底本為（Maghadeva-Sutta）。</note>
-<note n="0227005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227005">以下之文雖由 D. III, 134 之引用文，而文句有多少之出入。長阿含一二（大正藏一、七五b）參照。</note>
-<note n="0230006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230006">以下之文 S. III, 53 參照。</note>
-<note n="0231007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231007">以下之文由 A. IV, 39f; 之引用。增一阿含卷三三（大正藏二、七三〇c以下）參照。</note>
-<note n="0232008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232008">以下之文由 D. III, 134f; 之引用。長阿含經卷一二（大正藏一、七五c）參照。</note>
-<note n="0232009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232009">以下之文 A. II, 23f；參照。</note>
-<note n="0233010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0233010">以下之文由 M. I, 74-76 之略引用。</note>
-<note n="0239001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239001">其直後（tadanantarā）在底本雖有 Cakkhu-Samanantarā，今從 PTS 本。</note>
-<note n="0244002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244002">本偈由 V. I, 5f = M. I, 168 = S. I, 137 = It. P, 33 之引用。MNd. 360; 453 增一阿含卷一〇（大正藏二、五九三b）出曜經卷二一（大正藏四、七二〇b）法集要頌經卷二（大正藏四、七八七c以下）五分律卷一五（大正藏二二、一〇三c以下）參照。</note>
-<note n="0245003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245003">本偈 PTS. I, 133; 134; II, 313; MNd. 360; 454; CNd. 113; 127 等參照。</note>
-<note n="0248004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248004">以下之文由 S. IV, 52 引用。雜阿含二三一經（大正藏二、五六b）參照。</note>
-<note n="0249005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249005">不自在（avasavattana）在底本及 PTS 本雖有 avassiyapavatta，今從 PTS 本註記之異本。</note>
-<note n="0249006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249006">以下之文由 S. III, 66f 之引用。雜阿含三四經（大正藏二、七c以下）參照。</note>
-<note n="0250007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250007">以下之文由 S. II, 64f 之引用。</note>
-<note n="0251008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251008">以下一句在底本雖無，由 PTS 本及 MNd. 410 加入。</note>
-<note n="0252009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252009">他（parato）底本雖有 pavuttito，今從 PTS 本註記之異本。</note>
-<note n="0252010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252010">種種（vicittato）在底本雖有 vivittato，今從 PTS 本。</note>
-<note n="0252011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252011">以下之文由 S. III, 33f 之引用。M. I, 140f；雜阿含二六九經（大正藏二、七〇b）參照。</note>
-<note n="0253012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253012">以下之文 S. IV, 54 之引用。PTS. II, 177；雜阿含二三二經（大正藏二、五六b）參照。</note>
-<note n="0254013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254013">本偈由 Thang. 716 之引用。MNd. 438 參照。</note>
-<note n="0254014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254014">本偈 MNd. 438Ṭhag. 717 參照。</note>
-<note n="0254015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254015">以下之文由 S. IV, 197 之引用。</note>
-<note n="0255016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0255016">以下之說明 Dhs. 182f; Vibh. 364 等參照。</note>
-<note n="0256017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256017">以下之文由 M. I, 174f 之引用。中阿含二〇四經（大正藏一、七七八b）參照。</note>
-<note n="0256018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256018">言（vuccati）底本脫此語。</note>
-<note n="0263001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263001">不作永續 asātacca-kiriyatā 底本雖缺此語，今由底本一二頁之同文而補入。</note>
-<note n="0278001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0278001 #note_star_2">龍象（nāgo）在於 Sn. 有 nātho。</note>
-<note n="0283002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0283002">增上慢（adhimāno）在底本雖有 avamāno，今由 PTS 本及 MNd. 80 之同文而改正。</note>
-<note n="0285003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285003">關於十隨煩惱 PTS. II, 101f; Vm. 633ff 參照。</note>
-<note n="0285004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285004">十一欲有是指六欲天及人、地獄、餓鬼、畜生、阿修羅之五界。</note>
-<note n="0288005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288005">有白蓋（setacchattaṁ）底本雖有 setapaccattaṁ，今從 PTS 本。</note>
-<note n="0288006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288006">勝（pavara）在底本 PTS 本亦雖有 pavadata 意義不通。今假 pavara 讀之。</note>
-<note n="0289007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0289007">增恚尋（byāpāda-vitakka-vaddhanaṁ）在底本雖只有 byāpāda，以下之句已脫落者。</note>
-<note n="0291008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0291008">以下之二偈由 Sn. 740-741 = A. II, 10 = It. p. 9; 109 之引用。MNd. 455; CNd. 320 等參照。</note>
-<note n="0291009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0291009">本偈出曜經卷五（大正藏四、六三六b），法集要頌經卷一（大正藏四、七七八c）等參照。</note>
-<note n="0291010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0291010">本偈由 S. I, 168; 186 之引用。MNd. 456; CNd. 320；雜阿含一一八九經（大正藏二、三二二b），別譯雜阿含一〇二經（大正藏二、四一〇c）參照。</note>
-<note n="0292011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0292011">本偈由 S. I, 195 = Thag. 1249 之引用。CNd. 208; 雜阿含一二一一經（大正藏二、三二九c以下），別譯雜阿含二二八經（大正藏二、四五七c）參照。</note>
-<note n="0293012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0293012">默考多，以明暸而住（samokkhāyana-bahulo dhamma-vibhūta-vihārī）在底本及 PTS本雖有 sammokkhāyanadhammo vibhūta-vihārī，今如上記而讀。</note>
-<note n="0293013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0293013">本偈由 S. I, 42 之引用。雜阿含一〇二二經（大正二、二六六b），別譯雜阿含二四九經（大正二、四五一b）參照。</note>
-<note n="0296014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0296014">雖暫時亦雖瞬時（vassam api attham api）vassa 又於 attaha 無少時之意義。此等恐由其他某等語之誤而傳者。今假用暫時、瞬時之譯語。</note>
-<note n="0296015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0296015">以前之註[12]參照。</note>
-<note n="0299016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0299016">以前之註[14]參照。</note>
-<note n="0305017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0305017">出血（Lohitapittena）在底本雖有 Lohitena pittena 是錯誤。</note>
-<note n="0309018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0309018">正覺者（sambuddho）在底本雖有 buddho，今從 Sn. 之語句改正。</note>
-<note n="0310019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0310019">徧問（paripucchako）在底本雖有 paripucchitā，今由 MNd. 234 之同文個所而改正。</note>
-<note n="0311020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0311020">以下之文所謂「知通超天之物」作為 Sn. 之文句說明，雖如所思之不恰當，在底本如此記載。</note>
-<note n="0318001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0318001 #note_star_3">以枷（anduyā）在底本及 PTS 本雖有 aruyā，意義不通。應為 anduyā 之誤傳。</note>
-<note n="0320002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0320002">以下之二偈由 Sn. 740-741 = A. II, 10 = It. p. 9; 109 之引用。MNd. 455; CNd. 291 參照。</note>
-<note n="0320003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0320003">本偈由 S. I, 168; 186 之引用。MNd. 456; CNd. 292；雜阿含一一八九經（大正藏二、三二二b），別譯雜阿含一〇二經（大正藏二、四一〇c）參照。</note>
-<note n="0322004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0322004">此等法覺徧知（ime dhammā pariññeyyā ti bujjhi）底本此文脫漏。</note>
-<note n="0322005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0322005">此等法覺作證（ime dhammā sacchikātabbā ti bujjhi）底本此文脫漏。</note>
-<note n="0322006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0322006">五取蘊之（pañcannaṁ upādanakkhandhānaṁ）底本雖有 channaṁ upādanakh 是誤植。</note>
-<note n="0322007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0322007">關於以下之諸行 PTS. II, 19f; 225f 參照。</note>
-<note n="0322008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0322008">行道行（paṭipatti-cariyā）PTS 而有 patticariyā。</note>
-<note n="0322009" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0322009">世間利益行（lokatthacariyā）PTS 而有 lokuttara-cariyā。</note>
-<note n="0325010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0325010">作用者（vicaritā）在底本雖有 viparītā，今從 MNd. 49 之同文。</note>
-<note n="0327011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0327011">此等諸偈 MNd. 405 參照。最初之二偈在 M. III, 167; 183 = A. I, 149f = Pv. 9 亦出。最初之三偈 J. V, 266; Mahāvastu I, 9；中阿含六四經（大正藏一、五〇四c），增一阿含卷二四（大正藏二、六七五b）參照。</note>
-<note n="0328012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0328012">以下二偈 J. V, 266 參照。</note>
-<note n="0328013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0328013">若（ce）底本雖有 ca，今從 MNd. 405。</note>
-<note n="0333014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0333014">在媚貪（pucchañcikatā）MNd. 8 而為 Mucchañcikatā。</note>
-<note n="0333015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0333015">不善欲性（asādhukamyatā）在 MNd. 8 而為 sādhukamyatā（善欲性）。</note>
-<note n="0335016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335016">以下之文由 M. I, 174 之引用。CNd. 255；中阿含二〇四經（大正藏一、七七八b）參照。</note>
-<note n="0337017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337017 #note_star_4">黃色之（paṇḍu）在底本及 PTS 本雖有 bhaṇḍa 恐為 paṇḍu 之誤傳。</note>
-<note n="0338018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0338018">以下用片假名而使音譯為樂器名亦不知為如何樂器。</note>
-<note n="0342019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342019">出血 lohitapittaṁ 在底本 lohitaṁ pittaṁ 為誤。</note>
-<note n="0343020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343020">以下之文是 S. IV, 136f；之略引用。雜阿含二三五經（大正藏二、五七a）參照。</note>
-<note n="0344021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344021">以下之文由 It. P, 83f 之引用。</note>
-<note n="0344022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344022">以下諸偈亦同上。第四偈與以用原文多少相異。MNd. 15f; 363f; 470 參照。</note>
-<note n="0345023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0345023">以下之文由 S. I, 70 之引用。S. I, 98 參照。</note>
-<note n="0346024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0346024">本偈由 S. I, 70; 98 = It. P. 45 之引用。MNd. 16; 364; 471 參照。</note>
-<note n="0346025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0346025">本偈由 Sn. 271 = S. I, 207 之引用。MNd. 16; 364; 471；瑜伽師地論卷一八（大正藏三〇、三七六c）參照。</note>
-<note n="0346026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0346026">奪去（pariyāditā）底本雖有 pītavā，今從 PTS 本。</note>
-<note n="0346027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0346027">碎破（maddita）底本雖有 ghāṭavā，今從 PTS 本。</note>
-<note n="0348028" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0348028">息（paṭippassambhayitvā）底本雖有 paṭīsambhayitvā 恐為誤植。今從 PTS 本。</note>
-<note n="0349029" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0349029">本偈由 Sn. 531 之引用。CNd. 187; 201；佛本行集經卷三九（大正藏三、八三四c）參照。</note>
-<note n="0349030" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0349030">遠離（ārato）在 Sn. 而有 virato。</note>
-<note n="0349031" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0349031">雄者（vīro）在 Sn. 而有 dhīro。</note>
-<note n="0354032" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354032">由普請（navakammena）在底本雖有 dūtakammena，今參照 MNd. 372 改正。</note>
-<note n="0354033" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354033">不由普請。前註參照。</note>
-<note n="0355034" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355034">環（dhuvarāni）此字辭書中無。恐為他之某等語之誤者。今假譯為環。</note>
-<note n="0356035" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0356035">本偈由 Sn. 740 = A, II, 10 = It. P. 9; 109 之引用。MNd. 455; CNd. 291; 320 等參照。</note>
-<note n="0358036" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0358036">以下之文 M. I, 454；中阿含一九二經（大正藏一七四三a）參照。</note>
-<note n="0359037" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0359037">以下之文由 M. I, 85ff 之引用。中阿含九九經（大正藏一、五八五a以下），一〇〇經（五八六b以下），苦陰經（大正藏一、八四七a以下），苦陰因事經（大正藏一、八四九a以下），增一阿含卷一二（大正藏二、六〇五a以下）等參照。</note>
-<note n="0359038" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0359038">以印（muddāya）在底本有 muddhāya 為誤。</note>
-<note n="0359039" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0359039">以其他之工巧（sippaññatarena）在底本雖有 sippāyatanena，今從引用原文。</note>
-<note n="0361040" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361040">善塗、固（addāvalepanā）底本之 addhāvalepanā 為誤植。</note>
-<note n="0362041" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0362041">以下之文由略 A. IV, 289f 之引用。A. III, 310f；七處三觀經第二八經（大正藏二、八七九c以下）參照。</note>
-<note n="0362042" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0362042 #note_star_5">箭（salla）底本雖有 lagga（懸），今從引用原文。</note>
-<note n="0363043" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0363043">以下之諸偈由 A. III, 311; IV, 290 之引用。</note>
-<note n="0364044" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0364044">無塵風（aparaja-vātā）底本亦缺此語，從底本一三六頁及PTS 本而補入。</note>
-<note n="0364045" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0364045">翼風（pakkha-vātā）同上。</note>
-<note n="0365046" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0365046">本偈由 Sn. 522 之引用。MNd. 202; CNd. 98; Mahāvastu III, 397; 佛本行集經卷三九（大正藏三、八三四b）等參照。</note>
-<note n="0367047" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0367047">肘（ratana）同於 hattha。一肘可當於一尺餘。</note>
-<note n="0368048" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0368048">以下之文亦由 M. III, 110f 之引用，文句有多少出入。中阿含一九一經（大正藏一、七三八a以下）參照。</note>
-<note n="0374049" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0374049">不隨覺（ananubodho）底本雖有 ananurodho 為誤植，今由底本一〇頁之同文而訂正。</note>
-<note n="0378050" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0378050">徧問。於底本三一一頁同文之註[19]參照。</note>
-<note n="0379051" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0379051">以下之文由 M. I, 85 之引用。A. III, 411; IV, 458 參照。</note>
-<note n="0382052" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0382052">癰（gaṇḍo）在 Sn. 而有 gaḷo（鈎針）。</note>
-<note n="0382053" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0382053">就以下之文而參照前方之註[51]。</note>
-<note n="0383054" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0383054">以下之文由 M. I, 130 = V. II, 25f = V. IV, 134 之引用。A. III, 97；中阿含二〇〇經（大正藏一、七六三c）參照。</note>
-<note n="0383055" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0383055">蛇頭（sappasira）底本之 sapasira 為誤植。</note>
-<note n="0388056" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0388056">以下之文亦由 S. IV, 184-187 之引用，文句有相當之出入。雜阿含一一七六經（大正藏二、三一六b以下）參照。</note>
-<note n="0389057" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0389057">經年（terovassikaṁ）在底本亦有 corovassikaṁ，今從引用原文。</note>
-<note n="0389058" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0389058">不得（Labhetha）底本亦有 Labhati，今從引用原文。</note>
-<note n="0389059" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0389059">由下方（heṭṭhimato）底本亦有 pacchato，今從引用原文。</note>
-<note n="0389060" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0389060">不得。前註[58]參照。</note>
-<note n="0390061" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0390061">不可得（na Labhetha）底本亦有 Labhati，今從引用原文。</note>
-<note n="0390062" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0390062">由下方。前註[59]參照。</note>
-<note n="0391063" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0391063">不可得。註[61]參照。</note>
-<note n="0392064" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0392064">以下之文，葉之斷除（sañchinnapatto）在 Sn. 文句之解釋，多少不適當。蓋以下文Sn.之句非為 Sañchinnapatto, sañchannapatto 看做（葉之茂蓋）之說明。然今施以插入句而努力為不適合彌縫。</note>
-<note n="0394065" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0394065">本偈亦由 Ud. P. 4 之引用，字句多少有相異。</note>
-<note n="0399066" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0399066">為不得（apāpuṇitvā）底本亦有 pāpuṇitvā，今由 PTS 本及／之同文而改正。</note>
-<note n="0399067" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0399067">本偈由 Thag. 223 = 313 之引用。MNd. 67 參照。</note>
-<note n="0403068" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0403068">本偈亦由 Thag. 202 之引用，文句有多少相異。MNd. 22; 460; CNd. 24; 103 參照。</note>
+<note n="0001001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001001">對此序偈之五十六偈由小義釋未作何等解說之點觀之，此之序偈或在小義釋成立後為被附加之物亦未可知。最低限度此之序偈應為在部派分裂後即現今巴利佛教之南方上座部別立後而被製作附加者。蓋相當此等之序偈之偈在他派之文獻亦未見出一偈。尚對序偈中之各各應注意之點於經集之此部分註記參照。</note>
+<note n="0013001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0013001">有關六佛法大義釋一、一九五頁參照。</note>
+<note n="0023002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0023002">七有。須陀洹之最劣者亦言極七反之生，而在惡趣世間不但絕對不墮，在人天世間亦只為今後最高七回生起而在其後稱為般涅槃。故須陀洹除七有而在其以上無輪迴事。有關此點及在有關次之二註 Visuddhi-magga P. 709f. 及俱舍論賢聖品（大正二九、一二三a以下）等參照。</note>
+<note n="0023003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0023003">二有云云。如斯陀含義釋為一來，此只向人世間來一回而今後往人天世間一次生起後而為般涅槃。故斯陀含只殘留二有之輪迴。</note>
+<note n="0023004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0023004">一有。如阿那含雖義譯為不還，在此人世間已不還來，一回生於色界天由其處般涅槃。故阿那含只有向色界之一有生起，無向欲界生起煩惱。</note>
+<note n="0025005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0025005">本偈雖由 Thag. 202 之引用，文句則有多少相違。</note>
+<note n="0026006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0026006">阿羅漢若為無學，在此處亦舉為有學是誤解。</note>
+<note n="0028007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0028007">令現起之事欲（Paccupaṭṭhitā）是除去地獄，為其餘之惡趣有情、人、四大王天乃至都率天。</note>
+<note n="0028008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0028008">化作之事欲（nimmitā）是化樂天。</note>
+<note n="0028009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0028009">由他而化作之事欲（Paranimmitā）是他化自在天。</note>
+<note n="0028010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0028010">本偈為 J. III, 450 之引用。MNd. 2; 28; Mahāvastu III. 190 等參照。</note>
+<note n="0030011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030011">不樂味（anassādato）在 MNd. 53 同文之個所雖為 assādato 在今之情況則不正確。</note>
+<note n="0030012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030012">不出離（anissaraṇato）在 MNd. 53 之同文個所雖為 nissaraṇato 在今之位則不正確。</note>
+<note n="0031013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031013">比丘（bhikkhu）（由 bhikkhati＜desid. √bhaj）而來者，bhikkhu 為 bhinna＜√bhid 有（破壞）之意味，此不過世俗的語源之解釋而己。</note>
+<note n="0032014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0032014">本偈由 Sn. 514 之引用。MNd. 71; Mahāvastu III, 395; 佛本行集經卷三九（大正三、八三四a）等參照。</note>
+<note n="0033015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0033015">曼陀羅（maṇḍalā）在底本雖有 maṇḍalu，今從 PTS 本 Intro. XXIV。但此時，曼陀羅為何意義不明。</note>
+<note n="0033016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0033016">黃色之（Paṇḍu）在底本雖有 bhaṇḍa，今從 PTS 本。</note>
+<note n="0040001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040001">作用者（Vicaritā）在底本雖有（Viparītā）（使顛倒），今從 PTS 本及 MNd. 49 之同文之句。</note>
+<note n="0040002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040002">有關有二十事有身見，本卷二五六頁參照。</note>
+<note n="0040003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040003">有關十事有邪見，本卷三七五- 三七六頁參照。</note>
+<note n="0040004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040004">有關十事有邊見，大義釋一、七三頁註[26]參照。</note>
+<note n="0041005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0041005">以下之文由 S. V, 158（S. 47, 11, mahāpurisa）之引用。雜阿含六一四經（大正二、一七二a）參照。</note>
+<note n="0042006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0042006">前義釋之註[15]參照。</note>
+<note n="0042007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0042007">前義釋之註[16]參照。</note>
+<note n="0045001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045001">以下之文由 A. III, 338f 之引用。在引文中有多少之省略。</note>
+<note n="0045002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045002">以下之文由 A. III, 339 之引用。</note>
+<note n="0045003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045003">以下之文由 S. II, 263 之引用。</note>
+<note n="0046004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0046004">以下之文由 S. V, 91 之引用。</note>
+<note n="0046005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0046005">以下「世尊知見」為止之文，於底本雖揭與前之註[03]同一引用文：「又世尊如斯說」，明顯是誤。今從 PTS 本。</note>
+<note n="0048006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048006">象務者是崇拜象，是立誓為象之模倣者。就其他亦可推知。</note>
+<note n="0051007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0051007">自義問（attatthapucchā）他義問（paratthapucchā）之二語在 MNd. 340 之同文個所雖使為過去問（atītapucchā）未來問（anāgaṭapucchā），恐為誤傳吧。可以如今。</note>
+<note n="0051008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0051008">第一義問（paramatthapucchā）MNd. 340 同文之個所雖為兩義問（ubhayatthapucchā），而如現在的為正。</note>
+<note n="0055009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055009">令依止生，此即令依止老（yad eva te jātinissitā tad eva te jarānissitā）底本應相當於此文處為 devate jātinissitāya devate jātinissitā va devate jaranissitāya，又其次之 yad eva te jarānissitā tad eva te byādhinissitā（令依止於老此即令依止於病）應相當為 devate jaranisstā vā devate byādhinissitāya。以下亦同樣應知。此等之情況，底本之文其意義完全不通，明顯是誤傳誤記之禍。今由 PTS 本而讀之。</note>
+<note n="0065010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065010">本偈雖由 S. I, 169 之引用，在文句有多少之相違。雜阿含一一八四經（大正藏二、三二一b），別譯雜阿含九九經（大正藏二、四〇九b）參照。</note>
+<note n="0065011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065011">灰（bhasmani）在底本雖有 gamani 意義不通。今從 PTS 本及引用原文。</note>
+<note n="0065012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065012">心（hadayaṁ）在底本雖有 tapparassa，今從 PTS 本及引用原文。</note>
+<note n="0065013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065013">火（joti）在底本及 PTS 本雖有 jāti，今從引用原文。</note>
+<note n="0073001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0073001">本偈是由 Sn. 529 之引用。MNd. 93; 205; Mahāvastu III, 397；佛本行集經卷三九（大正藏三、八三四c）參照。</note>
+<note n="0074002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0074002">無壞亂之意（abhinna-manaso）在底本雖有 ādina-manaso，今如在大義釋一、二九五頁註[21]之理由而為如斯讀之。</note>
+<note n="0076003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076003">以下之三偈是由 Dhp. 321-323 之引用。MNd. 243; 法句經卷下（大正藏四、五七〇b），法句譬喻經卷三（大正藏四、六〇〇b以下）參照。</note>
+<note n="0076004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076004">本偈是由 S. III, 84 之引用。MNd. 243；參照。</note>
+<note n="0077005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0077005">本偈是由 Sn. 516 之引用。MNd. 244; Netti. 170; Mahāvastu III, 395f；佛本行集經卷（大正藏三、八三四a）參照。</note>
+<note n="0080006" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0080006">瞋恚（Paṭigha）在 Paṭigha 之字，瞋恚之外，亦有「對」，「礙」等之意義。今雖未詳審彼是某意，而假定如上之譯出。</note>
+<note n="0080007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0080007">四取界是欲取、見取、戒禁取、我語取之四取。</note>
+<note n="0085008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0085008">本偈 It. P. 55f; MNd. 58; 335 參照。</note>
+<note n="0085009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0085009">本偈是由 It. P. 56 之引用。MNd. 58; 335 參照。</note>
+<note n="0086010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086010">次之二偈是由 Dhp. 268-269 之引用。MNd. 58; 336；法句經卷下（大正藏四、五六九a）法句譬喻經卷三（大正藏三、八三四b）參照。</note>
+<note n="0086011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086011">本偈是由 Sn. 527 之引用。MNd. 58; 336; Mahāvastu III, 399; 佛本行集經卷三九（大正藏三、八三四b）參照。</note>
+<note n="0089012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0089012">有關一蘊有、四蘊有、五蘊有，大意釋一、二五頁之註[11]參照。</note>
+<note n="0090013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0090013">教訓（anusaṭṭhiṁ or anusiṭṭhiṁ）在底本及 PTS 本，於一切狀況雖為 anusandhiṁ，此明顯是誤，今參照 MNd. 140 訂正。</note>
+<note n="0090014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0090014">大仙（mahesi = mahāisi）說明為大求者（mahāesin）不過俗的語源解釋。</note>
+<note n="0095015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0095015">慧蘊（paññākkhandhaṁ）底本令此語脫漏。</note>
+<note n="0097016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0097016">前方註[13]參照。以下如斯狀況一切同樣故而不一一註記。</note>
+<note n="0099017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0099017">雖依語而禮拜（vācāya vā namassāmi）底本雖闕此句，從底本一一三頁之同文而補入。</note>
+<note n="0099018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0099018">本偈是由 Sn. 522 之引用。MNd. 202; CNd. 373; MA. I, 153; SA. I, 77; Mahāvastu III, 397；佛本行集經卷三九（大正藏三、八三四b）等參照。</note>
+<note n="0101019" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0101019">婆羅門（brāhmaṇa = prākrit, Bāhamaṇa）（拒外）bāhita＜bāheti 由拒外而來不過俗的語源解釋。</note>
+<note n="0101020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0101020">本偈是由 Sn. 519 之引用。MNd. 87; CNd. 113; Mahāvastu III, 396；佛本行集經卷三九（大正三、八三四b）參照。</note>
+<note n="0104021" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0104021">本偈雖是由 Thag. 202 之引用，文句有多少之相違。MNd. 22; 460; CNd. 24; 420 等參照。</note>
+<note n="0114001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0114001">以下 Vibh. 422 參照。</note>
+<note n="0115002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0115002">以下之文該當作為 Sn 之句之說明如亦不適當，在底本乃如斯之記載。</note>
+<note n="0115003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0115003">有關本偈，前之義釋註[20]參照。</note>
+<note n="0116004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0116004">本偈是出處不明。PTS. I, 133; 134; II, 31; MNd. 360; CNd. 127; 242 參照。</note>
+<note n="0117005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0117005">權力者（vibbāvī）在底本雖有 visavī 意義不通。今從 PTS 本註記之一異本。</note>
+<note n="0117006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0117006">有用者（alamattho）在底本有 alamatto。應用此字時雖極多，實際應正為 alamattho。</note>
+<note n="0118007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0118007">以下之文是 M. I, 45 之略引用。中阿含九一、周那問見經（大正藏一、五七四b）參照。</note>
+<note n="0118008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0118008">本偈是由 Dhp. 165 之引用。MNd. 32; KV. 525; 527; 法句經卷上（大正藏四、五六六a）參照。</note>
+<note n="0118009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0118009">以下之文由 M. III, 6 之引用。中阿含一四四經（大正藏一、六五三b）參照。</note>
+<note n="0120010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0120010">無著（na sajjati）在底本雖有 nappajjati，今從 PTS 本。</note>
+<note n="0120011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0120011">無著（asajjamāno）在底本雖有 apajjamāno，今從 PTS 本。</note>
+<note n="0129001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0129001">前義釋之註[05]參照。</note>
+<note n="0129002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0129002">前義釋之註[05]參照。</note>
+<note n="0130003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0130003">有關本偈，前義釋之註[04]參照。</note>
+<note n="0133004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0133004">有關三十二無用論，於大義釋一、二九三頁之註[06]參照。</note>
+<note n="0133005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0133005">惑（kathāhi）於該當 Sn. 之原文 kathā 之語為 kathaṁkathā 之略，雖是用為疑惑之意義，今 kathā 不是疑惑之意義，是「論」又「說」之意義而說明者。</note>
+<note n="0134006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0134006">七有想解脫是指四禪定及下三無色定者。</note>
+<note n="0136007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0136007">生於無所有處天有情之壽量是六萬劫。A. I, 268; Vibh. 426 等參照。</note>
+<note n="0139008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0139008">微風（parittā vātā）此語在底本雖無，由本卷三六五頁之文補入。</note>
+<note n="0139009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0139009">彼分、超越、鎮伏之三捨斷，於後世之註釋時代為彼分（tadaṅga）鎮伏（vikkhambhana）正斷（samuccheda）安息（paṭippassaddhi）出離（nissaraṇa）之五捨斷。有關此等之意義 DhaA. 352f；解脫道論卷一（大正藏三二、三九九c以下）參照。</note>
+<note n="0148001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148001">以下之四偈是由 Sn. 436-439 之引用。MNd. 96; 174; 333f, Mahāvastu II, 240; Lalitavistara; 方廣大莊嚴經卷七（大正藏三、五八二c），佛本行集經卷二五（大正藏三、七六九c），大智度論卷五，卷一五（大正藏二五、九九b，一六九a）參照。</note>
+<note n="0160002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0160002">以下之文 Sn. III, 27；雜阿含七七經（大正藏二、一九c）參照。</note>
+<note n="0165001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0165001">此一句於 Sn. 已置於次偈即在 Sn. 1085 之最初。然由文意上言，則如本義釋為妥當。</note>
+<note n="0181001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181001">不輪轉（na vattī ti）底本及 PTS 本雖有 na vattati 此明顯成為 na vatti iti 之誤。vatti 為 vattati 之 aorist，以下全部同樣。</note>
+<note n="0181002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181002">億（koṭi）koṭi 實際雖是一千萬，在漢譯普通為一億，故今亦從彼已譯為億。以下全同。</note>
+<note n="0183003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0183003">以下之文是由 S. II, 170 之引用。雜阿含九五三經（大正藏二、二四三a），別譯雜阿含三三四經、三三五經（大正藏二、四八六c以下）參照。</note>
+<note n="0183004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0183004 #note_star_1">不應輪轉（na vattissatī）在底本及 PTS 本雖單有 na vattissati 亦是誤。</note>
+<note n="0192001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192001">權力者，於底本一一四頁同語之註參照。</note>
+<note n="0192002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192002">有用者，同上。</note>
+<note n="0192003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192003">本偈由 Sn. 531 之引用。CNd. 201; 佛本行集經卷三九（大正藏三、八三四c）參照。</note>
+<note n="0192004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192004">雄者（vīro）引用之原文有 dhīro。</note>
+<note n="0192005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192005">不冀求諸欲（na kāme pattheti）在底本雖有 kāmā setthāti，今參照讀 PTS 本。</note>
+<note n="0193006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0193006">以下之文 A. V, 8; 110; 320; 322; 354 等參照。</note>
+<note n="0194007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194007">廣慧者（bhūripañño）在 Sn. 已為 vocative 即 bhūripañña（廣慧者）。</note>
+<note n="0195008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195008">土地（jagatī）在底本雖有 jarā，改由 PTS 本。</note>
+<note n="0198009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0198009">本偈與 Sn. 949 是同一偈。故本偈之義釋亦幾乎同於 Sn. 949 之義釋於大義釋二、二二二頁。</note>
+<note n="0206001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206001">於底本此前雖有 saṅgatā ti（來集）之句，今為妥善上而省略。</note>
+<note n="0206002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206002">本偈是由 Sn. 531 之引用。CNd. 187; 355；佛本行集經卷三（大正藏三、八三四c）參照。</note>
+<note n="0212001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212001">以下之諸偈出處不明。恐是四尼柯耶成立以後而製作者。MNd. 505; J. I, 117f; Vm. 388; DhpA. I. 246; Divyāvadāna P. 491；說一切有部毘奈耶卷三一（大正藏二二、七九七a）等參照。</note>
+<note n="0213002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213002">本偈由 S. I, 195 = Thag. 1249 之引用。CNd. 293；雜阿含一二一一經（大正藏二、三二九c以下），別譯雜阿含二二八經（大正藏二、四五七c）參照。</note>
+<note n="0213003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213003">山側（nagassa passe）S. 及 Thag. 雖為 nāgassa passe，如底本之 nagassa passe 為正。</note>
+<note n="0213004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213004">本偈由 Sn. 715 之引用。mahāvastu III, 388 參照。</note>
+<note n="0213005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213005">愛著（visaṭā）在底本雖有 paripatā，今從 PTS 本及引用原文。</note>
+<note n="0214006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214006">歸依所（saraṇa）底本之 carana 是誤植。</note>
+<note n="0218007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218007">心平等性（cittasamatā）在底本雖有 cittasamatho，今從 MNd. 501 之同文。</note>
+<note n="0218008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218008">心安息性（cittappassaddhatā）在底本雖有 cittappasādatā，今從 PTS 本及 MNd. 501 之同文。</note>
+<note n="0226001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0226001">大本經（Mahāpadāniya-Suttanta）是長部第十四經（D. II, Iff.）。長阿含第一，大本經（大正藏一、一b以下）七佛經（大正藏一、一五〇），毘婆尸佛經（大正藏一、一五四），七佛父母姓字經（大正藏一、一五九）等相當。於底本雖為 Mahādhaniya-Sutta，今從 PTS 本。</note>
+<note n="0227002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227002">大善見經（Mahāsudassana-Sutta）是長部第十七經（D. II, 160ff.）。J. I, 391f；長阿含卷三（大正藏一、二一b以下），中阿含六八，大善見王經（大正一、五一五b以下）等參照。</note>
+<note n="0227003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227003">大典尊經（Mahāgovinda-Sutta）是長部第十九經（D. II, 220ff.）。J. III, 469; Mahāvastu III, 197ff；長阿含經第三，典尊經（大正藏一、三〇b以下），大堅固婆羅門緣起經（大正藏一、二〇七）等參照。</note>
+<note n="0227004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227004">大天捺林經（Makhādeva-Sutta）是中部第八十三經（M. II, 74ff.）。J. I, 137；中阿含六七，大天捺林經（大正藏一、五一一c以下）增一阿含卷四八（大正藏二、八〇六c以下）等參照。在底本為（Maghadeva-Sutta）。</note>
+<note n="0227005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227005">以下之文雖由 D. III, 134 之引用文，而文句有多少之出入。長阿含一二（大正藏一、七五b）參照。</note>
+<note n="0230006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230006">以下之文 S. III, 53 參照。</note>
+<note n="0231007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231007">以下之文由 A. IV, 39f; 之引用。增一阿含卷三三（大正藏二、七三〇c以下）參照。</note>
+<note n="0232008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232008">以下之文由 D. III, 134f; 之引用。長阿含經卷一二（大正藏一、七五c）參照。</note>
+<note n="0232009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232009">以下之文 A. II, 23f；參照。</note>
+<note n="0233010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0233010">以下之文由 M. I, 74-76 之略引用。</note>
+<note n="0239001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239001">其直後（tadanantarā）在底本雖有 Cakkhu-Samanantarā，今從 PTS 本。</note>
+<note n="0244002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244002">本偈由 V. I, 5f = M. I, 168 = S. I, 137 = It. P, 33 之引用。MNd. 360; 453 增一阿含卷一〇（大正藏二、五九三b）出曜經卷二一（大正藏四、七二〇b）法集要頌經卷二（大正藏四、七八七c以下）五分律卷一五（大正藏二二、一〇三c以下）參照。</note>
+<note n="0245003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245003">本偈 PTS. I, 133; 134; II, 313; MNd. 360; 454; CNd. 113; 127 等參照。</note>
+<note n="0248004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248004">以下之文由 S. IV, 52 引用。雜阿含二三一經（大正藏二、五六b）參照。</note>
+<note n="0249005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249005">不自在（avasavattana）在底本及 PTS 本雖有 avassiyapavatta，今從 PTS 本註記之異本。</note>
+<note n="0249006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249006">以下之文由 S. III, 66f 之引用。雜阿含三四經（大正藏二、七c以下）參照。</note>
+<note n="0250007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250007">以下之文由 S. II, 64f 之引用。</note>
+<note n="0251008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251008">以下一句在底本雖無，由 PTS 本及 MNd. 410 加入。</note>
+<note n="0252009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252009">他（parato）底本雖有 pavuttito，今從 PTS 本註記之異本。</note>
+<note n="0252010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252010">種種（vicittato）在底本雖有 vivittato，今從 PTS 本。</note>
+<note n="0252011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252011">以下之文由 S. III, 33f 之引用。M. I, 140f；雜阿含二六九經（大正藏二、七〇b）參照。</note>
+<note n="0253012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253012">以下之文 S. IV, 54 之引用。PTS. II, 177；雜阿含二三二經（大正藏二、五六b）參照。</note>
+<note n="0254013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254013">本偈由 Thang. 716 之引用。MNd. 438 參照。</note>
+<note n="0254014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254014">本偈 MNd. 438Ṭhag. 717 參照。</note>
+<note n="0254015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254015">以下之文由 S. IV, 197 之引用。</note>
+<note n="0255016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0255016">以下之說明 Dhs. 182f; Vibh. 364 等參照。</note>
+<note n="0256017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256017">以下之文由 M. I, 174f 之引用。中阿含二〇四經（大正藏一、七七八b）參照。</note>
+<note n="0256018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256018">言（vuccati）底本脫此語。</note>
+<note n="0263001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263001">不作永續 asātacca-kiriyatā 底本雖缺此語，今由底本一二頁之同文而補入。</note>
+<note n="0278001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0278001 #note_star_2">龍象（nāgo）在於 Sn. 有 nātho。</note>
+<note n="0283002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0283002">增上慢（adhimāno）在底本雖有 avamāno，今由 PTS 本及 MNd. 80 之同文而改正。</note>
+<note n="0285003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285003">關於十隨煩惱 PTS. II, 101f; Vm. 633ff 參照。</note>
+<note n="0285004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285004">十一欲有是指六欲天及人、地獄、餓鬼、畜生、阿修羅之五界。</note>
+<note n="0288005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288005">有白蓋（setacchattaṁ）底本雖有 setapaccattaṁ，今從 PTS 本。</note>
+<note n="0288006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288006">勝（pavara）在底本 PTS 本亦雖有 pavadata 意義不通。今假 pavara 讀之。</note>
+<note n="0289007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0289007">增恚尋（byāpāda-vitakka-vaddhanaṁ）在底本雖只有 byāpāda，以下之句已脫落者。</note>
+<note n="0291008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0291008">以下之二偈由 Sn. 740-741 = A. II, 10 = It. p. 9; 109 之引用。MNd. 455; CNd. 320 等參照。</note>
+<note n="0291009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0291009">本偈出曜經卷五（大正藏四、六三六b），法集要頌經卷一（大正藏四、七七八c）等參照。</note>
+<note n="0291010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0291010">本偈由 S. I, 168; 186 之引用。MNd. 456; CNd. 320；雜阿含一一八九經（大正藏二、三二二b），別譯雜阿含一〇二經（大正藏二、四一〇c）參照。</note>
+<note n="0292011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0292011">本偈由 S. I, 195 = Thag. 1249 之引用。CNd. 208; 雜阿含一二一一經（大正藏二、三二九c以下），別譯雜阿含二二八經（大正藏二、四五七c）參照。</note>
+<note n="0293012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0293012">默考多，以明暸而住（samokkhāyana-bahulo dhamma-vibhūta-vihārī）在底本及 PTS本雖有 sammokkhāyanadhammo vibhūta-vihārī，今如上記而讀。</note>
+<note n="0293013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0293013">本偈由 S. I, 42 之引用。雜阿含一〇二二經（大正二、二六六b），別譯雜阿含二四九經（大正二、四五一b）參照。</note>
+<note n="0296014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0296014">雖暫時亦雖瞬時（vassam api attham api）vassa 又於 attaha 無少時之意義。此等恐由其他某等語之誤而傳者。今假用暫時、瞬時之譯語。</note>
+<note n="0296015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0296015">以前之註[12]參照。</note>
+<note n="0299016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0299016">以前之註[14]參照。</note>
+<note n="0305017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0305017">出血（Lohitapittena）在底本雖有 Lohitena pittena 是錯誤。</note>
+<note n="0309018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0309018">正覺者（sambuddho）在底本雖有 buddho，今從 Sn. 之語句改正。</note>
+<note n="0310019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0310019">徧問（paripucchako）在底本雖有 paripucchitā，今由 MNd. 234 之同文個所而改正。</note>
+<note n="0311020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0311020">以下之文所謂「知通超天之物」作為 Sn. 之文句說明，雖如所思之不恰當，在底本如此記載。</note>
+<note n="0318001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0318001 #note_star_3">以枷（anduyā）在底本及 PTS 本雖有 aruyā，意義不通。應為 anduyā 之誤傳。</note>
+<note n="0320002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0320002">以下之二偈由 Sn. 740-741 = A. II, 10 = It. p. 9; 109 之引用。MNd. 455; CNd. 291 參照。</note>
+<note n="0320003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0320003">本偈由 S. I, 168; 186 之引用。MNd. 456; CNd. 292；雜阿含一一八九經（大正藏二、三二二b），別譯雜阿含一〇二經（大正藏二、四一〇c）參照。</note>
+<note n="0322004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0322004">此等法覺徧知（ime dhammā pariññeyyā ti bujjhi）底本此文脫漏。</note>
+<note n="0322005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0322005">此等法覺作證（ime dhammā sacchikātabbā ti bujjhi）底本此文脫漏。</note>
+<note n="0322006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0322006">五取蘊之（pañcannaṁ upādanakkhandhānaṁ）底本雖有 channaṁ upādanakh 是誤植。</note>
+<note n="0322007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0322007">關於以下之諸行 PTS. II, 19f; 225f 參照。</note>
+<note n="0322008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0322008">行道行（paṭipatti-cariyā）PTS 而有 patticariyā。</note>
+<note n="0322009" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0322009">世間利益行（lokatthacariyā）PTS 而有 lokuttara-cariyā。</note>
+<note n="0325010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0325010">作用者（vicaritā）在底本雖有 viparītā，今從 MNd. 49 之同文。</note>
+<note n="0327011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0327011">此等諸偈 MNd. 405 參照。最初之二偈在 M. III, 167; 183 = A. I, 149f = Pv. 9 亦出。最初之三偈 J. V, 266; Mahāvastu I, 9；中阿含六四經（大正藏一、五〇四c），增一阿含卷二四（大正藏二、六七五b）參照。</note>
+<note n="0328012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0328012">以下二偈 J. V, 266 參照。</note>
+<note n="0328013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0328013">若（ce）底本雖有 ca，今從 MNd. 405。</note>
+<note n="0333014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0333014">在媚貪（pucchañcikatā）MNd. 8 而為 Mucchañcikatā。</note>
+<note n="0333015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0333015">不善欲性（asādhukamyatā）在 MNd. 8 而為 sādhukamyatā（善欲性）。</note>
+<note n="0335016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335016">以下之文由 M. I, 174 之引用。CNd. 255；中阿含二〇四經（大正藏一、七七八b）參照。</note>
+<note n="0337017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337017 #note_star_4">黃色之（paṇḍu）在底本及 PTS 本雖有 bhaṇḍa 恐為 paṇḍu 之誤傳。</note>
+<note n="0338018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0338018">以下用片假名而使音譯為樂器名亦不知為如何樂器。</note>
+<note n="0342019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342019">出血 lohitapittaṁ 在底本 lohitaṁ pittaṁ 為誤。</note>
+<note n="0343020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343020">以下之文是 S. IV, 136f；之略引用。雜阿含二三五經（大正藏二、五七a）參照。</note>
+<note n="0344021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344021">以下之文由 It. P, 83f 之引用。</note>
+<note n="0344022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344022">以下諸偈亦同上。第四偈與以用原文多少相異。MNd. 15f; 363f; 470 參照。</note>
+<note n="0345023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0345023">以下之文由 S. I, 70 之引用。S. I, 98 參照。</note>
+<note n="0346024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0346024">本偈由 S. I, 70; 98 = It. P. 45 之引用。MNd. 16; 364; 471 參照。</note>
+<note n="0346025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0346025">本偈由 Sn. 271 = S. I, 207 之引用。MNd. 16; 364; 471；瑜伽師地論卷一八（大正藏三〇、三七六c）參照。</note>
+<note n="0346026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0346026">奪去（pariyāditā）底本雖有 pītavā，今從 PTS 本。</note>
+<note n="0346027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0346027">碎破（maddita）底本雖有 ghāṭavā，今從 PTS 本。</note>
+<note n="0348028" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0348028">息（paṭippassambhayitvā）底本雖有 paṭīsambhayitvā 恐為誤植。今從 PTS 本。</note>
+<note n="0349029" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0349029">本偈由 Sn. 531 之引用。CNd. 187; 201；佛本行集經卷三九（大正藏三、八三四c）參照。</note>
+<note n="0349030" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0349030">遠離（ārato）在 Sn. 而有 virato。</note>
+<note n="0349031" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0349031">雄者（vīro）在 Sn. 而有 dhīro。</note>
+<note n="0354032" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354032">由普請（navakammena）在底本雖有 dūtakammena，今參照 MNd. 372 改正。</note>
+<note n="0354033" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354033">不由普請。前註參照。</note>
+<note n="0355034" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355034">環（dhuvarāni）此字辭書中無。恐為他之某等語之誤者。今假譯為環。</note>
+<note n="0356035" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0356035">本偈由 Sn. 740 = A, II, 10 = It. P. 9; 109 之引用。MNd. 455; CNd. 291; 320 等參照。</note>
+<note n="0358036" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0358036">以下之文 M. I, 454；中阿含一九二經（大正藏一七四三a）參照。</note>
+<note n="0359037" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0359037">以下之文由 M. I, 85ff 之引用。中阿含九九經（大正藏一、五八五a以下），一〇〇經（五八六b以下），苦陰經（大正藏一、八四七a以下），苦陰因事經（大正藏一、八四九a以下），增一阿含卷一二（大正藏二、六〇五a以下）等參照。</note>
+<note n="0359038" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0359038">以印（muddāya）在底本有 muddhāya 為誤。</note>
+<note n="0359039" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0359039">以其他之工巧（sippaññatarena）在底本雖有 sippāyatanena，今從引用原文。</note>
+<note n="0361040" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361040">善塗、固（addāvalepanā）底本之 addhāvalepanā 為誤植。</note>
+<note n="0362041" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0362041">以下之文由略 A. IV, 289f 之引用。A. III, 310f；七處三觀經第二八經（大正藏二、八七九c以下）參照。</note>
+<note n="0362042" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0362042 #note_star_5">箭（salla）底本雖有 lagga（懸），今從引用原文。</note>
+<note n="0363043" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0363043">以下之諸偈由 A. III, 311; IV, 290 之引用。</note>
+<note n="0364044" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0364044">無塵風（aparaja-vātā）底本亦缺此語，從底本一三六頁及PTS 本而補入。</note>
+<note n="0364045" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0364045">翼風（pakkha-vātā）同上。</note>
+<note n="0365046" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0365046">本偈由 Sn. 522 之引用。MNd. 202; CNd. 98; Mahāvastu III, 397; 佛本行集經卷三九（大正藏三、八三四b）等參照。</note>
+<note n="0367047" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0367047">肘（ratana）同於 hattha。一肘可當於一尺餘。</note>
+<note n="0368048" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0368048">以下之文亦由 M. III, 110f 之引用，文句有多少出入。中阿含一九一經（大正藏一、七三八a以下）參照。</note>
+<note n="0374049" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0374049">不隨覺（ananubodho）底本雖有 ananurodho 為誤植，今由底本一〇頁之同文而訂正。</note>
+<note n="0378050" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0378050">徧問。於底本三一一頁同文之註[19]參照。</note>
+<note n="0379051" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0379051">以下之文由 M. I, 85 之引用。A. III, 411; IV, 458 參照。</note>
+<note n="0382052" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0382052">癰（gaṇḍo）在 Sn. 而有 gaḷo（鈎針）。</note>
+<note n="0382053" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0382053">就以下之文而參照前方之註[51]。</note>
+<note n="0383054" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0383054">以下之文由 M. I, 130 = V. II, 25f = V. IV, 134 之引用。A. III, 97；中阿含二〇〇經（大正藏一、七六三c）參照。</note>
+<note n="0383055" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0383055">蛇頭（sappasira）底本之 sapasira 為誤植。</note>
+<note n="0388056" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0388056">以下之文亦由 S. IV, 184-187 之引用，文句有相當之出入。雜阿含一一七六經（大正藏二、三一六b以下）參照。</note>
+<note n="0389057" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0389057">經年（terovassikaṁ）在底本亦有 corovassikaṁ，今從引用原文。</note>
+<note n="0389058" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0389058">不得（Labhetha）底本亦有 Labhati，今從引用原文。</note>
+<note n="0389059" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0389059">由下方（heṭṭhimato）底本亦有 pacchato，今從引用原文。</note>
+<note n="0389060" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0389060">不得。前註[58]參照。</note>
+<note n="0390061" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0390061">不可得（na Labhetha）底本亦有 Labhati，今從引用原文。</note>
+<note n="0390062" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0390062">由下方。前註[59]參照。</note>
+<note n="0391063" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0391063">不可得。註[61]參照。</note>
+<note n="0392064" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0392064">以下之文，葉之斷除（sañchinnapatto）在 Sn. 文句之解釋，多少不適當。蓋以下文Sn.之句非為 Sañchinnapatto, sañchannapatto 看做（葉之茂蓋）之說明。然今施以插入句而努力為不適合彌縫。</note>
+<note n="0394065" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0394065">本偈亦由 Ud. P. 4 之引用，字句多少有相異。</note>
+<note n="0399066" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0399066">為不得（apāpuṇitvā）底本亦有 pāpuṇitvā，今由 PTS 本及／之同文而改正。</note>
+<note n="0399067" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0399067">本偈由 Thag. 223 = 313 之引用。MNd. 67 參照。</note>
+<note n="0403068" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0403068">本偈亦由 Thag. 202 之引用，文句有多少相異。MNd. 22; 460; CNd. 24; 103 參照。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0033a0101" resp="#resp2" type="add" target="#nkr_note_add_0033a0101">裟【CB】，娑【南傳】</note>
-<note n="0077a1101" resp="#resp2" type="add" target="#nkr_note_add_0077a1101">剌【CB】，刺【南傳】</note>
-<note n="0090a1201" resp="#resp2" type="add" target="#nkr_note_add_0090a1201">幢【CB】，憧【南傳】</note>
-<note n="0165a1101" resp="#resp2" type="add" target="#nkr_note_add_0165a1101">妄【CB】，忘【南傳】</note>
-<note n="0184a0201" resp="#resp3" type="add" target="#nkr_note_add_0184a0201">南傳大藏經此處註標[04]有誤，今予以修訂為[＊]。</note>
-<note n="0188a0301" resp="#resp2" type="add" target="#nkr_note_add_0188a0301">捨【CB】，拾【南傳】</note>
-<note n="0211a1201" resp="#resp2" type="add" target="#nkr_note_add_0211a1201">辦【CB】，辨【南傳】</note>
-<note n="0213a1101" resp="#resp2" type="add" target="#nkr_note_add_0213a1101">辦【CB】，辨【南傳】</note>
-<note n="0213a1102" resp="#resp2" type="add" target="#nkr_note_add_0213a1102">辦【CB】，辨【南傳】</note>
-<note n="0213a1201" resp="#resp2" type="add" target="#nkr_note_add_0213a1201">辦【CB】，辨【南傳】</note>
-<note n="0214a0101" resp="#resp2" type="add" target="#nkr_note_add_0214a0101">辦【CB】，辨【南傳】</note>
-<note n="0214a0301" resp="#resp2" type="add" target="#nkr_note_add_0214a0301">辦【CB】，辨【南傳】</note>
-<note n="0215a1201" resp="#resp2" type="add" target="#nkr_note_add_0215a1201">辦【CB】，辨【南傳】</note>
-<note n="0236a1101" resp="#resp2" type="add" target="#nkr_note_add_0236a1101">辦【CB】，辨【南傳】</note>
-<note n="0236a1201" resp="#resp2" type="add" target="#nkr_note_add_0236a1201">辦【CB】，辨【南傳】</note>
-<note n="0268a0601" resp="#resp2" type="add" target="#nkr_note_add_0268a0601">十六【CB】，第十七【南傳】</note>
-<note n="0282a0601" resp="#resp3" type="add" target="#nkr_note_add_0282a0601">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
-<note n="0289a1401" resp="#resp2" type="add" target="#nkr_note_add_0289a1401">妄【CB】，忘【南傳】</note>
-<note n="0306a1201" resp="#resp2" type="add" target="#nkr_note_add_0306a1201">辦【CB】，辨【南傳】</note>
-<note n="0318a1001" resp="#resp3" type="add" target="#nkr_note_add_0318a1001">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
-<note n="0337a1401" resp="#resp3" type="add" target="#nkr_note_add_0337a1401">南傳大藏經此處註標[17]有誤，今予以修訂為[＊]。</note>
-<note n="0342a0701" resp="#resp2" type="add" target="#nkr_note_add_0342a0701">剌【CB】，刺【南傳】</note>
-<note n="0359a1001" resp="#resp2" type="add" target="#nkr_note_add_0359a1001">賈【CB】，賣【南傳】</note>
-<note n="0363a0401" resp="#resp3" type="add" target="#nkr_note_add_0363a0401">南傳大藏經此處註標[42]有誤，今予以修訂為[＊]。</note>
+<note n="0033a0101" resp="#resp3" type="add" target="#nkr_note_add_0033a0101">裟【CB】，娑【南傳】</note>
+<note n="0077a1101" resp="#resp3" type="add" target="#nkr_note_add_0077a1101">剌【CB】，刺【南傳】</note>
+<note n="0090a1201" resp="#resp3" type="add" target="#nkr_note_add_0090a1201">幢【CB】，憧【南傳】</note>
+<note n="0165a1101" resp="#resp3" type="add" target="#nkr_note_add_0165a1101">妄【CB】，忘【南傳】</note>
+<note n="0184a0201" resp="#resp4" type="add" target="#nkr_note_add_0184a0201">南傳大藏經此處註標[04]有誤，今予以修訂為[＊]。</note>
+<note n="0188a0301" resp="#resp3" type="add" target="#nkr_note_add_0188a0301">捨【CB】，拾【南傳】</note>
+<note n="0211a1201" resp="#resp3" type="add" target="#nkr_note_add_0211a1201">辦【CB】，辨【南傳】</note>
+<note n="0213a1101" resp="#resp3" type="add" target="#nkr_note_add_0213a1101">辦【CB】，辨【南傳】</note>
+<note n="0213a1102" resp="#resp3" type="add" target="#nkr_note_add_0213a1102">辦【CB】，辨【南傳】</note>
+<note n="0213a1201" resp="#resp3" type="add" target="#nkr_note_add_0213a1201">辦【CB】，辨【南傳】</note>
+<note n="0214a0101" resp="#resp3" type="add" target="#nkr_note_add_0214a0101">辦【CB】，辨【南傳】</note>
+<note n="0214a0301" resp="#resp3" type="add" target="#nkr_note_add_0214a0301">辦【CB】，辨【南傳】</note>
+<note n="0215a1201" resp="#resp3" type="add" target="#nkr_note_add_0215a1201">辦【CB】，辨【南傳】</note>
+<note n="0236a1101" resp="#resp3" type="add" target="#nkr_note_add_0236a1101">辦【CB】，辨【南傳】</note>
+<note n="0236a1201" resp="#resp3" type="add" target="#nkr_note_add_0236a1201">辦【CB】，辨【南傳】</note>
+<note n="0268a0601" resp="#resp3" type="add" target="#nkr_note_add_0268a0601">十六【CB】，第十七【南傳】</note>
+<note n="0282a0601" resp="#resp4" type="add" target="#nkr_note_add_0282a0601">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
+<note n="0289a1401" resp="#resp3" type="add" target="#nkr_note_add_0289a1401">妄【CB】，忘【南傳】</note>
+<note n="0306a1201" resp="#resp3" type="add" target="#nkr_note_add_0306a1201">辦【CB】，辨【南傳】</note>
+<note n="0318a1001" resp="#resp4" type="add" target="#nkr_note_add_0318a1001">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
+<note n="0337a1401" resp="#resp4" type="add" target="#nkr_note_add_0337a1401">南傳大藏經此處註標[17]有誤，今予以修訂為[＊]。</note>
+<note n="0342a0701" resp="#resp3" type="add" target="#nkr_note_add_0342a0701">剌【CB】，刺【南傳】</note>
+<note n="0359a1001" resp="#resp3" type="add" target="#nkr_note_add_0359a1001">賈【CB】，賣【南傳】</note>
+<note n="0363a0401" resp="#resp4" type="add" target="#nkr_note_add_0363a0401">南傳大藏經此處註標[42]有誤，今予以修訂為[＊]。</note>
 </p>
 </cb:div>
 </back></text></TEI>

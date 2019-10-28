@@ -12,51 +12,65 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>NanChuan</name></respStmt>
 		</editionStmt>
 		<extent>2卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">50</idno>.<idno type="no">26</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 50, No. 26</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">界論</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-11-14">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -2197,41 +2211,41 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0293a0201" to="#end0293a0201"><lem wit="#wit1" resp="#resp2">己</lem><rdg wit="#wit2">已</rdg></app>
-<app from="#beg0318a1301" to="#end0318a1301"><lem wit="#wit1" resp="#resp2">涅</lem><rdg wit="#wit2">労</rdg></app>
+<app from="#beg0293a0201" to="#end0293a0201"><lem wit="#wit.cbeta" resp="#resp3">己</lem><rdg wit="#wit.orig">已</rdg></app>
+<app from="#beg0318a1301" to="#end0318a1301"><lem wit="#wit.cbeta" resp="#resp3">涅</lem><rdg wit="#wit.orig">労</rdg></app>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0295001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0295001">依此註釋而知分配法處於五蘊之時，即想示知除去含於法處中之無為法。「無為法除去蘊」者，以無為法除去蘊，分配含於無為法之法處中之無為法亦想此以示除外者。</note>
-<note n="0299001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0299001">依以上註釋之要領是與眼處共所攝於蘊之句足是眼根外之四根及五境與法（含無見無對色 cf. vibh. p. 72: 9），此等可攝於色蘊。於處，此等無與眼處共所攝之句足，於界亦然。除眼處外，僅言有關十法者，非攝於此等之句足是於蘊應是受、想、行、識之四蘊，於處應是眼處與意處，於界應是眼界與六識界、意界等之八界。</note>
-<note n="0300002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0300002">對於攝、非攝，十七界中之十界與其他之七界是如本文所示相異於蘊、處、界之攝與非攝。</note>
-<note n="0302001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0302001">眼處乃至觸處之十處中，除去色處之九處。</note>
-<note n="0302002" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0302002">法處中之色是無見無對色。</note>
-<note n="0302003" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0302003">色處與法處。</note>
-<note n="0303001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0303001">與受蘊共非攝於蘊攝，所攝於處及界攝者應是色、想、行。（但色是與五蘊之色蘊及法處、法界中之色，其內容相異，如註釋文所云。故此點嚴密缺乏）。即此等三法，蘊雖無與受共所攝於此等三法之句足，於處、界有法處、法界則起攝於此等。因此等三法是所攝於三蘊、一處、一界，他者無包攝於此等之句足。但蘊者非攝於無為法，法處、法界分配於蘊則無為法可由法處、法界中除外是理所當然。</note>
-<note n="0307001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0307001">集諦者是如雜阿含經轉法輪經所示，如愛（taṇhā），（分別論 vibhanga 擴大愛之範圍，可從 p. 108～p. 109 涉及之文知之）。註釋即以愛為行蘊所攝。所攝於行蘊者是心相應。（vibh. p. 40: 20; vism. p. 462; p. 472）在漢譯論書裡之阿毘達磨俱舍論第四，五法之行唯攝心不相應法，又，品類足論卷一，五法之行亦是心不相應法，但是另方面同品類足論第二於五蘊之行蘊與心不相應法共攝於心相應法，又見舍利弗阿毘曇論第三，於五蘊之行蘊，亦與心不相應法共攝於心相應法。今若取行蘊中之思，是與愛共攝於行蘊中，因此所攝於法處、法界而非攝於其餘者，更如行蘊中其他之法、癡、無慚是與思共攝於行蘊、法處、法界而非攝於其餘者。由此可知與愛同一句足之諸法是所攝於一蘊、一處、一界。</note>
-<note n="0308001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0308001">採納與色蘊共非攝於蘊、處、界者之識，更於採用與識共非攝於蘊、處、界者之色、受、想、行之四蘊，此等之四蘊是蘊而非攝於識之一蘊，於處此等四蘊是占有眼處乃至觸處之十色與意，且非攝於意之一處，於界即非攝於七界。</note>
-<note n="0310001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0310001">採納與受共非攝色、識，或者採用與色、識共非攝受、想、行，可得二蘊、十一處、十七界之答。</note>
-<note n="0310001-1" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0310001-1">採納與眼處共非攝色外四蘊之其一，或者採用與其中其一共非攝色蘊，則云得答色外四蘊、意、法之二處、十色界外之八處。</note>
-<note n="0311001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0311001">色蘊無相應故言無。因此，不相應者於蘊應是非色之四蘊，於處，其中之色，即眼處乃至觸處之十處者與意處不相應，且法處中除無見無對色，即與法處之一部分不相應。又於界其中之色法，即眼界乃至觸界之十界是與眼識界乃至意界之十界及法界之一部分不相應。</note>
-<note n="0316001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0316001">與受蘊相應者是想、行、識之三蘊。與此三蘊不相應者是色蘊。色蘊是蘊乃與自己以外之非色四蘊不相應，於處色即眼處乃至觸處之十處是與意處不相應，且與法處一部分之受、想、行、無為法不相應。又，於界乃其中之色即眼界乃至觸界是與眼識界乃至意界之七界及法界一部分不相應。</note>
-<note n="0317001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0317001">想參考十四之第四項，於法界中之受、想、行之各各中，是應有與眼識界相應不相應，若採用其相應，則其不相應者亦於受、想、行之各各中，又應以意識始眼識外之識及色不相應。今若將此等統一採納，應涉及五蘊、十二處之全部，於蘊、處，更於此等不相應者當無所舉。唯於界應得，舉出眼識界。尚可嚴密為一部分，受、想、行之三蘊、法處、法界之一部應舉為不相應。</note>
-<note n="0318001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0318001">與色蘊不相應者是非色之其他四蘊。今若統一採用此四蘊，其他於此四蘊無相應。因此如此無關係者之蘊、處、界相應者不予考慮。然，採用與色不相應之無為法而非色之四蘊者，色是同樣與無為法不相應。</note>
-<note n="0319001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0319001">與受蘊相應者，因為是想、行、識。故若採用其中之想，或亦採納與想相應之行，則行對於蘊是與受、想、行之三蘊相應，對於處乃與意處相應，法處之一部分即其中之受、想相應，對於界是與眼識界乃至意界之七界及法界之一部分相應。對想、行亦可同樣得論之。註釋者異於採用蘊之法而以反覆採用受。</note>
-<note n="0321001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0321001">若按照註釋，與色蘊不相應者是其他之四蘊。與此等四蘊不相應是色蘊，此色蘊與四蘊不相應，與意處、法處之一部分不相應，與眼識界乃至意界之七界及法界之一部不相應。</note>
-<note n="0322001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0322001">集諦即愛（愛是行蘊之所攝者，說明於四、一之註處）共所攝於蘊者，乃如應屬於行蘊之尋伺等，此等於處、界愛共為所攝於法處、法界。此之尋伺等，與非色四蘊中行蘊外之三相應，於處則與意處相應，又言與法處之一部分相應，又，於界與眼識界乃至意界之七界及法界之一部分相應。所謂與一蘊之一部分相應，是行蘊中本身以外之諸法。又，不相應為色之一蘊、眼處乃至觸處之十處、法處之一部分即無見無對色、無為法，又應為眼界乃至觸界之十法與法處之一部分。</note>
-<note n="0323001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0323001">若按照註釋，與受相應之想、行、識是分攝於三蘊，於處則所攝意、法之二處，於界則所攝於眼識界乃至意界之七界及法界等之八界。</note>
-<note n="0324001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0324001">若按照註釋，採用識蘊者，識蘊與色蘊共非攝於蘊、處、界之攝。而識蘊是蘊，與受、想、行之三蘊相應，於處是法處之一部分，即所攝於法處中之受、想、行相應，又於界則與其中之識，即眼識界乃至意界之七界及法界之一部分相應。又，其不相應之蘊是與色蘊之一蘊不相應，於處是與眼處乃至觸處之十處及法處之一部分所攝於其中之無為法、無見無對色不相應。於界則與眼界乃至觸界之十界以及法界中之一部分不相應。</note>
-<note n="0325001" resp="#resp3" place="foot text" type="orig" target="#nkr_note_orig_0325001">與色蘊不相應者，於蘊則是受、想、行、識之四蘊，與此色蘊不相應此等之法是除無為法而外應攝於非色之四蘊，於處其色不相應於眼處乃至觸處之十處之法，應攝於意、法之二處，又於界則不相應於其色，即眼界乃至觸界十界之諸法是應攝於眼識界乃至意界、法界之八界，其非攝之句足應是色蘊之一蘊、眼處乃至觸處之十處、眼界乃至觸界之十界。章末之攝頌是不相應之對象，以舉不適當者乃註釋所指示之處。</note>
+<note n="0295001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0295001">依此註釋而知分配法處於五蘊之時，即想示知除去含於法處中之無為法。「無為法除去蘊」者，以無為法除去蘊，分配含於無為法之法處中之無為法亦想此以示除外者。</note>
+<note n="0299001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0299001">依以上註釋之要領是與眼處共所攝於蘊之句足是眼根外之四根及五境與法（含無見無對色 cf. vibh. p. 72: 9），此等可攝於色蘊。於處，此等無與眼處共所攝之句足，於界亦然。除眼處外，僅言有關十法者，非攝於此等之句足是於蘊應是受、想、行、識之四蘊，於處應是眼處與意處，於界應是眼界與六識界、意界等之八界。</note>
+<note n="0300002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0300002">對於攝、非攝，十七界中之十界與其他之七界是如本文所示相異於蘊、處、界之攝與非攝。</note>
+<note n="0302001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0302001">眼處乃至觸處之十處中，除去色處之九處。</note>
+<note n="0302002" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0302002">法處中之色是無見無對色。</note>
+<note n="0302003" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0302003">色處與法處。</note>
+<note n="0303001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0303001">與受蘊共非攝於蘊攝，所攝於處及界攝者應是色、想、行。（但色是與五蘊之色蘊及法處、法界中之色，其內容相異，如註釋文所云。故此點嚴密缺乏）。即此等三法，蘊雖無與受共所攝於此等三法之句足，於處、界有法處、法界則起攝於此等。因此等三法是所攝於三蘊、一處、一界，他者無包攝於此等之句足。但蘊者非攝於無為法，法處、法界分配於蘊則無為法可由法處、法界中除外是理所當然。</note>
+<note n="0307001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0307001">集諦者是如雜阿含經轉法輪經所示，如愛（taṇhā），（分別論 vibhanga 擴大愛之範圍，可從 p. 108～p. 109 涉及之文知之）。註釋即以愛為行蘊所攝。所攝於行蘊者是心相應。（vibh. p. 40: 20; vism. p. 462; p. 472）在漢譯論書裡之阿毘達磨俱舍論第四，五法之行唯攝心不相應法，又，品類足論卷一，五法之行亦是心不相應法，但是另方面同品類足論第二於五蘊之行蘊與心不相應法共攝於心相應法，又見舍利弗阿毘曇論第三，於五蘊之行蘊，亦與心不相應法共攝於心相應法。今若取行蘊中之思，是與愛共攝於行蘊中，因此所攝於法處、法界而非攝於其餘者，更如行蘊中其他之法、癡、無慚是與思共攝於行蘊、法處、法界而非攝於其餘者。由此可知與愛同一句足之諸法是所攝於一蘊、一處、一界。</note>
+<note n="0308001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0308001">採納與色蘊共非攝於蘊、處、界者之識，更於採用與識共非攝於蘊、處、界者之色、受、想、行之四蘊，此等之四蘊是蘊而非攝於識之一蘊，於處此等四蘊是占有眼處乃至觸處之十色與意，且非攝於意之一處，於界即非攝於七界。</note>
+<note n="0310001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0310001">採納與受共非攝色、識，或者採用與色、識共非攝受、想、行，可得二蘊、十一處、十七界之答。</note>
+<note n="0310001-1" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0310001-1">採納與眼處共非攝色外四蘊之其一，或者採用與其中其一共非攝色蘊，則云得答色外四蘊、意、法之二處、十色界外之八處。</note>
+<note n="0311001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0311001">色蘊無相應故言無。因此，不相應者於蘊應是非色之四蘊，於處，其中之色，即眼處乃至觸處之十處者與意處不相應，且法處中除無見無對色，即與法處之一部分不相應。又於界其中之色法，即眼界乃至觸界之十界是與眼識界乃至意界之十界及法界之一部分不相應。</note>
+<note n="0316001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0316001">與受蘊相應者是想、行、識之三蘊。與此三蘊不相應者是色蘊。色蘊是蘊乃與自己以外之非色四蘊不相應，於處色即眼處乃至觸處之十處是與意處不相應，且與法處一部分之受、想、行、無為法不相應。又，於界乃其中之色即眼界乃至觸界是與眼識界乃至意界之七界及法界一部分不相應。</note>
+<note n="0317001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0317001">想參考十四之第四項，於法界中之受、想、行之各各中，是應有與眼識界相應不相應，若採用其相應，則其不相應者亦於受、想、行之各各中，又應以意識始眼識外之識及色不相應。今若將此等統一採納，應涉及五蘊、十二處之全部，於蘊、處，更於此等不相應者當無所舉。唯於界應得，舉出眼識界。尚可嚴密為一部分，受、想、行之三蘊、法處、法界之一部應舉為不相應。</note>
+<note n="0318001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0318001">與色蘊不相應者是非色之其他四蘊。今若統一採用此四蘊，其他於此四蘊無相應。因此如此無關係者之蘊、處、界相應者不予考慮。然，採用與色不相應之無為法而非色之四蘊者，色是同樣與無為法不相應。</note>
+<note n="0319001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0319001">與受蘊相應者，因為是想、行、識。故若採用其中之想，或亦採納與想相應之行，則行對於蘊是與受、想、行之三蘊相應，對於處乃與意處相應，法處之一部分即其中之受、想相應，對於界是與眼識界乃至意界之七界及法界之一部分相應。對想、行亦可同樣得論之。註釋者異於採用蘊之法而以反覆採用受。</note>
+<note n="0321001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0321001">若按照註釋，與色蘊不相應者是其他之四蘊。與此等四蘊不相應是色蘊，此色蘊與四蘊不相應，與意處、法處之一部分不相應，與眼識界乃至意界之七界及法界之一部不相應。</note>
+<note n="0322001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0322001">集諦即愛（愛是行蘊之所攝者，說明於四、一之註處）共所攝於蘊者，乃如應屬於行蘊之尋伺等，此等於處、界愛共為所攝於法處、法界。此之尋伺等，與非色四蘊中行蘊外之三相應，於處則與意處相應，又言與法處之一部分相應，又，於界與眼識界乃至意界之七界及法界之一部分相應。所謂與一蘊之一部分相應，是行蘊中本身以外之諸法。又，不相應為色之一蘊、眼處乃至觸處之十處、法處之一部分即無見無對色、無為法，又應為眼界乃至觸界之十法與法處之一部分。</note>
+<note n="0323001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0323001">若按照註釋，與受相應之想、行、識是分攝於三蘊，於處則所攝意、法之二處，於界則所攝於眼識界乃至意界之七界及法界等之八界。</note>
+<note n="0324001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0324001">若按照註釋，採用識蘊者，識蘊與色蘊共非攝於蘊、處、界之攝。而識蘊是蘊，與受、想、行之三蘊相應，於處是法處之一部分，即所攝於法處中之受、想、行相應，又於界則與其中之識，即眼識界乃至意界之七界及法界之一部分相應。又，其不相應之蘊是與色蘊之一蘊不相應，於處是與眼處乃至觸處之十處及法處之一部分所攝於其中之無為法、無見無對色不相應。於界則與眼界乃至觸界之十界以及法界中之一部分不相應。</note>
+<note n="0325001" resp="#resp4" place="foot text" type="orig" target="#nkr_note_orig_0325001">與色蘊不相應者，於蘊則是受、想、行、識之四蘊，與此色蘊不相應此等之法是除無為法而外應攝於非色之四蘊，於處其色不相應於眼處乃至觸處之十處之法，應攝於意、法之二處，又於界則不相應於其色，即眼界乃至觸界十界之諸法是應攝於眼識界乃至意界、法界之八界，其非攝之句足應是色蘊之一蘊、眼處乃至觸處之十處、眼界乃至觸界之十界。章末之攝頌是不相應之對象，以舉不適當者乃註釋所指示之處。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0293a0201" resp="#resp1" type="add" target="#nkr_note_add_0293a0201">己【CB】，已【南傳】</note>
-<note n="0318a1301" resp="#resp1" type="add" target="#nkr_note_add_0318a1301">涅【CB】，労【南傳】</note>
+<note n="0293a0201" resp="#resp2" type="add" target="#nkr_note_add_0293a0201">己【CB】，已【南傳】</note>
+<note n="0318a1301" resp="#resp2" type="add" target="#nkr_note_add_0318a1301">涅【CB】，労【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

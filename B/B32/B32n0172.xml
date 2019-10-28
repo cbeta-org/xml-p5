@@ -12,60 +12,74 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>2卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">32</idno>.<idno type="no">172</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 32, No. 172</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">出定後語</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB26468">
-	<charName>CBETA CHARACTER CB26468</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[少/(兔-、)]</value>
-	</charProp>
-	<mapping cb:dec="1009508" type="PUA">U+F6764</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB26468">
+				<charName>CBETA CHARACTER CB26468</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[少/(兔-、)]</value>
+				</charProp>
+				<mapping cb:dec="1009508" type="PUA">U+F6764</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2016-04-06">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1106,29 +1120,29 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0105a0401" to="#end0105a0401"><lem wit="#wit1" resp="#resp2">閒</lem><rdg wit="#wit2">間</rdg></app>
-<app from="#beg0105a0402" to="#end0105a0402"><lem wit="#wit1" resp="#resp2">閒</lem><rdg wit="#wit2">間</rdg></app>
-<app from="#beg0112a0801" to="#end0112a0801"><lem wit="#wit1" resp="#resp2">波</lem><rdg wit="#wit2">婆</rdg></app>
-<app from="#beg0132a0801" to="#end0132a0801"><lem wit="#wit1" resp="#resp2">徧</lem><rdg wit="#wit2">偏</rdg></app>
-<app from="#beg0132a0802" to="#end0132a0802"><lem wit="#wit1" resp="#resp2">徧</lem><rdg wit="#wit2">偏</rdg></app>
-<app from="#beg0132a1201" to="#end0132a1201"><lem wit="#wit1" resp="#resp2">剌</lem><rdg wit="#wit2">刺</rdg></app>
-<app from="#beg0151a1301" to="#end0151a1301"><lem wit="#wit1" resp="#resp2">祆</lem><rdg wit="#wit2">祅</rdg></app>
-<app from="#beg0153a0801" to="#end0153a0801"><lem wit="#wit1" resp="#resp2">戌</lem><rdg wit="#wit2">戍</rdg></app>
-<app from="#beg0164a0901" to="#end0164a0901"><lem wit="#wit1" resp="#resp2">徧</lem><rdg wit="#wit2">偏</rdg></app>
+<app from="#beg0105a0401" to="#end0105a0401"><lem wit="#wit.cbeta" resp="#resp3">閒</lem><rdg wit="#wit.orig">間</rdg></app>
+<app from="#beg0105a0402" to="#end0105a0402"><lem wit="#wit.cbeta" resp="#resp3">閒</lem><rdg wit="#wit.orig">間</rdg></app>
+<app from="#beg0112a0801" to="#end0112a0801"><lem wit="#wit.cbeta" resp="#resp3">波</lem><rdg wit="#wit.orig">婆</rdg></app>
+<app from="#beg0132a0801" to="#end0132a0801"><lem wit="#wit.cbeta" resp="#resp3">徧</lem><rdg wit="#wit.orig">偏</rdg></app>
+<app from="#beg0132a0802" to="#end0132a0802"><lem wit="#wit.cbeta" resp="#resp3">徧</lem><rdg wit="#wit.orig">偏</rdg></app>
+<app from="#beg0132a1201" to="#end0132a1201"><lem wit="#wit.cbeta" resp="#resp3">剌</lem><rdg wit="#wit.orig">刺</rdg></app>
+<app from="#beg0151a1301" to="#end0151a1301"><lem wit="#wit.cbeta" resp="#resp3">祆</lem><rdg wit="#wit.orig">祅</rdg></app>
+<app from="#beg0153a0801" to="#end0153a0801"><lem wit="#wit.cbeta" resp="#resp3">戌</lem><rdg wit="#wit.orig">戍</rdg></app>
+<app from="#beg0164a0901" to="#end0164a0901"><lem wit="#wit.cbeta" resp="#resp3">徧</lem><rdg wit="#wit.orig">偏</rdg></app>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0105a0401" resp="#resp1" type="add" target="#nkr_note_add_0105a0401">閒【CB】，間【補編】</note>
-<note n="0105a0402" resp="#resp1" type="add" target="#nkr_note_add_0105a0402">閒【CB】，間【補編】</note>
-<note n="0112a0801" resp="#resp1" type="add" target="#nkr_note_add_0112a0801">波【CB】，婆【補編】</note>
-<note n="0132a0801" resp="#resp1" type="add" target="#nkr_note_add_0132a0801">徧【CB】，偏【補編】</note>
-<note n="0132a0802" resp="#resp1" type="add" target="#nkr_note_add_0132a0802">徧【CB】，偏【補編】</note>
-<note n="0132a1201" resp="#resp1" type="add" target="#nkr_note_add_0132a1201">剌【CB】，刺【補編】</note>
-<note n="0151a1301" resp="#resp1" type="add" target="#nkr_note_add_0151a1301">祆【CB】，祅【補編】</note>
-<note n="0153a0801" resp="#resp1" type="add" target="#nkr_note_add_0153a0801">戌【CB】，戍【補編】</note>
-<note n="0164a0901" resp="#resp1" type="add" target="#nkr_note_add_0164a0901">徧【CB】，偏【補編】</note>
+<note n="0105a0401" resp="#resp2" type="add" target="#nkr_note_add_0105a0401">閒【CB】，間【補編】</note>
+<note n="0105a0402" resp="#resp2" type="add" target="#nkr_note_add_0105a0402">閒【CB】，間【補編】</note>
+<note n="0112a0801" resp="#resp2" type="add" target="#nkr_note_add_0112a0801">波【CB】，婆【補編】</note>
+<note n="0132a0801" resp="#resp2" type="add" target="#nkr_note_add_0132a0801">徧【CB】，偏【補編】</note>
+<note n="0132a0802" resp="#resp2" type="add" target="#nkr_note_add_0132a0802">徧【CB】，偏【補編】</note>
+<note n="0132a1201" resp="#resp2" type="add" target="#nkr_note_add_0132a1201">剌【CB】，刺【補編】</note>
+<note n="0151a1301" resp="#resp2" type="add" target="#nkr_note_add_0151a1301">祆【CB】，祅【補編】</note>
+<note n="0153a0801" resp="#resp2" type="add" target="#nkr_note_add_0153a0801">戌【CB】，戍【補編】</note>
+<note n="0164a0901" resp="#resp2" type="add" target="#nkr_note_add_0164a0901">徧【CB】，偏【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

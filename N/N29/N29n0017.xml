@@ -12,79 +12,93 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>39卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">29</idno>.<idno type="no">17</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 29, No. 17</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">譬喻經(第1卷-第39卷)</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00416">
-	<charName>CBETA CHARACTER CB00416</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[竺-二+帚]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>帚</value>
-	</charProp>
-	<mapping type="normal_unicode">U+7B92</mapping>
-	<mapping cb:dec="983456" type="PUA">U+F01A0</mapping>
-</char>
-<char xml:id="CB32761">
-	<charName>CBETA CHARACTER CB32761</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[跳-兆+契]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>跇</value>
-	</charProp>
-	<mapping type="unicode">U+280B0</mapping>
-	<mapping cb:dec="1015801" type="PUA">U+F7FF9</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00416">
+				<charName>CBETA CHARACTER CB00416</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[竺-二+帚]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>帚</value>
+				</charProp>
+				<mapping type="normal_unicode">U+7B92</mapping>
+				<mapping cb:dec="983456" type="PUA">U+F01A0</mapping>
+			</char>
+			<char xml:id="CB32761">
+				<charName>CBETA CHARACTER CB32761</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[跳-兆+契]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>跇</value>
+				</charProp>
+				<mapping type="unicode">U+280B0</mapping>
+				<mapping cb:dec="1015801" type="PUA">U+F7FF9</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-10-02">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -6864,689 +6878,689 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0001a1001" to="#end0001a1001"><lem wit="#wit1" resp="#resp3">波</lem><rdg wit="#wit2">婆</rdg></app>
-<app from="#beg0003a0901" to="#end0003a0901"><lem wit="#wit1" resp="#resp3">趺</lem><rdg wit="#wit2">跌</rdg></app>
-<app from="#beg0004a0401" to="#end0004a0401"><lem wit="#wit1" resp="#resp3">撒</lem><rdg wit="#wit2">撤</rdg></app>
-<app from="#beg0009a0201" to="#end0009a0201"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">己</rdg></app>
-<app from="#beg0015a0101" to="#end0015a0101"><lem wit="#wit1" resp="#resp3">蜒</lem><rdg wit="#wit2">蜓</rdg></app>
-<app from="#beg0024a0301" to="#end0024a0301"><lem wit="#wit1" resp="#resp3">豐</lem><rdg wit="#wit2">豊</rdg></app>
-<app from="#beg0048a0401" to="#end0048a0401"><lem wit="#wit1" resp="#resp3">刺</lem><rdg wit="#wit2">剌</rdg></app>
-<app from="#beg0048a0501" to="#end0048a0501"><lem wit="#wit1" resp="#resp3">刺</lem><rdg wit="#wit2">剌</rdg></app>
-<app from="#beg0116a1201" to="#end0116a1201"><lem wit="#wit1" resp="#resp3">祛</lem><rdg wit="#wit2">袪</rdg></app>
-<app from="#beg0123a1001" to="#end0123a1001"><lem wit="#wit1" resp="#resp3">蓖</lem><rdg wit="#wit2">菎</rdg></app>
-<app from="#beg0309a0801" to="#end0309a0801"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0313a1201" to="#end0313a1201"><lem wit="#wit1" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit2">[01]</rdg></app>
-<app from="#beg0328a1201" to="#end0328a1201"><lem wit="#wit1" resp="#resp3">鍛</lem><rdg wit="#wit2">鍜</rdg></app>
-<app from="#beg0369a0601" to="#end0369a0601"><lem wit="#wit1" resp="#resp3">祛</lem><rdg wit="#wit2">袪</rdg></app>
-<app from="#beg0377a0101" to="#end0377a0101"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">己</rdg></app>
-<app from="#beg0387a0301" to="#end0387a0301"><lem wit="#wit1" resp="#resp3">祛</lem><rdg wit="#wit2">袪</rdg></app>
-<app from="#beg0392a0501" to="#end0392a0501"><lem wit="#wit1" resp="#resp3">輻</lem><rdg wit="#wit2">幅</rdg></app>
-<app from="#beg0416a0601" to="#end0416a0601"><lem wit="#wit1" resp="#resp3">鍛</lem><rdg wit="#wit2">鍜</rdg></app>
+<app from="#beg0001a1001" to="#end0001a1001"><lem wit="#wit.cbeta" resp="#resp4">波</lem><rdg wit="#wit.orig">婆</rdg></app>
+<app from="#beg0003a0901" to="#end0003a0901"><lem wit="#wit.cbeta" resp="#resp4">趺</lem><rdg wit="#wit.orig">跌</rdg></app>
+<app from="#beg0004a0401" to="#end0004a0401"><lem wit="#wit.cbeta" resp="#resp4">撒</lem><rdg wit="#wit.orig">撤</rdg></app>
+<app from="#beg0009a0201" to="#end0009a0201"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">己</rdg></app>
+<app from="#beg0015a0101" to="#end0015a0101"><lem wit="#wit.cbeta" resp="#resp4">蜒</lem><rdg wit="#wit.orig">蜓</rdg></app>
+<app from="#beg0024a0301" to="#end0024a0301"><lem wit="#wit.cbeta" resp="#resp4">豐</lem><rdg wit="#wit.orig">豊</rdg></app>
+<app from="#beg0048a0401" to="#end0048a0401"><lem wit="#wit.cbeta" resp="#resp4">刺</lem><rdg wit="#wit.orig">剌</rdg></app>
+<app from="#beg0048a0501" to="#end0048a0501"><lem wit="#wit.cbeta" resp="#resp4">刺</lem><rdg wit="#wit.orig">剌</rdg></app>
+<app from="#beg0116a1201" to="#end0116a1201"><lem wit="#wit.cbeta" resp="#resp4">祛</lem><rdg wit="#wit.orig">袪</rdg></app>
+<app from="#beg0123a1001" to="#end0123a1001"><lem wit="#wit.cbeta" resp="#resp4">蓖</lem><rdg wit="#wit.orig">菎</rdg></app>
+<app from="#beg0309a0801" to="#end0309a0801"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0313a1201" to="#end0313a1201"><lem wit="#wit.cbeta" resp="#resp4"><space quantity="0"/></lem><rdg wit="#wit.orig">[01]</rdg></app>
+<app from="#beg0328a1201" to="#end0328a1201"><lem wit="#wit.cbeta" resp="#resp4">鍛</lem><rdg wit="#wit.orig">鍜</rdg></app>
+<app from="#beg0369a0601" to="#end0369a0601"><lem wit="#wit.cbeta" resp="#resp4">祛</lem><rdg wit="#wit.orig">袪</rdg></app>
+<app from="#beg0377a0101" to="#end0377a0101"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">己</rdg></app>
+<app from="#beg0387a0301" to="#end0387a0301"><lem wit="#wit.cbeta" resp="#resp4">祛</lem><rdg wit="#wit.orig">袪</rdg></app>
+<app from="#beg0392a0501" to="#end0392a0501"><lem wit="#wit.cbeta" resp="#resp4">輻</lem><rdg wit="#wit.orig">幅</rdg></app>
+<app from="#beg0416a0601" to="#end0416a0601"><lem wit="#wit.cbeta" resp="#resp4">鍛</lem><rdg wit="#wit.orig">鍜</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0040005" resp="#resp2" type="mod" target="#nkr_note_mod_0040005">Rammaka 譯為美好。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[05]，今於此處加上[05]之註標。）</note>
-<note n="0076001" resp="#resp2" type="mod" target="#nkr_note_mod_0076001">āthabbaṇo sahatthipo 此二語亦見於 Jātaka, VI, P. 490。前者註為具象之醫（Sahatthiejja），後者就五百家之象師使象之故（hatthimeṇḍa-hatthigop ka），作如是之解釋。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與[02]錯置，故今將此處的[02]註標修訂成[01]註標。）</note>
-<note n="0076002" resp="#resp2" type="mod" target="#nkr_note_mod_0076002">讀為 etacchattopasobhito（異本）。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與[02]錯置，故今將此處的[01]註標修訂成[02]註標。）</note>
-<note n="0111001" resp="#resp2" type="mod" target="#nkr_note_mod_0111001">過去七佛之第二佛、過去二十四佛之第二十佛。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0261003" resp="#resp2" type="mod" target="#nkr_note_mod_0261003">Sayampabha（自照）。（CBETA 按：漢譯南傳大藏經此頁對應之註標[02]與章節校注內容不符，故今將此處的[02]註標修訂成[03]註標。）</note>
-<note n="0330001-1" resp="#resp2" type="mod" target="#nkr_note_mod_0330001-1">過去二十四佛中不見有此佛之名。諒係辟友佛名。參閱第三五三之第二偈。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0351001" resp="#resp2" type="mod" target="#nkr_note_mod_0351001">Mahāsindhu（大信度）河名。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0356001" resp="#resp2" type="mod" target="#nkr_note_mod_0356001">Saparivara（具隨眾）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0406003" resp="#resp2" type="mod" target="#nkr_note_mod_0406003">Sattapatta（七葉）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0040005" resp="#resp3" type="mod" target="#nkr_note_mod_0040005">Rammaka 譯為美好。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[05]，今於此處加上[05]之註標。）</note>
+<note n="0076001" resp="#resp3" type="mod" target="#nkr_note_mod_0076001">āthabbaṇo sahatthipo 此二語亦見於 Jātaka, VI, P. 490。前者註為具象之醫（Sahatthiejja），後者就五百家之象師使象之故（hatthimeṇḍa-hatthigop ka），作如是之解釋。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與[02]錯置，故今將此處的[02]註標修訂成[01]註標。）</note>
+<note n="0076002" resp="#resp3" type="mod" target="#nkr_note_mod_0076002">讀為 etacchattopasobhito（異本）。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與[02]錯置，故今將此處的[01]註標修訂成[02]註標。）</note>
+<note n="0111001" resp="#resp3" type="mod" target="#nkr_note_mod_0111001">過去七佛之第二佛、過去二十四佛之第二十佛。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0261003" resp="#resp3" type="mod" target="#nkr_note_mod_0261003">Sayampabha（自照）。（CBETA 按：漢譯南傳大藏經此頁對應之註標[02]與章節校注內容不符，故今將此處的[02]註標修訂成[03]註標。）</note>
+<note n="0330001-1" resp="#resp3" type="mod" target="#nkr_note_mod_0330001-1">過去二十四佛中不見有此佛之名。諒係辟友佛名。參閱第三五三之第二偈。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0351001" resp="#resp3" type="mod" target="#nkr_note_mod_0351001">Mahāsindhu（大信度）河名。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0356001" resp="#resp3" type="mod" target="#nkr_note_mod_0356001">Saparivara（具隨眾）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0406003" resp="#resp3" type="mod" target="#nkr_note_mod_0406003">Sattapatta（七葉）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0001001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001001">暹羅本中在此之前有 triṣṭubh 調之三偈，此與辟支佛之譬喻情形相同，為佛應阿難之問（在此就一切知之諸佛者，如何……問）所說。又在此一偈之前半，暹羅本中有：「過去諸佛前，吾希得佛位」，以下相同。</note>
-<note n="0002002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002002">讀為 ganhāvelā（暹羅本）。</note>
-<note n="0002003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002003">讀為 samcitta（暹羅本）。</note>
-<note n="0002004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002004">欽婆羅（kambala），毛織衣之一種。</note>
-<note n="0002005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002005">黃麻（dnkūla），以此種植物之纖維所織成之柔軟之衣。</note>
-<note n="0002006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002006">支那（cīna），指支那產之衣（cīnāṁsuka）。</note>
-<note n="0002007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002007">原語 Paṇḍu 橙色。</note>
-<note n="0003008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0003008">神樹與任何欲求之物。此處指所謂衣樹。與欲求之衣。</note>
-<note n="0003009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0003009">原語解為 samāhitvā。</note>
-<note n="0004010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0004010">香之五指印（gandha-Pañcangulika）開浸香油之掌捺印，印成掌形之一種善緣起之手印。</note>
-<note n="0006011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006011">以下為十波羅蜜，即：布施、戒、出離、智慧、精進、忍、真諦、加持、慈、捨。</note>
-<note n="0008001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0008001">鞞提訶牟尼為阿難陀之異名。</note>
-<note n="0008002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0008002">那丹伽（nataṅga）意義不明，應為說明阿難陀之語。</note>
-<note n="0009003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0009003">自第九偈以下至第四十九偈見 Sutta-nipāta, khaggavisāṇasutta VV. 35-75（南傳藏卷二四）。但彼此多少有所不同。</note>
-<note n="0010004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010004">此與 Sutta-nipāta 語之順序不同。</note>
-<note n="0010005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010005">黑檀之一種。</note>
-<note n="0010006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010006">在 Sañchinna Sutta-nipāta 中為 Saṁsīna（落去）之意。</note>
-<note n="0010007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010007">此一句與 Sutta-nipāta 不同。</note>
-<note n="0010008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010008">二腕環相擊，如成為一則無此事。為獎勵獨住。Cf, jātaka VI, P. 64。</note>
-<note n="0010009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010009">訂正為 ḍaṁsa。</note>
-<note n="0010010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010010">波羅奈之一王子雖欲出家，但內外皆有障礙，只以外形如出家者住於王苑。於香醉山中之難陀姆羅伽（Nandamūlaka）坡，謂一日種（Ādicea-bandhu）辟支佛觀察王子為不得出家，來至王苑而說此前半之偈，教以出家之法（Sn. A. I, P. 103-105）。</note>
-<note n="0011011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0011011">毒之箭 Kaṇḍa 在 Sutta-nipāta 中為有鈎（gaḷa）之箭。</note>
-<note n="0011012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0011012">晝度樹三十三天中之大樹，又譯為梯沽樹、圓生樹等。</note>
-<note n="0012013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0012013">道支菩提分，為八正道、三十七菩提分各支到達之義。</note>
-<note n="0016001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016001">菴婆樹，讀為 ambagaṇḍi（暹羅本）。</note>
-<note n="0016002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016002">讀為 Uttrā hi（暹羅本）。</note>
-<note n="0016003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016003">讀為 Jalajā（異本）。</note>
-<note n="0016004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016004">大蛇，原意食羊之物。</note>
-<note n="0016005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016005">鳩。</note>
-<note n="0016006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016006">鵞之一種。</note>
-<note n="0016007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016007">譯為好聲鳥，印度之郭公鳥。</note>
-<note n="0016008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016008">鸚鵡。</note>
-<note n="0016009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016009">譯為鷲鷺（Sāri），或係鶇鳥。</note>
-<note n="0016010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016010">Jātaka VI, P. 540 解為蟹，此處可視作鳥名。</note>
-<note n="0016011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0016011">鶴之屬。</note>
-<note n="0017012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017012">鳥名，得解作鸚鵡雛鳥之意。</note>
-<note n="0017013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017013">赤銅色螺髻之意。</note>
-<note n="0017014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017014">譯為共命鳥。</note>
-<note n="0017015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017015">或係鳥名，原意為大黑。</note>
-<note n="0017016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017016">暹羅本為 Pasadā migā varāhā ca。</note>
-<note n="0017017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017017">鹿之一種，Jātaka, VI, P, 537 中解作 sarabhamiga。</note>
-<note n="0017018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017018">發情期之象，謂其身體表現三處發情之兆，是為象之最狂暴時期。</note>
-<note n="0017019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017019">五藥之一，譯為天主將來。</note>
-<note n="0017020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017020">藥用植物，譯為餘甘子。</note>
-<note n="0017021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017021">藥用植物。</note>
-<note n="0018022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018022">Vilva 樹之果。</note>
-<note n="0018023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018023">以下皆為植物之名。</note>
-<note n="0018024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018024">前半之偈出於 Sutta-nipāta V, 1020。</note>
-<note n="0018025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018025">paṭhavya 之意，暹羅本為 paṭhavyā bhummantalikkle。</note>
-<note n="0019026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019026">仙者依神通使其定量之負荷（一加利之重量）先行，自己則隨後而行。</note>
-<note n="0019027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019027">讀為 asmanā（暹羅本）。</note>
-<note n="0019028" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019028">讀為 Koṭṭitā（異本）。</note>
-<note n="0020029" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0020029">devatā 廣義為一切之神，然此處為狹義與那伽，乾闥婆同列舉為藥叉之意。</note>
-<note n="0021030" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0021030">過去二十四佛之第四佛。Buddhavaṁsa, P. 29; Jātaka I, P. 35。</note>
-<note n="0021031" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0021031">青睡蓮之類。</note>
-<note n="0023032" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0023032">意指「人中之長」。</note>
-<note n="0024033" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0024033">原文此處為述轉輪王，而於次之一〇九偈應述為神王之意。然此乃依文意所見。如後之再出，則更換轉輪王為適宜。</note>
-<note n="0024034" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0024034">Sāriputta 之 Sārī 為鶖鷺子之意。</note>
-<note n="0024035" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0024035">讀為 Sakko tīsu visārado（暹羅本）。</note>
-<note n="0026036" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0026036">譯為「馬勝」，為佛初轉法輪時，最初受教化五比丘之一。</note>
-<note n="0027037" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0027037">指摩訶目犍連。</note>
-<note n="0028038" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0028038">摩訶目犍連最初與舍利弗同為刪闍耶之弟子。</note>
-<note n="0030039" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030039">caitra（制恒羅）月之異稱，約當春三月。</note>
-<note n="0030040" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030040">讀為 Pupphito（暹羅本）。</note>
-<note n="0031041" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031041">圍繞世界一周之鐵圍山。</note>
-<note n="0031042" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031042">讀為 Sukhito（異本）。</note>
-<note n="0032043" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0032043">貪瞋癡之三火。</note>
-<note n="0032044" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0032044">訂正為 uddhaṭaviso。</note>
-<note n="0033045" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0033045">DhP. A. IV, P. 150 中，舍利弗向其師阿說示尊者所居之方禮拜，足不向彼而寢。</note>
-<note n="0033046" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0033046">訂正為 Sāranan ti。</note>
-<note n="0038001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0038001">今生之死期亦目標被切頭而死之意。目犍連遭執杖梵志之襲擊而被殺。增一阿含卷一八、二六、九（大正藏二、六三九頁）鼻奈耶卷二（大正藏二四、八五七頁）、DhP. A. III, P. 95f。</note>
-<note n="0039001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0039001">譯為蓮華上佛。過去二十四佛之第十佛。Buddhavaṁsa. P. 35. Jātaka. I, P. 37。</note>
-<note n="0040002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040002">此處為舍利塔（thūpa）之意。</note>
-<note n="0040003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040003">讀為 Pabhāsayuṁ（暹羅本）。</note>
-<note n="0040004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040004">轉輪王（Ubbiddha）一譯為高聳。</note>
-<note n="0040005" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0040005">Rammaka 譯為美好。</note>
-<note n="0041006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0041006">讀為 hiraññassa（暹羅本）。</note>
-<note n="0042001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0042001">譯為善慧，過去二十四佛之第十一佛。Buddhavaṁsa, P. 37。</note>
-<note n="0044001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044001">此處所謂之論事（Kathāvatthu）是否為現存論藏中之論事頗為疑問。此論事可作普通名詞解。</note>
-<note n="0044002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044002">善說（Suppakāsaka）。</note>
-<note n="0044001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044001-1">Haṁsavatī（鵞市）。</note>
-<note n="0044002-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044002-1">Sujāta（善生）。</note>
-<note n="0045003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045003">Haṁsavhaya 即漢薩瓦提（鵞市）。</note>
-<note n="0045004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045004">Sunanda（善喜）。</note>
-<note n="0045005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045005">maṇḍapa 為祭日等一時所建之假屋，為無壁只有屋頂之大廳。</note>
-<note n="0045006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045006">訂正為 bhavesu saṁsarissati。</note>
-<note n="0045007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045007">讀為 bhāsayanto（異本）。</note>
-<note n="0046008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0046008">Sobhaṇa（輝映）。</note>
-<note n="0049009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0049009">讀為 Sati。</note>
-<note n="0049010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0049010">鶴依雷鳴而受胎。jātaka II, P. 363。</note>
-<note n="0050011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0050011">讀為 athâppaṇihitam（異本）。</note>
-<note n="0050012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0050012">rūpadakkha 造形巧妙者之原義。此尚關聯由第七十九偈至第八十三偈。Milindapañha P. 344 參照。</note>
-<note n="0052013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052013">神通第一之摩訶目犍連。拘離多乃其名（以前已述）。</note>
-<note n="0052014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052014">指頭陀第一之摩訶迦葉。</note>
-<note n="0052015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052015">從邏羅本讀為 vimaye kathitaṁ ssbbaṁ。</note>
-<note n="0052016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052016">Añjasa（直路）。</note>
-<note n="0052017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052017">Candana（栴檀）。</note>
-<note n="0053018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0053018">Sirika（吉祥）。</note>
-<note n="0053019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0053019">Devala（執天），此佛之名不詳。若視為巴多穆塔拉佛之第一弟子，則其為佛實不可解。</note>
-<note n="0053020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0053020">Sumekhala（善帶）。</note>
-<note n="0054021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054021">阿修羅之一種，為（Danu）之子。cf, jataka V, P. 393; Milindapañha P .153。</note>
-<note n="0054022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054022">讀為 bhindeyyuṁ（異本）。</note>
-<note n="0054023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054023">讀為 mahāvirā（暹羅本 attauantā mahāvirā）。</note>
-<note n="0055024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055024">Aṅgulimāla（指鬘）。</note>
-<note n="0055025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055025">Dhanapāla（護財）。</note>
-<note n="0059001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059001">倣悉達多太子之大出離（Mahābhinikkhamaṇa）出家之意。</note>
-<note n="0059002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059002">此為鹿野苑（Migārañña），詳說為指仙人墮處鹿野苑（Isipatana Migadāya）。此言佛於初轉法輪，憍陳如最初之得漏盡。</note>
-<note n="0060001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060001">原文 mahiyā catusaṭṭhiyā 意義不詳。</note>
-<note n="0061001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061001">常住朅地羅（Khadira）樹林故，稱為朅地羅林（Khadiravaniya）之隷婆哆。</note>
-<note n="0062002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062002">Tāraṇa（渡）。</note>
-<note n="0062003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062003">與此一前半句見為同一者 Sutta-nipāta V. 79（P. 14）。</note>
-<note n="0063001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063001">釋迦族之標幟（Sakyānaṁ kulaketu）。</note>
-<note n="0064002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064002">此處從暹羅本讀為 ṭhitā saddhā mahāpphalā。</note>
-<note n="0065001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065001">譯為義成就。過去二十四佛之第十六佛。Buddhavaṁsa, P. 47; jātaka, I, P. 40。</note>
-<note n="0067001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0067001">讀為 paricārem ahaṁ sadā（異本）。</note>
-<note n="0068001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068001">最勝水中草為最勝蓮華，即指巴多穆塔拉佛。</note>
-<note n="0068002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068002">Cela（衣）。</note>
-<note n="0068003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068003">Upacela（近衣）。</note>
-<note n="0070001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070001">manomaya-kāya 意生身，音譯摩奴末耶。此指諸佛諸阿羅漢諸天等可隨己意化出生身。周羅槃陀為意生身化作第一，或被稱為「善化形體作若干變」。</note>
-<note n="0070002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070002">兄為摩訶槃陀，弟為周羅槃陀。Jātaka I, P. 104f。</note>
-<note n="0072001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0072001">向塔婆塗香泥供養。</note>
-<note n="0073001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0073001">原意為充分擴展字義。</note>
-<note n="0073002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0073002">Vimala（無垢）。</note>
-<note n="0073003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0073003">Reṇuvatī（塵市）。</note>
-<note n="0073004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0073004">Sudassana（善見）。</note>
-<note n="0073005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0073005">譯為妙匠，為隨從帝釋之三十三天工巧神。</note>
-<note n="0075001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0075001">Māra-savāhana 為惡魔及乘騎，依 Sutta-nipāta, V, 442之註中謂以象為乘騎。Jātaka, I, P. 71 中謂所乘乃名魔羅 Girimekhala 之象。</note>
-<note n="0076001" resp="#resp1" type="orig" target="#nkr_note_orig_0076001">[02]</note>
-<note n="0076002" resp="#resp1" type="orig" target="#nkr_note_orig_0076002">[01]</note>
-<note n="0078001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0078001">為有名之無常偈，見於 D, II, P. 157。漢譯：「諸行無常，是生滅法，生滅滅己，寂滅為樂。」大般涅槃經卷下，大乘涅槃經卷十四（北本）、長阿含遊行經等皆有所出。</note>
-<note n="0078002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0078002">Sapāka 四姓以下之卑賤者，此蘇巴伽長老（Sopāka）之名，亦由此而來。</note>
-<note n="0079001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0079001">譯為喜見，過去二十四佛之第十三佛。Buodhavaṁsa, P. 41; Jātaka, I, P. 38。</note>
-<note n="0079002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0079002">此偈之前半見於 Sutta-nipāta V. 544。</note>
-<note n="0081001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0081001">Nisabha 人中牡牛之意。</note>
-<note n="0082002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082002">就同一之比喻見 Cf. S. III, P. 93; A. II, 95; J. I, P. 482。</note>
-<note n="0083003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083003">原語 Singī-nikkha-Suvaṇṇa 皆為黃金。</note>
-<note n="0083004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083004">khadira 樹名。一種硬木。</note>
-<note n="0083005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083005">jotirasa 一種寶石，又為星宿之一（喜宿）。</note>
-<note n="0083006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083006">依暹羅本讀為 Visuddhakelāsasannibho。</note>
-<note n="0086001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086001">jaṅghā 之原意為脚。而塔之脚則應為其基部。</note>
-<note n="0086002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086002">籠蓋（Kañcuka）為塔之全部由磚石等所累積圍攏而成，今再予以增大，此與英語 encasing 相當。</note>
-<note n="0086003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086003">indanīla, mahānīla，皆是青玉之類。</note>
-<note n="0087004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0087004">暹羅本於此前加入四偈，說金翅鳥增大塔婆之事，其他情況則相同。</note>
-<note n="0087005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0087005">此為有籠蓋之塔，其上再加籠蓋，如此增大塔婆，非為塔上再造塔之意。</note>
-<note n="0087006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0087006">密迹，夜叉之一種，手持金剛故，稱密迹金剛等。此處可視為夜叉。</note>
-<note n="0087007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0087007">讀為 candasuriyatārakā（異本）。</note>
-<note n="0087008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0087008">讀為 Padīpo pana Pajjali（暹羅本）。</note>
-<note n="0088009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0088009">Abhisammata（勝靜）。</note>
-<note n="0088010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0088010">訂正為 visuddhā。</note>
-<note n="0088011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0088011">讀為 vādaka。</note>
-<note n="0088012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0088012">tappara（tatpara）「從彼」者、「……特別專念」者之義。此果意味為佛與否不得而知，而由前後之關係作如是解。原文 P. 534（The rīgāthā, A. l P. 148）中指 Ānanda 有 Buddhupaṭṭhānatappara「奉侍佛之專念者」之義。</note>
-<note n="0089013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0089013">讀為 sararvgo va。</note>
-<note n="0092001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0092001">讀為 sāmaṁ（異本）。</note>
-<note n="0093002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0093002">應讀為 Vandāmi。</note>
-<note n="0095001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0095001">註為 adhimattaṁ（暹羅本）。</note>
-<note n="0097001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0097001">過去二十四佛之第十九佛。過去七佛之第一佛。</note>
-<note n="0097002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0097002">大砂（Mahāpnḷina）。</note>
-<note n="0098001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0098001">Candabhāgā（Candrabhāgā）（月分）。</note>
-<note n="0099001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0099001">Bandhumatī（親惠城）。</note>
-<note n="0100002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0100002">Sinahavasandana 信度產駿馬所拖拉之馬車。</note>
-<note n="0100001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0100001">以下多為略稱 Saraṇa, Sīlagāhaka, Añjalī, Khamadayī。</note>
-<note n="0101001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0101001">讀為 Bhūtasabbāni（異本）。</note>
-<note n="0102002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0102002">依 DhP. A. III P. 521.彼犯惡業於迦葉佛時。彼名曲背 Dhāna 之意。得此惡名，亦為過去所業之果。</note>
-<note n="0102003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0102003">此於增一阿含卷二二（大正藏卷二、六六二頁上）有廣說。阿那邠邸（給孤獨）長者之女修摩提嫁後，於滿富城請佛。佛令拔取舍羅（籤籌）以決定阿羅漢之人數。時君頭波漠尚為有學，乃拔其取舍羅，立即達無學阿羅漢位。佛曰：「我弟子中第一受舍羅者君頭波漠。」A. I. P. 24。（漢譯南傳藏卷一九、三一頁）參照。</note>
-<note n="0104001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0104001">A. IV, P. 354, 中阿含卷一〇（大正藏卷一、四九一頁上）據傳彌醯比丘有此事實。同為佛之侍者，舉出兩者是否混同不得而知。</note>
-<note n="0105001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0105001">Pabhassara（光耀）。</note>
-<note n="0106001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0106001">佛典中所現之 udayi（優陀夷）有三人。一般漢譯迦留陀夷為制定戒律因緣而出現之破戒比丘。然南傳藏則為釋迦族中一大臣之子，如本譬喻經所示：為一有德之比丘諒。諒此比丘名與傳說之間或因混雜之因由而為異傳。詳見赤沼氏《印度佛教固有名詞辭典》二六六頁參照。</note>
-<note n="0106002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0106002">訂正為 addhānaṁ。</note>
-<note n="0106003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0106003">鉢頭摩為赤蓮花。優鉢羅為青蓮花（水蓮之屬）。摩利迦譯為次第花，為亞剌比亞素馨。</note>
-<note n="0107004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0107004">解為 citraṁ 之意。</note>
-<note n="0108001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0108001">過去二十四佛之第十四佛。Buddhavaṁsa. P. 43; jātaka I, P. 39。</note>
-<note n="0109002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0109002">訂正為 ñaṇamhi。</note>
-<note n="0111001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0111001"><space quantity="0"/></note>
-<note n="0111002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0111002">暹羅本讀為 Vaḍḍhakīhi，Vaḍḍhakī 乃木工之義。</note>
-<note n="0112003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0112003">讀為 sattaratana。（邏羅本）。</note>
-<note n="0113001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0113001">Sahassarāja（千王）。</note>
-<note n="0114001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0114001">讀為 laggetvā（暹羅本）。</note>
-<note n="0114002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0114002">Sucela（美衣）。</note>
-<note n="0115001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0115001">三杖縛為一束具有三脚，為仙者用具之一。</note>
-<note n="0115002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0115002">讀為 carā sadā（異本）。</note>
-<note n="0116003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0116003">讀為 samāyutaṁ（異本）。</note>
-<note n="0117004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0117004">註釋中為 Bhāgineyyupāli 與前出之優波離區別。但其內容卻與持律第一之優波離為同一人。</note>
-<note n="0118001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0118001">詳解為 Soṇa-Koḷiyavessa（黃金二十億），又異本為 KotiKaṇṇa（億耳）Koḷiyavessa 或 Koḷivisa 與漢譯億耳比丘（Koṭikanna）當為另一人。可參閱 Theragāthā（南傳藏卷二五）中別出兩者之偈。漢譯則往往與此混同。此在譬喻經之各寫本中，亦同犯此類錯誤。</note>
-<note n="0119002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0119002">自此以下至第二十一偈止，插入有關甘蔗（okkāka.Ikṣuāku）王統之傳說。甘蔗王之子女九人為四男五女。王後立新妃，寵愛新妃及其一子，驅逐先妃之子等於國外。彼等入最上之山即雪山，住於湖畔之薩伽（Sāka）樹林中，兄妹相婚。保持血統之純潔。此即釋迦族之祖。D. 3. Ambaṭṭha（南傳藏卷六、一三七頁）、長阿卷一三、阿摩晝經 Sumangala. I. P. 174 及其他請參閱。</note>
-<note n="0119003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0119003">讀為 tayā。</note>
-<note n="0119004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0119004">甘蔗王之長女名曰 Piyā 患癩病被棄於洞窟。為拘羅（kola）市之王而出家者，於其近傍將其救出。此後裔曰拘利族。見 Cf. MahāvastuI, P. 353; Sumaṅgala, I. P. 262。</note>
-<note n="0119005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0119005">應視作第十三偈續述至此。予意以為甘蔗王或拘利族之祖應視為一剎帝利。</note>
-<note n="0119006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0119006">Soṇa（黃金）。</note>
-<note n="0120007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0120007">Aṅgīrasa（肢光）為釋尊之異名。</note>
-<note n="0121001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0121001">讀為 Sattukāñ Ca（暹羅本）。</note>
-<note n="0121002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0121002">讀為 tūlikā。</note>
-<note n="0123001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0123001">異本中為 Santiṭṭhāpaka 或為 Sanniṭṭhāpaka。</note>
-<note n="0123002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0123002">Arindama（摧敵）。</note>
-<note n="0124001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0124001">Hatthiya（手）。</note>
-<note n="0125001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0125001">Padumissara（蓮華自在）。</note>
-<note n="0126001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0126001">或應讀為 uccatte。</note>
-<note n="0126002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0126002">ratana（aratni）長度之單位，合二十一拇指中幅之長度。或與 12anguli（指）相當。</note>
-<note n="0126003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0126003">hattha（hasta）譯為肘，長度之單位，為由肘至中指尖端之長度，但實測究為幾何？頗有異說。一說為一尺八寸。茲示其關係單位相互之量如次：24 anguli = 1 hasta; 4 hasta = 1 dhanu（弓）; 500 dhanu = 1 kro'sa（拘盧舍）8; kro'sa = 1 yojana（由旬）。</note>
-<note n="0128001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0128001">tagara, mallikā，多羅伽略稱伽羅，為香之名。摩利迦為花之名，亦稱次第花，為一種香草。</note>
-<note n="0129002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0129002">Jalajutama 即 Padumuttara 指佛而言。</note>
-<note n="0129003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0129003">過去七佛之第六佛。過去二十四佛之第二十四佛。</note>
-<note n="0130001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0130001">一般係指為摩訶周那，大純陀（Mahācunda）比丘。即舍利弗之弟。但在此或指為他人之混同者。</note>
-<note n="0130002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0130002">Jāti 為素馨之類。</note>
-<note n="0131003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131003">Dujjaya（難勝）。</note>
-<note n="0131004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131004">Vaṅganta 為舍利弗及純陀之父。</note>
-<note n="0131005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131005">Sārī（鶖鷺）。</note>
-<note n="0131006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131006">Cūḷacunda（小純陀）。</note>
-<note n="0131007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131007">兄指舍利弗（Sāriputta）。</note>
-<note n="0131008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131008">此為指舍利弗涅槃之時，彼為辦理荼毘等諸事，行施供養。此時純陀傳為舍利弗之沙彌。S. 47. 13. Cuṇḍa.（S. V. P. 161），雜阿卷二四（大正藏，卷二、一七六頁中）參閱。</note>
-<note n="0131009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0131009">讀為 dhātuṁ pattamhi ociya（暹羅本）。</note>
-<note n="0133001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0133001">Seyya = Sayana。</note>
-<note n="0133001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0133001-1">Vīja 與 Vidhūpana 皆為扇之意，故本品稱為扇品（維伽尼品 Vīja ni Vagga）。</note>
-<note n="0134002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0134002">Vījamānasa（扇意）。</note>
-<note n="0135001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0135001">Roma（身毛）。</note>
-<note n="0135002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0135002">Sataraṁsiya 偈中亦稱 Sataraṁsi。</note>
-<note n="0136001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0136001">讀為 Tena cāsanivegena（異本）。</note>
-<note n="0137002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0137002">Saṁvasita（共住）。</note>
-<note n="0138001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0138001">暹羅本中為，「諸神與人間，吾生任何胎，駿馬疾如風，吾生得繁榮」。</note>
-<note n="0140001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0140001">Satacakkhu（百眼）。</note>
-<note n="0141001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0141001">Megha（雲）。</note>
-<note n="0142001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0142001">過去二十四佛之第十七佛。Buddhavaṁsa, P. 48; J. I. P. 40。</note>
-<note n="0142002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0142002">前第三譬已出。</note>
-<note n="0142003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0142003">前第一佛陀品一七五偈已出。</note>
-<note n="0143004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0143004">Daṇḍasena（杖軍）。</note>
-<note n="0143005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0143005">Samantanemi（全輪）。</note>
-<note n="0143006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0143006">Puṇṇaka（充滿）。</note>
-<note n="0144001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0144001">Udaki = Gandhodaka。</note>
-<note n="0144002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0144002">Vāhiya 為運載者，指馬而言。Opavuyha 為（適於乘者），二者之義相同。</note>
-<note n="0144003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0144003">Padumapūjaka 為（蓮供養），出版者以 paduma 與 Pūjaka 作另有其人為誤植。</note>
-<note n="0145001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0145001">依異本 Puḷinaṁ，又可讀為 Pūḷinaṁ。</note>
-<note n="0145002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0145002">asītikappe 訂正為 nantayaso。</note>
-<note n="0147001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0147001">cakkavāka 好聲鳥，印度郭公鳥。</note>
-<note n="0147002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0147002">sevāla 草之名。</note>
-<note n="0147003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0147003">Sucārudassana（善愛見）。</note>
-<note n="0148001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148001">讀為 Sena（異本）。</note>
-<note n="0148002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0148002">Uggata（昇）。</note>
-<note n="0149001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149001">Vessabhū 為過去七佛之第三佛，故此有諸仙中第三之稱。</note>
-<note n="0149002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149002">Samodhāna（並置）。</note>
-<note n="0150001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150001">Dīghāyu（長壽）。</note>
-<note n="0151001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151001">Aruṇaka（太陽）。</note>
-<note n="0152001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152001">讀為 damathenāhaṁ（異本）。</note>
-<note n="0153002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0153002">Ambatthaja（菴婆核生）。</note>
-<note n="0153001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0153001">讀為 cattārasa（異本）。</note>
-<note n="0154001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0154001">Anojā 為開赤花之灌木。</note>
-<note n="0154002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0154002">Devabhūti（神現）。</note>
-<note n="0155001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155001">原文雖為 Addhāpupphi，今採異本為 Avopupphi。暹羅本則為 atho Pupphi。</note>
-<note n="0155002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155002">Paccā〔bhi〕gamana。</note>
-<note n="0156001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0156001">apāṭali 樹名。不詳。</note>
-<note n="0156002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0156002">Bhūmiya（地）。</note>
-<note n="0157001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0157001">Dumasāra（樹精）。</note>
-<note n="0158001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0158001">Bhisasammata（以鬚根而受崇者）。</note>
-<note n="0160001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0160001">Migasammata（鹿敬）。</note>
-<note n="0160002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0160002">Tiṇasanthāra〔daya〕ka。</note>
-<note n="0161001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161001">Dipadādhipati（二足者之主）。</note>
-<note n="0161001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161001-1">Abhisammata（勝敬）。</note>
-<note n="0162001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0162001">Migaketu（獸旗）。</note>
-<note n="0163001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163001">Haṁsavatī（鵞市）。</note>
-<note n="0164002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0164002">Mahāvitthārika（大福）。</note>
-<note n="0164003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0164003">今採暹羅本作 tuvaṭṭssanti。</note>
-<note n="0165001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0165001">〔Bhisa-〕Āluvadāyaka。</note>
-<note n="0165002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0165002">Tiṇadada（草施）即 Tiṇasanthāradāyaka 長老。</note>
-<note n="0166001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0166001">Candabhāgā（月分）。</note>
-<note n="0166002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0166002">timira 花不詳。</note>
-<note n="0167001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0167001">naṅgaliki 花不詳。</note>
-<note n="0168002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0168002">Aggisikhā（火焰）。</note>
-<note n="0168001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0168001">在異本方面 Nippannañjalika 暹羅本作 Nipanna。依文意看，可以採用。攝頌中亦與右同。</note>
-<note n="0169002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169002">Mahāsikhā（大光焰）。</note>
-<note n="0169001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169001">Abhibhū（無勝）。</note>
-<note n="0171001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0171001">Phussa 為過去二十四佛之第八佛。見 Buddhavaṁsa, P. 50; Jātaka I, P. 40。</note>
-<note n="0173001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0173001">Kusuma 花之名。</note>
-<note n="0173002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0173002">Udakāsecana（灌水）。</note>
-<note n="0174001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0174001">Padumabhāsa（蓮語）。</note>
-<note n="0174001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0174001-1">Naṅgalipupphī（楠伽利花）。布施 Naṅgaliki 花，指格達山尼耶迦長老。</note>
-<note n="0175002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0175002">Sevaka（奉事人）。指 Bodhisaññaka 長老。</note>
-<note n="0176001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0176001">Paṭisaṅkhāra（修復）。</note>
-<note n="0176001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0176001-1">Mahāruci（大滿足）。</note>
-<note n="0177002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0177002">Ruci（滿足）。</note>
-<note n="0177003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0177003">Uparuci（近滿足）。</note>
-<note n="0177001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0177001">讀為 Paramakāruññapatto（異本）。</note>
-<note n="0178002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0178002">odana（乳麋）。</note>
-<note n="0178001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0178001">Bandhumā 正寫為 Bandhumatī（親惠城）。</note>
-<note n="0178002-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0178002-1">Vajirasama（金剛似）。</note>
-<note n="0179001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0179001">Devagandha（天香）。</note>
-<note n="0180001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0180001">波吒釐（Pāṭalī）樹為毘婆尸佛之菩提樹。</note>
-<note n="0180002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0180002">Samantapāsādika（一切處愉悅）。</note>
-<note n="0182001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182001">讀為 sayane' bhivassanti（暹羅本）。</note>
-<note n="0182002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182002">讀為 Thitāsanthāraka（堅固蓆）（暹羅本）。</note>
-<note n="0183001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0183001">Sucintita（善考）。</note>
-<note n="0184001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0184001">Mahānigghosa（大響）。</note>
-<note n="0184001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0184001-1">此前之 Sucintita 略去。</note>
-<note n="0184002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0184002">Kammāra（鐵工）Sūcidāyaka 嘗為鐵工匠，故作斯言。</note>
-<note n="0185003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0185003">Dhammaka（法）。指 Buddhūpaṭṭhāka 長老。</note>
-<note n="0186001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186001">讀為 Pavaṇā（脚註及暹羅本）。</note>
-<note n="0186002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186002">Mahāreṇu（大塵）。</note>
-<note n="0188001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0188001">Najjupama（諸河似）。</note>
-<note n="0189001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0189001">Samantagandha（徧香）。</note>
-<note n="0190001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0190001">Devuttara（天中之勝）。</note>
-<note n="0191001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0191001">Sahassarāja（千王）。</note>
-<note n="0192001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192001">Subbata（敬虔）。</note>
-<note n="0192002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0192002">Māluta（微風）。</note>
-<note n="0193001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0193001">Sannibbāpaka（淨化）。</note>
-<note n="0194001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194001">同一之偈見於 Jātaka, VI, P. 578。</note>
-<note n="0194002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194002">ālu, Kaḷamba, biḷalī, takkaḷa, kola, bhallātaka, bella 以上均為球根之植物。</note>
-<note n="0194003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194003">Sumekhali（善帶）。</note>
-<note n="0195001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195001">Reṇu（花粉）。</note>
-<note n="0196001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0196001">Nivāsaka（住）。此係就阿薩努帕塔耶迦長老而言。</note>
-<note n="0197001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0197001">Vāhane（乘輿）。</note>
-<note n="0198001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0198001">彈指乃表示歡喜之狀。</note>
-<note n="0198002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0198002">Ekacintita（一考）。</note>
-<note n="0199001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199001">讀為 parikkhitto。</note>
-<note n="0199002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199002">Mahācunda（大象牙師）。</note>
-<note n="0200001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0200001">讀為 sabbatāḷa（依暹羅本）。</note>
-<note n="0200002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0200002">訂正為 Nimmāna（依暹羅本）。</note>
-<note n="0201003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201003">讀為 tidhaggi（異本）。</note>
-<note n="0201004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201004">Subahu（夥多）。</note>
-<note n="0202001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202001">讀為 Ca（異本）。</note>
-<note n="0202002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202002">Nemisammata（輞所敬）。</note>
-<note n="0204001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0204001">Samita（靜安）。</note>
-<note n="0205001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0205001">Sacakkhu（具眼）。</note>
-<note n="0206001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206001">讀為 cara dhammaṁ sumedhasa（暹羅本）。</note>
-<note n="0206002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206002">讀為 Pūjehi（暹羅本）。</note>
-<note n="0206003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206003">Bhūripañña（宏智）。</note>
-<note n="0207001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0207001">讀為 Saṁharitvāna（暹羅本）。</note>
-<note n="0207002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0207002">讀為 dhātiyo（暹羅本）。</note>
-<note n="0208003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0208003">Supāricariya（善奉事）。</note>
-<note n="0209001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209001">讀為 Sā pupphachadanaṁ（暹羅本）。</note>
-<note n="0210001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0210001">讀為 tāhaṁ disvā namassissaṁ（暹羅本）。</note>
-<note n="0211002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211002">讀為 sakkaccaṁ（暹羅本）。</note>
-<note n="0211003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211003">讀為 sattārīsasahassamhi（暹羅本）。</note>
-<note n="0211004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211004">Aggisama（如火者）。</note>
-<note n="0211005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211005">Ghatāsana（食酪者＝聖火）。</note>
-<note n="0212001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212001">讀為 buddho' Si（暹羅本）。</note>
-<note n="0213001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213001">Sugandha（芳香）。</note>
-<note n="0214001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214001">讀為 avīci' ggiṁ（暹羅本）。</note>
-<note n="0214002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214002">讀為 sattāsuṁ（暹羅本）。</note>
-<note n="0215003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215003">訂正為 thavitvā。</note>
-<note n="0215004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215004">Paṭhavidundubī（地鼓）。</note>
-<note n="0215005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215005">Obhāsamata（光思）。</note>
-<note n="0215006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215006">Agginibbāpana（火消）。</note>
-<note n="0215007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215007">Rājāvātasama（王風似）。</note>
-<note n="0215008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215008">Gatipacchedana（趣斷）。</note>
-<note n="0215009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215009">Rataṇappajjala（寶焰）。</note>
-<note n="0215010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215010">Padavikkamana（足步）。</note>
-<note n="0215011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215011">Rājāvilokana（王省察）。</note>
-<note n="0215012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215012">Hirisāra（恥髓）。</note>
-<note n="0217001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217001">Dhaññavatī（穀市）。</note>
-<note n="0217002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217002">Varadassana（勝見）。</note>
-<note n="0218001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218001">Puṇḍarīka 為白蓮華，但在此可視為與尸棄佛之路樹為同一種樹。</note>
-<note n="0218002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218002">Sumaṅgala（善瑞祥）。</note>
-<note n="0219001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219001">Puḷinapupphiya（砂花）。</note>
-<note n="0220001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0220001">gaṇṭhi 樹名。</note>
-<note n="0221001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221001">Jaluttama（最勝水）。</note>
-<note n="0222001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0222001">Thomaka = thavika 即指 Sammukhathāvika 而言。</note>
-<note n="0223001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223001">此為 triṣṭubh 調之一偈所插入者，底本附以三、四兩節之號碼為錯誤，四節之號碼應除去。</note>
-<note n="0225001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225001">Rohiṇi（赤牛）。</note>
-<note n="0226001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0226001">Sunanda（善喜）。</note>
-<note n="0226002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0226002">讀為 ayājiyiṁ（異本）。以下同樣原文用第三人稱之動詞應訂正為一人稱。此處婆羅門係指長者之前生。</note>
-<note n="0226003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0226003">讀為 aphari satte（暹羅本）。參閱前之第六八菴婆達耶迦長老之第一偈。</note>
-<note n="0227001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227001">Vasabha（牡牛）。</note>
-<note n="0227002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227002">以下同應視為第一人稱。</note>
-<note n="0228003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0228003">Siridhara（吉祥持）。</note>
-<note n="0229001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229001">Vihatābha（殺光）。</note>
-<note n="0229001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229001-1">讀為 puragacchi so（暹羅本）。</note>
-<note n="0230002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230002">Sukhitta（善投）。</note>
-<note n="0230001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230001">Kesava（美髮）。</note>
-<note n="0230002-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0230002-1">Amittavāsana（無敵住）。</note>
-<note n="0231003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231003">讀為 Ekaraṁsaniya（暹羅本及他異本）。</note>
-<note n="0231001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231001">讀為 Sasākhaṁ。</note>
-<note n="0231002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231002">Virocana（徧照）。</note>
-<note n="0232001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232001">讀為 Parapāṇu。</note>
-<note n="0233001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0233001">讀為 Ekaraṁsi（異本及暹羅本）。</note>
-<note n="0233002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0233002">Sāladada = Sālapupphadāyaka。</note>
-<note n="0235001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0235001">Thūpasikha（塔頂）。</note>
-<note n="0235001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0235001-1">讀為 Maṇiṁ（暹羅本）。</note>
-<note n="0235002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0235002">Maṇippabha（摩尼光）。</note>
-<note n="0236001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236001">依異本及暹羅本讀為 thūpadattaṁ。</note>
-<note n="0236002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236002">依暹羅本讀為 dhūpagandho 但如底本讀 ca 為 va（異本），意為「如天翔之煙塊」。</note>
-<note n="0236003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0236003">應讀 Samatta（成就）（暹羅本及其他異本）。</note>
-<note n="0237001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0237001">Somadeva（蘇摩神）。</note>
-<note n="0238001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0238001">Sabbagghana（金堅塊）。</note>
-<note n="0239001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239001">Suppabuddha（善覺）。</note>
-<note n="0240001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240001">akkhobiṇī 解為（Skt, akṣanhiṇī）之意。</note>
-<note n="0240002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240002">Bhavanimmita（有化作）。</note>
-<note n="0240001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240001-1">salaḷa 香樹之一種。</note>
-<note n="0241002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241002">Nimmita（化作）。</note>
-<note n="0241001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241001">Suvaṇṇābha（黃金光）。</note>
-<note n="0243001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243001">以上一偈半出自 Sutta-nipāta 637。同處稱之為婆羅門，故取為對格。</note>
-<note n="0243002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243002">Samantacakkhu（徧眼）。</note>
-<note n="0244001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244001">讀為 anekatāla papatiṁ（暹羅本）。</note>
-<note n="0244002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244002">tāla 即 vitasti（搩），為長度之單位，vitasti = 12 anguli，為張開拇指與中指間之長度。</note>
-<note n="0244003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0244003">Samphusita（觸）。</note>
-<note n="0245001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245001">讀為 pannarase yadā candaṁ（暹羅本）。</note>
-<note n="0245002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245002">依暹羅本訂正為 niyyante。</note>
-<note n="0245003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245003">Sudhaja（善幡）。</note>
-<note n="0246001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0246001">kakkāru 天華之一。</note>
-<note n="0246002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0246002">Sattuttama（最勝有情）。</note>
-<note n="0247001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0247001">mandārava 譯為天妙華。</note>
-<note n="0247002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0247002">Jutindhara（輝持）。</note>
-<note n="0248001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248001">Kukkuṭa（雞）。</note>
-<note n="0248002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248002">讀為 vasanti te（暹羅本）。</note>
-<note n="0248003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248003">Phullanāyaka（花嚮導）。異本為 Pupphanāmakā（叫做花者）。</note>
-<note n="0249001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249001">Bhūtagaṇa（鬼群）。</note>
-<note n="0249002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249002">tiṇasūla 素馨之一種。</note>
-<note n="0249001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0249001-1">Suvaccha（善積）。</note>
-<note n="0250002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250002">讀為 dīpo pajjalate tathā（暹羅本）。</note>
-<note n="0250003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250003">讀為 hāsaṁ mama（暹羅本訂正為 mamaṁ）viditvāna（暹羅本）。</note>
-<note n="0250004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250004">從異本之 okiriṁ ahaṁ（暹羅本亦同）。</note>
-<note n="0250005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250005">Mahāratha（大車）。</note>
-<note n="0251001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251001">Tamonuda（驅闇）。</note>
-<note n="0252001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252001">kakudha 鷄冠之意，又作樹名。暹羅本為 kukkuṭa（鷄）。</note>
-<note n="0252002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252002">讀為 vattasampanno（暹羅本）。</note>
-<note n="0252003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252003">訂為 Puññāpuññesu kovido（依暹羅本）。</note>
-<note n="0252004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252004">從暹羅本讀為 bhitvā。</note>
-<note n="0252005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252005">訂正為 tañ ca dānam daditvā' haṁ（依暹羅本）。</note>
-<note n="0253001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253001">過去二十四佛之第八佛。Buddhavaṁsa 3l; Jātaka I, P, 36。</note>
-<note n="0253002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253002">讀為 upaṭṭhahiṁ（暹羅本）。</note>
-<note n="0253003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253003">Samalaṅkata（莊嚴）。</note>
-<note n="0254001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254001">在底本已將 āsiṁ-gopako 之連結符——除去。</note>
-<note n="0254002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254002">kanavera（or Kanavīra）屬夾竹桃。</note>
-<note n="0255001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0255001">nāḷikera（椰子）。</note>
-<note n="0255002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0255002">Indasama（帝似）。</note>
-<note n="0256001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256001">Gosujāta（牛善生）。</note>
-<note n="0257001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257001">讀為 ogāhayi（暹羅本）。</note>
-<note n="0257002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257002">Soṇṇābha（黃金光）。</note>
-<note n="0257003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257003">此處為 Kaṇikārapupphiya（伽尼伽拉花），但脚註及暹羅本皆與標題同。</note>
-<note n="0258001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0258001">讀為 nāmāsi（暹羅本）。</note>
-<note n="0258002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0258002">Samodaka（等水）。</note>
-<note n="0259001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0259001">Samuddhara（濟出）。</note>
-<note n="0260001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260001">Parisuddha（清淨）。</note>
-<note n="0260001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260001-1">Bandhumatī（親惠城）。</note>
-<note n="0261002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0261002">Āveyya 暹羅本為 Āvela（花環），應予採用。</note>
-<note n="0261001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0261001">讀為 nāmāsi（暹羅本）。</note>
-<note n="0261002-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0261002-1">底本 appasādo va ramuddhe 暹羅本為 appasaddho ca……。</note>
-<note n="0261003" resp="#resp1" type="orig" target="#nkr_note_orig_0261003">[02]</note>
-<note n="0262001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0262001">Māla（華鬘）指 Samādapaka 布施之華鬘。</note>
-<note n="0263001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263001">訂正為 agamāsi（依暹羅本）。</note>
-<note n="0263002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263002">Sahassaratha（千車）。</note>
-<note n="0264001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264001">過去二十四佛之第二佛。參閱 Jātaka, I, P. 30。</note>
-<note n="0265001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265001">ratti, rattika 樹名，其次之 kuṭaja dharaṇīruha 皆為植物名。</note>
-<note n="0265002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265002">讀為 Suppasannasanāmako（善淨信）。</note>
-<note n="0266001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266001">讀為 sukhāvaho（異本）。</note>
-<note n="0266002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266002">Sīluccaya（積戒）。</note>
-<note n="0267001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0267001">Pupphachadaniya（花蓋）。</note>
-<note n="0268001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0268001">Candābha（月光）。</note>
-<note n="0268001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0268001-1">訂正為 Cānūpa-（暹羅本）。</note>
-<note n="0269002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0269002">Sataraṁsi（百光）。</note>
-<note n="0270001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0270001">Sabbosadha（一切藥）。</note>
-<note n="0270001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0270001-1">Samotthaṭa（展被）。</note>
-<note n="0272001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272001">Pupphita（開花）。</note>
-<note n="0272001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272001-1">Samuddakappa（海似）。</note>
-<note n="0273001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273001">Mahānela（大無過）。</note>
-<note n="0274001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0274001">訂正為 Caturoṭṭhapitā。</note>
-<note n="0274002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0274002">Sabhāsammata（堂認）。</note>
-<note n="0275001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275001">isimugga 不詳 Mugga 為隱元豆之類。</note>
-<note n="0275002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275002">nisandhetvā（異本為 nisantetva, nisanditvā）意義不明。</note>
-<note n="0275003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0275003">Mahisamanta（地徧）。</note>
-<note n="0276001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0276001">Muraja（小鼓）。</note>
-<note n="0276002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0276002">Damatha（調御）。</note>
-<note n="0277001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0277001">以下至第十一偈前半偈止，於第三二七尼軍提普庇耶長老之處再出。</note>
-<note n="0279001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0279001">Mahāmallājana（大力士）。</note>
-<note n="0280001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0280001">依暹羅本讀為 theraṁ panijjhāma。</note>
-<note n="0280002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0280002">過去二十四佛之第十五佛。參閱 Jātaka I, P. 38。</note>
-<note n="0280003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0280003">Sunanda（善喜）。</note>
-<note n="0280004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0280004">Dhūmaketu（煙標幟）。</note>
-<note n="0281001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0281001">Candatitta（月滿足）。</note>
-<note n="0282001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0282001">Mahādhana（大財）。</note>
-<note n="0283001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0283001">Jitāsena（勝軍）。</note>
-<note n="0284001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0284001">Aruṇañjaha（日棄）。</note>
-<note n="0285001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285001">讀為 mālāvara。</note>
-<note n="0285002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285002">Devagajjita（天雷鳴）。</note>
-<note n="0286001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0286001">Ekassara（一音）。</note>
-<note n="0287001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0287001">girinela 植物之名，不詳。</note>
-<note n="0288002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288002">Sunela（善無過）。</note>
-<note n="0288001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288001">底本作 Sumaṅgala。然未聞有此佛之名，容或係指 Su-maṅgala 意；抑或為諧和韻律上之關係而作如此稱呼。Mangala 佛為過去二十四佛之第三佛，參閱 Jātaka I, P. 30-34。</note>
-<note n="0289001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0289001">Samitanandana（集喜）。</note>
-<note n="0291001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0291001">原本為 Ekūnavīsatimo（第十九）應訂正為 Ekavīsatimo（第二十一）。</note>
-<note n="0291002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0291002">Aruṇapāla（日護）。</note>
-<note n="0292001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0292001">讀為 Sikhī Sito。</note>
-<note n="0292002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0292002">vinelapuppha 不詳，暹羅本有 minela。</note>
-<note n="0292003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0292003">Sumeghaghana（極濃雲）。</note>
-<note n="0293001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0293001">Bhīmaratha（可怖車）。</note>
-<note n="0294001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0294001">Sabhogavā（有財者）。</note>
-<note n="0295001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0295001">Mahāpatāpa（大光輝）。</note>
-<note n="0296001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0296001">Jutindhara（持輝）。</note>
-<note n="0297001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0297001">Koraṇḍa 一種灌木。</note>
-<note n="0297002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0297002">Vītamala（離垢）。</note>
-<note n="0298001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0298001">Mahāmidāna（大因）。</note>
-<note n="0300001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0300001">Pānadhi（草履）。</note>
-<note n="0301002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301002">Suyāna 善乘。</note>
-<note n="0302001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0302001">Ekaphusita（一雨滴）。</note>
-<note n="0302001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0302001-1">Amitābha（無量光）。</note>
-<note n="0303001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0303001">讀為 Pītaraṁsīva, 參照第一五三之第一偈。</note>
-<note n="0303002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0303002">Sujāta（善生）。（修闇多）。</note>
-<note n="0304001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0304001">assattha 畢波羅（Pipphala）樹，為釋尊之菩提樹。</note>
-<note n="0304002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0304002">Dhaniṭṭha（財求）。</note>
-<note n="0305001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0305001">Mahārāma（大歡）。</note>
-<note n="0306001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0306001">Kusāṭaka 未詳，一種之衣。</note>
-<note n="0306002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0306002">Sumanda（善歡喜）。</note>
-<note n="0307001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0307001">Jutideva（輝天）。</note>
-<note n="0308001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0308001">Aggideva（火天）。</note>
-<note n="0309001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0309001">Ekāpasitta（一見）。</note>
-<note n="0310001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0310001">Sudāyaka（善施）。</note>
-<note n="0311001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0311001">Mahārohita（大赤）。</note>
-<note n="0312001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0312001">Apassena（倚依）。</note>
-<note n="0313001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0313001">Aparājita（無敗）。</note>
-<note n="0313001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0313001-1">暹羅本中有 Vakulapupphiya 長老，有關 caṅkola 花名未詳。</note>
-<note n="0314001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0314001">Mahāpatāpa（大光輝）。</note>
-<note n="0315001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0315001">Meghabbha（雲聚）。</note>
-<note n="0316001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0316001">Dvebhāra（二荷）。</note>
-<note n="0317001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0317001">Vigatānanda（離歡喜）。</note>
-<note n="0317001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0317001-1">Sanna（黃金）指萬達薩奇耶長老而言。</note>
-<note n="0318001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0318001">Abhisāma（勝金色）。</note>
-<note n="0319001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0319001">讀為 ekanavute（異本）。</note>
-<note n="0319002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0319002">Anantajāli（無限焰）。</note>
-<note n="0320001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0320001">Amitañjala（無量水）。</note>
-<note n="0320001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0320001-1">Jutindhara（持輝）。</note>
-<note n="0321001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0321001">讀為 pādap' uttme（暹羅本）。</note>
-<note n="0321002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0321002">Sūriyassama（太陽似）。</note>
-<note n="0322001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0322001">Candupama（月似）。</note>
-<note n="0323001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0323001">在暹羅本中加入左之一偈：吾取佛之鉢，施毘耶拉花，更以清淨心，奉與達道佛。</note>
-<note n="0325001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0325001">tuvara（未詳，果名吧？）。</note>
-<note n="0326001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0326001">讀為 ito（異本）。</note>
-<note n="0327001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0327001">Satapatta（百葉）。</note>
-<note n="0330001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0330001">Kiñjakesara（金伽花絲）。</note>
-<note n="0330001-1" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0330001-1"><space quantity="0"/></note>
-<note n="0333001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0333001">過去二十四佛中不見此尊之名，諒係指辟支佛？</note>
-<note n="0335001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335001">從暹羅本為 Upāhanadāyaka。</note>
-<note n="0336001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336001">Jotiya（光輝）。</note>
-<note n="0337001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337001">aggaja「第一生」之義，此處或為花名。</note>
-<note n="0337002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337002">Amita（無量）。</note>
-<note n="0338001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0338001">Bhikha（施食）應指為 Ekāsanadāyaka 長老。</note>
-<note n="0339001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339001">Padumukkhcpa-Vagga 所謂向空中投最上水草即鉢頭摩花故，品名從而名為「蓮花投」。</note>
-<note n="0339002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339002">Atalikkhacara（空中行）。</note>
-<note n="0340001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340001">Succhavi（美膚）。</note>
-<note n="0340001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340001-1">參閱第二三五之第一偈。</note>
-<note n="0340002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340002">aḍḍhacanda（半月）未詳，應為花名。</note>
-<note n="0341003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341003">Devapa（天飲）。</note>
-<note n="0341001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341001">Samantacakkhu（徧眼）。</note>
-<note n="0344001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344001">如暹羅本讀為 heṭṭhāsiso。</note>
-<note n="0346001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0346001">Upāgatabhāsaniya 長老昔日曾為羅剎，依此故有如斯稱謂。</note>
-<note n="0346001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0346001-1">Atama（無等）。</note>
-<note n="0347001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0347001">Nandiya（歡喜）。</note>
-<note n="0350001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0350001">mālnvā 一種蔓草。</note>
-<note n="0350002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0350002">Paṭijagga（扶養）。</note>
-<note n="0351001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0351001"><space quantity="0"/></note>
-<note n="0351001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0351001-1">Romasa 諒係辟支佛名。</note>
-<note n="0352001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0352001">Samogadha（俱含）。</note>
-<note n="0353001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353001">Māla（= Āluvadāyaka）。</note>
-<note n="0353002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353002">Setu（= Taraṇiya）。</note>
-<note n="0354001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354001">Sineru = Sumeru 蘇迷盧、須彌山。</note>
-<note n="0354002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354002">以下均為樹果之名。</note>
-<note n="0356001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0356001"><space quantity="0"/></note>
-<note n="0357001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357001">Balasena（強軍）。</note>
-<note n="0359001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0359001">Sunikkhamma（善出離）。</note>
-<note n="0359001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0359001-1">Samaṇūpaṭṭhāka（沙門侍僕）。</note>
-<note n="0361001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361001">Ajita（無勝）。</note>
-<note n="0361002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361002">讀為 disvā（異本）。</note>
-<note n="0361003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361003">Supajjalita（善燃）。</note>
-<note n="0362001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0362001">Pārichattaka 譯為晝度樹，謂存在於三十三天之上。</note>
-<note n="0362002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0362002">Samantadharaṇa（徧持）。</note>
-<note n="0363001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0363001">Mahāraha（大價）。</note>
-<note n="0364001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0364001">牛頭山產之旃檀，芳香特著，在此謂牛頭旃檀。</note>
-<note n="0365002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0365002">Suppatiṭṭhita（安立）。</note>
-<note n="0370001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0370001">Sucela（良衣）。</note>
-<note n="0371001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0371001">Sutavā（通聖學）。</note>
-<note n="0372001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0372001">Bhāgīrasī 恒伽河之異名。</note>
-<note n="0374001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0374001">Mudusītala（軟冷）。</note>
-<note n="0375001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0375001">Susudha（極淨）。</note>
-<note n="0377001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0377001">Amittabhā（非友光）。</note>
-<note n="0379001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0379001">Pādapāvara（良樹）。</note>
-<note n="0380001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0380001">讀為 thomiyaṁ（異本）。</note>
-<note n="0380002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0380002">Atulya 無比。</note>
-<note n="0382001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0382001">Ñānadhara（知持）。</note>
-<note n="0385001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0385001">Samantacchadana（徧蓋）。</note>
-<note n="0388001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0388001">Araññasatta（森林有情）。</note>
-<note n="0390001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0390001">以上十偈半與前第一八七耶伽欽提陀長老所唱之偈，大致相同。</note>
-<note n="0391002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0391002">Abbuda（濁垢）。</note>
-<note n="0391003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0391003">Nirabuda（滅濁）。</note>
-<note n="0392001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0392001">Sahassāra（千幅）。</note>
-<note n="0392001" resp="#resp1" place="foot text" type="mod" target="#nkr_note_mod_0392001">Sahassāra（千輻）。</note>
-<note n="0393001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0393001">讀為 Pi（暹羅本）。</note>
-<note n="0393002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0393002">Jalasikha（水頂）。</note>
-<note n="0396001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0396001">Gandhodaka（香水），由他例所見似為 Gandhathūpa。</note>
-<note n="0402001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0402001">讀為 tāvacchādehi（異本）。</note>
-<note n="0403001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0403001">讀為 uggatāpaso。</note>
-<note n="0404002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0404002">似應讀為 iriyāga。</note>
-<note n="0404003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0404003">讀為 gāthāya（異本）。</note>
-<note n="0405001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0405001">讀為 Sattapattaṁ（異本）。</note>
-<note n="0406002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0406002">讀為 adhiṭṭhāsi 參閱（第一二一之第四偈）。</note>
-<note n="0406003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0406003"><space quantity="0"/></note>
-<note n="0407001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0407001">依攝頌 Pūjanī（普伽尼）、Punnāga（噴那伽）、Ekadussika（耶卡多西迦）之偈，文中不見。各寫本於此品亦均只揭示七人。然依偈數不足三十三偈，當可推測定為右列三者所失之偈。按暹羅本由第三三二至第三三四處為 udakapūjaka, Punnāgapupphiya 及 Ekasussadāyaka 三人，合而插入三十二偈以資補足。但此等各與第一〇六、第一五九及第四一九所舉之偈相同（讀法多少，或有出入，而最後尚缺一偈），此可認為為與攝頌十人相合而補充者。</note>
-<note n="0411001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0411001">訂正為 Kiṅhaṇika。</note>
-<note n="0412001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0412001">Sudassana 為新之佛名，諒指辟支佛。</note>
-<note n="0413001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0413001">Sambhava 此亦應為辟支佛。</note>
-<note n="0414001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0414001">Upatissa 此亦同為辟支佛名。</note>
-<note n="0414002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0414002">讀為 saravego va（異本）。</note>
-<note n="0415001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0415001">Sakoṭaka 不詳。</note>
-<note n="0415002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0415002">應讀為 Sayambhussa（異本）毘舍浮佛於三十一劫前出世，若讀此為毘舍浮佛時，則第三偈應訂正為三十一劫間。</note>
-<note n="0419001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0419001">Sataraṁsi 明顯指為辟支佛，然與佛同樣被稱為正覺者。</note>
-<note n="0423001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0423001">Gotama 應為辟支佛之名。</note>
-<note n="0426001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0426001">Anātha 諒係辟支佛名，但以正覺者佛陀相稱（Buddha）。</note>
-<note n="0429001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0429001">為毘婆尸佛之菩提樹。</note>
-<note n="0430001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0430001">參閱前第三三九，大部分為同一偈。</note>
-<note n="0432001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0432001">過去二十四佛之第四佛 Buddhavaṁsa 23-24, Jātaka, I, P. 34 參閱。</note>
-<note n="0433001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0433001">應讀為 Citake Kayiramāne（暹羅本）。</note>
-<note n="0436001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0436001">原攝頌缺少波提普毘耶長老之名。</note>
-<note n="0438001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0438001">labuja（麵包樹）。</note>
-<note n="0442001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0442001">Ajjuna 應為辟支佛。</note>
-<note n="0442002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0442002">jivajivaka 樹名，一般指鳥而言，譯為共命鳥。</note>
-<note n="0443001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0443001">讀為 bhumyā（異本）。</note>
-<note n="0445001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0445001">為外道之美女。外道等嫉惡世尊之名聲大、施物多，嗾使此孫陀利聲言與佛有染，然後殺之，謀陷罪於佛。參閱 Jātaka, II, P. 415, Udāna 43-45; Dhp, A, III, P. 474; 義足經上，六度集經五等。</note>
-<note n="0445002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0445002">為一外道之美女，與孫陀利之情形同，稱與釋尊有染，腹部填物如妊娠狀，使佛受惡評，謀以增加外道之供養。參閱 Jātaka, IV, P. 187; Dhp, A, III, P. 178 Udāna A, P. 263; 生經一，有部經事一六等。</note>
-<note n="0445003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0445003">提婆達多害佛，於耆闍崛山向佛頭上投大石，金鞞盧神使佛避之，石片飛來，傷佛之足指。參閱 Vinaya（Cv, VII 3）; Jātaka, V, P. 533; 五分律三，增一阿含四七，有部破僧事一八等。</note>
-<note n="0445004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0445004">提婆達多遣巧弓射者使射殺佛。參閱 Jātaka, VI, P. 129; DhP. A, II, P. 164; 有部破僧事一八等。</note>
-<note n="0446005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446005">提婆達多於王舍城縱放醉象欲蹂躝佛，象終在佛之威力前降伏。此醉象或稱為 Dhanapāla（守財）。參閱 Jātaka, V, P. 333; 增一阿含九、十誦律三六，有部破僧事一九等。</note>
-<note n="0446006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446006">Giribbaja 山中牛園之義，此言舊王舍城。</note>
-<note n="0446007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446007">讀為 Pattiko（異本）。</note>
-<note n="0446008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446008">Viḍūdabha 以釋迦族摩訶那摩與下婢之間所生之女為母，父為憍薩羅王波斯匿。彼來迦毘羅衛城時，為釋迦族所辱，彼即王位後屠殺全釋迦族。釋尊亦不能如何阻止，深感頭痛。參閱 Jātaka IV, P. 144; Dhp, A, I, P. 345; 增一阿含二六、四分律四一、有部雜事七等。</note>
-<note n="0446009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446009">佛在毘蘭若（verañjā）與五百比丘安居，三個月間，當地飢饉，無有施物。偶遇馬商前來，佛與諸弟子得馬麥以充飢。參閱 Sutta Vibhaṅga I, Pārājjka 1-4（Vinaya, Vol, III, P. If; 南傳藏卷一、一頁），五分律卷一、四分律卷一，鼻奈耶卷八，興起行經下，中本起經下等。</note>
-<note n="0446010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446010">依雜阿含三八，佛住於拘薩羅國浮梨聚落天作婆羅門之菴羅園而住時，曾患背痛。參閱 S. 7. 2. 3. Devahita; Theragālhā-185-6 之註等。</note>
-<note n="0446011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446011">釋尊往拘夷那竭之途中，住於波婆之鍊鐵工周那之家，周那供佛以茸（菌蕈），使佛患激烈之痢疾，此即為般涅槃之因。參閱 D. 16 Mahāparinibbāna（D. II, P. 128）。但長阿含三則謂此時為背痛。</note>
-<note n="0446012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446012">過去二十四佛之最後，過去七佛之第六佛。參閱 jātaka, I, 43; Mahāvaṁsa, I, 10; D, 14, Mahā-padāna 長阿含一，增一阿含四八等。</note>
-<note n="0446013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0446013">Uruvela 譯為 Uruvela-senāni 釋尊由迦毘羅衛城出行，來此聚落，於林中苦行六年，遂放棄而浴於尼連禪河，於菩提樹下成道。見於諸經。</note>
+<note n="0001001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001001">暹羅本中在此之前有 triṣṭubh 調之三偈，此與辟支佛之譬喻情形相同，為佛應阿難之問（在此就一切知之諸佛者，如何……問）所說。又在此一偈之前半，暹羅本中有：「過去諸佛前，吾希得佛位」，以下相同。</note>
+<note n="0002002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002002">讀為 ganhāvelā（暹羅本）。</note>
+<note n="0002003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002003">讀為 samcitta（暹羅本）。</note>
+<note n="0002004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002004">欽婆羅（kambala），毛織衣之一種。</note>
+<note n="0002005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002005">黃麻（dnkūla），以此種植物之纖維所織成之柔軟之衣。</note>
+<note n="0002006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002006">支那（cīna），指支那產之衣（cīnāṁsuka）。</note>
+<note n="0002007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002007">原語 Paṇḍu 橙色。</note>
+<note n="0003008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0003008">神樹與任何欲求之物。此處指所謂衣樹。與欲求之衣。</note>
+<note n="0003009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0003009">原語解為 samāhitvā。</note>
+<note n="0004010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0004010">香之五指印（gandha-Pañcangulika）開浸香油之掌捺印，印成掌形之一種善緣起之手印。</note>
+<note n="0006011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006011">以下為十波羅蜜，即：布施、戒、出離、智慧、精進、忍、真諦、加持、慈、捨。</note>
+<note n="0008001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0008001">鞞提訶牟尼為阿難陀之異名。</note>
+<note n="0008002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0008002">那丹伽（nataṅga）意義不明，應為說明阿難陀之語。</note>
+<note n="0009003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0009003">自第九偈以下至第四十九偈見 Sutta-nipāta, khaggavisāṇasutta VV. 35-75（南傳藏卷二四）。但彼此多少有所不同。</note>
+<note n="0010004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010004">此與 Sutta-nipāta 語之順序不同。</note>
+<note n="0010005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010005">黑檀之一種。</note>
+<note n="0010006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010006">在 Sañchinna Sutta-nipāta 中為 Saṁsīna（落去）之意。</note>
+<note n="0010007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010007">此一句與 Sutta-nipāta 不同。</note>
+<note n="0010008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010008">二腕環相擊，如成為一則無此事。為獎勵獨住。Cf, jātaka VI, P. 64。</note>
+<note n="0010009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010009">訂正為 ḍaṁsa。</note>
+<note n="0010010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010010">波羅奈之一王子雖欲出家，但內外皆有障礙，只以外形如出家者住於王苑。於香醉山中之難陀姆羅伽（Nandamūlaka）坡，謂一日種（Ādicea-bandhu）辟支佛觀察王子為不得出家，來至王苑而說此前半之偈，教以出家之法（Sn. A. I, P. 103-105）。</note>
+<note n="0011011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0011011">毒之箭 Kaṇḍa 在 Sutta-nipāta 中為有鈎（gaḷa）之箭。</note>
+<note n="0011012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0011012">晝度樹三十三天中之大樹，又譯為梯沽樹、圓生樹等。</note>
+<note n="0012013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0012013">道支菩提分，為八正道、三十七菩提分各支到達之義。</note>
+<note n="0016001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016001">菴婆樹，讀為 ambagaṇḍi（暹羅本）。</note>
+<note n="0016002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016002">讀為 Uttrā hi（暹羅本）。</note>
+<note n="0016003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016003">讀為 Jalajā（異本）。</note>
+<note n="0016004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016004">大蛇，原意食羊之物。</note>
+<note n="0016005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016005">鳩。</note>
+<note n="0016006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016006">鵞之一種。</note>
+<note n="0016007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016007">譯為好聲鳥，印度之郭公鳥。</note>
+<note n="0016008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016008">鸚鵡。</note>
+<note n="0016009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016009">譯為鷲鷺（Sāri），或係鶇鳥。</note>
+<note n="0016010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016010">Jātaka VI, P. 540 解為蟹，此處可視作鳥名。</note>
+<note n="0016011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0016011">鶴之屬。</note>
+<note n="0017012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017012">鳥名，得解作鸚鵡雛鳥之意。</note>
+<note n="0017013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017013">赤銅色螺髻之意。</note>
+<note n="0017014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017014">譯為共命鳥。</note>
+<note n="0017015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017015">或係鳥名，原意為大黑。</note>
+<note n="0017016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017016">暹羅本為 Pasadā migā varāhā ca。</note>
+<note n="0017017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017017">鹿之一種，Jātaka, VI, P, 537 中解作 sarabhamiga。</note>
+<note n="0017018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017018">發情期之象，謂其身體表現三處發情之兆，是為象之最狂暴時期。</note>
+<note n="0017019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017019">五藥之一，譯為天主將來。</note>
+<note n="0017020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017020">藥用植物，譯為餘甘子。</note>
+<note n="0017021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017021">藥用植物。</note>
+<note n="0018022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018022">Vilva 樹之果。</note>
+<note n="0018023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018023">以下皆為植物之名。</note>
+<note n="0018024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018024">前半之偈出於 Sutta-nipāta V, 1020。</note>
+<note n="0018025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018025">paṭhavya 之意，暹羅本為 paṭhavyā bhummantalikkle。</note>
+<note n="0019026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019026">仙者依神通使其定量之負荷（一加利之重量）先行，自己則隨後而行。</note>
+<note n="0019027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019027">讀為 asmanā（暹羅本）。</note>
+<note n="0019028" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019028">讀為 Koṭṭitā（異本）。</note>
+<note n="0020029" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0020029">devatā 廣義為一切之神，然此處為狹義與那伽，乾闥婆同列舉為藥叉之意。</note>
+<note n="0021030" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0021030">過去二十四佛之第四佛。Buddhavaṁsa, P. 29; Jātaka I, P. 35。</note>
+<note n="0021031" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0021031">青睡蓮之類。</note>
+<note n="0023032" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0023032">意指「人中之長」。</note>
+<note n="0024033" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0024033">原文此處為述轉輪王，而於次之一〇九偈應述為神王之意。然此乃依文意所見。如後之再出，則更換轉輪王為適宜。</note>
+<note n="0024034" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0024034">Sāriputta 之 Sārī 為鶖鷺子之意。</note>
+<note n="0024035" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0024035">讀為 Sakko tīsu visārado（暹羅本）。</note>
+<note n="0026036" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0026036">譯為「馬勝」，為佛初轉法輪時，最初受教化五比丘之一。</note>
+<note n="0027037" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0027037">指摩訶目犍連。</note>
+<note n="0028038" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0028038">摩訶目犍連最初與舍利弗同為刪闍耶之弟子。</note>
+<note n="0030039" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030039">caitra（制恒羅）月之異稱，約當春三月。</note>
+<note n="0030040" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030040">讀為 Pupphito（暹羅本）。</note>
+<note n="0031041" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031041">圍繞世界一周之鐵圍山。</note>
+<note n="0031042" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031042">讀為 Sukhito（異本）。</note>
+<note n="0032043" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0032043">貪瞋癡之三火。</note>
+<note n="0032044" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0032044">訂正為 uddhaṭaviso。</note>
+<note n="0033045" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0033045">DhP. A. IV, P. 150 中，舍利弗向其師阿說示尊者所居之方禮拜，足不向彼而寢。</note>
+<note n="0033046" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0033046">訂正為 Sāranan ti。</note>
+<note n="0038001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0038001">今生之死期亦目標被切頭而死之意。目犍連遭執杖梵志之襲擊而被殺。增一阿含卷一八、二六、九（大正藏二、六三九頁）鼻奈耶卷二（大正藏二四、八五七頁）、DhP. A. III, P. 95f。</note>
+<note n="0039001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0039001">譯為蓮華上佛。過去二十四佛之第十佛。Buddhavaṁsa. P. 35. Jātaka. I, P. 37。</note>
+<note n="0040002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040002">此處為舍利塔（thūpa）之意。</note>
+<note n="0040003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040003">讀為 Pabhāsayuṁ（暹羅本）。</note>
+<note n="0040004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040004">轉輪王（Ubbiddha）一譯為高聳。</note>
+<note n="0040005" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0040005">Rammaka 譯為美好。</note>
+<note n="0041006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0041006">讀為 hiraññassa（暹羅本）。</note>
+<note n="0042001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0042001">譯為善慧，過去二十四佛之第十一佛。Buddhavaṁsa, P. 37。</note>
+<note n="0044001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044001">此處所謂之論事（Kathāvatthu）是否為現存論藏中之論事頗為疑問。此論事可作普通名詞解。</note>
+<note n="0044002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044002">善說（Suppakāsaka）。</note>
+<note n="0044001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044001-1">Haṁsavatī（鵞市）。</note>
+<note n="0044002-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044002-1">Sujāta（善生）。</note>
+<note n="0045003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045003">Haṁsavhaya 即漢薩瓦提（鵞市）。</note>
+<note n="0045004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045004">Sunanda（善喜）。</note>
+<note n="0045005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045005">maṇḍapa 為祭日等一時所建之假屋，為無壁只有屋頂之大廳。</note>
+<note n="0045006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045006">訂正為 bhavesu saṁsarissati。</note>
+<note n="0045007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045007">讀為 bhāsayanto（異本）。</note>
+<note n="0046008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0046008">Sobhaṇa（輝映）。</note>
+<note n="0049009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0049009">讀為 Sati。</note>
+<note n="0049010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0049010">鶴依雷鳴而受胎。jātaka II, P. 363。</note>
+<note n="0050011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0050011">讀為 athâppaṇihitam（異本）。</note>
+<note n="0050012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0050012">rūpadakkha 造形巧妙者之原義。此尚關聯由第七十九偈至第八十三偈。Milindapañha P. 344 參照。</note>
+<note n="0052013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052013">神通第一之摩訶目犍連。拘離多乃其名（以前已述）。</note>
+<note n="0052014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052014">指頭陀第一之摩訶迦葉。</note>
+<note n="0052015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052015">從邏羅本讀為 vimaye kathitaṁ ssbbaṁ。</note>
+<note n="0052016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052016">Añjasa（直路）。</note>
+<note n="0052017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052017">Candana（栴檀）。</note>
+<note n="0053018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0053018">Sirika（吉祥）。</note>
+<note n="0053019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0053019">Devala（執天），此佛之名不詳。若視為巴多穆塔拉佛之第一弟子，則其為佛實不可解。</note>
+<note n="0053020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0053020">Sumekhala（善帶）。</note>
+<note n="0054021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054021">阿修羅之一種，為（Danu）之子。cf, jataka V, P. 393; Milindapañha P .153。</note>
+<note n="0054022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054022">讀為 bhindeyyuṁ（異本）。</note>
+<note n="0054023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054023">讀為 mahāvirā（暹羅本 attauantā mahāvirā）。</note>
+<note n="0055024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055024">Aṅgulimāla（指鬘）。</note>
+<note n="0055025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055025">Dhanapāla（護財）。</note>
+<note n="0059001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059001">倣悉達多太子之大出離（Mahābhinikkhamaṇa）出家之意。</note>
+<note n="0059002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059002">此為鹿野苑（Migārañña），詳說為指仙人墮處鹿野苑（Isipatana Migadāya）。此言佛於初轉法輪，憍陳如最初之得漏盡。</note>
+<note n="0060001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060001">原文 mahiyā catusaṭṭhiyā 意義不詳。</note>
+<note n="0061001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061001">常住朅地羅（Khadira）樹林故，稱為朅地羅林（Khadiravaniya）之隷婆哆。</note>
+<note n="0062002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062002">Tāraṇa（渡）。</note>
+<note n="0062003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062003">與此一前半句見為同一者 Sutta-nipāta V. 79（P. 14）。</note>
+<note n="0063001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063001">釋迦族之標幟（Sakyānaṁ kulaketu）。</note>
+<note n="0064002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064002">此處從暹羅本讀為 ṭhitā saddhā mahāpphalā。</note>
+<note n="0065001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065001">譯為義成就。過去二十四佛之第十六佛。Buddhavaṁsa, P. 47; jātaka, I, P. 40。</note>
+<note n="0067001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0067001">讀為 paricārem ahaṁ sadā（異本）。</note>
+<note n="0068001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068001">最勝水中草為最勝蓮華，即指巴多穆塔拉佛。</note>
+<note n="0068002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068002">Cela（衣）。</note>
+<note n="0068003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068003">Upacela（近衣）。</note>
+<note n="0070001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070001">manomaya-kāya 意生身，音譯摩奴末耶。此指諸佛諸阿羅漢諸天等可隨己意化出生身。周羅槃陀為意生身化作第一，或被稱為「善化形體作若干變」。</note>
+<note n="0070002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070002">兄為摩訶槃陀，弟為周羅槃陀。Jātaka I, P. 104f。</note>
+<note n="0072001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0072001">向塔婆塗香泥供養。</note>
+<note n="0073001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0073001">原意為充分擴展字義。</note>
+<note n="0073002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0073002">Vimala（無垢）。</note>
+<note n="0073003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0073003">Reṇuvatī（塵市）。</note>
+<note n="0073004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0073004">Sudassana（善見）。</note>
+<note n="0073005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0073005">譯為妙匠，為隨從帝釋之三十三天工巧神。</note>
+<note n="0075001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0075001">Māra-savāhana 為惡魔及乘騎，依 Sutta-nipāta, V, 442之註中謂以象為乘騎。Jātaka, I, P. 71 中謂所乘乃名魔羅 Girimekhala 之象。</note>
+<note n="0076001" resp="#resp2" type="orig" target="#nkr_note_orig_0076001">[02]</note>
+<note n="0076002" resp="#resp2" type="orig" target="#nkr_note_orig_0076002">[01]</note>
+<note n="0078001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0078001">為有名之無常偈，見於 D, II, P. 157。漢譯：「諸行無常，是生滅法，生滅滅己，寂滅為樂。」大般涅槃經卷下，大乘涅槃經卷十四（北本）、長阿含遊行經等皆有所出。</note>
+<note n="0078002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0078002">Sapāka 四姓以下之卑賤者，此蘇巴伽長老（Sopāka）之名，亦由此而來。</note>
+<note n="0079001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0079001">譯為喜見，過去二十四佛之第十三佛。Buodhavaṁsa, P. 41; Jātaka, I, P. 38。</note>
+<note n="0079002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0079002">此偈之前半見於 Sutta-nipāta V. 544。</note>
+<note n="0081001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0081001">Nisabha 人中牡牛之意。</note>
+<note n="0082002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082002">就同一之比喻見 Cf. S. III, P. 93; A. II, 95; J. I, P. 482。</note>
+<note n="0083003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083003">原語 Singī-nikkha-Suvaṇṇa 皆為黃金。</note>
+<note n="0083004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083004">khadira 樹名。一種硬木。</note>
+<note n="0083005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083005">jotirasa 一種寶石，又為星宿之一（喜宿）。</note>
+<note n="0083006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083006">依暹羅本讀為 Visuddhakelāsasannibho。</note>
+<note n="0086001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086001">jaṅghā 之原意為脚。而塔之脚則應為其基部。</note>
+<note n="0086002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086002">籠蓋（Kañcuka）為塔之全部由磚石等所累積圍攏而成，今再予以增大，此與英語 encasing 相當。</note>
+<note n="0086003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086003">indanīla, mahānīla，皆是青玉之類。</note>
+<note n="0087004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0087004">暹羅本於此前加入四偈，說金翅鳥增大塔婆之事，其他情況則相同。</note>
+<note n="0087005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0087005">此為有籠蓋之塔，其上再加籠蓋，如此增大塔婆，非為塔上再造塔之意。</note>
+<note n="0087006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0087006">密迹，夜叉之一種，手持金剛故，稱密迹金剛等。此處可視為夜叉。</note>
+<note n="0087007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0087007">讀為 candasuriyatārakā（異本）。</note>
+<note n="0087008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0087008">讀為 Padīpo pana Pajjali（暹羅本）。</note>
+<note n="0088009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0088009">Abhisammata（勝靜）。</note>
+<note n="0088010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0088010">訂正為 visuddhā。</note>
+<note n="0088011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0088011">讀為 vādaka。</note>
+<note n="0088012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0088012">tappara（tatpara）「從彼」者、「……特別專念」者之義。此果意味為佛與否不得而知，而由前後之關係作如是解。原文 P. 534（The rīgāthā, A. l P. 148）中指 Ānanda 有 Buddhupaṭṭhānatappara「奉侍佛之專念者」之義。</note>
+<note n="0089013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0089013">讀為 sararvgo va。</note>
+<note n="0092001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0092001">讀為 sāmaṁ（異本）。</note>
+<note n="0093002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0093002">應讀為 Vandāmi。</note>
+<note n="0095001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0095001">註為 adhimattaṁ（暹羅本）。</note>
+<note n="0097001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0097001">過去二十四佛之第十九佛。過去七佛之第一佛。</note>
+<note n="0097002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0097002">大砂（Mahāpnḷina）。</note>
+<note n="0098001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0098001">Candabhāgā（Candrabhāgā）（月分）。</note>
+<note n="0099001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0099001">Bandhumatī（親惠城）。</note>
+<note n="0100002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0100002">Sinahavasandana 信度產駿馬所拖拉之馬車。</note>
+<note n="0100001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0100001">以下多為略稱 Saraṇa, Sīlagāhaka, Añjalī, Khamadayī。</note>
+<note n="0101001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0101001">讀為 Bhūtasabbāni（異本）。</note>
+<note n="0102002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0102002">依 DhP. A. III P. 521.彼犯惡業於迦葉佛時。彼名曲背 Dhāna 之意。得此惡名，亦為過去所業之果。</note>
+<note n="0102003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0102003">此於增一阿含卷二二（大正藏卷二、六六二頁上）有廣說。阿那邠邸（給孤獨）長者之女修摩提嫁後，於滿富城請佛。佛令拔取舍羅（籤籌）以決定阿羅漢之人數。時君頭波漠尚為有學，乃拔其取舍羅，立即達無學阿羅漢位。佛曰：「我弟子中第一受舍羅者君頭波漠。」A. I. P. 24。（漢譯南傳藏卷一九、三一頁）參照。</note>
+<note n="0104001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0104001">A. IV, P. 354, 中阿含卷一〇（大正藏卷一、四九一頁上）據傳彌醯比丘有此事實。同為佛之侍者，舉出兩者是否混同不得而知。</note>
+<note n="0105001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0105001">Pabhassara（光耀）。</note>
+<note n="0106001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0106001">佛典中所現之 udayi（優陀夷）有三人。一般漢譯迦留陀夷為制定戒律因緣而出現之破戒比丘。然南傳藏則為釋迦族中一大臣之子，如本譬喻經所示：為一有德之比丘諒。諒此比丘名與傳說之間或因混雜之因由而為異傳。詳見赤沼氏《印度佛教固有名詞辭典》二六六頁參照。</note>
+<note n="0106002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0106002">訂正為 addhānaṁ。</note>
+<note n="0106003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0106003">鉢頭摩為赤蓮花。優鉢羅為青蓮花（水蓮之屬）。摩利迦譯為次第花，為亞剌比亞素馨。</note>
+<note n="0107004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0107004">解為 citraṁ 之意。</note>
+<note n="0108001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0108001">過去二十四佛之第十四佛。Buddhavaṁsa. P. 43; jātaka I, P. 39。</note>
+<note n="0109002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0109002">訂正為 ñaṇamhi。</note>
+<note n="0111001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0111001"><space quantity="0"/></note>
+<note n="0111002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0111002">暹羅本讀為 Vaḍḍhakīhi，Vaḍḍhakī 乃木工之義。</note>
+<note n="0112003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0112003">讀為 sattaratana。（邏羅本）。</note>
+<note n="0113001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0113001">Sahassarāja（千王）。</note>
+<note n="0114001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0114001">讀為 laggetvā（暹羅本）。</note>
+<note n="0114002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0114002">Sucela（美衣）。</note>
+<note n="0115001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0115001">三杖縛為一束具有三脚，為仙者用具之一。</note>
+<note n="0115002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0115002">讀為 carā sadā（異本）。</note>
+<note n="0116003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0116003">讀為 samāyutaṁ（異本）。</note>
+<note n="0117004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0117004">註釋中為 Bhāgineyyupāli 與前出之優波離區別。但其內容卻與持律第一之優波離為同一人。</note>
+<note n="0118001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0118001">詳解為 Soṇa-Koḷiyavessa（黃金二十億），又異本為 KotiKaṇṇa（億耳）Koḷiyavessa 或 Koḷivisa 與漢譯億耳比丘（Koṭikanna）當為另一人。可參閱 Theragāthā（南傳藏卷二五）中別出兩者之偈。漢譯則往往與此混同。此在譬喻經之各寫本中，亦同犯此類錯誤。</note>
+<note n="0119002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0119002">自此以下至第二十一偈止，插入有關甘蔗（okkāka.Ikṣuāku）王統之傳說。甘蔗王之子女九人為四男五女。王後立新妃，寵愛新妃及其一子，驅逐先妃之子等於國外。彼等入最上之山即雪山，住於湖畔之薩伽（Sāka）樹林中，兄妹相婚。保持血統之純潔。此即釋迦族之祖。D. 3. Ambaṭṭha（南傳藏卷六、一三七頁）、長阿卷一三、阿摩晝經 Sumangala. I. P. 174 及其他請參閱。</note>
+<note n="0119003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0119003">讀為 tayā。</note>
+<note n="0119004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0119004">甘蔗王之長女名曰 Piyā 患癩病被棄於洞窟。為拘羅（kola）市之王而出家者，於其近傍將其救出。此後裔曰拘利族。見 Cf. MahāvastuI, P. 353; Sumaṅgala, I. P. 262。</note>
+<note n="0119005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0119005">應視作第十三偈續述至此。予意以為甘蔗王或拘利族之祖應視為一剎帝利。</note>
+<note n="0119006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0119006">Soṇa（黃金）。</note>
+<note n="0120007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0120007">Aṅgīrasa（肢光）為釋尊之異名。</note>
+<note n="0121001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0121001">讀為 Sattukāñ Ca（暹羅本）。</note>
+<note n="0121002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0121002">讀為 tūlikā。</note>
+<note n="0123001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0123001">異本中為 Santiṭṭhāpaka 或為 Sanniṭṭhāpaka。</note>
+<note n="0123002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0123002">Arindama（摧敵）。</note>
+<note n="0124001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0124001">Hatthiya（手）。</note>
+<note n="0125001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0125001">Padumissara（蓮華自在）。</note>
+<note n="0126001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0126001">或應讀為 uccatte。</note>
+<note n="0126002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0126002">ratana（aratni）長度之單位，合二十一拇指中幅之長度。或與 12anguli（指）相當。</note>
+<note n="0126003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0126003">hattha（hasta）譯為肘，長度之單位，為由肘至中指尖端之長度，但實測究為幾何？頗有異說。一說為一尺八寸。茲示其關係單位相互之量如次：24 anguli = 1 hasta; 4 hasta = 1 dhanu（弓）; 500 dhanu = 1 kro'sa（拘盧舍）8; kro'sa = 1 yojana（由旬）。</note>
+<note n="0128001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0128001">tagara, mallikā，多羅伽略稱伽羅，為香之名。摩利迦為花之名，亦稱次第花，為一種香草。</note>
+<note n="0129002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0129002">Jalajutama 即 Padumuttara 指佛而言。</note>
+<note n="0129003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0129003">過去七佛之第六佛。過去二十四佛之第二十四佛。</note>
+<note n="0130001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0130001">一般係指為摩訶周那，大純陀（Mahācunda）比丘。即舍利弗之弟。但在此或指為他人之混同者。</note>
+<note n="0130002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0130002">Jāti 為素馨之類。</note>
+<note n="0131003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131003">Dujjaya（難勝）。</note>
+<note n="0131004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131004">Vaṅganta 為舍利弗及純陀之父。</note>
+<note n="0131005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131005">Sārī（鶖鷺）。</note>
+<note n="0131006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131006">Cūḷacunda（小純陀）。</note>
+<note n="0131007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131007">兄指舍利弗（Sāriputta）。</note>
+<note n="0131008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131008">此為指舍利弗涅槃之時，彼為辦理荼毘等諸事，行施供養。此時純陀傳為舍利弗之沙彌。S. 47. 13. Cuṇḍa.（S. V. P. 161），雜阿卷二四（大正藏，卷二、一七六頁中）參閱。</note>
+<note n="0131009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0131009">讀為 dhātuṁ pattamhi ociya（暹羅本）。</note>
+<note n="0133001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0133001">Seyya = Sayana。</note>
+<note n="0133001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0133001-1">Vīja 與 Vidhūpana 皆為扇之意，故本品稱為扇品（維伽尼品 Vīja ni Vagga）。</note>
+<note n="0134002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0134002">Vījamānasa（扇意）。</note>
+<note n="0135001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0135001">Roma（身毛）。</note>
+<note n="0135002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0135002">Sataraṁsiya 偈中亦稱 Sataraṁsi。</note>
+<note n="0136001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0136001">讀為 Tena cāsanivegena（異本）。</note>
+<note n="0137002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0137002">Saṁvasita（共住）。</note>
+<note n="0138001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0138001">暹羅本中為，「諸神與人間，吾生任何胎，駿馬疾如風，吾生得繁榮」。</note>
+<note n="0140001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0140001">Satacakkhu（百眼）。</note>
+<note n="0141001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0141001">Megha（雲）。</note>
+<note n="0142001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0142001">過去二十四佛之第十七佛。Buddhavaṁsa, P. 48; J. I. P. 40。</note>
+<note n="0142002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0142002">前第三譬已出。</note>
+<note n="0142003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0142003">前第一佛陀品一七五偈已出。</note>
+<note n="0143004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0143004">Daṇḍasena（杖軍）。</note>
+<note n="0143005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0143005">Samantanemi（全輪）。</note>
+<note n="0143006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0143006">Puṇṇaka（充滿）。</note>
+<note n="0144001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0144001">Udaki = Gandhodaka。</note>
+<note n="0144002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0144002">Vāhiya 為運載者，指馬而言。Opavuyha 為（適於乘者），二者之義相同。</note>
+<note n="0144003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0144003">Padumapūjaka 為（蓮供養），出版者以 paduma 與 Pūjaka 作另有其人為誤植。</note>
+<note n="0145001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0145001">依異本 Puḷinaṁ，又可讀為 Pūḷinaṁ。</note>
+<note n="0145002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0145002">asītikappe 訂正為 nantayaso。</note>
+<note n="0147001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0147001">cakkavāka 好聲鳥，印度郭公鳥。</note>
+<note n="0147002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0147002">sevāla 草之名。</note>
+<note n="0147003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0147003">Sucārudassana（善愛見）。</note>
+<note n="0148001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148001">讀為 Sena（異本）。</note>
+<note n="0148002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0148002">Uggata（昇）。</note>
+<note n="0149001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149001">Vessabhū 為過去七佛之第三佛，故此有諸仙中第三之稱。</note>
+<note n="0149002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149002">Samodhāna（並置）。</note>
+<note n="0150001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150001">Dīghāyu（長壽）。</note>
+<note n="0151001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151001">Aruṇaka（太陽）。</note>
+<note n="0152001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152001">讀為 damathenāhaṁ（異本）。</note>
+<note n="0153002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0153002">Ambatthaja（菴婆核生）。</note>
+<note n="0153001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0153001">讀為 cattārasa（異本）。</note>
+<note n="0154001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0154001">Anojā 為開赤花之灌木。</note>
+<note n="0154002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0154002">Devabhūti（神現）。</note>
+<note n="0155001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155001">原文雖為 Addhāpupphi，今採異本為 Avopupphi。暹羅本則為 atho Pupphi。</note>
+<note n="0155002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155002">Paccā〔bhi〕gamana。</note>
+<note n="0156001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0156001">apāṭali 樹名。不詳。</note>
+<note n="0156002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0156002">Bhūmiya（地）。</note>
+<note n="0157001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0157001">Dumasāra（樹精）。</note>
+<note n="0158001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0158001">Bhisasammata（以鬚根而受崇者）。</note>
+<note n="0160001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0160001">Migasammata（鹿敬）。</note>
+<note n="0160002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0160002">Tiṇasanthāra〔daya〕ka。</note>
+<note n="0161001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161001">Dipadādhipati（二足者之主）。</note>
+<note n="0161001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161001-1">Abhisammata（勝敬）。</note>
+<note n="0162001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0162001">Migaketu（獸旗）。</note>
+<note n="0163001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163001">Haṁsavatī（鵞市）。</note>
+<note n="0164002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0164002">Mahāvitthārika（大福）。</note>
+<note n="0164003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0164003">今採暹羅本作 tuvaṭṭssanti。</note>
+<note n="0165001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0165001">〔Bhisa-〕Āluvadāyaka。</note>
+<note n="0165002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0165002">Tiṇadada（草施）即 Tiṇasanthāradāyaka 長老。</note>
+<note n="0166001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0166001">Candabhāgā（月分）。</note>
+<note n="0166002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0166002">timira 花不詳。</note>
+<note n="0167001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0167001">naṅgaliki 花不詳。</note>
+<note n="0168002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0168002">Aggisikhā（火焰）。</note>
+<note n="0168001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0168001">在異本方面 Nippannañjalika 暹羅本作 Nipanna。依文意看，可以採用。攝頌中亦與右同。</note>
+<note n="0169002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169002">Mahāsikhā（大光焰）。</note>
+<note n="0169001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169001">Abhibhū（無勝）。</note>
+<note n="0171001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0171001">Phussa 為過去二十四佛之第八佛。見 Buddhavaṁsa, P. 50; Jātaka I, P. 40。</note>
+<note n="0173001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0173001">Kusuma 花之名。</note>
+<note n="0173002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0173002">Udakāsecana（灌水）。</note>
+<note n="0174001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0174001">Padumabhāsa（蓮語）。</note>
+<note n="0174001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0174001-1">Naṅgalipupphī（楠伽利花）。布施 Naṅgaliki 花，指格達山尼耶迦長老。</note>
+<note n="0175002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0175002">Sevaka（奉事人）。指 Bodhisaññaka 長老。</note>
+<note n="0176001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0176001">Paṭisaṅkhāra（修復）。</note>
+<note n="0176001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0176001-1">Mahāruci（大滿足）。</note>
+<note n="0177002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0177002">Ruci（滿足）。</note>
+<note n="0177003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0177003">Uparuci（近滿足）。</note>
+<note n="0177001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0177001">讀為 Paramakāruññapatto（異本）。</note>
+<note n="0178002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0178002">odana（乳麋）。</note>
+<note n="0178001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0178001">Bandhumā 正寫為 Bandhumatī（親惠城）。</note>
+<note n="0178002-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0178002-1">Vajirasama（金剛似）。</note>
+<note n="0179001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0179001">Devagandha（天香）。</note>
+<note n="0180001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0180001">波吒釐（Pāṭalī）樹為毘婆尸佛之菩提樹。</note>
+<note n="0180002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0180002">Samantapāsādika（一切處愉悅）。</note>
+<note n="0182001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182001">讀為 sayane' bhivassanti（暹羅本）。</note>
+<note n="0182002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182002">讀為 Thitāsanthāraka（堅固蓆）（暹羅本）。</note>
+<note n="0183001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0183001">Sucintita（善考）。</note>
+<note n="0184001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0184001">Mahānigghosa（大響）。</note>
+<note n="0184001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0184001-1">此前之 Sucintita 略去。</note>
+<note n="0184002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0184002">Kammāra（鐵工）Sūcidāyaka 嘗為鐵工匠，故作斯言。</note>
+<note n="0185003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0185003">Dhammaka（法）。指 Buddhūpaṭṭhāka 長老。</note>
+<note n="0186001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186001">讀為 Pavaṇā（脚註及暹羅本）。</note>
+<note n="0186002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186002">Mahāreṇu（大塵）。</note>
+<note n="0188001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0188001">Najjupama（諸河似）。</note>
+<note n="0189001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0189001">Samantagandha（徧香）。</note>
+<note n="0190001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0190001">Devuttara（天中之勝）。</note>
+<note n="0191001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0191001">Sahassarāja（千王）。</note>
+<note n="0192001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192001">Subbata（敬虔）。</note>
+<note n="0192002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0192002">Māluta（微風）。</note>
+<note n="0193001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0193001">Sannibbāpaka（淨化）。</note>
+<note n="0194001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194001">同一之偈見於 Jātaka, VI, P. 578。</note>
+<note n="0194002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194002">ālu, Kaḷamba, biḷalī, takkaḷa, kola, bhallātaka, bella 以上均為球根之植物。</note>
+<note n="0194003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194003">Sumekhali（善帶）。</note>
+<note n="0195001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195001">Reṇu（花粉）。</note>
+<note n="0196001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0196001">Nivāsaka（住）。此係就阿薩努帕塔耶迦長老而言。</note>
+<note n="0197001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0197001">Vāhane（乘輿）。</note>
+<note n="0198001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0198001">彈指乃表示歡喜之狀。</note>
+<note n="0198002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0198002">Ekacintita（一考）。</note>
+<note n="0199001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199001">讀為 parikkhitto。</note>
+<note n="0199002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199002">Mahācunda（大象牙師）。</note>
+<note n="0200001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0200001">讀為 sabbatāḷa（依暹羅本）。</note>
+<note n="0200002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0200002">訂正為 Nimmāna（依暹羅本）。</note>
+<note n="0201003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201003">讀為 tidhaggi（異本）。</note>
+<note n="0201004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201004">Subahu（夥多）。</note>
+<note n="0202001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202001">讀為 Ca（異本）。</note>
+<note n="0202002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202002">Nemisammata（輞所敬）。</note>
+<note n="0204001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0204001">Samita（靜安）。</note>
+<note n="0205001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0205001">Sacakkhu（具眼）。</note>
+<note n="0206001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206001">讀為 cara dhammaṁ sumedhasa（暹羅本）。</note>
+<note n="0206002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206002">讀為 Pūjehi（暹羅本）。</note>
+<note n="0206003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206003">Bhūripañña（宏智）。</note>
+<note n="0207001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0207001">讀為 Saṁharitvāna（暹羅本）。</note>
+<note n="0207002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0207002">讀為 dhātiyo（暹羅本）。</note>
+<note n="0208003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0208003">Supāricariya（善奉事）。</note>
+<note n="0209001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209001">讀為 Sā pupphachadanaṁ（暹羅本）。</note>
+<note n="0210001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0210001">讀為 tāhaṁ disvā namassissaṁ（暹羅本）。</note>
+<note n="0211002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211002">讀為 sakkaccaṁ（暹羅本）。</note>
+<note n="0211003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211003">讀為 sattārīsasahassamhi（暹羅本）。</note>
+<note n="0211004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211004">Aggisama（如火者）。</note>
+<note n="0211005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211005">Ghatāsana（食酪者＝聖火）。</note>
+<note n="0212001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212001">讀為 buddho' Si（暹羅本）。</note>
+<note n="0213001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213001">Sugandha（芳香）。</note>
+<note n="0214001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214001">讀為 avīci' ggiṁ（暹羅本）。</note>
+<note n="0214002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214002">讀為 sattāsuṁ（暹羅本）。</note>
+<note n="0215003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215003">訂正為 thavitvā。</note>
+<note n="0215004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215004">Paṭhavidundubī（地鼓）。</note>
+<note n="0215005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215005">Obhāsamata（光思）。</note>
+<note n="0215006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215006">Agginibbāpana（火消）。</note>
+<note n="0215007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215007">Rājāvātasama（王風似）。</note>
+<note n="0215008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215008">Gatipacchedana（趣斷）。</note>
+<note n="0215009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215009">Rataṇappajjala（寶焰）。</note>
+<note n="0215010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215010">Padavikkamana（足步）。</note>
+<note n="0215011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215011">Rājāvilokana（王省察）。</note>
+<note n="0215012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215012">Hirisāra（恥髓）。</note>
+<note n="0217001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217001">Dhaññavatī（穀市）。</note>
+<note n="0217002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217002">Varadassana（勝見）。</note>
+<note n="0218001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218001">Puṇḍarīka 為白蓮華，但在此可視為與尸棄佛之路樹為同一種樹。</note>
+<note n="0218002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218002">Sumaṅgala（善瑞祥）。</note>
+<note n="0219001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219001">Puḷinapupphiya（砂花）。</note>
+<note n="0220001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0220001">gaṇṭhi 樹名。</note>
+<note n="0221001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221001">Jaluttama（最勝水）。</note>
+<note n="0222001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0222001">Thomaka = thavika 即指 Sammukhathāvika 而言。</note>
+<note n="0223001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223001">此為 triṣṭubh 調之一偈所插入者，底本附以三、四兩節之號碼為錯誤，四節之號碼應除去。</note>
+<note n="0225001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225001">Rohiṇi（赤牛）。</note>
+<note n="0226001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0226001">Sunanda（善喜）。</note>
+<note n="0226002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0226002">讀為 ayājiyiṁ（異本）。以下同樣原文用第三人稱之動詞應訂正為一人稱。此處婆羅門係指長者之前生。</note>
+<note n="0226003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0226003">讀為 aphari satte（暹羅本）。參閱前之第六八菴婆達耶迦長老之第一偈。</note>
+<note n="0227001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227001">Vasabha（牡牛）。</note>
+<note n="0227002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227002">以下同應視為第一人稱。</note>
+<note n="0228003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0228003">Siridhara（吉祥持）。</note>
+<note n="0229001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229001">Vihatābha（殺光）。</note>
+<note n="0229001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229001-1">讀為 puragacchi so（暹羅本）。</note>
+<note n="0230002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230002">Sukhitta（善投）。</note>
+<note n="0230001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230001">Kesava（美髮）。</note>
+<note n="0230002-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0230002-1">Amittavāsana（無敵住）。</note>
+<note n="0231003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231003">讀為 Ekaraṁsaniya（暹羅本及他異本）。</note>
+<note n="0231001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231001">讀為 Sasākhaṁ。</note>
+<note n="0231002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231002">Virocana（徧照）。</note>
+<note n="0232001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232001">讀為 Parapāṇu。</note>
+<note n="0233001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0233001">讀為 Ekaraṁsi（異本及暹羅本）。</note>
+<note n="0233002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0233002">Sāladada = Sālapupphadāyaka。</note>
+<note n="0235001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0235001">Thūpasikha（塔頂）。</note>
+<note n="0235001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0235001-1">讀為 Maṇiṁ（暹羅本）。</note>
+<note n="0235002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0235002">Maṇippabha（摩尼光）。</note>
+<note n="0236001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236001">依異本及暹羅本讀為 thūpadattaṁ。</note>
+<note n="0236002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236002">依暹羅本讀為 dhūpagandho 但如底本讀 ca 為 va（異本），意為「如天翔之煙塊」。</note>
+<note n="0236003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0236003">應讀 Samatta（成就）（暹羅本及其他異本）。</note>
+<note n="0237001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0237001">Somadeva（蘇摩神）。</note>
+<note n="0238001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0238001">Sabbagghana（金堅塊）。</note>
+<note n="0239001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239001">Suppabuddha（善覺）。</note>
+<note n="0240001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240001">akkhobiṇī 解為（Skt, akṣanhiṇī）之意。</note>
+<note n="0240002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240002">Bhavanimmita（有化作）。</note>
+<note n="0240001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240001-1">salaḷa 香樹之一種。</note>
+<note n="0241002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241002">Nimmita（化作）。</note>
+<note n="0241001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241001">Suvaṇṇābha（黃金光）。</note>
+<note n="0243001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243001">以上一偈半出自 Sutta-nipāta 637。同處稱之為婆羅門，故取為對格。</note>
+<note n="0243002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243002">Samantacakkhu（徧眼）。</note>
+<note n="0244001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244001">讀為 anekatāla papatiṁ（暹羅本）。</note>
+<note n="0244002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244002">tāla 即 vitasti（搩），為長度之單位，vitasti = 12 anguli，為張開拇指與中指間之長度。</note>
+<note n="0244003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0244003">Samphusita（觸）。</note>
+<note n="0245001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245001">讀為 pannarase yadā candaṁ（暹羅本）。</note>
+<note n="0245002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245002">依暹羅本訂正為 niyyante。</note>
+<note n="0245003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245003">Sudhaja（善幡）。</note>
+<note n="0246001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0246001">kakkāru 天華之一。</note>
+<note n="0246002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0246002">Sattuttama（最勝有情）。</note>
+<note n="0247001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0247001">mandārava 譯為天妙華。</note>
+<note n="0247002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0247002">Jutindhara（輝持）。</note>
+<note n="0248001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248001">Kukkuṭa（雞）。</note>
+<note n="0248002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248002">讀為 vasanti te（暹羅本）。</note>
+<note n="0248003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248003">Phullanāyaka（花嚮導）。異本為 Pupphanāmakā（叫做花者）。</note>
+<note n="0249001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249001">Bhūtagaṇa（鬼群）。</note>
+<note n="0249002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249002">tiṇasūla 素馨之一種。</note>
+<note n="0249001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0249001-1">Suvaccha（善積）。</note>
+<note n="0250002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250002">讀為 dīpo pajjalate tathā（暹羅本）。</note>
+<note n="0250003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250003">讀為 hāsaṁ mama（暹羅本訂正為 mamaṁ）viditvāna（暹羅本）。</note>
+<note n="0250004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250004">從異本之 okiriṁ ahaṁ（暹羅本亦同）。</note>
+<note n="0250005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250005">Mahāratha（大車）。</note>
+<note n="0251001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251001">Tamonuda（驅闇）。</note>
+<note n="0252001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252001">kakudha 鷄冠之意，又作樹名。暹羅本為 kukkuṭa（鷄）。</note>
+<note n="0252002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252002">讀為 vattasampanno（暹羅本）。</note>
+<note n="0252003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252003">訂為 Puññāpuññesu kovido（依暹羅本）。</note>
+<note n="0252004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252004">從暹羅本讀為 bhitvā。</note>
+<note n="0252005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252005">訂正為 tañ ca dānam daditvā' haṁ（依暹羅本）。</note>
+<note n="0253001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253001">過去二十四佛之第八佛。Buddhavaṁsa 3l; Jātaka I, P, 36。</note>
+<note n="0253002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253002">讀為 upaṭṭhahiṁ（暹羅本）。</note>
+<note n="0253003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253003">Samalaṅkata（莊嚴）。</note>
+<note n="0254001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254001">在底本已將 āsiṁ-gopako 之連結符——除去。</note>
+<note n="0254002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254002">kanavera（or Kanavīra）屬夾竹桃。</note>
+<note n="0255001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0255001">nāḷikera（椰子）。</note>
+<note n="0255002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0255002">Indasama（帝似）。</note>
+<note n="0256001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256001">Gosujāta（牛善生）。</note>
+<note n="0257001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257001">讀為 ogāhayi（暹羅本）。</note>
+<note n="0257002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257002">Soṇṇābha（黃金光）。</note>
+<note n="0257003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257003">此處為 Kaṇikārapupphiya（伽尼伽拉花），但脚註及暹羅本皆與標題同。</note>
+<note n="0258001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0258001">讀為 nāmāsi（暹羅本）。</note>
+<note n="0258002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0258002">Samodaka（等水）。</note>
+<note n="0259001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0259001">Samuddhara（濟出）。</note>
+<note n="0260001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260001">Parisuddha（清淨）。</note>
+<note n="0260001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260001-1">Bandhumatī（親惠城）。</note>
+<note n="0261002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0261002">Āveyya 暹羅本為 Āvela（花環），應予採用。</note>
+<note n="0261001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0261001">讀為 nāmāsi（暹羅本）。</note>
+<note n="0261002-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0261002-1">底本 appasādo va ramuddhe 暹羅本為 appasaddho ca……。</note>
+<note n="0261003" resp="#resp2" type="orig" target="#nkr_note_orig_0261003">[02]</note>
+<note n="0262001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0262001">Māla（華鬘）指 Samādapaka 布施之華鬘。</note>
+<note n="0263001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263001">訂正為 agamāsi（依暹羅本）。</note>
+<note n="0263002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263002">Sahassaratha（千車）。</note>
+<note n="0264001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264001">過去二十四佛之第二佛。參閱 Jātaka, I, P. 30。</note>
+<note n="0265001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265001">ratti, rattika 樹名，其次之 kuṭaja dharaṇīruha 皆為植物名。</note>
+<note n="0265002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265002">讀為 Suppasannasanāmako（善淨信）。</note>
+<note n="0266001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266001">讀為 sukhāvaho（異本）。</note>
+<note n="0266002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266002">Sīluccaya（積戒）。</note>
+<note n="0267001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0267001">Pupphachadaniya（花蓋）。</note>
+<note n="0268001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0268001">Candābha（月光）。</note>
+<note n="0268001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0268001-1">訂正為 Cānūpa-（暹羅本）。</note>
+<note n="0269002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0269002">Sataraṁsi（百光）。</note>
+<note n="0270001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0270001">Sabbosadha（一切藥）。</note>
+<note n="0270001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0270001-1">Samotthaṭa（展被）。</note>
+<note n="0272001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272001">Pupphita（開花）。</note>
+<note n="0272001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272001-1">Samuddakappa（海似）。</note>
+<note n="0273001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273001">Mahānela（大無過）。</note>
+<note n="0274001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0274001">訂正為 Caturoṭṭhapitā。</note>
+<note n="0274002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0274002">Sabhāsammata（堂認）。</note>
+<note n="0275001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275001">isimugga 不詳 Mugga 為隱元豆之類。</note>
+<note n="0275002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275002">nisandhetvā（異本為 nisantetva, nisanditvā）意義不明。</note>
+<note n="0275003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0275003">Mahisamanta（地徧）。</note>
+<note n="0276001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0276001">Muraja（小鼓）。</note>
+<note n="0276002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0276002">Damatha（調御）。</note>
+<note n="0277001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0277001">以下至第十一偈前半偈止，於第三二七尼軍提普庇耶長老之處再出。</note>
+<note n="0279001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0279001">Mahāmallājana（大力士）。</note>
+<note n="0280001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0280001">依暹羅本讀為 theraṁ panijjhāma。</note>
+<note n="0280002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0280002">過去二十四佛之第十五佛。參閱 Jātaka I, P. 38。</note>
+<note n="0280003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0280003">Sunanda（善喜）。</note>
+<note n="0280004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0280004">Dhūmaketu（煙標幟）。</note>
+<note n="0281001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0281001">Candatitta（月滿足）。</note>
+<note n="0282001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0282001">Mahādhana（大財）。</note>
+<note n="0283001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0283001">Jitāsena（勝軍）。</note>
+<note n="0284001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0284001">Aruṇañjaha（日棄）。</note>
+<note n="0285001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285001">讀為 mālāvara。</note>
+<note n="0285002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285002">Devagajjita（天雷鳴）。</note>
+<note n="0286001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0286001">Ekassara（一音）。</note>
+<note n="0287001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0287001">girinela 植物之名，不詳。</note>
+<note n="0288002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288002">Sunela（善無過）。</note>
+<note n="0288001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288001">底本作 Sumaṅgala。然未聞有此佛之名，容或係指 Su-maṅgala 意；抑或為諧和韻律上之關係而作如此稱呼。Mangala 佛為過去二十四佛之第三佛，參閱 Jātaka I, P. 30-34。</note>
+<note n="0289001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0289001">Samitanandana（集喜）。</note>
+<note n="0291001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0291001">原本為 Ekūnavīsatimo（第十九）應訂正為 Ekavīsatimo（第二十一）。</note>
+<note n="0291002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0291002">Aruṇapāla（日護）。</note>
+<note n="0292001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0292001">讀為 Sikhī Sito。</note>
+<note n="0292002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0292002">vinelapuppha 不詳，暹羅本有 minela。</note>
+<note n="0292003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0292003">Sumeghaghana（極濃雲）。</note>
+<note n="0293001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0293001">Bhīmaratha（可怖車）。</note>
+<note n="0294001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0294001">Sabhogavā（有財者）。</note>
+<note n="0295001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0295001">Mahāpatāpa（大光輝）。</note>
+<note n="0296001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0296001">Jutindhara（持輝）。</note>
+<note n="0297001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0297001">Koraṇḍa 一種灌木。</note>
+<note n="0297002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0297002">Vītamala（離垢）。</note>
+<note n="0298001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0298001">Mahāmidāna（大因）。</note>
+<note n="0300001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0300001">Pānadhi（草履）。</note>
+<note n="0301002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301002">Suyāna 善乘。</note>
+<note n="0302001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0302001">Ekaphusita（一雨滴）。</note>
+<note n="0302001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0302001-1">Amitābha（無量光）。</note>
+<note n="0303001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0303001">讀為 Pītaraṁsīva, 參照第一五三之第一偈。</note>
+<note n="0303002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0303002">Sujāta（善生）。（修闇多）。</note>
+<note n="0304001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0304001">assattha 畢波羅（Pipphala）樹，為釋尊之菩提樹。</note>
+<note n="0304002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0304002">Dhaniṭṭha（財求）。</note>
+<note n="0305001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0305001">Mahārāma（大歡）。</note>
+<note n="0306001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0306001">Kusāṭaka 未詳，一種之衣。</note>
+<note n="0306002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0306002">Sumanda（善歡喜）。</note>
+<note n="0307001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0307001">Jutideva（輝天）。</note>
+<note n="0308001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0308001">Aggideva（火天）。</note>
+<note n="0309001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0309001">Ekāpasitta（一見）。</note>
+<note n="0310001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0310001">Sudāyaka（善施）。</note>
+<note n="0311001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0311001">Mahārohita（大赤）。</note>
+<note n="0312001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0312001">Apassena（倚依）。</note>
+<note n="0313001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0313001">Aparājita（無敗）。</note>
+<note n="0313001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0313001-1">暹羅本中有 Vakulapupphiya 長老，有關 caṅkola 花名未詳。</note>
+<note n="0314001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0314001">Mahāpatāpa（大光輝）。</note>
+<note n="0315001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0315001">Meghabbha（雲聚）。</note>
+<note n="0316001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0316001">Dvebhāra（二荷）。</note>
+<note n="0317001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0317001">Vigatānanda（離歡喜）。</note>
+<note n="0317001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0317001-1">Sanna（黃金）指萬達薩奇耶長老而言。</note>
+<note n="0318001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0318001">Abhisāma（勝金色）。</note>
+<note n="0319001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0319001">讀為 ekanavute（異本）。</note>
+<note n="0319002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0319002">Anantajāli（無限焰）。</note>
+<note n="0320001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0320001">Amitañjala（無量水）。</note>
+<note n="0320001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0320001-1">Jutindhara（持輝）。</note>
+<note n="0321001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0321001">讀為 pādap' uttme（暹羅本）。</note>
+<note n="0321002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0321002">Sūriyassama（太陽似）。</note>
+<note n="0322001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0322001">Candupama（月似）。</note>
+<note n="0323001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0323001">在暹羅本中加入左之一偈：吾取佛之鉢，施毘耶拉花，更以清淨心，奉與達道佛。</note>
+<note n="0325001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0325001">tuvara（未詳，果名吧？）。</note>
+<note n="0326001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0326001">讀為 ito（異本）。</note>
+<note n="0327001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0327001">Satapatta（百葉）。</note>
+<note n="0330001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0330001">Kiñjakesara（金伽花絲）。</note>
+<note n="0330001-1" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0330001-1"><space quantity="0"/></note>
+<note n="0333001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0333001">過去二十四佛中不見此尊之名，諒係指辟支佛？</note>
+<note n="0335001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335001">從暹羅本為 Upāhanadāyaka。</note>
+<note n="0336001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336001">Jotiya（光輝）。</note>
+<note n="0337001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337001">aggaja「第一生」之義，此處或為花名。</note>
+<note n="0337002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337002">Amita（無量）。</note>
+<note n="0338001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0338001">Bhikha（施食）應指為 Ekāsanadāyaka 長老。</note>
+<note n="0339001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339001">Padumukkhcpa-Vagga 所謂向空中投最上水草即鉢頭摩花故，品名從而名為「蓮花投」。</note>
+<note n="0339002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339002">Atalikkhacara（空中行）。</note>
+<note n="0340001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340001">Succhavi（美膚）。</note>
+<note n="0340001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340001-1">參閱第二三五之第一偈。</note>
+<note n="0340002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340002">aḍḍhacanda（半月）未詳，應為花名。</note>
+<note n="0341003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341003">Devapa（天飲）。</note>
+<note n="0341001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341001">Samantacakkhu（徧眼）。</note>
+<note n="0344001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344001">如暹羅本讀為 heṭṭhāsiso。</note>
+<note n="0346001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0346001">Upāgatabhāsaniya 長老昔日曾為羅剎，依此故有如斯稱謂。</note>
+<note n="0346001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0346001-1">Atama（無等）。</note>
+<note n="0347001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0347001">Nandiya（歡喜）。</note>
+<note n="0350001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0350001">mālnvā 一種蔓草。</note>
+<note n="0350002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0350002">Paṭijagga（扶養）。</note>
+<note n="0351001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0351001"><space quantity="0"/></note>
+<note n="0351001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0351001-1">Romasa 諒係辟支佛名。</note>
+<note n="0352001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0352001">Samogadha（俱含）。</note>
+<note n="0353001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353001">Māla（= Āluvadāyaka）。</note>
+<note n="0353002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353002">Setu（= Taraṇiya）。</note>
+<note n="0354001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354001">Sineru = Sumeru 蘇迷盧、須彌山。</note>
+<note n="0354002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354002">以下均為樹果之名。</note>
+<note n="0356001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0356001"><space quantity="0"/></note>
+<note n="0357001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357001">Balasena（強軍）。</note>
+<note n="0359001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0359001">Sunikkhamma（善出離）。</note>
+<note n="0359001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0359001-1">Samaṇūpaṭṭhāka（沙門侍僕）。</note>
+<note n="0361001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361001">Ajita（無勝）。</note>
+<note n="0361002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361002">讀為 disvā（異本）。</note>
+<note n="0361003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361003">Supajjalita（善燃）。</note>
+<note n="0362001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0362001">Pārichattaka 譯為晝度樹，謂存在於三十三天之上。</note>
+<note n="0362002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0362002">Samantadharaṇa（徧持）。</note>
+<note n="0363001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0363001">Mahāraha（大價）。</note>
+<note n="0364001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0364001">牛頭山產之旃檀，芳香特著，在此謂牛頭旃檀。</note>
+<note n="0365002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0365002">Suppatiṭṭhita（安立）。</note>
+<note n="0370001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0370001">Sucela（良衣）。</note>
+<note n="0371001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0371001">Sutavā（通聖學）。</note>
+<note n="0372001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0372001">Bhāgīrasī 恒伽河之異名。</note>
+<note n="0374001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0374001">Mudusītala（軟冷）。</note>
+<note n="0375001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0375001">Susudha（極淨）。</note>
+<note n="0377001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0377001">Amittabhā（非友光）。</note>
+<note n="0379001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0379001">Pādapāvara（良樹）。</note>
+<note n="0380001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0380001">讀為 thomiyaṁ（異本）。</note>
+<note n="0380002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0380002">Atulya 無比。</note>
+<note n="0382001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0382001">Ñānadhara（知持）。</note>
+<note n="0385001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0385001">Samantacchadana（徧蓋）。</note>
+<note n="0388001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0388001">Araññasatta（森林有情）。</note>
+<note n="0390001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0390001">以上十偈半與前第一八七耶伽欽提陀長老所唱之偈，大致相同。</note>
+<note n="0391002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0391002">Abbuda（濁垢）。</note>
+<note n="0391003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0391003">Nirabuda（滅濁）。</note>
+<note n="0392001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0392001">Sahassāra（千幅）。</note>
+<note n="0392001" resp="#resp2" place="foot text" type="mod" target="#nkr_note_mod_0392001">Sahassāra（千輻）。</note>
+<note n="0393001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0393001">讀為 Pi（暹羅本）。</note>
+<note n="0393002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0393002">Jalasikha（水頂）。</note>
+<note n="0396001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0396001">Gandhodaka（香水），由他例所見似為 Gandhathūpa。</note>
+<note n="0402001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0402001">讀為 tāvacchādehi（異本）。</note>
+<note n="0403001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0403001">讀為 uggatāpaso。</note>
+<note n="0404002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0404002">似應讀為 iriyāga。</note>
+<note n="0404003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0404003">讀為 gāthāya（異本）。</note>
+<note n="0405001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0405001">讀為 Sattapattaṁ（異本）。</note>
+<note n="0406002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0406002">讀為 adhiṭṭhāsi 參閱（第一二一之第四偈）。</note>
+<note n="0406003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0406003"><space quantity="0"/></note>
+<note n="0407001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0407001">依攝頌 Pūjanī（普伽尼）、Punnāga（噴那伽）、Ekadussika（耶卡多西迦）之偈，文中不見。各寫本於此品亦均只揭示七人。然依偈數不足三十三偈，當可推測定為右列三者所失之偈。按暹羅本由第三三二至第三三四處為 udakapūjaka, Punnāgapupphiya 及 Ekasussadāyaka 三人，合而插入三十二偈以資補足。但此等各與第一〇六、第一五九及第四一九所舉之偈相同（讀法多少，或有出入，而最後尚缺一偈），此可認為為與攝頌十人相合而補充者。</note>
+<note n="0411001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0411001">訂正為 Kiṅhaṇika。</note>
+<note n="0412001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0412001">Sudassana 為新之佛名，諒指辟支佛。</note>
+<note n="0413001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0413001">Sambhava 此亦應為辟支佛。</note>
+<note n="0414001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0414001">Upatissa 此亦同為辟支佛名。</note>
+<note n="0414002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0414002">讀為 saravego va（異本）。</note>
+<note n="0415001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0415001">Sakoṭaka 不詳。</note>
+<note n="0415002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0415002">應讀為 Sayambhussa（異本）毘舍浮佛於三十一劫前出世，若讀此為毘舍浮佛時，則第三偈應訂正為三十一劫間。</note>
+<note n="0419001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0419001">Sataraṁsi 明顯指為辟支佛，然與佛同樣被稱為正覺者。</note>
+<note n="0423001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0423001">Gotama 應為辟支佛之名。</note>
+<note n="0426001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0426001">Anātha 諒係辟支佛名，但以正覺者佛陀相稱（Buddha）。</note>
+<note n="0429001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0429001">為毘婆尸佛之菩提樹。</note>
+<note n="0430001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0430001">參閱前第三三九，大部分為同一偈。</note>
+<note n="0432001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0432001">過去二十四佛之第四佛 Buddhavaṁsa 23-24, Jātaka, I, P. 34 參閱。</note>
+<note n="0433001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0433001">應讀為 Citake Kayiramāne（暹羅本）。</note>
+<note n="0436001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0436001">原攝頌缺少波提普毘耶長老之名。</note>
+<note n="0438001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0438001">labuja（麵包樹）。</note>
+<note n="0442001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0442001">Ajjuna 應為辟支佛。</note>
+<note n="0442002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0442002">jivajivaka 樹名，一般指鳥而言，譯為共命鳥。</note>
+<note n="0443001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0443001">讀為 bhumyā（異本）。</note>
+<note n="0445001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0445001">為外道之美女。外道等嫉惡世尊之名聲大、施物多，嗾使此孫陀利聲言與佛有染，然後殺之，謀陷罪於佛。參閱 Jātaka, II, P. 415, Udāna 43-45; Dhp, A, III, P. 474; 義足經上，六度集經五等。</note>
+<note n="0445002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0445002">為一外道之美女，與孫陀利之情形同，稱與釋尊有染，腹部填物如妊娠狀，使佛受惡評，謀以增加外道之供養。參閱 Jātaka, IV, P. 187; Dhp, A, III, P. 178 Udāna A, P. 263; 生經一，有部經事一六等。</note>
+<note n="0445003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0445003">提婆達多害佛，於耆闍崛山向佛頭上投大石，金鞞盧神使佛避之，石片飛來，傷佛之足指。參閱 Vinaya（Cv, VII 3）; Jātaka, V, P. 533; 五分律三，增一阿含四七，有部破僧事一八等。</note>
+<note n="0445004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0445004">提婆達多遣巧弓射者使射殺佛。參閱 Jātaka, VI, P. 129; DhP. A, II, P. 164; 有部破僧事一八等。</note>
+<note n="0446005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446005">提婆達多於王舍城縱放醉象欲蹂躝佛，象終在佛之威力前降伏。此醉象或稱為 Dhanapāla（守財）。參閱 Jātaka, V, P. 333; 增一阿含九、十誦律三六，有部破僧事一九等。</note>
+<note n="0446006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446006">Giribbaja 山中牛園之義，此言舊王舍城。</note>
+<note n="0446007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446007">讀為 Pattiko（異本）。</note>
+<note n="0446008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446008">Viḍūdabha 以釋迦族摩訶那摩與下婢之間所生之女為母，父為憍薩羅王波斯匿。彼來迦毘羅衛城時，為釋迦族所辱，彼即王位後屠殺全釋迦族。釋尊亦不能如何阻止，深感頭痛。參閱 Jātaka IV, P. 144; Dhp, A, I, P. 345; 增一阿含二六、四分律四一、有部雜事七等。</note>
+<note n="0446009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446009">佛在毘蘭若（verañjā）與五百比丘安居，三個月間，當地飢饉，無有施物。偶遇馬商前來，佛與諸弟子得馬麥以充飢。參閱 Sutta Vibhaṅga I, Pārājjka 1-4（Vinaya, Vol, III, P. If; 南傳藏卷一、一頁），五分律卷一、四分律卷一，鼻奈耶卷八，興起行經下，中本起經下等。</note>
+<note n="0446010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446010">依雜阿含三八，佛住於拘薩羅國浮梨聚落天作婆羅門之菴羅園而住時，曾患背痛。參閱 S. 7. 2. 3. Devahita; Theragālhā-185-6 之註等。</note>
+<note n="0446011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446011">釋尊往拘夷那竭之途中，住於波婆之鍊鐵工周那之家，周那供佛以茸（菌蕈），使佛患激烈之痢疾，此即為般涅槃之因。參閱 D. 16 Mahāparinibbāna（D. II, P. 128）。但長阿含三則謂此時為背痛。</note>
+<note n="0446012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446012">過去二十四佛之最後，過去七佛之第六佛。參閱 jātaka, I, 43; Mahāvaṁsa, I, 10; D, 14, Mahā-padāna 長阿含一，增一阿含四八等。</note>
+<note n="0446013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0446013">Uruvela 譯為 Uruvela-senāni 釋尊由迦毘羅衛城出行，來此聚落，於林中苦行六年，遂放棄而浴於尼連禪河，於菩提樹下成道。見於諸經。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0001a1001" resp="#resp2" type="add" target="#nkr_note_add_0001a1001">波【CB】，婆【南傳】</note>
-<note n="0003a0901" resp="#resp2" type="add" target="#nkr_note_add_0003a0901">趺【CB】，跌【南傳】</note>
-<note n="0004a0401" resp="#resp2" type="add" target="#nkr_note_add_0004a0401">撒【CB】，撤【南傳】</note>
-<note n="0009a0201" resp="#resp2" type="add" target="#nkr_note_add_0009a0201">已【CB】，己【南傳】</note>
-<note n="0015a0101" resp="#resp2" type="add" target="#nkr_note_add_0015a0101">蜒【CB】，蜓【南傳】</note>
-<note n="0024a0301" resp="#resp2" type="add" target="#nkr_note_add_0024a0301">豐【CB】，豊【南傳】</note>
-<note n="0048a0401" resp="#resp2" type="add" target="#nkr_note_add_0048a0401">刺【CB】，剌【南傳】</note>
-<note n="0048a0501" resp="#resp2" type="add" target="#nkr_note_add_0048a0501">刺【CB】，剌【南傳】</note>
-<note n="0116a1201" resp="#resp2" type="add" target="#nkr_note_add_0116a1201">祛【CB】，袪【南傳】</note>
-<note n="0123a1001" resp="#resp2" type="add" target="#nkr_note_add_0123a1001">蓖【CB】，菎【南傳】</note>
-<note n="0309a0801" resp="#resp2" type="add" target="#nkr_note_add_0309a0801">已【CB】，巳【南傳】</note>
-<note n="0313a1201" resp="#resp2" type="add" target="#nkr_note_add_0313a1201">［－］【CB】，[01]【南傳】</note>
-<note n="0328a1201" resp="#resp2" type="add" target="#nkr_note_add_0328a1201">鍛【CB】，鍜【南傳】</note>
-<note n="0369a0601" resp="#resp2" type="add" target="#nkr_note_add_0369a0601">祛【CB】，袪【南傳】</note>
-<note n="0377a0101" resp="#resp2" type="add" target="#nkr_note_add_0377a0101">已【CB】，己【南傳】</note>
-<note n="0387a0301" resp="#resp2" type="add" target="#nkr_note_add_0387a0301">祛【CB】，袪【南傳】</note>
-<note n="0392a0501" resp="#resp2" type="add" target="#nkr_note_add_0392a0501">輻【CB】，幅【南傳】</note>
-<note n="0416a0601" resp="#resp2" type="add" target="#nkr_note_add_0416a0601">鍛【CB】，鍜【南傳】</note>
+<note n="0001a1001" resp="#resp3" type="add" target="#nkr_note_add_0001a1001">波【CB】，婆【南傳】</note>
+<note n="0003a0901" resp="#resp3" type="add" target="#nkr_note_add_0003a0901">趺【CB】，跌【南傳】</note>
+<note n="0004a0401" resp="#resp3" type="add" target="#nkr_note_add_0004a0401">撒【CB】，撤【南傳】</note>
+<note n="0009a0201" resp="#resp3" type="add" target="#nkr_note_add_0009a0201">已【CB】，己【南傳】</note>
+<note n="0015a0101" resp="#resp3" type="add" target="#nkr_note_add_0015a0101">蜒【CB】，蜓【南傳】</note>
+<note n="0024a0301" resp="#resp3" type="add" target="#nkr_note_add_0024a0301">豐【CB】，豊【南傳】</note>
+<note n="0048a0401" resp="#resp3" type="add" target="#nkr_note_add_0048a0401">刺【CB】，剌【南傳】</note>
+<note n="0048a0501" resp="#resp3" type="add" target="#nkr_note_add_0048a0501">刺【CB】，剌【南傳】</note>
+<note n="0116a1201" resp="#resp3" type="add" target="#nkr_note_add_0116a1201">祛【CB】，袪【南傳】</note>
+<note n="0123a1001" resp="#resp3" type="add" target="#nkr_note_add_0123a1001">蓖【CB】，菎【南傳】</note>
+<note n="0309a0801" resp="#resp3" type="add" target="#nkr_note_add_0309a0801">已【CB】，巳【南傳】</note>
+<note n="0313a1201" resp="#resp3" type="add" target="#nkr_note_add_0313a1201">［－］【CB】，[01]【南傳】</note>
+<note n="0328a1201" resp="#resp3" type="add" target="#nkr_note_add_0328a1201">鍛【CB】，鍜【南傳】</note>
+<note n="0369a0601" resp="#resp3" type="add" target="#nkr_note_add_0369a0601">祛【CB】，袪【南傳】</note>
+<note n="0377a0101" resp="#resp3" type="add" target="#nkr_note_add_0377a0101">已【CB】，己【南傳】</note>
+<note n="0387a0301" resp="#resp3" type="add" target="#nkr_note_add_0387a0301">祛【CB】，袪【南傳】</note>
+<note n="0392a0501" resp="#resp3" type="add" target="#nkr_note_add_0392a0501">輻【CB】，幅【南傳】</note>
+<note n="0416a0601" resp="#resp3" type="add" target="#nkr_note_add_0416a0601">鍛【CB】，鍜【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

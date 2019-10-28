@@ -12,126 +12,140 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>6卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">18</idno>.<idno type="no">96</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-17 08:47:04 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 18, No. 96</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">佛教繪畫史料</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00840">
-	<charName>CBETA CHARACTER CB00840</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[鬥@(豆*斤)]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>鬥</value>
-	</charProp>
-	<mapping type="unicode">U+29C16</mapping>
-	<mapping cb:dec="983880" type="PUA">U+F0348</mapping>
-</char>
-<char xml:id="CB05428">
-	<charName>CBETA CHARACTER CB05428</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[嘹-口+豸]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>獠</value>
-	</charProp>
-	<mapping type="unicode">U+4764</mapping>
-	<mapping cb:dec="988468" type="PUA">U+F1534</mapping>
-</char>
-<char xml:id="CB07874">
-	<charName>CBETA CHARACTER CB07874</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[木*虖]</value>
-	</charProp>
-	<mapping type="unicode">U+3BC9</mapping>
-	<mapping cb:dec="990914" type="PUA">U+F1EC2</mapping>
-</char>
-<char xml:id="CB15705">
-	<charName>CBETA CHARACTER CB15705</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[日*侯]</value>
-	</charProp>
-	<mapping type="unicode">U+3B0B</mapping>
-	<mapping cb:dec="998745" type="PUA">U+F3D59</mapping>
-</char>
-<char xml:id="CB15716">
-	<charName>CBETA CHARACTER CB15716</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[石*盤]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>磐</value>
-	</charProp>
-	<mapping type="unicode">U+40F2</mapping>
-	<mapping cb:dec="998756" type="PUA">U+F3D64</mapping>
-</char>
-<char xml:id="CB24816">
-	<charName>CBETA CHARACTER CB24816</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[厂@墨]</value>
-	</charProp>
-	<mapping cb:dec="1007856" type="PUA">U+F60F0</mapping>
-</char>
-<char xml:id="CB33051">
-	<charName>CBETA CHARACTER CB33051</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[卄/拂]</value>
-	</charProp>
-	<mapping type="unicode">U+26CAB</mapping>
-	<mapping cb:dec="1016091" type="PUA">U+F811B</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00840">
+				<charName>CBETA CHARACTER CB00840</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[鬥@(豆*斤)]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>鬥</value>
+				</charProp>
+				<mapping type="unicode">U+29C16</mapping>
+				<mapping cb:dec="983880" type="PUA">U+F0348</mapping>
+			</char>
+			<char xml:id="CB05428">
+				<charName>CBETA CHARACTER CB05428</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[嘹-口+豸]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>獠</value>
+				</charProp>
+				<mapping type="unicode">U+4764</mapping>
+				<mapping cb:dec="988468" type="PUA">U+F1534</mapping>
+			</char>
+			<char xml:id="CB07874">
+				<charName>CBETA CHARACTER CB07874</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[木*虖]</value>
+				</charProp>
+				<mapping type="unicode">U+3BC9</mapping>
+				<mapping cb:dec="990914" type="PUA">U+F1EC2</mapping>
+			</char>
+			<char xml:id="CB15705">
+				<charName>CBETA CHARACTER CB15705</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[日*侯]</value>
+				</charProp>
+				<mapping type="unicode">U+3B0B</mapping>
+				<mapping cb:dec="998745" type="PUA">U+F3D59</mapping>
+			</char>
+			<char xml:id="CB15716">
+				<charName>CBETA CHARACTER CB15716</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[石*盤]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>磐</value>
+				</charProp>
+				<mapping type="unicode">U+40F2</mapping>
+				<mapping cb:dec="998756" type="PUA">U+F3D64</mapping>
+			</char>
+			<char xml:id="CB24816">
+				<charName>CBETA CHARACTER CB24816</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[厂@墨]</value>
+				</charProp>
+				<mapping cb:dec="1007856" type="PUA">U+F60F0</mapping>
+			</char>
+			<char xml:id="CB33051">
+				<charName>CBETA CHARACTER CB33051</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[卄/拂]</value>
+				</charProp>
+				<mapping type="unicode">U+26CAB</mapping>
+				<mapping cb:dec="1016091" type="PUA">U+F811B</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2015-08-25">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -1369,75 +1383,75 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0147a0801" to="#end0147a0801"><lem wit="#wit1" resp="#resp2">淨</lem><rdg wit="#wit2">凈</rdg></app>
-<app from="#beg0150a0201" to="#end0150a0201"><lem wit="#wit1" resp="#resp2">、隋</lem><rdg wit="#wit2">　</rdg></app>
-<app from="#beg0159a1001" to="#end0159a1001"><lem wit="#wit1" resp="#resp2">睺</lem><rdg wit="#wit2">喉</rdg></app>
-<app from="#beg0161a1101" to="#end0161a1101"><lem wit="#wit1" resp="#resp2">斂</lem><rdg wit="#wit2">歛</rdg></app>
-<app from="#beg0174a0701" to="#end0174a0701"><lem wit="#wit1" resp="#resp2">瓌</lem><rdg wit="#wit2">瓖</rdg></app>
-<app from="#beg0175a0801" to="#end0175a0801"><lem wit="#wit1" resp="#resp2">淨</lem><rdg wit="#wit2">凈</rdg></app>
-<app from="#beg0181a1301" to="#end0181a1301"><lem wit="#wit1" resp="#resp2">淨</lem><rdg wit="#wit2">凈</rdg></app>
-<app from="#beg0184a1001" to="#end0184a1001"><lem wit="#wit1" resp="#resp2">睺</lem><rdg wit="#wit2">喉</rdg></app>
-<app from="#beg0188a0601" to="#end0188a0601"><lem wit="#wit1" resp="#resp2">淨</lem><rdg wit="#wit2">凈</rdg></app>
-<app from="#beg0190a1301" to="#end0190a1301"><lem wit="#wit1" resp="#resp2">斂</lem><rdg wit="#wit2">歛</rdg></app>
-<app from="#beg0211a0901" to="#end0211a0901"><lem wit="#wit1" resp="#resp2">殷</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0211a0902" to="#end0211a0902"><lem wit="#wit1" resp="#resp2">題額</lem><rdg wit="#wit2"><unclear></unclear><unclear></unclear></rdg></app>
-<app from="#beg0211a1401" to="#end0211a1401"><lem wit="#wit1" resp="#resp2">鄭</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0213a0501" to="#end0213a0501"><lem wit="#wit1" resp="#resp2">裴畫</lem><rdg wit="#wit2"><unclear></unclear><unclear></unclear></rdg></app>
-<app from="#beg0213a0701" to="#end0213a0701"><lem wit="#wit1" resp="#resp2">書</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0213a0702" to="#end0213a0702"><lem wit="#wit1" resp="#resp2">書迹</lem><rdg wit="#wit2"><unclear></unclear><unclear></unclear></rdg></app>
-<app from="#beg0213a0703" to="#end0213a0703"><lem wit="#wit1" resp="#resp2">高</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0213a0704" to="#end0213a0704"><lem wit="#wit1" resp="#resp2">書</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0216a0301" to="#end0216a0301"><lem wit="#wit1" resp="#resp2">魯</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0216a0302" to="#end0216a0302"><lem wit="#wit1" resp="#resp2">橫</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0217a1001" to="#end0217a1001"><lem wit="#wit1" resp="#resp2">朝</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0221a0701" to="#end0221a0701"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0221a1001" to="#end0221a1001"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0221a1002" to="#end0221a1002"><lem wit="#wit1" resp="#resp2">龕</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0221a1003" to="#end0221a1003"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0221a1201" to="#end0221a1201"><lem wit="#wit1" resp="#resp2">龕</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0221a1401" to="#end0221a1401"><lem wit="#wit1" resp="#resp2">淨</lem><rdg wit="#wit2">凈</rdg></app>
-<app from="#beg0222a0401" to="#end0222a0401"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0222a0601" to="#end0222a0601"><lem wit="#wit1" resp="#resp2">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0222a0801" to="#end0222a0801"><lem wit="#wit1" resp="#resp2">彥</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0224a1001" to="#end0224a1001"><lem wit="#wit1" resp="#resp2">寶</lem><rdg wit="#wit2"><unclear></unclear></rdg></app>
-<app from="#beg0224a1002" to="#end0224a1002"><lem wit="#wit1" resp="#resp2">盧簡辭</lem><rdg wit="#wit2"><unclear></unclear><unclear></unclear><unclear></unclear></rdg></app>
+<app from="#beg0147a0801" to="#end0147a0801"><lem wit="#wit.cbeta" resp="#resp3">淨</lem><rdg wit="#wit.orig">凈</rdg></app>
+<app from="#beg0150a0201" to="#end0150a0201"><lem wit="#wit.cbeta" resp="#resp3">、隋</lem><rdg wit="#wit.orig">　</rdg></app>
+<app from="#beg0159a1001" to="#end0159a1001"><lem wit="#wit.cbeta" resp="#resp3">睺</lem><rdg wit="#wit.orig">喉</rdg></app>
+<app from="#beg0161a1101" to="#end0161a1101"><lem wit="#wit.cbeta" resp="#resp3">斂</lem><rdg wit="#wit.orig">歛</rdg></app>
+<app from="#beg0174a0701" to="#end0174a0701"><lem wit="#wit.cbeta" resp="#resp3">瓌</lem><rdg wit="#wit.orig">瓖</rdg></app>
+<app from="#beg0175a0801" to="#end0175a0801"><lem wit="#wit.cbeta" resp="#resp3">淨</lem><rdg wit="#wit.orig">凈</rdg></app>
+<app from="#beg0181a1301" to="#end0181a1301"><lem wit="#wit.cbeta" resp="#resp3">淨</lem><rdg wit="#wit.orig">凈</rdg></app>
+<app from="#beg0184a1001" to="#end0184a1001"><lem wit="#wit.cbeta" resp="#resp3">睺</lem><rdg wit="#wit.orig">喉</rdg></app>
+<app from="#beg0188a0601" to="#end0188a0601"><lem wit="#wit.cbeta" resp="#resp3">淨</lem><rdg wit="#wit.orig">凈</rdg></app>
+<app from="#beg0190a1301" to="#end0190a1301"><lem wit="#wit.cbeta" resp="#resp3">斂</lem><rdg wit="#wit.orig">歛</rdg></app>
+<app from="#beg0211a0901" to="#end0211a0901"><lem wit="#wit.cbeta" resp="#resp3">殷</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0211a0902" to="#end0211a0902"><lem wit="#wit.cbeta" resp="#resp3">題額</lem><rdg wit="#wit.orig"><unclear></unclear><unclear></unclear></rdg></app>
+<app from="#beg0211a1401" to="#end0211a1401"><lem wit="#wit.cbeta" resp="#resp3">鄭</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0213a0501" to="#end0213a0501"><lem wit="#wit.cbeta" resp="#resp3">裴畫</lem><rdg wit="#wit.orig"><unclear></unclear><unclear></unclear></rdg></app>
+<app from="#beg0213a0701" to="#end0213a0701"><lem wit="#wit.cbeta" resp="#resp3">書</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0213a0702" to="#end0213a0702"><lem wit="#wit.cbeta" resp="#resp3">書迹</lem><rdg wit="#wit.orig"><unclear></unclear><unclear></unclear></rdg></app>
+<app from="#beg0213a0703" to="#end0213a0703"><lem wit="#wit.cbeta" resp="#resp3">高</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0213a0704" to="#end0213a0704"><lem wit="#wit.cbeta" resp="#resp3">書</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0216a0301" to="#end0216a0301"><lem wit="#wit.cbeta" resp="#resp3">魯</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0216a0302" to="#end0216a0302"><lem wit="#wit.cbeta" resp="#resp3">橫</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0217a1001" to="#end0217a1001"><lem wit="#wit.cbeta" resp="#resp3">朝</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0221a0701" to="#end0221a0701"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0221a1001" to="#end0221a1001"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0221a1002" to="#end0221a1002"><lem wit="#wit.cbeta" resp="#resp3">龕</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0221a1003" to="#end0221a1003"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0221a1201" to="#end0221a1201"><lem wit="#wit.cbeta" resp="#resp3">龕</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0221a1401" to="#end0221a1401"><lem wit="#wit.cbeta" resp="#resp3">淨</lem><rdg wit="#wit.orig">凈</rdg></app>
+<app from="#beg0222a0401" to="#end0222a0401"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0222a0601" to="#end0222a0601"><lem wit="#wit.cbeta" resp="#resp3">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0222a0801" to="#end0222a0801"><lem wit="#wit.cbeta" resp="#resp3">彥</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0224a1001" to="#end0224a1001"><lem wit="#wit.cbeta" resp="#resp3">寶</lem><rdg wit="#wit.orig"><unclear></unclear></rdg></app>
+<app from="#beg0224a1002" to="#end0224a1002"><lem wit="#wit.cbeta" resp="#resp3">盧簡辭</lem><rdg wit="#wit.orig"><unclear></unclear><unclear></unclear><unclear></unclear></rdg></app>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0147a0801" resp="#resp1" type="add" target="#nkr_note_add_0147a0801">淨【CB】，凈【補編】</note>
-<note n="0150a0201" resp="#resp1" type="add" target="#nkr_note_add_0150a0201">隋【CB】，［－］【補編】</note>
-<note n="0159a1001" resp="#resp1" type="add" target="#nkr_note_add_0159a1001">睺【CB】，喉【補編】</note>
-<note n="0161a1101" resp="#resp1" type="add" target="#nkr_note_add_0161a1101">斂【CB】，歛【補編】</note>
-<note n="0174a0701" resp="#resp1" type="add" target="#nkr_note_add_0174a0701">瓌【CB】，瓖【補編】</note>
-<note n="0175a0801" resp="#resp1" type="add" target="#nkr_note_add_0175a0801">淨【CB】，凈【補編】</note>
-<note n="0181a1301" resp="#resp1" type="add" target="#nkr_note_add_0181a1301">淨【CB】，凈【補編】</note>
-<note n="0184a1001" resp="#resp1" type="add" target="#nkr_note_add_0184a1001">睺【CB】，喉【補編】</note>
-<note n="0188a0601" resp="#resp1" type="add" target="#nkr_note_add_0188a0601">淨【CB】，凈【補編】</note>
-<note n="0190a1301" resp="#resp1" type="add" target="#nkr_note_add_0190a1301">斂【CB】，歛【補編】</note>
-<note n="0211a0901" resp="#resp1" type="add" target="#nkr_note_add_0211a0901">殷【CB】，<unclear></unclear>【補編】</note>
-<note n="0211a0902" resp="#resp1" type="add" target="#nkr_note_add_0211a0902">題額【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
-<note n="0211a1401" resp="#resp1" type="add" target="#nkr_note_add_0211a1401">鄭【CB】，<unclear></unclear>【補編】</note>
-<note n="0213a0501" resp="#resp1" type="add" target="#nkr_note_add_0213a0501">裴畫【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
-<note n="0213a0701" resp="#resp1" type="add" target="#nkr_note_add_0213a0701">書【CB】，<unclear></unclear>【補編】</note>
-<note n="0213a0702" resp="#resp1" type="add" target="#nkr_note_add_0213a0702">書迹【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
-<note n="0213a0703" resp="#resp1" type="add" target="#nkr_note_add_0213a0703">高【CB】，<unclear></unclear>【補編】</note>
-<note n="0213a0704" resp="#resp1" type="add" target="#nkr_note_add_0213a0704">書【CB】，<unclear></unclear>【補編】</note>
-<note n="0216a0301" resp="#resp1" type="add" target="#nkr_note_add_0216a0301">魯【CB】，<unclear></unclear>【補編】</note>
-<note n="0216a0302" resp="#resp1" type="add" target="#nkr_note_add_0216a0302">橫【CB】，<unclear></unclear>【補編】</note>
-<note n="0217a1001" resp="#resp1" type="add" target="#nkr_note_add_0217a1001">朝【CB】，<unclear></unclear>【補編】</note>
-<note n="0221a0701" resp="#resp1" type="add" target="#nkr_note_add_0221a0701">已【CB】，巳【補編】</note>
-<note n="0221a1001" resp="#resp1" type="add" target="#nkr_note_add_0221a1001">已【CB】，巳【補編】</note>
-<note n="0221a1002" resp="#resp1" type="add" target="#nkr_note_add_0221a1002">龕【CB】，<unclear></unclear>【補編】</note>
-<note n="0221a1003" resp="#resp1" type="add" target="#nkr_note_add_0221a1003">已【CB】，巳【補編】</note>
-<note n="0221a1201" resp="#resp1" type="add" target="#nkr_note_add_0221a1201">龕【CB】，<unclear></unclear>【補編】</note>
-<note n="0221a1401" resp="#resp1" type="add" target="#nkr_note_add_0221a1401">淨【CB】，凈【補編】</note>
-<note n="0222a0401" resp="#resp1" type="add" target="#nkr_note_add_0222a0401">已【CB】，巳【補編】</note>
-<note n="0222a0601" resp="#resp1" type="add" target="#nkr_note_add_0222a0601">已【CB】，巳【補編】</note>
-<note n="0222a0801" resp="#resp1" type="add" target="#nkr_note_add_0222a0801">彥【CB】，<unclear></unclear>【補編】</note>
-<note n="0224a1001" resp="#resp1" type="add" target="#nkr_note_add_0224a1001">寶【CB】，<unclear></unclear>【補編】</note>
-<note n="0224a1002" resp="#resp1" type="add" target="#nkr_note_add_0224a1002">盧簡辭【CB】，<unclear></unclear><unclear></unclear><unclear></unclear>【補編】</note>
+<note n="0147a0801" resp="#resp2" type="add" target="#nkr_note_add_0147a0801">淨【CB】，凈【補編】</note>
+<note n="0150a0201" resp="#resp2" type="add" target="#nkr_note_add_0150a0201">隋【CB】，［－］【補編】</note>
+<note n="0159a1001" resp="#resp2" type="add" target="#nkr_note_add_0159a1001">睺【CB】，喉【補編】</note>
+<note n="0161a1101" resp="#resp2" type="add" target="#nkr_note_add_0161a1101">斂【CB】，歛【補編】</note>
+<note n="0174a0701" resp="#resp2" type="add" target="#nkr_note_add_0174a0701">瓌【CB】，瓖【補編】</note>
+<note n="0175a0801" resp="#resp2" type="add" target="#nkr_note_add_0175a0801">淨【CB】，凈【補編】</note>
+<note n="0181a1301" resp="#resp2" type="add" target="#nkr_note_add_0181a1301">淨【CB】，凈【補編】</note>
+<note n="0184a1001" resp="#resp2" type="add" target="#nkr_note_add_0184a1001">睺【CB】，喉【補編】</note>
+<note n="0188a0601" resp="#resp2" type="add" target="#nkr_note_add_0188a0601">淨【CB】，凈【補編】</note>
+<note n="0190a1301" resp="#resp2" type="add" target="#nkr_note_add_0190a1301">斂【CB】，歛【補編】</note>
+<note n="0211a0901" resp="#resp2" type="add" target="#nkr_note_add_0211a0901">殷【CB】，<unclear></unclear>【補編】</note>
+<note n="0211a0902" resp="#resp2" type="add" target="#nkr_note_add_0211a0902">題額【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
+<note n="0211a1401" resp="#resp2" type="add" target="#nkr_note_add_0211a1401">鄭【CB】，<unclear></unclear>【補編】</note>
+<note n="0213a0501" resp="#resp2" type="add" target="#nkr_note_add_0213a0501">裴畫【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
+<note n="0213a0701" resp="#resp2" type="add" target="#nkr_note_add_0213a0701">書【CB】，<unclear></unclear>【補編】</note>
+<note n="0213a0702" resp="#resp2" type="add" target="#nkr_note_add_0213a0702">書迹【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
+<note n="0213a0703" resp="#resp2" type="add" target="#nkr_note_add_0213a0703">高【CB】，<unclear></unclear>【補編】</note>
+<note n="0213a0704" resp="#resp2" type="add" target="#nkr_note_add_0213a0704">書【CB】，<unclear></unclear>【補編】</note>
+<note n="0216a0301" resp="#resp2" type="add" target="#nkr_note_add_0216a0301">魯【CB】，<unclear></unclear>【補編】</note>
+<note n="0216a0302" resp="#resp2" type="add" target="#nkr_note_add_0216a0302">橫【CB】，<unclear></unclear>【補編】</note>
+<note n="0217a1001" resp="#resp2" type="add" target="#nkr_note_add_0217a1001">朝【CB】，<unclear></unclear>【補編】</note>
+<note n="0221a0701" resp="#resp2" type="add" target="#nkr_note_add_0221a0701">已【CB】，巳【補編】</note>
+<note n="0221a1001" resp="#resp2" type="add" target="#nkr_note_add_0221a1001">已【CB】，巳【補編】</note>
+<note n="0221a1002" resp="#resp2" type="add" target="#nkr_note_add_0221a1002">龕【CB】，<unclear></unclear>【補編】</note>
+<note n="0221a1003" resp="#resp2" type="add" target="#nkr_note_add_0221a1003">已【CB】，巳【補編】</note>
+<note n="0221a1201" resp="#resp2" type="add" target="#nkr_note_add_0221a1201">龕【CB】，<unclear></unclear>【補編】</note>
+<note n="0221a1401" resp="#resp2" type="add" target="#nkr_note_add_0221a1401">淨【CB】，凈【補編】</note>
+<note n="0222a0401" resp="#resp2" type="add" target="#nkr_note_add_0222a0401">已【CB】，巳【補編】</note>
+<note n="0222a0601" resp="#resp2" type="add" target="#nkr_note_add_0222a0601">已【CB】，巳【補編】</note>
+<note n="0222a0801" resp="#resp2" type="add" target="#nkr_note_add_0222a0801">彥【CB】，<unclear></unclear>【補編】</note>
+<note n="0224a1001" resp="#resp2" type="add" target="#nkr_note_add_0224a1001">寶【CB】，<unclear></unclear>【補編】</note>
+<note n="0224a1002" resp="#resp2" type="add" target="#nkr_note_add_0224a1002">盧簡辭【CB】，<unclear></unclear><unclear></unclear><unclear></unclear>【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

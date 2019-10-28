@@ -5,30 +5,38 @@
 		<titleStmt>
 			<title>Supplement to the Dazangjing, Electronic version, No. 41 正理滴論（譯自梵文本）</title>
 			<title xml:lang="zh-Hant">大藏經補編數位版, No. 41 正理滴論（譯自梵文本）</title>
-			<author>法稱著 王森譯</author>
+			<author>法稱著　王森譯</author>
 			<respStmt>
 				<resp>Electronic Version by</resp>
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">9</idno>.<idno type="no">41</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-16 22:53:15 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 9, No. 41</bibl>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">正理滴論（譯自梵文本）</title>
+			</bibl>
 		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
@@ -36,35 +44,45 @@
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00501">
-	<charName>CBETA CHARACTER CB00501</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[馬*犬]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>馱</value>
-	</charProp>
-	<mapping type="unicode">U+4B7E</mapping>
-	<mapping cb:dec="983541" type="PUA">U+F01F5</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00501">
+				<charName>CBETA CHARACTER CB00501</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[馬*犬]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>馱</value>
+				</charProp>
+				<mapping type="unicode">U+4B7E</mapping>
+				<mapping cb:dec="983541" type="PUA">U+F01F5</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2015-01-22">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>

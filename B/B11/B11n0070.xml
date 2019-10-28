@@ -12,51 +12,65 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>BuBian</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>BuBian</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">11</idno>.<idno type="no">70</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 11, No. 70</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【補編】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">安樂妙寶</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2015-03-26">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -471,250 +485,250 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0050a0901" to="#end0050a0901"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0052a1201" to="#end0052a1201"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0053a0401" to="#end0053a0401"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0056a1001" to="#end0056a1001"><lem wit="#wit1" resp="#resp3">惡五</lem><rdg wit="#wit2"><unclear></unclear><unclear></unclear></rdg></app>
-<app from="#beg0063a0401" to="#end0063a0401"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0065a1001" to="#end0065a1001"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0066a0801" to="#end0066a0801"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
-<app from="#beg0066a0901" to="#end0066a0901"><lem wit="#wit1" resp="#resp3">已</lem><rdg wit="#wit2">巳</rdg></app>
+<app from="#beg0050a0901" to="#end0050a0901"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0052a1201" to="#end0052a1201"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0053a0401" to="#end0053a0401"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0056a1001" to="#end0056a1001"><lem wit="#wit.cbeta" resp="#resp4">惡五</lem><rdg wit="#wit.orig"><unclear></unclear><unclear></unclear></rdg></app>
+<app from="#beg0063a0401" to="#end0063a0401"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0065a1001" to="#end0065a1001"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0066a0801" to="#end0066a0801"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
+<app from="#beg0066a0901" to="#end0066a0901"><lem wit="#wit.cbeta" resp="#resp4">已</lem><rdg wit="#wit.orig">巳</rdg></app>
 </p>
 </cb:div>
 <cb:div type="bubian-notes">
 <head>大藏經補編 校註</head>
 <p>
-<note n="0045001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045001">陀羅尼．總持義．總一切法持無量義。普通譯為真言．咒．明。</note>
-<note n="0045002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045002">諸真言中．嗡字攝義甚廣．有歸命．驚覺供養．三身．本不生．無見頂相．如來毫相功德等義。</note>
-<note n="0045003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045003">嗡吽覽喊難刊林凡等字．須隨念隨即閉口．兼帶姆字聲音。</note>
-<note n="0045004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045004">——表二合．蓋須二字合讀．方成一箇梵字也．亦有三合四合方成一字者。</note>
-<note n="0046001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0046001">普通拜佛方法<p>一．合掌當胸．分右掌向下．按於蒲團中心．左掌不動．兩膝跪下．此為一把。二．以左掌按於蒲團之前左邊．此為一把。三．右掌從中心移於蒲團之前右邊．兩掌相離六寸．此為半把。故俗稱拜法為兩把半。四．以頭按於兩掌中間．蒲團上．兩掌翻轉．手心向上．意在以兩手承佛足．故曰頭面禮足。五．兩手作拳反轉．仍按原處。六．頭離蒲團．右掌移於蒲團中心。七．左掌移置胸前．如合掌狀。八．以右掌用力撐起．合於左掌．同時兩膝起立此為一拜。</p><p>尚有一禮．如世俗之作揖．名曰問訊。即拜畢時．合掌向下．鞠躬過膝．以右掌置左掌內作拳．從下向上與眉齊．同時直躬。再將拳置胸前放開．手心向上．右在左上二大指相拄．此即定印．是為拜佛禮畢。</p><p>至於密宗拜法．東密藏密．均各不同。然行者能依上法禮拜巳．遠勝於俗禮矣。</p></note>
-<note n="0047001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0047001">阿彌陀．梵音啊彌打．欲表恭敬．理應改正。</note>
-<note n="0047002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0047002">懺悔為止惡之本。自此以下．皆金剛合掌．長跪敬誦。誦時．觀想一切眾生無始罪障．悉皆消滅。</note>
-<note n="0047003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0047003">三歸依為入道之基。兩足者．福足慧足也。誦時．觀想一切眾生．悉皆一心歸依三寶。</note>
-<note n="0048001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048001">僕．讀菩字入聲。</note>
-<note n="0048002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048002">誦時．觀想一切眾生．聞聲悉皆奉行十善。</note>
-<note n="0048003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048003">發菩提心者．謂發上求佛道．下化眾生之決定心也。修行不發心．如開花不結果。</note>
-<note n="0048004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048004">誦時．觀想一切眾生．聞聲同發大菩提心。</note>
-<note n="0048005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048005">誦時．觀想一切眾生．同受金剛光明三昧寶戒．心得清淨．身如菩薩。書云．此明誦一遍．當受菩薩戒訖。</note>
-<note n="0048006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048006">爾時．觀想一切眾生．聞聲俱發五大誓願。</note>
-<note n="0049001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0049001">應先運心觀想．十方世界所有一切最勝上妙香華飲食．種種供養．我等誠心奉獻一切諸佛．諸大菩薩．諸賢聖僧．然後誦咒。大日經供養次第法云．若無勢力廣增益．住法但觀菩提心．佛說此中具萬行．滿足清白純淨法。</note>
-<note n="0049002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0049002">禪要云．端身正住．如前半跏坐．不須結全跏．全跏則多痛。若心緣痛境．即難得定。若先來全跏坐得者．最為妙也。然可直頭平望．眼不用過開．亦不用全合．大開則心散．合則昏沉．莫緣外境．安坐即訖。</note>
-<note n="0049003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0049003">大日經云．囉字色鮮白．空點以嚴之．如彼髻明珠．置之於頂上。設於百劫中．所積眾罪垢．由是悉除滅．福慧皆圓滿。</note>
-<note n="0050001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0050001">山河大地．一切等物．名器世界。</note>
-<note n="0050002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0050002">五部念誦印。佛部．大指捻頭指．餘指敬直。金剛部．大捻中。寶部．大捻無名。蓮華部．大捻名小。羯磨部．上四種皆得。</note>
-<note n="0050003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0050003">密宗要義載五種念誦法。一．蓮花念誦．即微聲持。二．金剛念誦．口閉．舌微動。三．三摩地念誦．觀心月輪上布列咒字．專注暗誦。四．聲生念誦．想心蓮白螺．出妙音聲。五．光明念誦．觀想口出無量光明．徧照法界．利益眾生．而念誦之。</note>
-<note n="0051001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0051001">本尊者．本來最尊義。行者於諸佛菩薩中．以某尊為本而尊崇之．曰本尊。於世世生生間．自本有宿緣而尊崇故．曰本尊。</note>
-<note n="0051002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0051002">以特殊文字．代表真言之全意義者．曰種子。以其能攝盡無量義趣．而生一切功德．喻如植物之種子。</note>
-<note n="0052001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052001">大乘本生心地觀經卷八云．三界之中．以心為主。能觀心者．究竟解脫。不能觀者．永處纏縛。又云．凡夫所觀菩提心相．猶如清淨圓滿月輪．於胸臆上明朗而住。若欲速得不退轉者．在空寂室．端身正念．結金剛縛．冥目觀察臆中明月．作是思惟。是滿月輪．無垢明淨．內外澄澈．最極清涼。月即是心．心即是月。塵翳無染．妄想不生．能令眾生身心清淨．大菩提心堅固不退。又云．繫心月輪成熟觀察．是名菩薩觀菩提心成佛三昧。若有凡夫修此觀者．所起五逆四重十惡．及一闡提．如是等罪．盡皆消滅。<p>發菩提心輪云．云何能證無上菩提．當知法爾應住普賢大菩提心。一切眾生本有薩埵．為貪瞋癡煩惱之所縛故。諸佛大悲．以善巧智．說此甚深秘密瑜伽。令修行者．於內心中．觀日月輪。由作此觀．照見本心湛然清淨．猶如滿月．光徧虛空．無所分別．亦名無覺了亦名淨法界．亦名實相般若波羅蜜海．能含種種無量珍寶三摩地。又云．八葉白蓮一肘間．炳現阿字素光色．禪智俱入金剛縛．召入如來寂靜智。</p><p>又云．凡人心如合蓮華．佛心如滿月。</p><p>又云．若人求佛慧．通達菩提心．父母所生身．速證大覺位。</p></note>
-<note n="0052002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052002">興教大師云．法華經中說一切眾生心中．悉有成佛種子。斯之種子者何物乎．如來隱而勿宣．而於真言中顯之。是故但一念觀啊字．其成佛之疾．尤遠勝於讀法華經千萬部也。此觀成時．現世即身成佛。真言宗之肝腦．在於此觀。</note>
-<note n="0053001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0053001">回向咒．見守護國界主陀羅尼經卷一末。</note>
-<note n="0054001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054001">□．捺啊切。</note>
-<note n="0054002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054002">摩．沒喔切。</note>
-<note n="0054003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054003">得讀入聲．浙音同德。</note>
-<note n="0054004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054004">牙．亦啊切。</note>
-<note n="0054005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054005">司得里牙．四合．須四字速合讀．成一梵字。</note>
-<note n="0054006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054006">維．物衣切。</note>
-<note n="0054007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054007">嘠．割啊切。</note>
-<note n="0054008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054008">難．讀難姆。</note>
-<note n="0054009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054009">打．得啊切。</note>
-<note n="0054010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054010">噶．搿啊切。</note>
-<note n="0054011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054011">菴．讀阿姆．須閉口念。</note>
-<note n="0054012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054012">嘛．沒啊切。</note>
-<note n="0054013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054013">佳．基啊切。</note>
-<note n="0054014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054014">得．讀上聲．浙音同堆。</note>
-<note n="0054015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054015">達．頭啊切。</note>
-<note n="0054016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054016">槃．蒲安切。</note>
-<note n="0054017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054017">戞．及啊切。</note>
-<note n="0054018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054018">覽．閉口念。</note>
-<note n="0054019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054019">司乏之乏均讀長音．浙音同外。</note>
-<note n="0054020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054020">打．得啊切．浙音同帶。</note>
-<note n="0054021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054021">他．塔啊切。</note>
-<note n="0054022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054022">得．讀上聲。</note>
-<note n="0054023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054023">叭．鉢啊切。</note>
-<note n="0054024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054024">喇．勒啊切。</note>
-<note n="0054025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054025">箔．勃喔切．浙音同杷。</note>
-<note n="0055001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055001">釋迦牟尼佛種子字．為梵文拔字．讀入聲。</note>
-<note n="0055002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055002">拿．捺啊切。</note>
-<note n="0055003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055003">麥．麼入聲。</note>
-<note n="0055004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055004">灑．司啊切。</note>
-<note n="0055005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055005">打．得啊切。</note>
-<note n="0055006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055006">噶．搿啊切。</note>
-<note n="0055007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055007">難．閉口念。</note>
-<note n="0055008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055008">維．物衣切。</note>
-<note n="0055009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055009">別．拔誒切。</note>
-<note n="0055010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055010">嘛．沒啊切。</note>
-<note n="0055011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055011">喇．勒啊切。</note>
-<note n="0055012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055012">達．頭啊切。</note>
-<note n="0055013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055013">夏．希啊切。</note>
-<note n="0055014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055014">餒．納誒切。</note>
-<note n="0055015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055015">咧．勒誒切。</note>
-<note n="0055016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055016">吽．黑嗡切。</note>
-<note n="0055017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055017">得．讀上聲。</note>
-<note n="0055018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055018">骨．搿烏切。</note>
-<note n="0055019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055019">怕．潑啊切。</note>
-<note n="0055020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055020">打別達餒咧得怕．與帶培大內雷堆派等浙音相同。餒或譯臬。</note>
-<note n="0055021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055021">牟梨曼陀羅咒經云．誦此陀羅尼滿三萬遍．五逆重罪即得除滅。若能日別誦百八遍者．一切所向．無不獲利。若缺一日．補須三倍。</note>
-<note n="0056001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056001">梵文勃魯姆為大日如來佛頂種子字。</note>
-<note n="0056002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056002">啊咧．浙音同唉來。</note>
-<note n="0056003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056003">盤．蒲安切．浙音同辦。</note>
-<note n="0056004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056004">懷字借用．讀無挨切．同英文字Y字音。</note>
-<note n="0056005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056005">勃魯姆．須合讀且速。</note>
-<note n="0056006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056006">諸咒梵文見大正藏．及瑜伽真言句義。所譯漢字．根據國音常用字彙。其字彙無此準音字者．借用相似字音．閱注音即知。</note>
-<note n="0056007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056007">梵文啊字為胎藏界大日如來種子字。</note>
-<note n="0056008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056008">摩．沒喔切。</note>
-<note n="0056009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056009">懷．無挨切．參閱注音。</note>
-<note n="0056010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056010">佳．基啊切。</note>
-<note n="0056011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056011">德．蘇浙音同特。</note>
-<note n="0056012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056012">牙．亦啊切。</note>
-<note n="0056013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056013">吽．同轟。</note>
-<note n="0056014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0056014">聞音滅罪．散沙度亡．矧常自誦．有不罪滅福增．往生西方者乎。</note>
-<note n="0057001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057001">啊彌陀佛種子字．為紅色梵文赫利字。<p>赫利一字．為阿彌陀佛種子真言。理趣經釋云．若人持此一字真言．能除一切災禍疾病．命終當生安樂國土．得上品上生。</p></note>
-<note n="0057002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057002">拿．捺啊切。</note>
-<note n="0057003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057003">得．讀入聲．浙音同德。</note>
-<note n="0057004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057004">牙．亦啊切。</note>
-<note n="0057005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057005">麥．讀嘛入聲。</note>
-<note n="0057006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057006">打．得啊切。</note>
-<note n="0057007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057007">拔．讀拔哈音。</note>
-<note n="0057008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057008">噶．搿啊切。</note>
-<note n="0057009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057009">得．讀上聲．浙音同堆。</note>
-<note n="0057010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057010">德．浙音特。</note>
-<note n="0057011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057011">肥．物誒切．或譯偉字。</note>
-<note n="0057012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057012">別．勃誒切。</note>
-<note n="0057013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057013">迭．頭誒切。</note>
-<note n="0057014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057014">傑．及誒切。</note>
-<note n="0057015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057015">維．物衣切。</note>
-<note n="0057016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057016">林．閉口念．帶姆字音。</note>
-<note n="0057017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057017">餒．納誒切．或譯臬字。</note>
-<note n="0057018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057018">嘠．割啊切。</note>
-<note n="0057019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057019">咧．勒誒切．徒姆二字。</note>
-<note n="0057020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057020">肥別迭傑維餒咧等．皆係借用．閉口速念。</note>
-<note n="0057021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057021">灑．司啊切。</note>
-<note n="0057022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057022">達．頭啊切。</note>
-<note n="0057023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057023">嘛．木啊切。</note>
-<note n="0057024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057024">夏．希啊切。</note>
-<note n="0057025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057025">啥．世啊切。</note>
-<note n="0057026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057026">牙姆與吽．均閉口念。肥別迭傑餒咧誒．與回培臺懈內來愛等浙音相同。凡借用之字．參看注切即準。</note>
-<note n="0058001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058001">藥師如來種子字．為梵文排字。</note>
-<note n="0058002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058002">拔．讀拔哈。</note>
-<note n="0058003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058003">排．白挨切。</note>
-<note n="0058004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058004">曬．世挨切．挨浙音同啊衣。</note>
-<note n="0058005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058005">骨．搿汙切。</note>
-<note n="0058006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058006">戞．及啊切。</note>
-<note n="0058007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058007">也．亦誒切。</note>
-<note n="0058008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058008">藥師佛號．一聞於耳．身心安樂．眾病悉除。欲生西方極樂世界．八大菩薩示其道路。持名誦咒．功德無殊。書云．藥師咒能消除病難．延命咒能守護壽命長久．行者非無病及壽命長．則悉地現前不易．故宜兼誦。</note>
-<note n="0058009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058009">瑜．亦烏切。</note>
-<note n="0059001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059001">金剛界大日如來種子字．為梵文凡姆字。咒中十◎．分表十門。</note>
-<note n="0059002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059002">拔．讀拔哈。</note>
-<note n="0059003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059003">噶．搿啊切。</note>
-<note n="0059004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059004">籟．勒挨切。</note>
-<note n="0059005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059005">牙．亦啊切。</note>
-<note n="0059006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059006">維．物衣切。</note>
-<note n="0059007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059007">打．得啊切。</note>
-<note n="0059008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059008">旭．希喔切。</note>
-<note n="0059009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059009">達．頭啊切。</note>
-<note n="0059010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059010">灑．司啊切。</note>
-<note n="0059011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059011">嘛．木啊切。</note>
-<note n="0059012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059012">怕．潑啊切。</note>
-<note n="0059013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059013">須．讀希烏</note>
-<note n="0059014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059014">迭．頭誒切．浙音同代。</note>
-<note n="0059015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059015">勝．讀失姆。</note>
-<note n="0059016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059016">曼．讀麥姆。</note>
-<note n="0059017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059017">佳．基啊切。</note>
-<note n="0059018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059018">曬．世挨切。</note>
-<note n="0059019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059019">蓋．割挨切．挨同啊衣。</note>
-<note n="0059020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059020">叭．鉢啊切。</note>
-<note n="0059021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059021">臺．頭挨切。</note>
-<note n="0059022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059022">瑜．亦烏切。</note>
-<note n="0059023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059023">啥．世啊切。</note>
-<note n="0059024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059024">戞．及啊切。</note>
-<note n="0059025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059025">舉．基烏切。</note>
-<note n="0059026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0059026">嘠．割啊切。</note>
-<note n="0060001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060001">德字．蘇浙音同特。</note>
-<note n="0060002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060002">戈．割喔切．蘇音同各．浙音同歌。</note>
-<note n="0060003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060003">戞．及啊切。</note>
-<note n="0060004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060004">別．勃誒切．浙音同培。</note>
-<note n="0060005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060005">夏．希啊切。</note>
-<note n="0060006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060006">覽．讀覽姆。</note>
-<note n="0060007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060007">難．讀難姆．閉口念之。</note>
-<note n="0061001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061001">美．蘇音同綿．浙同梅。</note>
-<note n="0061002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061002">續法大師尊勝咒疏．內載觀想法云．淨身口意．想自心中有圓月輪．輪上想欠字（即梵文刊姆）．白色放光．徧照十方世界．思惟欠字實相義。所謂一切法等同虛空．離諸色相．離諸障礙．則於真實理中．觀自身作金剛波羅蜜佛母菩薩像。左手執蓮花．花上有五股金剛杵．右手仰掌垂手為施願勢．頭冠瓔珞面貌慈愍．拔濟一切眾生。念誦時．常作此觀想．一切所願．無不成就。</note>
-<note n="0061003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0061003">古德頌云．波利尊者禮五臺．卻被文殊化引開．東土若無尊勝咒．眾生難以脫塵埃。</note>
-<note n="0062001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062001">謹按尊勝陀羅尼經．共有五譯。其中字句．間有缺少。今依弘法大師梵本重譯．實最完足。請參看尊勝咒之研究一書自知。又書寫此咒．必須寫梵文．方有殊勝威力。佛學書局有印就者．至八關戒齋法．載淨土三要述義中。</note>
-<note n="0062002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062002">謹按．此念誦法．尚未公開普傳．不得擅自結印。樂此法者．可向持松大師親自面求。大師慈悲．必允傳授。因手印必須師授．若擅自結．求益反損。是以本編未錄手印。若資緣具足．各種印明．均經師授．為最勝上。否則先誦大輪咒廿一遍．然後結定印．誦咒觀想．方免過愆。</note>
-<note n="0063001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063001">觀世音菩薩種子字．為白色梵文赫利字。</note>
-<note n="0063002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063002">拿．捺啊切。</note>
-<note n="0063003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063003">摩．木喔切。</note>
-<note n="0063004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063004">得．讀入聲．蘇浙音德。</note>
-<note n="0063005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063005">得．讀上聲．浙音同堆。</note>
-<note n="0063006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063006">箔．蒲喔切．浙音同杷。</note>
-<note n="0063007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063007">灑．司啊切。</note>
-<note n="0063008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063008">牙．亦啊切。</note>
-<note n="0063009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063009">嘛．木啊切。</note>
-<note n="0063010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063010">嘠．割啊切．蘇浙音同尷尬之尬。</note>
-<note n="0063011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063011">打．得啊切。</note>
-<note n="0063012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063012">蒙．讀摩姆。</note>
-<note n="0063013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063013">覽．讀覽姆．均閉口念。</note>
-<note n="0063014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063014">咧．勒誒切．浙音同來。</note>
-<note n="0063015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063015">啥．世啊切。</note>
-<note n="0063016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063016">美．或譯咩。</note>
-<note n="0063017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063017">乏．物啊切。</note>
-<note n="0063018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063018">他．塔啊切。</note>
-<note n="0063019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063019">須．希汙切。</note>
-<note n="0063020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063020">蒲姆．閉口念。</note>
-<note n="0063021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063021">傑．及誒切。</note>
-<note n="0063022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063022">牙姆．閉口念。</note>
-<note n="0063023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063023">噶．搿啊切。</note>
-<note n="0063024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063024">嗡．閉口念．帶姆字音。</note>
-<note n="0063025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063025">誒．同英文字母A字．蘇音同咽．浙音同愛。</note>
-<note n="0063026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063026">黑．赫誒切．浙音同海。</note>
-<note n="0063027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063027">達．頭啊切．浙音同大。</note>
-<note n="0064001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064001">曼．讀曼姆．須閉口念。</note>
-<note n="0064002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064002">戛．及啊切。</note>
-<note n="0064003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064003">佳．基啊切。</note>
-<note n="0064004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064004">山．讀山姆．須閉口念。</note>
-<note n="0064005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064005">夏．希啊切。</note>
-<note n="0064006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064006">邁．木挨切。</note>
-<note n="0064007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064007">唷．亦喔切．淅音同下。</note>
-<note n="0064008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064008">搿．讀搿誒．淅音同戲。</note>
-<note n="0064009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0064009">卡．渴啊切．蘇淅音楷。</note>
-<note n="0065001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065001">大悲咒發願文<p>稽首觀音大悲主．（叩）．願力洪深相好身。千臂莊嚴普護持．千眼光明徧觀照。真實語中宣密語．無為心內起悲心。速令滿足諸希求．永使滅除諸罪業。（叩）．龍天聖眾同慈護．百千三昧頓熏修。受持身是光明幢．受持心是神通藏。洗滌塵勞願濟海．超證菩提方便門。我今稱誦誓歸依．（叩）．所願從心悉圓滿。南無大悲觀世音．願我速知一切法。南無大悲觀世音．願我早得智慧眼．南無大悲觀世音．願我速度一切眾．南無大悲觀世音．願我早得善方便。南無大悲觀世音．願我速乘般若船。南無大悲觀世音．願我早得越苦海。南無大悲觀世音．願我速得戒定道。南無大悲觀世音．願我早登涅槃山。南無大悲觀世音．願我速會無為舍。南無大悲觀世音．願我早同法性身。</p><p>我若向刀山．刀山自摧折。我若向火湯．火湯自枯竭。我若向地獄．地獄自消滅。我若向餓鬼．餓鬼自飽滿。我若向修羅．惡心自調伏。我若向畜生．自得大智慧。</p><p>發前願巳．至心稱念拿摩觀世音菩薩．拿摩啊彌打佛．各百聲．或千聲。如時促者．十聲亦可。然後誦咒．畫字．回向云。</p><p>我及眾生．無始常為．三業六根．重罪所障。不見諸佛．不知出要．但願生死．不知妙理。我今雖知．猶與眾生．同為一切．重罪所障。今對觀音．十方佛前．普為眾生．皈命懺悔。惟願加護．令障消滅．開本知見．制諸魔外。三業精進．修淨土因．至捨此身．決定得生。（叩）</p><p>啊彌打佛極樂世界．親承供養大悲觀音．具諸總持．廣度羣品．皆出苦輪．同到智地。</p></note>
-<note n="0068001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068001">虔求加被文<p>弟子今為某某病苦．仰求菩薩．賜大悲水。唯願慈悲加被．令彼業消病愈．增長信心．同生西方。拿摩十方佛．一拜。拿摩十方法．一拜。拿摩十方僧．一拜。拿摩觀世音菩薩．三拜。</p></note>
-<note n="0068002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068002">行者若欲專誦是咒．請閱大悲心咒行法．至持誦簡法．載淨土三要述義附錄中．並載有受八關戒齋法。欲持齋戒．誦是咒者．不可不閱。<p>又誦是咒者．最好用大悲香爐。佛學書局有之．欲知其妙．請閱觀自在菩薩妙香印法載無量壽儀軌中。</p></note>
-<note n="0069001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069001">經云．若有求大功德．修持此明者．不假擇日作壇．著常衣服．明水灑淨．如常齋食．當居淨室．面東趺坐。想觀自在菩薩相好圓滿．如日初出．放大光明．坐蓮華上．對在目前．誦念不亂．燒沉水香．運心供養．恭敬禮拜．隨心所辦．香花供獻．而不斷絕．六時時別千八十遍．誦滿三十萬遍。由住瑜伽觀法誦念．所有過現五無間罪．極惡業障．自然消滅．見種種善夢．即罪滅之相。由斯善根．百千事業．皆得成就。又若比丘於七日中．六時各誦百八遍．男子百六．女人百三．此名課法．一切成就．富貴福祿．隨意增長。</note>
-<note n="0070001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070001">此真言是一切蓮華部心．能成一切三世勝法．即正觀音咒．又名滅業障咒。藏經中有觀自在菩薩心真言一印念誦法．即係此咒念誦法。如是祕密法要．精誠修持．一切所為．速得成就。</note>
-<note n="0070002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070002">此真言即四臂觀音咒．其功力詳載大乘莊嚴寶王經。</note>
-<note n="0070003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070003">此咒功力．詳載准提陀羅尼經會釋．及顯密圓通。至心持誦．能令短命者增壽。求富貴．求男女．求智慧．凡有所求．無不稱遂。</note>
-<note n="0070004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070004">此真言即近時最盛行之綠度母咒．綠度母係觀世音菩薩化身．故靈感極速。</note>
-<note n="0071001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0071001">此咒即般若無盡藏陀羅尼．見陀羅尼集經。前由朱慶瀾將軍懇請持松上師．特開方便公開印明及觀想法．茲特敬錄於下．庶受持者感應迅速．世界和平國家興盛。</note>
-<note n="0071002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0071002">此咒即持世陀羅尼。根本咒太長．不錄。茲錄心咒三種．苟能至心持誦．其功力與誦根本咒同。</note>
-<note n="0071003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0071003">此天名多聞天。</note>
-<note n="0071004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0071004">懷夏喇嘛拿即多聞義。</note>
-<note n="0071005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0071005">此咒與前光明真言．無量壽陀羅尼．均經程宅安阿闍黎公開普傳。欲受持者．先禮三寶及阿闍黎各三拜．然後依文跪誦三遍．即同師授云。</note>
-<note n="0071006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0071006">佛號梵文．錄以徵信。阿陀啊打．不辯自明。</note>
-<note n="0072001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0072001">編輯始末記<p>丁丑夏月予曾編贈梵呪音義錄．一時索者紛至．均稱便益。旋因戰事忽起．交通停阻．存書亦己無幾。戊寅秋．錢曉朕居士來書．勉余重編．以廣利益。並謂音義錄中．行法尚欠詳備．注音亦須斟酌。梵文英音．均非急需。浙音漢字．難期普循。若能改譯國音漢字．其利始溥云云。爰再發心．參考經論．詳究國音。歷時三月．編輯始竣．乃發願曰。</p><p>願以此功德．平等施一切．增長諸福慧．消除宿現業．普願離憂患．安樂常吉祥．同發菩提心．往生極樂國。</p></note>
+<note n="0045001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045001">陀羅尼．總持義．總一切法持無量義。普通譯為真言．咒．明。</note>
+<note n="0045002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045002">諸真言中．嗡字攝義甚廣．有歸命．驚覺供養．三身．本不生．無見頂相．如來毫相功德等義。</note>
+<note n="0045003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045003">嗡吽覽喊難刊林凡等字．須隨念隨即閉口．兼帶姆字聲音。</note>
+<note n="0045004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045004">——表二合．蓋須二字合讀．方成一箇梵字也．亦有三合四合方成一字者。</note>
+<note n="0046001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0046001">普通拜佛方法<p>一．合掌當胸．分右掌向下．按於蒲團中心．左掌不動．兩膝跪下．此為一把。二．以左掌按於蒲團之前左邊．此為一把。三．右掌從中心移於蒲團之前右邊．兩掌相離六寸．此為半把。故俗稱拜法為兩把半。四．以頭按於兩掌中間．蒲團上．兩掌翻轉．手心向上．意在以兩手承佛足．故曰頭面禮足。五．兩手作拳反轉．仍按原處。六．頭離蒲團．右掌移於蒲團中心。七．左掌移置胸前．如合掌狀。八．以右掌用力撐起．合於左掌．同時兩膝起立此為一拜。</p><p>尚有一禮．如世俗之作揖．名曰問訊。即拜畢時．合掌向下．鞠躬過膝．以右掌置左掌內作拳．從下向上與眉齊．同時直躬。再將拳置胸前放開．手心向上．右在左上二大指相拄．此即定印．是為拜佛禮畢。</p><p>至於密宗拜法．東密藏密．均各不同。然行者能依上法禮拜巳．遠勝於俗禮矣。</p></note>
+<note n="0047001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0047001">阿彌陀．梵音啊彌打．欲表恭敬．理應改正。</note>
+<note n="0047002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0047002">懺悔為止惡之本。自此以下．皆金剛合掌．長跪敬誦。誦時．觀想一切眾生無始罪障．悉皆消滅。</note>
+<note n="0047003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0047003">三歸依為入道之基。兩足者．福足慧足也。誦時．觀想一切眾生．悉皆一心歸依三寶。</note>
+<note n="0048001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048001">僕．讀菩字入聲。</note>
+<note n="0048002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048002">誦時．觀想一切眾生．聞聲悉皆奉行十善。</note>
+<note n="0048003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048003">發菩提心者．謂發上求佛道．下化眾生之決定心也。修行不發心．如開花不結果。</note>
+<note n="0048004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048004">誦時．觀想一切眾生．聞聲同發大菩提心。</note>
+<note n="0048005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048005">誦時．觀想一切眾生．同受金剛光明三昧寶戒．心得清淨．身如菩薩。書云．此明誦一遍．當受菩薩戒訖。</note>
+<note n="0048006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048006">爾時．觀想一切眾生．聞聲俱發五大誓願。</note>
+<note n="0049001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0049001">應先運心觀想．十方世界所有一切最勝上妙香華飲食．種種供養．我等誠心奉獻一切諸佛．諸大菩薩．諸賢聖僧．然後誦咒。大日經供養次第法云．若無勢力廣增益．住法但觀菩提心．佛說此中具萬行．滿足清白純淨法。</note>
+<note n="0049002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0049002">禪要云．端身正住．如前半跏坐．不須結全跏．全跏則多痛。若心緣痛境．即難得定。若先來全跏坐得者．最為妙也。然可直頭平望．眼不用過開．亦不用全合．大開則心散．合則昏沉．莫緣外境．安坐即訖。</note>
+<note n="0049003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0049003">大日經云．囉字色鮮白．空點以嚴之．如彼髻明珠．置之於頂上。設於百劫中．所積眾罪垢．由是悉除滅．福慧皆圓滿。</note>
+<note n="0050001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0050001">山河大地．一切等物．名器世界。</note>
+<note n="0050002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0050002">五部念誦印。佛部．大指捻頭指．餘指敬直。金剛部．大捻中。寶部．大捻無名。蓮華部．大捻名小。羯磨部．上四種皆得。</note>
+<note n="0050003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0050003">密宗要義載五種念誦法。一．蓮花念誦．即微聲持。二．金剛念誦．口閉．舌微動。三．三摩地念誦．觀心月輪上布列咒字．專注暗誦。四．聲生念誦．想心蓮白螺．出妙音聲。五．光明念誦．觀想口出無量光明．徧照法界．利益眾生．而念誦之。</note>
+<note n="0051001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0051001">本尊者．本來最尊義。行者於諸佛菩薩中．以某尊為本而尊崇之．曰本尊。於世世生生間．自本有宿緣而尊崇故．曰本尊。</note>
+<note n="0051002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0051002">以特殊文字．代表真言之全意義者．曰種子。以其能攝盡無量義趣．而生一切功德．喻如植物之種子。</note>
+<note n="0052001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052001">大乘本生心地觀經卷八云．三界之中．以心為主。能觀心者．究竟解脫。不能觀者．永處纏縛。又云．凡夫所觀菩提心相．猶如清淨圓滿月輪．於胸臆上明朗而住。若欲速得不退轉者．在空寂室．端身正念．結金剛縛．冥目觀察臆中明月．作是思惟。是滿月輪．無垢明淨．內外澄澈．最極清涼。月即是心．心即是月。塵翳無染．妄想不生．能令眾生身心清淨．大菩提心堅固不退。又云．繫心月輪成熟觀察．是名菩薩觀菩提心成佛三昧。若有凡夫修此觀者．所起五逆四重十惡．及一闡提．如是等罪．盡皆消滅。<p>發菩提心輪云．云何能證無上菩提．當知法爾應住普賢大菩提心。一切眾生本有薩埵．為貪瞋癡煩惱之所縛故。諸佛大悲．以善巧智．說此甚深秘密瑜伽。令修行者．於內心中．觀日月輪。由作此觀．照見本心湛然清淨．猶如滿月．光徧虛空．無所分別．亦名無覺了亦名淨法界．亦名實相般若波羅蜜海．能含種種無量珍寶三摩地。又云．八葉白蓮一肘間．炳現阿字素光色．禪智俱入金剛縛．召入如來寂靜智。</p><p>又云．凡人心如合蓮華．佛心如滿月。</p><p>又云．若人求佛慧．通達菩提心．父母所生身．速證大覺位。</p></note>
+<note n="0052002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052002">興教大師云．法華經中說一切眾生心中．悉有成佛種子。斯之種子者何物乎．如來隱而勿宣．而於真言中顯之。是故但一念觀啊字．其成佛之疾．尤遠勝於讀法華經千萬部也。此觀成時．現世即身成佛。真言宗之肝腦．在於此觀。</note>
+<note n="0053001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0053001">回向咒．見守護國界主陀羅尼經卷一末。</note>
+<note n="0054001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054001">□．捺啊切。</note>
+<note n="0054002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054002">摩．沒喔切。</note>
+<note n="0054003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054003">得讀入聲．浙音同德。</note>
+<note n="0054004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054004">牙．亦啊切。</note>
+<note n="0054005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054005">司得里牙．四合．須四字速合讀．成一梵字。</note>
+<note n="0054006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054006">維．物衣切。</note>
+<note n="0054007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054007">嘠．割啊切。</note>
+<note n="0054008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054008">難．讀難姆。</note>
+<note n="0054009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054009">打．得啊切。</note>
+<note n="0054010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054010">噶．搿啊切。</note>
+<note n="0054011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054011">菴．讀阿姆．須閉口念。</note>
+<note n="0054012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054012">嘛．沒啊切。</note>
+<note n="0054013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054013">佳．基啊切。</note>
+<note n="0054014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054014">得．讀上聲．浙音同堆。</note>
+<note n="0054015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054015">達．頭啊切。</note>
+<note n="0054016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054016">槃．蒲安切。</note>
+<note n="0054017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054017">戞．及啊切。</note>
+<note n="0054018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054018">覽．閉口念。</note>
+<note n="0054019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054019">司乏之乏均讀長音．浙音同外。</note>
+<note n="0054020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054020">打．得啊切．浙音同帶。</note>
+<note n="0054021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054021">他．塔啊切。</note>
+<note n="0054022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054022">得．讀上聲。</note>
+<note n="0054023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054023">叭．鉢啊切。</note>
+<note n="0054024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054024">喇．勒啊切。</note>
+<note n="0054025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054025">箔．勃喔切．浙音同杷。</note>
+<note n="0055001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055001">釋迦牟尼佛種子字．為梵文拔字．讀入聲。</note>
+<note n="0055002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055002">拿．捺啊切。</note>
+<note n="0055003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055003">麥．麼入聲。</note>
+<note n="0055004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055004">灑．司啊切。</note>
+<note n="0055005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055005">打．得啊切。</note>
+<note n="0055006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055006">噶．搿啊切。</note>
+<note n="0055007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055007">難．閉口念。</note>
+<note n="0055008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055008">維．物衣切。</note>
+<note n="0055009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055009">別．拔誒切。</note>
+<note n="0055010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055010">嘛．沒啊切。</note>
+<note n="0055011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055011">喇．勒啊切。</note>
+<note n="0055012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055012">達．頭啊切。</note>
+<note n="0055013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055013">夏．希啊切。</note>
+<note n="0055014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055014">餒．納誒切。</note>
+<note n="0055015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055015">咧．勒誒切。</note>
+<note n="0055016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055016">吽．黑嗡切。</note>
+<note n="0055017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055017">得．讀上聲。</note>
+<note n="0055018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055018">骨．搿烏切。</note>
+<note n="0055019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055019">怕．潑啊切。</note>
+<note n="0055020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055020">打別達餒咧得怕．與帶培大內雷堆派等浙音相同。餒或譯臬。</note>
+<note n="0055021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055021">牟梨曼陀羅咒經云．誦此陀羅尼滿三萬遍．五逆重罪即得除滅。若能日別誦百八遍者．一切所向．無不獲利。若缺一日．補須三倍。</note>
+<note n="0056001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056001">梵文勃魯姆為大日如來佛頂種子字。</note>
+<note n="0056002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056002">啊咧．浙音同唉來。</note>
+<note n="0056003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056003">盤．蒲安切．浙音同辦。</note>
+<note n="0056004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056004">懷字借用．讀無挨切．同英文字Y字音。</note>
+<note n="0056005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056005">勃魯姆．須合讀且速。</note>
+<note n="0056006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056006">諸咒梵文見大正藏．及瑜伽真言句義。所譯漢字．根據國音常用字彙。其字彙無此準音字者．借用相似字音．閱注音即知。</note>
+<note n="0056007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056007">梵文啊字為胎藏界大日如來種子字。</note>
+<note n="0056008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056008">摩．沒喔切。</note>
+<note n="0056009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056009">懷．無挨切．參閱注音。</note>
+<note n="0056010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056010">佳．基啊切。</note>
+<note n="0056011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056011">德．蘇浙音同特。</note>
+<note n="0056012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056012">牙．亦啊切。</note>
+<note n="0056013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056013">吽．同轟。</note>
+<note n="0056014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0056014">聞音滅罪．散沙度亡．矧常自誦．有不罪滅福增．往生西方者乎。</note>
+<note n="0057001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057001">啊彌陀佛種子字．為紅色梵文赫利字。<p>赫利一字．為阿彌陀佛種子真言。理趣經釋云．若人持此一字真言．能除一切災禍疾病．命終當生安樂國土．得上品上生。</p></note>
+<note n="0057002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057002">拿．捺啊切。</note>
+<note n="0057003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057003">得．讀入聲．浙音同德。</note>
+<note n="0057004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057004">牙．亦啊切。</note>
+<note n="0057005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057005">麥．讀嘛入聲。</note>
+<note n="0057006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057006">打．得啊切。</note>
+<note n="0057007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057007">拔．讀拔哈音。</note>
+<note n="0057008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057008">噶．搿啊切。</note>
+<note n="0057009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057009">得．讀上聲．浙音同堆。</note>
+<note n="0057010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057010">德．浙音特。</note>
+<note n="0057011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057011">肥．物誒切．或譯偉字。</note>
+<note n="0057012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057012">別．勃誒切。</note>
+<note n="0057013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057013">迭．頭誒切。</note>
+<note n="0057014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057014">傑．及誒切。</note>
+<note n="0057015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057015">維．物衣切。</note>
+<note n="0057016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057016">林．閉口念．帶姆字音。</note>
+<note n="0057017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057017">餒．納誒切．或譯臬字。</note>
+<note n="0057018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057018">嘠．割啊切。</note>
+<note n="0057019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057019">咧．勒誒切．徒姆二字。</note>
+<note n="0057020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057020">肥別迭傑維餒咧等．皆係借用．閉口速念。</note>
+<note n="0057021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057021">灑．司啊切。</note>
+<note n="0057022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057022">達．頭啊切。</note>
+<note n="0057023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057023">嘛．木啊切。</note>
+<note n="0057024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057024">夏．希啊切。</note>
+<note n="0057025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057025">啥．世啊切。</note>
+<note n="0057026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057026">牙姆與吽．均閉口念。肥別迭傑餒咧誒．與回培臺懈內來愛等浙音相同。凡借用之字．參看注切即準。</note>
+<note n="0058001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058001">藥師如來種子字．為梵文排字。</note>
+<note n="0058002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058002">拔．讀拔哈。</note>
+<note n="0058003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058003">排．白挨切。</note>
+<note n="0058004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058004">曬．世挨切．挨浙音同啊衣。</note>
+<note n="0058005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058005">骨．搿汙切。</note>
+<note n="0058006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058006">戞．及啊切。</note>
+<note n="0058007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058007">也．亦誒切。</note>
+<note n="0058008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058008">藥師佛號．一聞於耳．身心安樂．眾病悉除。欲生西方極樂世界．八大菩薩示其道路。持名誦咒．功德無殊。書云．藥師咒能消除病難．延命咒能守護壽命長久．行者非無病及壽命長．則悉地現前不易．故宜兼誦。</note>
+<note n="0058009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058009">瑜．亦烏切。</note>
+<note n="0059001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059001">金剛界大日如來種子字．為梵文凡姆字。咒中十◎．分表十門。</note>
+<note n="0059002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059002">拔．讀拔哈。</note>
+<note n="0059003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059003">噶．搿啊切。</note>
+<note n="0059004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059004">籟．勒挨切。</note>
+<note n="0059005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059005">牙．亦啊切。</note>
+<note n="0059006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059006">維．物衣切。</note>
+<note n="0059007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059007">打．得啊切。</note>
+<note n="0059008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059008">旭．希喔切。</note>
+<note n="0059009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059009">達．頭啊切。</note>
+<note n="0059010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059010">灑．司啊切。</note>
+<note n="0059011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059011">嘛．木啊切。</note>
+<note n="0059012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059012">怕．潑啊切。</note>
+<note n="0059013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059013">須．讀希烏</note>
+<note n="0059014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059014">迭．頭誒切．浙音同代。</note>
+<note n="0059015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059015">勝．讀失姆。</note>
+<note n="0059016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059016">曼．讀麥姆。</note>
+<note n="0059017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059017">佳．基啊切。</note>
+<note n="0059018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059018">曬．世挨切。</note>
+<note n="0059019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059019">蓋．割挨切．挨同啊衣。</note>
+<note n="0059020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059020">叭．鉢啊切。</note>
+<note n="0059021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059021">臺．頭挨切。</note>
+<note n="0059022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059022">瑜．亦烏切。</note>
+<note n="0059023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059023">啥．世啊切。</note>
+<note n="0059024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059024">戞．及啊切。</note>
+<note n="0059025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059025">舉．基烏切。</note>
+<note n="0059026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0059026">嘠．割啊切。</note>
+<note n="0060001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060001">德字．蘇浙音同特。</note>
+<note n="0060002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060002">戈．割喔切．蘇音同各．浙音同歌。</note>
+<note n="0060003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060003">戞．及啊切。</note>
+<note n="0060004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060004">別．勃誒切．浙音同培。</note>
+<note n="0060005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060005">夏．希啊切。</note>
+<note n="0060006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060006">覽．讀覽姆。</note>
+<note n="0060007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060007">難．讀難姆．閉口念之。</note>
+<note n="0061001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061001">美．蘇音同綿．浙同梅。</note>
+<note n="0061002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061002">續法大師尊勝咒疏．內載觀想法云．淨身口意．想自心中有圓月輪．輪上想欠字（即梵文刊姆）．白色放光．徧照十方世界．思惟欠字實相義。所謂一切法等同虛空．離諸色相．離諸障礙．則於真實理中．觀自身作金剛波羅蜜佛母菩薩像。左手執蓮花．花上有五股金剛杵．右手仰掌垂手為施願勢．頭冠瓔珞面貌慈愍．拔濟一切眾生。念誦時．常作此觀想．一切所願．無不成就。</note>
+<note n="0061003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0061003">古德頌云．波利尊者禮五臺．卻被文殊化引開．東土若無尊勝咒．眾生難以脫塵埃。</note>
+<note n="0062001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062001">謹按尊勝陀羅尼經．共有五譯。其中字句．間有缺少。今依弘法大師梵本重譯．實最完足。請參看尊勝咒之研究一書自知。又書寫此咒．必須寫梵文．方有殊勝威力。佛學書局有印就者．至八關戒齋法．載淨土三要述義中。</note>
+<note n="0062002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062002">謹按．此念誦法．尚未公開普傳．不得擅自結印。樂此法者．可向持松大師親自面求。大師慈悲．必允傳授。因手印必須師授．若擅自結．求益反損。是以本編未錄手印。若資緣具足．各種印明．均經師授．為最勝上。否則先誦大輪咒廿一遍．然後結定印．誦咒觀想．方免過愆。</note>
+<note n="0063001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063001">觀世音菩薩種子字．為白色梵文赫利字。</note>
+<note n="0063002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063002">拿．捺啊切。</note>
+<note n="0063003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063003">摩．木喔切。</note>
+<note n="0063004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063004">得．讀入聲．蘇浙音德。</note>
+<note n="0063005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063005">得．讀上聲．浙音同堆。</note>
+<note n="0063006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063006">箔．蒲喔切．浙音同杷。</note>
+<note n="0063007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063007">灑．司啊切。</note>
+<note n="0063008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063008">牙．亦啊切。</note>
+<note n="0063009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063009">嘛．木啊切。</note>
+<note n="0063010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063010">嘠．割啊切．蘇浙音同尷尬之尬。</note>
+<note n="0063011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063011">打．得啊切。</note>
+<note n="0063012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063012">蒙．讀摩姆。</note>
+<note n="0063013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063013">覽．讀覽姆．均閉口念。</note>
+<note n="0063014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063014">咧．勒誒切．浙音同來。</note>
+<note n="0063015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063015">啥．世啊切。</note>
+<note n="0063016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063016">美．或譯咩。</note>
+<note n="0063017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063017">乏．物啊切。</note>
+<note n="0063018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063018">他．塔啊切。</note>
+<note n="0063019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063019">須．希汙切。</note>
+<note n="0063020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063020">蒲姆．閉口念。</note>
+<note n="0063021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063021">傑．及誒切。</note>
+<note n="0063022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063022">牙姆．閉口念。</note>
+<note n="0063023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063023">噶．搿啊切。</note>
+<note n="0063024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063024">嗡．閉口念．帶姆字音。</note>
+<note n="0063025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063025">誒．同英文字母A字．蘇音同咽．浙音同愛。</note>
+<note n="0063026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063026">黑．赫誒切．浙音同海。</note>
+<note n="0063027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063027">達．頭啊切．浙音同大。</note>
+<note n="0064001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064001">曼．讀曼姆．須閉口念。</note>
+<note n="0064002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064002">戛．及啊切。</note>
+<note n="0064003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064003">佳．基啊切。</note>
+<note n="0064004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064004">山．讀山姆．須閉口念。</note>
+<note n="0064005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064005">夏．希啊切。</note>
+<note n="0064006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064006">邁．木挨切。</note>
+<note n="0064007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064007">唷．亦喔切．淅音同下。</note>
+<note n="0064008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064008">搿．讀搿誒．淅音同戲。</note>
+<note n="0064009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0064009">卡．渴啊切．蘇淅音楷。</note>
+<note n="0065001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065001">大悲咒發願文<p>稽首觀音大悲主．（叩）．願力洪深相好身。千臂莊嚴普護持．千眼光明徧觀照。真實語中宣密語．無為心內起悲心。速令滿足諸希求．永使滅除諸罪業。（叩）．龍天聖眾同慈護．百千三昧頓熏修。受持身是光明幢．受持心是神通藏。洗滌塵勞願濟海．超證菩提方便門。我今稱誦誓歸依．（叩）．所願從心悉圓滿。南無大悲觀世音．願我速知一切法。南無大悲觀世音．願我早得智慧眼．南無大悲觀世音．願我速度一切眾．南無大悲觀世音．願我早得善方便。南無大悲觀世音．願我速乘般若船。南無大悲觀世音．願我早得越苦海。南無大悲觀世音．願我速得戒定道。南無大悲觀世音．願我早登涅槃山。南無大悲觀世音．願我速會無為舍。南無大悲觀世音．願我早同法性身。</p><p>我若向刀山．刀山自摧折。我若向火湯．火湯自枯竭。我若向地獄．地獄自消滅。我若向餓鬼．餓鬼自飽滿。我若向修羅．惡心自調伏。我若向畜生．自得大智慧。</p><p>發前願巳．至心稱念拿摩觀世音菩薩．拿摩啊彌打佛．各百聲．或千聲。如時促者．十聲亦可。然後誦咒．畫字．回向云。</p><p>我及眾生．無始常為．三業六根．重罪所障。不見諸佛．不知出要．但願生死．不知妙理。我今雖知．猶與眾生．同為一切．重罪所障。今對觀音．十方佛前．普為眾生．皈命懺悔。惟願加護．令障消滅．開本知見．制諸魔外。三業精進．修淨土因．至捨此身．決定得生。（叩）</p><p>啊彌打佛極樂世界．親承供養大悲觀音．具諸總持．廣度羣品．皆出苦輪．同到智地。</p></note>
+<note n="0068001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068001">虔求加被文<p>弟子今為某某病苦．仰求菩薩．賜大悲水。唯願慈悲加被．令彼業消病愈．增長信心．同生西方。拿摩十方佛．一拜。拿摩十方法．一拜。拿摩十方僧．一拜。拿摩觀世音菩薩．三拜。</p></note>
+<note n="0068002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068002">行者若欲專誦是咒．請閱大悲心咒行法．至持誦簡法．載淨土三要述義附錄中．並載有受八關戒齋法。欲持齋戒．誦是咒者．不可不閱。<p>又誦是咒者．最好用大悲香爐。佛學書局有之．欲知其妙．請閱觀自在菩薩妙香印法載無量壽儀軌中。</p></note>
+<note n="0069001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069001">經云．若有求大功德．修持此明者．不假擇日作壇．著常衣服．明水灑淨．如常齋食．當居淨室．面東趺坐。想觀自在菩薩相好圓滿．如日初出．放大光明．坐蓮華上．對在目前．誦念不亂．燒沉水香．運心供養．恭敬禮拜．隨心所辦．香花供獻．而不斷絕．六時時別千八十遍．誦滿三十萬遍。由住瑜伽觀法誦念．所有過現五無間罪．極惡業障．自然消滅．見種種善夢．即罪滅之相。由斯善根．百千事業．皆得成就。又若比丘於七日中．六時各誦百八遍．男子百六．女人百三．此名課法．一切成就．富貴福祿．隨意增長。</note>
+<note n="0070001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070001">此真言是一切蓮華部心．能成一切三世勝法．即正觀音咒．又名滅業障咒。藏經中有觀自在菩薩心真言一印念誦法．即係此咒念誦法。如是祕密法要．精誠修持．一切所為．速得成就。</note>
+<note n="0070002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070002">此真言即四臂觀音咒．其功力詳載大乘莊嚴寶王經。</note>
+<note n="0070003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070003">此咒功力．詳載准提陀羅尼經會釋．及顯密圓通。至心持誦．能令短命者增壽。求富貴．求男女．求智慧．凡有所求．無不稱遂。</note>
+<note n="0070004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070004">此真言即近時最盛行之綠度母咒．綠度母係觀世音菩薩化身．故靈感極速。</note>
+<note n="0071001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0071001">此咒即般若無盡藏陀羅尼．見陀羅尼集經。前由朱慶瀾將軍懇請持松上師．特開方便公開印明及觀想法．茲特敬錄於下．庶受持者感應迅速．世界和平國家興盛。</note>
+<note n="0071002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0071002">此咒即持世陀羅尼。根本咒太長．不錄。茲錄心咒三種．苟能至心持誦．其功力與誦根本咒同。</note>
+<note n="0071003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0071003">此天名多聞天。</note>
+<note n="0071004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0071004">懷夏喇嘛拿即多聞義。</note>
+<note n="0071005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0071005">此咒與前光明真言．無量壽陀羅尼．均經程宅安阿闍黎公開普傳。欲受持者．先禮三寶及阿闍黎各三拜．然後依文跪誦三遍．即同師授云。</note>
+<note n="0071006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0071006">佛號梵文．錄以徵信。阿陀啊打．不辯自明。</note>
+<note n="0072001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0072001">編輯始末記<p>丁丑夏月予曾編贈梵呪音義錄．一時索者紛至．均稱便益。旋因戰事忽起．交通停阻．存書亦己無幾。戊寅秋．錢曉朕居士來書．勉余重編．以廣利益。並謂音義錄中．行法尚欠詳備．注音亦須斟酌。梵文英音．均非急需。浙音漢字．難期普循。若能改譯國音漢字．其利始溥云云。爰再發心．參考經論．詳究國音。歷時三月．編輯始竣．乃發願曰。</p><p>願以此功德．平等施一切．增長諸福慧．消除宿現業．普願離憂患．安樂常吉祥．同發菩提心．往生極樂國。</p></note>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0046001" resp="#resp2" type="mod" target="#nkr_note_mod_0046001">普通拜佛方法<p>一．合掌當胸．分右掌向下．按於蒲團中心．左掌不動．兩膝跪下．此為一把。二．以左掌按於蒲團之前左邊．此為一把。三．右掌從中心移於蒲團之前右邊．兩掌相離六寸．此為半把。故俗稱拜法為兩把半。四．以頭按於兩掌中間．蒲團上．兩掌翻轉．手心向上．意在以兩手承佛足．故曰頭面禮足。五．兩手作拳反轉．仍按原處。六．頭離蒲團．右掌移於蒲團中心。七．左掌移置胸前．如合掌狀。八．以右掌用力撐起．合於左掌．同時兩膝起立此為一拜。</p><p>尚有一禮．如世俗之作揖．名曰問訊。即拜畢時．合掌向下．鞠躬過膝．以右掌置左掌內作拳．從下向上與眉齊．同時直躬。再將拳置胸前放開．手心向上．右在左上二大指相拄．此即定印．是為拜佛禮畢。</p><p>至於密宗拜法．東密藏密．均各不同。然行者能依上法禮拜已．遠勝於俗禮矣。</p></note>
-<note n="0054001" resp="#resp2" type="mod" target="#nkr_note_mod_0054001">拿．捺啊切。</note>
-<note n="0065001" resp="#resp2" type="mod" target="#nkr_note_mod_0065001">大悲咒發願文<p>稽首觀音大悲主．（叩）．願力洪深相好身。千臂莊嚴普護持．千眼光明徧觀照。真實語中宣密語．無為心內起悲心。速令滿足諸希求．永使滅除諸罪業。（叩）．龍天聖眾同慈護．百千三昧頓熏修。受持身是光明幢．受持心是神通藏。洗滌塵勞願濟海．超證菩提方便門。我今稱誦誓歸依．（叩）．所願從心悉圓滿。南無大悲觀世音．願我速知一切法。南無大悲觀世音．願我早得智慧眼．南無大悲觀世音．願我速度一切眾．南無大悲觀世音．願我早得善方便。南無大悲觀世音．願我速乘般若船。南無大悲觀世音．願我早得越苦海。南無大悲觀世音．願我速得戒定道。南無大悲觀世音．願我早登涅槃山。南無大悲觀世音．願我速會無為舍。南無大悲觀世音．願我早同法性身。</p><p>我若向刀山．刀山自摧折。我若向火湯．火湯自枯竭。我若向地獄．地獄自消滅。我若向餓鬼．餓鬼自飽滿。我若向修羅．惡心自調伏。我若向畜生．自得大智慧。</p><p>發前願已．至心稱念拿摩觀世音菩薩．拿摩啊彌打佛．各百聲．或千聲。如時促者．十聲亦可。然後誦咒．畫字．回向云。</p><p>我及眾生．無始常為．三業六根．重罪所障。不見諸佛．不知出要．但願生死．不知妙理。我今雖知．猶與眾生．同為一切．重罪所障。今對觀音．十方佛前．普為眾生．皈命懺悔。惟願加護．令障消滅．開本知見．制諸魔外。三業精進．修淨土因．至捨此身．決定得生。（叩）</p><p>啊彌打佛極樂世界．親承供養大悲觀音．具諸總持．廣度羣品．皆出苦輪．同到智地。</p></note>
-<note n="0072001" resp="#resp2" type="mod" target="#nkr_note_mod_0072001">編輯始末記<p>丁丑夏月予曾編贈梵呪音義錄．一時索者紛至．均稱便益。旋因戰事忽起．交通停阻．存書亦已無幾。戊寅秋．錢曉朕居士來書．勉余重編．以廣利益。並謂音義錄中．行法尚欠詳備．注音亦須斟酌。梵文英音．均非急需。浙音漢字．難期普循。若能改譯國音漢字．其利始溥云云。爰再發心．參考經論．詳究國音。歷時三月．編輯始竣．乃發願曰。</p><p>願以此功德．平等施一切．增長諸福慧．消除宿現業．普願離憂患．安樂常吉祥．同發菩提心．往生極樂國。</p></note>
+<note n="0046001" resp="#resp3" type="mod" target="#nkr_note_mod_0046001">普通拜佛方法<p>一．合掌當胸．分右掌向下．按於蒲團中心．左掌不動．兩膝跪下．此為一把。二．以左掌按於蒲團之前左邊．此為一把。三．右掌從中心移於蒲團之前右邊．兩掌相離六寸．此為半把。故俗稱拜法為兩把半。四．以頭按於兩掌中間．蒲團上．兩掌翻轉．手心向上．意在以兩手承佛足．故曰頭面禮足。五．兩手作拳反轉．仍按原處。六．頭離蒲團．右掌移於蒲團中心。七．左掌移置胸前．如合掌狀。八．以右掌用力撐起．合於左掌．同時兩膝起立此為一拜。</p><p>尚有一禮．如世俗之作揖．名曰問訊。即拜畢時．合掌向下．鞠躬過膝．以右掌置左掌內作拳．從下向上與眉齊．同時直躬。再將拳置胸前放開．手心向上．右在左上二大指相拄．此即定印．是為拜佛禮畢。</p><p>至於密宗拜法．東密藏密．均各不同。然行者能依上法禮拜已．遠勝於俗禮矣。</p></note>
+<note n="0054001" resp="#resp3" type="mod" target="#nkr_note_mod_0054001">拿．捺啊切。</note>
+<note n="0065001" resp="#resp3" type="mod" target="#nkr_note_mod_0065001">大悲咒發願文<p>稽首觀音大悲主．（叩）．願力洪深相好身。千臂莊嚴普護持．千眼光明徧觀照。真實語中宣密語．無為心內起悲心。速令滿足諸希求．永使滅除諸罪業。（叩）．龍天聖眾同慈護．百千三昧頓熏修。受持身是光明幢．受持心是神通藏。洗滌塵勞願濟海．超證菩提方便門。我今稱誦誓歸依．（叩）．所願從心悉圓滿。南無大悲觀世音．願我速知一切法。南無大悲觀世音．願我早得智慧眼．南無大悲觀世音．願我速度一切眾．南無大悲觀世音．願我早得善方便。南無大悲觀世音．願我速乘般若船。南無大悲觀世音．願我早得越苦海。南無大悲觀世音．願我速得戒定道。南無大悲觀世音．願我早登涅槃山。南無大悲觀世音．願我速會無為舍。南無大悲觀世音．願我早同法性身。</p><p>我若向刀山．刀山自摧折。我若向火湯．火湯自枯竭。我若向地獄．地獄自消滅。我若向餓鬼．餓鬼自飽滿。我若向修羅．惡心自調伏。我若向畜生．自得大智慧。</p><p>發前願已．至心稱念拿摩觀世音菩薩．拿摩啊彌打佛．各百聲．或千聲。如時促者．十聲亦可。然後誦咒．畫字．回向云。</p><p>我及眾生．無始常為．三業六根．重罪所障。不見諸佛．不知出要．但願生死．不知妙理。我今雖知．猶與眾生．同為一切．重罪所障。今對觀音．十方佛前．普為眾生．皈命懺悔。惟願加護．令障消滅．開本知見．制諸魔外。三業精進．修淨土因．至捨此身．決定得生。（叩）</p><p>啊彌打佛極樂世界．親承供養大悲觀音．具諸總持．廣度羣品．皆出苦輪．同到智地。</p></note>
+<note n="0072001" resp="#resp3" type="mod" target="#nkr_note_mod_0072001">編輯始末記<p>丁丑夏月予曾編贈梵呪音義錄．一時索者紛至．均稱便益。旋因戰事忽起．交通停阻．存書亦已無幾。戊寅秋．錢曉朕居士來書．勉余重編．以廣利益。並謂音義錄中．行法尚欠詳備．注音亦須斟酌。梵文英音．均非急需。浙音漢字．難期普循。若能改譯國音漢字．其利始溥云云。爰再發心．參考經論．詳究國音。歷時三月．編輯始竣．乃發願曰。</p><p>願以此功德．平等施一切．增長諸福慧．消除宿現業．普願離憂患．安樂常吉祥．同發菩提心．往生極樂國。</p></note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0050a0901" resp="#resp2" type="add" target="#nkr_note_add_0050a0901">已【CB】，巳【補編】</note>
-<note n="0052a1201" resp="#resp2" type="add" target="#nkr_note_add_0052a1201">已【CB】，巳【補編】</note>
-<note n="0053a0401" resp="#resp2" type="add" target="#nkr_note_add_0053a0401">已【CB】，巳【補編】</note>
-<note n="0056a1001" resp="#resp2" type="add" target="#nkr_note_add_0056a1001">惡五【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
-<note n="0063a0401" resp="#resp2" type="add" target="#nkr_note_add_0063a0401">已【CB】，巳【補編】</note>
-<note n="0065a1001" resp="#resp2" type="add" target="#nkr_note_add_0065a1001">已【CB】，巳【補編】</note>
-<note n="0066a0801" resp="#resp2" type="add" target="#nkr_note_add_0066a0801">已【CB】，巳【補編】</note>
-<note n="0066a0901" resp="#resp2" type="add" target="#nkr_note_add_0066a0901">已【CB】，巳【補編】</note>
+<note n="0050a0901" resp="#resp3" type="add" target="#nkr_note_add_0050a0901">已【CB】，巳【補編】</note>
+<note n="0052a1201" resp="#resp3" type="add" target="#nkr_note_add_0052a1201">已【CB】，巳【補編】</note>
+<note n="0053a0401" resp="#resp3" type="add" target="#nkr_note_add_0053a0401">已【CB】，巳【補編】</note>
+<note n="0056a1001" resp="#resp3" type="add" target="#nkr_note_add_0056a1001">惡五【CB】，<unclear></unclear><unclear></unclear>【補編】</note>
+<note n="0063a0401" resp="#resp3" type="add" target="#nkr_note_add_0063a0401">已【CB】，巳【補編】</note>
+<note n="0065a1001" resp="#resp3" type="add" target="#nkr_note_add_0065a1001">已【CB】，巳【補編】</note>
+<note n="0066a0801" resp="#resp3" type="add" target="#nkr_note_add_0066a0801">已【CB】，巳【補編】</note>
+<note n="0066a0901" resp="#resp3" type="add" target="#nkr_note_add_0066a0901">已【CB】，巳【補編】</note>
 </p>
 </cb:div>
 </back></text></TEI>

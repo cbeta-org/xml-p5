@@ -12,75 +12,89 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>11卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">2</idno>.<idno type="no">1</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 2, No. 1</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">經分別(第5卷-第15卷)</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00595">
-	<charName>CBETA CHARACTER CB00595</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[麩-夫+少]</value>
-	</charProp>
-	<mapping type="normal_unicode">U+9EA8</mapping>
-	<mapping cb:dec="983635" type="PUA">U+F0253</mapping>
-</char>
-<char xml:id="CB02549">
-	<charName>CBETA CHARACTER CB02549</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[舌*氐]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>舐</value>
-	</charProp>
-	<mapping type="unicode">U+445B</mapping>
-	<mapping cb:dec="985589" type="PUA">U+F09F5</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00595">
+				<charName>CBETA CHARACTER CB00595</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[麩-夫+少]</value>
+				</charProp>
+				<mapping type="normal_unicode">U+9EA8</mapping>
+				<mapping cb:dec="983635" type="PUA">U+F0253</mapping>
+			</char>
+			<char xml:id="CB02549">
+				<charName>CBETA CHARACTER CB02549</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[舌*氐]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>舐</value>
+				</charProp>
+				<mapping type="unicode">U+445B</mapping>
+				<mapping cb:dec="985589" type="PUA">U+F09F5</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-07-02">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -7547,125 +7561,125 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0007a1001" to="#end0007a1001"><lem wit="#wit1" resp="#resp3">三</lem><rdg wit="#wit2">二</rdg></app>
-<app from="#beg0118a0901" to="#end0118a0901"><lem wit="#wit1" resp="#resp3">蓖<note type="cf1">T54n2128_p0423b21</note></lem><rdg wit="#wit2">篦</rdg></app>
-<app from="#beg0290a0701" to="#end0290a0701"><lem wit="#wit1" resp="#resp3">何</lem><rdg wit="#wit2">可</rdg></app>
+<app from="#beg0007a1001" to="#end0007a1001"><lem wit="#wit.cbeta" resp="#resp4">三</lem><rdg wit="#wit.orig">二</rdg></app>
+<app from="#beg0118a0901" to="#end0118a0901"><lem wit="#wit.cbeta" resp="#resp4">蓖<note type="cf1">T54n2128_p0423b21</note></lem><rdg wit="#wit.orig">篦</rdg></app>
+<app from="#beg0290a0701" to="#end0290a0701"><lem wit="#wit.cbeta" resp="#resp4">何</lem><rdg wit="#wit.orig">可</rdg></app>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0003001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0003001">關於以下所見、所忍、所樂、所想，參照南傳律藏一．第四波羅夷之註。</note>
-<note n="0006002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006002">此故事同《本生經》第二十八（南傳大藏經小部經典六）。</note>
-<note n="0006003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006003">原語 kūṭa 有詐欺之意，英譯《本生經》為「欺瞞者」（rascal）；P. T. S. 辭典喻為：如無角之牛，將其角切除，始無危險。《有部毘奈耶》言：禿頭無角。《五分律》為曲角、《四分律》為一角。</note>
-<note n="0008004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0008004">印契，原語 muddā 有計、印契、指算、記號等意。日譯為「計」。次項為「數」等於計，又因 muddā 與 sippa 結合，意為「印契之術」，故取「印契」。</note>
-<note n="0008005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0008005">原語 madhumeha 覺音註云：無病苦故為貴。P. T. S. 辭典云糖尿病。</note>
-<note n="0009006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0009006">預流犯 sotāpatti 是達預流果。定犯 samāpatti 是入定。「犯」之譯語雖不正當，āpatti 本來是「達」「到」之意，有犯戒律罪之意，故以此語譯為犯也。</note>
-<note n="0009007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0009007">原語 yakāra，ya 或耶音之意。以 ya 附於人名之後即有輕侮之意。例如 dāsiyā，gumbiya，次如 bhakāra 亦同。</note>
-<note n="0015008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0015008">參照南傳律藏一．第三僧殘之註。</note>
-<note n="0020009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0020009">依覺音註：句（pada）者，偈中一句之意。隨句（anupada）者，第二句。隨字（anvakkhara）者，一一之字。隨味（anubyañjana）者，謂後之意義同於前之意義者；一一之字、隨字、字之集合成為隨味；字與隨味之集合成為句。第一句言句，第二句云隨句。其次，關於此四者，以誦法而言，第一句者，若誦成偈之法：「諸法由心司。」如此一一之句與沙彌共誦而共始共終。第二之隨句者，長者先誦「諸法由心司」，沙彌才誦此句，其次之句「心最勝」「由心而生起」與沙彌共誦，此言別始而共終。第三之隨字者若言誦 rūpaṁ aniccaṁ（色無常）時，僅在開始之 rū 音共唱即止。第四之隨味者，誦：「色無常，受無常」之經，長老誦「色無常」。沙彌即隨誦「受無常」。無常句是令出聲如兩者之共誦。凡此等應其句、隨句等之數而成為波逸提。又句、隨句等之譯語依《善見律》（參照《善見律》卷十五）。</note>
-<note n="0020010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0020010">底本之原語 gandha，依暹羅本及《善見律》應為 gantha。</note>
-<note n="0022011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0022011">覆（channa），覆蓋上部，障（paricchanna），覆蓋周圍，大部分（yebhuyyena），一半以上。</note>
-<note n="0031012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031012">此戒參照第四波羅夷（律藏一．一一八頁以下）。</note>
-<note n="0042013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0042013">原語 ovaṭṭha，辭典無，若依巴利《善見律》第十四波逸提下註是被雨雪所濡。（參照 Samantapāsādikā Vol. IV. p. 772）。Childers 之辭典有 ovaṭṭa 字。</note>
-<note n="0044014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044014">原語 bhūtagāma 北傳漢譯律藏譯為鬼神村、有情村等，樹有宿鬼（樹神），草木宿有蟲類，故云。</note>
-<note n="0048015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048015">原語 aropite「與異語罪」者，僧眾依羯磨而認定作異語者，行此羯磨尚未述罪時，波逸提，今謂未行此羯磨時。</note>
-<note n="0052016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052016">以下之名依《善見律》之譯語。其構造參照漢、巴《善見律》；在《四分律》為五種繩床，即：旋腳、直腳、曲腳、入陛、無腳。</note>
-<note n="0060017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060017">脫腳床（āhaccapādaka-mañca），床或椅子安裝容易脫下之腳。</note>
-<note n="0060018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060018">於 pātimokkha 在此處有 sahasā，暹羅本沒有。見北傳漢譯律藏《四分律》僅為「若坐若臥」，《五分律》為「用力坐臥」以添 sahasā 字譯之。</note>
-<note n="0062019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062019">此戒之意義是作窗或門四方之木（橫木）周圍，得以堅固門窗故，覆數重而塗之；此處以外覆二、三重或以下。此見《善見律》云：「門之兩邊及上頭二肘半得重泥，若門高而下有壁亦得重泥，窗之四面亦得重泥。」</note>
-<note n="0063020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063020">柵欄，原語 pañcapaṭṭhika 意為柵欄，日譯為「布條」。</note>
-<note n="0063021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0063021">原語 maggcna chādentassa, pariyāyena chādentassa，《善見律》譯為縱覆、圓覆，《四分律》為縱覆、橫覆。依覺音註，縱覆者不周而直覆之，覆以石、瓦、粘土等。橫覆者周覆，而覆以草、木葉等。</note>
-<note n="0068022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068022">原本為 dhātā，此依暹羅本及巴利《善見律》讀為 dhatā。</note>
-<note n="0069023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069023">諸姊，原語 bhaginiyo，日譯為「諸師」。</note>
-<note n="0083024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083024">原語 ārāpathe 未見於辭典。依巴利《善見律》註 sūciṁ pavesetvā pavesetvā nīharaṇe 譯之。</note>
-<note n="0100025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0100025">大眾會時（mahāsamaya），下面說明之意：乃三人以下之比丘行乞得食可過活。四人以上則施食少，不得過活之意。如因比丘集多數人於同一村，在家人不得施食於全部之行乞者，而廢施食時，或饑饉時，甚多比丘行乞不得（《善見律》謂大饑饉時），是時，難得食，故受別眾之請（參照《十誦律》）。</note>
-<note n="0101026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0101026">一起，原語 ekato，日譯為「一人」。</note>
-<note n="0102027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0102027">原本 abbhatireka，暹羅本僅為 atireka。</note>
-<note n="0110028" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0110028">以下戒文言足食之條件，所謂足食：(1)比丘坐於取食之座。(2)運來五正食之一。(3)以此近立而侍奉。(4)充分之供食。(5)對侍奉人說：「充分」而拒，為人所認同時，此為五緣之足食。北傳漢譯律藏亦舉出五緣，(1)除去，加第五捨威儀（身離本處）即食已，由座而起。Rhys Davids 教授之英譯戒本（S. B. E. Vol, XIII）bhuttāvī pavārito 譯為 once finished his meal, though still invited（to continue eating），北傳漢譯律藏「足食」之意，由前述之註釋即可明白。</note>
-<note n="0110029" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0110029">以下為殘食（atiritta）之條件，即成殘食法之條件。足食比丘得受殘食，是病者之殘食，或特行殘食法。殘食法者，已取食之比丘而未起坐以自手持非不淨之食，食少分之後：「此食我皆不須，與汝」，對伸手內（二肘半）之比丘言而成就，伸手內之比丘（請殘食法者）可得此食，故不適此者，即不成就殘食法。</note>
-<note n="0117030" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0117030">要求，原語 paññāpetvā 意為指示、通知。日譯為「乞」。</note>
-<note n="0119031" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0119031">sabba-paṁsukūlika 始自衣服、飲食、臥具、藥乃至楊枝之生活資具，一切由糞掃物（他人之廢棄物）得者。</note>
-<note n="0120032" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0120032">原語 vadhara 辭典無，覺音註為 vaṭhara，「大而身堅實者」，今依此而譯。</note>
-<note n="0121033" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0121033">四種大污物（cattāri mahāvikaṭāni）：糞、尿、灰、粘土，此等被蛇咬傷時使用。有給侍，則令彼授與，無則自用（參照 Mahāvagga Vl. 14. 6）。</note>
-<note n="0124034" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0124034">原語 bāhiralepaṁ 意義不詳，故如此暫譯，原本 bāhirālepaṁ 是誤寫。</note>
-<note n="0127035" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0127035">原語 sabhojana 覺音之註(1)saha ubhohi janehi，「二人共」之意，(2)sabhoga「有食」之意，即起欲念之男子以女子為食，女子以男子為食。《四分律》亦譯為「食家」而如此註釋。食家是隱語，指男女起情欲。戒本之英譯註言應譯為“a household still given to pleasure”“fond of good food”。</note>
-<note n="0127036" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0127036">原語 hatthapāsaṁ，水野巴利語辭典為「投石所及之處」。日譯為「舒手」。</note>
-<note n="0127037" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0127037">piṭṭhivaṁsa，P. T. S. 辭典云 a certain beam in a building，覺音之註云：「由此以示行過中央。」（「背竹」，以竹為室內之圍屏，可以靠身，所以稱為「背竹」吧（私見）。）</note>
-<note n="0133038" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0133038">原語 ussādiyittha 是「餘」之意，覺音註為「可持歸」。《四分律》、《五分律》言「不得食」，餘者為不可食。暹羅本以此為 ussariyittha「令持歸」之意。</note>
-<note n="0135039" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0135039">《五分律》云「行路經村落」，如同受請往其家，道中經過他家時之謂。次亦同意義。</note>
-<note n="0135040" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0135040">paṭikkamana 在 P. T. S. 辭典為 a hall with seats of distinction，於第三十四波逸提中，暫譯為「分座堂」。</note>
-<note n="0136041" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0136041">pavāreti 云可以恣意乞食而招請，請四個月藥者，〔在家者〕申請四個月間應其必要，任何時間皆可與。此言藥（bhcsajja）者，謂酥、油等之食物。</note>
-<note n="0137042" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0137042">原本雖有“…aññatra niccapavāraṇāya, tato ce uttari……”，tato 以下應續上去不可切斷。</note>
-<note n="0138043" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0138043">rattipariyantā 日數（期間）限制之意。</note>
-<note n="0140044" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0140044">依註，象有乘者四人，各足有護衛者二人，計十二人；馬有乘者一人，二人護足，故為三人；車有御者一人，鬥者一人，護楔者二人，計四人。象、馬、車之最後面，有持武器之步兵四人，此一組稱為具四兵之軍（caturaṅgasamannāgatā senā）。</note>
-<note n="0142045" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0142045">日沒時，原語 atthaṅgate 日譯為「日明時」。</note>
-<note n="0143046" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0143046">模擬戰，原語 uyyodhikaṁ 日譯為「合戰」。</note>
-<note n="0144047" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0144047">此等，原語 ettakā 日譯為「多」。</note>
-<note n="0147048" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0147048">依覺音註，為增體力，以少量之酒調湯而飲者，不犯。</note>
-<note n="0150049" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150049">原本為 kañcikaṁ 應如暹羅本 kañjikaṁ。</note>
-<note n="0151050" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151050">原本…antaradhāyeyya vā taṁ vā na sikkhitukāmo…應如暹羅本…vā taṁ…為…vāti taṁ…。</note>
-<note n="0155051" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0155051">原語 jotike 在覺音註為“pattapacanasedakammādīsu jotikaraṇe”，或許相當於《四分律》《五分律》所云薰鉢。</note>
-<note n="0156052" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0156052">註云：遇虎或其他惡獸時而燃火之謂。</note>
-<note n="0159053" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0159053">粉藥（cuṇṇa）、粘土（mattikā），皆塗身化妝品或洗潔品。Mahāvagga Vl, 9 粉藥是病者用，粘土是無病者用。</note>
-<note n="0161054" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161054">於此言「應取」（ādātabba）。依覺音註，所謂點淨者，衣不全部染，僅染四角或一角。北傳漢譯律藏《善見律》亦云「以此三種色點下如麻子大」。於此，云衣全部染壞色為染淨。北傳漢譯律藏《五分律》與巴利同云「點淨」，《四分律》、《十誦》云「染淨」為主，《僧祇律》有「染淨」與「點淨」二種。</note>
-<note n="0161055" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161055">壞色（dubbaṇṇa-karaṇa）破壞世人所好之純色，而成為世人所不好之間色。故以下之青、泥、黑褐等皆非純色。</note>
-<note n="0161056" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0161056">對於青、泥、黑褐，見北傳漢譯律藏。《四分律》、《五分律》、《僧祇律》為青、黑、木蘭色；《十誦律》為青、泥、茜；《有部律》攝為青、泥、赤；《僧祇律》云：黑者泥也。如此，依北傳漢譯律藏所云，泥者似黑色也。然 kālasāmaṁ 非黑色，寧可視為赤褐色即木蘭色，今從此。然 Rhys Davids 譯為 dark blue, mud, black, Gogerly 亦為 green, mud, black 都譯為黑色。依此，泥為褐色即木蘭色也。</note>
-<note n="0162057" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0162057">淨施（vikappeti, vikappana）者，將准許所有財產以外之多餘財物施與他人而免其罪。此時有兩種：實際施與或形式施與。（參照《四分律》真實淨施、展轉淨施下之本文）。實際施與時，對方若不還與者，即不可著用，即此戒之意。</note>
-<note n="0163058" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163058">施捨，原語 vissajjeti 日譯為「保管」。</note>
-<note n="0166059" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0166059">依註，因見雜亂以為沙門之不正，想教他後交出還他而藏置之。</note>
-<note n="0190060" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0190060">原本“…vinayadharan ti paṇḍitaṁ byattaṁ medhāviṁ…”應如暹羅本“…vinayadharaṁpaṇḍitaṁ medhāviṁ…”。</note>
-<note n="0191061" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0191061">與前面相同，應從暹羅本。次文亦同。</note>
-<note n="0195062" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195062">原本“……uddissamāne ne sādhukaṁ aṭṭhikatvā…”之 ne 是 na 的誤寫。</note>
-<note n="0204063" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0204063">原語 chandaṁ dadāti 於僧伽開會時，若欲缺席即委託他比丘，於執行議事時，傳其同意之旨。北傳漢譯律藏作「與欲」。</note>
-<note n="0208064" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0208064">原本 yathāsantataṁ 應作為 yathāsanthutaṁ，以下戒文中之語亦同。</note>
-<note n="0215065" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215065">此處之原文“putto vā pitaraṁ pattheti…”覺音之註為「內部發見以求殺」，在《十誦律》為「或王子欲殺王，此中有不喜之人，想比丘所作，而作是念云云」，依此譯之。</note>
-<note n="0216066" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0216066">原本 anupakuṭṭho 是 anupakkuṭṭho 之誤寫。</note>
-<note n="0219067" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219067">上衣，原語 uttarāsaṅga 譯為鬱多羅僧，可能令人誤以為出家上衣，故譯為「上衣」。</note>
-<note n="0222068" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0222068">原本 surākathaṁ 是 sūrakathaṁ 之誤寫。暹羅本、大品及其他長部等皆為 sūrak。</note>
-<note n="0222069" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0222069">原本為 nānatthakathaṁ 是 nānattakathaṁ 的誤寫。</note>
-<note n="0227070" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227070">參照註[16]。</note>
-<note n="0234071" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0234071">暹羅本無此句。</note>
-<note n="0235072" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0235072">原本無此句，依暹羅本補之。波羅夷品、僧殘品等之原本皆有。</note>
-<note n="0245001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0245001">諸家，原語 kulesu 為複數，日譯為一家。</note>
-<note n="0252002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252002">原本無 viharanto 之語，以暹羅本補之。次之二亦同此。</note>
-<note n="0264001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264001">原語 omadditvā 意為揉捏，印度人不用筷，以手揉捏然後送入口。</note>
-<note n="0264002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264002">原語 sapadānaṁ 戒本之英譯為「順序行乞……」之意，有時作為鉢中之食，不得只由某一面挑選其味美者而食之意。</note>
-<note n="0267003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0267003">kabaḷa 為一口之飯球，北傳漢譯律藏譯為大張口食。</note>
-<note n="0280004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0280004">原語 uppatha 意為道外、邪道等，此應取道外義，即路邊或路旁之意較適合。</note>
-<note n="0284001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0284001">關於七滅諍法之內容見小品第四章滅諍篇。</note>
-<note n="0287001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0287001">比丘尼戒有八波羅夷，其中最初之四戒與比丘同，故省略之。</note>
-<note n="0288002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0288002">原本 nikuṭe 應如《巴利善見律》的 nikūṭe，暹羅本為 nikuḍḍe。</note>
-<note n="0290003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0290003">原語 sāmañña 意為沙門性、沙門位等，日譯為沙彌尼。</note>
-<note n="0295004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0295004">原語 aññāsaṁ bhikkhunīnaṁ aroceyyaṁ，日譯為 「所知諸比丘」 乃誤。</note>
-<note n="0304001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0304001">比丘尼有十七僧殘，其中七條與比丘戒同，故予省略，僅列出十條。</note>
-<note n="0330002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0330002">底本有tumhañ ñeva saṅgho，由暹羅本當讀為 tumhe yeva saṅgho。</note>
-<note n="0333001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0333001">參照比丘戒捨墮二一。</note>
-<note n="0355001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355001">比丘尼戒波逸提法百六十六條中之七十條與比丘戒同，故省略之，而列出不同比丘戒之九十六條。</note>
-<note n="0361002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361002">原語 kesaggamatta 日譯為草葉。</note>
-<note n="0364003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0364003">原語 viññāpeti 意為令知、教示、教授，然而常用以表示「乞」之意。日譯為留意。</note>
-<note n="0376004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0376004">原語 atthaṁgata 日譯為日沒。</note>
-<note n="0381005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0381005">底本……upasampannam ujjhāpeti……如暹羅本中間不隔斷。</note>
-<note n="0386006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0386006">參照比丘戒波逸提九一。</note>
-<note n="0389007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0389007">參照比丘戒捨墮二。</note>
-<note n="0410008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0410008">原語 kukkuṭasampāta 是「雞下來」之意，由一家屋上降於他家之屋上，言家屋之密集也。</note>
-<note n="0428009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0428009">原語 avidūre 意為不遠處，日譯為門處。</note>
-<note n="0429010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0429010">參照比丘戒波逸提二。</note>
-<note n="0430011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0430011">參照比丘尼戒僧殘四。</note>
-<note n="0432012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0432012">參照比丘戒波逸提三五。</note>
-<note n="0433013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0433013">底本 asanaṁ 是 āsanaṁ 的誤植，又以下之意義，參照比丘戒波逸提三五之註。</note>
-<note n="0456014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0456014">此云弟子。北傳漢譯律藏謂「如是人」或「淫女」，言曾為娼婦之弟子。</note>
-<note n="0457015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0457015">參照波逸提六五．二，應為未滿十二歲（ūnadvādasavassā）。底本十二誤寫為二十。</note>
-<note n="0470016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0470016">原語 there bhikkhū 意為諸長老比丘，日譯為長老比丘尼。</note>
-<note n="0486017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0486017">底本 khuddakaṁ niṭṭhitaṁ 從暹羅本讀為 pācittiyā niṭṭhitaṁ 也。</note>
+<note n="0003001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0003001">關於以下所見、所忍、所樂、所想，參照南傳律藏一．第四波羅夷之註。</note>
+<note n="0006002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006002">此故事同《本生經》第二十八（南傳大藏經小部經典六）。</note>
+<note n="0006003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006003">原語 kūṭa 有詐欺之意，英譯《本生經》為「欺瞞者」（rascal）；P. T. S. 辭典喻為：如無角之牛，將其角切除，始無危險。《有部毘奈耶》言：禿頭無角。《五分律》為曲角、《四分律》為一角。</note>
+<note n="0008004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0008004">印契，原語 muddā 有計、印契、指算、記號等意。日譯為「計」。次項為「數」等於計，又因 muddā 與 sippa 結合，意為「印契之術」，故取「印契」。</note>
+<note n="0008005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0008005">原語 madhumeha 覺音註云：無病苦故為貴。P. T. S. 辭典云糖尿病。</note>
+<note n="0009006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0009006">預流犯 sotāpatti 是達預流果。定犯 samāpatti 是入定。「犯」之譯語雖不正當，āpatti 本來是「達」「到」之意，有犯戒律罪之意，故以此語譯為犯也。</note>
+<note n="0009007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0009007">原語 yakāra，ya 或耶音之意。以 ya 附於人名之後即有輕侮之意。例如 dāsiyā，gumbiya，次如 bhakāra 亦同。</note>
+<note n="0015008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0015008">參照南傳律藏一．第三僧殘之註。</note>
+<note n="0020009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0020009">依覺音註：句（pada）者，偈中一句之意。隨句（anupada）者，第二句。隨字（anvakkhara）者，一一之字。隨味（anubyañjana）者，謂後之意義同於前之意義者；一一之字、隨字、字之集合成為隨味；字與隨味之集合成為句。第一句言句，第二句云隨句。其次，關於此四者，以誦法而言，第一句者，若誦成偈之法：「諸法由心司。」如此一一之句與沙彌共誦而共始共終。第二之隨句者，長者先誦「諸法由心司」，沙彌才誦此句，其次之句「心最勝」「由心而生起」與沙彌共誦，此言別始而共終。第三之隨字者若言誦 rūpaṁ aniccaṁ（色無常）時，僅在開始之 rū 音共唱即止。第四之隨味者，誦：「色無常，受無常」之經，長老誦「色無常」。沙彌即隨誦「受無常」。無常句是令出聲如兩者之共誦。凡此等應其句、隨句等之數而成為波逸提。又句、隨句等之譯語依《善見律》（參照《善見律》卷十五）。</note>
+<note n="0020010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0020010">底本之原語 gandha，依暹羅本及《善見律》應為 gantha。</note>
+<note n="0022011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0022011">覆（channa），覆蓋上部，障（paricchanna），覆蓋周圍，大部分（yebhuyyena），一半以上。</note>
+<note n="0031012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031012">此戒參照第四波羅夷（律藏一．一一八頁以下）。</note>
+<note n="0042013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0042013">原語 ovaṭṭha，辭典無，若依巴利《善見律》第十四波逸提下註是被雨雪所濡。（參照 Samantapāsādikā Vol. IV. p. 772）。Childers 之辭典有 ovaṭṭa 字。</note>
+<note n="0044014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044014">原語 bhūtagāma 北傳漢譯律藏譯為鬼神村、有情村等，樹有宿鬼（樹神），草木宿有蟲類，故云。</note>
+<note n="0048015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048015">原語 aropite「與異語罪」者，僧眾依羯磨而認定作異語者，行此羯磨尚未述罪時，波逸提，今謂未行此羯磨時。</note>
+<note n="0052016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052016">以下之名依《善見律》之譯語。其構造參照漢、巴《善見律》；在《四分律》為五種繩床，即：旋腳、直腳、曲腳、入陛、無腳。</note>
+<note n="0060017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060017">脫腳床（āhaccapādaka-mañca），床或椅子安裝容易脫下之腳。</note>
+<note n="0060018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060018">於 pātimokkha 在此處有 sahasā，暹羅本沒有。見北傳漢譯律藏《四分律》僅為「若坐若臥」，《五分律》為「用力坐臥」以添 sahasā 字譯之。</note>
+<note n="0062019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062019">此戒之意義是作窗或門四方之木（橫木）周圍，得以堅固門窗故，覆數重而塗之；此處以外覆二、三重或以下。此見《善見律》云：「門之兩邊及上頭二肘半得重泥，若門高而下有壁亦得重泥，窗之四面亦得重泥。」</note>
+<note n="0063020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063020">柵欄，原語 pañcapaṭṭhika 意為柵欄，日譯為「布條」。</note>
+<note n="0063021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0063021">原語 maggcna chādentassa, pariyāyena chādentassa，《善見律》譯為縱覆、圓覆，《四分律》為縱覆、橫覆。依覺音註，縱覆者不周而直覆之，覆以石、瓦、粘土等。橫覆者周覆，而覆以草、木葉等。</note>
+<note n="0068022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068022">原本為 dhātā，此依暹羅本及巴利《善見律》讀為 dhatā。</note>
+<note n="0069023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069023">諸姊，原語 bhaginiyo，日譯為「諸師」。</note>
+<note n="0083024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083024">原語 ārāpathe 未見於辭典。依巴利《善見律》註 sūciṁ pavesetvā pavesetvā nīharaṇe 譯之。</note>
+<note n="0100025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0100025">大眾會時（mahāsamaya），下面說明之意：乃三人以下之比丘行乞得食可過活。四人以上則施食少，不得過活之意。如因比丘集多數人於同一村，在家人不得施食於全部之行乞者，而廢施食時，或饑饉時，甚多比丘行乞不得（《善見律》謂大饑饉時），是時，難得食，故受別眾之請（參照《十誦律》）。</note>
+<note n="0101026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0101026">一起，原語 ekato，日譯為「一人」。</note>
+<note n="0102027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0102027">原本 abbhatireka，暹羅本僅為 atireka。</note>
+<note n="0110028" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0110028">以下戒文言足食之條件，所謂足食：(1)比丘坐於取食之座。(2)運來五正食之一。(3)以此近立而侍奉。(4)充分之供食。(5)對侍奉人說：「充分」而拒，為人所認同時，此為五緣之足食。北傳漢譯律藏亦舉出五緣，(1)除去，加第五捨威儀（身離本處）即食已，由座而起。Rhys Davids 教授之英譯戒本（S. B. E. Vol, XIII）bhuttāvī pavārito 譯為 once finished his meal, though still invited（to continue eating），北傳漢譯律藏「足食」之意，由前述之註釋即可明白。</note>
+<note n="0110029" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0110029">以下為殘食（atiritta）之條件，即成殘食法之條件。足食比丘得受殘食，是病者之殘食，或特行殘食法。殘食法者，已取食之比丘而未起坐以自手持非不淨之食，食少分之後：「此食我皆不須，與汝」，對伸手內（二肘半）之比丘言而成就，伸手內之比丘（請殘食法者）可得此食，故不適此者，即不成就殘食法。</note>
+<note n="0117030" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0117030">要求，原語 paññāpetvā 意為指示、通知。日譯為「乞」。</note>
+<note n="0119031" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0119031">sabba-paṁsukūlika 始自衣服、飲食、臥具、藥乃至楊枝之生活資具，一切由糞掃物（他人之廢棄物）得者。</note>
+<note n="0120032" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0120032">原語 vadhara 辭典無，覺音註為 vaṭhara，「大而身堅實者」，今依此而譯。</note>
+<note n="0121033" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0121033">四種大污物（cattāri mahāvikaṭāni）：糞、尿、灰、粘土，此等被蛇咬傷時使用。有給侍，則令彼授與，無則自用（參照 Mahāvagga Vl. 14. 6）。</note>
+<note n="0124034" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0124034">原語 bāhiralepaṁ 意義不詳，故如此暫譯，原本 bāhirālepaṁ 是誤寫。</note>
+<note n="0127035" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0127035">原語 sabhojana 覺音之註(1)saha ubhohi janehi，「二人共」之意，(2)sabhoga「有食」之意，即起欲念之男子以女子為食，女子以男子為食。《四分律》亦譯為「食家」而如此註釋。食家是隱語，指男女起情欲。戒本之英譯註言應譯為“a household still given to pleasure”“fond of good food”。</note>
+<note n="0127036" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0127036">原語 hatthapāsaṁ，水野巴利語辭典為「投石所及之處」。日譯為「舒手」。</note>
+<note n="0127037" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0127037">piṭṭhivaṁsa，P. T. S. 辭典云 a certain beam in a building，覺音之註云：「由此以示行過中央。」（「背竹」，以竹為室內之圍屏，可以靠身，所以稱為「背竹」吧（私見）。）</note>
+<note n="0133038" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0133038">原語 ussādiyittha 是「餘」之意，覺音註為「可持歸」。《四分律》、《五分律》言「不得食」，餘者為不可食。暹羅本以此為 ussariyittha「令持歸」之意。</note>
+<note n="0135039" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0135039">《五分律》云「行路經村落」，如同受請往其家，道中經過他家時之謂。次亦同意義。</note>
+<note n="0135040" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0135040">paṭikkamana 在 P. T. S. 辭典為 a hall with seats of distinction，於第三十四波逸提中，暫譯為「分座堂」。</note>
+<note n="0136041" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0136041">pavāreti 云可以恣意乞食而招請，請四個月藥者，〔在家者〕申請四個月間應其必要，任何時間皆可與。此言藥（bhcsajja）者，謂酥、油等之食物。</note>
+<note n="0137042" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0137042">原本雖有“…aññatra niccapavāraṇāya, tato ce uttari……”，tato 以下應續上去不可切斷。</note>
+<note n="0138043" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0138043">rattipariyantā 日數（期間）限制之意。</note>
+<note n="0140044" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0140044">依註，象有乘者四人，各足有護衛者二人，計十二人；馬有乘者一人，二人護足，故為三人；車有御者一人，鬥者一人，護楔者二人，計四人。象、馬、車之最後面，有持武器之步兵四人，此一組稱為具四兵之軍（caturaṅgasamannāgatā senā）。</note>
+<note n="0142045" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0142045">日沒時，原語 atthaṅgate 日譯為「日明時」。</note>
+<note n="0143046" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0143046">模擬戰，原語 uyyodhikaṁ 日譯為「合戰」。</note>
+<note n="0144047" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0144047">此等，原語 ettakā 日譯為「多」。</note>
+<note n="0147048" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0147048">依覺音註，為增體力，以少量之酒調湯而飲者，不犯。</note>
+<note n="0150049" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150049">原本為 kañcikaṁ 應如暹羅本 kañjikaṁ。</note>
+<note n="0151050" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151050">原本…antaradhāyeyya vā taṁ vā na sikkhitukāmo…應如暹羅本…vā taṁ…為…vāti taṁ…。</note>
+<note n="0155051" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0155051">原語 jotike 在覺音註為“pattapacanasedakammādīsu jotikaraṇe”，或許相當於《四分律》《五分律》所云薰鉢。</note>
+<note n="0156052" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0156052">註云：遇虎或其他惡獸時而燃火之謂。</note>
+<note n="0159053" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0159053">粉藥（cuṇṇa）、粘土（mattikā），皆塗身化妝品或洗潔品。Mahāvagga Vl, 9 粉藥是病者用，粘土是無病者用。</note>
+<note n="0161054" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161054">於此言「應取」（ādātabba）。依覺音註，所謂點淨者，衣不全部染，僅染四角或一角。北傳漢譯律藏《善見律》亦云「以此三種色點下如麻子大」。於此，云衣全部染壞色為染淨。北傳漢譯律藏《五分律》與巴利同云「點淨」，《四分律》、《十誦》云「染淨」為主，《僧祇律》有「染淨」與「點淨」二種。</note>
+<note n="0161055" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161055">壞色（dubbaṇṇa-karaṇa）破壞世人所好之純色，而成為世人所不好之間色。故以下之青、泥、黑褐等皆非純色。</note>
+<note n="0161056" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0161056">對於青、泥、黑褐，見北傳漢譯律藏。《四分律》、《五分律》、《僧祇律》為青、黑、木蘭色；《十誦律》為青、泥、茜；《有部律》攝為青、泥、赤；《僧祇律》云：黑者泥也。如此，依北傳漢譯律藏所云，泥者似黑色也。然 kālasāmaṁ 非黑色，寧可視為赤褐色即木蘭色，今從此。然 Rhys Davids 譯為 dark blue, mud, black, Gogerly 亦為 green, mud, black 都譯為黑色。依此，泥為褐色即木蘭色也。</note>
+<note n="0162057" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0162057">淨施（vikappeti, vikappana）者，將准許所有財產以外之多餘財物施與他人而免其罪。此時有兩種：實際施與或形式施與。（參照《四分律》真實淨施、展轉淨施下之本文）。實際施與時，對方若不還與者，即不可著用，即此戒之意。</note>
+<note n="0163058" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163058">施捨，原語 vissajjeti 日譯為「保管」。</note>
+<note n="0166059" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0166059">依註，因見雜亂以為沙門之不正，想教他後交出還他而藏置之。</note>
+<note n="0190060" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0190060">原本“…vinayadharan ti paṇḍitaṁ byattaṁ medhāviṁ…”應如暹羅本“…vinayadharaṁpaṇḍitaṁ medhāviṁ…”。</note>
+<note n="0191061" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0191061">與前面相同，應從暹羅本。次文亦同。</note>
+<note n="0195062" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195062">原本“……uddissamāne ne sādhukaṁ aṭṭhikatvā…”之 ne 是 na 的誤寫。</note>
+<note n="0204063" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0204063">原語 chandaṁ dadāti 於僧伽開會時，若欲缺席即委託他比丘，於執行議事時，傳其同意之旨。北傳漢譯律藏作「與欲」。</note>
+<note n="0208064" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0208064">原本 yathāsantataṁ 應作為 yathāsanthutaṁ，以下戒文中之語亦同。</note>
+<note n="0215065" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215065">此處之原文“putto vā pitaraṁ pattheti…”覺音之註為「內部發見以求殺」，在《十誦律》為「或王子欲殺王，此中有不喜之人，想比丘所作，而作是念云云」，依此譯之。</note>
+<note n="0216066" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0216066">原本 anupakuṭṭho 是 anupakkuṭṭho 之誤寫。</note>
+<note n="0219067" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219067">上衣，原語 uttarāsaṅga 譯為鬱多羅僧，可能令人誤以為出家上衣，故譯為「上衣」。</note>
+<note n="0222068" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0222068">原本 surākathaṁ 是 sūrakathaṁ 之誤寫。暹羅本、大品及其他長部等皆為 sūrak。</note>
+<note n="0222069" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0222069">原本為 nānatthakathaṁ 是 nānattakathaṁ 的誤寫。</note>
+<note n="0227070" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227070">參照註[16]。</note>
+<note n="0234071" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0234071">暹羅本無此句。</note>
+<note n="0235072" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0235072">原本無此句，依暹羅本補之。波羅夷品、僧殘品等之原本皆有。</note>
+<note n="0245001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0245001">諸家，原語 kulesu 為複數，日譯為一家。</note>
+<note n="0252002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252002">原本無 viharanto 之語，以暹羅本補之。次之二亦同此。</note>
+<note n="0264001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264001">原語 omadditvā 意為揉捏，印度人不用筷，以手揉捏然後送入口。</note>
+<note n="0264002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264002">原語 sapadānaṁ 戒本之英譯為「順序行乞……」之意，有時作為鉢中之食，不得只由某一面挑選其味美者而食之意。</note>
+<note n="0267003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0267003">kabaḷa 為一口之飯球，北傳漢譯律藏譯為大張口食。</note>
+<note n="0280004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0280004">原語 uppatha 意為道外、邪道等，此應取道外義，即路邊或路旁之意較適合。</note>
+<note n="0284001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0284001">關於七滅諍法之內容見小品第四章滅諍篇。</note>
+<note n="0287001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0287001">比丘尼戒有八波羅夷，其中最初之四戒與比丘同，故省略之。</note>
+<note n="0288002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0288002">原本 nikuṭe 應如《巴利善見律》的 nikūṭe，暹羅本為 nikuḍḍe。</note>
+<note n="0290003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0290003">原語 sāmañña 意為沙門性、沙門位等，日譯為沙彌尼。</note>
+<note n="0295004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0295004">原語 aññāsaṁ bhikkhunīnaṁ aroceyyaṁ，日譯為 「所知諸比丘」 乃誤。</note>
+<note n="0304001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0304001">比丘尼有十七僧殘，其中七條與比丘戒同，故予省略，僅列出十條。</note>
+<note n="0330002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0330002">底本有tumhañ ñeva saṅgho，由暹羅本當讀為 tumhe yeva saṅgho。</note>
+<note n="0333001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0333001">參照比丘戒捨墮二一。</note>
+<note n="0355001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355001">比丘尼戒波逸提法百六十六條中之七十條與比丘戒同，故省略之，而列出不同比丘戒之九十六條。</note>
+<note n="0361002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361002">原語 kesaggamatta 日譯為草葉。</note>
+<note n="0364003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0364003">原語 viññāpeti 意為令知、教示、教授，然而常用以表示「乞」之意。日譯為留意。</note>
+<note n="0376004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0376004">原語 atthaṁgata 日譯為日沒。</note>
+<note n="0381005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0381005">底本……upasampannam ujjhāpeti……如暹羅本中間不隔斷。</note>
+<note n="0386006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0386006">參照比丘戒波逸提九一。</note>
+<note n="0389007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0389007">參照比丘戒捨墮二。</note>
+<note n="0410008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0410008">原語 kukkuṭasampāta 是「雞下來」之意，由一家屋上降於他家之屋上，言家屋之密集也。</note>
+<note n="0428009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0428009">原語 avidūre 意為不遠處，日譯為門處。</note>
+<note n="0429010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0429010">參照比丘戒波逸提二。</note>
+<note n="0430011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0430011">參照比丘尼戒僧殘四。</note>
+<note n="0432012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0432012">參照比丘戒波逸提三五。</note>
+<note n="0433013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0433013">底本 asanaṁ 是 āsanaṁ 的誤植，又以下之意義，參照比丘戒波逸提三五之註。</note>
+<note n="0456014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0456014">此云弟子。北傳漢譯律藏謂「如是人」或「淫女」，言曾為娼婦之弟子。</note>
+<note n="0457015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0457015">參照波逸提六五．二，應為未滿十二歲（ūnadvādasavassā）。底本十二誤寫為二十。</note>
+<note n="0470016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0470016">原語 there bhikkhū 意為諸長老比丘，日譯為長老比丘尼。</note>
+<note n="0486017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0486017">底本 khuddakaṁ niṭṭhitaṁ 從暹羅本讀為 pācittiyā niṭṭhitaṁ 也。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0007a1001" resp="#resp2" type="add" target="#nkr_note_add_0007a1001">三【CB】，二【南傳】</note>
-<note n="0118a0901" resp="#resp2" type="add" target="#nkr_note_add_0118a0901">蓖【CB】，篦【南傳】</note>
-<note n="0290a0701" resp="#resp2" type="add" target="#nkr_note_add_0290a0701">何【CB】，可【南傳】</note>
+<note n="0007a1001" resp="#resp3" type="add" target="#nkr_note_add_0007a1001">三【CB】，二【南傳】</note>
+<note n="0118a0901" resp="#resp3" type="add" target="#nkr_note_add_0118a0901">蓖【CB】，篦【南傳】</note>
+<note n="0290a0701" resp="#resp3" type="add" target="#nkr_note_add_0290a0701">何【CB】，可【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

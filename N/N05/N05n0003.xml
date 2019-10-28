@@ -12,25 +12,33 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
 		</editionStmt>
 		<extent>19卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">5</idno>.<idno type="no">3</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 5, No. 3</bibl>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">附隨</title>
+			</bibl>
 		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
@@ -38,44 +46,54 @@
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00595">
-	<charName>CBETA CHARACTER CB00595</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[麩-夫+少]</value>
-	</charProp>
-	<mapping type="normal_unicode">U+9EA8</mapping>
-	<mapping cb:dec="983635" type="PUA">U+F0253</mapping>
-</char>
-<char xml:id="CB02549">
-	<charName>CBETA CHARACTER CB02549</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[舌*氐]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>舐</value>
-	</charProp>
-	<mapping type="unicode">U+445B</mapping>
-	<mapping cb:dec="985589" type="PUA">U+F09F5</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00595">
+				<charName>CBETA CHARACTER CB00595</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[麩-夫+少]</value>
+				</charProp>
+				<mapping type="normal_unicode">U+9EA8</mapping>
+				<mapping cb:dec="983635" type="PUA">U+F0253</mapping>
+			</char>
+			<char xml:id="CB02549">
+				<charName>CBETA CHARACTER CB02549</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[舌*氐]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>舐</value>
+				</charProp>
+				<mapping type="unicode">U+445B</mapping>
+				<mapping cb:dec="985589" type="PUA">U+F09F5</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-07-29">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -5471,152 +5489,152 @@ $Log:$
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0086002" resp="#resp2" type="mod" target="#nkr_note_mod_0086002">四種波羅提木叉讀誦法，由比丘五種讀誦法中，除第四讀誦法者也；此比丘尼戒無二不定故（參照大品第二布薩犍度之一五）。</note>
-<note n="0251003" resp="#resp2" type="mod" target="#nkr_note_mod_0251003">於底本雖為 vuttānusandhitena，於註解釋為 vattānusandhitena，故依此。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，故今於此處加上[03]之註標。）</note>
+<note n="0086002" resp="#resp3" type="mod" target="#nkr_note_mod_0086002">四種波羅提木叉讀誦法，由比丘五種讀誦法中，除第四讀誦法者也；此比丘尼戒無二不定故（參照大品第二布薩犍度之一五）。</note>
+<note n="0251003" resp="#resp3" type="mod" target="#nkr_note_mod_0251003">於底本雖為 vuttānusandhitena，於註解釋為 vattānusandhitena，故依此。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，故今於此處加上[03]之註標。）</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0001001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001001">大分別（mahāvibhanga），舉關於經分別中比丘戒之綱要，故名大分別。參照南傳律藏一、二。</note>
-<note n="0001002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001002">制（paññatti），依某因緣，為最初制立之根本規定。隨制（anupaññatti），依其他因緣，更補正此者。不隨犯制（anupannapaññatti），尚無犯罪之人而制戒者。若依註言，除比丘尼之八敬重法外，凡戒者，謂隨犯隨制也。</note>
-<note n="0001003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001003">共通制（sādhāraṇa-paññatti），於比丘為罪者，於比丘尼亦為罪也。（參照南傳律一之五五頁，Vp. vol. II, p. 258）次之兩部眾制，於意義亦無不同。</note>
-<note n="0001004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001004">五種波羅提木叉讀誦（pañca pātimokkhuddesā），參照大品第二犍度十五．一。</note>
-<note n="0002005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002005">四種失壞（catasso vipattiyo），以下參照第四無間省略．一（一一）。</note>
-<note n="0002006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002006">六種犯罪等起（cha āpattisamutthānā），犯罪生起之種類，依行為器官之三業而分六種，即：身犯、口犯、身口犯、身意犯、口意犯、身口意犯也（參照四．一二）《十誦律》第五十七卷，犯起因緣有：身犯、口犯、身意犯、口意犯、身口意犯五種。但「意犯無」是律之特色。</note>
-<note n="0004007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0004007">底本 pakāraṇa，於暹羅本等為 pakaraṇa。七拔伽羅那，即所謂南方七論。</note>
-<note n="0006008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006008">以下十三僧殘，參照南傳律一，一五三頁以下。</note>
-<note n="0011009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0011009">以下二不定，參照南傳律一，二六三頁以下。</note>
-<note n="0012010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0012010">以下三十捨墮法，參照南傳律一，二七五頁以下。</note>
-<note n="0019011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019011">以下九十二單墮法，參照南傳律二，一頁以下。</note>
-<note n="0021012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0021012">捨墮十六也。</note>
-<note n="0031013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031013">六隨制，於經分別為五隨制而無六隨制。</note>
-<note n="0040014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040014">以下四提舍尼法，參照南傳律二，二四三頁以下。</note>
-<note n="0041015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0041015">以下眾學法，參照南傳律二之二五六頁以下。</note>
-<note n="0052016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052016">前行（payoga），亦譯為加行，持衣去、命洗等之準備行為，洗一次即捨墮。</note>
-<note n="0081017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0081017">樹膠生支（jatumaṭṭhaka），參照南傳律二，三六〇頁。</note>
-<note n="0086001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086001">第五波羅夷，前四和比丘波羅夷戒相同，故從第五起。以下應知與比丘戒共通者皆省略。</note>
-<note n="0086002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0086002">四種波羅提木叉讀誦法，由比丘五種讀誦法中，除第四讀誦法者也；此比丘尼戒無二不定故（參照大品第二布薩健度之一五）。</note>
-<note n="0087003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0087003">怠務戒（dhuranikkhepa），應言前第二波羅夷，捨犯戒者，怠責務者故也。於此等起法為諫告等起。</note>
-<note n="0095004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0095004">賊隊戒，見比丘戒波逸提六十六。</note>
-<note n="0137001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0137001">底本 nāyati 於暹羅本為 ñâyati。</note>
-<note n="0137002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0137002">若依佛音註釋（Samantapāsādikā），如下所見之實說戒、賊女戒、不聽戒之三戒等起。三戒獨特而不與其他戒混合，今「等起法決定矣」，「決定等起之」意，謂此三戒之等起，次之「混合等起」者，謂於其他戒之等起。此等共通於甚多戒之等起法。以下註云，是佛音之註。</note>
-<note n="0138003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0138003">底本 atthakāminaṁ，應如暹羅本 attakāminaṁ，此誤植也。</note>
-<note n="0140004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0140004">七十學處，上舉者有七十一，除最初第二波羅夷，此以下為教。</note>
-<note n="0150001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150001">可念法 Sāranīya-dhamma 於集異門足論（玄奘）譯為可喜。在增支部、長部、中部等諸典，此法屢屢說。</note>
-<note n="0163002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163002">十八破僧事 aṭṭhārasa bhedakaravatthūni，參照大品一〇．五（三）。</note>
-<note n="0163003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163003">三種善因、三種惡因參照小品四．一四（三）。</note>
-<note n="0163004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163004">十二根，參照同上。</note>
-<note n="0163005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0163005">十四根，參照小品四．一四（五）。</note>
-<note n="0178006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0178006">原底本 Cullav. I，誤。</note>
-<note n="0179007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0179007">原底本及暹羅本無，可見是補遺者。</note>
-<note n="0181001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181001">兩種罪，受戒犍度中說，罪有二種。若依註釋，二十歲未滿而授具足戒者，波逸提。其他之文中所說罪，悉云突吉羅罪（參照受戒犍度）。以下所說罪數，亦同於犍度中所說罪類。</note>
-<note n="0181002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181002">僧伽不和，分裂而布薩者，偷蘭遮。與被舉罪者共行布薩者，波逸提。其他，突吉羅。</note>
-<note n="0181003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181003">安居犍度，唯有突吉羅一罪。</note>
-<note n="0181004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181004">同布薩犍度。</note>
-<note n="0181005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181005">得牛而令殺者，波逸提；以染心觸陰部者，偷蘭遮；其他，突吉羅。</note>
-<note n="0181006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181006">註「凡於二指，偷蘭遮；（受一人請而食餘人）之軟粥者，波逸提；其他，突吉羅。」。</note>
-<note n="0181007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181007">草木衣，偷蘭遮；長衣，捨墮；其餘，突吉羅。</note>
-<note n="0181008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181008">以下一種罪，皆突吉羅。</note>
-<note n="0182009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182009">若與欲者憤，憤者波逸提（小品四．一四（一六））；其餘，突吉羅。</note>
-<note n="0182010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182010">斷己生支，偷蘭遮；反芻，波逸提；餘，突吉羅。</note>
-<note n="0182011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182011">分配重物者，偷蘭遮；從精舍持出僧伽物，波逸提；餘，突吉羅。</note>
-<note n="0182012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182012">隨破僧者，偷蘭遮；別眾食，波逸提。</note>
-<note n="0182013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0182013">不行自恣者，波逸提；餘，突吉羅。</note>
-<note n="0185001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0185001">有懺除罪（sappaṭikammā āpatti），依懺悔而得滅除罪，四波羅夷以外之罪也。對無懺除罪（appaṭikammāp）。</note>
-<note n="0185002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0185002">教誡罪（desanāgamini āpatti），波羅夷罪、僧殘罪為非教誡罪（adesanā āp.），除此之其他罪也。波羅夷罪與僧殘罪，彼為實際上科與罰之罪也。</note>
-<note n="0185003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0185003">作業所起罪（kiriyato samuṭṭhitā āpatti），乃從行為生起之罪，其次不作業所起罪，即相對無行為所成之罪。</note>
-<note n="0185004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0185004">決定罪（niyatā āpatti），五無間業之罪也，其他為不決定罪。</note>
-<note n="0186005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186005">底本 anānupannā，應如暹羅本，作 anuppannā。</note>
-<note n="0189006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0189006">清淨邊別住（suddhantaparivāsa），參照小品三．二六。</note>
-<note n="0189007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0189007">合一別住（samodhānaparivāsa），參照小品三．一四（一）。</note>
-<note n="0201008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201008">相根之現起（liṅgapātubhāva），生起異性之根而變性，其次「俱獲得云云」，在說明彼情形。關於轉根者之罪，參照波羅夷第一．一〇（六）（南傳律一之四四頁）。</note>
-<note n="0201009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201009">夜斷，底本 raticchedā 為 ratticchedā 之誤植。夜間中斷者，日數之中斷（即無效）也。</note>
-<note n="0201010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201010">高揚（sāmukkamsā），若依註為四大處（參照增支二百八十）法；此世尊乃無犯事時，自（sayam）高揚而說（ukkāmsitvā），故云高揚之法。</note>
-<note n="0209011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209011">原語為 apāsādika，因註謂「言身惡行等不善業」，故依此譯之。</note>
-<note n="0211012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211012">輕第八，原文 lahukathamakā，依暹羅本讀為 lahukaṭṭhamakā，但此語之意難明瞭而暫譯之。</note>
-<note n="0212013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0212013">於此一座食（ehāsanika）略去，暹羅本亦同，應視為增補者。</note>
-<note n="0213014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213014">見經分別時有沐浴戒（第五十七波逸提中唯有五隨制）。</note>
-<note n="0213015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0213015">參照大品七．四、五。</note>
-<note n="0214016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214016">參照大品七．二、三。</note>
-<note n="0214017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214017">參照大品九．五。</note>
-<note n="0217018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217018">參照大品一〇．一（七）。</note>
-<note n="0217019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217019">參照大品一〇．一（八）。</note>
-<note n="0217020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217020">參照僧殘十三．二。</note>
-<note n="0219021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219021">參照小品四．二。</note>
-<note n="0219022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219022">參照小品四．三。</note>
-<note n="0221023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221023">於此出現重複者，是說前之五，五分合二為十分故。</note>
-<note n="0223024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223024">底本此一句與前句連續，次「至梵天界」，以「．」號斷之，但若依清淨道論等，知此句應與後句連續。（參照 Visuddhi-magga p. 314）。底本之「．」號是錯誤。</note>
-<note n="0229001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229001">此頌之意，各十義為根，如前十重而為百義（atthsataṁ），依其百義說明之句而有百法（dhammasataṁ），此說百義百法，各有百詞而為二百詞（dveniruttisatāni），百義百法二百詞各有智而為四百智（cattāri ñāṇasatāni）。</note>
-<note n="0231001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231001">三百五十，比丘戒二百二十加不共通比丘尼戒之百三十。從比丘戒中除七滅諍法。</note>
-<note n="0231002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0231002">以下為戒名，關於各項，參照本書第三章等起法。</note>
-<note n="0232003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232003">山上行，波逸提三十七。</note>
-<note n="0232004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0232004">此處底本二十四（catuvisati），暹羅本亦同此，依經分別應三十四（catuttiṁsati），是底本之誤。</note>
-<note n="0240001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0240001">發起（ukkoṭā），諍事已滅，唱異議不平又發起。四分律戒本云「還發起」，十誦律言「還更發起」，參照比丘波逸提六十三。</note>
-<note n="0241002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241002">以下參照小品四．一四（一七）、（一八）。</note>
-<note n="0242003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242003">以下參照小品四．一四（二）以下。</note>
-<note n="0251001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251001">若依下註，經（sutta）者是言兩部之經分別；律（vinaya）是言犍度；隨法（anuloma）是言附隨（parivāra）；所制（paññatta）者言一切律藏；隨順法（anulomika）是言四大處（cattāro mahāpadesā）。</note>
-<note n="0251002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0251002">底本 hitesi，應如暹羅本之 hitesī。</note>
-<note n="0251003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0251003">於底本雖為 vuttānusandhitena，於註解釋為 vattānusandhitena，故依此。</note>
-<note n="0254001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254001">此頌之意若依註釋，他比丘見一比丘與婦人由一場所同時出入，言彼比丘為波羅夷時，其比丘承認彼比丘之所見而不承服波羅夷。斯時見與女人出雖是一致，但唯彼等不成波羅夷，言不清淨，謂成無根之疑。故彼比丘之清淨，依自白，得共行布薩。</note>
-<note n="0260001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260001">曖昧之言，底本是 bāhāvikkhepaka，應如暹羅本 vācāvikkhepa。</note>
-<note n="0260002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260002">共語，底本 savacaniya 是 savacanīya 之誤植，次語亦同。</note>
-<note n="0264001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264001">此句之意若依註，言我見或聞第一波羅夷事。後受詢問，則言我不見不聞，乃前後所說有相違也。其次失壞、犯罪意亦同。</note>
-<note n="0264002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264002">原語 vaṇṇāvaṇṇa，言精有種種色，第一僧殘也，言以下順次至第五僧殘。</note>
-<note n="0264003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264003">dhanamanuppadānaṁ，言第五僧殘，媒嫁戒。</note>
-<note n="0268004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0268004">此頌意義，參照十一呵責品註[01]。</note>
-<note n="0272001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272001">此章全部意義可參照大品七。</note>
-<note n="0272002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0272002">以下參照大品七．一（五）。</note>
-<note n="0273003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0273003">無間緣，以下於受持迦絺那衣所作功德等，依種種因緣關係，所見者，次關種種緣，可參照 Visuddhimagga p. 523ff。</note>
-<note n="0284001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0284001">阿毘毘奈耶（abhivinaya）法〔經〕，為明白其義，對於論義之說明，（abhidhamma）稱解說律論義之意。於南傳律三，增上律、增支一譯為勝律。</note>
-<note n="0292002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0292002">若依註，七滅法中之憶念、不癡、覓罪相、如草覆地四法，不白即不存在，故此云白之滅法。</note>
-<note n="0292003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0292003">依註，經者兩部經分別，隨經者四大處，律者犍度及附隨，隨律者四大處也。</note>
-<note n="0292004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0292004">若依註，法者除律藏之二藏，隨法者於經中之四大處也。</note>
-<note n="0294005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0294005">不成殘食法 anatirittā，參照南傳律二之一一〇頁。</note>
-<note n="0294006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0294006">足食 pavaraṇa，參照同上。</note>
-<note n="0301007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301007">求德，底本 idamaṭṭhitaṁ，如暹羅本作 idamatthitaṁ。（底本一三一頁亦同）在 Visuddhimagga p. 82 說此即智（ñānam），因有此智，故頭陀之諸德可得，故譯為求德。</note>
-<note n="0303008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0303008">睡眠，底本為 pasuttakatā，暹羅本為 pasuttatā，言如同牀睡眠而有罪。</note>
-<note n="0308009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0308009">前事後事（pubbāpara），義之前後，法之前後，辭之前後，句之前後，於前所說之事，於後所說之事也。</note>
-<note n="0309010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0309010">底本 ananusāsanī，如暹羅本作 anusāsaniṁ（參照 AN. vol p. 180）。</note>
-<note n="0315011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0315011">於異見及以下之「忍」、「樂」、「想」等，參照南傳律一之一五一頁註。若依註，於非法之事有見為非法，但曲異其見而說如法，另行羯磨。</note>
-<note n="0319012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0319012">以下參照小品六．二一。</note>
-<note n="0329001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0329001">sabbasaṁgaho，依一種因緣誦出，言有一切學處、一切波羅提木叉誦出之攝聚。</note>
-<note n="0329002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0329002">於註，為波羅夷與僧殘。</note>
-<note n="0330003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0330003">於註，一切學處是身語罪（kāyavācasikāni），無有一學處唯依意門而制之。</note>
-<note n="0330004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0330004">參照尼．波逸提五、小品五．二之二。</note>
-<note n="0331005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0331005">欲毒殺何而放棄時，依此而人死者，波羅夷。若夜叉、鬼死者，偷蘭遮。畜生死者，波逸提。故意出不淨者，僧殘。大、小便棄於青草上者，突吉羅。</note>
-<note n="0331006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0331006">受五種藥（捨墮二三），此不混於別器或一器，若放置過七日者，其比丘犯五種波逸提（捨棄波逸提），即所有別異事（五藥各各蓄過七日）於同時犯，不得言某為前、某為後。</note>
-<note n="0332007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0332007">行處（ṭhānāni gacchanti）者，是在此犯罪。</note>
-<note n="0333008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0333008">參照小品七．四（六）。</note>
-<note n="0333009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0333009">參照大品一．三八。</note>
-<note n="0334010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0334010">Vin. p. vol. IV p. 51（參照漢譯南傳律二之六八頁）。</note>
-<note n="0334011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0334011">於同一事之破僧事，九人中破僧者提婆一人犯波羅夷，拘迦利迦等四人隨順破僧者是偷蘭遮，如法說之四人是不犯（參照小品七）。</note>
-<note n="0334012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0334012">ñattiyā kavaṇa，依白而應行羯磨。</note>
-<note n="0334013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0334013">於此者（sante），雨安居終了，比丘未受衣而去，有相應之代理者時，言應與彼。七種者：去者，發狂者，心散亂者，受苦者及三種被舉人。十六種者，黃門等其他之十六也（參照大品八．三〇）。</note>
-<note n="0340001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340001">發汗偈（Sedamocakagāthā），如反對普通律制，集困難解答之質問者也。在佛音註對一一之質問有答案，但今以怕繁瑣而不悉舉。關於一一之言，請參照同書。</note>
-<note n="0340002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340002">十種人是小品六．六（五）說之不得禮之十種，其次十一種人，「註」云受戒犍度中說十一種應棄捨之人。問此等人以外，禮長老而有罪，此答於「註」為裸形比丘。</note>
-<note n="0340003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340003">對此質問之答，原為剃髮師比丘，此比丘不得藏剃刀，他比丘得藏（參照大品六．三七）。</note>
-<note n="0340004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340004">言依鬼神等而化作佛。</note>
-<note n="0341005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341005">言覆藏他尼重罪之比丘尼。</note>
-<note n="0341006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341006">犯此罪不自白發露時，而故意妄語，此妄語為語門不作業罪。</note>
-<note n="0341007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341007">言布製之房等（參照漢譯南傳一之三八頁有隔之句）。</note>
-<note n="0341008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341008">以僧物轉入個人時而一衣與己，一衣與他，以二衣轉入時，為一次犯捨墮與（單）波逸提。</note>
-<note n="0342009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342009">摩訶波闍波提之受具（參照小品一〇．一（五））。</note>
-<note n="0342010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342010">父母皆轉根時。</note>
-<note n="0342011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342011">畜生為父母時。</note>
-<note n="0343012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343012">言反芻（參照小品五．二五）。</note>
-<note n="0343013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343013">破僧者（己偽如得法者）而取籌時，為斷頭波羅夷罪。</note>
-<note n="0343014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343014">底本 parammaraṇāya，應如暹羅本 paraṃ maranāya。</note>
-<note n="0343015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343015">比丘尼波羅夷四，是言八事成重戒。</note>
-<note n="0344016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344016">比丘尼持染心，從有染心之男子受食，人肉、蒜、美味食混其他不淨肉而食時。</note>
-<note n="0344017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344017">於比丘尼僧殘六，言勸受食比丘尼。次之質問是勸受水與楊枝時。</note>
-<note n="0344018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344018">比丘尼犯十七僧殘之一時，雖不覆藏，皆得半月摩那埵，得摩那埵期間，非比丘尼，而依因覆藏得新之別罪。</note>
-<note n="0349001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0349001">以下參照大品二．六～九。</note>
-<note n="0349001" resp="#resp1" type="mod" target="#nkr_note_mod_0349001">以下參照大品二．六【南傳】，～九。</note>
-<note n="0351002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0351002">解罪 osāraṇa，與次之擯出 nissāraṇa，皆於行求聽羯磨是對沙彌者，如擯滅沙彌 kaṇḍaka（大品一．六〇．一，經分別．波逸提七〇），擯出而後由懺悔許其回復，為解罪也。以下內容各有不同，請參照覺音註。</note>
-<note n="0351003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0351003">梵壇 brahmadaṇḍa，參照小品一一（一五）。</note>
-<note n="0351004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0351004">kammalakkhaṇa，一於比丘尼犍度〔小品一〇．九（一）〕，說不得受比丘尼禮，以不禮羯磨標相與他之區別。次之所出者各各羯磨之內容不同，請閱覺音註。</note>
-<note n="0352005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0352005">以下參照南傳律一之二四頁。</note>
+<note n="0001001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001001">大分別（mahāvibhanga），舉關於經分別中比丘戒之綱要，故名大分別。參照南傳律藏一、二。</note>
+<note n="0001002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001002">制（paññatti），依某因緣，為最初制立之根本規定。隨制（anupaññatti），依其他因緣，更補正此者。不隨犯制（anupannapaññatti），尚無犯罪之人而制戒者。若依註言，除比丘尼之八敬重法外，凡戒者，謂隨犯隨制也。</note>
+<note n="0001003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001003">共通制（sādhāraṇa-paññatti），於比丘為罪者，於比丘尼亦為罪也。（參照南傳律一之五五頁，Vp. vol. II, p. 258）次之兩部眾制，於意義亦無不同。</note>
+<note n="0001004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001004">五種波羅提木叉讀誦（pañca pātimokkhuddesā），參照大品第二犍度十五．一。</note>
+<note n="0002005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002005">四種失壞（catasso vipattiyo），以下參照第四無間省略．一（一一）。</note>
+<note n="0002006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002006">六種犯罪等起（cha āpattisamutthānā），犯罪生起之種類，依行為器官之三業而分六種，即：身犯、口犯、身口犯、身意犯、口意犯、身口意犯也（參照四．一二）《十誦律》第五十七卷，犯起因緣有：身犯、口犯、身意犯、口意犯、身口意犯五種。但「意犯無」是律之特色。</note>
+<note n="0004007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0004007">底本 pakāraṇa，於暹羅本等為 pakaraṇa。七拔伽羅那，即所謂南方七論。</note>
+<note n="0006008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006008">以下十三僧殘，參照南傳律一，一五三頁以下。</note>
+<note n="0011009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0011009">以下二不定，參照南傳律一，二六三頁以下。</note>
+<note n="0012010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0012010">以下三十捨墮法，參照南傳律一，二七五頁以下。</note>
+<note n="0019011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019011">以下九十二單墮法，參照南傳律二，一頁以下。</note>
+<note n="0021012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0021012">捨墮十六也。</note>
+<note n="0031013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031013">六隨制，於經分別為五隨制而無六隨制。</note>
+<note n="0040014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040014">以下四提舍尼法，參照南傳律二，二四三頁以下。</note>
+<note n="0041015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0041015">以下眾學法，參照南傳律二之二五六頁以下。</note>
+<note n="0052016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052016">前行（payoga），亦譯為加行，持衣去、命洗等之準備行為，洗一次即捨墮。</note>
+<note n="0081017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0081017">樹膠生支（jatumaṭṭhaka），參照南傳律二，三六〇頁。</note>
+<note n="0086001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086001">第五波羅夷，前四和比丘波羅夷戒相同，故從第五起。以下應知與比丘戒共通者皆省略。</note>
+<note n="0086002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0086002">四種波羅提木叉讀誦法，由比丘五種讀誦法中，除第四讀誦法者也；此比丘尼戒無二不定故（參照大品第二布薩健度之一五）。</note>
+<note n="0087003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0087003">怠務戒（dhuranikkhepa），應言前第二波羅夷，捨犯戒者，怠責務者故也。於此等起法為諫告等起。</note>
+<note n="0095004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0095004">賊隊戒，見比丘戒波逸提六十六。</note>
+<note n="0137001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0137001">底本 nāyati 於暹羅本為 ñâyati。</note>
+<note n="0137002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0137002">若依佛音註釋（Samantapāsādikā），如下所見之實說戒、賊女戒、不聽戒之三戒等起。三戒獨特而不與其他戒混合，今「等起法決定矣」，「決定等起之」意，謂此三戒之等起，次之「混合等起」者，謂於其他戒之等起。此等共通於甚多戒之等起法。以下註云，是佛音之註。</note>
+<note n="0138003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0138003">底本 atthakāminaṁ，應如暹羅本 attakāminaṁ，此誤植也。</note>
+<note n="0140004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0140004">七十學處，上舉者有七十一，除最初第二波羅夷，此以下為教。</note>
+<note n="0150001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150001">可念法 Sāranīya-dhamma 於集異門足論（玄奘）譯為可喜。在增支部、長部、中部等諸典，此法屢屢說。</note>
+<note n="0163002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163002">十八破僧事 aṭṭhārasa bhedakaravatthūni，參照大品一〇．五（三）。</note>
+<note n="0163003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163003">三種善因、三種惡因參照小品四．一四（三）。</note>
+<note n="0163004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163004">十二根，參照同上。</note>
+<note n="0163005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0163005">十四根，參照小品四．一四（五）。</note>
+<note n="0178006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0178006">原底本 Cullav. I，誤。</note>
+<note n="0179007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0179007">原底本及暹羅本無，可見是補遺者。</note>
+<note n="0181001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181001">兩種罪，受戒犍度中說，罪有二種。若依註釋，二十歲未滿而授具足戒者，波逸提。其他之文中所說罪，悉云突吉羅罪（參照受戒犍度）。以下所說罪數，亦同於犍度中所說罪類。</note>
+<note n="0181002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181002">僧伽不和，分裂而布薩者，偷蘭遮。與被舉罪者共行布薩者，波逸提。其他，突吉羅。</note>
+<note n="0181003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181003">安居犍度，唯有突吉羅一罪。</note>
+<note n="0181004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181004">同布薩犍度。</note>
+<note n="0181005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181005">得牛而令殺者，波逸提；以染心觸陰部者，偷蘭遮；其他，突吉羅。</note>
+<note n="0181006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181006">註「凡於二指，偷蘭遮；（受一人請而食餘人）之軟粥者，波逸提；其他，突吉羅。」。</note>
+<note n="0181007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181007">草木衣，偷蘭遮；長衣，捨墮；其餘，突吉羅。</note>
+<note n="0181008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181008">以下一種罪，皆突吉羅。</note>
+<note n="0182009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182009">若與欲者憤，憤者波逸提（小品四．一四（一六））；其餘，突吉羅。</note>
+<note n="0182010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182010">斷己生支，偷蘭遮；反芻，波逸提；餘，突吉羅。</note>
+<note n="0182011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182011">分配重物者，偷蘭遮；從精舍持出僧伽物，波逸提；餘，突吉羅。</note>
+<note n="0182012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182012">隨破僧者，偷蘭遮；別眾食，波逸提。</note>
+<note n="0182013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0182013">不行自恣者，波逸提；餘，突吉羅。</note>
+<note n="0185001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0185001">有懺除罪（sappaṭikammā āpatti），依懺悔而得滅除罪，四波羅夷以外之罪也。對無懺除罪（appaṭikammāp）。</note>
+<note n="0185002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0185002">教誡罪（desanāgamini āpatti），波羅夷罪、僧殘罪為非教誡罪（adesanā āp.），除此之其他罪也。波羅夷罪與僧殘罪，彼為實際上科與罰之罪也。</note>
+<note n="0185003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0185003">作業所起罪（kiriyato samuṭṭhitā āpatti），乃從行為生起之罪，其次不作業所起罪，即相對無行為所成之罪。</note>
+<note n="0185004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0185004">決定罪（niyatā āpatti），五無間業之罪也，其他為不決定罪。</note>
+<note n="0186005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186005">底本 anānupannā，應如暹羅本，作 anuppannā。</note>
+<note n="0189006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0189006">清淨邊別住（suddhantaparivāsa），參照小品三．二六。</note>
+<note n="0189007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0189007">合一別住（samodhānaparivāsa），參照小品三．一四（一）。</note>
+<note n="0201008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201008">相根之現起（liṅgapātubhāva），生起異性之根而變性，其次「俱獲得云云」，在說明彼情形。關於轉根者之罪，參照波羅夷第一．一〇（六）（南傳律一之四四頁）。</note>
+<note n="0201009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201009">夜斷，底本 raticchedā 為 ratticchedā 之誤植。夜間中斷者，日數之中斷（即無效）也。</note>
+<note n="0201010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201010">高揚（sāmukkamsā），若依註為四大處（參照增支二百八十）法；此世尊乃無犯事時，自（sayam）高揚而說（ukkāmsitvā），故云高揚之法。</note>
+<note n="0209011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209011">原語為 apāsādika，因註謂「言身惡行等不善業」，故依此譯之。</note>
+<note n="0211012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211012">輕第八，原文 lahukathamakā，依暹羅本讀為 lahukaṭṭhamakā，但此語之意難明瞭而暫譯之。</note>
+<note n="0212013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0212013">於此一座食（ehāsanika）略去，暹羅本亦同，應視為增補者。</note>
+<note n="0213014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213014">見經分別時有沐浴戒（第五十七波逸提中唯有五隨制）。</note>
+<note n="0213015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0213015">參照大品七．四、五。</note>
+<note n="0214016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214016">參照大品七．二、三。</note>
+<note n="0214017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214017">參照大品九．五。</note>
+<note n="0217018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217018">參照大品一〇．一（七）。</note>
+<note n="0217019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217019">參照大品一〇．一（八）。</note>
+<note n="0217020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217020">參照僧殘十三．二。</note>
+<note n="0219021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219021">參照小品四．二。</note>
+<note n="0219022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219022">參照小品四．三。</note>
+<note n="0221023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221023">於此出現重複者，是說前之五，五分合二為十分故。</note>
+<note n="0223024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223024">底本此一句與前句連續，次「至梵天界」，以「．」號斷之，但若依清淨道論等，知此句應與後句連續。（參照 Visuddhi-magga p. 314）。底本之「．」號是錯誤。</note>
+<note n="0229001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229001">此頌之意，各十義為根，如前十重而為百義（atthsataṁ），依其百義說明之句而有百法（dhammasataṁ），此說百義百法，各有百詞而為二百詞（dveniruttisatāni），百義百法二百詞各有智而為四百智（cattāri ñāṇasatāni）。</note>
+<note n="0231001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231001">三百五十，比丘戒二百二十加不共通比丘尼戒之百三十。從比丘戒中除七滅諍法。</note>
+<note n="0231002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0231002">以下為戒名，關於各項，參照本書第三章等起法。</note>
+<note n="0232003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232003">山上行，波逸提三十七。</note>
+<note n="0232004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0232004">此處底本二十四（catuvisati），暹羅本亦同此，依經分別應三十四（catuttiṁsati），是底本之誤。</note>
+<note n="0240001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0240001">發起（ukkoṭā），諍事已滅，唱異議不平又發起。四分律戒本云「還發起」，十誦律言「還更發起」，參照比丘波逸提六十三。</note>
+<note n="0241002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241002">以下參照小品四．一四（一七）、（一八）。</note>
+<note n="0242003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242003">以下參照小品四．一四（二）以下。</note>
+<note n="0251001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251001">若依下註，經（sutta）者是言兩部之經分別；律（vinaya）是言犍度；隨法（anuloma）是言附隨（parivāra）；所制（paññatta）者言一切律藏；隨順法（anulomika）是言四大處（cattāro mahāpadesā）。</note>
+<note n="0251002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0251002">底本 hitesi，應如暹羅本之 hitesī。</note>
+<note n="0251003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0251003">於底本雖為 vuttānusandhitena，於註解釋為 vattānusandhitena，故依此。</note>
+<note n="0254001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254001">此頌之意若依註釋，他比丘見一比丘與婦人由一場所同時出入，言彼比丘為波羅夷時，其比丘承認彼比丘之所見而不承服波羅夷。斯時見與女人出雖是一致，但唯彼等不成波羅夷，言不清淨，謂成無根之疑。故彼比丘之清淨，依自白，得共行布薩。</note>
+<note n="0260001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260001">曖昧之言，底本是 bāhāvikkhepaka，應如暹羅本 vācāvikkhepa。</note>
+<note n="0260002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260002">共語，底本 savacaniya 是 savacanīya 之誤植，次語亦同。</note>
+<note n="0264001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264001">此句之意若依註，言我見或聞第一波羅夷事。後受詢問，則言我不見不聞，乃前後所說有相違也。其次失壞、犯罪意亦同。</note>
+<note n="0264002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264002">原語 vaṇṇāvaṇṇa，言精有種種色，第一僧殘也，言以下順次至第五僧殘。</note>
+<note n="0264003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264003">dhanamanuppadānaṁ，言第五僧殘，媒嫁戒。</note>
+<note n="0268004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0268004">此頌意義，參照十一呵責品註[01]。</note>
+<note n="0272001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272001">此章全部意義可參照大品七。</note>
+<note n="0272002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0272002">以下參照大品七．一（五）。</note>
+<note n="0273003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0273003">無間緣，以下於受持迦絺那衣所作功德等，依種種因緣關係，所見者，次關種種緣，可參照 Visuddhimagga p. 523ff。</note>
+<note n="0284001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0284001">阿毘毘奈耶（abhivinaya）法〔經〕，為明白其義，對於論義之說明，（abhidhamma）稱解說律論義之意。於南傳律三，增上律、增支一譯為勝律。</note>
+<note n="0292002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0292002">若依註，七滅法中之憶念、不癡、覓罪相、如草覆地四法，不白即不存在，故此云白之滅法。</note>
+<note n="0292003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0292003">依註，經者兩部經分別，隨經者四大處，律者犍度及附隨，隨律者四大處也。</note>
+<note n="0292004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0292004">若依註，法者除律藏之二藏，隨法者於經中之四大處也。</note>
+<note n="0294005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0294005">不成殘食法 anatirittā，參照南傳律二之一一〇頁。</note>
+<note n="0294006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0294006">足食 pavaraṇa，參照同上。</note>
+<note n="0301007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301007">求德，底本 idamaṭṭhitaṁ，如暹羅本作 idamatthitaṁ。（底本一三一頁亦同）在 Visuddhimagga p. 82 說此即智（ñānam），因有此智，故頭陀之諸德可得，故譯為求德。</note>
+<note n="0303008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0303008">睡眠，底本為 pasuttakatā，暹羅本為 pasuttatā，言如同牀睡眠而有罪。</note>
+<note n="0308009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0308009">前事後事（pubbāpara），義之前後，法之前後，辭之前後，句之前後，於前所說之事，於後所說之事也。</note>
+<note n="0309010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0309010">底本 ananusāsanī，如暹羅本作 anusāsaniṁ（參照 AN. vol p. 180）。</note>
+<note n="0315011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0315011">於異見及以下之「忍」、「樂」、「想」等，參照南傳律一之一五一頁註。若依註，於非法之事有見為非法，但曲異其見而說如法，另行羯磨。</note>
+<note n="0319012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0319012">以下參照小品六．二一。</note>
+<note n="0329001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0329001">sabbasaṁgaho，依一種因緣誦出，言有一切學處、一切波羅提木叉誦出之攝聚。</note>
+<note n="0329002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0329002">於註，為波羅夷與僧殘。</note>
+<note n="0330003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0330003">於註，一切學處是身語罪（kāyavācasikāni），無有一學處唯依意門而制之。</note>
+<note n="0330004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0330004">參照尼．波逸提五、小品五．二之二。</note>
+<note n="0331005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0331005">欲毒殺何而放棄時，依此而人死者，波羅夷。若夜叉、鬼死者，偷蘭遮。畜生死者，波逸提。故意出不淨者，僧殘。大、小便棄於青草上者，突吉羅。</note>
+<note n="0331006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0331006">受五種藥（捨墮二三），此不混於別器或一器，若放置過七日者，其比丘犯五種波逸提（捨棄波逸提），即所有別異事（五藥各各蓄過七日）於同時犯，不得言某為前、某為後。</note>
+<note n="0332007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0332007">行處（ṭhānāni gacchanti）者，是在此犯罪。</note>
+<note n="0333008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0333008">參照小品七．四（六）。</note>
+<note n="0333009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0333009">參照大品一．三八。</note>
+<note n="0334010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0334010">Vin. p. vol. IV p. 51（參照漢譯南傳律二之六八頁）。</note>
+<note n="0334011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0334011">於同一事之破僧事，九人中破僧者提婆一人犯波羅夷，拘迦利迦等四人隨順破僧者是偷蘭遮，如法說之四人是不犯（參照小品七）。</note>
+<note n="0334012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0334012">ñattiyā kavaṇa，依白而應行羯磨。</note>
+<note n="0334013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0334013">於此者（sante），雨安居終了，比丘未受衣而去，有相應之代理者時，言應與彼。七種者：去者，發狂者，心散亂者，受苦者及三種被舉人。十六種者，黃門等其他之十六也（參照大品八．三〇）。</note>
+<note n="0340001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340001">發汗偈（Sedamocakagāthā），如反對普通律制，集困難解答之質問者也。在佛音註對一一之質問有答案，但今以怕繁瑣而不悉舉。關於一一之言，請參照同書。</note>
+<note n="0340002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340002">十種人是小品六．六（五）說之不得禮之十種，其次十一種人，「註」云受戒犍度中說十一種應棄捨之人。問此等人以外，禮長老而有罪，此答於「註」為裸形比丘。</note>
+<note n="0340003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340003">對此質問之答，原為剃髮師比丘，此比丘不得藏剃刀，他比丘得藏（參照大品六．三七）。</note>
+<note n="0340004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340004">言依鬼神等而化作佛。</note>
+<note n="0341005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341005">言覆藏他尼重罪之比丘尼。</note>
+<note n="0341006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341006">犯此罪不自白發露時，而故意妄語，此妄語為語門不作業罪。</note>
+<note n="0341007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341007">言布製之房等（參照漢譯南傳一之三八頁有隔之句）。</note>
+<note n="0341008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341008">以僧物轉入個人時而一衣與己，一衣與他，以二衣轉入時，為一次犯捨墮與（單）波逸提。</note>
+<note n="0342009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342009">摩訶波闍波提之受具（參照小品一〇．一（五））。</note>
+<note n="0342010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342010">父母皆轉根時。</note>
+<note n="0342011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342011">畜生為父母時。</note>
+<note n="0343012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343012">言反芻（參照小品五．二五）。</note>
+<note n="0343013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343013">破僧者（己偽如得法者）而取籌時，為斷頭波羅夷罪。</note>
+<note n="0343014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343014">底本 parammaraṇāya，應如暹羅本 paraṃ maranāya。</note>
+<note n="0343015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343015">比丘尼波羅夷四，是言八事成重戒。</note>
+<note n="0344016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344016">比丘尼持染心，從有染心之男子受食，人肉、蒜、美味食混其他不淨肉而食時。</note>
+<note n="0344017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344017">於比丘尼僧殘六，言勸受食比丘尼。次之質問是勸受水與楊枝時。</note>
+<note n="0344018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344018">比丘尼犯十七僧殘之一時，雖不覆藏，皆得半月摩那埵，得摩那埵期間，非比丘尼，而依因覆藏得新之別罪。</note>
+<note n="0349001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0349001">以下參照大品二．六～九。</note>
+<note n="0349001" resp="#resp2" type="mod" target="#nkr_note_mod_0349001">以下參照大品二．六【南傳】，～九。</note>
+<note n="0351002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0351002">解罪 osāraṇa，與次之擯出 nissāraṇa，皆於行求聽羯磨是對沙彌者，如擯滅沙彌 kaṇḍaka（大品一．六〇．一，經分別．波逸提七〇），擯出而後由懺悔許其回復，為解罪也。以下內容各有不同，請參照覺音註。</note>
+<note n="0351003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0351003">梵壇 brahmadaṇḍa，參照小品一一（一五）。</note>
+<note n="0351004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0351004">kammalakkhaṇa，一於比丘尼犍度〔小品一〇．九（一）〕，說不得受比丘尼禮，以不禮羯磨標相與他之區別。次之所出者各各羯磨之內容不同，請閱覺音註。</note>
+<note n="0352005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0352005">以下參照南傳律一之二四頁。</note>
 </p>
 </cb:div>
 </back></text></TEI>

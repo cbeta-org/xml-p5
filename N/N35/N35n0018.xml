@@ -12,62 +12,76 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>3卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">35</idno>.<idno type="no">18</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 35, No. 18</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">本生經(第7卷-第9卷)</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">OCR by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA OCR，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB00178">
-	<charName>CBETA CHARACTER CB00178</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[木*奈]</value>
-	</charProp>
-	<mapping type="unicode">U+3B88</mapping>
-	<mapping cb:dec="983218" type="PUA">U+F00B2</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00178">
+				<charName>CBETA CHARACTER CB00178</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[木*奈]</value>
+				</charProp>
+				<mapping type="unicode">U+3B88</mapping>
+				<mapping cb:dec="983218" type="PUA">U+F00B2</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-10-15">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -4070,103 +4084,103 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0134a1201" to="#end0134a1201"><lem wit="#wit1" resp="#resp3">嗚</lem><rdg wit="#wit2">鳴</rdg></app>
-<app from="#beg0223a1301" to="#end0223a1301"><lem wit="#wit1" resp="#resp3">豐</lem><rdg wit="#wit2">豊</rdg></app>
-<app from="#beg0238a0101" to="#end0238a0101"><lem wit="#wit1" resp="#resp3">剌</lem><rdg wit="#wit2">刺</rdg></app>
-<app from="#beg0255a1201" to="#end0255a1201"><lem wit="#wit1" resp="#resp3">未</lem><rdg wit="#wit2">末</rdg></app>
-<app from="#beg0262a1401" to="#end0262a1401"><lem wit="#wit1" resp="#resp3">採</lem><rdg wit="#wit2">探</rdg></app>
+<app from="#beg0134a1201" to="#end0134a1201"><lem wit="#wit.cbeta" resp="#resp4">嗚</lem><rdg wit="#wit.orig">鳴</rdg></app>
+<app from="#beg0223a1301" to="#end0223a1301"><lem wit="#wit.cbeta" resp="#resp4">豐</lem><rdg wit="#wit.orig">豊</rdg></app>
+<app from="#beg0238a0101" to="#end0238a0101"><lem wit="#wit.cbeta" resp="#resp4">剌</lem><rdg wit="#wit.orig">刺</rdg></app>
+<app from="#beg0255a1201" to="#end0255a1201"><lem wit="#wit.cbeta" resp="#resp4">未</lem><rdg wit="#wit.orig">末</rdg></app>
+<app from="#beg0262a1401" to="#end0262a1401"><lem wit="#wit.cbeta" resp="#resp4">採</lem><rdg wit="#wit.orig">探</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0237001" resp="#resp2" type="mod" target="#nkr_note_mod_0237001">帝釋天之象名。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0237001" resp="#resp3" type="mod" target="#nkr_note_mod_0237001">帝釋天之象名。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0001001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0001001">與第二五二，一握胡麻本生譚（漢譯南傳藏第三十四卷七頁）及第三〇三，一王本生譚（同上二〇〇頁）參照。</note>
-<note n="0002002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002002">此二偈已於第三三二之偈中揭出。可參照漢譯南傳藏第三十四卷車鞭本生譚之偈。</note>
-<note n="0010001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010001">可與妻之死別故事，參照第三二八，不可悲本生譚（漢譯南傳藏第三十四卷不可悲本生譚）。</note>
-<note n="0010002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010002">可與父之死別故事，參照第三五二，善生居士子本生譚（本卷三頁）。</note>
-<note n="0010003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0010003">大世界即鐵圍山之事。三世界即三有之事，謂欲界、色界、無色界。</note>
-<note n="0025001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0025001">山本生譚（Daddara-jātaka）雖於第一七二（漢譯南傳藏第三十三卷六三頁）及第三〇四（同上第三十四卷二〇二頁）皆曾載出，但無如以上所引用之文意。</note>
-<note n="0025002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0025002">小難提耶猿本生譚底本為 Cullanandaka-j. 今從異本及第二二二（漢譯南傳藏第三十三卷二〇〇頁），讀為 Cūlanandiya-j.。</note>
-<note n="0036001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0036001">依註釋書，提米羅樹在尼拘律樹之周圍，小海為在尼拘律樹側之海。</note>
-<note n="0044001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044001">此為第三二〇，喜捨本生譚之第二偈所出，參照漢譯南傳藏第三十四卷喜捨本生譚之偈。</note>
-<note n="0044002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044002">此為第三六一，色高本生譚第五偈所出。</note>
-<note n="0045003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045003">此為法句經第二之五偈。</note>
-<note n="0054001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054001">可參照第四一，羅娑伽長老本生譚（漢譯南傳藏第三十一卷三〇四頁），第八二，知友本生譚（同上第三十二卷一二六頁），第一〇四，知友比丘本生譚（同上一八六頁）。</note>
-<note n="0054002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054002">此處之大知友本生譚，即指四門本生譚（第四三九）而言。</note>
-<note n="0057001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057001">「猶如予之父或母」彼生長後，至如父母老後時期，兒女即為所依賴者，此句為將為予之依賴之意。</note>
-<note n="0058002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058002">尼拘律樹分泌如乳汁狀之膠質甚多，故稱為乳樹。</note>
-<note n="0060001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060001">於現存之本生譚中，無僧伽貝達本生譚之名，此或係山提貝達本生譚（第三四九破和睦本生譚。）之誤。</note>
-<note n="0072001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0072001">tālaṁ vā susamāhitaṁ 為手掌落下。即不能鳴之意。</note>
-<note n="0074001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0074001">可與第四二鳩本生譚（漢譯南傳藏第三十一卷），及第二七四貪欲本生譚（同上第三十四卷）參照。</note>
-<note n="0075002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0075002">此偈及次之第六偈，出自上記之貪欲本生譚。</note>
-<note n="0083001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083001">本文亦稱為鬱陀羅迦苦行者譚，於第四八七有 uddālaka-jātaka。</note>
-<note n="0101001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0101001">本偈出於第三二〇喜捨本生譚之第二偈（南傳藏第三十四卷）及第三六三慚本生譚之第二偈（本卷四四頁）。</note>
-<note n="0113001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0113001">第六第七之二偈與第三四二猿本生譚之第三第四偈大略相同。</note>
-<note n="0140001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0140001">與第二六七，蟹本生譚之第一偈（南傳藏第三十四卷）參照。</note>
-<note n="0162001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0162001">須陀倫樹之實。</note>
-<note n="0174001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0174001">尼利亞為獵師之子名。</note>
-<note n="0176001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0176001">四依謂衣服、飯食、牀臥具、醫藥。</note>
-<note n="0183001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0183001">麥加陀為王之種族名。</note>
-<note n="0197001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0197001">可與第三二三、梵與王本生譚之第四偈（漢譯南傳藏第三十四卷）參照。</note>
-<note n="0201001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201001">此本生譚缺少說過去事之主分。</note>
-<note n="0203002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203002">無央數（Nirabbuda）不能計數之數名。</note>
-<note n="0203003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203003">註釋者就此偈云，此梵天嘗為苦行者住於沙漠，向經過其處之人給水。某時，有由五百之車所成之一隊商，至此沙漠，迷失方向，不能獲得薪水，瀕臨死亡，苦行者見之，依定力使恒河之水流來此處，使其傍出現森林，人人得薪水，再續旅程，註釋有此一段故事。</note>
-<note n="0203004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203004">註釋者就此偈云，此梵天為苦行者，住於流經森林之河川所添之村。某時，盜賊襲村，捕縛村人，押往山中而行，途中使村人在外等待，彼等入窟中為食事，苦行者聞畜獸之叫聲及婦女子之求救聲，化為王者之姿，率大軍至其處，盜賊見之而逃去，苦行者伴諸人至己村來住，註釋有此一故事。</note>
-<note n="0203005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203005">註釋者就此偈云，此苦行者嘗住恒河之畔時，諸人將二三隻船結在一處，於其上設置花殿，於此處開宴，食殘之飲食物投捨河中，觸怒住河中之龍王。龍王化一大怪異之形出現，將欲傾覆此船，苦行者聞諸人發出驚怖之叫聲，依定力化為金翅鳥前往其處，龍王見此，心生恐怖，深潛水中，諸人得以無事。註釋有此一故事。</note>
-<note n="0204006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0204006">可與第三四六袈裟衣（kesava）行者本生譚（漢譯南傳藏第三十四卷）參照。</note>
-<note n="0206001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206001">五種之藥物指酪油（Sappi）、牛酪（Navanīta）、胡麻油（Tela）、蜂蜜（Madhu）及糖蜜（Phāṇita）。此為參考 Mahāvagga, III 1-16 而出者。</note>
-<note n="0206002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206002">Mahāvagga, VI 15-16 曰：「實為對病比丘眾適用之藥物，即關於酪油、牛酪、胡麻油、蜂蜜、糖蜜等，得受此等後，最高可保存七日間使用。」此處即引用此等之句意。</note>
-<note n="0207003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0207003">羅睺（Rāhu）據傳說為「象徵黑暗之龍頭神，罰為太陽與月之反逆者，由口中入為隱飾之魔神」。佛教以此為非天（Asura）中之一魔神。</note>
-<note n="0209004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0209004">「決定於不得鹽日」為 Aloṇaka-divase bhavissati 之譯語。此是 √bhū 未來形之特殊用法，應予注意。</note>
-<note n="0211005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211005">阿難（Ānanda）在此本生譚之末尾出現，指毘提訶王。</note>
-<note n="0211006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211006">生粘土，底本為 Āmaka āmaka-matta，脚註為 Āmaka-matta，為「未十分燒之生燒陶土」之意。</note>
-<note n="0211007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211007">入定修法（Kasiṇa-Parikamma）為決定在隱遁所之時，為凝視（Kasiṇa-maṇḍala）而入於禪定之一種觀法。</note>
-<note n="0214001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0214001">水瓶，底本為 Kūṭa，此可視為 Kuṭa 之誤，譯為水瓶。</note>
-<note n="0215002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215002">原文為 Ahaṁ vo Jivitam dassāmi，依文字為「予與汝等命」，今意譯如本文。</note>
-<note n="0219001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0219001">事，底本為 vaṭṭhu，乃 vatthu 之誤。</note>
-<note n="0220002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0220002">三性（Tīni lakkhaṇāni）即三法印，指諸行無常、一切苦、諸法無我。</note>
-<note n="0223003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0223003">洗水 dakkhiṇodaka 為「貴水」，尊敬而準備之水，為洗手足之水，故名洗水。</note>
-<note n="0225004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225004">婆伽梵 Bhaggavī，從註，婆伽梵即菩薩妻之名。</note>
-<note n="0225005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0225005">事物之理解，底本為 attano ayanāya jānana-samatthatam「對自己道之理解」，即對自己生活道之理解義，故譯「事物之理解」。</note>
-<note n="0227001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227001">佛之尊嚴 Buddhasiriya 係 Buddhasiriyā 之誤。</note>
-<note n="0228002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0228002">佛，底本為 Budha 係 Buddha 之誤。</note>
-<note n="0228003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0228003">原文 Kathetvā 應作為 Pas. grd 看待。</note>
-<note n="0229004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229004">原文 oṭṭhi-vyādhi（病駱駝）指獵用之駱駝。按文脈上意味為牝象。</note>
-<note n="0229005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0229005">牛糞為燒陶土所用之物。</note>
-<note n="0233001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0233001">視若己兒譯為 Puttaṭṭhāne ṭhapetva，依文字所譯為「使住於兒童之住屋」。</note>
-<note n="0234002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0234002">淚不乾在文脈上依註譯為 assusukkhanakālo n'atthi。</note>
-<note n="0237001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0237001">帝釋天之象名。</note>
-<note n="0239002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239002">伽拉（Kālā）為黑蔓之一種。</note>
-<note n="0241001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241001">本生譚中無 Paññā-jātaka，依脚註當為水本生譚 Pāniya-jātaka（459）。</note>
-<note n="0241002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0241002">裂腹原文為 Udarassa phāletvā，如以動詞為他言之使役法，則 Ud arassa 應為 Udaram。又動調 Phāleti 如係由 Prākṛt 而來，得解為自言，即腹有裂＝腹裂。然由文脈觀之為他言，故 Udarassa 應正譯為 Udaram。</note>
-<note n="0242003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242003">綿樹頂原文為 Koṭi-simbali（f），此語多譯為綿樹之頂，從脚註，因綿樹之幹及枝非常高大，故此為樹名。更住於此樹之樹神亦呼為綿樹頂，因此，綿樹頂可稱之為大綿樹。</note>
-<note n="0246001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0246001">「惱蛟」Makasa-ṭṭita 即脚註 Makasa-ṭṭhita 之意譯。依文字為「忍耐蚊」之意。</note>
-<note n="0250001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250001">勝法為九種出世間法，即謂四向四果及涅槃之九法，但偈頌只有 Dhamma，今從註釋而譯。</note>
-<note n="0252001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252001">佛所緣之喜樂（buddhārammaṇa-pīti）謂佛依禪定所得之喜樂。</note>
-<note n="0252002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0252002">五美性（pañca-kalyāṇadhamma）謂美髮、紅唇、美齒、白肌、青春之事。</note>
-<note n="0253003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253003">第二之自性（dutiya-attabhāva）指次世之義。</note>
-<note n="0254004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254004">天蓋祝日（chatta-maṅgala-divasa），就其由來，白天蓋為王之象徵，紀念王之即位祝日，謂之天蓋祝日。</note>
-<note n="0256005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0256005">不死眾（amaragaṇa）此云神之一羣。</note>
-<note n="0257006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257006">「為某賤家族」乃依註釋之意義而譯者。原文為「他之家族」（kula-aññatara），即階級相異之家庭，指毘舍之家庭。</note>
-<note n="0263001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0263001">「手放樹枝」與其次「放棄樹枝」原文均為 Sākhā-vissajjana，因文義上關係，分別使用，今依主釋處理。</note>
-<note n="0264002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264002">妻之一字，於偈之原文為（Bhīru），按字義為恐惶者、怯懦者，此由顯示女人性質之處，故用為妻女之義。</note>
-<note n="0265003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265003">頂飾（Cū. 1ā）為頭髮上之裝飾之意。</note>
+<note n="0001001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0001001">與第二五二，一握胡麻本生譚（漢譯南傳藏第三十四卷七頁）及第三〇三，一王本生譚（同上二〇〇頁）參照。</note>
+<note n="0002002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002002">此二偈已於第三三二之偈中揭出。可參照漢譯南傳藏第三十四卷車鞭本生譚之偈。</note>
+<note n="0010001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010001">可與妻之死別故事，參照第三二八，不可悲本生譚（漢譯南傳藏第三十四卷不可悲本生譚）。</note>
+<note n="0010002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010002">可與父之死別故事，參照第三五二，善生居士子本生譚（本卷三頁）。</note>
+<note n="0010003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0010003">大世界即鐵圍山之事。三世界即三有之事，謂欲界、色界、無色界。</note>
+<note n="0025001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0025001">山本生譚（Daddara-jātaka）雖於第一七二（漢譯南傳藏第三十三卷六三頁）及第三〇四（同上第三十四卷二〇二頁）皆曾載出，但無如以上所引用之文意。</note>
+<note n="0025002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0025002">小難提耶猿本生譚底本為 Cullanandaka-j. 今從異本及第二二二（漢譯南傳藏第三十三卷二〇〇頁），讀為 Cūlanandiya-j.。</note>
+<note n="0036001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0036001">依註釋書，提米羅樹在尼拘律樹之周圍，小海為在尼拘律樹側之海。</note>
+<note n="0044001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044001">此為第三二〇，喜捨本生譚之第二偈所出，參照漢譯南傳藏第三十四卷喜捨本生譚之偈。</note>
+<note n="0044002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044002">此為第三六一，色高本生譚第五偈所出。</note>
+<note n="0045003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045003">此為法句經第二之五偈。</note>
+<note n="0054001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054001">可參照第四一，羅娑伽長老本生譚（漢譯南傳藏第三十一卷三〇四頁），第八二，知友本生譚（同上第三十二卷一二六頁），第一〇四，知友比丘本生譚（同上一八六頁）。</note>
+<note n="0054002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054002">此處之大知友本生譚，即指四門本生譚（第四三九）而言。</note>
+<note n="0057001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057001">「猶如予之父或母」彼生長後，至如父母老後時期，兒女即為所依賴者，此句為將為予之依賴之意。</note>
+<note n="0058002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058002">尼拘律樹分泌如乳汁狀之膠質甚多，故稱為乳樹。</note>
+<note n="0060001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060001">於現存之本生譚中，無僧伽貝達本生譚之名，此或係山提貝達本生譚（第三四九破和睦本生譚。）之誤。</note>
+<note n="0072001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0072001">tālaṁ vā susamāhitaṁ 為手掌落下。即不能鳴之意。</note>
+<note n="0074001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0074001">可與第四二鳩本生譚（漢譯南傳藏第三十一卷），及第二七四貪欲本生譚（同上第三十四卷）參照。</note>
+<note n="0075002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0075002">此偈及次之第六偈，出自上記之貪欲本生譚。</note>
+<note n="0083001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083001">本文亦稱為鬱陀羅迦苦行者譚，於第四八七有 uddālaka-jātaka。</note>
+<note n="0101001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0101001">本偈出於第三二〇喜捨本生譚之第二偈（南傳藏第三十四卷）及第三六三慚本生譚之第二偈（本卷四四頁）。</note>
+<note n="0113001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0113001">第六第七之二偈與第三四二猿本生譚之第三第四偈大略相同。</note>
+<note n="0140001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0140001">與第二六七，蟹本生譚之第一偈（南傳藏第三十四卷）參照。</note>
+<note n="0162001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0162001">須陀倫樹之實。</note>
+<note n="0174001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0174001">尼利亞為獵師之子名。</note>
+<note n="0176001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0176001">四依謂衣服、飯食、牀臥具、醫藥。</note>
+<note n="0183001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0183001">麥加陀為王之種族名。</note>
+<note n="0197001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0197001">可與第三二三、梵與王本生譚之第四偈（漢譯南傳藏第三十四卷）參照。</note>
+<note n="0201001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201001">此本生譚缺少說過去事之主分。</note>
+<note n="0203002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203002">無央數（Nirabbuda）不能計數之數名。</note>
+<note n="0203003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203003">註釋者就此偈云，此梵天嘗為苦行者住於沙漠，向經過其處之人給水。某時，有由五百之車所成之一隊商，至此沙漠，迷失方向，不能獲得薪水，瀕臨死亡，苦行者見之，依定力使恒河之水流來此處，使其傍出現森林，人人得薪水，再續旅程，註釋有此一段故事。</note>
+<note n="0203004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203004">註釋者就此偈云，此梵天為苦行者，住於流經森林之河川所添之村。某時，盜賊襲村，捕縛村人，押往山中而行，途中使村人在外等待，彼等入窟中為食事，苦行者聞畜獸之叫聲及婦女子之求救聲，化為王者之姿，率大軍至其處，盜賊見之而逃去，苦行者伴諸人至己村來住，註釋有此一故事。</note>
+<note n="0203005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203005">註釋者就此偈云，此苦行者嘗住恒河之畔時，諸人將二三隻船結在一處，於其上設置花殿，於此處開宴，食殘之飲食物投捨河中，觸怒住河中之龍王。龍王化一大怪異之形出現，將欲傾覆此船，苦行者聞諸人發出驚怖之叫聲，依定力化為金翅鳥前往其處，龍王見此，心生恐怖，深潛水中，諸人得以無事。註釋有此一故事。</note>
+<note n="0204006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0204006">可與第三四六袈裟衣（kesava）行者本生譚（漢譯南傳藏第三十四卷）參照。</note>
+<note n="0206001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206001">五種之藥物指酪油（Sappi）、牛酪（Navanīta）、胡麻油（Tela）、蜂蜜（Madhu）及糖蜜（Phāṇita）。此為參考 Mahāvagga, III 1-16 而出者。</note>
+<note n="0206002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206002">Mahāvagga, VI 15-16 曰：「實為對病比丘眾適用之藥物，即關於酪油、牛酪、胡麻油、蜂蜜、糖蜜等，得受此等後，最高可保存七日間使用。」此處即引用此等之句意。</note>
+<note n="0207003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0207003">羅睺（Rāhu）據傳說為「象徵黑暗之龍頭神，罰為太陽與月之反逆者，由口中入為隱飾之魔神」。佛教以此為非天（Asura）中之一魔神。</note>
+<note n="0209004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0209004">「決定於不得鹽日」為 Aloṇaka-divase bhavissati 之譯語。此是 √bhū 未來形之特殊用法，應予注意。</note>
+<note n="0211005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211005">阿難（Ānanda）在此本生譚之末尾出現，指毘提訶王。</note>
+<note n="0211006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211006">生粘土，底本為 Āmaka āmaka-matta，脚註為 Āmaka-matta，為「未十分燒之生燒陶土」之意。</note>
+<note n="0211007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211007">入定修法（Kasiṇa-Parikamma）為決定在隱遁所之時，為凝視（Kasiṇa-maṇḍala）而入於禪定之一種觀法。</note>
+<note n="0214001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0214001">水瓶，底本為 Kūṭa，此可視為 Kuṭa 之誤，譯為水瓶。</note>
+<note n="0215002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215002">原文為 Ahaṁ vo Jivitam dassāmi，依文字為「予與汝等命」，今意譯如本文。</note>
+<note n="0219001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0219001">事，底本為 vaṭṭhu，乃 vatthu 之誤。</note>
+<note n="0220002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0220002">三性（Tīni lakkhaṇāni）即三法印，指諸行無常、一切苦、諸法無我。</note>
+<note n="0223003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0223003">洗水 dakkhiṇodaka 為「貴水」，尊敬而準備之水，為洗手足之水，故名洗水。</note>
+<note n="0225004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225004">婆伽梵 Bhaggavī，從註，婆伽梵即菩薩妻之名。</note>
+<note n="0225005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0225005">事物之理解，底本為 attano ayanāya jānana-samatthatam「對自己道之理解」，即對自己生活道之理解義，故譯「事物之理解」。</note>
+<note n="0227001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227001">佛之尊嚴 Buddhasiriya 係 Buddhasiriyā 之誤。</note>
+<note n="0228002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0228002">佛，底本為 Budha 係 Buddha 之誤。</note>
+<note n="0228003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0228003">原文 Kathetvā 應作為 Pas. grd 看待。</note>
+<note n="0229004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229004">原文 oṭṭhi-vyādhi（病駱駝）指獵用之駱駝。按文脈上意味為牝象。</note>
+<note n="0229005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0229005">牛糞為燒陶土所用之物。</note>
+<note n="0233001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0233001">視若己兒譯為 Puttaṭṭhāne ṭhapetva，依文字所譯為「使住於兒童之住屋」。</note>
+<note n="0234002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0234002">淚不乾在文脈上依註譯為 assusukkhanakālo n'atthi。</note>
+<note n="0237001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0237001">帝釋天之象名。</note>
+<note n="0239002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239002">伽拉（Kālā）為黑蔓之一種。</note>
+<note n="0241001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241001">本生譚中無 Paññā-jātaka，依脚註當為水本生譚 Pāniya-jātaka（459）。</note>
+<note n="0241002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0241002">裂腹原文為 Udarassa phāletvā，如以動詞為他言之使役法，則 Ud arassa 應為 Udaram。又動調 Phāleti 如係由 Prākṛt 而來，得解為自言，即腹有裂＝腹裂。然由文脈觀之為他言，故 Udarassa 應正譯為 Udaram。</note>
+<note n="0242003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242003">綿樹頂原文為 Koṭi-simbali（f），此語多譯為綿樹之頂，從脚註，因綿樹之幹及枝非常高大，故此為樹名。更住於此樹之樹神亦呼為綿樹頂，因此，綿樹頂可稱之為大綿樹。</note>
+<note n="0246001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0246001">「惱蛟」Makasa-ṭṭita 即脚註 Makasa-ṭṭhita 之意譯。依文字為「忍耐蚊」之意。</note>
+<note n="0250001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250001">勝法為九種出世間法，即謂四向四果及涅槃之九法，但偈頌只有 Dhamma，今從註釋而譯。</note>
+<note n="0252001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252001">佛所緣之喜樂（buddhārammaṇa-pīti）謂佛依禪定所得之喜樂。</note>
+<note n="0252002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0252002">五美性（pañca-kalyāṇadhamma）謂美髮、紅唇、美齒、白肌、青春之事。</note>
+<note n="0253003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253003">第二之自性（dutiya-attabhāva）指次世之義。</note>
+<note n="0254004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254004">天蓋祝日（chatta-maṅgala-divasa），就其由來，白天蓋為王之象徵，紀念王之即位祝日，謂之天蓋祝日。</note>
+<note n="0256005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0256005">不死眾（amaragaṇa）此云神之一羣。</note>
+<note n="0257006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257006">「為某賤家族」乃依註釋之意義而譯者。原文為「他之家族」（kula-aññatara），即階級相異之家庭，指毘舍之家庭。</note>
+<note n="0263001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0263001">「手放樹枝」與其次「放棄樹枝」原文均為 Sākhā-vissajjana，因文義上關係，分別使用，今依主釋處理。</note>
+<note n="0264002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264002">妻之一字，於偈之原文為（Bhīru），按字義為恐惶者、怯懦者，此由顯示女人性質之處，故用為妻女之義。</note>
+<note n="0265003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265003">頂飾（Cū. 1ā）為頭髮上之裝飾之意。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0134a1201" resp="#resp2" type="add" target="#nkr_note_add_0134a1201">嗚【CB】，鳴【南傳】</note>
-<note n="0223a1301" resp="#resp2" type="add" target="#nkr_note_add_0223a1301">豐【CB】，豊【南傳】</note>
-<note n="0238a0101" resp="#resp2" type="add" target="#nkr_note_add_0238a0101">剌【CB】，刺【南傳】</note>
-<note n="0255a1201" resp="#resp2" type="add" target="#nkr_note_add_0255a1201">未【CB】，末【南傳】</note>
-<note n="0262a1401" resp="#resp2" type="add" target="#nkr_note_add_0262a1401">採【CB】，探【南傳】</note>
+<note n="0134a1201" resp="#resp3" type="add" target="#nkr_note_add_0134a1201">嗚【CB】，鳴【南傳】</note>
+<note n="0223a1301" resp="#resp3" type="add" target="#nkr_note_add_0223a1301">豐【CB】，豊【南傳】</note>
+<note n="0238a0101" resp="#resp3" type="add" target="#nkr_note_add_0238a0101">剌【CB】，刺【南傳】</note>
+<note n="0255a1201" resp="#resp3" type="add" target="#nkr_note_add_0255a1201">未【CB】，末【南傳】</note>
+<note n="0262a1401" resp="#resp3" type="add" target="#nkr_note_add_0262a1401">採【CB】，探【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

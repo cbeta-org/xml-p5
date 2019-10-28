@@ -12,75 +12,89 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>NanChuan</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>NanChuan</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>18卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">N</idno>.<idno type="vol">62</idno>.<idno type="no">30</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-12 02:24:06 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition) Vol. 62, No. 30</bibl>
-		<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【南傳】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Chinese Translation of the Pāḷi Tipiṭaka (Yuan Heng Temple Edition)</title>
+				<title level="s" xml:lang="zh-Hant">漢譯南傳大藏經（元亨寺版）</title>
+				<title level="m" xml:lang="zh-Hant">論事(第6卷-第23卷)</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
 		<projectDesc>
 			<p xml:lang="en" cb:type="ly">Input by CBETA, Text as provided by Ven. Zhiguang, Text as provided by Ven. Xiangyin</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入，智光法師提供，祥因法師提供</p>
 		</projectDesc>
-	<charDecl>
-<char xml:id="CB01021">
-	<charName>CBETA CHARACTER CB01021</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[口*荼]</value>
-	</charProp>
-	<mapping type="unicode">U+20EEC</mapping>
-	<mapping cb:dec="984061" type="PUA">U+F03FD</mapping>
-</char>
-<char xml:id="CB32761">
-	<charName>CBETA CHARACTER CB32761</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[跳-兆+契]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>跇</value>
-	</charProp>
-	<mapping type="unicode">U+280B0</mapping>
-	<mapping cb:dec="1015801" type="PUA">U+F7FF9</mapping>
-</char>
-</charDecl>
-</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【南傳】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB01021">
+				<charName>CBETA CHARACTER CB01021</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[口*荼]</value>
+				</charProp>
+				<mapping type="unicode">U+20EEC</mapping>
+				<mapping cb:dec="984061" type="PUA">U+F03FD</mapping>
+			</char>
+			<char xml:id="CB32761">
+				<charName>CBETA CHARACTER CB32761</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[跳-兆+契]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>跇</value>
+				</charProp>
+				<mapping type="unicode">U+280B0</mapping>
+				<mapping cb:dec="1015801" type="PUA">U+F7FF9</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-12-06">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -5974,373 +5988,373 @@ $Log:$
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0030a1401" to="#end0030a1401"><lem wit="#wit1" resp="#resp3">酒</lem><rdg wit="#wit2">洒</rdg></app>
-<app from="#beg0030a1402" to="#end0030a1402"><lem wit="#wit1" resp="#resp3">酒</lem><rdg wit="#wit2">洒</rdg></app>
-<app from="#beg0030a1403" to="#end0030a1403"><lem wit="#wit1" resp="#resp3">酒</lem><rdg wit="#wit2">洒</rdg></app>
-<app from="#beg0063a1001" to="#end0063a1001"><lem wit="#wit1" resp="#resp3">槃</lem><rdg wit="#wit2">般</rdg></app>
-<app from="#beg0111a0301" to="#end0111a0301"><lem wit="#wit1" resp="#resp3">眠</lem><rdg wit="#wit2">眼</rdg></app>
-<app from="#beg0132a0301" to="#end0132a0301"><lem wit="#wit1" resp="#resp3">章</lem><rdg wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0133a1301" to="#end0133a1301"><lem wit="#wit1" resp="#resp3">未</lem><rdg wit="#wit2">末</rdg></app>
-<app from="#beg0137a0601" to="#end0137a0601"><lem wit="#wit1" resp="#resp3">未</lem><rdg wit="#wit2">末</rdg></app>
-<app from="#beg0155a0701" to="#end0155a0701"><lem wit="#wit1" resp="#resp3">眠</lem><rdg wit="#wit2">眼</rdg></app>
-<app from="#beg0208a0601" to="#end0208a0601"><lem wit="#wit1" resp="#resp3">嗚</lem><rdg wit="#wit2">鳴</rdg></app>
-<app from="#beg0294a1001" to="#end0294a1001"><lem wit="#wit1" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit2">[03]</rdg></app>
-<app from="#beg0389a0101" to="#end0389a0101"><lem wit="#wit1" resp="#resp3">蹉</lem><rdg wit="#wit2">嗟</rdg></app>
+<app from="#beg0030a1401" to="#end0030a1401"><lem wit="#wit.cbeta" resp="#resp4">酒</lem><rdg wit="#wit.orig">洒</rdg></app>
+<app from="#beg0030a1402" to="#end0030a1402"><lem wit="#wit.cbeta" resp="#resp4">酒</lem><rdg wit="#wit.orig">洒</rdg></app>
+<app from="#beg0030a1403" to="#end0030a1403"><lem wit="#wit.cbeta" resp="#resp4">酒</lem><rdg wit="#wit.orig">洒</rdg></app>
+<app from="#beg0063a1001" to="#end0063a1001"><lem wit="#wit.cbeta" resp="#resp4">槃</lem><rdg wit="#wit.orig">般</rdg></app>
+<app from="#beg0111a0301" to="#end0111a0301"><lem wit="#wit.cbeta" resp="#resp4">眠</lem><rdg wit="#wit.orig">眼</rdg></app>
+<app from="#beg0132a0301" to="#end0132a0301"><lem wit="#wit.cbeta" resp="#resp4">章</lem><rdg wit="#wit.orig"><space quantity="0"/></rdg></app>
+<app from="#beg0133a1301" to="#end0133a1301"><lem wit="#wit.cbeta" resp="#resp4">未</lem><rdg wit="#wit.orig">末</rdg></app>
+<app from="#beg0137a0601" to="#end0137a0601"><lem wit="#wit.cbeta" resp="#resp4">未</lem><rdg wit="#wit.orig">末</rdg></app>
+<app from="#beg0155a0701" to="#end0155a0701"><lem wit="#wit.cbeta" resp="#resp4">眠</lem><rdg wit="#wit.orig">眼</rdg></app>
+<app from="#beg0208a0601" to="#end0208a0601"><lem wit="#wit.cbeta" resp="#resp4">嗚</lem><rdg wit="#wit.orig">鳴</rdg></app>
+<app from="#beg0294a1001" to="#end0294a1001"><lem wit="#wit.cbeta" resp="#resp4"><space quantity="0"/></lem><rdg wit="#wit.orig">[03]</rdg></app>
+<app from="#beg0389a0101" to="#end0389a0101"><lem wit="#wit.cbeta" resp="#resp4">蹉</lem><rdg wit="#wit.orig">嗟</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0011003" resp="#resp2" type="mod" target="#nkr_note_mod_0011003">S. LVI, 20. Vol. V. P. 430。雜一六．一一（大正二、一一〇c）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
-<note n="0027003" resp="#resp2" type="mod" target="#nkr_note_mod_0027003">D. N. Vol. I, P. 123。長阿含二四、堅固經（大正一、一〇一c）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
-<note n="0029003" resp="#resp2" type="mod" target="#nkr_note_mod_0029003">如是依他論師，心所法施之性質所建立，〔對〕由論師依他之方法，以證所施法施之性質，言「世尊所言：『施為可愛果』……」等。他論師即亦以不見衣等之可愛異熟而否定。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
-<note n="0050002" resp="#resp2" type="mod" target="#nkr_note_mod_0050002">言「沙門者」，是沙門之性。此乃道名。〔佛陀〕言：「汝等諸弟子！為沙門者，我當說沙門果」。「婆羅門者」亦〔與沙門〕同一理趣。</note>
-<note n="0134003" resp="#resp2" type="mod" target="#nkr_note_mod_0134003">言「……以眼見色已而不取相……」者，言於速行〔心〕之剎那不取相。非於五識之剎那。（CBETA 按：漢譯南傳大藏經此頁[04]與[03]註標順序與校注內容有誤，故今予以修訂。）</note>
-<note n="0251004" resp="#resp2" type="mod" target="#nkr_note_mod_0251004">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。（CBETA 按：漢譯南傳大藏經此頁[04]與[03]註標順序與校注內容有誤，故今予以修訂。）</note>
-<note n="0140001" resp="#resp2" type="mod" target="#nkr_note_mod_0140001">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0167002" resp="#resp2" type="mod" target="#nkr_note_mod_0167002">言「得住二劫耶？」等，即責難「若『有神通者超過命之界限之可能』者，不單一〔劫〕，應言住於無數劫」。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
-<note n="0190001" resp="#resp2" type="mod" target="#nkr_note_mod_0190001">Vinaya III, p. 303。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0199004" resp="#resp2" type="mod" target="#nkr_note_mod_0199004">終「計劃無間……」之問如最初之問，問為他論師。肯定為自論師。「非有彼業……耶？」之徵問是他論師。指「避」時以前之計劃時而肯定者是自論師。唯執計劃之前分，依不決定之見解而建立「若……」之邪是他論師。然而，此邪執為不如理，而建立故，等於不建立。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[04]，今於此處加上[04]之註標。）</note>
-<note n="0204002" resp="#resp2" type="mod" target="#nkr_note_mod_0204002">D. N. vol. I, p. 84。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
-<note n="0207002" resp="#resp2" type="mod" target="#nkr_note_mod_0207002">「彼味樂其〔禪〕」之經，即得禪自禪出定而成禪味樂。非於等持之中，禪欲、以禪為所緣。A. N. vol. II, p. 126。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
-<note n="0209001" resp="#resp2" type="mod" target="#nkr_note_mod_0209001">「彼於歡、讚……此受……」（M. N. vol. I, p. 266）之經，然行引依苦受者，不稱貪之生起。然而，總括以受為相之法，或由自體察苦受，名為見思惟；依見歡喜而歡喜受，非喜苦受之轉變。敗於苦受即願求反對之欲樂亦名為歡苦受。如是，有「苦受歡」喜之意義。是故，非證不快貪。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0215001" resp="#resp2" type="mod" target="#nkr_note_mod_0215001">言「運心……乃至……作願」者，乃兩者共名為願心。言彼「有分〔心〕願為運心，置心於有分〔心〕所緣而安立為願。</note>
-<note n="0219003" resp="#resp2" type="mod" target="#nkr_note_mod_0219003">「於母胎……」之餘問是自論師。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
-<note n="0219004" resp="#resp2" type="mod" target="#nkr_note_mod_0219004">S. N. vol. I, 206; J. IV, 496。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[04]，今於此處加上[04]之註標。）</note>
-<note n="0221003" resp="#resp2" type="mod" target="#nkr_note_mod_0221003">言「眼識即耳識耶？」是「第一速行之無間依第二之速行是為意識，其如相同者，於汝有如是二者同一耶？」之問。依是等之理趣，一切狀態之義可知。「舞、歌……」等之語，集所緣之時，速轉故，表示間雜，非無間緣故，為證難之。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
-<note n="0223001" resp="#resp2" type="mod" target="#nkr_note_mod_0223001">M. N. vol. I, p. 53。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與章節校注內容不符，故今將此處修訂為[01]之註標。）</note>
-<note n="0223002" resp="#resp2" type="mod" target="#nkr_note_mod_0223002">此處，聖色或聖者之色是聖色，「然」立邪執而肯定是他論師。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與章節校注內容不符，故今將此處的[01]註標修訂成[02]註標。）</note>
-<note n="0224003" resp="#resp2" type="mod" target="#nkr_note_mod_0224003">M. N. vol. I, p. 53。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
-<note n="0233002" resp="#resp2" type="mod" target="#nkr_note_mod_0233002">A. N. vol. V. p. 212。雜二八．四二（大正二．二〇四a）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
-<note n="0284002" resp="#resp2" type="mod" target="#nkr_note_mod_0284002">言「非根縛非是無常……耶？」「土地山嶽岩石等亦非根縛，亦非無常耶？」之義。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
-<note n="0297001" resp="#resp2" type="mod" target="#nkr_note_mod_0297001">言「應請」等，「若受者不淨化，如何彼為應請等之性耶？」而言。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
-<note n="0304002" resp="#resp2" type="mod" target="#nkr_note_mod_0304002">於「無悲者耶？」之問，則以不見如是之事而否定。其餘於此處意明矣。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
+<note n="0011003" resp="#resp3" type="mod" target="#nkr_note_mod_0011003">S. LVI, 20. Vol. V. P. 430。雜一六．一一（大正二、一一〇c）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
+<note n="0027003" resp="#resp3" type="mod" target="#nkr_note_mod_0027003">D. N. Vol. I, P. 123。長阿含二四、堅固經（大正一、一〇一c）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
+<note n="0029003" resp="#resp3" type="mod" target="#nkr_note_mod_0029003">如是依他論師，心所法施之性質所建立，〔對〕由論師依他之方法，以證所施法施之性質，言「世尊所言：『施為可愛果』……」等。他論師即亦以不見衣等之可愛異熟而否定。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
+<note n="0050002" resp="#resp3" type="mod" target="#nkr_note_mod_0050002">言「沙門者」，是沙門之性。此乃道名。〔佛陀〕言：「汝等諸弟子！為沙門者，我當說沙門果」。「婆羅門者」亦〔與沙門〕同一理趣。</note>
+<note n="0134003" resp="#resp3" type="mod" target="#nkr_note_mod_0134003">言「……以眼見色已而不取相……」者，言於速行〔心〕之剎那不取相。非於五識之剎那。（CBETA 按：漢譯南傳大藏經此頁[04]與[03]註標順序與校注內容有誤，故今予以修訂。）</note>
+<note n="0251004" resp="#resp3" type="mod" target="#nkr_note_mod_0251004">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。（CBETA 按：漢譯南傳大藏經此頁[04]與[03]註標順序與校注內容有誤，故今予以修訂。）</note>
+<note n="0140001" resp="#resp3" type="mod" target="#nkr_note_mod_0140001">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0167002" resp="#resp3" type="mod" target="#nkr_note_mod_0167002">言「得住二劫耶？」等，即責難「若『有神通者超過命之界限之可能』者，不單一〔劫〕，應言住於無數劫」。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
+<note n="0190001" resp="#resp3" type="mod" target="#nkr_note_mod_0190001">Vinaya III, p. 303。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0199004" resp="#resp3" type="mod" target="#nkr_note_mod_0199004">終「計劃無間……」之問如最初之問，問為他論師。肯定為自論師。「非有彼業……耶？」之徵問是他論師。指「避」時以前之計劃時而肯定者是自論師。唯執計劃之前分，依不決定之見解而建立「若……」之邪是他論師。然而，此邪執為不如理，而建立故，等於不建立。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[04]，今於此處加上[04]之註標。）</note>
+<note n="0204002" resp="#resp3" type="mod" target="#nkr_note_mod_0204002">D. N. vol. I, p. 84。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
+<note n="0207002" resp="#resp3" type="mod" target="#nkr_note_mod_0207002">「彼味樂其〔禪〕」之經，即得禪自禪出定而成禪味樂。非於等持之中，禪欲、以禪為所緣。A. N. vol. II, p. 126。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
+<note n="0209001" resp="#resp3" type="mod" target="#nkr_note_mod_0209001">「彼於歡、讚……此受……」（M. N. vol. I, p. 266）之經，然行引依苦受者，不稱貪之生起。然而，總括以受為相之法，或由自體察苦受，名為見思惟；依見歡喜而歡喜受，非喜苦受之轉變。敗於苦受即願求反對之欲樂亦名為歡苦受。如是，有「苦受歡」喜之意義。是故，非證不快貪。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0215001" resp="#resp3" type="mod" target="#nkr_note_mod_0215001">言「運心……乃至……作願」者，乃兩者共名為願心。言彼「有分〔心〕願為運心，置心於有分〔心〕所緣而安立為願。</note>
+<note n="0219003" resp="#resp3" type="mod" target="#nkr_note_mod_0219003">「於母胎……」之餘問是自論師。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
+<note n="0219004" resp="#resp3" type="mod" target="#nkr_note_mod_0219004">S. N. vol. I, 206; J. IV, 496。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[04]，今於此處加上[04]之註標。）</note>
+<note n="0221003" resp="#resp3" type="mod" target="#nkr_note_mod_0221003">言「眼識即耳識耶？」是「第一速行之無間依第二之速行是為意識，其如相同者，於汝有如是二者同一耶？」之問。依是等之理趣，一切狀態之義可知。「舞、歌……」等之語，集所緣之時，速轉故，表示間雜，非無間緣故，為證難之。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
+<note n="0223001" resp="#resp3" type="mod" target="#nkr_note_mod_0223001">M. N. vol. I, p. 53。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與章節校注內容不符，故今將此處修訂為[01]之註標。）</note>
+<note n="0223002" resp="#resp3" type="mod" target="#nkr_note_mod_0223002">此處，聖色或聖者之色是聖色，「然」立邪執而肯定是他論師。（CBETA 按：漢譯南傳大藏經此頁對應之註標[01]與章節校注內容不符，故今將此處的[01]註標修訂成[02]註標。）</note>
+<note n="0224003" resp="#resp3" type="mod" target="#nkr_note_mod_0224003">M. N. vol. I, p. 53。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[03]，今於此處加上[03]之註標。）</note>
+<note n="0233002" resp="#resp3" type="mod" target="#nkr_note_mod_0233002">A. N. vol. V. p. 212。雜二八．四二（大正二．二〇四a）。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
+<note n="0284002" resp="#resp3" type="mod" target="#nkr_note_mod_0284002">言「非根縛非是無常……耶？」「土地山嶽岩石等亦非根縛，亦非無常耶？」之義。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
+<note n="0297001" resp="#resp3" type="mod" target="#nkr_note_mod_0297001">言「應請」等，「若受者不淨化，如何彼為應請等之性耶？」而言。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[01]，今於此處加上[01]之註標。）</note>
+<note n="0304002" resp="#resp3" type="mod" target="#nkr_note_mod_0304002">於「無悲者耶？」之問，則以不見如是之事而否定。其餘於此處意明矣。（CBETA 按：漢譯南傳大藏經此頁中缺相對應之註標[02]，今於此處加上[02]之註標。）</note>
 </p>
 </cb:div>
 <cb:div type="nanchuan-notes">
 <head>漢譯南傳大藏經 校註</head>
 <p>
-<note n="0002001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002001">言「有誰……耶？」是為明決定無為之性質而言。</note>
-<note n="0002002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002002">於問「道是無為耶？」由道有生滅而否定。</note>
-<note n="0002003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002003">於問「決定是有為耶？」指已滅之道亦有決定而否定。</note>
-<note n="0002004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0002004">於問「預流決定……」等，順論與逆論皆依今之理趣而可知其義。</note>
-<note n="0003005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0003005">問「有五種無為耶？」之時，若不見五種無為之出典，是否定；第二問時，〔預流等〕四種之正性決定，由「決定」之語與涅槃之無為性而肯定。</note>
-<note n="0003006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0003006">邪性決定之問，唯依決定之語而為無為，是明顯之不合理，出自〔自論師〕所言。</note>
-<note n="0005001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0005001">「無明是無為耶？」等之問答者，是無明等（十二支）為示緣起性而言，依此義，「此處言緣起一一支」者，是於緣起毘崩伽之所說。</note>
-<note n="0006002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006002">S. N. Vol. II, P. 25（漢譯南傳第十四、相應部二．一三頁）、雜阿含第十二（大正二、八四頁）。</note>
-<note n="0006003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006003">「緣無明而有行者於此處此是法住性」者，是等理趣依經邪執而建立。然，所明其義為破邪執而言。於此處之意思如次：此處，言「此住界、法住性、法決定性」者，是於無明等之外，非別有一法在。（譯者言：屬於東山住部之安達派認為於無明等之外，有法住性（dhammaṭṭhitatā）之別法。十一品第七參照）。然而，無明等之緣即如是名，如來出世時或不出世時皆由無明生行，由行等生識等。是故，言「緣無明而有行」者，於此語，乃無明依行法原因之義（kāraṇaṭṭha）而為住性（ṭhitatā）者是法住性；又依彼法原因之義而為決定性（niyāmatā）者，是法決定性。「其〔無明〕是法住性、決定性而無為，又涅槃是無為耶？」之問。</note>
-<note n="0006004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006004">他論師是依邪執而肯定，問「二無為耶？」畏懼違反經而否定，依邪執而肯定。於餘又亦同一理趣。若相同於前節者，如前之理趣應知之。</note>
-<note n="0006005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0006005">原本書為 Na h'euaṁ vattabbe-Pe- 是 āmantā 之誤。</note>
-<note n="0009001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0009001">於苦集道，事諦（vatthusaccaṁ）是有為，而相諦（lakkhaṇasaccaṁ）是無為。於滅則不稱事諦。唯無為而已。是故，言「然」。然而，此不過是彼等之邪執。無論如何，彼等於苦認為事諦，於集道亦然，彼等之惱、〔惱之〕因、〔由惱〕出離名相諦，於惱相等之外無可名苦等。</note>
-<note n="0009002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0009002">於「苦諦是無為耶？」之問，指依邪執之相〔諦〕而肯定；於「苦是〔無為耶？〕，指事〔諦〕而否定。</note>
-<note n="0011003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0011003">S. LVI, 20. Vol. V. P. 430。雜一六．一一（大正二、一一〇c）。</note>
-<note n="0014001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0014001">言「……令出生」等者，唯就得入定。然而，如起色等之有為法，誰不名起其滅盡定。</note>
-<note n="0014002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0014002">言「依滅盡定而淨化、出脫」者，可知是得果。此全非由無為，故被否定。</note>
-<note n="0015003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0015003">故「滅盡定是無為」者，「非有為故言無為」之邪執。然而，此非無為性之理由。所言亦等於非所言。</note>
-<note n="0018001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018001">S. XII. 43, I, Vol. II, P. 72; S. XXXV, 61, Vol. IV, P. 33; M. 38, Vol. I, P. 259。中阿含二〇一、<g ref="#CB01021">𠻬</g>帝經（大正一、七六七a）。</note>
-<note n="0018002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018002">言：「二木之中間……」者，此處，木色依眼而見，由中間無色，為「虛空」者，即意門識生而非眼識。</note>
-<note n="0025001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0025001">更依他論師而提出「如胡麻油於胡麻之……」等此比喻之問題。〔然而〕如於受與想，於胡麻與胡麻油，隨其相而相異不明確，全胡麻〔草〕、實、皮若於任何唯成胡麻之名稱者，若生胡麻〔實〕而可取〔實〕者，〔同言胡麻，但早已〕依前形是胡麻〔草〕者不能承認，是故〔此問不成喻〕等於無提出。</note>
-<note n="0026001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0026001">言「……俱生耶？」指相應之俱生而言。</note>
-<note n="0027002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0027002">「觸所法耶？」乃依不見是種言語是他論師之問。「如依語言，依此於心者，是心所法，如是，言依止於觸者是觸所法耶？」無過失而肯定為自論師。</note>
-<note n="0027003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0027003">D. N. Vol. I, P. 123。長阿含二四、堅固經（大正一、一〇一c）。</note>
-<note n="0029001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0029001">彼依「施無畏」之經而肯定。於觸等之問題，不見「施觸」等之言而否定。</note>
-<note n="0029002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0029002">「非可愛果……耶？」等者，是為明非心所法之施性而言。非心所之食等法者，不於未來與異熟。可知為可愛果性之決定，如是而言。於此處之意如次。若「非心所食等之法是應施」，則以利益心對於施非可愛非親之〔苦〕藥者，如由拈筏種〔生〕拈筏等，全應現非可愛之果。然而此時言捨思施與利益果故，所施法雖為非可愛時，唯有可愛果。</note>
-<note n="0029003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0029003">如是依他論師，心所法施之性質所建立，〔對〕由論師依他之方法，以證所施法施之性質，言「世尊所言：『施為可愛果』……」等。他論師即亦以不見衣等之可愛異熟而否定。</note>
-<note n="0030004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030004">A. N. VIII. 32, Vol. IV. P. 236。</note>
-<note n="0031005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031005">A. N. VIII. 39, Vol. IV. p. 246。</note>
-<note n="0031006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031006">A. N. VIII. 35, Vol. IV. p. 239。</note>
-<note n="0031007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0031007">「所施法是可愛果耶？」乃唯否定可愛果之性。然而，「是故，不應言……」者，於此處唯依可愛果之性而言是不合理。尚且，依應與之義，所施法是施。為解二種施之混同性而有此說。</note>
-<note n="0033001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0033001">然，名福不外是觸等之善法，是故「汝觸等長養耶？」之為難，則「受用所成觸」等為最先。此全部以其等非長養，依他論師而否定。</note>
-<note n="0033002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0033002">「如葡草……」等者，乃隨無作業及修習，恰如葡草依其自身而長養，責難「如是長養耶？」而言。於此處，亦以如是無長養而否定。</note>
-<note n="0034003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0034003">於「不存念」之問，則〔施者之〕最初之思是依受者受用而長養。如是，依「此為福」之邪執而肯定。</note>
-<note n="0034004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0034004">其次，所問「不運心」等，即指施者之施思而否定。此處，言「不運心者」，依前行於施思之運心而不向有分〔心〕者，即不轉。言「不觀念者」，是「無觀念者」，言「不存念者」，是「無存念者」。言於運心斷有分而生自身而來之道，且存念某施思〔之思〕。依如是〔心之〕作用而依此心不存念者是有福耶？言「不作意者」，乃「不作意」也。於運心而生其之無間，名作某意（譯者曰：速行心），即「不如是」之義。〔言 manasi〕此於格是業格之代用。言「不思者」，是不起思。言「不希望者」，是「稱希望不為善欲者」。言「不願者」，是「依施思而不立心」之義。</note>
-<note n="0034005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0034005">言「非有……觀念耶？」部分之「觀念者」，是「有觀念」或「若有觀念，則」或「於觀念之無間有福」之義。</note>
-<note n="0034006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0034006">於「二觸……」等，依一剎那、施者非有二觸等而否定，指施者與受用者兩者之觸等而肯定。尚又有言「彼五識俱起」之邪執，亦依彼而加以肯定。</note>
-<note n="0034007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0034007">於是，自論師即閉方便門，依直接反證而責難，乃有〔有呵嘖無呵嘖……現前耶？〕之問。於此處指善惡不相應於一剎那而否定，然而依「生受用所成之心不相應」之邪執而肯定。然後，自論師依經而使墮負。</note>
-<note n="0034008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0034008">A. N. IV. 47, Vol. II. P. 50。</note>
-<note n="0036009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0036009">於經證，「植於園林」等，乃指依追憶與反復等而時時生福，言「長養其福」。S. N. I. 5. 7. Vol. I. P. 33。雜阿含經三六．五（大正二、二六一b）。</note>
-<note n="0036010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0036010">A. N. Vol. II. P. 54。</note>
-<note n="0036011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0036011">言「彼生無量福」者，乃依〔四〕於緣施不放逸住者，依「如是我受用其衣」之隨喜而言。彼〔他論師〕乃思惟彼是受用所成〔之福〕。</note>
-<note n="0037012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0037012">然依共受者而受，亦依不受用所施法而有福。是故，自論師之論為有力。此處，於「受者所受時」之語，可見「依受者而所受時」之意。</note>
-<note n="0040001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0040001">言「……施之所施」者，是「見施所施」之義。依己之隨喜事，彼等於彼處受用生。故依此之理由，彼之邪執者欲建立亦不建立者，彼等非依此處所施之物而生故。</note>
-<note n="0041002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0041002">Petavatthu I. 5. P. 5。</note>
-<note n="0041003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0041003">A. N. Vol. III P. 43。</note>
-<note n="0043001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0043001">依「觸……」等之理趣於所廣說異熟，觸是順樂受等之各種，其與想等、樂受等相應，受等是與想等〔相應〕，一切有所緣。於此等稱前行之運心等，有差向其心，此業緣之思。其處對可愛異熟之處，希望是依其願而轉為根本欲望。問「於汝而地是如是者耶？」他論師否定。逆論之問等唯明其義。</note>
-<note n="0044002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0044002">於「業異熟與他人共耶？」之問，指觸等而否定，指業等起之色及地等之共性而肯定。「不與何人共有……」之等經，自他宗引用而加以表示。</note>
-<note n="0045003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045003">Khuddakapāṭha VIII, 9。</note>
-<note n="0045004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045004">於「一切之有情受用地耶？」之問，指不依止於地而否定，指依此而肯定。</note>
-<note n="0045005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045005">「不受用地而般涅槃耶？」對於無色而般涅槃者而肯定。</note>
-<note n="0045006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045006">言「不盡業異熟」者，依他論師之宗而言，因為「不盡業異熟而般涅槃」者是彼等之邪執。然於自宗，則給予〔熟〕業機會而生異熟〔之〕不盡而無般涅槃。若依彼等之邪執，地是依共異熟，是生之異熟。不盡其異熟住而責難般涅槃者不合理是當然。他論師依邪執而否定。</note>
-<note n="0045007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045007">於「輪轉有情業異熟」之問，指不共之觸等而否定，指共者而肯定。地、海、月、太陽等者一切是共業異熟乃彼等之邪執。</note>
-<note n="0045008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0045008">言「引自在業」，於此處名自在是廣大之富。名支配者置餘人等於自己勢力中，以依他人所尊敬之義為支配性。此處，業稱「由得之而引者」。非依能生。是故，業之異熟不成立。</note>
-<note n="0047001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0047001">於逆論之問，言「無所緣」者，是色法之〔老死〕暫時為無所緣。然而又非色〔法〕之老死，若無相應之相在者，是無所緣。</note>
-<note n="0048002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0048002">於「不善法之老死是不善法之異熟耶？」之問，名老死應是依「非可愛異熟」之邪執而肯定。依此同一理由，對於善法，否定老死是善異熟。自此以下，唯肯定不善異熟。</note>
-<note n="0049003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0049003">依「善與不善」之問〔善法與不善法〕為一。可是，此於一剎那即不在。無記無異熟（法）之老死是無理由應言異熟。是故依無記之問而作無。</note>
-<note n="0049004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0049004">言「引醜惡」者，此處稱醜惡者是不清淨色性。稱短命是轉壽命之長久是不可能。此處，不善業是對業等起之醜惡色而為業緣。若非相等〔者〕，彼〔之醜惡色〕即非彼〔不善業之〕異熟。可是，〔不善業〕是對於季節等起〔色〕等，依得此，及對壽命依能斷者為緣。如是，此〔不善業〕乃間接引〔醜〕之名。如對於異熟觸等非依能生。是故，於異熟性是不成立。</note>
-<note n="0050001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0050001">此處，言「聖法之異熟」者，乃稱為「道」聖法之異熟。依「唯煩惱盡為聖果」之邪執者，他論師是肯定。</note>
-<note n="0050002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0050002">言「沙門者」，是沙門之性。此乃道名。〔佛陀〕言：「汝等諸第子！為沙門者，我當說沙門果」。「婆羅門者」亦〔與沙門〕同一理趣。</note>
-<note n="0051003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0051003">於「預流果非異熟耶？」等，指預流道等之至損減是（還滅），聖果無異熟性而肯定。以施果等而否定。「其〔異熟〕至於累積（流轉）」者，就何義有所選擇耶？言「至於名異熟之累積」，又言「累積累積行」者，是至於累積。言「損減異熟行」者，是「至於損減」。是故，如是肯定如是否定。</note>
-<note n="0052004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0052004">「欲界之善是有異熟而至於累積耶？」等之問是他論師。肯定與否定是自論師。世間善是有異熟，言：「累積死生與輪迴而行」之意，是「至於累積者」。出世間善是言「損減死生、輪迴而行」之意，是「至於損減者」。如是，此〔出世間善〕唯有異熟，〔然而〕唯依「非至於損減」之意，〔為〕無異熟。指此意，於此處可知自論師之肯定與否定。</note>
-<note n="0054001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054001">「其之異熟」者，是其異熟法法異熟之異熟者，亦於汝之說為「異熟法法耶？」他論師是由無未來果而否定，於第二所問之時，以其為緣，又指他異熟之生而肯定。</note>
-<note n="0054002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054002">若如是，如善不善者，於其異熟亦有異熟，於其亦應有異熟，應循還而至於無窮。其問畏懼與其宗相違而否定。</note>
-<note n="0054003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054003">言「言異熟……」語言之吟味，然而若異熟與異熟法法為一義者，善、不善、無記亦應為一義而否定。</note>
-<note n="0054004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0054004">「異熟與異熟法法……」者，於此處之意如次。於四異熟蘊之各項，依於互相緣為緣之義而成異熟法法，又依緣所生義而思惟異熟，所問「異熟是異熟法法耶？」以「然」而肯定。於其處，自論師責難言：「汝於一剎那之四蘊准許異熟或異熟法法，是故彼等應為俱行等之性」。他論師則名善不善指異熟法法而否定。</note>
-<note n="0055005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0055005">「相互緣」者，依唯對俱生而緣之言。是故，不成立。於大種亦稱相互緣性，是等非於異熟或異熟法法。</note>
-<note n="0057001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0057001">M. N. 12, Vol. I. P. 73。</note>
-<note n="0058002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0058002">「非有阿修羅眾耶？」是唯證阿修羅眾，然非依別趣之性而證其趣。</note>
-<note n="0060001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060001">「有至中有之業耶？」若中有為一有，有至欲有等之業，如依大師而分別所示，為責難「亦應有趣於中有之業」而言。然而於他論師之宗，稱至中有之業，非特別之業。生於〔欲有等之〕各種有，依至其〔有〕之業而生中有，此乃彼等之邪執。是故，以「不然」而否定。</note>
-<note n="0060002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060002">問「有至中有之有情耶？」言其等唯稱至欲有、至於色有，依彼等之邪執而否定。問「生、〔老……〕」等之時，亦於中有依不承認生老死及死結生之相續而否定。</note>
-<note n="0060003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060003">依色等〔五蘊〕而問之時，中有之有情是〔微細〕不可見而色受等亦不如他粗大」者，乃彼等之邪執，是故而否定。依同樣之理，對五蘊有之否定亦可理解。</note>
-<note n="0060004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0060004">此處，稱「欲有是有、趣……」等之有結合論。於此處之意如次。若汝稱有中有，是一趣、有，然而於欲有等可得如趣、有之各種，於中有亦可得耶？〔又反對〕於中有如不得，彼於〔欲有等〕亦不可得耶？於同樣有之性，是等有此之各種，彼乃不在耶？此處有如何之別因耶？</note>
-<note n="0062005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0062005">問「於一切有情有中有耶？」以不承認中有於地獄趣、無想有情趣、無色趣之故而否定。依同一理由而肯定相反之問。</note>
-<note n="0065001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0065001">「人之眼……」等，乃明事欲而言。於此處，他論師依六處之事欲性而否定非欲界性，再問「〔人之〕意……」者，指大出世間〔之意〕而肯定其非欲界性。然凡三地之意唯欲界而已，是故自論師依經而令其墮負。</note>
-<note n="0066002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0066002">S. N. Vol. I, P. 16。雜阿含二二．二七（大正二．一六一a）。</note>
-<note n="0066003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0066003">「〔五〕種欲是有……耶？」等者是示有之欲界性而言。於唯〔五〕種欲，非有之言語，是故他論師即以「實不應如是言」而否定。</note>
-<note n="0066004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0066004">「有至〔五〕種欲之業耶？」等一切，唯〔五〕種欲乃示非欲界性而言。名欲界至欲有業是有，又有至欲有之有情，於其處生、老、死、沒、再生，亦不於〔五〕種欲。</note>
-<note n="0068005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0068005 #note_star_1">A. N. Vol. III, P. 411。中阿含一一．達梵行經（大正一、六〇〇a）漏分布經（大正一、八五二c）。</note>
-<note n="0072001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0072001">問「欲界即〔色界〕耶？」以見地區別之相違而肯定。重複確問，依己邪執而肯定。又，若如是以具二有故，其事是自論師言「具欲有者……」等。他論師不許可一人具二而否定。</note>
-<note n="0075001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0075001">可依彼處無處而責難之，以「於彼有鼻處耶？」等為始。依此而他論師是依「內三處鼻等之形相為處」之邪執而肯定。依外香處等所問時，鼻之淨色等不許依於彼處，是故亦依遮其對境而否定。</note>
-<note n="0078002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0078002 #note_star_2">「於彼處有鼻處有香處，依其鼻而嗅彼之香耶？等」，於此處是指他論師之宗中一分師等而言。彼等於其處〔色界〕許六內處之圓滿，稱為處應有作用之物。依其等之鼻等，彼等為嗅香、味、觸。依此邪執，他論師以「然」而肯定。</note>
-<note n="0079003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0079003">言「於彼處非有鼻相……耶？等」，為唯形相之證而不為處之〔證〕。</note>
-<note n="0082001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082001">於「善心等起之受、想、思……」等，唯受等得思、希望、願，非是思。因二思非同時故。</note>
-<note n="0093002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0093002">A. N. Vol. III, P. 415。漢譯南傳第二二卷，增支部四、一四九頁。</note>
-<note n="0094003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0094003">A. N. Vol. II, P. 158。漢譯南傳第二〇卷，增支部二、二六五頁；雜阿含第十四卷（大正二、九三）。</note>
-<note n="0094004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0094004">A. N. Vol. V, P. 292。</note>
-<note n="0094005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0094005">於原本是苦根 dukkhindriyaṁ，於 M. K. 為 dukkhudrayam（齎苦）。今取後者。英譯二二五頁註參照。</note>
-<note n="0095006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0095006">A. N. Vol. III, P. 209。漢譯南傳第一二卷中部四、二三頁；中阿含分別大業經（大正一、七〇六）。</note>
-<note n="0096001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0096001">於「有色之法……無耶？」之問，於所造色等，又於草木等亦依相續之力而轉，許有壽之持續、存活、生存、運行、轉、進行故，以否定。</note>
-<note n="0096002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0096002">於「有非色之命根耶？」之問，於非色法許有名心不相應之命根相續，以肯定。</note>
-<note n="0097003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0097003">於「有色法之壽乃〔非色之〕命根耶？」之問，於有情之相續，於有色法或非色法亦皆有心不相應之非色命根故，以肯定。</note>
-<note n="0097004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0097004">於「入於滅盡定者……」之問，指心不相應非色之命根而否定與肯定。又，自論師不承認此，為責難「於非色轉所有之時，某不可不是色」，而言：「若」……等。</note>
-<note n="0098005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0098005">於行蘊之問，指觸等之行蘊而否定，指身業等之行蘊而肯定。</note>
-<note n="0098006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0098006">身表、語表、正語、正業、命根，此等之諸法亦行蘊之攝者，是彼等之邪執。又，自論師不承認此，為責難「若非色之轉展是滅而有行蘊者，應是四蘊之存」，而言：「有受蘊……耶？」他論師指定中而否定，指入定出定前後之部分而肯定。</note>
-<note n="0098007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0098007">無想有情之時亦同一理趣。因若依彼之邪執，無想有情結生時，心生而滅。其共心不相應非色之命根生，壽命之存間轉故，其〔無想有情〕無命根耶？」之問時以否定，於「有……耶？」之問時以肯定。</note>
-<note n="0098008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0098008">受蘊等亦於彼等隨轉而否定，對死、結生而肯定。又，自論師不承認此，為責難「若於此一剎那，有受等則得五蘊之性」，而言「五蘊……」等。</note>
-<note n="0098009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0098009">於「……一部分壞耶？」之問，相應〔法〕壞，不相應〔法〕住者是彼之邪執，故肯定。</note>
-<note n="0099010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0099010">於「二之命根……」之問，是他論師，肯定是自論師。言：「依色、非色而有二命根，依彼而有情生，依其破壞而死。」於死之剎那破二之共命。</note>
-<note n="0103001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0103001">於「以作意諸行是無常，〔同時〕於涅槃見功德耶？」之問意是言「見功德有結之斷」者是彼等之邪執，但於「以作意諸行是無常者之結是非斷耶？」之問，以「然」而肯定，故汝之作意諸行是無常與於涅槃而見功德者應是同一致，如何，此「汝承認耶？」他論師是指一心剎那而否定，再問之時，依各別之心而給予肯定。更又自論師破彼之意義，〔彼等〕以作意無常與見功德者，依其於一承認之，而問「二觸、二心俱起耶？」他論師不見二心之俱起而否定。於「為苦」等之問，亦與此同一理趣。然而於此處如何之決定耶？為作意無常等者之結斷耶？或者，於涅槃見功德耶？或者，以兩者是一者耶？若暫「為作意無常等者有〔結之斷〕」，則應唯依觀察心而有。或者，見功德者，依傳說見涅槃之功德〔有結之斷〕者，則應唯依觀察心而有。或者，又「以二為一而有」，則應有二觸等之俱起。然而，於聖道之剎那，作意無常等之任務完成，〔於彼處〕，若再把握「是常」等，即許於涅槃依直覺不生法性而見功德。因此，為任務之完成，以作意〔諸行是為常〕者之所緣，轉化可知「於涅槃見功德者有結之斷」。「於涅槃而樂隨觀」之經，即於涅槃唯證樂觀察等之性，非證「唯依見功德而有結之斷」，是故等於不引。</note>
-<note n="0109001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0109001">所謂有緣（sapaccaya）為其物之生，必然之條件，所緣即有緣之意。所緣（ārammaṇa）用於與上同意義，有言色是「有所緣」。然而，一般「有所緣」者，是對境之義，唯非色法（心、心所）而言所得。</note>
-<note n="0111001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0111001">言「欲貪……等」者，〔隨眠〕非與欲貪別者。</note>
-<note n="0111002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0111002">於「行蘊是無所緣耶？」之問，指心相應之行蘊而否定，指隨眠及命根身業等色之行蘊繫屬性而肯定。</note>
-<note n="0113003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0113003">於「有隨眠」之問，然而由未斷隨眠而有隨眠性而容認，非言有隨眠之轉。未斷者亦非過去，亦非未來，亦非現在。然而，若道所斷之煩惱，其未斷故，言「有」。對於如是者，不應言「此是所緣」。是故彼反對。然而，此不單對隨眠，而且對貪亦同。是故，非證隨眠之無所緣性。</note>
-<note n="0121001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0121001">此處，若言其（語）非等起心者，觸等亦應非其剎那。</note>
-<note n="0128001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0128001">言「十蘊……」者，是言再生之〔五蘊〕及所作之〔五蘊〕。於第一問（十蘊……），依蘊相而唯五，指彼而否定。於第二問，由於有前後，指依求再生之（有分）與所作異而肯定。</note>
-<note n="0128002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0128002">言「所作之四蘊……」者，言除色善不善之四。</note>
-<note n="0128003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0128003">言「所作之智……」者，依他論師，於眼識具足之剎那，認阿羅漢無所緣智。</note>
-<note n="0129001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0129001">此處，若彼正語是色而非離者，正見等之道如有所緣等之自性，其色亦應如是責難而言為有所緣……等。此處，應言否定與肯定是適合於他論師之邪執。</note>
-<note n="0132001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0132001">言「五識是以已生為所依……」等。此意趣，若五識具足者有修道，道與某意識相應，其意識亦應是五識具足者。若如是，即言「五識是以已生為所依」等之相者，不如是言而應言「六識」。然而如是不言，唯說五識之故，不應言：「具足五識者有修道」，有他之理趣。五識以已生為所依，道亦為無所依，彼等〔五識〕以已生為所依，道無已生之所緣，彼等〔五識〕以前生為所依，道亦無所依，彼等以前生為所緣，道不以前生為所緣，彼等以內為所依，道亦無所依，彼等依色等外為所緣，道以涅槃為所緣，彼等以不滅為所依、依止而轉，以未破壞者為所依，道雖無所依亦通，彼等以未滅之色等為緣而轉，以未破壞者為所緣，道是以涅槃為所緣。彼等是各別所依，道是無所依或一所依，彼等是於各自色等之境而轉，不感受互相之境界，道是不以色等中之一為境，彼等以所作意界先行而生，不無存念、無作意而生，道是無運心，彼等依受納等之中絕而生，道是無中絕，彼等是互相前後而生，道是不與五識共前後，因為彼等〔五識〕之不生時，即利銳觀察之時及彼等不生無色之時亦生故，彼等依受納等而隔故，互相不生於等無間，道者不依受納等而隔，彼等於〔對境〕入來以外，僅為〔此者何耶？〕之觀念亦無作用，道有煩惱永斷之作用。此為此處之意趣。</note>
-<note n="0133002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0133002">言「緣空性……」者，如出世間道緣空性之涅槃，世間〔道〕緣清淨行福而生，問「汝之眼識亦為如是耶？」他論師以「以眼及色為緣」之語而否定。於再問時，指依「不取於相」之語而言「此無相之者為空性」以肯定。</note>
-<note n="0134003" resp="#resp1" type="orig" target="#nkr_note_orig_0134003">[04]</note>
-<note n="0251004" resp="#resp1" type="orig" target="#nkr_note_orig_0251004">[03]</note>
-<note n="0137001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0137001">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。</note>
-<note n="0140001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0140001">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。</note>
-<note n="0141001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0141001">於「世間與出世間之……」問，指前所受戒與道之剎那生之正語等而肯定。</note>
-<note n="0142002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0142002">言「於世間之戒滅時」者，他論師之問。自論師指剎那壞滅而肯定。他論師以為如犯戒，復言「惡戒……」等。然而，彼邪執之建立，於前明無破戒，非〔明〕二戒之具足。是故，邪執是不能建立。</note>
-<note n="0150001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150001">S. N. vol. I, p. 33。雜阿含三六．五（大正二．二六一b）。</note>
-<note n="0152001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152001">「受惡業者即如是稱我殺者」、「我盜取如是之物品」作如是惡之決心而終。問「兩者是長養耶？」即指於施之剎那惡不生而否定，第二問時，指心不相應惡之累積而加以肯定。</note>
-<note n="0153002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0153002">A. N. vol. I, p. 50。</note>
-<note n="0166001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0166001">「言 i、言 dan……」等，若彼於苦智轉者，則依 i, dan, du, khan（idam dukkham 是苦）文字之順序而應言四智轉。他論師不許如是，故否定。</note>
-<note n="0166002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0166002">原本 ruci 是 duti 之誤。</note>
-<note n="0166003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0166003">原本為 āmantā 是 na h'evaṁ vattabbe……pe……之誤。</note>
-<note n="0167001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0167001">此處名劫者，是大劫、一分劫與壽劫等三種。言「諸比丘！是等之四阿僧祇」之時，言大劫之劫。言「梵眾諸天之壽量〔一〕劫」時，是一分劫。言「一劫煮於地獄」、「一劫受樂於天」時是壽劫。壽劫是壽之形成，依業之異熟及依年數為壽命限界之義。指此等中之大劫而問，他論師是肯定。而自論師責難於彼，若汝神力具足者由欲住限於百年前後之壽劫以上，或大劫，又住一分大劫，神通所成之彼壽者應有〔如是〕耶？言「其神通所成之壽」等。他論師名命根者，即「非神通所成唯業等起」而否定。然而，何有神通之差異耶？雖無神通者非住壽劫耶？有此之差異。有神通者命當於壽命之間轉，作障害之法是依神力而取捨，防中間之非時死是可能；而無神通者無有如是之力，是為與彼之區別。</note>
-<note n="0167002" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0167002">言「得住二劫耶？」等，即責難「若『有神通者超過命之界限之可能』者，不單一〔劫〕，應言住於無數劫」。</note>
-<note n="0169003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169003">D. N. vol. II, p. 103。長阿含二．遊行經（大正一．一五b）。</note>
-<note n="0169004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0169004">A. N. vol. II, p. 172。</note>
-<note n="0171001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0171001">若心相續是定，言「心相續」者過去亦有，未來亦有，唯一現在非名相續。於汝「是等一切是定」應可責難，而言「過去之……」等。他論師不許如是而否定。</note>
-<note n="0171002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0171002">言「過去已滅……非是耶？」等，於心相續唯現在心起作用，過去未來以已滅及未生無〔作用〕。然明言「如何如是名為定耶？」</note>
-<note n="0171003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0171003">言「一心之剎那是〔定〕耶？」乃他論師之問。由此於自宗，「諸比丘！修定！」等〔之佛語〕，若言「現在善心相應之一境性是定」者，指彼〔之定〕而肯定者乃自論師。</note>
-<note n="0172004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0172004">言「非世尊所〔言〕耶？」者，即明示「前後而生無定之障礙」，非依相續之定性，是故不成立。</note>
-<note n="0173001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0173001">若圓成於〔十二緣起之〕無明等，稱別一法住性之圓成（parinipphanna 是依業、時、節、心、食等之緣而成具體、獨立之義），汝於其法住性亦為有別圓成法住性之事，為責難而言「其住性亦……」等。他論師以非如是之邪執而否定。於第二問時，則指無間緣性及互相緣性而肯定。</note>
-<note n="0174001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0174001">若於汝如色等無常性是圓成者，〔無常性〕亦應有別圓成之無常性而責難，而言「其無常性之……」。他論師二個無常性非一起而否定，又彼無常性非常，與其無常一起消失，故肯定。</note>
-<note n="0175002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0175002">言「老是圓成耶？」於已生之老死外，不稱無常性。是故，從事於無常性之分別而言。</note>
-<note n="0175003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0175003">於圓成之色等，如有無常性、老死。如是，於圓成之無常性等，認為此等是無，一向給予否定。</note>
-<note n="0177001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0177001">於自宗，言「思是業」，其思如於身語意門轉，得身業等之名，若汝之律儀是業者，責難其亦於眼根等而轉，得眼業等名，故言「眼根律儀是眼業耶？」他論師即不見如是之經文，故於四門而否定；於第五身門，指淨身而否定，指表身而肯定。因為，彼許淨身與表身皆是身根故。意門亦指異熟門而否定，指業門而肯定。非律儀亦同為一理趣。</note>
-<note n="0179002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0179002">「以眼見色……」之經，於諸門示律儀非律儀者，非彼之業，故以為證而難。A. N. vol. II, p. 16。漢譯南傳大藏經，第二〇卷二九頁。</note>
-<note n="0180001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0180001">於「一切之思……」之問，指無記而否定。指善不善而肯定。</note>
-<note n="0181002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0181002">A. N. vol. v, p. 292。</note>
-<note n="0183001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0183001">言「遂行……其業……」之經，示相之獲得而言。因為，大人由前世之作業而有清淨之屬性，然屬性非異熟，故非為證。D. N. vol. III, 173。中阿含五十九．三十二相經（大正一．四九四a）。</note>
-<note n="0186001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0186001">於「奪母命……」等之趣意如次。有二種決定，即正性決定與邪性決定。正性決定是聖道，其決定不退轉法性與生果。邪性決定是無間業，其決定生於無間地獄。此處，極七返〔有〕依預流道不退轉法生及生果而決定。餘道之決定，彼無不證故。亦作無間是不可能。然而汝許決定。依此，問汝：「依是等之邪性決定而決定耶？」</note>
-<note n="0190001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0190001">Vinaya III, p. 303。</note>
-<note n="0194001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194001">言：「……佛陀……」，此無佛陀之生，示無破和合僧而言。</note>
-<note n="0194002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0194002">言：「劫之始耶？〔同時〕僧伽破耶？」示「若全部住者，劫之初以來〔即〕為業，示生住於彼耶？」而言。</note>
-<note n="0195003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195003">於「劫住者具神通耶？」之問，指修所成而否定。然他宗，準許生來神通，指彼而肯定。</note>
-<note n="0195004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195004">言「修欲神足……」，言依生來之神通為具神通者唯邪執而已。然而若汝有神通者，為難「有修習是等神足故」而言。</note>
-<note n="0195005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0195005">「墮惡生人、墮地獄人……」之經者，以一劫為八十分，其一分之間住，指其壽劫而言，故不為證。</note>
-<note n="0198001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0198001">於「彼……業」之問，「業」是殺母等之業。此處，指非決定性之命令，然肯定是自論師。因為，無確定性之命令，故「我為不當之事」生之惡作、追悔。</note>
-<note n="0198002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0198002">言「若……」等，唯執惡作之生，建立邪執依他論師而言。</note>
-<note n="0199003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0199003">今問「依非決定性之命令與計劃無間者，禁依他論師而入定性決定，執其補特伽羅，計劃無間……為不可能耶？」是自論師，依其邪執而肯定是他論師。然，自論師「言〔入正性決定〕為不可能，是殺母等業之作者，為難其如何，依汝為其業耶？」而言「殺母……等」。他論師不見如是所作，故否定「實不應如是言……」。言「……避其業……」是指非決定性命令之業而言。因為，「我不為命令」，依取消命令而為「避」者。避之故，此處，即除惡作、除追悔。然，有如是之時亦被認為是「前之命令者有決定性」，他論師以「然」而肯定。此時，自論師承認有避其業之性質，立己之見解而言「若……」等。</note>
-<note n="0199004" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0199004">終「計劃無間……」之問如最初之問，問為他論師。肯定為自論師。「非有彼業……耶？」之徵問是他論師。指「避」時以前之計劃時而肯定者是自論師。唯執計劃之前分，依不決定之見解而建立「若……」之邪是他論師。然而，此邪執為不如理，而建立故，等於不建立。</note>
-<note n="0201001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201001">言「邪性決定」等，言為示依某決定而入決定者無其他決定之事。</note>
-<note n="0201002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201002">言「前修道……」等，言為示決定之別。</note>
-<note n="0201003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0201003">言「念住」等，言為示於一決定法之別。</note>
-<note n="0202004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202004">「菩薩……得……耶？」之言，唯表示菩薩為可能，不入決定者之決定，故不成立。因為，前依一決定法而不決定，於菩提之根本，依見諦而入決定。</note>
-<note n="0203001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0203001">言「淨、清淨……」等，依伏而鎮伏清淨，清淨者之示正斷清淨而言。言「如是知……」等，依知、依見而說漏盡。非斷有覆者之蓋，故不為證。D. N. vol. I, p. 83。</note>
-<note n="0204002" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0204002">D. N. vol. I, p. 84。</note>
-<note n="0206001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0206001">於言「其禪為其禪之所緣耶？」之問，以自身不見其物之所緣，自違經之畏而否定，依「味樂其禪」之〔經〕語而肯定。</note>
-<note n="0207002" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0207002">「彼味樂其〔禪〕」之經，即得禪自禪出定而成禪味樂。非於等持之中，禪欲、以禪為所緣。A. N. vol. II, p. 126。</note>
-<note n="0209001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0209001">「彼於歡、讚……此受……」（M. N. vol. I, p. 266）之經，然行引依苦受者，不稱貪之生起。然而，總括以受為相之法，或由自體察苦受，名為見思惟；依見歡喜而歡喜受，非喜苦受之轉變。敗於苦受即願求反對之欲樂亦名為歡苦受。如是，有「苦受歡」喜之意義。是故，非證不快貪。</note>
-<note n="0211001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211001">依「欲渴愛」（S. N. vol. III, p. 26）等之三部分，六渴愛則略而顯。於色等之六種所緣，依味著其欲而轉渴愛者為欲渴愛。「我及世間有」與常見俱行之渴愛為有渴愛。「〔我及世間〕非有」與斷見俱行之渴愛則為無有渴愛。</note>
-<note n="0211002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0211002">言「非其法之渴愛耶？」之語，即示渴愛緣法所緣而轉，非表無記性。是故不成立。</note>
-<note n="0215001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215001">言「運心……乃至……作願」者，乃兩者共名為顧心。言彼「有分〔心〕顧為運心，置心於有分〔心〕所緣而安立為願。</note>
-<note n="0215002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215002">言「善乃不作運心……者」，言彼「於不善之無間而結續生，於不運心其物生耶？」之問。他論師不運心而不見善之生故而否定。</note>
-<note n="0215003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0215003">言「善是由不如理作意」者，非難「若於不善之無間善生，〔善〕唯依於不善而運心，由不如理作意而生」。餘依本文應知之。</note>
-<note n="0217004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0217004">言「行塵染而於其事物」云云之語，是於一所緣而明白有貪離貪之生，非明於善惡之無間生。故不成立。</note>
-<note n="0218001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218001">言「有一切之肢節……」等，非難「有六處之時，有如是（一切之肢節）可入」。</note>
-<note n="0218002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0218002">「於母胎……」之問是他論師。</note>
-<note n="0219003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0219003">「於母胎……」之餘問是自論師。</note>
-<note n="0219004" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0219004">S. N. vol. I, 206; J. IV, 496。</note>
-<note n="0221001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221001">言「耳識為色所緣……」，為難「若於眼識之無間生，則如異熟意界為色所緣」而言。</note>
-<note n="0221002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0221002">「依眼與色而耳識生耶？」之問，於經無有故而否定，信由無間生之邪執而肯定。</note>
-<note n="0221003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0221003">言「眼識即耳識耶？」是「第一速行之無間依第二之速行是為意識，其如相同者，於汝有如是二者同一耶？」之問。依是等之理趣，一切狀態之義可知。「舞、歌……」等之語，集所緣之時，速轉故，表示間雜，非無間緣故，為證難之。</note>
-<note n="0223001" resp="#resp1" type="orig" target="#nkr_note_orig_0223001">M. N. vol. I, p. 53。</note>
-<note n="0223002" resp="#resp1" type="orig" target="#nkr_note_orig_0223002">[01]</note>
-<note n="0224003" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0224003">M. N. vol. I, p. 53。</note>
-<note n="0226001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0226001">「有隨眠」等，其時隨眠未斷故，稱「有隨眠」，而〔隨眠〕未生故，不言為「纏」。隨眠與纏無有區別。故不成為證。</note>
-<note n="0227002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227002">若善無記心現行中亦存有貪者之貪則稱為貪〔隨眠〕，其貪若「現行者言纏」之意思，言「貪隨眠與纏異」者正確。</note>
-<note n="0227001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0227001">經文之出處 Saṁyutta-Nikāya, IV. III 即 Subhato manasikarotīti, Subhato āgacchati。話手為 Udhina 王對 Piṇdola-Bhāra 之問答。（自英譯本脚註）</note>
-<note n="0233001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0233001">S. N. vol. IV P. 393; XLIV. II, vol. IV. P. 401。雜三四．二〇（大正二．二四四b）、雜三四．二一（大正二．二四四c）。</note>
-<note n="0233002" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0233002">A. N. vol. V. p. 212。雜二八．四二（大正二．二〇四a）。</note>
-<note n="0239001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0239001">應知依俱生、互相、有、不離、相應而緣者。</note>
-<note n="0242001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0242001">與前章所引同經。</note>
-<note n="0243001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0243001">有漏是「持漏者」，然而無令漏四漏之漏，四漏自身若是漏，特是有漏，不應言「有漏」。不是有漏，故言「無漏」之義。是詭辯性議論。</note>
-<note n="0248001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248001">此時指身之本質而加以肯定。可是，如是之時不稱定之威力者。依此言「不成入滅盡定者耶？」</note>
-<note n="0248002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0248002">言「眼識具足者不死耶？」自論師為示「即使不決定之時，亦死於死時，不死於非時」而言。此處之意如下。若不決定有死，眼具足者亦應有死。然而，應異於「依五識而不死不生」之經。如於眼識具足者不死，於滅盡定者亦無。</note>
-<note n="0250001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0250001">無想定入定者有無貪等，而〔入〕滅盡定〔者〕無〔無貪等〕。故難此而言：「有……定、慧耶？」等。</note>
-<note n="0253001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253001">言「有業之時，有業之積集耶？」或「有業之時，有業之積集或業住之時，有業之長養，又依業之積集而有異熟」，彼業滅時，芽生已，種子存。依無明結果〔異熟〕生已，業積集而住」之邪執而加以肯定。</note>
-<note n="0253002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253002">言「業即業積集，即業異熟耶？」即「依業而有業之積集，若『其異熟生已而住』之邪執，是等之三（業、積集、異熟）亦為一耶？」之問。</note>
-<note n="0253003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0253003">言「……異熟是有所緣耶？」非難「如此之異熟，異熟法法亦繫於所緣耶？」之問。他論師依邪執而肯定其一而否定其一（後者）逆亦同理趣。餘者如本文可知。</note>
-<note n="0254004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0254004">M. N. I. p. 390。</note>
-<note n="0257001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257001">Dhammapada, verse 164。</note>
-<note n="0257001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0257001-1">理趣是同前論，認為是大眾部所立。</note>
-<note n="0259002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0259002">dhammapada, verse 164。</note>
-<note n="0260001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260001">問「與苦耶？」〔他論師〕以不見如是之經而加以否定。</note>
-<note n="0260002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260002">於「與己樂……」等之問，與己或他人之物是不可能，彼自身之物名「如何而與於此處」而否定。</note>
-<note n="0260003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260003">於「非己之物」等之問，又言「名如是不為者而與得存在」之邪執而肯定。</note>
-<note n="0260004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0260004">言「樂法之將來者」者之語言，即世尊明他人對得樂法為緣之性，如食等非與樂之事。M. N. Vol. I, P. 447。中阿含一九二．迦樓烏陀夷經（大正一、七四〇c～七四一a）。</note>
-<note n="0264001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0264001">Theragātha Verse 678-678。</note>
-<note n="0265001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0265001">言「無貪是因耶？」為「取於汝色是無貪之因耶？」之問，他論師否定。</note>
-<note n="0266002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0266002">言「大種是所造色之所造因」者，此處，依緣義而言因之性者，非依根之義。</note>
-<note n="0277001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0277001">稱阿羅漢者，是捨離福罪者。為難「彼若作福業者，亦應作惡」，而言：「有非福業之積集耶？」他論師不見〔阿羅漢〕殺生等之所作而加以否定。</note>
-<note n="0277002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0277002">於「行福行……」等，趣於有業 bhavagāmiKamma，於阿羅漢無而否定。</note>
-<note n="0278003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0278003">於「以施而施耶？」等，由依作心而施轉自論師是否定。他論師唯見「省其心而起作用」而建立邪執，然而「其有所建立不如理者」，為不建立。</note>
-<note n="0280001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0280001">言「諸比丘！我不〔說〕……」經者，是指此而說。〔即〕我不說：「已作之故，不受、不知、不經驗思業之異熟，是等業之滅，轉為斷絕。」其〔滅、轉之斷絕〕是順現法受〔業〕，於現法而〔起〕，非於其後，順後生受業，得異熟之機會時而〔起〕。這樣，換言之，有於如是輪迴所轉之中，有得異熟機會之業時，若住於其處，如得脫惡業之世界者非有。如是而為，依「凡未得異熟機會之業亦必依所受」之想法，作建立「阿羅漢無非時死」之邪執。此錯誤之作 A. N. Vol. V. P. 292。</note>
-<note n="0281001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0281001">而難「彼若如是，『業亦依於業』」，言「業亦依於業耶？」他論師若「業亦名為業」者，「其業不能不為異熟」而以否定。</note>
-<note n="0281002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0281002">言「因宿作耶？」為難「若『一切者依業』，其應為因宿作事」而言。他論師自墮於宿作因論之畏而否定。</note>
-<note n="0281003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0281003">言「依於業異熟耶？」若「一切者依於業」，於過去之有而轉者為因，業亦依於前有之業而為業異熟。是故，於汝，為難「一切者依於業異熟」而問。他論師如由種出芽，指依現在所轉之業現而否定。重問之時，彼業如〔種〕依前種，依前業而轉故肯定。</note>
-<note n="0281004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0281004">言「殺生耶？」等，若為「一切依於業」，為難「殺生等依於業異熟之作」而言。</note>
-<note n="0281005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0281005">他論師由「惡戒思亦由前業所現，一言以蔽之，不外於異熟」之邪執而肯定。於底本，有「實不應如是言」，依今註以改正。</note>
-<note n="0281006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0281006">而又為難「若依於汝，殺生由異熟而現，如殺生之異熟亦有果而言『有果耶？』」他論師引殺生之地獄等性見有果而肯定。然而由不見「言『此業異熟之果』之箇處」而否定。</note>
-<note n="0283007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0283007">「……依於業而轉」之經，反業於「無業」之無業論者，現「有業」之業論者業之所作，非言「一切由業而現」。故不成立。Suttanipāta Verse 645。</note>
-<note n="0284001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0284001">而又依世尊所言「無常是苦故」，是故為難「『唯根縛是無常』」，言「唯根縛是常……」等。</note>
-<note n="0284002" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0284002">言「非根縛非是無常……耶？」「土地山嶽岩石等亦非根縛，亦非無常耶？」之義。</note>
-<note n="0285003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285003">言「不應言：『唯根縛是苦』耶？」之問，以「然」肯定是自論師。非根縛是苦憂之所緣。於熱時之火、於寒時之風為苦所緣。財禍之破損常憂之〔所緣〕。故雖無無常義亦應言：「非根縛是苦。」然，不由業煩惱而生，故不應言：「苦聖諦。」於是處，則依道而不是邊知。草木等之滅及時節、種子之滅不各為苦滅聖諦。是故，根縛是苦，且又是聖諦，其他唯苦，示此異而肯定。</note>
-<note n="0285004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0285004">「如根縛……」等之語，示「為遍知根縛而有梵行住，遍知者無再生事」。是故，依自論師而否定。然，依「無常是苦」語所攝，避非根縛之苦亦不可能，是故不成立。</note>
-<note n="0286001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0286001">若為如是，為難「集亦至於苦」而言「苦集亦……」。他論師指因相而否定。再者，重而問之，乃指繫屬於轉而肯定。</note>
-<note n="0286002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0286002">於「唯三耶？」之問，自違經之畏而否定，依邪執而肯定。</note>
-<note n="0289001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0289001">言「〔祭祠〕火……」之經，由他論師之宗取來之物。此處，大雲者，指雲雨而言。地受雨非受雲。</note>
-<note n="0290001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0290001">言「淨化」者，為作大果。對於僧伽，若施少則為多，若施多則成更多。</note>
-<note n="0293001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0293001">M. N. Vol. III, P. 253。</note>
-<note n="0294002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0294002">S. N. Vol. I, P. 233。</note>
-<note n="0295003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0295003">Vimāna-vatthu 34, 25-27。</note>
-<note n="0297001" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0297001">言「應請」等，「若受者不淨化，如何彼為應請等之性耶？」而言。</note>
-<note n="0298002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0298002">「他是他之作者……」等，若施者之施思依受者而作，則〔他論師之所論〕為當然，然彼施思之清淨是緣於名受者之事，依大異熟之義而有所淨化，是故，此不非難，淨化受者亦施。</note>
-<note n="0298003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0298003">M. N. Vol. III, P. 256。中阿含．一八〇．瞿曇彌經（大正一、七二七b．c）、分別布施經（大正一、九〇四a）。</note>
-<note n="0301001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301001">M. N. Vol. I, P. 326。</note>
-<note n="0301002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301002">S. N. Vol. V. P. 185。</note>
-<note n="0301003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0301003">言「生於世間……」者，他論師指兜率天居而言。然大師指其唯人間界而言。言「伏世間」，他論師以「伏人間界」之見解而言。然而，大師伏所緣之世界而住。言「不染於世間」者，指「他論師依人間界而不染」而言，但大師「依不染於世間法之煩惱」而住。</note>
-<note n="0303001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0303001">A. N. Vol. I. P. 133。雜阿含三五．一三（大正二、二五五b）。</note>
-<note n="0304001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0304001">而，名此悲者依據無雜染性、有情所緣性、心解脫性、十一利益性而與慈等為同類者。故非難「若世尊無悲，則慈等亦應無有」而言「佛世尊無慈耶？」等。</note>
-<note n="0304002" resp="#resp1" place="foot" type="orig" target="#nkr_note_orig_0304002">於「無悲者耶？」之問，則以不見如是之事而否定。其餘於此處意明矣。</note>
-<note n="0309001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0309001">然而，非難「若不達第二禪定而近行飛躍，由初禪定正入第二禪定，亦應由初禪定而入第三禪定，由第二禪定而入第四禪定」，而言「由初禪……」等。</note>
-<note n="0309002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0309002">言「為初禪定……」等，非難「若於初禪定之無間以第二，又由第二等而入定於第三等，應依一運心而入定」而言。</note>
-<note n="0309003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0309003">言「於隨欲過失……」者，初於欲之過失而作意，後生於禪定剎那之時，則唯相作意。</note>
-<note n="0310004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0310004">言「初禪定是第二禪定耶？」非難「若如後速行〔心〕由前速行〔心〕而生，生於無間，除前後之性，依相，此應立即為彼」而問。</note>
-<note n="0312005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0312005">言「離欲……」等，由初明〔禪〕順序禪定〔次第〕所說，非明生於無間事。是故不成立。D. N. Vol. I, P. 74。</note>
-<note n="0313001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0313001">禪定亦是心所法，觸亦是心所法。是故，非難「若有名為禪定中間，則亦應有觸中間等」，而言「有觸中間……耶？」</note>
-<note n="0313002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0313002">言「於第二禪定與〔第三禪定之中間……〕」，即非難「若有名禪定中間者，於第二第三等之禪定亦應有是等之中間」而言。彼唯依邪執、依不在而否定與肯定。</note>
-<note n="0314003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0314003">言「有尋有伺……」等，非難「三三摩地於三摩地之性平等，唯無尋唯伺三摩地是禪定中間，其他不然，此處有如何之別因耶？」而言。</note>
-<note n="0315004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0315004">言「現在二禪定……」，是指初、第二而言。他論師由「現在中間之無尋唯伺三摩地名禪定中間」之邪執而肯定。</note>
-<note n="0315005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0315005">「初禪定滅……」之問，以「於三者之一剎那而轉依為不應理」而肯定。</note>
-<note n="0315006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0315006">言「無尋唯伺三摩地是初禪定……耶？」指依四〔禪〕位而問。自論師則由「於如是之理趣而彼之不在」而否肯。</note>
-<note n="0315007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0315007">「非三摩地……耶？」此處之意如次。若是等三三摩地中而二三摩地是禪定而不是禪定中間，則同其他之〔無尋唯伺〕亦應是禪定而不是禪定中間。</note>
-<note n="0317001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0317001">言「依眼而見色耶？」等，即非難「『入定者暫無轉依五門』，無其〔五門轉依事〕，若彼聞聲，則色亦可見」而言。</note>
-<note n="0318002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0318002">言「聲是刺」，即依散亂之因而言。麤聲刺激其耳時，有由初禪定而出事，是故而言，故不成立。</note>
-<note n="0318003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0318003">言「第二禪定……」等，為「其他之刺亦如於等至內不存在，聞聲之事亦如是令覺」而言。</note>
-<note n="0319001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0319001">非難「若依眼見色，依色應可見色」，言「依色見色耶？」等。他論師指色處而否定，更問指唯眼而肯定。</note>
-<note n="0319002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0319002">言「承認耶？」於此處之意如次。言「見耶？」者，指吾人之「認知」而問，唯非單向眼，故最初，汝眼即依色而認知色耶？他論師唯依前之理論而否定或肯定。</note>
-<note n="0319003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0319003">而，非難彼「若如是，色亦為意識，因此以認知」，言「色是意識耶？」他論師不得其偽而否定。</note>
-<note n="0320004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0320004">言「諸比丘！此處，依眼見色」者，依資糧論之理趣而言。如言「依箭而討，依弓而討者」，言「依眼識而見亦依眼而見」。是故不成立。</note>
-<note n="0324001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0324001">「無斷煩惱之事耶？」此他論師之問，如於捨塵芥，有捨塵芥之努力；於斷煩惱，無有努力於過去等各種煩惱。然，以「於涅槃所緣之聖道轉時，未生之煩惱不生」之意思而稱斷。是故，「實不應如是言」而否定。</note>
-<note n="0324001-1" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0324001-1">言「無相」是無一切相之涅槃，「無願」亦同名。如何而能持出此耶？為舉過失於無分別論者。唯依一部分於無分別，言「空性是行蘊繫屬」之邪執，涅槃亦至行蘊之繫屬。為舉此過去而持出「無相」、「無願」。他論師不認其繫屬性而否定。</note>
-<note n="0325002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0325002">言「行蘊非無常……」等，涅槃空性得之無常性示其過失而言。</note>
-<note n="0325003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0325003">言「行蘊之空性……」，非難「若他蘊之空性是其他以外蘊之繫屬，行蘊之空性亦應是其他蘊之繫屬」而言。言「不應言：行蘊之空性……耶？」等，若「行蘊之空性非其他蘊之繫屬」者，明白「餘蘊之空性亦不名行蘊之繫屬」之逆論而言。</note>
-<note n="0326004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0326004">「諸比丘！此世界是空」之經者，是由他論師之宗所提出。此處，言行是如「一切諸行無常」之義，言「五蘊之彼等是我我所空」者是教之範圍，不妨礙而認識相容。然，此明空性是行蘊繫之屬性，是故不成立。</note>
-<note n="0331001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0331001">言「不應言：『〔得是無為〕耶？』」，依彼之邪執而認為「得是無為」，為其說明而言。此處，自論師反對「實不應如是言」，完全於得而不許色等之性。因此，名得亦無如何之法，又不認無為之性。然共他論師則「唯依反對而建立無為」之邪執。「此不如理之建立者，則唯等於不建立」。</note>
-<note n="0335001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335001">言「殺母者……」等，非難而言「於決定邪見者及殺母者等有邪性決定，對汝而言殺母者等亦應為畢竟決定」。他論師依「決定邪見恰如〔於〕輪迴〔道〕之稱，於後有而決定，然此〔畢竟決定者〕唯於〔現有〕之一自體而決定」之邪執「實不應如是言」而否定。</note>
-<note n="0335002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335002">言「生疑……耶？」「此決定耶？不〔決定〕耶？」如是生耶？他論師以不見不生之理由而肯定。</note>
-<note n="0335003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335003">問「不生疑……耶？」指〔他論師〕於習熟其見入決定不生而肯定。依此，所問「是不斷耶？」若依〔聖〕道而不能斷者而否定；依見而不現行而肯定。而自論師名斷者是無依聖道以外，是故依此而非難，言「依預流道耶？」等。彼若依任何一道而非斷者而否定。</note>
-<note n="0336004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336004">言「斷見生耶？」是〔常斷二見之〕決定二者生之問。他論師依據〔世尊〕所言：「鬱陀伽羅住人是非有論、無作論者、無因論者」，此三種決定邪見生於一人，是故而肯定。而彼不名為畢竟決定耶？非難於彼而言：「若生……」，對於畢竟決定者，二樣之決定為不當。</note>
-<note n="0336005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336005">於「不生〔斷見〕耶？」之問，依常見而執常，指取其所斷而無〔斷見之〕生而肯定。問「斷耶？」若依聖道而不斷者是否定；依前述之理趣而不生而肯定。</note>
-<note n="0337006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337006">言「不應如是言……耶？」是他論師之問。由彼經之存在而肯定者是自論師。然而，彼於後有亦非沈。於唯今有，言「彼不捨見」者，乃此處之意思。故不成立。</note>
-<note n="0337007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337007 #note_star_3 #note_star_4">A. N. IV. P. II; Puggalapaññatti VII. I 水喻經（大正二、七二九）。</note>
-<note n="0338008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0338008">言「於一切時浮上終而沈耶？」等，是明「唯不捕捉其語而追求其意義」。</note>
-<note n="0340001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340001">「無世間之信耶？」等，世間信等諸法亦依增上之義為根，於信等之外非有名為信根等。是故，明「世間之信等亦同有信根等之性」。</note>
-<note n="0340002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340002">言「有世間之意耶？」等，即世間意等之諸法如意根等，如是世間之信等亦應是信根等，以對比明其義而言。</note>
-<note n="0342003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342003">D. N. II, P. 30。長阿含．大本經（大正一、八c）。</note>
-<note n="0343001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0343001">稱無間業者是業道逮得。非難「若不故思而作業道之部類，其餘之殺生等亦應為不故思」，「不故思殺生物亦……」等。他論師若無如是之邪執，則否定。其餘者如本文可知。</note>
-<note n="0344002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0344002">言「不應言：『殺母者〔墮無間者〕』耶？」是他論師之問。指於疾病治療時，不故思〔在〕殺者而肯定是自論師。於「非奪母命耶？」之問亦不故思奪者而肯定是自論師。然而不執共同〔肯定之〕意思而「若〔欲奪母命〕……」者是他論師之建立。此若不如理建立者唯不建立。</note>
-<note n="0345003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0345003">然指於共破僧者中有法想者，言「破僧者墮無間者耶？」是自論師之問。依「若破和合僧，一劫煮於地獄」之〔經〕語而肯定是他論師。又，〔對於〕「一切之〔破僧是無間耶？〕之問，即指自己有法想者（sakapakkhe dhammasaññī 譯者曰：主張自己之見忍喜修正思之破僧伽者）而否定；他分有法想者（parapakakkhe dhammasaññī 譯者曰：知自己之主張是非法，他人之法是正確，知而固執自說之破僧者，參照 Vinaya, II, P. 205 破僧犍度）而肯定。於有法想破僧伽者之問二者亦同一理論。</note>
-<note n="0345004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0345004">「非世尊所仰耶？」之經，示「說非法者一向墮無間者」而言。Vinaya, II, P. 205。</note>
-<note n="0345005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0345005">「墮惡生者、墮地獄者……」之偈亦唯說非法者之意思。然而，他論師不取意義而建立邪執，彼唯以不如理之建立而不成建立。Vinaya, II, p. 205。</note>
-<note n="0347001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0347001">言「慧……」等，即示〔是等〕是智之同義語而言。依此其次之事則明。若彼無智亦應無慧等。若有慧等，亦應有智。然而，慧等不異於智。</note>
-<note n="0347002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0347002">「〔入〕初禪耶？」等，為示等至慧而言。言「布施」等，即〔對〕業所作智〔而言〕。</note>
-<note n="0348003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0348003">言「遍知苦」者，是明唯出間道智而唯出世間為非智。</note>
-<note n="0349001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0349001">非難「若於彼處無有獄卒，亦應無業之苛責，有苛責者方〔受〕苛責」，而言「地獄無業苛責耶？」等。</note>
-<note n="0349002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0349002">言「人界有〔業苛責〕……」者，為「依眼前所明白者而知」。言「於人間界，於〔能〕苛責者如〔被〕苛責者，同樣於彼處〔地獄〕亦然」，此乃於此處之意。</note>
-<note n="0349003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0349003">言「非毘奢浮，非餓鬼王」者，即依他論師，所用自論師之經。然而，〔他論師〕橫遮其教依自論師而確認。此處，言「毘奢浮」者，為一天。言「餓鬼王」者，於餓鬼界餓鬼大神力者。「蘇摩」等是可明瞭。此處所言之〔意思〕如次。彼等毘奢浮等依己業非殺，於終此世而達於他世界之人。言「彼由以終其處，其等自業者殺彼於其處」而言，即明業之所作，而非明獄卒之無者。</note>
-<note n="0350004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0350004">M. N. Vol. III, P. 182。中阿含六四．天使經（大正一、五〇四c）、鐵城泥梨經（大正一、八二八a），A. N. Vol. I, P. 141。增一阿含．三二．四（大正二、六七四c）。</note>
-<note n="0353001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353001">Dhammapada. Verse 273。</note>
-<note n="0354002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354002">「正語是道支而非道耶？」等，即〔自論師〕依他論師之宗而言。正語等於他論師之宗亦是道支。然，不以色成道而說明。示「『正見是道支……』等，於道名無非道性（maggassa amaggatā）」而言。</note>
-<note n="0355003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355003">於「先彼之……」之經，「於清淨戒者有道修習而他者無」。示「應來道之清淨性」，言「身業口業命是善清淨」。除此，非示五支之性。是故，言「滿足彼此之八支聖道」。</note>
-<note n="0355004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355004">D. N. Vol. II, P. 151。遊行經（大正一、二五a）。</note>
-<note n="0356001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0356001">而難「若彼之十二事〔是出世間〕者，應有十二之道智」，言「有十二之〔出世間智〕耶？」等。他論師指道是一而否定，於一一之諦依諦智、所要智、所作智（saccañāṇa, kiccañāṇa, katañāna）指智之種種而肯定。（譯者曰：「就苦諦而言，是苦諦」是諦智；「應遍知者」是所要智：「遍知」是所作智；於四諦有三轉十二智），「十二之預流道耶？」等亦同理趣。</note>
-<note n="0357002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0357002">就「非世尊所仰耶？」之經，明先分與後分智之別異，非明聖者之十二智。故不成立。Mahāvagga Vol. I, P. II. S. N. Vol. V, P. 421 轉法輪經（大正二、五〇三）、雜阿含經一五．一七（大正二、一〇三c）、四分律三二（大正二二、七八八）、五分律一五（大正二二、一〇四）。</note>
-<note n="0359001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0359001">〔所問〕「念處……」等，名教者是念處等之聖法而是善等之說。此處，除依世尊所說之念處等，依作其餘之念處，或依以不善等為善性等而稱「教為新」。非難於「何人令此如是而為耶？」「有何人如是而為耶？」或者「何人得為如是耶？」等三種之問而言。其餘一切如本文可知。</note>
-<note n="0361001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0361001">言「觸……」等，言示「一切之觸等於一剎那轉之過失」。</note>
-<note n="0363001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0363001">於「……一切佛境涯耶？」之二種問，明阿羅漢一切知性智之無有，是以不可為無明疑之不捨。然而，他論師則指不捨，「是故」建立邪執。此不如理之建立者則不成建立。</note>
-<note n="0372001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0372001">言「有善心」者，是依行福行等，故依其義而非難彼而言「行福行」等。</note>
-<note n="0373002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0373002">言「正念正知……」者，是於速行〔心〕之剎那，依作正念正知明無昏迷之死而言，非明善心。</note>
-<note n="0374001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0374001">言自然心（Pakaticitta）者，是有分心（bhavaṅgacitta）。一切有想之有情住於有分。依有分終之死沒心（cutucitta）而死。非難彼，依此意如是而言。於四蘊有。阿羅漢之自然心雖亦不動，然而此間即對五蘊有而說。是故，言「不應言：『……住於不動而般涅槃』」。</note>
-<note n="0376001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0376001">「眠……」等，指有分（bhavaṅgavāra）之時而言。於胎中，大概唯轉有分〔心〕。是故，眠無作時之轉（kiriyāsamayapavattābhāva），〔等於〕「眠」，若無修懃，是放逸。若無執業處之念、正知，是失念、不正知。如斯者如何而有法現觀耶？</note>
-<note n="0379001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0379001">言「睡夢者之心難決定」，指是罪而言。雖睡夢者亦依殺生等而轉惡心，然而無有犯事。此處為知罪之不可。依此理由，其以「難決定」。非是無記。</note>
-<note n="0380001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0380001 #note_star_6">A. N. Vol. IV, P. 247。</note>
-<note n="0381002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0381002 #note_star_7">S. N. Vol. V, P. 54。</note>
-<note n="0383001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0383001 #note_star_8">M. N. Vol. I, 190。中阿含．三〇．象跡喻經（大正一、四六七c）。</note>
+<note n="0002001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002001">言「有誰……耶？」是為明決定無為之性質而言。</note>
+<note n="0002002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002002">於問「道是無為耶？」由道有生滅而否定。</note>
+<note n="0002003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002003">於問「決定是有為耶？」指已滅之道亦有決定而否定。</note>
+<note n="0002004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0002004">於問「預流決定……」等，順論與逆論皆依今之理趣而可知其義。</note>
+<note n="0003005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0003005">問「有五種無為耶？」之時，若不見五種無為之出典，是否定；第二問時，〔預流等〕四種之正性決定，由「決定」之語與涅槃之無為性而肯定。</note>
+<note n="0003006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0003006">邪性決定之問，唯依決定之語而為無為，是明顯之不合理，出自〔自論師〕所言。</note>
+<note n="0005001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0005001">「無明是無為耶？」等之問答者，是無明等（十二支）為示緣起性而言，依此義，「此處言緣起一一支」者，是於緣起毘崩伽之所說。</note>
+<note n="0006002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006002">S. N. Vol. II, P. 25（漢譯南傳第十四、相應部二．一三頁）、雜阿含第十二（大正二、八四頁）。</note>
+<note n="0006003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006003">「緣無明而有行者於此處此是法住性」者，是等理趣依經邪執而建立。然，所明其義為破邪執而言。於此處之意思如次：此處，言「此住界、法住性、法決定性」者，是於無明等之外，非別有一法在。（譯者言：屬於東山住部之安達派認為於無明等之外，有法住性（dhammaṭṭhitatā）之別法。十一品第七參照）。然而，無明等之緣即如是名，如來出世時或不出世時皆由無明生行，由行等生識等。是故，言「緣無明而有行」者，於此語，乃無明依行法原因之義（kāraṇaṭṭha）而為住性（ṭhitatā）者是法住性；又依彼法原因之義而為決定性（niyāmatā）者，是法決定性。「其〔無明〕是法住性、決定性而無為，又涅槃是無為耶？」之問。</note>
+<note n="0006004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006004">他論師是依邪執而肯定，問「二無為耶？」畏懼違反經而否定，依邪執而肯定。於餘又亦同一理趣。若相同於前節者，如前之理趣應知之。</note>
+<note n="0006005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0006005">原本書為 Na h'euaṁ vattabbe-Pe- 是 āmantā 之誤。</note>
+<note n="0009001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0009001">於苦集道，事諦（vatthusaccaṁ）是有為，而相諦（lakkhaṇasaccaṁ）是無為。於滅則不稱事諦。唯無為而已。是故，言「然」。然而，此不過是彼等之邪執。無論如何，彼等於苦認為事諦，於集道亦然，彼等之惱、〔惱之〕因、〔由惱〕出離名相諦，於惱相等之外無可名苦等。</note>
+<note n="0009002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0009002">於「苦諦是無為耶？」之問，指依邪執之相〔諦〕而肯定；於「苦是〔無為耶？〕，指事〔諦〕而否定。</note>
+<note n="0011003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0011003">S. LVI, 20. Vol. V. P. 430。雜一六．一一（大正二、一一〇c）。</note>
+<note n="0014001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0014001">言「……令出生」等者，唯就得入定。然而，如起色等之有為法，誰不名起其滅盡定。</note>
+<note n="0014002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0014002">言「依滅盡定而淨化、出脫」者，可知是得果。此全非由無為，故被否定。</note>
+<note n="0015003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0015003">故「滅盡定是無為」者，「非有為故言無為」之邪執。然而，此非無為性之理由。所言亦等於非所言。</note>
+<note n="0018001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018001">S. XII. 43, I, Vol. II, P. 72; S. XXXV, 61, Vol. IV, P. 33; M. 38, Vol. I, P. 259。中阿含二〇一、<g ref="#CB01021">𠻬</g>帝經（大正一、七六七a）。</note>
+<note n="0018002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018002">言：「二木之中間……」者，此處，木色依眼而見，由中間無色，為「虛空」者，即意門識生而非眼識。</note>
+<note n="0025001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0025001">更依他論師而提出「如胡麻油於胡麻之……」等此比喻之問題。〔然而〕如於受與想，於胡麻與胡麻油，隨其相而相異不明確，全胡麻〔草〕、實、皮若於任何唯成胡麻之名稱者，若生胡麻〔實〕而可取〔實〕者，〔同言胡麻，但早已〕依前形是胡麻〔草〕者不能承認，是故〔此問不成喻〕等於無提出。</note>
+<note n="0026001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0026001">言「……俱生耶？」指相應之俱生而言。</note>
+<note n="0027002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0027002">「觸所法耶？」乃依不見是種言語是他論師之問。「如依語言，依此於心者，是心所法，如是，言依止於觸者是觸所法耶？」無過失而肯定為自論師。</note>
+<note n="0027003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0027003">D. N. Vol. I, P. 123。長阿含二四、堅固經（大正一、一〇一c）。</note>
+<note n="0029001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0029001">彼依「施無畏」之經而肯定。於觸等之問題，不見「施觸」等之言而否定。</note>
+<note n="0029002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0029002">「非可愛果……耶？」等者，是為明非心所法之施性而言。非心所之食等法者，不於未來與異熟。可知為可愛果性之決定，如是而言。於此處之意如次。若「非心所食等之法是應施」，則以利益心對於施非可愛非親之〔苦〕藥者，如由拈筏種〔生〕拈筏等，全應現非可愛之果。然而此時言捨思施與利益果故，所施法雖為非可愛時，唯有可愛果。</note>
+<note n="0029003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0029003">如是依他論師，心所法施之性質所建立，〔對〕由論師依他之方法，以證所施法施之性質，言「世尊所言：『施為可愛果』……」等。他論師即亦以不見衣等之可愛異熟而否定。</note>
+<note n="0030004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030004">A. N. VIII. 32, Vol. IV. P. 236。</note>
+<note n="0031005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031005">A. N. VIII. 39, Vol. IV. p. 246。</note>
+<note n="0031006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031006">A. N. VIII. 35, Vol. IV. p. 239。</note>
+<note n="0031007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0031007">「所施法是可愛果耶？」乃唯否定可愛果之性。然而，「是故，不應言……」者，於此處唯依可愛果之性而言是不合理。尚且，依應與之義，所施法是施。為解二種施之混同性而有此說。</note>
+<note n="0033001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0033001">然，名福不外是觸等之善法，是故「汝觸等長養耶？」之為難，則「受用所成觸」等為最先。此全部以其等非長養，依他論師而否定。</note>
+<note n="0033002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0033002">「如葡草……」等者，乃隨無作業及修習，恰如葡草依其自身而長養，責難「如是長養耶？」而言。於此處，亦以如是無長養而否定。</note>
+<note n="0034003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0034003">於「不存念」之問，則〔施者之〕最初之思是依受者受用而長養。如是，依「此為福」之邪執而肯定。</note>
+<note n="0034004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0034004">其次，所問「不運心」等，即指施者之施思而否定。此處，言「不運心者」，依前行於施思之運心而不向有分〔心〕者，即不轉。言「不觀念者」，是「無觀念者」，言「不存念者」，是「無存念者」。言於運心斷有分而生自身而來之道，且存念某施思〔之思〕。依如是〔心之〕作用而依此心不存念者是有福耶？言「不作意者」，乃「不作意」也。於運心而生其之無間，名作某意（譯者曰：速行心），即「不如是」之義。〔言 manasi〕此於格是業格之代用。言「不思者」，是不起思。言「不希望者」，是「稱希望不為善欲者」。言「不願者」，是「依施思而不立心」之義。</note>
+<note n="0034005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0034005">言「非有……觀念耶？」部分之「觀念者」，是「有觀念」或「若有觀念，則」或「於觀念之無間有福」之義。</note>
+<note n="0034006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0034006">於「二觸……」等，依一剎那、施者非有二觸等而否定，指施者與受用者兩者之觸等而肯定。尚又有言「彼五識俱起」之邪執，亦依彼而加以肯定。</note>
+<note n="0034007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0034007">於是，自論師即閉方便門，依直接反證而責難，乃有〔有呵嘖無呵嘖……現前耶？〕之問。於此處指善惡不相應於一剎那而否定，然而依「生受用所成之心不相應」之邪執而肯定。然後，自論師依經而使墮負。</note>
+<note n="0034008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0034008">A. N. IV. 47, Vol. II. P. 50。</note>
+<note n="0036009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0036009">於經證，「植於園林」等，乃指依追憶與反復等而時時生福，言「長養其福」。S. N. I. 5. 7. Vol. I. P. 33。雜阿含經三六．五（大正二、二六一b）。</note>
+<note n="0036010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0036010">A. N. Vol. II. P. 54。</note>
+<note n="0036011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0036011">言「彼生無量福」者，乃依〔四〕於緣施不放逸住者，依「如是我受用其衣」之隨喜而言。彼〔他論師〕乃思惟彼是受用所成〔之福〕。</note>
+<note n="0037012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0037012">然依共受者而受，亦依不受用所施法而有福。是故，自論師之論為有力。此處，於「受者所受時」之語，可見「依受者而所受時」之意。</note>
+<note n="0040001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0040001">言「……施之所施」者，是「見施所施」之義。依己之隨喜事，彼等於彼處受用生。故依此之理由，彼之邪執者欲建立亦不建立者，彼等非依此處所施之物而生故。</note>
+<note n="0041002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0041002">Petavatthu I. 5. P. 5。</note>
+<note n="0041003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0041003">A. N. Vol. III P. 43。</note>
+<note n="0043001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0043001">依「觸……」等之理趣於所廣說異熟，觸是順樂受等之各種，其與想等、樂受等相應，受等是與想等〔相應〕，一切有所緣。於此等稱前行之運心等，有差向其心，此業緣之思。其處對可愛異熟之處，希望是依其願而轉為根本欲望。問「於汝而地是如是者耶？」他論師否定。逆論之問等唯明其義。</note>
+<note n="0044002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0044002">於「業異熟與他人共耶？」之問，指觸等而否定，指業等起之色及地等之共性而肯定。「不與何人共有……」之等經，自他宗引用而加以表示。</note>
+<note n="0045003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045003">Khuddakapāṭha VIII, 9。</note>
+<note n="0045004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045004">於「一切之有情受用地耶？」之問，指不依止於地而否定，指依此而肯定。</note>
+<note n="0045005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045005">「不受用地而般涅槃耶？」對於無色而般涅槃者而肯定。</note>
+<note n="0045006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045006">言「不盡業異熟」者，依他論師之宗而言，因為「不盡業異熟而般涅槃」者是彼等之邪執。然於自宗，則給予〔熟〕業機會而生異熟〔之〕不盡而無般涅槃。若依彼等之邪執，地是依共異熟，是生之異熟。不盡其異熟住而責難般涅槃者不合理是當然。他論師依邪執而否定。</note>
+<note n="0045007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045007">於「輪轉有情業異熟」之問，指不共之觸等而否定，指共者而肯定。地、海、月、太陽等者一切是共業異熟乃彼等之邪執。</note>
+<note n="0045008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0045008">言「引自在業」，於此處名自在是廣大之富。名支配者置餘人等於自己勢力中，以依他人所尊敬之義為支配性。此處，業稱「由得之而引者」。非依能生。是故，業之異熟不成立。</note>
+<note n="0047001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0047001">於逆論之問，言「無所緣」者，是色法之〔老死〕暫時為無所緣。然而又非色〔法〕之老死，若無相應之相在者，是無所緣。</note>
+<note n="0048002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0048002">於「不善法之老死是不善法之異熟耶？」之問，名老死應是依「非可愛異熟」之邪執而肯定。依此同一理由，對於善法，否定老死是善異熟。自此以下，唯肯定不善異熟。</note>
+<note n="0049003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0049003">依「善與不善」之問〔善法與不善法〕為一。可是，此於一剎那即不在。無記無異熟（法）之老死是無理由應言異熟。是故依無記之問而作無。</note>
+<note n="0049004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0049004">言「引醜惡」者，此處稱醜惡者是不清淨色性。稱短命是轉壽命之長久是不可能。此處，不善業是對業等起之醜惡色而為業緣。若非相等〔者〕，彼〔之醜惡色〕即非彼〔不善業之〕異熟。可是，〔不善業〕是對於季節等起〔色〕等，依得此，及對壽命依能斷者為緣。如是，此〔不善業〕乃間接引〔醜〕之名。如對於異熟觸等非依能生。是故，於異熟性是不成立。</note>
+<note n="0050001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0050001">此處，言「聖法之異熟」者，乃稱為「道」聖法之異熟。依「唯煩惱盡為聖果」之邪執者，他論師是肯定。</note>
+<note n="0050002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0050002">言「沙門者」，是沙門之性。此乃道名。〔佛陀〕言：「汝等諸第子！為沙門者，我當說沙門果」。「婆羅門者」亦〔與沙門〕同一理趣。</note>
+<note n="0051003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0051003">於「預流果非異熟耶？」等，指預流道等之至損減是（還滅），聖果無異熟性而肯定。以施果等而否定。「其〔異熟〕至於累積（流轉）」者，就何義有所選擇耶？言「至於名異熟之累積」，又言「累積累積行」者，是至於累積。言「損減異熟行」者，是「至於損減」。是故，如是肯定如是否定。</note>
+<note n="0052004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0052004">「欲界之善是有異熟而至於累積耶？」等之問是他論師。肯定與否定是自論師。世間善是有異熟，言：「累積死生與輪迴而行」之意，是「至於累積者」。出世間善是言「損減死生、輪迴而行」之意，是「至於損減者」。如是，此〔出世間善〕唯有異熟，〔然而〕唯依「非至於損減」之意，〔為〕無異熟。指此意，於此處可知自論師之肯定與否定。</note>
+<note n="0054001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054001">「其之異熟」者，是其異熟法法異熟之異熟者，亦於汝之說為「異熟法法耶？」他論師是由無未來果而否定，於第二所問之時，以其為緣，又指他異熟之生而肯定。</note>
+<note n="0054002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054002">若如是，如善不善者，於其異熟亦有異熟，於其亦應有異熟，應循還而至於無窮。其問畏懼與其宗相違而否定。</note>
+<note n="0054003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054003">言「言異熟……」語言之吟味，然而若異熟與異熟法法為一義者，善、不善、無記亦應為一義而否定。</note>
+<note n="0054004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0054004">「異熟與異熟法法……」者，於此處之意如次。於四異熟蘊之各項，依於互相緣為緣之義而成異熟法法，又依緣所生義而思惟異熟，所問「異熟是異熟法法耶？」以「然」而肯定。於其處，自論師責難言：「汝於一剎那之四蘊准許異熟或異熟法法，是故彼等應為俱行等之性」。他論師則名善不善指異熟法法而否定。</note>
+<note n="0055005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0055005">「相互緣」者，依唯對俱生而緣之言。是故，不成立。於大種亦稱相互緣性，是等非於異熟或異熟法法。</note>
+<note n="0057001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0057001">M. N. 12, Vol. I. P. 73。</note>
+<note n="0058002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0058002">「非有阿修羅眾耶？」是唯證阿修羅眾，然非依別趣之性而證其趣。</note>
+<note n="0060001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060001">「有至中有之業耶？」若中有為一有，有至欲有等之業，如依大師而分別所示，為責難「亦應有趣於中有之業」而言。然而於他論師之宗，稱至中有之業，非特別之業。生於〔欲有等之〕各種有，依至其〔有〕之業而生中有，此乃彼等之邪執。是故，以「不然」而否定。</note>
+<note n="0060002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060002">問「有至中有之有情耶？」言其等唯稱至欲有、至於色有，依彼等之邪執而否定。問「生、〔老……〕」等之時，亦於中有依不承認生老死及死結生之相續而否定。</note>
+<note n="0060003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060003">依色等〔五蘊〕而問之時，中有之有情是〔微細〕不可見而色受等亦不如他粗大」者，乃彼等之邪執，是故而否定。依同樣之理，對五蘊有之否定亦可理解。</note>
+<note n="0060004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0060004">此處，稱「欲有是有、趣……」等之有結合論。於此處之意如次。若汝稱有中有，是一趣、有，然而於欲有等可得如趣、有之各種，於中有亦可得耶？〔又反對〕於中有如不得，彼於〔欲有等〕亦不可得耶？於同樣有之性，是等有此之各種，彼乃不在耶？此處有如何之別因耶？</note>
+<note n="0062005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0062005">問「於一切有情有中有耶？」以不承認中有於地獄趣、無想有情趣、無色趣之故而否定。依同一理由而肯定相反之問。</note>
+<note n="0065001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0065001">「人之眼……」等，乃明事欲而言。於此處，他論師依六處之事欲性而否定非欲界性，再問「〔人之〕意……」者，指大出世間〔之意〕而肯定其非欲界性。然凡三地之意唯欲界而已，是故自論師依經而令其墮負。</note>
+<note n="0066002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0066002">S. N. Vol. I, P. 16。雜阿含二二．二七（大正二．一六一a）。</note>
+<note n="0066003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0066003">「〔五〕種欲是有……耶？」等者是示有之欲界性而言。於唯〔五〕種欲，非有之言語，是故他論師即以「實不應如是言」而否定。</note>
+<note n="0066004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0066004">「有至〔五〕種欲之業耶？」等一切，唯〔五〕種欲乃示非欲界性而言。名欲界至欲有業是有，又有至欲有之有情，於其處生、老、死、沒、再生，亦不於〔五〕種欲。</note>
+<note n="0068005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0068005 #note_star_1">A. N. Vol. III, P. 411。中阿含一一．達梵行經（大正一、六〇〇a）漏分布經（大正一、八五二c）。</note>
+<note n="0072001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0072001">問「欲界即〔色界〕耶？」以見地區別之相違而肯定。重複確問，依己邪執而肯定。又，若如是以具二有故，其事是自論師言「具欲有者……」等。他論師不許可一人具二而否定。</note>
+<note n="0075001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0075001">可依彼處無處而責難之，以「於彼有鼻處耶？」等為始。依此而他論師是依「內三處鼻等之形相為處」之邪執而肯定。依外香處等所問時，鼻之淨色等不許依於彼處，是故亦依遮其對境而否定。</note>
+<note n="0078002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0078002 #note_star_2">「於彼處有鼻處有香處，依其鼻而嗅彼之香耶？等」，於此處是指他論師之宗中一分師等而言。彼等於其處〔色界〕許六內處之圓滿，稱為處應有作用之物。依其等之鼻等，彼等為嗅香、味、觸。依此邪執，他論師以「然」而肯定。</note>
+<note n="0079003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0079003">言「於彼處非有鼻相……耶？等」，為唯形相之證而不為處之〔證〕。</note>
+<note n="0082001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082001">於「善心等起之受、想、思……」等，唯受等得思、希望、願，非是思。因二思非同時故。</note>
+<note n="0093002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0093002">A. N. Vol. III, P. 415。漢譯南傳第二二卷，增支部四、一四九頁。</note>
+<note n="0094003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0094003">A. N. Vol. II, P. 158。漢譯南傳第二〇卷，增支部二、二六五頁；雜阿含第十四卷（大正二、九三）。</note>
+<note n="0094004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0094004">A. N. Vol. V, P. 292。</note>
+<note n="0094005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0094005">於原本是苦根 dukkhindriyaṁ，於 M. K. 為 dukkhudrayam（齎苦）。今取後者。英譯二二五頁註參照。</note>
+<note n="0095006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0095006">A. N. Vol. III, P. 209。漢譯南傳第一二卷中部四、二三頁；中阿含分別大業經（大正一、七〇六）。</note>
+<note n="0096001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0096001">於「有色之法……無耶？」之問，於所造色等，又於草木等亦依相續之力而轉，許有壽之持續、存活、生存、運行、轉、進行故，以否定。</note>
+<note n="0096002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0096002">於「有非色之命根耶？」之問，於非色法許有名心不相應之命根相續，以肯定。</note>
+<note n="0097003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0097003">於「有色法之壽乃〔非色之〕命根耶？」之問，於有情之相續，於有色法或非色法亦皆有心不相應之非色命根故，以肯定。</note>
+<note n="0097004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0097004">於「入於滅盡定者……」之問，指心不相應非色之命根而否定與肯定。又，自論師不承認此，為責難「於非色轉所有之時，某不可不是色」，而言：「若」……等。</note>
+<note n="0098005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0098005">於行蘊之問，指觸等之行蘊而否定，指身業等之行蘊而肯定。</note>
+<note n="0098006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0098006">身表、語表、正語、正業、命根，此等之諸法亦行蘊之攝者，是彼等之邪執。又，自論師不承認此，為責難「若非色之轉展是滅而有行蘊者，應是四蘊之存」，而言：「有受蘊……耶？」他論師指定中而否定，指入定出定前後之部分而肯定。</note>
+<note n="0098007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0098007">無想有情之時亦同一理趣。因若依彼之邪執，無想有情結生時，心生而滅。其共心不相應非色之命根生，壽命之存間轉故，其〔無想有情〕無命根耶？」之問時以否定，於「有……耶？」之問時以肯定。</note>
+<note n="0098008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0098008">受蘊等亦於彼等隨轉而否定，對死、結生而肯定。又，自論師不承認此，為責難「若於此一剎那，有受等則得五蘊之性」，而言「五蘊……」等。</note>
+<note n="0098009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0098009">於「……一部分壞耶？」之問，相應〔法〕壞，不相應〔法〕住者是彼之邪執，故肯定。</note>
+<note n="0099010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0099010">於「二之命根……」之問，是他論師，肯定是自論師。言：「依色、非色而有二命根，依彼而有情生，依其破壞而死。」於死之剎那破二之共命。</note>
+<note n="0103001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0103001">於「以作意諸行是無常，〔同時〕於涅槃見功德耶？」之問意是言「見功德有結之斷」者是彼等之邪執，但於「以作意諸行是無常者之結是非斷耶？」之問，以「然」而肯定，故汝之作意諸行是無常與於涅槃而見功德者應是同一致，如何，此「汝承認耶？」他論師是指一心剎那而否定，再問之時，依各別之心而給予肯定。更又自論師破彼之意義，〔彼等〕以作意無常與見功德者，依其於一承認之，而問「二觸、二心俱起耶？」他論師不見二心之俱起而否定。於「為苦」等之問，亦與此同一理趣。然而於此處如何之決定耶？為作意無常等者之結斷耶？或者，於涅槃見功德耶？或者，以兩者是一者耶？若暫「為作意無常等者有〔結之斷〕」，則應唯依觀察心而有。或者，見功德者，依傳說見涅槃之功德〔有結之斷〕者，則應唯依觀察心而有。或者，又「以二為一而有」，則應有二觸等之俱起。然而，於聖道之剎那，作意無常等之任務完成，〔於彼處〕，若再把握「是常」等，即許於涅槃依直覺不生法性而見功德。因此，為任務之完成，以作意〔諸行是為常〕者之所緣，轉化可知「於涅槃見功德者有結之斷」。「於涅槃而樂隨觀」之經，即於涅槃唯證樂觀察等之性，非證「唯依見功德而有結之斷」，是故等於不引。</note>
+<note n="0109001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0109001">所謂有緣（sapaccaya）為其物之生，必然之條件，所緣即有緣之意。所緣（ārammaṇa）用於與上同意義，有言色是「有所緣」。然而，一般「有所緣」者，是對境之義，唯非色法（心、心所）而言所得。</note>
+<note n="0111001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0111001">言「欲貪……等」者，〔隨眠〕非與欲貪別者。</note>
+<note n="0111002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0111002">於「行蘊是無所緣耶？」之問，指心相應之行蘊而否定，指隨眠及命根身業等色之行蘊繫屬性而肯定。</note>
+<note n="0113003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0113003">於「有隨眠」之問，然而由未斷隨眠而有隨眠性而容認，非言有隨眠之轉。未斷者亦非過去，亦非未來，亦非現在。然而，若道所斷之煩惱，其未斷故，言「有」。對於如是者，不應言「此是所緣」。是故彼反對。然而，此不單對隨眠，而且對貪亦同。是故，非證隨眠之無所緣性。</note>
+<note n="0121001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0121001">此處，若言其（語）非等起心者，觸等亦應非其剎那。</note>
+<note n="0128001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0128001">言「十蘊……」者，是言再生之〔五蘊〕及所作之〔五蘊〕。於第一問（十蘊……），依蘊相而唯五，指彼而否定。於第二問，由於有前後，指依求再生之（有分）與所作異而肯定。</note>
+<note n="0128002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0128002">言「所作之四蘊……」者，言除色善不善之四。</note>
+<note n="0128003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0128003">言「所作之智……」者，依他論師，於眼識具足之剎那，認阿羅漢無所緣智。</note>
+<note n="0129001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0129001">此處，若彼正語是色而非離者，正見等之道如有所緣等之自性，其色亦應如是責難而言為有所緣……等。此處，應言否定與肯定是適合於他論師之邪執。</note>
+<note n="0132001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0132001">言「五識是以已生為所依……」等。此意趣，若五識具足者有修道，道與某意識相應，其意識亦應是五識具足者。若如是，即言「五識是以已生為所依」等之相者，不如是言而應言「六識」。然而如是不言，唯說五識之故，不應言：「具足五識者有修道」，有他之理趣。五識以已生為所依，道亦為無所依，彼等〔五識〕以已生為所依，道無已生之所緣，彼等〔五識〕以前生為所依，道亦無所依，彼等以前生為所緣，道不以前生為所緣，彼等以內為所依，道亦無所依，彼等依色等外為所緣，道以涅槃為所緣，彼等以不滅為所依、依止而轉，以未破壞者為所依，道雖無所依亦通，彼等以未滅之色等為緣而轉，以未破壞者為所緣，道是以涅槃為所緣。彼等是各別所依，道是無所依或一所依，彼等是於各自色等之境而轉，不感受互相之境界，道是不以色等中之一為境，彼等以所作意界先行而生，不無存念、無作意而生，道是無運心，彼等依受納等之中絕而生，道是無中絕，彼等是互相前後而生，道是不與五識共前後，因為彼等〔五識〕之不生時，即利銳觀察之時及彼等不生無色之時亦生故，彼等依受納等而隔故，互相不生於等無間，道者不依受納等而隔，彼等於〔對境〕入來以外，僅為〔此者何耶？〕之觀念亦無作用，道有煩惱永斷之作用。此為此處之意趣。</note>
+<note n="0133002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0133002">言「緣空性……」者，如出世間道緣空性之涅槃，世間〔道〕緣清淨行福而生，問「汝之眼識亦為如是耶？」他論師以「以眼及色為緣」之語而否定。於再問時，指依「不取於相」之語而言「此無相之者為空性」以肯定。</note>
+<note n="0134003" resp="#resp2" type="orig" target="#nkr_note_orig_0134003">[04]</note>
+<note n="0251004" resp="#resp2" type="orig" target="#nkr_note_orig_0251004">[03]</note>
+<note n="0137001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0137001">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。</note>
+<note n="0140001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0140001">A. N. vol. I, p. 113。增一阿含二一．六（大正二．六〇三c）。</note>
+<note n="0141001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0141001">於「世間與出世間之……」問，指前所受戒與道之剎那生之正語等而肯定。</note>
+<note n="0142002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0142002">言「於世間之戒滅時」者，他論師之問。自論師指剎那壞滅而肯定。他論師以為如犯戒，復言「惡戒……」等。然而，彼邪執之建立，於前明無破戒，非〔明〕二戒之具足。是故，邪執是不能建立。</note>
+<note n="0150001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150001">S. N. vol. I, p. 33。雜阿含三六．五（大正二．二六一b）。</note>
+<note n="0152001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152001">「受惡業者即如是稱我殺者」、「我盜取如是之物品」作如是惡之決心而終。問「兩者是長養耶？」即指於施之剎那惡不生而否定，第二問時，指心不相應惡之累積而加以肯定。</note>
+<note n="0153002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0153002">A. N. vol. I, p. 50。</note>
+<note n="0166001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0166001">「言 i、言 dan……」等，若彼於苦智轉者，則依 i, dan, du, khan（idam dukkham 是苦）文字之順序而應言四智轉。他論師不許如是，故否定。</note>
+<note n="0166002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0166002">原本 ruci 是 duti 之誤。</note>
+<note n="0166003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0166003">原本為 āmantā 是 na h'evaṁ vattabbe……pe……之誤。</note>
+<note n="0167001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0167001">此處名劫者，是大劫、一分劫與壽劫等三種。言「諸比丘！是等之四阿僧祇」之時，言大劫之劫。言「梵眾諸天之壽量〔一〕劫」時，是一分劫。言「一劫煮於地獄」、「一劫受樂於天」時是壽劫。壽劫是壽之形成，依業之異熟及依年數為壽命限界之義。指此等中之大劫而問，他論師是肯定。而自論師責難於彼，若汝神力具足者由欲住限於百年前後之壽劫以上，或大劫，又住一分大劫，神通所成之彼壽者應有〔如是〕耶？言「其神通所成之壽」等。他論師名命根者，即「非神通所成唯業等起」而否定。然而，何有神通之差異耶？雖無神通者非住壽劫耶？有此之差異。有神通者命當於壽命之間轉，作障害之法是依神力而取捨，防中間之非時死是可能；而無神通者無有如是之力，是為與彼之區別。</note>
+<note n="0167002" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0167002">言「得住二劫耶？」等，即責難「若『有神通者超過命之界限之可能』者，不單一〔劫〕，應言住於無數劫」。</note>
+<note n="0169003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169003">D. N. vol. II, p. 103。長阿含二．遊行經（大正一．一五b）。</note>
+<note n="0169004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0169004">A. N. vol. II, p. 172。</note>
+<note n="0171001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0171001">若心相續是定，言「心相續」者過去亦有，未來亦有，唯一現在非名相續。於汝「是等一切是定」應可責難，而言「過去之……」等。他論師不許如是而否定。</note>
+<note n="0171002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0171002">言「過去已滅……非是耶？」等，於心相續唯現在心起作用，過去未來以已滅及未生無〔作用〕。然明言「如何如是名為定耶？」</note>
+<note n="0171003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0171003">言「一心之剎那是〔定〕耶？」乃他論師之問。由此於自宗，「諸比丘！修定！」等〔之佛語〕，若言「現在善心相應之一境性是定」者，指彼〔之定〕而肯定者乃自論師。</note>
+<note n="0172004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0172004">言「非世尊所〔言〕耶？」者，即明示「前後而生無定之障礙」，非依相續之定性，是故不成立。</note>
+<note n="0173001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0173001">若圓成於〔十二緣起之〕無明等，稱別一法住性之圓成（parinipphanna 是依業、時、節、心、食等之緣而成具體、獨立之義），汝於其法住性亦為有別圓成法住性之事，為責難而言「其住性亦……」等。他論師以非如是之邪執而否定。於第二問時，則指無間緣性及互相緣性而肯定。</note>
+<note n="0174001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0174001">若於汝如色等無常性是圓成者，〔無常性〕亦應有別圓成之無常性而責難，而言「其無常性之……」。他論師二個無常性非一起而否定，又彼無常性非常，與其無常一起消失，故肯定。</note>
+<note n="0175002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0175002">言「老是圓成耶？」於已生之老死外，不稱無常性。是故，從事於無常性之分別而言。</note>
+<note n="0175003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0175003">於圓成之色等，如有無常性、老死。如是，於圓成之無常性等，認為此等是無，一向給予否定。</note>
+<note n="0177001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0177001">於自宗，言「思是業」，其思如於身語意門轉，得身業等之名，若汝之律儀是業者，責難其亦於眼根等而轉，得眼業等名，故言「眼根律儀是眼業耶？」他論師即不見如是之經文，故於四門而否定；於第五身門，指淨身而否定，指表身而肯定。因為，彼許淨身與表身皆是身根故。意門亦指異熟門而否定，指業門而肯定。非律儀亦同為一理趣。</note>
+<note n="0179002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0179002">「以眼見色……」之經，於諸門示律儀非律儀者，非彼之業，故以為證而難。A. N. vol. II, p. 16。漢譯南傳大藏經，第二〇卷二九頁。</note>
+<note n="0180001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0180001">於「一切之思……」之問，指無記而否定。指善不善而肯定。</note>
+<note n="0181002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0181002">A. N. vol. v, p. 292。</note>
+<note n="0183001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0183001">言「遂行……其業……」之經，示相之獲得而言。因為，大人由前世之作業而有清淨之屬性，然屬性非異熟，故非為證。D. N. vol. III, 173。中阿含五十九．三十二相經（大正一．四九四a）。</note>
+<note n="0186001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0186001">於「奪母命……」等之趣意如次。有二種決定，即正性決定與邪性決定。正性決定是聖道，其決定不退轉法性與生果。邪性決定是無間業，其決定生於無間地獄。此處，極七返〔有〕依預流道不退轉法生及生果而決定。餘道之決定，彼無不證故。亦作無間是不可能。然而汝許決定。依此，問汝：「依是等之邪性決定而決定耶？」</note>
+<note n="0190001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0190001">Vinaya III, p. 303。</note>
+<note n="0194001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194001">言：「……佛陀……」，此無佛陀之生，示無破和合僧而言。</note>
+<note n="0194002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0194002">言：「劫之始耶？〔同時〕僧伽破耶？」示「若全部住者，劫之初以來〔即〕為業，示生住於彼耶？」而言。</note>
+<note n="0195003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195003">於「劫住者具神通耶？」之問，指修所成而否定。然他宗，準許生來神通，指彼而肯定。</note>
+<note n="0195004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195004">言「修欲神足……」，言依生來之神通為具神通者唯邪執而已。然而若汝有神通者，為難「有修習是等神足故」而言。</note>
+<note n="0195005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0195005">「墮惡生人、墮地獄人……」之經者，以一劫為八十分，其一分之間住，指其壽劫而言，故不為證。</note>
+<note n="0198001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0198001">於「彼……業」之問，「業」是殺母等之業。此處，指非決定性之命令，然肯定是自論師。因為，無確定性之命令，故「我為不當之事」生之惡作、追悔。</note>
+<note n="0198002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0198002">言「若……」等，唯執惡作之生，建立邪執依他論師而言。</note>
+<note n="0199003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0199003">今問「依非決定性之命令與計劃無間者，禁依他論師而入定性決定，執其補特伽羅，計劃無間……為不可能耶？」是自論師，依其邪執而肯定是他論師。然，自論師「言〔入正性決定〕為不可能，是殺母等業之作者，為難其如何，依汝為其業耶？」而言「殺母……等」。他論師不見如是所作，故否定「實不應如是言……」。言「……避其業……」是指非決定性命令之業而言。因為，「我不為命令」，依取消命令而為「避」者。避之故，此處，即除惡作、除追悔。然，有如是之時亦被認為是「前之命令者有決定性」，他論師以「然」而肯定。此時，自論師承認有避其業之性質，立己之見解而言「若……」等。</note>
+<note n="0199004" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0199004">終「計劃無間……」之問如最初之問，問為他論師。肯定為自論師。「非有彼業……耶？」之徵問是他論師。指「避」時以前之計劃時而肯定者是自論師。唯執計劃之前分，依不決定之見解而建立「若……」之邪是他論師。然而，此邪執為不如理，而建立故，等於不建立。</note>
+<note n="0201001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201001">言「邪性決定」等，言為示依某決定而入決定者無其他決定之事。</note>
+<note n="0201002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201002">言「前修道……」等，言為示決定之別。</note>
+<note n="0201003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0201003">言「念住」等，言為示於一決定法之別。</note>
+<note n="0202004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202004">「菩薩……得……耶？」之言，唯表示菩薩為可能，不入決定者之決定，故不成立。因為，前依一決定法而不決定，於菩提之根本，依見諦而入決定。</note>
+<note n="0203001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0203001">言「淨、清淨……」等，依伏而鎮伏清淨，清淨者之示正斷清淨而言。言「如是知……」等，依知、依見而說漏盡。非斷有覆者之蓋，故不為證。D. N. vol. I, p. 83。</note>
+<note n="0204002" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0204002">D. N. vol. I, p. 84。</note>
+<note n="0206001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0206001">於言「其禪為其禪之所緣耶？」之問，以自身不見其物之所緣，自違經之畏而否定，依「味樂其禪」之〔經〕語而肯定。</note>
+<note n="0207002" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0207002">「彼味樂其〔禪〕」之經，即得禪自禪出定而成禪味樂。非於等持之中，禪欲、以禪為所緣。A. N. vol. II, p. 126。</note>
+<note n="0209001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0209001">「彼於歡、讚……此受……」（M. N. vol. I, p. 266）之經，然行引依苦受者，不稱貪之生起。然而，總括以受為相之法，或由自體察苦受，名為見思惟；依見歡喜而歡喜受，非喜苦受之轉變。敗於苦受即願求反對之欲樂亦名為歡苦受。如是，有「苦受歡」喜之意義。是故，非證不快貪。</note>
+<note n="0211001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211001">依「欲渴愛」（S. N. vol. III, p. 26）等之三部分，六渴愛則略而顯。於色等之六種所緣，依味著其欲而轉渴愛者為欲渴愛。「我及世間有」與常見俱行之渴愛為有渴愛。「〔我及世間〕非有」與斷見俱行之渴愛則為無有渴愛。</note>
+<note n="0211002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0211002">言「非其法之渴愛耶？」之語，即示渴愛緣法所緣而轉，非表無記性。是故不成立。</note>
+<note n="0215001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215001">言「運心……乃至……作願」者，乃兩者共名為顧心。言彼「有分〔心〕顧為運心，置心於有分〔心〕所緣而安立為願。</note>
+<note n="0215002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215002">言「善乃不作運心……者」，言彼「於不善之無間而結續生，於不運心其物生耶？」之問。他論師不運心而不見善之生故而否定。</note>
+<note n="0215003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0215003">言「善是由不如理作意」者，非難「若於不善之無間善生，〔善〕唯依於不善而運心，由不如理作意而生」。餘依本文應知之。</note>
+<note n="0217004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0217004">言「行塵染而於其事物」云云之語，是於一所緣而明白有貪離貪之生，非明於善惡之無間生。故不成立。</note>
+<note n="0218001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218001">言「有一切之肢節……」等，非難「有六處之時，有如是（一切之肢節）可入」。</note>
+<note n="0218002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0218002">「於母胎……」之問是他論師。</note>
+<note n="0219003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0219003">「於母胎……」之餘問是自論師。</note>
+<note n="0219004" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0219004">S. N. vol. I, 206; J. IV, 496。</note>
+<note n="0221001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221001">言「耳識為色所緣……」，為難「若於眼識之無間生，則如異熟意界為色所緣」而言。</note>
+<note n="0221002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0221002">「依眼與色而耳識生耶？」之問，於經無有故而否定，信由無間生之邪執而肯定。</note>
+<note n="0221003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0221003">言「眼識即耳識耶？」是「第一速行之無間依第二之速行是為意識，其如相同者，於汝有如是二者同一耶？」之問。依是等之理趣，一切狀態之義可知。「舞、歌……」等之語，集所緣之時，速轉故，表示間雜，非無間緣故，為證難之。</note>
+<note n="0223001" resp="#resp2" type="orig" target="#nkr_note_orig_0223001">M. N. vol. I, p. 53。</note>
+<note n="0223002" resp="#resp2" type="orig" target="#nkr_note_orig_0223002">[01]</note>
+<note n="0224003" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0224003">M. N. vol. I, p. 53。</note>
+<note n="0226001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0226001">「有隨眠」等，其時隨眠未斷故，稱「有隨眠」，而〔隨眠〕未生故，不言為「纏」。隨眠與纏無有區別。故不成為證。</note>
+<note n="0227002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227002">若善無記心現行中亦存有貪者之貪則稱為貪〔隨眠〕，其貪若「現行者言纏」之意思，言「貪隨眠與纏異」者正確。</note>
+<note n="0227001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0227001">經文之出處 Saṁyutta-Nikāya, IV. III 即 Subhato manasikarotīti, Subhato āgacchati。話手為 Udhina 王對 Piṇdola-Bhāra 之問答。（自英譯本脚註）</note>
+<note n="0233001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0233001">S. N. vol. IV P. 393; XLIV. II, vol. IV. P. 401。雜三四．二〇（大正二．二四四b）、雜三四．二一（大正二．二四四c）。</note>
+<note n="0233002" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0233002">A. N. vol. V. p. 212。雜二八．四二（大正二．二〇四a）。</note>
+<note n="0239001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0239001">應知依俱生、互相、有、不離、相應而緣者。</note>
+<note n="0242001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0242001">與前章所引同經。</note>
+<note n="0243001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0243001">有漏是「持漏者」，然而無令漏四漏之漏，四漏自身若是漏，特是有漏，不應言「有漏」。不是有漏，故言「無漏」之義。是詭辯性議論。</note>
+<note n="0248001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248001">此時指身之本質而加以肯定。可是，如是之時不稱定之威力者。依此言「不成入滅盡定者耶？」</note>
+<note n="0248002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0248002">言「眼識具足者不死耶？」自論師為示「即使不決定之時，亦死於死時，不死於非時」而言。此處之意如下。若不決定有死，眼具足者亦應有死。然而，應異於「依五識而不死不生」之經。如於眼識具足者不死，於滅盡定者亦無。</note>
+<note n="0250001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0250001">無想定入定者有無貪等，而〔入〕滅盡定〔者〕無〔無貪等〕。故難此而言：「有……定、慧耶？」等。</note>
+<note n="0253001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253001">言「有業之時，有業之積集耶？」或「有業之時，有業之積集或業住之時，有業之長養，又依業之積集而有異熟」，彼業滅時，芽生已，種子存。依無明結果〔異熟〕生已，業積集而住」之邪執而加以肯定。</note>
+<note n="0253002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253002">言「業即業積集，即業異熟耶？」即「依業而有業之積集，若『其異熟生已而住』之邪執，是等之三（業、積集、異熟）亦為一耶？」之問。</note>
+<note n="0253003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0253003">言「……異熟是有所緣耶？」非難「如此之異熟，異熟法法亦繫於所緣耶？」之問。他論師依邪執而肯定其一而否定其一（後者）逆亦同理趣。餘者如本文可知。</note>
+<note n="0254004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0254004">M. N. I. p. 390。</note>
+<note n="0257001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257001">Dhammapada, verse 164。</note>
+<note n="0257001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0257001-1">理趣是同前論，認為是大眾部所立。</note>
+<note n="0259002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0259002">dhammapada, verse 164。</note>
+<note n="0260001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260001">問「與苦耶？」〔他論師〕以不見如是之經而加以否定。</note>
+<note n="0260002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260002">於「與己樂……」等之問，與己或他人之物是不可能，彼自身之物名「如何而與於此處」而否定。</note>
+<note n="0260003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260003">於「非己之物」等之問，又言「名如是不為者而與得存在」之邪執而肯定。</note>
+<note n="0260004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0260004">言「樂法之將來者」者之語言，即世尊明他人對得樂法為緣之性，如食等非與樂之事。M. N. Vol. I, P. 447。中阿含一九二．迦樓烏陀夷經（大正一、七四〇c～七四一a）。</note>
+<note n="0264001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0264001">Theragātha Verse 678-678。</note>
+<note n="0265001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0265001">言「無貪是因耶？」為「取於汝色是無貪之因耶？」之問，他論師否定。</note>
+<note n="0266002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0266002">言「大種是所造色之所造因」者，此處，依緣義而言因之性者，非依根之義。</note>
+<note n="0277001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0277001">稱阿羅漢者，是捨離福罪者。為難「彼若作福業者，亦應作惡」，而言：「有非福業之積集耶？」他論師不見〔阿羅漢〕殺生等之所作而加以否定。</note>
+<note n="0277002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0277002">於「行福行……」等，趣於有業 bhavagāmiKamma，於阿羅漢無而否定。</note>
+<note n="0278003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0278003">於「以施而施耶？」等，由依作心而施轉自論師是否定。他論師唯見「省其心而起作用」而建立邪執，然而「其有所建立不如理者」，為不建立。</note>
+<note n="0280001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0280001">言「諸比丘！我不〔說〕……」經者，是指此而說。〔即〕我不說：「已作之故，不受、不知、不經驗思業之異熟，是等業之滅，轉為斷絕。」其〔滅、轉之斷絕〕是順現法受〔業〕，於現法而〔起〕，非於其後，順後生受業，得異熟之機會時而〔起〕。這樣，換言之，有於如是輪迴所轉之中，有得異熟機會之業時，若住於其處，如得脫惡業之世界者非有。如是而為，依「凡未得異熟機會之業亦必依所受」之想法，作建立「阿羅漢無非時死」之邪執。此錯誤之作 A. N. Vol. V. P. 292。</note>
+<note n="0281001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0281001">而難「彼若如是，『業亦依於業』」，言「業亦依於業耶？」他論師若「業亦名為業」者，「其業不能不為異熟」而以否定。</note>
+<note n="0281002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0281002">言「因宿作耶？」為難「若『一切者依業』，其應為因宿作事」而言。他論師自墮於宿作因論之畏而否定。</note>
+<note n="0281003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0281003">言「依於業異熟耶？」若「一切者依於業」，於過去之有而轉者為因，業亦依於前有之業而為業異熟。是故，於汝，為難「一切者依於業異熟」而問。他論師如由種出芽，指依現在所轉之業現而否定。重問之時，彼業如〔種〕依前種，依前業而轉故肯定。</note>
+<note n="0281004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0281004">言「殺生耶？」等，若為「一切依於業」，為難「殺生等依於業異熟之作」而言。</note>
+<note n="0281005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0281005">他論師由「惡戒思亦由前業所現，一言以蔽之，不外於異熟」之邪執而肯定。於底本，有「實不應如是言」，依今註以改正。</note>
+<note n="0281006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0281006">而又為難「若依於汝，殺生由異熟而現，如殺生之異熟亦有果而言『有果耶？』」他論師引殺生之地獄等性見有果而肯定。然而由不見「言『此業異熟之果』之箇處」而否定。</note>
+<note n="0283007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0283007">「……依於業而轉」之經，反業於「無業」之無業論者，現「有業」之業論者業之所作，非言「一切由業而現」。故不成立。Suttanipāta Verse 645。</note>
+<note n="0284001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0284001">而又依世尊所言「無常是苦故」，是故為難「『唯根縛是無常』」，言「唯根縛是常……」等。</note>
+<note n="0284002" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0284002">言「非根縛非是無常……耶？」「土地山嶽岩石等亦非根縛，亦非無常耶？」之義。</note>
+<note n="0285003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285003">言「不應言：『唯根縛是苦』耶？」之問，以「然」肯定是自論師。非根縛是苦憂之所緣。於熱時之火、於寒時之風為苦所緣。財禍之破損常憂之〔所緣〕。故雖無無常義亦應言：「非根縛是苦。」然，不由業煩惱而生，故不應言：「苦聖諦。」於是處，則依道而不是邊知。草木等之滅及時節、種子之滅不各為苦滅聖諦。是故，根縛是苦，且又是聖諦，其他唯苦，示此異而肯定。</note>
+<note n="0285004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0285004">「如根縛……」等之語，示「為遍知根縛而有梵行住，遍知者無再生事」。是故，依自論師而否定。然，依「無常是苦」語所攝，避非根縛之苦亦不可能，是故不成立。</note>
+<note n="0286001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0286001">若為如是，為難「集亦至於苦」而言「苦集亦……」。他論師指因相而否定。再者，重而問之，乃指繫屬於轉而肯定。</note>
+<note n="0286002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0286002">於「唯三耶？」之問，自違經之畏而否定，依邪執而肯定。</note>
+<note n="0289001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0289001">言「〔祭祠〕火……」之經，由他論師之宗取來之物。此處，大雲者，指雲雨而言。地受雨非受雲。</note>
+<note n="0290001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0290001">言「淨化」者，為作大果。對於僧伽，若施少則為多，若施多則成更多。</note>
+<note n="0293001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0293001">M. N. Vol. III, P. 253。</note>
+<note n="0294002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0294002">S. N. Vol. I, P. 233。</note>
+<note n="0295003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0295003">Vimāna-vatthu 34, 25-27。</note>
+<note n="0297001" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0297001">言「應請」等，「若受者不淨化，如何彼為應請等之性耶？」而言。</note>
+<note n="0298002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0298002">「他是他之作者……」等，若施者之施思依受者而作，則〔他論師之所論〕為當然，然彼施思之清淨是緣於名受者之事，依大異熟之義而有所淨化，是故，此不非難，淨化受者亦施。</note>
+<note n="0298003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0298003">M. N. Vol. III, P. 256。中阿含．一八〇．瞿曇彌經（大正一、七二七b．c）、分別布施經（大正一、九〇四a）。</note>
+<note n="0301001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301001">M. N. Vol. I, P. 326。</note>
+<note n="0301002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301002">S. N. Vol. V. P. 185。</note>
+<note n="0301003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0301003">言「生於世間……」者，他論師指兜率天居而言。然大師指其唯人間界而言。言「伏世間」，他論師以「伏人間界」之見解而言。然而，大師伏所緣之世界而住。言「不染於世間」者，指「他論師依人間界而不染」而言，但大師「依不染於世間法之煩惱」而住。</note>
+<note n="0303001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0303001">A. N. Vol. I. P. 133。雜阿含三五．一三（大正二、二五五b）。</note>
+<note n="0304001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0304001">而，名此悲者依據無雜染性、有情所緣性、心解脫性、十一利益性而與慈等為同類者。故非難「若世尊無悲，則慈等亦應無有」而言「佛世尊無慈耶？」等。</note>
+<note n="0304002" resp="#resp2" place="foot" type="orig" target="#nkr_note_orig_0304002">於「無悲者耶？」之問，則以不見如是之事而否定。其餘於此處意明矣。</note>
+<note n="0309001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0309001">然而，非難「若不達第二禪定而近行飛躍，由初禪定正入第二禪定，亦應由初禪定而入第三禪定，由第二禪定而入第四禪定」，而言「由初禪……」等。</note>
+<note n="0309002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0309002">言「為初禪定……」等，非難「若於初禪定之無間以第二，又由第二等而入定於第三等，應依一運心而入定」而言。</note>
+<note n="0309003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0309003">言「於隨欲過失……」者，初於欲之過失而作意，後生於禪定剎那之時，則唯相作意。</note>
+<note n="0310004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0310004">言「初禪定是第二禪定耶？」非難「若如後速行〔心〕由前速行〔心〕而生，生於無間，除前後之性，依相，此應立即為彼」而問。</note>
+<note n="0312005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0312005">言「離欲……」等，由初明〔禪〕順序禪定〔次第〕所說，非明生於無間事。是故不成立。D. N. Vol. I, P. 74。</note>
+<note n="0313001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0313001">禪定亦是心所法，觸亦是心所法。是故，非難「若有名為禪定中間，則亦應有觸中間等」，而言「有觸中間……耶？」</note>
+<note n="0313002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0313002">言「於第二禪定與〔第三禪定之中間……〕」，即非難「若有名禪定中間者，於第二第三等之禪定亦應有是等之中間」而言。彼唯依邪執、依不在而否定與肯定。</note>
+<note n="0314003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0314003">言「有尋有伺……」等，非難「三三摩地於三摩地之性平等，唯無尋唯伺三摩地是禪定中間，其他不然，此處有如何之別因耶？」而言。</note>
+<note n="0315004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0315004">言「現在二禪定……」，是指初、第二而言。他論師由「現在中間之無尋唯伺三摩地名禪定中間」之邪執而肯定。</note>
+<note n="0315005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0315005">「初禪定滅……」之問，以「於三者之一剎那而轉依為不應理」而肯定。</note>
+<note n="0315006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0315006">言「無尋唯伺三摩地是初禪定……耶？」指依四〔禪〕位而問。自論師則由「於如是之理趣而彼之不在」而否肯。</note>
+<note n="0315007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0315007">「非三摩地……耶？」此處之意如次。若是等三三摩地中而二三摩地是禪定而不是禪定中間，則同其他之〔無尋唯伺〕亦應是禪定而不是禪定中間。</note>
+<note n="0317001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0317001">言「依眼而見色耶？」等，即非難「『入定者暫無轉依五門』，無其〔五門轉依事〕，若彼聞聲，則色亦可見」而言。</note>
+<note n="0318002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0318002">言「聲是刺」，即依散亂之因而言。麤聲刺激其耳時，有由初禪定而出事，是故而言，故不成立。</note>
+<note n="0318003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0318003">言「第二禪定……」等，為「其他之刺亦如於等至內不存在，聞聲之事亦如是令覺」而言。</note>
+<note n="0319001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0319001">非難「若依眼見色，依色應可見色」，言「依色見色耶？」等。他論師指色處而否定，更問指唯眼而肯定。</note>
+<note n="0319002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0319002">言「承認耶？」於此處之意如次。言「見耶？」者，指吾人之「認知」而問，唯非單向眼，故最初，汝眼即依色而認知色耶？他論師唯依前之理論而否定或肯定。</note>
+<note n="0319003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0319003">而，非難彼「若如是，色亦為意識，因此以認知」，言「色是意識耶？」他論師不得其偽而否定。</note>
+<note n="0320004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0320004">言「諸比丘！此處，依眼見色」者，依資糧論之理趣而言。如言「依箭而討，依弓而討者」，言「依眼識而見亦依眼而見」。是故不成立。</note>
+<note n="0324001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0324001">「無斷煩惱之事耶？」此他論師之問，如於捨塵芥，有捨塵芥之努力；於斷煩惱，無有努力於過去等各種煩惱。然，以「於涅槃所緣之聖道轉時，未生之煩惱不生」之意思而稱斷。是故，「實不應如是言」而否定。</note>
+<note n="0324001-1" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0324001-1">言「無相」是無一切相之涅槃，「無願」亦同名。如何而能持出此耶？為舉過失於無分別論者。唯依一部分於無分別，言「空性是行蘊繫屬」之邪執，涅槃亦至行蘊之繫屬。為舉此過去而持出「無相」、「無願」。他論師不認其繫屬性而否定。</note>
+<note n="0325002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0325002">言「行蘊非無常……」等，涅槃空性得之無常性示其過失而言。</note>
+<note n="0325003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0325003">言「行蘊之空性……」，非難「若他蘊之空性是其他以外蘊之繫屬，行蘊之空性亦應是其他蘊之繫屬」而言。言「不應言：行蘊之空性……耶？」等，若「行蘊之空性非其他蘊之繫屬」者，明白「餘蘊之空性亦不名行蘊之繫屬」之逆論而言。</note>
+<note n="0326004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0326004">「諸比丘！此世界是空」之經者，是由他論師之宗所提出。此處，言行是如「一切諸行無常」之義，言「五蘊之彼等是我我所空」者是教之範圍，不妨礙而認識相容。然，此明空性是行蘊繫之屬性，是故不成立。</note>
+<note n="0331001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0331001">言「不應言：『〔得是無為〕耶？』」，依彼之邪執而認為「得是無為」，為其說明而言。此處，自論師反對「實不應如是言」，完全於得而不許色等之性。因此，名得亦無如何之法，又不認無為之性。然共他論師則「唯依反對而建立無為」之邪執。「此不如理之建立者，則唯等於不建立」。</note>
+<note n="0335001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335001">言「殺母者……」等，非難而言「於決定邪見者及殺母者等有邪性決定，對汝而言殺母者等亦應為畢竟決定」。他論師依「決定邪見恰如〔於〕輪迴〔道〕之稱，於後有而決定，然此〔畢竟決定者〕唯於〔現有〕之一自體而決定」之邪執「實不應如是言」而否定。</note>
+<note n="0335002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335002">言「生疑……耶？」「此決定耶？不〔決定〕耶？」如是生耶？他論師以不見不生之理由而肯定。</note>
+<note n="0335003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335003">問「不生疑……耶？」指〔他論師〕於習熟其見入決定不生而肯定。依此，所問「是不斷耶？」若依〔聖〕道而不能斷者而否定；依見而不現行而肯定。而自論師名斷者是無依聖道以外，是故依此而非難，言「依預流道耶？」等。彼若依任何一道而非斷者而否定。</note>
+<note n="0336004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336004">言「斷見生耶？」是〔常斷二見之〕決定二者生之問。他論師依據〔世尊〕所言：「鬱陀伽羅住人是非有論、無作論者、無因論者」，此三種決定邪見生於一人，是故而肯定。而彼不名為畢竟決定耶？非難於彼而言：「若生……」，對於畢竟決定者，二樣之決定為不當。</note>
+<note n="0336005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336005">於「不生〔斷見〕耶？」之問，依常見而執常，指取其所斷而無〔斷見之〕生而肯定。問「斷耶？」若依聖道而不斷者是否定；依前述之理趣而不生而肯定。</note>
+<note n="0337006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337006">言「不應如是言……耶？」是他論師之問。由彼經之存在而肯定者是自論師。然而，彼於後有亦非沈。於唯今有，言「彼不捨見」者，乃此處之意思。故不成立。</note>
+<note n="0337007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337007 #note_star_3 #note_star_4">A. N. IV. P. II; Puggalapaññatti VII. I 水喻經（大正二、七二九）。</note>
+<note n="0338008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0338008">言「於一切時浮上終而沈耶？」等，是明「唯不捕捉其語而追求其意義」。</note>
+<note n="0340001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340001">「無世間之信耶？」等，世間信等諸法亦依增上之義為根，於信等之外非有名為信根等。是故，明「世間之信等亦同有信根等之性」。</note>
+<note n="0340002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340002">言「有世間之意耶？」等，即世間意等之諸法如意根等，如是世間之信等亦應是信根等，以對比明其義而言。</note>
+<note n="0342003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342003">D. N. II, P. 30。長阿含．大本經（大正一、八c）。</note>
+<note n="0343001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0343001">稱無間業者是業道逮得。非難「若不故思而作業道之部類，其餘之殺生等亦應為不故思」，「不故思殺生物亦……」等。他論師若無如是之邪執，則否定。其餘者如本文可知。</note>
+<note n="0344002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0344002">言「不應言：『殺母者〔墮無間者〕』耶？」是他論師之問。指於疾病治療時，不故思〔在〕殺者而肯定是自論師。於「非奪母命耶？」之問亦不故思奪者而肯定是自論師。然而不執共同〔肯定之〕意思而「若〔欲奪母命〕……」者是他論師之建立。此若不如理建立者唯不建立。</note>
+<note n="0345003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0345003">然指於共破僧者中有法想者，言「破僧者墮無間者耶？」是自論師之問。依「若破和合僧，一劫煮於地獄」之〔經〕語而肯定是他論師。又，〔對於〕「一切之〔破僧是無間耶？〕之問，即指自己有法想者（sakapakkhe dhammasaññī 譯者曰：主張自己之見忍喜修正思之破僧伽者）而否定；他分有法想者（parapakakkhe dhammasaññī 譯者曰：知自己之主張是非法，他人之法是正確，知而固執自說之破僧者，參照 Vinaya, II, P. 205 破僧犍度）而肯定。於有法想破僧伽者之問二者亦同一理論。</note>
+<note n="0345004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0345004">「非世尊所仰耶？」之經，示「說非法者一向墮無間者」而言。Vinaya, II, P. 205。</note>
+<note n="0345005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0345005">「墮惡生者、墮地獄者……」之偈亦唯說非法者之意思。然而，他論師不取意義而建立邪執，彼唯以不如理之建立而不成建立。Vinaya, II, p. 205。</note>
+<note n="0347001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0347001">言「慧……」等，即示〔是等〕是智之同義語而言。依此其次之事則明。若彼無智亦應無慧等。若有慧等，亦應有智。然而，慧等不異於智。</note>
+<note n="0347002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0347002">「〔入〕初禪耶？」等，為示等至慧而言。言「布施」等，即〔對〕業所作智〔而言〕。</note>
+<note n="0348003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0348003">言「遍知苦」者，是明唯出間道智而唯出世間為非智。</note>
+<note n="0349001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0349001">非難「若於彼處無有獄卒，亦應無業之苛責，有苛責者方〔受〕苛責」，而言「地獄無業苛責耶？」等。</note>
+<note n="0349002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0349002">言「人界有〔業苛責〕……」者，為「依眼前所明白者而知」。言「於人間界，於〔能〕苛責者如〔被〕苛責者，同樣於彼處〔地獄〕亦然」，此乃於此處之意。</note>
+<note n="0349003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0349003">言「非毘奢浮，非餓鬼王」者，即依他論師，所用自論師之經。然而，〔他論師〕橫遮其教依自論師而確認。此處，言「毘奢浮」者，為一天。言「餓鬼王」者，於餓鬼界餓鬼大神力者。「蘇摩」等是可明瞭。此處所言之〔意思〕如次。彼等毘奢浮等依己業非殺，於終此世而達於他世界之人。言「彼由以終其處，其等自業者殺彼於其處」而言，即明業之所作，而非明獄卒之無者。</note>
+<note n="0350004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0350004">M. N. Vol. III, P. 182。中阿含六四．天使經（大正一、五〇四c）、鐵城泥梨經（大正一、八二八a），A. N. Vol. I, P. 141。增一阿含．三二．四（大正二、六七四c）。</note>
+<note n="0353001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353001">Dhammapada. Verse 273。</note>
+<note n="0354002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354002">「正語是道支而非道耶？」等，即〔自論師〕依他論師之宗而言。正語等於他論師之宗亦是道支。然，不以色成道而說明。示「『正見是道支……』等，於道名無非道性（maggassa amaggatā）」而言。</note>
+<note n="0355003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355003">於「先彼之……」之經，「於清淨戒者有道修習而他者無」。示「應來道之清淨性」，言「身業口業命是善清淨」。除此，非示五支之性。是故，言「滿足彼此之八支聖道」。</note>
+<note n="0355004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355004">D. N. Vol. II, P. 151。遊行經（大正一、二五a）。</note>
+<note n="0356001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0356001">而難「若彼之十二事〔是出世間〕者，應有十二之道智」，言「有十二之〔出世間智〕耶？」等。他論師指道是一而否定，於一一之諦依諦智、所要智、所作智（saccañāṇa, kiccañāṇa, katañāna）指智之種種而肯定。（譯者曰：「就苦諦而言，是苦諦」是諦智；「應遍知者」是所要智：「遍知」是所作智；於四諦有三轉十二智），「十二之預流道耶？」等亦同理趣。</note>
+<note n="0357002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0357002">就「非世尊所仰耶？」之經，明先分與後分智之別異，非明聖者之十二智。故不成立。Mahāvagga Vol. I, P. II. S. N. Vol. V, P. 421 轉法輪經（大正二、五〇三）、雜阿含經一五．一七（大正二、一〇三c）、四分律三二（大正二二、七八八）、五分律一五（大正二二、一〇四）。</note>
+<note n="0359001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0359001">〔所問〕「念處……」等，名教者是念處等之聖法而是善等之說。此處，除依世尊所說之念處等，依作其餘之念處，或依以不善等為善性等而稱「教為新」。非難於「何人令此如是而為耶？」「有何人如是而為耶？」或者「何人得為如是耶？」等三種之問而言。其餘一切如本文可知。</note>
+<note n="0361001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0361001">言「觸……」等，言示「一切之觸等於一剎那轉之過失」。</note>
+<note n="0363001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0363001">於「……一切佛境涯耶？」之二種問，明阿羅漢一切知性智之無有，是以不可為無明疑之不捨。然而，他論師則指不捨，「是故」建立邪執。此不如理之建立者則不成建立。</note>
+<note n="0372001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0372001">言「有善心」者，是依行福行等，故依其義而非難彼而言「行福行」等。</note>
+<note n="0373002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0373002">言「正念正知……」者，是於速行〔心〕之剎那，依作正念正知明無昏迷之死而言，非明善心。</note>
+<note n="0374001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0374001">言自然心（Pakaticitta）者，是有分心（bhavaṅgacitta）。一切有想之有情住於有分。依有分終之死沒心（cutucitta）而死。非難彼，依此意如是而言。於四蘊有。阿羅漢之自然心雖亦不動，然而此間即對五蘊有而說。是故，言「不應言：『……住於不動而般涅槃』」。</note>
+<note n="0376001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0376001">「眠……」等，指有分（bhavaṅgavāra）之時而言。於胎中，大概唯轉有分〔心〕。是故，眠無作時之轉（kiriyāsamayapavattābhāva），〔等於〕「眠」，若無修懃，是放逸。若無執業處之念、正知，是失念、不正知。如斯者如何而有法現觀耶？</note>
+<note n="0379001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0379001">言「睡夢者之心難決定」，指是罪而言。雖睡夢者亦依殺生等而轉惡心，然而無有犯事。此處為知罪之不可。依此理由，其以「難決定」。非是無記。</note>
+<note n="0380001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0380001 #note_star_6">A. N. Vol. IV, P. 247。</note>
+<note n="0381002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0381002 #note_star_7">S. N. Vol. V, P. 54。</note>
+<note n="0383001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0383001 #note_star_8">M. N. Vol. I, 190。中阿含．三〇．象跡喻經（大正一、四六七c）。</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0030a1401" resp="#resp2" type="add" target="#nkr_note_add_0030a1401">酒【CB】，洒【南傳】</note>
-<note n="0030a1402" resp="#resp2" type="add" target="#nkr_note_add_0030a1402">酒【CB】，洒【南傳】</note>
-<note n="0030a1403" resp="#resp2" type="add" target="#nkr_note_add_0030a1403">酒【CB】，洒【南傳】</note>
-<note n="0063a1001" resp="#resp2" type="add" target="#nkr_note_add_0063a1001">槃【CB】，般【南傳】</note>
-<note n="0068a0401" resp="#resp3" type="add" target="#nkr_note_add_0068a0401">南傳大藏經此處註標[05]有誤，今予以修訂為[＊]。</note>
-<note n="0078a0801" resp="#resp3" type="add" target="#nkr_note_add_0078a0801">南傳大藏經此處註標[02]有誤，今予以修訂為[＊]。</note>
-<note n="0111a0301" resp="#resp2" type="add" target="#nkr_note_add_0111a0301">眠【CB】，眼【南傳】</note>
-<note n="0132a0301" resp="#resp2" type="add" target="#nkr_note_add_0132a0301">章【CB】，［－］【南傳】</note>
-<note n="0133a1301" resp="#resp2" type="add" target="#nkr_note_add_0133a1301">未【CB】，末【南傳】</note>
-<note n="0137a0601" resp="#resp2" type="add" target="#nkr_note_add_0137a0601">未【CB】，末【南傳】</note>
-<note n="0155a0701" resp="#resp2" type="add" target="#nkr_note_add_0155a0701">眠【CB】，眼【南傳】</note>
-<note n="0208a0601" resp="#resp2" type="add" target="#nkr_note_add_0208a0601">嗚【CB】，鳴【南傳】</note>
-<note n="0294a1001" resp="#resp2" type="add" target="#nkr_note_add_0294a1001">［－］【CB】，[03]【南傳】</note>
-<note n="0338a0201" resp="#resp3" type="add" target="#nkr_note_add_0338a0201">南傳大藏經此處註標[07]有誤，今予以修訂為[＊]。</note>
-<note n="0338a0401" resp="#resp3" type="add" target="#nkr_note_add_0338a0401">南傳大藏經此處註標[07]有誤，今予以修訂為[＊]。</note>
-<note n="0351a0201" resp="#resp3" type="add" target="#nkr_note_add_0351a0201">南傳大藏經此處註標[04]有誤，今予以修訂為[＊]。</note>
-<note n="0380a1301" resp="#resp3" type="add" target="#nkr_note_add_0380a1301">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
-<note n="0381a1201" resp="#resp3" type="add" target="#nkr_note_add_0381a1201">南傳大藏經此處註標[02]有誤，今予以修訂為[＊]。</note>
-<note n="0383a0801" resp="#resp3" type="add" target="#nkr_note_add_0383a0801">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
-<note n="0389a0101" resp="#resp2" type="add" target="#nkr_note_add_0389a0101">蹉【CB】，嗟【南傳】</note>
+<note n="0030a1401" resp="#resp3" type="add" target="#nkr_note_add_0030a1401">酒【CB】，洒【南傳】</note>
+<note n="0030a1402" resp="#resp3" type="add" target="#nkr_note_add_0030a1402">酒【CB】，洒【南傳】</note>
+<note n="0030a1403" resp="#resp3" type="add" target="#nkr_note_add_0030a1403">酒【CB】，洒【南傳】</note>
+<note n="0063a1001" resp="#resp3" type="add" target="#nkr_note_add_0063a1001">槃【CB】，般【南傳】</note>
+<note n="0068a0401" resp="#resp4" type="add" target="#nkr_note_add_0068a0401">南傳大藏經此處註標[05]有誤，今予以修訂為[＊]。</note>
+<note n="0078a0801" resp="#resp4" type="add" target="#nkr_note_add_0078a0801">南傳大藏經此處註標[02]有誤，今予以修訂為[＊]。</note>
+<note n="0111a0301" resp="#resp3" type="add" target="#nkr_note_add_0111a0301">眠【CB】，眼【南傳】</note>
+<note n="0132a0301" resp="#resp3" type="add" target="#nkr_note_add_0132a0301">章【CB】，［－］【南傳】</note>
+<note n="0133a1301" resp="#resp3" type="add" target="#nkr_note_add_0133a1301">未【CB】，末【南傳】</note>
+<note n="0137a0601" resp="#resp3" type="add" target="#nkr_note_add_0137a0601">未【CB】，末【南傳】</note>
+<note n="0155a0701" resp="#resp3" type="add" target="#nkr_note_add_0155a0701">眠【CB】，眼【南傳】</note>
+<note n="0208a0601" resp="#resp3" type="add" target="#nkr_note_add_0208a0601">嗚【CB】，鳴【南傳】</note>
+<note n="0294a1001" resp="#resp3" type="add" target="#nkr_note_add_0294a1001">［－］【CB】，[03]【南傳】</note>
+<note n="0338a0201" resp="#resp4" type="add" target="#nkr_note_add_0338a0201">南傳大藏經此處註標[07]有誤，今予以修訂為[＊]。</note>
+<note n="0338a0401" resp="#resp4" type="add" target="#nkr_note_add_0338a0401">南傳大藏經此處註標[07]有誤，今予以修訂為[＊]。</note>
+<note n="0351a0201" resp="#resp4" type="add" target="#nkr_note_add_0351a0201">南傳大藏經此處註標[04]有誤，今予以修訂為[＊]。</note>
+<note n="0380a1301" resp="#resp4" type="add" target="#nkr_note_add_0380a1301">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
+<note n="0381a1201" resp="#resp4" type="add" target="#nkr_note_add_0381a1201">南傳大藏經此處註標[02]有誤，今予以修訂為[＊]。</note>
+<note n="0383a0801" resp="#resp4" type="add" target="#nkr_note_add_0383a0801">南傳大藏經此處註標[01]有誤，今予以修訂為[＊]。</note>
+<note n="0389a0101" resp="#resp3" type="add" target="#nkr_note_add_0389a0101">蹉【CB】，嗟【南傳】</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -5,31 +5,39 @@
 		<titleStmt>
 			<title>Supplement to the Dazangjing, Electronic version, No. 40 集量論略解</title>
 			<title xml:lang="zh-Hant">大藏經補編數位版, No. 40 集量論略解</title>
-			<author>陳那著 法尊譯編</author>
+			<author>陳那著　法尊譯編</author>
 			<respStmt>
 				<resp>Electronic Version by</resp>
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision:$<date>$Date:$</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>BuBian</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>BuBian</name></respStmt>
 		</editionStmt>
 		<extent>6卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">B</idno>.<idno type="vol">9</idno>.<idno type="no">40</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date:$</date>
+			<date>2019-09-16 22:53:15 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Supplement to the Dazangjing Vol. 9, No. 40</bibl>
+			<bibl>
+				<title level="s">Supplement to the Dazangjing</title>
+				<title level="s" xml:lang="zh-Hant">大藏經補編</title>
+				<title level="m" xml:lang="zh-Hant">集量論略解</title>
+			</bibl>
 		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
@@ -37,20 +45,30 @@
 			<p xml:lang="en" cb:type="ly">Input by CBETA(first version), Input by CBETA(second version)</p>
 			<p xml:lang="zh-Hant" cb:type="ly">CBETA 人工輸入（版本一），CBETA 人工輸入（版本二）</p>
 		</projectDesc>
-	</encodingDesc>	
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【補編】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2015-01-22">
-			<name>Ray Chou 周邦信</name> Created initial TEI XML P5a version with bm2p5a.py
+			<name>Ray Chou 周邦信</name>Created initial TEI XML P5a version with bm2p5a.py
 		</change>
-<!--
-$Log:$
--->
 	</revisionDesc>
 </teiHeader>
 <text><body>
@@ -2245,7 +2263,7 @@ $Log:$
 <cb:div type="bubian-notes">
 <head>大藏經補編 校註</head>
 <p>
-<note n="0337001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337001">古代印度的習慣，爭辯輸了的一方，放棄自己的信仰，改奉勝利者的宗教。</note>
+<note n="0337001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337001">古代印度的習慣，爭辯輸了的一方，放棄自己的信仰，改奉勝利者的宗教。</note>
 </p>
 </cb:div>
 </back></text></TEI>
