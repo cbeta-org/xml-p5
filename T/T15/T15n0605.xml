@@ -11,120 +11,72 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2012/08/27 03:14:58 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/08/27 03:14:58 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 15, No. 605</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【宮】</witness>
-		<witness xml:id="wit5">【明】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Mr. Christian Wittern, Text as provided by SAT, Japan, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Ji Ge Ai Nuo</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供，日本 SAT 組織提供，北美某大德提供，吉格艾諾提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">15</idno>.<idno type="no">605</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">禪行法想經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Mr. Christian Wittern, Text as provided by SAT, Japan, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Ji Ge Ai Nuo</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供，日本 SAT 組織提供，北美某大德提供，吉格艾諾提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【宮】</witness>
+						<witness xml:id="wit4">【明】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-10-11T23:56:07">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)</change>
-<!--
-$Log: T15n0605.xml,v $
-Revision 1.11  2012/08/27 03:14:58  maha
-修訂新標小圓點及著重號
-
-Revision 1.10  2011/09/15 05:46:53  eva
-上傳 新式標點版
-
-Revision 1.9  2009/04/23 07:58:51  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.8  2006/04/12 21:54:56  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/10/11 23:56:36  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/09/13 14:17:03  saywhat
-<trailer> => <juan fun="close"><jhead>
-
-Revision 1.4  2004/04/20 08:38:10  maha
-「版本日期」標記修訂
-
-Revision 1.3  2003/06/19 03:44:38  eva
-modified: 插入星號校勘
-
-Revision 1.2  2003/05/05 06:23:10  eva
-modified
-
-Revision 1.16  2002/12/05 12:30:40  eva
-modified
-
-Revision 1.15  2002/11/04 10:41:11  ray
-tei.2 => TEI.2
-
-Revision 1.14  2002/10/07 13:07:34  moved
-modified
-
-Revision 1.13  2002/07/29 09:54:42  vinking
-modified lang
-
-Revision 1.12  2002/04/04 07:44:15  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/07/27 07:11:29  ray
-去除多餘的 <author>
-
-Revision 1.10  2001/07/24 06:51:17  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/05/25 08:56:15  ray
-經號統一為四碼
-
-Revision 1.8  2001/03/30 05:43:38  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/03/25 09:03:43  ray
-add <milestone>
-
-Revision 1.6  2001/02/07 06:50:19  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.5  2001/02/03 07:39:48  chris
-Added keywords $Revision: 1.11 $, $Date: 2012/08/27 03:14:58 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-10-11T23:56:07">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -158,26 +110,26 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0181008" to="#end0181008"><lem wit="#wit1">安息國</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0181009" to="#end0181009"><lem wit="#wit1">舍衛</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5">舍衛國</rdg></app>
-<app from="#beg0181010" to="#end0181010"><lem wit="#wit1">苦</lem><rdg resp="#resp1" wit="#wit5">若</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0181010"><lem wit="#wit1">苦</lem><rdg resp="#resp1" wit="#wit5">若</rdg></app>
+<app from="#beg0181008" to="#end0181008"><lem wit="#wit.orig">安息國</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0181009" to="#end0181009"><lem wit="#wit.orig">舍衛</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">舍衛國</rdg></app>
+<app from="#beg0181010" to="#end0181010"><lem wit="#wit.orig">苦</lem><rdg resp="#resp2" wit="#wit4">若</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0181010"><lem wit="#wit.orig">苦</lem><rdg resp="#resp2" wit="#wit4">若</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0181008" resp="#resp2" type="mod" target="#nkr_note_mod_0181008">安息國【大】，〔－〕【宋】【元】【宮】</note>
-<note n="0181009" resp="#resp2" type="mod" target="#nkr_note_mod_0181009">舍衛【大】，舍衛國【宋】【元】【明】</note>
-<note n="0181010" resp="#resp2" type="mod" target="#nkr_note_mod_0181010">苦【大】＊，若【明】＊</note>
+<note n="0181008" resp="#resp1" type="mod" target="#nkr_note_mod_0181008">安息國【大】，〔－〕【宋】【元】【宮】</note>
+<note n="0181009" resp="#resp1" type="mod" target="#nkr_note_mod_0181009">舍衛【大】，舍衛國【宋】【元】【明】</note>
+<note n="0181010" resp="#resp1" type="mod" target="#nkr_note_mod_0181010">苦【大】＊，若【明】＊</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0181008" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0181008">〔安息國〕－【宋】【元】【宮】</note>
-<note n="0181009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0181009">舍衛＋（國）【三】</note>
-<note n="0181010" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0181010">苦＝若【明】＊</note>
+<note n="0181008" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0181008">〔安息國〕－【宋】【元】【宮】</note>
+<note n="0181009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0181009">舍衛＋（國）【三】</note>
+<note n="0181010" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0181010">苦＝若【明】＊</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -11,126 +11,82 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.10 $<date>$Date: 2009/04/23 08:01:18 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:18 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 20, No. 1070</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【元】</witness>
-		<witness xml:id="wit3">【明】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB34399">
-	<charName>CBETA CHARACTER CB34399</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[病-丙+(匚@夾)]</value>
-	</charProp>
-	<mapping type="unicode">U+24DFE</mapping>
-	<mapping cb:dec="1017439" type="PUA">U+F865F</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">20</idno>.<idno type="no">1070</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說十一面觀世音神呪經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【元】</witness>
+						<witness xml:id="wit2">【明】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB34399">
+				<charName>CBETA CHARACTER CB34399</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[病-丙+(匚@夾)]</value>
+				</charProp>
+				<mapping type="unicode">U+24DFE</mapping>
+				<mapping cb:dec="1017439" type="PUA">U+F865F</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-24T11:15:05">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T20n1070.xml,v $
-Revision 1.10  2009/04/23 08:01:18  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.9  2006/04/12 21:55:40  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/11/14 03:17:23  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.6  2004/10/21 08:20:03  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/05/11 02:31:46  saywhat
-行中<p type="dharani"> 改成 <p type="dharani" place="inline">
-
-Revision 1.4  2004/04/20 08:38:53  maha
-「版本日期」標記修訂
-
-Revision 1.3  2004/04/20 03:25:27  maha
-將 type="inline" 或 rend="inline" 改成 place="inline"
-
-Revision 1.2  2003/06/23 06:16:02  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:19  ray
-recover cvs
-
-Revision 1.14  2002/12/05 05:20:18  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:45:30  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/10/07 13:11:51  moved
-modified
-
-Revision 1.11  2002/07/29 09:56:40  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:05:43  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/07/24 06:53:03  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/04/01 08:18:17  ray
-CB00380 => CB00308
-
-Revision 1.7  2001/03/30 05:55:16  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:15:21  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:55:37  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:45:33  chris
-Added keywords $Revision: 1.10 $, $Date: 2009/04/23 08:01:18 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-24T11:15:05">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -406,165 +362,165 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0149010" to="#end0149010"><lem wit="#wit1">周宇文氏</lem><rdg resp="#resp1" wit="#wit2 #wit3">宇文周世</rdg></app>
-<app from="#beg0149011" to="#end0149011"><lem wit="#wit1">多</lem><rdg resp="#resp1" wit="#wit2 #wit3">多等</rdg></app>
-<app from="#beg0149012" to="#end0149012"><lem wit="#wit1">為</lem><rdg resp="#resp1" wit="#wit2 #wit3">我為</rdg></app>
-<app from="#beg0149013" to="#end0149013"><lem wit="#wit1">是</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0149014" to="#end0149014"><lem wit="#wit1">設</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0149015" to="#end0149015"><lem wit="#wit1">廁</lem><rdg resp="#resp1" wit="#wit2 #wit3">廁屏</rdg></app>
-<app from="#beg0149016" to="#end0149016"><lem wit="#wit1">我</lem><rdg resp="#resp1" wit="#wit2 #wit3">我如是</rdg></app>
-<app from="#beg0149017" to="#end0149017"><lem wit="#wit1">無異</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0150001" to="#end0150001"><lem wit="#wit1">迦</lem><rdg resp="#resp1" wit="#wit2 #wit3">迦耶</rdg></app>
-<app from="#beg0150002" to="#end0150002"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit3">婆</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0150002"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit3">婆</rdg></app>
-<app from="#beg0150003" to="#end0150003"><lem wit="#wit1">氐</lem><rdg resp="#resp1" wit="#wit2 #wit3">羝</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0150002"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit3">婆</rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0150003"><lem wit="#wit1">氐</lem><rdg resp="#resp1" wit="#wit2 #wit3">羝</rdg></app>
-<app from="#beg0150004" to="#end0150004"><lem wit="#wit1">地利私</lem><rdg resp="#resp1" wit="#wit2">私利地</rdg></app>
-<app from="#beg_4" to="#end_4" corresp="#0150002"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit3">婆</rdg></app>
-<app from="#beg0150005" to="#end0150005"><lem wit="#wit1">呪</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg_5" to="#end_5" corresp="#0150003"><lem wit="#wit1">氐</lem><rdg resp="#resp1" wit="#wit2 #wit3">羝</rdg></app>
-<app from="#beg_6" to="#end_6" corresp="#0150003"><lem wit="#wit1">氐</lem><rdg resp="#resp1" wit="#wit2 #wit3">羝</rdg></app>
-<app from="#beg_7" to="#end_7" corresp="#0150002"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit3">婆</rdg></app>
-<app from="#beg0150006" to="#end0150006"><lem wit="#wit1">木</lem><rdg resp="#resp1" wit="#wit2 #wit3">木一</rdg></app>
-<app from="#beg0150007" to="#end0150007"><lem wit="#wit1">而呪</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg_8" to="#end_8" corresp="#0150003"><lem wit="#wit1">氐</lem><rdg resp="#resp1" wit="#wit2 #wit3">羝</rdg></app>
-<app from="#beg_9" to="#end_9" corresp="#0150002"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit3">婆</rdg></app>
-<app from="#beg_a" to="#end_a" corresp="#0150003"><lem wit="#wit1">氐</lem><rdg resp="#resp1" wit="#wit2 #wit3">羝</rdg></app>
-<app from="#beg_b" to="#end_b" corresp="#0150003"><lem wit="#wit1">氐</lem><rdg resp="#resp1" wit="#wit2 #wit3">羝</rdg></app>
-<app from="#beg_c" to="#end_c" corresp="#0150002"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit3">婆</rdg></app>
-<app from="#beg0150008" to="#end0150008"><lem wit="#wit1">疱</lem><rdg resp="#resp1" wit="#wit2 #wit3">疱等用五色線作呪索一百八結清淨洗手燒妙好香誦呪一百八遍一呪一結繫其頸上</rdg></app>
-<app from="#beg0150009" to="#end0150009"><lem wit="#wit1">即<lb n="0150c16" ed="T"/>得</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0150010" to="#end0150010"><lem wit="#wit1">旃</lem><rdg resp="#resp1" wit="#wit2 #wit3">栴</rdg></app>
-<app from="#beg0150011" to="#end0150011"><lem wit="#wit1">篋</lem><rdg resp="#resp1" wit="#wit2 #wit3"><g ref="#CB34399">𤷾</g></rdg></app>
-<app from="#beg0150012" to="#end0150012"><lem wit="#wit1">廂</lem><rdg resp="#resp1" wit="#wit2">相</rdg></app>
-<app from="#beg0150013" to="#end0150013"><lem wit="#wit1">面</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0150014" to="#end0150014"><lem wit="#wit1">前</lem><rdg resp="#resp1" wit="#wit2">從</rdg></app>
-<app from="#beg0151001" to="#end0151001"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2 #wit3">一</rdg></app>
-<app from="#beg_d" to="#end_d" corresp="#0150010"><lem wit="#wit1">旃</lem><rdg resp="#resp1" wit="#wit2 #wit3">栴</rdg></app>
-<app from="#beg_e" to="#end_e" corresp="#0150010"><lem wit="#wit1">旃</lem><rdg resp="#resp1" wit="#wit2 #wit3">栴</rdg></app>
-<app from="#beg_f" to="#end_f" corresp="#0150010"><lem wit="#wit1">旃</lem><rdg resp="#resp1" wit="#wit2 #wit3">栴</rdg></app>
-<app from="#beg0151002" to="#end0151002"><lem wit="#wit1">振</lem><rdg resp="#resp1" wit="#wit3">震</rdg></app>
-<app from="#beg0151003" to="#end0151003"><lem wit="#wit1">路</lem><rdg resp="#resp1" wit="#wit2 #wit3">露</rdg></app>
-<app from="#beg0151004" to="#end0151004"><lem wit="#wit1">烟</lem><rdg resp="#resp1" wit="#wit3">胭</rdg></app>
-<app from="#beg_10" to="#end_10" corresp="#0150012"><lem wit="#wit1">廂</lem><rdg resp="#resp1" wit="#wit2">相</rdg></app>
-<app from="#beg0151005" to="#end0151005"><lem wit="#wit1">押</lem><rdg resp="#resp1" wit="#wit2 #wit3">壓</rdg></app>
-<app from="#beg0151006" to="#end0151006"><lem wit="#wit1">木</lem><rdg resp="#resp1" wit="#wit2 #wit3">火</rdg></app>
-<app from="#beg0151007" to="#end0151007"><lem wit="#wit1">愈</lem><rdg resp="#resp1" wit="#wit2 #wit3">愈復取緋線一呪一結乃至七結稱名願為國中疫病悉得除愈以此呪索於最上佛頸邊繫著是諸災疫皆悉得除除已解去呪索</rdg></app>
-<app from="#beg0151008" to="#end0151008"><lem wit="#wit1">咀</lem><rdg resp="#resp1" wit="#wit2 #wit3">詛</rdg></app>
-<app from="#beg0151009" to="#end0151009"><lem wit="#wit1">逕</lem><rdg resp="#resp1" wit="#wit2 #wit3">經</rdg></app>
-<app from="#beg0151010" to="#end0151010"><lem wit="#wit1">頸</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg_11" to="#end_11" corresp="#0150013"><lem wit="#wit1">面</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg_12" to="#end_12" corresp="#0151009"><lem wit="#wit1">逕</lem><rdg resp="#resp1" wit="#wit2 #wit3">經</rdg></app>
-<app from="#beg_13" to="#end_13" corresp="#0151009"><lem wit="#wit1">逕</lem><rdg resp="#resp1" wit="#wit2 #wit3">經</rdg></app>
-<app from="#beg0151011" to="#end0151011"><lem wit="#wit1">每</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg_14" to="#end_14" corresp="#0150012"><lem wit="#wit1">廂</lem><rdg resp="#resp1" wit="#wit2">相</rdg></app>
-<app from="#beg_15" to="#end_15" corresp="#0151009"><lem wit="#wit1">逕</lem><rdg resp="#resp1" wit="#wit2 #wit3">經</rdg></app>
-<app from="#beg0151012" to="#end0151012"><lem wit="#wit1">名字</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0151013" to="#end0151013"><lem wit="#wit1">在</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg_16" to="#end_16" corresp="#0150012"><lem wit="#wit1">廂</lem><rdg resp="#resp1" wit="#wit2">相</rdg></app>
-<app from="#beg_17" to="#end_17" corresp="#0151009"><lem wit="#wit1">逕</lem><rdg resp="#resp1" wit="#wit2 #wit3">經</rdg></app>
-<app from="#beg_18" to="#end_18" corresp="#0151009"><lem wit="#wit1">逕</lem><rdg resp="#resp1" wit="#wit2 #wit3">經</rdg></app>
-<app from="#beg0151014" to="#end0151014"><lem wit="#wit1">自</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0151015" to="#end0151015"><lem wit="#wit1">水</lem><rdg resp="#resp1" wit="#wit2 #wit3">呪</rdg></app>
-<app from="#beg0152001" to="#end0152001"><lem wit="#wit1">能</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0152003" to="#end0152003"><lem wit="#wit1">神呪</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0152005" to="#end0152005"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit2 #wit3">有</rdg></app>
+<app from="#beg0149010" to="#end0149010"><lem wit="#wit.orig">周宇文氏</lem><rdg resp="#resp2" wit="#wit1 #wit2">宇文周世</rdg></app>
+<app from="#beg0149011" to="#end0149011"><lem wit="#wit.orig">多</lem><rdg resp="#resp2" wit="#wit1 #wit2">多等</rdg></app>
+<app from="#beg0149012" to="#end0149012"><lem wit="#wit.orig">為</lem><rdg resp="#resp2" wit="#wit1 #wit2">我為</rdg></app>
+<app from="#beg0149013" to="#end0149013"><lem wit="#wit.orig">是</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0149014" to="#end0149014"><lem wit="#wit.orig">設</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0149015" to="#end0149015"><lem wit="#wit.orig">廁</lem><rdg resp="#resp2" wit="#wit1 #wit2">廁屏</rdg></app>
+<app from="#beg0149016" to="#end0149016"><lem wit="#wit.orig">我</lem><rdg resp="#resp2" wit="#wit1 #wit2">我如是</rdg></app>
+<app from="#beg0149017" to="#end0149017"><lem wit="#wit.orig">無異</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0150001" to="#end0150001"><lem wit="#wit.orig">迦</lem><rdg resp="#resp2" wit="#wit1 #wit2">迦耶</rdg></app>
+<app from="#beg0150002" to="#end0150002"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit2">婆</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0150002"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit2">婆</rdg></app>
+<app from="#beg0150003" to="#end0150003"><lem wit="#wit.orig">氐</lem><rdg resp="#resp2" wit="#wit1 #wit2">羝</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0150002"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit2">婆</rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0150003"><lem wit="#wit.orig">氐</lem><rdg resp="#resp2" wit="#wit1 #wit2">羝</rdg></app>
+<app from="#beg0150004" to="#end0150004"><lem wit="#wit.orig">地利私</lem><rdg resp="#resp2" wit="#wit1">私利地</rdg></app>
+<app from="#beg_4" to="#end_4" corresp="#0150002"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit2">婆</rdg></app>
+<app from="#beg0150005" to="#end0150005"><lem wit="#wit.orig">呪</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg_5" to="#end_5" corresp="#0150003"><lem wit="#wit.orig">氐</lem><rdg resp="#resp2" wit="#wit1 #wit2">羝</rdg></app>
+<app from="#beg_6" to="#end_6" corresp="#0150003"><lem wit="#wit.orig">氐</lem><rdg resp="#resp2" wit="#wit1 #wit2">羝</rdg></app>
+<app from="#beg_7" to="#end_7" corresp="#0150002"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit2">婆</rdg></app>
+<app from="#beg0150006" to="#end0150006"><lem wit="#wit.orig">木</lem><rdg resp="#resp2" wit="#wit1 #wit2">木一</rdg></app>
+<app from="#beg0150007" to="#end0150007"><lem wit="#wit.orig">而呪</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg_8" to="#end_8" corresp="#0150003"><lem wit="#wit.orig">氐</lem><rdg resp="#resp2" wit="#wit1 #wit2">羝</rdg></app>
+<app from="#beg_9" to="#end_9" corresp="#0150002"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit2">婆</rdg></app>
+<app from="#beg_a" to="#end_a" corresp="#0150003"><lem wit="#wit.orig">氐</lem><rdg resp="#resp2" wit="#wit1 #wit2">羝</rdg></app>
+<app from="#beg_b" to="#end_b" corresp="#0150003"><lem wit="#wit.orig">氐</lem><rdg resp="#resp2" wit="#wit1 #wit2">羝</rdg></app>
+<app from="#beg_c" to="#end_c" corresp="#0150002"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit2">婆</rdg></app>
+<app from="#beg0150008" to="#end0150008"><lem wit="#wit.orig">疱</lem><rdg resp="#resp2" wit="#wit1 #wit2">疱等用五色線作呪索一百八結清淨洗手燒妙好香誦呪一百八遍一呪一結繫其頸上</rdg></app>
+<app from="#beg0150009" to="#end0150009"><lem wit="#wit.orig">即<lb n="0150c16" ed="T"/>得</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0150010" to="#end0150010"><lem wit="#wit.orig">旃</lem><rdg resp="#resp2" wit="#wit1 #wit2">栴</rdg></app>
+<app from="#beg0150011" to="#end0150011"><lem wit="#wit.orig">篋</lem><rdg resp="#resp2" wit="#wit1 #wit2"><g ref="#CB34399">𤷾</g></rdg></app>
+<app from="#beg0150012" to="#end0150012"><lem wit="#wit.orig">廂</lem><rdg resp="#resp2" wit="#wit1">相</rdg></app>
+<app from="#beg0150013" to="#end0150013"><lem wit="#wit.orig">面</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0150014" to="#end0150014"><lem wit="#wit.orig">前</lem><rdg resp="#resp2" wit="#wit1">從</rdg></app>
+<app from="#beg0151001" to="#end0151001"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1 #wit2">一</rdg></app>
+<app from="#beg_d" to="#end_d" corresp="#0150010"><lem wit="#wit.orig">旃</lem><rdg resp="#resp2" wit="#wit1 #wit2">栴</rdg></app>
+<app from="#beg_e" to="#end_e" corresp="#0150010"><lem wit="#wit.orig">旃</lem><rdg resp="#resp2" wit="#wit1 #wit2">栴</rdg></app>
+<app from="#beg_f" to="#end_f" corresp="#0150010"><lem wit="#wit.orig">旃</lem><rdg resp="#resp2" wit="#wit1 #wit2">栴</rdg></app>
+<app from="#beg0151002" to="#end0151002"><lem wit="#wit.orig">振</lem><rdg resp="#resp2" wit="#wit2">震</rdg></app>
+<app from="#beg0151003" to="#end0151003"><lem wit="#wit.orig">路</lem><rdg resp="#resp2" wit="#wit1 #wit2">露</rdg></app>
+<app from="#beg0151004" to="#end0151004"><lem wit="#wit.orig">烟</lem><rdg resp="#resp2" wit="#wit2">胭</rdg></app>
+<app from="#beg_10" to="#end_10" corresp="#0150012"><lem wit="#wit.orig">廂</lem><rdg resp="#resp2" wit="#wit1">相</rdg></app>
+<app from="#beg0151005" to="#end0151005"><lem wit="#wit.orig">押</lem><rdg resp="#resp2" wit="#wit1 #wit2">壓</rdg></app>
+<app from="#beg0151006" to="#end0151006"><lem wit="#wit.orig">木</lem><rdg resp="#resp2" wit="#wit1 #wit2">火</rdg></app>
+<app from="#beg0151007" to="#end0151007"><lem wit="#wit.orig">愈</lem><rdg resp="#resp2" wit="#wit1 #wit2">愈復取緋線一呪一結乃至七結稱名願為國中疫病悉得除愈以此呪索於最上佛頸邊繫著是諸災疫皆悉得除除已解去呪索</rdg></app>
+<app from="#beg0151008" to="#end0151008"><lem wit="#wit.orig">咀</lem><rdg resp="#resp2" wit="#wit1 #wit2">詛</rdg></app>
+<app from="#beg0151009" to="#end0151009"><lem wit="#wit.orig">逕</lem><rdg resp="#resp2" wit="#wit1 #wit2">經</rdg></app>
+<app from="#beg0151010" to="#end0151010"><lem wit="#wit.orig">頸</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg_11" to="#end_11" corresp="#0150013"><lem wit="#wit.orig">面</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg_12" to="#end_12" corresp="#0151009"><lem wit="#wit.orig">逕</lem><rdg resp="#resp2" wit="#wit1 #wit2">經</rdg></app>
+<app from="#beg_13" to="#end_13" corresp="#0151009"><lem wit="#wit.orig">逕</lem><rdg resp="#resp2" wit="#wit1 #wit2">經</rdg></app>
+<app from="#beg0151011" to="#end0151011"><lem wit="#wit.orig">每</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg_14" to="#end_14" corresp="#0150012"><lem wit="#wit.orig">廂</lem><rdg resp="#resp2" wit="#wit1">相</rdg></app>
+<app from="#beg_15" to="#end_15" corresp="#0151009"><lem wit="#wit.orig">逕</lem><rdg resp="#resp2" wit="#wit1 #wit2">經</rdg></app>
+<app from="#beg0151012" to="#end0151012"><lem wit="#wit.orig">名字</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0151013" to="#end0151013"><lem wit="#wit.orig">在</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg_16" to="#end_16" corresp="#0150012"><lem wit="#wit.orig">廂</lem><rdg resp="#resp2" wit="#wit1">相</rdg></app>
+<app from="#beg_17" to="#end_17" corresp="#0151009"><lem wit="#wit.orig">逕</lem><rdg resp="#resp2" wit="#wit1 #wit2">經</rdg></app>
+<app from="#beg_18" to="#end_18" corresp="#0151009"><lem wit="#wit.orig">逕</lem><rdg resp="#resp2" wit="#wit1 #wit2">經</rdg></app>
+<app from="#beg0151014" to="#end0151014"><lem wit="#wit.orig">自</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0151015" to="#end0151015"><lem wit="#wit.orig">水</lem><rdg resp="#resp2" wit="#wit1 #wit2">呪</rdg></app>
+<app from="#beg0152001" to="#end0152001"><lem wit="#wit.orig">能</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0152003" to="#end0152003"><lem wit="#wit.orig">神呪</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0152005" to="#end0152005"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit1 #wit2">有</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0149010" resp="#resp2" type="mod" target="#nkr_note_mod_0149010">周宇文氏【大】，宇文周世【元】【明】</note>
-<note n="0149011" resp="#resp2" type="mod" target="#nkr_note_mod_0149011">多【大】，多等【元】【明】</note>
-<note n="0149012" resp="#resp2" type="mod" target="#nkr_note_mod_0149012">為【大】，我為【元】【明】</note>
-<note n="0149013" resp="#resp2" type="mod" target="#nkr_note_mod_0149013">是【大】，〔－〕【元】【明】</note>
-<note n="0149014" resp="#resp2" type="mod" target="#nkr_note_mod_0149014">設【大】，〔－〕【元】【明】</note>
-<note n="0149015" resp="#resp2" type="mod" target="#nkr_note_mod_0149015">廁【大】，廁屏【元】【明】</note>
-<note n="0149016" resp="#resp2" type="mod" target="#nkr_note_mod_0149016">我【大】，我如是【元】【明】</note>
-<note n="0149017" resp="#resp2" type="mod" target="#nkr_note_mod_0149017">無異【大】，〔－〕【元】【明】</note>
-<note n="0150001" resp="#resp2" type="mod" target="#nkr_note_mod_0150001">迦【大】，迦耶【元】【明】</note>
-<note n="0150002" resp="#resp2" type="mod" target="#nkr_note_mod_0150002">波【大】＊，婆【明】＊</note>
-<note n="0150003" resp="#resp2" type="mod" target="#nkr_note_mod_0150003">氐【大】＊，羝【元】【明】＊</note>
-<note n="0150004" resp="#resp2" type="mod" target="#nkr_note_mod_0150004">地利私【大】，私利地【元】</note>
-<note n="0150005" resp="#resp2" type="mod" target="#nkr_note_mod_0150005">呪【大】，〔－〕【元】【明】</note>
-<note n="0150006" resp="#resp2" type="mod" target="#nkr_note_mod_0150006">木【大】，木一【元】【明】</note>
-<note n="0150007" resp="#resp2" type="mod" target="#nkr_note_mod_0150007">而呪【大】，〔－〕【元】【明】</note>
-<note n="0150008" resp="#resp2" type="mod" target="#nkr_note_mod_0150008">疱【大】，疱等用五色線作呪索一百八結清淨洗手燒妙好香誦呪一百八遍一呪一結繫其頸上【元】【明】</note>
-<note n="0150009" resp="#resp2" type="mod" target="#nkr_note_mod_0150009">即得【大】，〔－〕【元】【明】</note>
-<note n="0150010" resp="#resp2" type="mod" target="#nkr_note_mod_0150010">旃【大】＊，栴【元】【明】＊</note>
-<note n="0150011" resp="#resp2" type="mod" target="#nkr_note_mod_0150011">篋【大】，<g ref="#CB34399">𤷾</g>【元】【明】</note>
-<note n="0150012" resp="#resp2" type="mod" target="#nkr_note_mod_0150012">廂【大】＊，相【元】＊</note>
-<note n="0150013" resp="#resp2" type="mod" target="#nkr_note_mod_0150013">面【大】＊，〔－〕【元】【明】＊</note>
-<note n="0150014" resp="#resp2" type="mod" target="#nkr_note_mod_0150014">前【大】，從【元】</note>
-<note n="0151001" resp="#resp2" type="mod" target="#nkr_note_mod_0151001">三【大】，一【元】【明】</note>
-<note n="0151002" resp="#resp2" type="mod" target="#nkr_note_mod_0151002">振【大】下同，震【明】下同</note>
-<note n="0151003" resp="#resp2" type="mod" target="#nkr_note_mod_0151003">路【大】，露【元】【明】</note>
-<note n="0151004" resp="#resp2" type="mod" target="#nkr_note_mod_0151004">烟【大】，胭【明】</note>
-<note n="0151005" resp="#resp2" type="mod" target="#nkr_note_mod_0151005">押【大】，壓【元】【明】</note>
-<note n="0151006" resp="#resp2" type="mod" target="#nkr_note_mod_0151006">木【大】，火【元】【明】</note>
-<note n="0151007" resp="#resp2" type="mod" target="#nkr_note_mod_0151007">愈【大】，愈復取緋線一呪一結乃至七結稱名願為國中疫病悉得除愈以此呪索於最上佛頸邊繫著是諸災疫皆悉得除除已解去呪索【元】【明】</note>
-<note n="0151008" resp="#resp2" type="mod" target="#nkr_note_mod_0151008">咀【大】，詛【元】【明】</note>
-<note n="0151009" resp="#resp2" type="mod" target="#nkr_note_mod_0151009">逕【大】＊，經【元】【明】＊</note>
-<note n="0151010" resp="#resp2" type="mod" target="#nkr_note_mod_0151010">頸【大】，〔－〕【元】【明】</note>
-<note n="0151011" resp="#resp2" type="mod" target="#nkr_note_mod_0151011">每【大】，〔－〕【元】【明】</note>
-<note n="0151012" resp="#resp2" type="mod" target="#nkr_note_mod_0151012">名字【大】，〔－〕【元】【明】</note>
-<note n="0151013" resp="#resp2" type="mod" target="#nkr_note_mod_0151013">在【大】，〔－〕【元】【明】</note>
-<note n="0151014" resp="#resp2" type="mod" target="#nkr_note_mod_0151014">自【大】，〔－〕【元】【明】</note>
-<note n="0151015" resp="#resp2" type="mod" target="#nkr_note_mod_0151015">水【大】，呪【元】【明】</note>
-<note n="0152001" resp="#resp2" type="mod" target="#nkr_note_mod_0152001">能【大】，〔－〕【元】【明】</note>
-<note n="0152002" resp="#resp2" type="mod" target="#nkr_note_mod_0152002"><!--CBETA todo type: a-->（佛說…經）十一字【大】∞（此經…品）二十六字夾註【元】【明】</note>
-<note n="0152003" resp="#resp2" type="mod" target="#nkr_note_mod_0152003">神呪【大】，〔－〕【元】</note>
-<note n="0152004" resp="#resp2" type="mod" target="#nkr_note_mod_0152004"><!--CBETA todo type: a-->（此經…品）二十六字夾註【大】∞（佛說…經）十一字【元】【明】</note>
-<note n="0152005" resp="#resp2" type="mod" target="#nkr_note_mod_0152005">經【大】，有【元】【明】</note>
+<note n="0149010" resp="#resp3" type="mod" target="#nkr_note_mod_0149010">周宇文氏【大】，宇文周世【元】【明】</note>
+<note n="0149011" resp="#resp3" type="mod" target="#nkr_note_mod_0149011">多【大】，多等【元】【明】</note>
+<note n="0149012" resp="#resp3" type="mod" target="#nkr_note_mod_0149012">為【大】，我為【元】【明】</note>
+<note n="0149013" resp="#resp3" type="mod" target="#nkr_note_mod_0149013">是【大】，〔－〕【元】【明】</note>
+<note n="0149014" resp="#resp3" type="mod" target="#nkr_note_mod_0149014">設【大】，〔－〕【元】【明】</note>
+<note n="0149015" resp="#resp3" type="mod" target="#nkr_note_mod_0149015">廁【大】，廁屏【元】【明】</note>
+<note n="0149016" resp="#resp3" type="mod" target="#nkr_note_mod_0149016">我【大】，我如是【元】【明】</note>
+<note n="0149017" resp="#resp3" type="mod" target="#nkr_note_mod_0149017">無異【大】，〔－〕【元】【明】</note>
+<note n="0150001" resp="#resp3" type="mod" target="#nkr_note_mod_0150001">迦【大】，迦耶【元】【明】</note>
+<note n="0150002" resp="#resp3" type="mod" target="#nkr_note_mod_0150002">波【大】＊，婆【明】＊</note>
+<note n="0150003" resp="#resp3" type="mod" target="#nkr_note_mod_0150003">氐【大】＊，羝【元】【明】＊</note>
+<note n="0150004" resp="#resp3" type="mod" target="#nkr_note_mod_0150004">地利私【大】，私利地【元】</note>
+<note n="0150005" resp="#resp3" type="mod" target="#nkr_note_mod_0150005">呪【大】，〔－〕【元】【明】</note>
+<note n="0150006" resp="#resp3" type="mod" target="#nkr_note_mod_0150006">木【大】，木一【元】【明】</note>
+<note n="0150007" resp="#resp3" type="mod" target="#nkr_note_mod_0150007">而呪【大】，〔－〕【元】【明】</note>
+<note n="0150008" resp="#resp3" type="mod" target="#nkr_note_mod_0150008">疱【大】，疱等用五色線作呪索一百八結清淨洗手燒妙好香誦呪一百八遍一呪一結繫其頸上【元】【明】</note>
+<note n="0150009" resp="#resp3" type="mod" target="#nkr_note_mod_0150009">即得【大】，〔－〕【元】【明】</note>
+<note n="0150010" resp="#resp3" type="mod" target="#nkr_note_mod_0150010">旃【大】＊，栴【元】【明】＊</note>
+<note n="0150011" resp="#resp3" type="mod" target="#nkr_note_mod_0150011">篋【大】，<g ref="#CB34399">𤷾</g>【元】【明】</note>
+<note n="0150012" resp="#resp3" type="mod" target="#nkr_note_mod_0150012">廂【大】＊，相【元】＊</note>
+<note n="0150013" resp="#resp3" type="mod" target="#nkr_note_mod_0150013">面【大】＊，〔－〕【元】【明】＊</note>
+<note n="0150014" resp="#resp3" type="mod" target="#nkr_note_mod_0150014">前【大】，從【元】</note>
+<note n="0151001" resp="#resp3" type="mod" target="#nkr_note_mod_0151001">三【大】，一【元】【明】</note>
+<note n="0151002" resp="#resp3" type="mod" target="#nkr_note_mod_0151002">振【大】下同，震【明】下同</note>
+<note n="0151003" resp="#resp3" type="mod" target="#nkr_note_mod_0151003">路【大】，露【元】【明】</note>
+<note n="0151004" resp="#resp3" type="mod" target="#nkr_note_mod_0151004">烟【大】，胭【明】</note>
+<note n="0151005" resp="#resp3" type="mod" target="#nkr_note_mod_0151005">押【大】，壓【元】【明】</note>
+<note n="0151006" resp="#resp3" type="mod" target="#nkr_note_mod_0151006">木【大】，火【元】【明】</note>
+<note n="0151007" resp="#resp3" type="mod" target="#nkr_note_mod_0151007">愈【大】，愈復取緋線一呪一結乃至七結稱名願為國中疫病悉得除愈以此呪索於最上佛頸邊繫著是諸災疫皆悉得除除已解去呪索【元】【明】</note>
+<note n="0151008" resp="#resp3" type="mod" target="#nkr_note_mod_0151008">咀【大】，詛【元】【明】</note>
+<note n="0151009" resp="#resp3" type="mod" target="#nkr_note_mod_0151009">逕【大】＊，經【元】【明】＊</note>
+<note n="0151010" resp="#resp3" type="mod" target="#nkr_note_mod_0151010">頸【大】，〔－〕【元】【明】</note>
+<note n="0151011" resp="#resp3" type="mod" target="#nkr_note_mod_0151011">每【大】，〔－〕【元】【明】</note>
+<note n="0151012" resp="#resp3" type="mod" target="#nkr_note_mod_0151012">名字【大】，〔－〕【元】【明】</note>
+<note n="0151013" resp="#resp3" type="mod" target="#nkr_note_mod_0151013">在【大】，〔－〕【元】【明】</note>
+<note n="0151014" resp="#resp3" type="mod" target="#nkr_note_mod_0151014">自【大】，〔－〕【元】【明】</note>
+<note n="0151015" resp="#resp3" type="mod" target="#nkr_note_mod_0151015">水【大】，呪【元】【明】</note>
+<note n="0152001" resp="#resp3" type="mod" target="#nkr_note_mod_0152001">能【大】，〔－〕【元】【明】</note>
+<note n="0152002" resp="#resp3" type="mod" target="#nkr_note_mod_0152002"><!--CBETA todo type: a-->（佛說…經）十一字【大】∞（此經…品）二十六字夾註【元】【明】</note>
+<note n="0152003" resp="#resp3" type="mod" target="#nkr_note_mod_0152003">神呪【大】，〔－〕【元】</note>
+<note n="0152004" resp="#resp3" type="mod" target="#nkr_note_mod_0152004"><!--CBETA todo type: a-->（此經…品）二十六字夾註【大】∞（佛說…經）十一字【元】【明】</note>
+<note n="0152005" resp="#resp3" type="mod" target="#nkr_note_mod_0152005">經【大】，有【元】【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0149009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149009">【原】麗本</note>
-<note n="0149010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149010">周宇文氏＝宇文周世【元】【明】</note>
-<note n="0149011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149011">多＋（等）【元】【明】</note>
-<note n="0149012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149012">（我）＋為【元】【明】</note>
-<note n="0149013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149013">〔是〕－【元】【明】</note>
-<note n="0149014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149014">〔設〕－【元】【明】</note>
-<note n="0149015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149015">廁＋（屏）【元】【明】</note>
-<note n="0149016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149016">我＋（如是）【元】【明】</note>
-<note n="0149017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0149017">〔無異〕－【元】【明】</note>
-<note n="0150001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150001">迦＋（耶）【元】【明】</note>
-<note n="0150002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150002">波＝婆【明】＊</note>
-<note n="0150003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150003">氐＝羝【元】【明】＊</note>
-<note n="0150004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150004">地利私＝私利地【元】</note>
-<note n="0150005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150005">〔呪〕－【元】【明】</note>
-<note n="0150006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150006">木＋（一）【元】【明】</note>
-<note n="0150007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150007">〔而呪〕－【元】【明】</note>
-<note n="0150008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150008">疱＋（等用五色線作呪索一百八結清淨洗手燒妙好香誦呪一百八遍一呪一結繫其頸上）三十四字【元】【明】</note>
-<note n="0150009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150009">〔即得〕－【元】【明】</note>
-<note n="0150010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150010">旃＝栴【元】【明】＊</note>
-<note n="0150011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150011">篋＝<g ref="#CB34399">𤷾</g>【元】【明】</note>
-<note n="0150012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150012">廂＝相【元】＊</note>
-<note n="0150013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150013">〔面〕－【元】【明】＊</note>
-<note n="0150014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0150014">前＝從【元】</note>
-<note n="0151001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151001">三＝一【元】【明】</note>
-<note n="0151002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151002">振＝震【明】下同</note>
-<note n="0151003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151003">路＝露【元】【明】</note>
-<note n="0151004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151004">烟＝胭【明】</note>
-<note n="0151005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151005">押＝壓【元】【明】</note>
-<note n="0151006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151006">木＝火【元】【明】</note>
-<note n="0151007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151007">愈＋（復取緋線一呪一結乃至七結稱名願為國中疫病悉得除愈以此呪索於最上佛頸邊繫著是諸災疫皆悉得除除已解去呪索）五十字【元】【明】</note>
-<note n="0151008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151008">咀＝詛【元】【明】</note>
-<note n="0151009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151009">逕＝經【元】【明】＊</note>
-<note n="0151010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151010">〔頸〕－【元】【明】</note>
-<note n="0151011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151011">〔每〕－【元】【明】</note>
-<note n="0151012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151012">〔名字〕－【元】【明】</note>
-<note n="0151013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151013">〔在〕－【元】【明】</note>
-<note n="0151014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151014">〔自〕－【元】【明】</note>
-<note n="0151015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0151015">水＝呪【元】【明】</note>
-<note n="0152001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152001">〔能〕－【元】【明】</note>
-<note n="0152002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152002">（（佛說…經））十一字∞（（此經…品））二十六字夾註【元】【明】</note>
-<note n="0152003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152003">〔神呪〕－【元】</note>
-<note n="0152004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152004">（（佛說…經））十一字∞（（此經…品））二十六字夾註【元】【明】</note>
-<note n="0152005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0152005">經＝有【元】【明】</note>
+<note n="0149009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149009">【原】麗本</note>
+<note n="0149010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149010">周宇文氏＝宇文周世【元】【明】</note>
+<note n="0149011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149011">多＋（等）【元】【明】</note>
+<note n="0149012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149012">（我）＋為【元】【明】</note>
+<note n="0149013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149013">〔是〕－【元】【明】</note>
+<note n="0149014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149014">〔設〕－【元】【明】</note>
+<note n="0149015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149015">廁＋（屏）【元】【明】</note>
+<note n="0149016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149016">我＋（如是）【元】【明】</note>
+<note n="0149017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0149017">〔無異〕－【元】【明】</note>
+<note n="0150001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150001">迦＋（耶）【元】【明】</note>
+<note n="0150002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150002">波＝婆【明】＊</note>
+<note n="0150003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150003">氐＝羝【元】【明】＊</note>
+<note n="0150004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150004">地利私＝私利地【元】</note>
+<note n="0150005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150005">〔呪〕－【元】【明】</note>
+<note n="0150006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150006">木＋（一）【元】【明】</note>
+<note n="0150007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150007">〔而呪〕－【元】【明】</note>
+<note n="0150008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150008">疱＋（等用五色線作呪索一百八結清淨洗手燒妙好香誦呪一百八遍一呪一結繫其頸上）三十四字【元】【明】</note>
+<note n="0150009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150009">〔即得〕－【元】【明】</note>
+<note n="0150010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150010">旃＝栴【元】【明】＊</note>
+<note n="0150011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150011">篋＝<g ref="#CB34399">𤷾</g>【元】【明】</note>
+<note n="0150012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150012">廂＝相【元】＊</note>
+<note n="0150013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150013">〔面〕－【元】【明】＊</note>
+<note n="0150014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0150014">前＝從【元】</note>
+<note n="0151001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151001">三＝一【元】【明】</note>
+<note n="0151002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151002">振＝震【明】下同</note>
+<note n="0151003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151003">路＝露【元】【明】</note>
+<note n="0151004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151004">烟＝胭【明】</note>
+<note n="0151005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151005">押＝壓【元】【明】</note>
+<note n="0151006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151006">木＝火【元】【明】</note>
+<note n="0151007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151007">愈＋（復取緋線一呪一結乃至七結稱名願為國中疫病悉得除愈以此呪索於最上佛頸邊繫著是諸災疫皆悉得除除已解去呪索）五十字【元】【明】</note>
+<note n="0151008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151008">咀＝詛【元】【明】</note>
+<note n="0151009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151009">逕＝經【元】【明】＊</note>
+<note n="0151010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151010">〔頸〕－【元】【明】</note>
+<note n="0151011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151011">〔每〕－【元】【明】</note>
+<note n="0151012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151012">〔名字〕－【元】【明】</note>
+<note n="0151013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151013">〔在〕－【元】【明】</note>
+<note n="0151014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151014">〔自〕－【元】【明】</note>
+<note n="0151015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0151015">水＝呪【元】【明】</note>
+<note n="0152001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152001">〔能〕－【元】【明】</note>
+<note n="0152002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152002">（（佛說…經））十一字∞（（此經…品））二十六字夾註【元】【明】</note>
+<note n="0152003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152003">〔神呪〕－【元】</note>
+<note n="0152004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152004">（（佛說…經））十一字∞（（此經…品））二十六字夾註【元】【明】</note>
+<note n="0152005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0152005">經＝有【元】【明】</note>
 </p>
 </cb:div>
 </back></text></TEI>

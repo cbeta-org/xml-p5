@@ -11,95 +11,68 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.6 $<date>$Date: 2009/04/23 08:12:24 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:12:24 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 46, No. 1944</bibl>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">46</idno>.<idno type="no">1944</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">禮法華經儀式</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-09-01T14:06:43">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T46n1944.xml,v $
-Revision 1.6  2009/04/23 08:12:24  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.5  2006/04/12 21:58:49  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.3  2004/10/29 11:17:25  saywhat
-段落前加入圈點
-
-Revision 1.2  2004/04/20 08:42:52  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:10:30  ray
-recover cvs
-
-Revision 1.14  2002/12/05 07:25:39  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:58:13  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/07/29 10:15:10  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:42:15  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:20:27  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/24 07:00:35  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/03/30 06:31:24  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/03/25 10:34:47  ray
-add <milestone>
-
-Revision 1.6  2001/02/07 07:21:06  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.5  2001/02/03 08:07:44  chris
-Added keywords $Revision: 1.6 $, $Date: 2009/04/23 08:12:24 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-09-01T14:06:43">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -146,7 +119,7 @@ Added comment  for Emacs
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0956002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0956002">【原】康熙六年刊增上寺報恩藏本</note>
+<note n="0956002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0956002">【原】康熙六年刊增上寺報恩藏本</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -11,128 +11,83 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.8 $<date>$Date: 2010/10/25 08:22:38 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2010/10/25 08:22:38 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 19, No. 1020</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【明】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00714">
-	<charName>CBETA CHARACTER CB00714</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[多*頁]</value>
-	</charProp>
-	<mapping type="unicode">U+4AC2</mapping>
-	<mapping cb:dec="983754" type="PUA">U+F02CA</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">19</idno>.<idno type="no">1020</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大方廣佛花嚴經入法界品頓證毘盧遮那法身字輪瑜伽儀軌</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【明】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00714">
+				<charName>CBETA CHARACTER CB00714</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[多*頁]</value>
+				</charProp>
+				<mapping type="unicode">U+4AC2</mapping>
+				<mapping cb:dec="983754" type="PUA">U+F02CA</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-27T11:51:17">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T19n1020.xml,v $
-Revision 1.8  2010/10/25 08:22:38  amtbgrace
-modified: 圖檔檔名修改
-
-Revision 1.7  2009/04/23 08:00:06  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.6  2006/04/12 21:55:38  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.4  2004/10/14 16:25:34  saywhat
-段落前加入圈點
-
-Revision 1.3  2004/04/20 08:38:49  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/06/23 06:14:03  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:17  ray
-recover cvs
-
-Revision 1.18  2002/12/25 08:27:55  saywhat
-【三】＊取代
-
-Revision 1.17  2002/11/27 11:26:34  saywhat
-校勘插入處理
-
-Revision 1.16  2002/11/04 10:45:01  ray
-tei.2 => TEI.2
-
-Revision 1.15  2002/10/21 08:12:23  ray
-移動 <anchor>+<note>, <anchor>+雙圈
-
-Revision 1.14  2002/10/07 13:10:59  moved
-modified
-
-Revision 1.13  2002/07/29 09:56:13  vinking
-modified lang
-
-Revision 1.12  2002/04/08 09:03:15  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/11/05 06:13:29  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.10  2001/07/24 06:52:55  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/03/30 06:45:21  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.8  2001/03/25 09:13:03  ray
-add <milestone>
-
-Revision 1.7  2001/02/07 06:55:13  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.6  2001/02/03 07:45:10  chris
-Added keywords $Revision: 1.8 $, $Date: 2010/10/25 08:22:38 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-27T11:51:17">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -193,64 +148,64 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0709004" to="#end0709004"><lem wit="#wit1">跏</lem><rdg resp="#resp1" wit="#wit2 #wit3">加</rdg></app>
-<app from="#beg0709005" to="#end0709005"><lem wit="#wit1">具</lem><rdg resp="#resp1" wit="#wit4">俱</rdg></app>
-<app from="#beg0709006" to="#end0709006"><lem wit="#wit1">場</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">座</rdg></app>
-<app from="#beg0709008" to="#end0709008"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit4">上聲</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0709008"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit4">上聲</rdg></app>
-<app from="#beg0709009" to="#end0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0709010" to="#end0709010"><lem wit="#wit1">二合</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg><rdg resp="#resp1" wit="#wit4">聲</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0709011" to="#end0709011"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit4">上聲</rdg></app>
-<app from="#beg_4" to="#end_4" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0709012" to="#end0709012"><lem wit="#wit1">孃</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">攘</rdg></app>
-<app from="#beg_5" to="#end_5" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0709013" to="#end0709013"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit4">上聲</rdg></app>
-<app from="#beg0709014" to="#end0709014"><lem wit="#wit1"><note place="inline">去</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0709015" to="#end0709015"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit4">上聲</rdg></app>
-<app from="#beg_6" to="#end_6" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg_7" to="#end_7" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg_8" to="#end_8" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg_9" to="#end_9" corresp="#0709009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg_a" to="#end_a" corresp="#0709014"><lem wit="#wit1"><note place="inline">去</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0709016" to="#end0709016"><lem wit="#wit1">觀門</lem><rdg resp="#resp1" wit="#wit2 #wit3">輪觀門法</rdg><rdg resp="#resp1" wit="#wit4">觀</rdg></app>
+<app from="#beg0709004" to="#end0709004"><lem wit="#wit.orig">跏</lem><rdg resp="#resp2" wit="#wit1 #wit2">加</rdg></app>
+<app from="#beg0709005" to="#end0709005"><lem wit="#wit.orig">具</lem><rdg resp="#resp2" wit="#wit3">俱</rdg></app>
+<app from="#beg0709006" to="#end0709006"><lem wit="#wit.orig">場</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">座</rdg></app>
+<app from="#beg0709008" to="#end0709008"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit3">上聲</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0709008"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit3">上聲</rdg></app>
+<app from="#beg0709009" to="#end0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0709010" to="#end0709010"><lem wit="#wit.orig">二合</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg><rdg resp="#resp2" wit="#wit3">聲</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0709011" to="#end0709011"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit3">上聲</rdg></app>
+<app from="#beg_4" to="#end_4" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0709012" to="#end0709012"><lem wit="#wit.orig">孃</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">攘</rdg></app>
+<app from="#beg_5" to="#end_5" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0709013" to="#end0709013"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit3">上聲</rdg></app>
+<app from="#beg0709014" to="#end0709014"><lem wit="#wit.orig"><note place="inline">去</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0709015" to="#end0709015"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit3">上聲</rdg></app>
+<app from="#beg_6" to="#end_6" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg_7" to="#end_7" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg_8" to="#end_8" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg_9" to="#end_9" corresp="#0709009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg_a" to="#end_a" corresp="#0709014"><lem wit="#wit.orig"><note place="inline">去</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0709016" to="#end0709016"><lem wit="#wit.orig">觀門</lem><rdg resp="#resp2" wit="#wit1 #wit2">輪觀門法</rdg><rdg resp="#resp2" wit="#wit3">觀</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0709004" resp="#resp2" type="mod" target="#nkr_note_mod_0709004">跏【大】，加【宋】【元】</note>
-<note n="0709005" resp="#resp2" type="mod" target="#nkr_note_mod_0709005">具【大】，俱【明】</note>
-<note n="0709006" resp="#resp2" type="mod" target="#nkr_note_mod_0709006">場【大】，座【宋】【元】【明】</note>
-<note n="0709008" resp="#resp2" type="mod" target="#nkr_note_mod_0709008">上【大】＊，上聲【明】＊</note>
-<note n="0709009" resp="#resp2" type="mod" target="#nkr_note_mod_0709009">上【大】＊，〔－〕【宋】＊【元】＊【明】＊</note>
-<note n="0709010" resp="#resp2" type="mod" target="#nkr_note_mod_0709010">二合【大】，〔－〕【宋】【元】，聲【明】</note>
-<note n="0709011" resp="#resp2" type="mod" target="#nkr_note_mod_0709011">上【大】，上聲【明】</note>
-<note n="0709012" resp="#resp2" type="mod" target="#nkr_note_mod_0709012">孃【大】，攘【宋】【元】【明】</note>
-<note n="0709013" resp="#resp2" type="mod" target="#nkr_note_mod_0709013">上【大】，上聲【明】</note>
-<note n="0709014" resp="#resp2" type="mod" target="#nkr_note_mod_0709014">去【大】＊，〔－〕【宋】＊【元】＊【明】＊</note>
-<note n="0709015" resp="#resp2" type="mod" target="#nkr_note_mod_0709015">上【大】，上聲【明】</note>
-<note n="0709016" resp="#resp2" type="mod" target="#nkr_note_mod_0709016">觀門【大】，輪觀門法【宋】【元】，觀【明】</note>
+<note n="0709004" resp="#resp3" type="mod" target="#nkr_note_mod_0709004">跏【大】，加【宋】【元】</note>
+<note n="0709005" resp="#resp3" type="mod" target="#nkr_note_mod_0709005">具【大】，俱【明】</note>
+<note n="0709006" resp="#resp3" type="mod" target="#nkr_note_mod_0709006">場【大】，座【宋】【元】【明】</note>
+<note n="0709008" resp="#resp3" type="mod" target="#nkr_note_mod_0709008">上【大】＊，上聲【明】＊</note>
+<note n="0709009" resp="#resp3" type="mod" target="#nkr_note_mod_0709009">上【大】＊，〔－〕【宋】＊【元】＊【明】＊</note>
+<note n="0709010" resp="#resp3" type="mod" target="#nkr_note_mod_0709010">二合【大】，〔－〕【宋】【元】，聲【明】</note>
+<note n="0709011" resp="#resp3" type="mod" target="#nkr_note_mod_0709011">上【大】，上聲【明】</note>
+<note n="0709012" resp="#resp3" type="mod" target="#nkr_note_mod_0709012">孃【大】，攘【宋】【元】【明】</note>
+<note n="0709013" resp="#resp3" type="mod" target="#nkr_note_mod_0709013">上【大】，上聲【明】</note>
+<note n="0709014" resp="#resp3" type="mod" target="#nkr_note_mod_0709014">去【大】＊，〔－〕【宋】＊【元】＊【明】＊</note>
+<note n="0709015" resp="#resp3" type="mod" target="#nkr_note_mod_0709015">上【大】，上聲【明】</note>
+<note n="0709016" resp="#resp3" type="mod" target="#nkr_note_mod_0709016">觀門【大】，輪觀門法【宋】【元】，觀【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0709003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709003">【原】麗本</note>
-<note n="0709004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709004">跏＝加【宋】【元】</note>
-<note n="0709005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709005">具＝俱【明】</note>
-<note n="0709006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709006">場＝座【三】</note>
-<note n="0709007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709007">圓明字輪之圖三本俱無之</note>
-<note n="0709008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709008">上＋（聲）【明】＊</note>
-<note n="0709009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709009">〔上〕－【三】＊</note>
-<note n="0709010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709010">〔二合〕－【宋】【元】，二合＝聲【明】</note>
-<note n="0709011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709011">上＋（聲）【明】</note>
-<note n="0709012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709012">孃＝攘【三】</note>
-<note n="0709013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709013">上＋（聲）【明】</note>
-<note n="0709014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709014">〔去〕－【三】＊</note>
-<note n="0709015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709015">上＋（聲）【明】</note>
-<note n="0709016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0709016">觀門＝輪觀門法【宋】【元】，觀【明】</note>
+<note n="0709003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709003">【原】麗本</note>
+<note n="0709004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709004">跏＝加【宋】【元】</note>
+<note n="0709005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709005">具＝俱【明】</note>
+<note n="0709006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709006">場＝座【三】</note>
+<note n="0709007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709007">圓明字輪之圖三本俱無之</note>
+<note n="0709008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709008">上＋（聲）【明】＊</note>
+<note n="0709009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709009">〔上〕－【三】＊</note>
+<note n="0709010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709010">〔二合〕－【宋】【元】，二合＝聲【明】</note>
+<note n="0709011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709011">上＋（聲）【明】</note>
+<note n="0709012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709012">孃＝攘【三】</note>
+<note n="0709013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709013">上＋（聲）【明】</note>
+<note n="0709014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709014">〔去〕－【三】＊</note>
+<note n="0709015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709015">上＋（聲）【明】</note>
+<note n="0709016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0709016">觀門＝輪觀門法【宋】【元】，觀【明】</note>
 </p>
 </cb:div>
 </back></text></TEI>

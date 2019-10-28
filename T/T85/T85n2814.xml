@@ -11,170 +11,82 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.18 $<date>$Date: 2009/04/23 08:15:19 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>3卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:15:19 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 85, No. 2814</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-		<witness xml:id="wit3">【CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB06872">
-	<charName>CBETA CHARACTER CB06872</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[序-予+干]</value>
-	</charProp>
-	<mapping type="unicode">U+221DB</mapping>
-	<mapping cb:dec="989912" type="PUA">U+F1AD8</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>3卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">85</idno>.<idno type="no">2814</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大乘起信論廣釋卷第三．四．五</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB06872">
+				<charName>CBETA CHARACTER CB06872</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[序-予+干]</value>
+				</charProp>
+				<mapping type="unicode">U+221DB</mapping>
+				<mapping cb:dec="989912" type="PUA">U+F1AD8</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-01-31T11:46:35">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T85n2814.xml,v $
-Revision 1.18  2009/04/23 08:15:19  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.17  2006/12/09 02:34:21  saywhat
-p1150a12 [貪>貧]窮
-
-Revision 1.16  2006/04/12 22:00:50  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.14  2005/09/13 10:35:04  saywhat
-p1167a03 [體>謂]
-
-Revision 1.13  2004/12/16 07:08:00  saywhat
-p1174a17行尾的<div1 type="w">移到下一行行首
-
-Revision 1.12  2004/11/14 03:18:27  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.11  2004/11/02 02:15:56  saywhat
-段落前加入圈點
-
-Revision 1.10  2004/07/16 09:13:13  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.9  2004/04/28 08:53:14  saywhat
-p1124c26的 </lg>　　<p place="inline"> 改成 </lg><p place="inline">
-
-Revision 1.8  2004/04/28 08:36:23  saywhat
-<lg type="abnormal" place="inline" rend="text-indent:1em"><l> 改成 <lg type="abnormal" place="inline"><l>
-
-Revision 1.7  2004/04/24 04:01:14  saywhat
-<l rend="margin-left  改成 <l rend="text-indent
-
-Revision 1.6  2004/04/22 14:09:29  saywhat
-修訂不規則偈誦
-
-Revision 1.5  2004/04/20 08:44:53  maha
-「版本日期」標記修訂
-
-Revision 1.4  2004/04/20 03:27:36  maha
-將 type="inline" 或 rend="inline" 改成 place="inline"
-
-Revision 1.3  2004/04/03 12:18:39  saywhat
-</l></lg><p type="inline"> → </l></lg>　　<p type="inline">
-
-Revision 1.2  2003/06/23 05:19:37  moved
-＊校勘插入 xml 作業
-
-Revision 1.1.1.1  2003/05/05 04:11:02  ray
-recover cvs
-
-Revision 1.18  2002/12/09 03:45:23  moved
-modified
-
-Revision 1.17  2002/11/04 11:04:56  ray
-tei.2 => TEI.2
-
-Revision 1.16  2002/09/09 08:55:58  moved
-modified
-
-Revision 1.15  2002/07/29 09:48:18  vinking
-modified lang
-
-Revision 1.14  2002/04/08 09:51:07  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.13  2001/12/12 02:58:34  ray
-改 <milestone> 的屬性 n
-
-Revision 1.12  2001/11/05 06:23:54  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.11  2001/07/24 07:04:08  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.10  2001/06/20 10:37:00  vinking
-added
-
-Revision 1.9  2001/03/31 11:21:31  moved
-modified normal
-
-Revision 1.8  2001/03/30 12:42:35  moved
-modified normal
-
-Revision 1.7  2001/03/30 07:19:52  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/30 06:46:56  moved
-modified normal
-
-Revision 1.5  2001/03/25 11:54:38  ray
-add <milestone>
-
-Revision 1.4  2001/02/19 09:32:16  shiachun
-t85
-
-Revision 1.3  2001/02/07 07:49:59  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:20:06  chris
-Added keywords $Revision: 1.18 $, $Date: 2009/04/23 08:15:19 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-01-31T11:46:35">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="3" unit="juan"/>
@@ -4897,827 +4809,827 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1121002" to="#end1121002"><lem wit="#wit1">總</lem><rdg resp="#resp1" wit="#wit2">初總</rdg></app>
-<app from="#beg1121003" to="#end1121003"><lem wit="#wit1">異</lem><rdg resp="#resp1" wit="#wit2">異本覺</rdg></app>
-<app from="#beg1121004" to="#end1121004"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1121005" to="#end1121005"><lem wit="#wit1">覺業</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1122001" to="#end1122001"><lem wit="#wit1">竟</lem><rdg resp="#resp1" wit="#wit2">竟覺</rdg></app>
-<app from="#beg1122002" to="#end1122002"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2">智</rdg></app>
-<app from="#beg1122003" to="#end1122003"><lem wit="#wit1">夫</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1122004" to="#end1122004"><lem wit="#wit1">德</lem><rdg resp="#resp1" wit="#wit2">能</rdg></app>
-<app from="#beg1122005" to="#end1122005"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2">相所相</rdg></app>
-<app from="#beg1122006" to="#end1122006"><lem wit="#wit1">等</lem><rdg resp="#resp1" wit="#wit2">等故</rdg></app>
-<app from="#beg1122007" to="#end1122007"><lem wit="#wit1">非</lem><rdg resp="#resp1" wit="#wit2">非位</rdg></app>
-<app from="#beg1122008" to="#end1122008"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2">四相</rdg></app>
-<app from="#beg1122009" to="#end1122009"><lem wit="#wit1">際</lem><rdg resp="#resp1" wit="#wit2">際最微</rdg></app>
-<app from="#beg1123001" to="#end1123001"><lem wit="#wit1">別</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1123002" to="#end1123002"><lem wit="#wit1">界界</lem><rdg resp="#resp1" wit="#wit2">故故</rdg></app>
-<app from="#beg1123003" to="#end1123003"><lem wit="#wit1">取別</lem><rdg resp="#resp1" wit="#wit2">別取</rdg></app>
-<app from="#beg1123004" to="#end1123004"><lem wit="#wit1">意</lem><rdg resp="#resp1" wit="#wit2">或意</rdg></app>
-<app from="#beg1123005" to="#end1123005"><lem wit="#wit1">即</lem><rdg resp="#resp1" wit="#wit2">故此四相即</rdg></app>
-<app from="#beg1123006" to="#end1123006"><lem wit="#wit1">前</lem><rdg resp="#resp1" wit="#wit2">先</rdg></app>
-<app from="#beg1123007" to="#end1123007"><lem wit="#wit1">二覺相也</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1123008" to="#end1123008"><lem wit="#wit1">而</lem><rdg resp="#resp1" wit="#wit2">初</rdg></app>
-<app from="#beg1124001" to="#end1124001"><lem wit="#wit1">察</lem><rdg resp="#resp1" wit="#wit2">察名觀察</rdg></app>
-<app from="#beg1124002" to="#end1124002"><lem wit="#wit1">甚差</lem><rdg resp="#resp1" wit="#wit2">七卷</rdg></app>
-<app from="#beg1124003" to="#end1124003"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1124004" to="#end1124004"><lem wit="#wit1">論</lem><rdg resp="#resp1" wit="#wit2">論文</rdg></app>
-<app from="#beg1124005" to="#end1124005"><lem wit="#wit1">覺</lem><rdg resp="#resp1" wit="#wit2">覺初心時無</rdg></app>
-<app from="#beg1124006" to="#end1124006"><lem wit="#wit1">種</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1124007" to="#end1124007"><lem wit="#wit1">有</lem><rdg resp="#resp1" wit="#wit2">有所覺猶</rdg></app>
-<app from="#beg1124008" to="#end1124008"><lem wit="#wit1">異</lem><rdg resp="#resp1" wit="#wit2">不異</rdg></app>
-<app from="#beg1124009" to="#end1124009"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2">三舉</rdg></app>
-<app from="#beg1125001" to="#end1125001"><lem wit="#wit1">四</lem><rdg resp="#resp1" wit="#wit2">四顯</rdg></app>
-<app from="#beg1125002" to="#end1125002"><lem wit="#wit1">覺</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1125003" to="#end1125003"><lem wit="#wit1">論</lem><rdg resp="#resp1" wit="#wit2">本</rdg></app>
-<app from="#beg1125004" to="#end1125004"><lem wit="#wit1">生</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1125005" to="#end1125005"><lem wit="#wit1">有</lem><rdg resp="#resp1" wit="#wit2">有者</rdg></app>
-<app from="#beg1125006" to="#end1125006"><lem wit="#wit1">十</lem><rdg resp="#resp1" wit="#wit2">一</rdg></app>
-<app from="#beg1125007" to="#end1125007"><lem wit="#wit1">緣</lem><rdg resp="#resp1" wit="#wit2">染</rdg></app>
-<app from="#beg1125008" to="#end1125008"><lem wit="#wit1">成</lem><rdg resp="#resp1" wit="#wit2">生</rdg></app>
-<app from="#beg1126001" to="#end1126001"><lem wit="#wit1">隨</lem><rdg resp="#resp1" wit="#wit2">緣</rdg></app>
-<app from="#beg1126002" to="#end1126002"><lem wit="#wit1">不</lem><rdg resp="#resp1" wit="#wit2">不異</rdg></app>
-<app from="#beg1126003" to="#end1126003"><lem wit="#wit1">名</lem><rdg resp="#resp1" wit="#wit2">名為</rdg></app>
-<app from="#beg1126004" to="#end1126004"><lem wit="#wit1">皆</lem><rdg resp="#resp1" wit="#wit2">亦</rdg></app>
-<app from="#beg1126005" to="#end1126005"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2">現</rdg></app>
-<app from="#beg1126006" to="#end1126006"><lem wit="#wit1">他</lem><rdg resp="#resp1" wit="#wit2">他後一利他非無自利</rdg></app>
-<app cb:word-count="7" from="#beg1126007" to="#end1126007"><lem wit="#wit1">後通化身他<lb n="1126a25" ed="T"/>受用</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1126008" to="#end1126008"><lem wit="#wit1">性</lem><rdg resp="#resp1" wit="#wit2">性普現</rdg></app>
-<app from="#beg1126009" to="#end1126009"><lem wit="#wit1">初</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1126010" to="#end1126010"><lem wit="#wit1">體</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1126011" to="#end1126011"><lem wit="#wit1">至</lem><rdg resp="#resp1" wit="#wit2">至足</rdg></app>
-<app from="#beg1126012" to="#end1126012"><lem wit="#wit1">思</lem><rdg resp="#resp1" wit="#wit2">思議</rdg></app>
-<app from="#beg1126013" to="#end1126013"><lem wit="#wit1">稱真</lem><rdg resp="#resp1" wit="#wit2">攝</rdg></app>
-<app from="#beg1126014" to="#end1126014"><lem wit="#wit1">等</lem><rdg resp="#resp1" wit="#wit2">等此</rdg></app>
-<app from="#beg1126015" to="#end1126015"><lem wit="#wit1">異</lem><rdg resp="#resp1" wit="#wit2">異非</rdg></app>
-<app from="#beg1126016" to="#end1126016"><lem wit="#wit1">故</lem><rdg resp="#resp1" wit="#wit2">也</rdg></app>
-<app from="#beg1126017" to="#end1126017"><lem wit="#wit1">至</lem><rdg resp="#resp1" wit="#wit2">至性</rdg></app>
-<app from="#beg1126018" to="#end1126018"><lem wit="#wit1">即涅槃</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1127001" to="#end1127001"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1127002" to="#end1127002"><lem wit="#wit1">根</lem><rdg resp="#resp1" wit="#wit2">根作</rdg></app>
-<app from="#beg1127003" to="#end1127003"><lem wit="#wit1">微</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1127004" to="#end1127004"><lem wit="#wit1">二</lem><rdg resp="#resp1" wit="#wit2">三</rdg></app>
-<app from="#beg1127005" to="#end1127005"><lem wit="#wit1">作</lem><rdg resp="#resp1" wit="#wit2">化</rdg></app>
-<app from="#beg1127006" to="#end1127006"><lem wit="#wit1">斷</lem><rdg resp="#resp1" wit="#wit2">絕</rdg></app>
-<app from="#beg1127007" to="#end1127007"><lem wit="#wit1">化</lem><rdg resp="#resp1" wit="#wit2">他</rdg></app>
-<app from="#beg1127008" to="#end1127008"><lem wit="#wit1">過去</lem><rdg resp="#resp1" wit="#wit2">遍知</rdg></app>
-<app from="#beg1127009" to="#end1127009"><lem wit="#wit1">世</lem><rdg resp="#resp1" wit="#wit2">去</rdg></app>
-<app from="#beg1127010" to="#end1127010"><lem wit="#wit1">實</lem><rdg resp="#resp1" wit="#wit2">異</rdg></app>
-<app from="#beg1127011" to="#end1127011"><lem wit="#wit1">用</lem><rdg resp="#resp1" wit="#wit2">用果中初明即果後明德果或初果體後即果用</rdg></app>
-<app from="#beg1127012" to="#end1127012"><lem wit="#wit1">故</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1127013" to="#end1127013"><lem wit="#wit1">如</lem><rdg resp="#resp1" wit="#wit2">如明鏡故</rdg></app>
-<app from="#beg1127014" to="#end1127014"><lem wit="#wit1">智淨</lem><rdg resp="#resp1" wit="#wit2">法出</rdg></app>
-<app from="#beg1127015" to="#end1127015"><lem wit="#wit1">緣</lem><rdg resp="#resp1" wit="#wit2">緣緣</rdg></app>
-<app from="#beg1128001" to="#end1128001"><lem wit="#wit1">空</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1128002" to="#end1128002"><lem wit="#wit1">到</lem><rdg resp="#resp1" wit="#wit2">相倒</rdg></app>
-<app from="#beg1128003" to="#end1128003"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2">心妄境本不相應故云遠離心</rdg></app>
-<app from="#beg1128004" to="#end1128004"><lem wit="#wit1">所現</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1128005" to="#end1128005"><lem wit="#wit1">不</lem><rdg resp="#resp1" wit="#wit2">不作</rdg></app>
-<app from="#beg1128006" to="#end1128006"><lem wit="#wit1">從</lem><rdg resp="#resp1" wit="#wit2">由</rdg></app>
-<app from="#beg1128007" to="#end1128007"><lem wit="#wit1">異</lem><rdg resp="#resp1" wit="#wit2">實</rdg></app>
-<app from="#beg1128008" to="#end1128008"><lem wit="#wit1">以</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1128009" to="#end1128009"><lem wit="#wit1">染</lem><rdg resp="#resp1" wit="#wit2">染不染</rdg></app>
-<app from="#beg1128010" to="#end1128010"><lem wit="#wit1">為</lem><rdg resp="#resp1" wit="#wit2">而</rdg></app>
-<app from="#beg1128011" to="#end1128011"><lem wit="#wit1">時</lem><rdg resp="#resp1" wit="#wit2">法</rdg></app>
-<app from="#beg1128012" to="#end1128012"><lem wit="#wit1">中</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1128013" to="#end1128013"><lem wit="#wit1">出</lem><rdg resp="#resp1" wit="#wit2">出故</rdg></app>
-<app from="#beg1128014" to="#end1128014"><lem wit="#wit1">不與生<lb n="1128c14" ed="T"/>滅</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1128015" to="#end1128015"><lem wit="#wit1">離</lem><rdg resp="#resp1" wit="#wit2">離雜</rdg></app>
-<app from="#beg1128016" to="#end1128016"><lem wit="#wit1">云</lem><rdg resp="#resp1" wit="#wit2">之</rdg></app>
-<app from="#beg1128017" to="#end1128017"><lem wit="#wit1">厭</lem><rdg resp="#resp1" wit="#wit2">厭求</rdg></app>
-<app from="#beg1129001" to="#end1129001"><lem wit="#wit1">謂真實</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1129002" to="#end1129002"><lem wit="#wit1">第</lem><rdg resp="#resp1" wit="#wit2">中</rdg></app>
-<app from="#beg1129003" to="#end1129003"><lem wit="#wit1">覺</lem><rdg resp="#resp1" wit="#wit2">覺不覺</rdg></app>
-<app from="#beg1129004" to="#end1129004"><lem wit="#wit1">性</lem><rdg resp="#resp1" wit="#wit2">性因故</rdg></app>
-<app from="#beg1129005" to="#end1129005"><lem wit="#wit1">與</lem><rdg resp="#resp1" wit="#wit2">是</rdg></app>
-<app from="#beg1129006" to="#end1129006"><lem wit="#wit1">舉</lem><rdg resp="#resp1" wit="#wit2">覺</rdg></app>
-<app from="#beg1129007" to="#end1129007"><lem wit="#wit1">依</lem><rdg resp="#resp1" wit="#wit2">各依</rdg></app>
-<app from="#beg1129008" to="#end1129008"><lem wit="#wit1">其<lb n="1129b27" ed="T"/>真覺名體</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1129009" to="#end1129009"><lem wit="#wit1">無</lem><rdg resp="#resp1" wit="#wit2">無以</rdg></app>
-<app from="#beg1129010" to="#end1129010"><lem wit="#wit1">悉皆</lem><rdg resp="#resp1" wit="#wit2">皆悉</rdg></app>
-<app from="#beg1129011" to="#end1129011"><lem wit="#wit1">不</lem><rdg resp="#resp1" wit="#wit2">依不</rdg></app>
-<app from="#beg1129012" to="#end1129012"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2">於中</rdg></app>
-<app from="#beg1129013" to="#end1129013"><lem wit="#wit1">生</lem><rdg resp="#resp1" wit="#wit2">起</rdg></app>
-<app from="#beg1129014" to="#end1129014"><lem wit="#wit1">順<lb n="1129c15" ed="T"/>違</lem><rdg resp="#resp1" wit="#wit2">違順</rdg></app>
-<app from="#beg1129015" to="#end1129015"><lem wit="#wit1">名</lem><rdg resp="#resp1" wit="#wit2">計名</rdg></app>
-<app from="#beg1129016" to="#end1129016"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2">識</rdg></app>
-<app from="#beg1129017" to="#end1129017"><lem wit="#wit1">屬</lem><rdg resp="#resp1" wit="#wit2">成</rdg></app>
-<app from="#beg1129018" to="#end1129018"><lem wit="#wit1">是</lem><rdg resp="#resp1" wit="#wit2">是諸識法執是</rdg></app>
-<app from="#beg1130001" to="#end1130001"><lem wit="#wit1">是</lem><rdg resp="#resp1" wit="#wit2">說</rdg></app>
-<app from="#beg1130002" to="#end1130002"><lem wit="#wit1">和</lem><rdg resp="#resp1" wit="#wit2">和合</rdg></app>
-<app from="#beg1130003" to="#end1130003"><lem wit="#wit1">以</lem><rdg resp="#resp1" wit="#wit2">以依</rdg></app>
-<app from="#beg1130004" to="#end1130004"><lem wit="#wit1">現</lem><rdg resp="#resp1" wit="#wit2">能現</rdg></app>
-<app from="#beg1130005" to="#end1130005"><lem wit="#wit1">後</lem><rdg resp="#resp1" wit="#wit2">後六麁相方屬七識以彼黎耶</rdg></app>
-<app from="#beg1130006" to="#end1130006"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1130007" to="#end1130007"><lem wit="#wit1">智</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1130008" to="#end1130008"><lem wit="#wit1">以住</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1130009" to="#end1130009"><lem wit="#wit1">識</lem><rdg resp="#resp1" wit="#wit2">塵</rdg></app>
-<app from="#beg1130010" to="#end1130010"><lem wit="#wit1">作</lem><rdg resp="#resp1" wit="#wit2">化</rdg></app>
-<app from="#beg1130011" to="#end1130011"><lem wit="#wit1">依</lem><rdg resp="#resp1" wit="#wit2">依根故是宗法言諸是不共所依</rdg></app>
-<app from="#beg1130012" to="#end1130012"><lem wit="#wit1">不</lem><rdg resp="#resp1" wit="#wit2">爾</rdg></app>
-<app from="#beg1130013" to="#end1130013"><lem wit="#wit1">非<lb n="1130b23" ed="T"/>心法</lem><rdg resp="#resp1" wit="#wit2">心法非</rdg></app>
-<app from="#beg1130014" to="#end1130014"><lem wit="#wit1">漏</lem><rdg resp="#resp1" wit="#wit2">漏眼等五根若遍緣者必非不共所依根收如下別意根等若以不共所依根故與識同境有漏</rdg></app>
-<app from="#beg1130015" to="#end1130015"><lem wit="#wit1">識</lem><rdg resp="#resp1" wit="#wit2">識故唯識論第十卷云有漏不共必俱同境根發無漏識</rdg></app>
-<app from="#beg1130016" to="#end1130016"><lem wit="#wit1">謂</lem><rdg resp="#resp1" wit="#wit2">非謂</rdg></app>
-<app from="#beg1131001" to="#end1131001"><lem wit="#wit1">靜</lem><rdg resp="#resp1" wit="#wit2">淨</rdg></app>
-<app from="#beg1131002" to="#end1131002"><lem wit="#wit1">必</lem><rdg resp="#resp1" wit="#wit2">必依能見故楞伽經</rdg></app>
-<app from="#beg1131003" to="#end1131003"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2">一心</rdg></app>
-<app from="#beg1131004" to="#end1131004"><lem wit="#wit1">證</lem><rdg resp="#resp1" wit="#wit2">證自證</rdg></app>
-<app from="#beg1131005" to="#end1131005"><lem wit="#wit1">也</lem><rdg resp="#resp1" wit="#wit2">也是釋雖</rdg></app>
-<app from="#beg1131006" to="#end1131006"><lem wit="#wit1">愛</lem><rdg resp="#resp1" wit="#wit2">不愛</rdg></app>
-<app from="#beg1131007" to="#end1131007"><lem wit="#wit1">取</lem><rdg resp="#resp1" wit="#wit2">執</rdg></app>
-<app from="#beg1131008" to="#end1131008"><lem wit="#wit1">言</lem><rdg resp="#resp1" wit="#wit2">言相</rdg></app>
-<app from="#beg1131009" to="#end1131009"><lem wit="#wit1">繫</lem><rdg resp="#resp1" wit="#wit2">繫苦</rdg></app>
-<app from="#beg1131010" to="#end1131010"><lem wit="#wit1">至</lem><rdg resp="#resp1" wit="#wit2">至不</rdg></app>
-<app from="#beg1132001" to="#end1132001"><lem wit="#wit1">等</lem><rdg resp="#resp1" wit="#wit2">等者</rdg></app>
-<app from="#beg1132002" to="#end1132002"><lem wit="#wit1">苦</lem><rdg resp="#resp1" wit="#wit2">其</rdg></app>
-<app from="#beg1132003" to="#end1132003"><lem wit="#wit1">覺</lem><rdg resp="#resp1" wit="#wit2">不覺</rdg></app>
-<app from="#beg1132004" to="#end1132004"><lem wit="#wit1">與</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1132005" to="#end1132005"><lem wit="#wit1">與</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1132006" to="#end1132006"><lem wit="#wit1">異</lem><rdg resp="#resp1" wit="#wit2">異異</rdg></app>
-<app from="#beg1132007" to="#end1132007"><lem wit="#wit1">因</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1132008" to="#end1132008"><lem wit="#wit1">漏</lem><rdg resp="#resp1" wit="#wit2">漏至染</rdg></app>
-<app from="#beg1132009" to="#end1132009"><lem wit="#wit1">者</lem><rdg resp="#resp1" wit="#wit2">者是無漏法性染幻差別者</rdg></app>
-<app from="#beg1132010" to="#end1132010"><lem wit="#wit1">緣</lem><rdg resp="#resp1" wit="#wit2">染</rdg></app>
-<app from="#beg1132011" to="#end1132011"><lem wit="#wit1">言</lem><rdg resp="#resp1" wit="#wit2">言所</rdg></app>
-<app from="#beg1132012" to="#end1132012"><lem wit="#wit1">意</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1132013" to="#end1132013"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1132014" to="#end1132014"><lem wit="#wit1">為</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1132015" to="#end1132015"><lem wit="#wit1">法相</lem><rdg resp="#resp1" wit="#wit2">初教</rdg></app>
-<app from="#beg1132016" to="#end1132016"><lem wit="#wit1">緣</lem><rdg resp="#resp1" wit="#wit2">緣如何說是生滅因緣</rdg></app>
-<app from="#beg1132017" to="#end1132017"><lem wit="#wit1">依此因緣</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1132018" to="#end1132018"><lem wit="#wit1">鎔融</lem><rdg resp="#resp1" wit="#wit2">融通</rdg></app>
-<app from="#beg1132019" to="#end1132019"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2">依於</rdg></app>
-<app from="#beg1133001" to="#end1133001"><lem wit="#wit1">也</lem><rdg resp="#resp1" wit="#wit2">云</rdg></app>
-<app from="#beg1133002" to="#end1133002"><lem wit="#wit1">別</lem><rdg resp="#resp1" wit="#wit2">分別</rdg></app>
-<app from="#beg1133003" to="#end1133003"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit2">於</rdg></app>
-<app from="#beg1133004" to="#end1133004"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2">分</rdg></app>
-<app from="#beg1133005" to="#end1133005"><lem wit="#wit1">非</lem><rdg resp="#resp1" wit="#wit2">有</rdg></app>
-<app from="#beg1133006" to="#end1133006"><lem wit="#wit1">麁相說</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1133007" to="#end1133007"><lem wit="#wit1">是</lem><rdg resp="#resp1" wit="#wit2">是真</rdg></app>
-<app cb:word-count="9" from="#beg1133008" to="#end1133008"><lem wit="#wit1">於中有三。初略明意轉</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1133009" to="#end1133009"><lem wit="#wit1">起</lem><rdg resp="#resp1" wit="#wit2">起由迷義合為二識一迷真起</rdg></app>
-<app from="#beg1133010" to="#end1133010"><lem wit="#wit1">故</lem><rdg resp="#resp1" wit="#wit2">者</rdg></app>
-<app from="#beg1133011" to="#end1133011"><lem wit="#wit1">何</lem><rdg resp="#resp1" wit="#wit2">何為</rdg></app>
-<app from="#beg1133012" to="#end1133012"><lem wit="#wit1">故</lem><rdg resp="#resp1" wit="#wit2">故說</rdg></app>
-<app from="#beg1133013" to="#end1133013"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2">心所起</rdg></app>
-<app from="#beg1133014" to="#end1133014"><lem wit="#wit1">識</lem><rdg resp="#resp1" wit="#wit2">諸</rdg></app>
-<app from="#beg1134001" to="#end1134001"><lem wit="#wit1">塵</lem><rdg resp="#resp1" wit="#wit2">五塵</rdg></app>
-<app from="#beg1134002" to="#end1134002"><lem wit="#wit1">智</lem><rdg resp="#resp1" wit="#wit2">知</rdg></app>
-<app from="#beg1134003" to="#end1134003"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2">相如</rdg></app>
-<app from="#beg1134004" to="#end1134004"><lem wit="#wit1">轉</lem><rdg resp="#resp1" wit="#wit2">於</rdg></app>
-<app from="#beg1134005" to="#end1134005"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2">智</rdg></app>
-<app from="#beg1134006" to="#end1134006"><lem wit="#wit1">教</lem><rdg resp="#resp1" wit="#wit2">教異者有義諸教</rdg></app>
-<app from="#beg1134007" to="#end1134007"><lem wit="#wit1">即</lem><rdg resp="#resp1" wit="#wit2">有</rdg></app>
-<app from="#beg1134008" to="#end1134008"><lem wit="#wit1">所</lem><rdg resp="#resp1" wit="#wit2">所執</rdg></app>
-<app from="#beg1134009" to="#end1134009"><lem wit="#wit1">漏</lem><rdg resp="#resp1" wit="#wit2">攝</rdg></app>
-<app from="#beg1134010" to="#end1134010"><lem wit="#wit1">能</lem><rdg resp="#resp1" wit="#wit2">不能</rdg></app>
-<app from="#beg1134011" to="#end1134011"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2">不說</rdg></app>
-<app from="#beg1134012" to="#end1134012"><lem wit="#wit1">論</lem><rdg resp="#resp1" wit="#wit2">是論</rdg></app>
-<app from="#beg1134013" to="#end1134013"><lem wit="#wit1">本在諸識</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1134014" to="#end1134014"><lem wit="#wit1">耳</lem><rdg resp="#resp1" wit="#wit2">爾</rdg></app>
-<app from="#beg1134015" to="#end1134015"><lem wit="#wit1">者</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1134016" to="#end1134016"><lem wit="#wit1">亦</lem><rdg resp="#resp1" wit="#wit2">六</rdg></app>
-<app from="#beg1134017" to="#end1134017"><lem wit="#wit1">屬事識</lem><rdg resp="#resp1" wit="#wit2">識事</rdg></app>
-<app cb:word-count="17" from="#beg1134018" to="#end1134018"><lem wit="#wit1">故。故此但是細分法執同名事識。於<lb n="1134c29" ed="T"/>理無違</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1135001" to="#end1135001"><lem wit="#wit1">未</lem><rdg resp="#resp1" wit="#wit2">迷</rdg></app>
-<app from="#beg1135002" to="#end1135002"><lem wit="#wit1">五</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1135003" to="#end1135003"><lem wit="#wit1">攝</lem><rdg resp="#resp1" wit="#wit2">由攝</rdg></app>
-<app from="#beg1135004" to="#end1135004"><lem wit="#wit1">種</lem><rdg resp="#resp1" wit="#wit2">識</rdg></app>
-<app from="#beg1135005" to="#end1135005"><lem wit="#wit1">善</lem><rdg resp="#resp1" wit="#wit2">善惡</rdg></app>
-<app from="#beg1135006" to="#end1135006"><lem wit="#wit1">果</lem><rdg resp="#resp1" wit="#wit2">苦樂</rdg></app>
-<app from="#beg1135007" to="#end1135007"><lem wit="#wit1">業</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1135008" to="#end1135008"><lem wit="#wit1">意</lem><rdg resp="#resp1" wit="#wit2">意識</rdg></app>
-<app from="#beg1135009" to="#end1135009"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit2">相故</rdg></app>
-<app from="#beg1135010" to="#end1135010"><lem wit="#wit1">境</lem><rdg resp="#resp1" wit="#wit2">憶</rdg></app>
-<app from="#beg1135011" to="#end1135011"><lem wit="#wit1">此</lem><rdg resp="#resp1" wit="#wit2">能此</rdg></app>
-<app from="#beg1136001" to="#end1136001"><lem wit="#wit1">外</lem><rdg resp="#resp1" wit="#wit2">餘</rdg></app>
-<app from="#beg1136002" to="#end1136002"><lem wit="#wit1">成</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1136003" to="#end1136003"><lem wit="#wit1">引</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1136004" to="#end1136004"><lem wit="#wit1">世</lem><rdg resp="#resp1" wit="#wit2">殘世</rdg></app>
-<app from="#beg1136005" to="#end1136005"><lem wit="#wit1">前</lem><rdg resp="#resp1" wit="#wit2">此</rdg></app>
-<app from="#beg1136006" to="#end1136006"><lem wit="#wit1">法</lem><rdg resp="#resp1" wit="#wit2">生</rdg></app>
-<app from="#beg1136007" to="#end1136007"><lem wit="#wit1">色</lem><rdg resp="#resp1" wit="#wit2">立</rdg></app>
-<app from="#beg1136008" to="#end1136008"><lem wit="#wit1">變</lem><rdg resp="#resp1" wit="#wit2">變而緣</rdg></app>
-<app from="#beg1136009" to="#end1136009"><lem wit="#wit1">善</lem><rdg resp="#resp1" wit="#wit2">應</rdg></app>
-<app from="#beg1136010" to="#end1136010"><lem wit="#wit1">聖</lem><rdg resp="#resp1" wit="#wit2">聖教</rdg></app>
-<app from="#beg1136011" to="#end1136011"><lem wit="#wit1">故</lem><rdg resp="#resp1" wit="#wit2">有</rdg></app>
-<app from="#beg1136012" to="#end1136012"><lem wit="#wit1">爾</lem><rdg resp="#resp1" wit="#wit2">許</rdg></app>
-<app from="#beg1136013" to="#end1136013"><lem wit="#wit1">前</lem><rdg resp="#resp1" wit="#wit2">支</rdg></app>
-<app from="#beg1136014" to="#end1136014"><lem wit="#wit1">害</lem><rdg resp="#resp1" wit="#wit2">空</rdg></app>
-<app from="#beg1136015" to="#end1136015"><lem wit="#wit1">義是</lem><rdg resp="#resp1" wit="#wit2">是義</rdg></app>
-<app from="#beg1136016" to="#end1136016"><lem wit="#wit1">生殺</lem><rdg resp="#resp1" wit="#wit2">殺生</rdg></app>
-<app from="#beg1136017" to="#end1136017"><lem wit="#wit1">習</lem><rdg resp="#resp1" wit="#wit2">習力</rdg></app>
-<app from="#beg1136018" to="#end1136018"><lem wit="#wit1">怨</lem><rdg resp="#resp1" wit="#wit2">惡</rdg></app>
-<app from="#beg1136019" to="#end1136019"><lem wit="#wit1">增上力。二識</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1136020" to="#end1136020"><lem wit="#wit1">廣</lem><rdg resp="#resp1" wit="#wit2">應</rdg></app>
-<app from="#beg1136021" to="#end1136021"><lem wit="#wit1">釋</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1136022" to="#end1136022"><lem wit="#wit1">滅</lem><rdg resp="#resp1" wit="#wit2">滅故言</rdg></app>
-<app from="#beg1137001" to="#end1137001"><lem wit="#wit1">勝</lem><rdg resp="#resp1" wit="#wit2">就</rdg></app>
-<app from="#beg1137002" to="#end1137002"><lem wit="#wit1">所</lem><rdg resp="#resp1" wit="#wit2">依</rdg></app>
-<app from="#beg1137003" to="#end1137003"><lem wit="#wit1">續</lem><rdg resp="#resp1" wit="#wit2">續識</rdg></app>
-<app cb:word-count="23" from="#beg1137004" to="#end1137004"><lem wit="#wit1">我等者。即是依前相續法執。一切凡夫<lb n="1137a13" ed="T"/>執我我所。論說我執</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1137005" to="#end1137005"><lem wit="#wit1">續</lem><rdg resp="#resp1" wit="#wit2">相續</rdg></app>
-<app from="#beg1137006" to="#end1137006"><lem wit="#wit1">二</lem><rdg resp="#resp1" wit="#wit2">二出</rdg></app>
-<app from="#beg1137007" to="#end1137007"><lem wit="#wit1">追</lem><rdg resp="#resp1" wit="#wit2">退</rdg></app>
-<app from="#beg1137008" to="#end1137008"><lem wit="#wit1">顯</lem><rdg resp="#resp1" wit="#wit2">現</rdg></app>
-<app from="#beg1137009" to="#end1137009"><lem wit="#wit1">蘊</lem><rdg resp="#resp1" wit="#wit2">蘊非即</rdg></app>
-<app from="#beg1137010" to="#end1137010"><lem wit="#wit1">事</lem><rdg resp="#resp1" wit="#wit2">事者</rdg></app>
-<app from="#beg1137011" to="#end1137011"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit2">云</rdg></app>
-<app from="#beg1137012" to="#end1137012"><lem wit="#wit1">知</lem><rdg resp="#resp1" wit="#wit2">去</rdg></app>
-<app from="#beg1137013" to="#end1137013"><lem wit="#wit1">舉<lb n="1137b16" ed="T"/>最強故</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1137014" to="#end1137014"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2">說知</rdg></app>
-<app from="#beg1137015" to="#end1137015"><lem wit="#wit1">識</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1137016" to="#end1137016"><lem wit="#wit1">我</lem><rdg resp="#resp1" wit="#wit2">愛</rdg></app>
-<app from="#beg1137017" to="#end1137017"><lem wit="#wit1">諸</lem><rdg resp="#resp1" wit="#wit2">法</rdg></app>
-<app from="#beg1137018" to="#end1137018"><lem wit="#wit1">依<lb n="1137b29" ed="T"/>凡</lem><rdg resp="#resp1" wit="#wit2">凡夫</rdg></app>
-<app from="#beg1137019" to="#end1137019"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2">許</rdg></app>
-<app cb:word-count="21" from="#beg1138001" to="#end1138001"><lem wit="#wit1">為無明熏<lb n="1138a10" ed="T"/>習所起識者標緣起體即本淨心是緣起體</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1138002" to="#end1138002"><lem wit="#wit1">分</lem><rdg resp="#resp1" wit="#wit2">心</rdg></app>
-<app from="#beg1138003" to="#end1138003"><lem wit="#wit1">阿</lem><rdg resp="#resp1" wit="#wit2">阿陀</rdg></app>
-<app from="#beg1138004" to="#end1138004"><lem wit="#wit1">至</lem><rdg resp="#resp1" wit="#wit2">若至</rdg></app>
-<app from="#beg1138005" to="#end1138005"><lem wit="#wit1">深</lem><rdg resp="#resp1" wit="#wit2">甚深</rdg></app>
-<app from="#beg1138006" to="#end1138006"><lem wit="#wit1">染</lem><rdg resp="#resp1" wit="#wit2">淨</rdg></app>
-<app from="#beg1138007" to="#end1138007"><lem wit="#wit1">不</lem><rdg resp="#resp1" wit="#wit2">常</rdg></app>
-<app from="#beg1138008" to="#end1138008"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2">三光遍勘</rdg></app>
-<app from="#beg1142001" to="#end1142001"><lem resp="#resp1" wit="#wit1">以<lb n="1142a16" ed="T"/>境滅時體不</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark"><space quantity="0"/></rdg></app>
-<app from="#beg1150a1201" to="#end1150a1201"><lem wit="#wit3" resp="#resp3">貧</lem><rdg wit="#wit1">貪</rdg></app>
-<app from="#beg1157001" to="#end1157001"><lem resp="#resp1" wit="#wit1">無</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">無上</rdg></app>
-<app from="#beg1158001" to="#end1158001"><lem resp="#resp1" wit="#wit1">因</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">固</rdg></app>
-<app from="#beg1160002" to="#end1160002"><lem wit="#wit1">已信</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1160003" to="#end1160003"><lem wit="#wit1">住</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1161001" to="#end1161001"><lem wit="#wit1">解</lem><rdg resp="#resp1" wit="#wit2">解者所謂解</rdg></app>
-<app from="#beg1161002" to="#end1161002"><lem wit="#wit1">顯異前故云深也</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1161003" to="#end1161003"><lem wit="#wit1">波</lem><rdg resp="#resp1" wit="#wit2">名波</rdg></app>
-<app from="#beg1162001" to="#end1162001"><lem wit="#wit1">必</lem><rdg resp="#resp1" wit="#wit2">不有</rdg></app>
-<app from="#beg1162002" to="#end1162002"><lem wit="#wit1">一</lem><rdg resp="#resp1" wit="#wit2">一數</rdg></app>
-<app from="#beg1162003" to="#end1162003"><lem wit="#wit1">義</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1163001" to="#end1163001"><lem wit="#wit1">也</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1163002" to="#end1163002"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2">自說</rdg></app>
-<app from="#beg1164001" to="#end1164001"><lem wit="#wit1">境</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1164002" to="#end1164002"><lem wit="#wit1">以彼善</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1164003" to="#end1164003"><lem wit="#wit1">本</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1165001" to="#end1165001"><lem wit="#wit1">現</lem><rdg resp="#resp1" wit="#wit2">常現</rdg></app>
-<app from="#beg1165002" to="#end1165002"><lem wit="#wit1">故常</lem><rdg resp="#resp1" wit="#wit2">常樂</rdg></app>
-<app from="#beg1165003" to="#end1165003"><lem wit="#wit1">皆即</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1166001" to="#end1166001"><lem wit="#wit1">止</lem><rdg resp="#resp1" wit="#wit2">止故言隨順止觀</rdg></app>
-<app from="#beg1167a0301" to="#end1167a0301"><lem wit="#wit3" resp="#resp3">謂</lem><rdg wit="#wit1">體</rdg></app>
-<app from="#beg1173001" to="#end1173001"><lem resp="#resp1" wit="#wit1">文</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">聞</rdg></app>
-<app from="#beg1174001" to="#end1174001"><lem resp="#resp1" wit="#wit1">理</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">利</rdg></app>
+<app from="#beg1121002" to="#end1121002"><lem wit="#wit.orig">總</lem><rdg resp="#resp2" wit="#wit1">初總</rdg></app>
+<app from="#beg1121003" to="#end1121003"><lem wit="#wit.orig">異</lem><rdg resp="#resp2" wit="#wit1">異本覺</rdg></app>
+<app from="#beg1121004" to="#end1121004"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1121005" to="#end1121005"><lem wit="#wit.orig">覺業</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1122001" to="#end1122001"><lem wit="#wit.orig">竟</lem><rdg resp="#resp2" wit="#wit1">竟覺</rdg></app>
+<app from="#beg1122002" to="#end1122002"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1">智</rdg></app>
+<app from="#beg1122003" to="#end1122003"><lem wit="#wit.orig">夫</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1122004" to="#end1122004"><lem wit="#wit.orig">德</lem><rdg resp="#resp2" wit="#wit1">能</rdg></app>
+<app from="#beg1122005" to="#end1122005"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1">相所相</rdg></app>
+<app from="#beg1122006" to="#end1122006"><lem wit="#wit.orig">等</lem><rdg resp="#resp2" wit="#wit1">等故</rdg></app>
+<app from="#beg1122007" to="#end1122007"><lem wit="#wit.orig">非</lem><rdg resp="#resp2" wit="#wit1">非位</rdg></app>
+<app from="#beg1122008" to="#end1122008"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1">四相</rdg></app>
+<app from="#beg1122009" to="#end1122009"><lem wit="#wit.orig">際</lem><rdg resp="#resp2" wit="#wit1">際最微</rdg></app>
+<app from="#beg1123001" to="#end1123001"><lem wit="#wit.orig">別</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1123002" to="#end1123002"><lem wit="#wit.orig">界界</lem><rdg resp="#resp2" wit="#wit1">故故</rdg></app>
+<app from="#beg1123003" to="#end1123003"><lem wit="#wit.orig">取別</lem><rdg resp="#resp2" wit="#wit1">別取</rdg></app>
+<app from="#beg1123004" to="#end1123004"><lem wit="#wit.orig">意</lem><rdg resp="#resp2" wit="#wit1">或意</rdg></app>
+<app from="#beg1123005" to="#end1123005"><lem wit="#wit.orig">即</lem><rdg resp="#resp2" wit="#wit1">故此四相即</rdg></app>
+<app from="#beg1123006" to="#end1123006"><lem wit="#wit.orig">前</lem><rdg resp="#resp2" wit="#wit1">先</rdg></app>
+<app from="#beg1123007" to="#end1123007"><lem wit="#wit.orig">二覺相也</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1123008" to="#end1123008"><lem wit="#wit.orig">而</lem><rdg resp="#resp2" wit="#wit1">初</rdg></app>
+<app from="#beg1124001" to="#end1124001"><lem wit="#wit.orig">察</lem><rdg resp="#resp2" wit="#wit1">察名觀察</rdg></app>
+<app from="#beg1124002" to="#end1124002"><lem wit="#wit.orig">甚差</lem><rdg resp="#resp2" wit="#wit1">七卷</rdg></app>
+<app from="#beg1124003" to="#end1124003"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1124004" to="#end1124004"><lem wit="#wit.orig">論</lem><rdg resp="#resp2" wit="#wit1">論文</rdg></app>
+<app from="#beg1124005" to="#end1124005"><lem wit="#wit.orig">覺</lem><rdg resp="#resp2" wit="#wit1">覺初心時無</rdg></app>
+<app from="#beg1124006" to="#end1124006"><lem wit="#wit.orig">種</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1124007" to="#end1124007"><lem wit="#wit.orig">有</lem><rdg resp="#resp2" wit="#wit1">有所覺猶</rdg></app>
+<app from="#beg1124008" to="#end1124008"><lem wit="#wit.orig">異</lem><rdg resp="#resp2" wit="#wit1">不異</rdg></app>
+<app from="#beg1124009" to="#end1124009"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1">三舉</rdg></app>
+<app from="#beg1125001" to="#end1125001"><lem wit="#wit.orig">四</lem><rdg resp="#resp2" wit="#wit1">四顯</rdg></app>
+<app from="#beg1125002" to="#end1125002"><lem wit="#wit.orig">覺</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1125003" to="#end1125003"><lem wit="#wit.orig">論</lem><rdg resp="#resp2" wit="#wit1">本</rdg></app>
+<app from="#beg1125004" to="#end1125004"><lem wit="#wit.orig">生</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1125005" to="#end1125005"><lem wit="#wit.orig">有</lem><rdg resp="#resp2" wit="#wit1">有者</rdg></app>
+<app from="#beg1125006" to="#end1125006"><lem wit="#wit.orig">十</lem><rdg resp="#resp2" wit="#wit1">一</rdg></app>
+<app from="#beg1125007" to="#end1125007"><lem wit="#wit.orig">緣</lem><rdg resp="#resp2" wit="#wit1">染</rdg></app>
+<app from="#beg1125008" to="#end1125008"><lem wit="#wit.orig">成</lem><rdg resp="#resp2" wit="#wit1">生</rdg></app>
+<app from="#beg1126001" to="#end1126001"><lem wit="#wit.orig">隨</lem><rdg resp="#resp2" wit="#wit1">緣</rdg></app>
+<app from="#beg1126002" to="#end1126002"><lem wit="#wit.orig">不</lem><rdg resp="#resp2" wit="#wit1">不異</rdg></app>
+<app from="#beg1126003" to="#end1126003"><lem wit="#wit.orig">名</lem><rdg resp="#resp2" wit="#wit1">名為</rdg></app>
+<app from="#beg1126004" to="#end1126004"><lem wit="#wit.orig">皆</lem><rdg resp="#resp2" wit="#wit1">亦</rdg></app>
+<app from="#beg1126005" to="#end1126005"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1">現</rdg></app>
+<app from="#beg1126006" to="#end1126006"><lem wit="#wit.orig">他</lem><rdg resp="#resp2" wit="#wit1">他後一利他非無自利</rdg></app>
+<app cb:word-count="7" from="#beg1126007" to="#end1126007"><lem wit="#wit.orig">後通化身他<lb n="1126a25" ed="T"/>受用</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1126008" to="#end1126008"><lem wit="#wit.orig">性</lem><rdg resp="#resp2" wit="#wit1">性普現</rdg></app>
+<app from="#beg1126009" to="#end1126009"><lem wit="#wit.orig">初</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1126010" to="#end1126010"><lem wit="#wit.orig">體</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1126011" to="#end1126011"><lem wit="#wit.orig">至</lem><rdg resp="#resp2" wit="#wit1">至足</rdg></app>
+<app from="#beg1126012" to="#end1126012"><lem wit="#wit.orig">思</lem><rdg resp="#resp2" wit="#wit1">思議</rdg></app>
+<app from="#beg1126013" to="#end1126013"><lem wit="#wit.orig">稱真</lem><rdg resp="#resp2" wit="#wit1">攝</rdg></app>
+<app from="#beg1126014" to="#end1126014"><lem wit="#wit.orig">等</lem><rdg resp="#resp2" wit="#wit1">等此</rdg></app>
+<app from="#beg1126015" to="#end1126015"><lem wit="#wit.orig">異</lem><rdg resp="#resp2" wit="#wit1">異非</rdg></app>
+<app from="#beg1126016" to="#end1126016"><lem wit="#wit.orig">故</lem><rdg resp="#resp2" wit="#wit1">也</rdg></app>
+<app from="#beg1126017" to="#end1126017"><lem wit="#wit.orig">至</lem><rdg resp="#resp2" wit="#wit1">至性</rdg></app>
+<app from="#beg1126018" to="#end1126018"><lem wit="#wit.orig">即涅槃</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1127001" to="#end1127001"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1127002" to="#end1127002"><lem wit="#wit.orig">根</lem><rdg resp="#resp2" wit="#wit1">根作</rdg></app>
+<app from="#beg1127003" to="#end1127003"><lem wit="#wit.orig">微</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1127004" to="#end1127004"><lem wit="#wit.orig">二</lem><rdg resp="#resp2" wit="#wit1">三</rdg></app>
+<app from="#beg1127005" to="#end1127005"><lem wit="#wit.orig">作</lem><rdg resp="#resp2" wit="#wit1">化</rdg></app>
+<app from="#beg1127006" to="#end1127006"><lem wit="#wit.orig">斷</lem><rdg resp="#resp2" wit="#wit1">絕</rdg></app>
+<app from="#beg1127007" to="#end1127007"><lem wit="#wit.orig">化</lem><rdg resp="#resp2" wit="#wit1">他</rdg></app>
+<app from="#beg1127008" to="#end1127008"><lem wit="#wit.orig">過去</lem><rdg resp="#resp2" wit="#wit1">遍知</rdg></app>
+<app from="#beg1127009" to="#end1127009"><lem wit="#wit.orig">世</lem><rdg resp="#resp2" wit="#wit1">去</rdg></app>
+<app from="#beg1127010" to="#end1127010"><lem wit="#wit.orig">實</lem><rdg resp="#resp2" wit="#wit1">異</rdg></app>
+<app from="#beg1127011" to="#end1127011"><lem wit="#wit.orig">用</lem><rdg resp="#resp2" wit="#wit1">用果中初明即果後明德果或初果體後即果用</rdg></app>
+<app from="#beg1127012" to="#end1127012"><lem wit="#wit.orig">故</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1127013" to="#end1127013"><lem wit="#wit.orig">如</lem><rdg resp="#resp2" wit="#wit1">如明鏡故</rdg></app>
+<app from="#beg1127014" to="#end1127014"><lem wit="#wit.orig">智淨</lem><rdg resp="#resp2" wit="#wit1">法出</rdg></app>
+<app from="#beg1127015" to="#end1127015"><lem wit="#wit.orig">緣</lem><rdg resp="#resp2" wit="#wit1">緣緣</rdg></app>
+<app from="#beg1128001" to="#end1128001"><lem wit="#wit.orig">空</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1128002" to="#end1128002"><lem wit="#wit.orig">到</lem><rdg resp="#resp2" wit="#wit1">相倒</rdg></app>
+<app from="#beg1128003" to="#end1128003"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1">心妄境本不相應故云遠離心</rdg></app>
+<app from="#beg1128004" to="#end1128004"><lem wit="#wit.orig">所現</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1128005" to="#end1128005"><lem wit="#wit.orig">不</lem><rdg resp="#resp2" wit="#wit1">不作</rdg></app>
+<app from="#beg1128006" to="#end1128006"><lem wit="#wit.orig">從</lem><rdg resp="#resp2" wit="#wit1">由</rdg></app>
+<app from="#beg1128007" to="#end1128007"><lem wit="#wit.orig">異</lem><rdg resp="#resp2" wit="#wit1">實</rdg></app>
+<app from="#beg1128008" to="#end1128008"><lem wit="#wit.orig">以</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1128009" to="#end1128009"><lem wit="#wit.orig">染</lem><rdg resp="#resp2" wit="#wit1">染不染</rdg></app>
+<app from="#beg1128010" to="#end1128010"><lem wit="#wit.orig">為</lem><rdg resp="#resp2" wit="#wit1">而</rdg></app>
+<app from="#beg1128011" to="#end1128011"><lem wit="#wit.orig">時</lem><rdg resp="#resp2" wit="#wit1">法</rdg></app>
+<app from="#beg1128012" to="#end1128012"><lem wit="#wit.orig">中</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1128013" to="#end1128013"><lem wit="#wit.orig">出</lem><rdg resp="#resp2" wit="#wit1">出故</rdg></app>
+<app from="#beg1128014" to="#end1128014"><lem wit="#wit.orig">不與生<lb n="1128c14" ed="T"/>滅</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1128015" to="#end1128015"><lem wit="#wit.orig">離</lem><rdg resp="#resp2" wit="#wit1">離雜</rdg></app>
+<app from="#beg1128016" to="#end1128016"><lem wit="#wit.orig">云</lem><rdg resp="#resp2" wit="#wit1">之</rdg></app>
+<app from="#beg1128017" to="#end1128017"><lem wit="#wit.orig">厭</lem><rdg resp="#resp2" wit="#wit1">厭求</rdg></app>
+<app from="#beg1129001" to="#end1129001"><lem wit="#wit.orig">謂真實</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1129002" to="#end1129002"><lem wit="#wit.orig">第</lem><rdg resp="#resp2" wit="#wit1">中</rdg></app>
+<app from="#beg1129003" to="#end1129003"><lem wit="#wit.orig">覺</lem><rdg resp="#resp2" wit="#wit1">覺不覺</rdg></app>
+<app from="#beg1129004" to="#end1129004"><lem wit="#wit.orig">性</lem><rdg resp="#resp2" wit="#wit1">性因故</rdg></app>
+<app from="#beg1129005" to="#end1129005"><lem wit="#wit.orig">與</lem><rdg resp="#resp2" wit="#wit1">是</rdg></app>
+<app from="#beg1129006" to="#end1129006"><lem wit="#wit.orig">舉</lem><rdg resp="#resp2" wit="#wit1">覺</rdg></app>
+<app from="#beg1129007" to="#end1129007"><lem wit="#wit.orig">依</lem><rdg resp="#resp2" wit="#wit1">各依</rdg></app>
+<app from="#beg1129008" to="#end1129008"><lem wit="#wit.orig">其<lb n="1129b27" ed="T"/>真覺名體</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1129009" to="#end1129009"><lem wit="#wit.orig">無</lem><rdg resp="#resp2" wit="#wit1">無以</rdg></app>
+<app from="#beg1129010" to="#end1129010"><lem wit="#wit.orig">悉皆</lem><rdg resp="#resp2" wit="#wit1">皆悉</rdg></app>
+<app from="#beg1129011" to="#end1129011"><lem wit="#wit.orig">不</lem><rdg resp="#resp2" wit="#wit1">依不</rdg></app>
+<app from="#beg1129012" to="#end1129012"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1">於中</rdg></app>
+<app from="#beg1129013" to="#end1129013"><lem wit="#wit.orig">生</lem><rdg resp="#resp2" wit="#wit1">起</rdg></app>
+<app from="#beg1129014" to="#end1129014"><lem wit="#wit.orig">順<lb n="1129c15" ed="T"/>違</lem><rdg resp="#resp2" wit="#wit1">違順</rdg></app>
+<app from="#beg1129015" to="#end1129015"><lem wit="#wit.orig">名</lem><rdg resp="#resp2" wit="#wit1">計名</rdg></app>
+<app from="#beg1129016" to="#end1129016"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1">識</rdg></app>
+<app from="#beg1129017" to="#end1129017"><lem wit="#wit.orig">屬</lem><rdg resp="#resp2" wit="#wit1">成</rdg></app>
+<app from="#beg1129018" to="#end1129018"><lem wit="#wit.orig">是</lem><rdg resp="#resp2" wit="#wit1">是諸識法執是</rdg></app>
+<app from="#beg1130001" to="#end1130001"><lem wit="#wit.orig">是</lem><rdg resp="#resp2" wit="#wit1">說</rdg></app>
+<app from="#beg1130002" to="#end1130002"><lem wit="#wit.orig">和</lem><rdg resp="#resp2" wit="#wit1">和合</rdg></app>
+<app from="#beg1130003" to="#end1130003"><lem wit="#wit.orig">以</lem><rdg resp="#resp2" wit="#wit1">以依</rdg></app>
+<app from="#beg1130004" to="#end1130004"><lem wit="#wit.orig">現</lem><rdg resp="#resp2" wit="#wit1">能現</rdg></app>
+<app from="#beg1130005" to="#end1130005"><lem wit="#wit.orig">後</lem><rdg resp="#resp2" wit="#wit1">後六麁相方屬七識以彼黎耶</rdg></app>
+<app from="#beg1130006" to="#end1130006"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1130007" to="#end1130007"><lem wit="#wit.orig">智</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1130008" to="#end1130008"><lem wit="#wit.orig">以住</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1130009" to="#end1130009"><lem wit="#wit.orig">識</lem><rdg resp="#resp2" wit="#wit1">塵</rdg></app>
+<app from="#beg1130010" to="#end1130010"><lem wit="#wit.orig">作</lem><rdg resp="#resp2" wit="#wit1">化</rdg></app>
+<app from="#beg1130011" to="#end1130011"><lem wit="#wit.orig">依</lem><rdg resp="#resp2" wit="#wit1">依根故是宗法言諸是不共所依</rdg></app>
+<app from="#beg1130012" to="#end1130012"><lem wit="#wit.orig">不</lem><rdg resp="#resp2" wit="#wit1">爾</rdg></app>
+<app from="#beg1130013" to="#end1130013"><lem wit="#wit.orig">非<lb n="1130b23" ed="T"/>心法</lem><rdg resp="#resp2" wit="#wit1">心法非</rdg></app>
+<app from="#beg1130014" to="#end1130014"><lem wit="#wit.orig">漏</lem><rdg resp="#resp2" wit="#wit1">漏眼等五根若遍緣者必非不共所依根收如下別意根等若以不共所依根故與識同境有漏</rdg></app>
+<app from="#beg1130015" to="#end1130015"><lem wit="#wit.orig">識</lem><rdg resp="#resp2" wit="#wit1">識故唯識論第十卷云有漏不共必俱同境根發無漏識</rdg></app>
+<app from="#beg1130016" to="#end1130016"><lem wit="#wit.orig">謂</lem><rdg resp="#resp2" wit="#wit1">非謂</rdg></app>
+<app from="#beg1131001" to="#end1131001"><lem wit="#wit.orig">靜</lem><rdg resp="#resp2" wit="#wit1">淨</rdg></app>
+<app from="#beg1131002" to="#end1131002"><lem wit="#wit.orig">必</lem><rdg resp="#resp2" wit="#wit1">必依能見故楞伽經</rdg></app>
+<app from="#beg1131003" to="#end1131003"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1">一心</rdg></app>
+<app from="#beg1131004" to="#end1131004"><lem wit="#wit.orig">證</lem><rdg resp="#resp2" wit="#wit1">證自證</rdg></app>
+<app from="#beg1131005" to="#end1131005"><lem wit="#wit.orig">也</lem><rdg resp="#resp2" wit="#wit1">也是釋雖</rdg></app>
+<app from="#beg1131006" to="#end1131006"><lem wit="#wit.orig">愛</lem><rdg resp="#resp2" wit="#wit1">不愛</rdg></app>
+<app from="#beg1131007" to="#end1131007"><lem wit="#wit.orig">取</lem><rdg resp="#resp2" wit="#wit1">執</rdg></app>
+<app from="#beg1131008" to="#end1131008"><lem wit="#wit.orig">言</lem><rdg resp="#resp2" wit="#wit1">言相</rdg></app>
+<app from="#beg1131009" to="#end1131009"><lem wit="#wit.orig">繫</lem><rdg resp="#resp2" wit="#wit1">繫苦</rdg></app>
+<app from="#beg1131010" to="#end1131010"><lem wit="#wit.orig">至</lem><rdg resp="#resp2" wit="#wit1">至不</rdg></app>
+<app from="#beg1132001" to="#end1132001"><lem wit="#wit.orig">等</lem><rdg resp="#resp2" wit="#wit1">等者</rdg></app>
+<app from="#beg1132002" to="#end1132002"><lem wit="#wit.orig">苦</lem><rdg resp="#resp2" wit="#wit1">其</rdg></app>
+<app from="#beg1132003" to="#end1132003"><lem wit="#wit.orig">覺</lem><rdg resp="#resp2" wit="#wit1">不覺</rdg></app>
+<app from="#beg1132004" to="#end1132004"><lem wit="#wit.orig">與</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1132005" to="#end1132005"><lem wit="#wit.orig">與</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1132006" to="#end1132006"><lem wit="#wit.orig">異</lem><rdg resp="#resp2" wit="#wit1">異異</rdg></app>
+<app from="#beg1132007" to="#end1132007"><lem wit="#wit.orig">因</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1132008" to="#end1132008"><lem wit="#wit.orig">漏</lem><rdg resp="#resp2" wit="#wit1">漏至染</rdg></app>
+<app from="#beg1132009" to="#end1132009"><lem wit="#wit.orig">者</lem><rdg resp="#resp2" wit="#wit1">者是無漏法性染幻差別者</rdg></app>
+<app from="#beg1132010" to="#end1132010"><lem wit="#wit.orig">緣</lem><rdg resp="#resp2" wit="#wit1">染</rdg></app>
+<app from="#beg1132011" to="#end1132011"><lem wit="#wit.orig">言</lem><rdg resp="#resp2" wit="#wit1">言所</rdg></app>
+<app from="#beg1132012" to="#end1132012"><lem wit="#wit.orig">意</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1132013" to="#end1132013"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1132014" to="#end1132014"><lem wit="#wit.orig">為</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1132015" to="#end1132015"><lem wit="#wit.orig">法相</lem><rdg resp="#resp2" wit="#wit1">初教</rdg></app>
+<app from="#beg1132016" to="#end1132016"><lem wit="#wit.orig">緣</lem><rdg resp="#resp2" wit="#wit1">緣如何說是生滅因緣</rdg></app>
+<app from="#beg1132017" to="#end1132017"><lem wit="#wit.orig">依此因緣</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1132018" to="#end1132018"><lem wit="#wit.orig">鎔融</lem><rdg resp="#resp2" wit="#wit1">融通</rdg></app>
+<app from="#beg1132019" to="#end1132019"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1">依於</rdg></app>
+<app from="#beg1133001" to="#end1133001"><lem wit="#wit.orig">也</lem><rdg resp="#resp2" wit="#wit1">云</rdg></app>
+<app from="#beg1133002" to="#end1133002"><lem wit="#wit.orig">別</lem><rdg resp="#resp2" wit="#wit1">分別</rdg></app>
+<app from="#beg1133003" to="#end1133003"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit1">於</rdg></app>
+<app from="#beg1133004" to="#end1133004"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1">分</rdg></app>
+<app from="#beg1133005" to="#end1133005"><lem wit="#wit.orig">非</lem><rdg resp="#resp2" wit="#wit1">有</rdg></app>
+<app from="#beg1133006" to="#end1133006"><lem wit="#wit.orig">麁相說</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1133007" to="#end1133007"><lem wit="#wit.orig">是</lem><rdg resp="#resp2" wit="#wit1">是真</rdg></app>
+<app cb:word-count="9" from="#beg1133008" to="#end1133008"><lem wit="#wit.orig">於中有三。初略明意轉</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1133009" to="#end1133009"><lem wit="#wit.orig">起</lem><rdg resp="#resp2" wit="#wit1">起由迷義合為二識一迷真起</rdg></app>
+<app from="#beg1133010" to="#end1133010"><lem wit="#wit.orig">故</lem><rdg resp="#resp2" wit="#wit1">者</rdg></app>
+<app from="#beg1133011" to="#end1133011"><lem wit="#wit.orig">何</lem><rdg resp="#resp2" wit="#wit1">何為</rdg></app>
+<app from="#beg1133012" to="#end1133012"><lem wit="#wit.orig">故</lem><rdg resp="#resp2" wit="#wit1">故說</rdg></app>
+<app from="#beg1133013" to="#end1133013"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1">心所起</rdg></app>
+<app from="#beg1133014" to="#end1133014"><lem wit="#wit.orig">識</lem><rdg resp="#resp2" wit="#wit1">諸</rdg></app>
+<app from="#beg1134001" to="#end1134001"><lem wit="#wit.orig">塵</lem><rdg resp="#resp2" wit="#wit1">五塵</rdg></app>
+<app from="#beg1134002" to="#end1134002"><lem wit="#wit.orig">智</lem><rdg resp="#resp2" wit="#wit1">知</rdg></app>
+<app from="#beg1134003" to="#end1134003"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1">相如</rdg></app>
+<app from="#beg1134004" to="#end1134004"><lem wit="#wit.orig">轉</lem><rdg resp="#resp2" wit="#wit1">於</rdg></app>
+<app from="#beg1134005" to="#end1134005"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1">智</rdg></app>
+<app from="#beg1134006" to="#end1134006"><lem wit="#wit.orig">教</lem><rdg resp="#resp2" wit="#wit1">教異者有義諸教</rdg></app>
+<app from="#beg1134007" to="#end1134007"><lem wit="#wit.orig">即</lem><rdg resp="#resp2" wit="#wit1">有</rdg></app>
+<app from="#beg1134008" to="#end1134008"><lem wit="#wit.orig">所</lem><rdg resp="#resp2" wit="#wit1">所執</rdg></app>
+<app from="#beg1134009" to="#end1134009"><lem wit="#wit.orig">漏</lem><rdg resp="#resp2" wit="#wit1">攝</rdg></app>
+<app from="#beg1134010" to="#end1134010"><lem wit="#wit.orig">能</lem><rdg resp="#resp2" wit="#wit1">不能</rdg></app>
+<app from="#beg1134011" to="#end1134011"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1">不說</rdg></app>
+<app from="#beg1134012" to="#end1134012"><lem wit="#wit.orig">論</lem><rdg resp="#resp2" wit="#wit1">是論</rdg></app>
+<app from="#beg1134013" to="#end1134013"><lem wit="#wit.orig">本在諸識</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1134014" to="#end1134014"><lem wit="#wit.orig">耳</lem><rdg resp="#resp2" wit="#wit1">爾</rdg></app>
+<app from="#beg1134015" to="#end1134015"><lem wit="#wit.orig">者</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1134016" to="#end1134016"><lem wit="#wit.orig">亦</lem><rdg resp="#resp2" wit="#wit1">六</rdg></app>
+<app from="#beg1134017" to="#end1134017"><lem wit="#wit.orig">屬事識</lem><rdg resp="#resp2" wit="#wit1">識事</rdg></app>
+<app cb:word-count="17" from="#beg1134018" to="#end1134018"><lem wit="#wit.orig">故。故此但是細分法執同名事識。於<lb n="1134c29" ed="T"/>理無違</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1135001" to="#end1135001"><lem wit="#wit.orig">未</lem><rdg resp="#resp2" wit="#wit1">迷</rdg></app>
+<app from="#beg1135002" to="#end1135002"><lem wit="#wit.orig">五</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1135003" to="#end1135003"><lem wit="#wit.orig">攝</lem><rdg resp="#resp2" wit="#wit1">由攝</rdg></app>
+<app from="#beg1135004" to="#end1135004"><lem wit="#wit.orig">種</lem><rdg resp="#resp2" wit="#wit1">識</rdg></app>
+<app from="#beg1135005" to="#end1135005"><lem wit="#wit.orig">善</lem><rdg resp="#resp2" wit="#wit1">善惡</rdg></app>
+<app from="#beg1135006" to="#end1135006"><lem wit="#wit.orig">果</lem><rdg resp="#resp2" wit="#wit1">苦樂</rdg></app>
+<app from="#beg1135007" to="#end1135007"><lem wit="#wit.orig">業</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1135008" to="#end1135008"><lem wit="#wit.orig">意</lem><rdg resp="#resp2" wit="#wit1">意識</rdg></app>
+<app from="#beg1135009" to="#end1135009"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit1">相故</rdg></app>
+<app from="#beg1135010" to="#end1135010"><lem wit="#wit.orig">境</lem><rdg resp="#resp2" wit="#wit1">憶</rdg></app>
+<app from="#beg1135011" to="#end1135011"><lem wit="#wit.orig">此</lem><rdg resp="#resp2" wit="#wit1">能此</rdg></app>
+<app from="#beg1136001" to="#end1136001"><lem wit="#wit.orig">外</lem><rdg resp="#resp2" wit="#wit1">餘</rdg></app>
+<app from="#beg1136002" to="#end1136002"><lem wit="#wit.orig">成</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1136003" to="#end1136003"><lem wit="#wit.orig">引</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1136004" to="#end1136004"><lem wit="#wit.orig">世</lem><rdg resp="#resp2" wit="#wit1">殘世</rdg></app>
+<app from="#beg1136005" to="#end1136005"><lem wit="#wit.orig">前</lem><rdg resp="#resp2" wit="#wit1">此</rdg></app>
+<app from="#beg1136006" to="#end1136006"><lem wit="#wit.orig">法</lem><rdg resp="#resp2" wit="#wit1">生</rdg></app>
+<app from="#beg1136007" to="#end1136007"><lem wit="#wit.orig">色</lem><rdg resp="#resp2" wit="#wit1">立</rdg></app>
+<app from="#beg1136008" to="#end1136008"><lem wit="#wit.orig">變</lem><rdg resp="#resp2" wit="#wit1">變而緣</rdg></app>
+<app from="#beg1136009" to="#end1136009"><lem wit="#wit.orig">善</lem><rdg resp="#resp2" wit="#wit1">應</rdg></app>
+<app from="#beg1136010" to="#end1136010"><lem wit="#wit.orig">聖</lem><rdg resp="#resp2" wit="#wit1">聖教</rdg></app>
+<app from="#beg1136011" to="#end1136011"><lem wit="#wit.orig">故</lem><rdg resp="#resp2" wit="#wit1">有</rdg></app>
+<app from="#beg1136012" to="#end1136012"><lem wit="#wit.orig">爾</lem><rdg resp="#resp2" wit="#wit1">許</rdg></app>
+<app from="#beg1136013" to="#end1136013"><lem wit="#wit.orig">前</lem><rdg resp="#resp2" wit="#wit1">支</rdg></app>
+<app from="#beg1136014" to="#end1136014"><lem wit="#wit.orig">害</lem><rdg resp="#resp2" wit="#wit1">空</rdg></app>
+<app from="#beg1136015" to="#end1136015"><lem wit="#wit.orig">義是</lem><rdg resp="#resp2" wit="#wit1">是義</rdg></app>
+<app from="#beg1136016" to="#end1136016"><lem wit="#wit.orig">生殺</lem><rdg resp="#resp2" wit="#wit1">殺生</rdg></app>
+<app from="#beg1136017" to="#end1136017"><lem wit="#wit.orig">習</lem><rdg resp="#resp2" wit="#wit1">習力</rdg></app>
+<app from="#beg1136018" to="#end1136018"><lem wit="#wit.orig">怨</lem><rdg resp="#resp2" wit="#wit1">惡</rdg></app>
+<app from="#beg1136019" to="#end1136019"><lem wit="#wit.orig">增上力。二識</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1136020" to="#end1136020"><lem wit="#wit.orig">廣</lem><rdg resp="#resp2" wit="#wit1">應</rdg></app>
+<app from="#beg1136021" to="#end1136021"><lem wit="#wit.orig">釋</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1136022" to="#end1136022"><lem wit="#wit.orig">滅</lem><rdg resp="#resp2" wit="#wit1">滅故言</rdg></app>
+<app from="#beg1137001" to="#end1137001"><lem wit="#wit.orig">勝</lem><rdg resp="#resp2" wit="#wit1">就</rdg></app>
+<app from="#beg1137002" to="#end1137002"><lem wit="#wit.orig">所</lem><rdg resp="#resp2" wit="#wit1">依</rdg></app>
+<app from="#beg1137003" to="#end1137003"><lem wit="#wit.orig">續</lem><rdg resp="#resp2" wit="#wit1">續識</rdg></app>
+<app cb:word-count="23" from="#beg1137004" to="#end1137004"><lem wit="#wit.orig">我等者。即是依前相續法執。一切凡夫<lb n="1137a13" ed="T"/>執我我所。論說我執</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1137005" to="#end1137005"><lem wit="#wit.orig">續</lem><rdg resp="#resp2" wit="#wit1">相續</rdg></app>
+<app from="#beg1137006" to="#end1137006"><lem wit="#wit.orig">二</lem><rdg resp="#resp2" wit="#wit1">二出</rdg></app>
+<app from="#beg1137007" to="#end1137007"><lem wit="#wit.orig">追</lem><rdg resp="#resp2" wit="#wit1">退</rdg></app>
+<app from="#beg1137008" to="#end1137008"><lem wit="#wit.orig">顯</lem><rdg resp="#resp2" wit="#wit1">現</rdg></app>
+<app from="#beg1137009" to="#end1137009"><lem wit="#wit.orig">蘊</lem><rdg resp="#resp2" wit="#wit1">蘊非即</rdg></app>
+<app from="#beg1137010" to="#end1137010"><lem wit="#wit.orig">事</lem><rdg resp="#resp2" wit="#wit1">事者</rdg></app>
+<app from="#beg1137011" to="#end1137011"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit1">云</rdg></app>
+<app from="#beg1137012" to="#end1137012"><lem wit="#wit.orig">知</lem><rdg resp="#resp2" wit="#wit1">去</rdg></app>
+<app from="#beg1137013" to="#end1137013"><lem wit="#wit.orig">舉<lb n="1137b16" ed="T"/>最強故</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1137014" to="#end1137014"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1">說知</rdg></app>
+<app from="#beg1137015" to="#end1137015"><lem wit="#wit.orig">識</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1137016" to="#end1137016"><lem wit="#wit.orig">我</lem><rdg resp="#resp2" wit="#wit1">愛</rdg></app>
+<app from="#beg1137017" to="#end1137017"><lem wit="#wit.orig">諸</lem><rdg resp="#resp2" wit="#wit1">法</rdg></app>
+<app from="#beg1137018" to="#end1137018"><lem wit="#wit.orig">依<lb n="1137b29" ed="T"/>凡</lem><rdg resp="#resp2" wit="#wit1">凡夫</rdg></app>
+<app from="#beg1137019" to="#end1137019"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1">許</rdg></app>
+<app cb:word-count="21" from="#beg1138001" to="#end1138001"><lem wit="#wit.orig">為無明熏<lb n="1138a10" ed="T"/>習所起識者標緣起體即本淨心是緣起體</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1138002" to="#end1138002"><lem wit="#wit.orig">分</lem><rdg resp="#resp2" wit="#wit1">心</rdg></app>
+<app from="#beg1138003" to="#end1138003"><lem wit="#wit.orig">阿</lem><rdg resp="#resp2" wit="#wit1">阿陀</rdg></app>
+<app from="#beg1138004" to="#end1138004"><lem wit="#wit.orig">至</lem><rdg resp="#resp2" wit="#wit1">若至</rdg></app>
+<app from="#beg1138005" to="#end1138005"><lem wit="#wit.orig">深</lem><rdg resp="#resp2" wit="#wit1">甚深</rdg></app>
+<app from="#beg1138006" to="#end1138006"><lem wit="#wit.orig">染</lem><rdg resp="#resp2" wit="#wit1">淨</rdg></app>
+<app from="#beg1138007" to="#end1138007"><lem wit="#wit.orig">不</lem><rdg resp="#resp2" wit="#wit1">常</rdg></app>
+<app from="#beg1138008" to="#end1138008"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1">三光遍勘</rdg></app>
+<app from="#beg1142001" to="#end1142001"><lem resp="#resp2" wit="#wit.orig">以<lb n="1142a16" ed="T"/>境滅時體不</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark"><space quantity="0"/></rdg></app>
+<app from="#beg1150a1201" to="#end1150a1201"><lem wit="#wit.cbeta" resp="#resp4">貧</lem><rdg wit="#wit.orig">貪</rdg></app>
+<app from="#beg1157001" to="#end1157001"><lem resp="#resp2" wit="#wit.orig">無</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">無上</rdg></app>
+<app from="#beg1158001" to="#end1158001"><lem resp="#resp2" wit="#wit.orig">因</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">固</rdg></app>
+<app from="#beg1160002" to="#end1160002"><lem wit="#wit.orig">已信</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1160003" to="#end1160003"><lem wit="#wit.orig">住</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1161001" to="#end1161001"><lem wit="#wit.orig">解</lem><rdg resp="#resp2" wit="#wit1">解者所謂解</rdg></app>
+<app from="#beg1161002" to="#end1161002"><lem wit="#wit.orig">顯異前故云深也</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1161003" to="#end1161003"><lem wit="#wit.orig">波</lem><rdg resp="#resp2" wit="#wit1">名波</rdg></app>
+<app from="#beg1162001" to="#end1162001"><lem wit="#wit.orig">必</lem><rdg resp="#resp2" wit="#wit1">不有</rdg></app>
+<app from="#beg1162002" to="#end1162002"><lem wit="#wit.orig">一</lem><rdg resp="#resp2" wit="#wit1">一數</rdg></app>
+<app from="#beg1162003" to="#end1162003"><lem wit="#wit.orig">義</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1163001" to="#end1163001"><lem wit="#wit.orig">也</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1163002" to="#end1163002"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1">自說</rdg></app>
+<app from="#beg1164001" to="#end1164001"><lem wit="#wit.orig">境</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1164002" to="#end1164002"><lem wit="#wit.orig">以彼善</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1164003" to="#end1164003"><lem wit="#wit.orig">本</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1165001" to="#end1165001"><lem wit="#wit.orig">現</lem><rdg resp="#resp2" wit="#wit1">常現</rdg></app>
+<app from="#beg1165002" to="#end1165002"><lem wit="#wit.orig">故常</lem><rdg resp="#resp2" wit="#wit1">常樂</rdg></app>
+<app from="#beg1165003" to="#end1165003"><lem wit="#wit.orig">皆即</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1166001" to="#end1166001"><lem wit="#wit.orig">止</lem><rdg resp="#resp2" wit="#wit1">止故言隨順止觀</rdg></app>
+<app from="#beg1167a0301" to="#end1167a0301"><lem wit="#wit.cbeta" resp="#resp4">謂</lem><rdg wit="#wit.orig">體</rdg></app>
+<app from="#beg1173001" to="#end1173001"><lem resp="#resp2" wit="#wit.orig">文</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">聞</rdg></app>
+<app from="#beg1174001" to="#end1174001"><lem resp="#resp2" wit="#wit.orig">理</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">利</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1121001" resp="#resp2" type="mod" target="#nkr_note_mod_1121001"><!--CBETA todo type: newmod-->【原】大英博物館藏燉煌本, S. 2554, 【甲】大英博物館藏燉煌本, S. 2367</note>
-<note n="1121002" resp="#resp2" type="mod" target="#nkr_note_mod_1121002">總【大】，初總【甲】</note>
-<note n="1121003" resp="#resp2" type="mod" target="#nkr_note_mod_1121003">異【大】，異本覺【甲】</note>
-<note n="1121004" resp="#resp2" type="mod" target="#nkr_note_mod_1121004">心【大】，〔－〕【甲】</note>
-<note n="1121005" resp="#resp2" type="mod" target="#nkr_note_mod_1121005">覺業【大】，〔－〕【甲】</note>
-<note n="1122001" resp="#resp2" type="mod" target="#nkr_note_mod_1122001">竟【大】，竟覺【甲】</note>
-<note n="1122002" resp="#resp2" type="mod" target="#nkr_note_mod_1122002">相【大】，智【甲】</note>
-<note n="1122003" resp="#resp2" type="mod" target="#nkr_note_mod_1122003">夫【大】，〔－〕【甲】</note>
-<note n="1122004" resp="#resp2" type="mod" target="#nkr_note_mod_1122004">德【大】，能【甲】</note>
-<note n="1122005" resp="#resp2" type="mod" target="#nkr_note_mod_1122005">相【大】，相所相【甲】</note>
-<note n="1122006" resp="#resp2" type="mod" target="#nkr_note_mod_1122006">等【大】，等故【甲】</note>
-<note n="1122007" resp="#resp2" type="mod" target="#nkr_note_mod_1122007">非【大】，非位【甲】</note>
-<note n="1122008" resp="#resp2" type="mod" target="#nkr_note_mod_1122008">相【大】，四相【甲】</note>
-<note n="1122009" resp="#resp2" type="mod" target="#nkr_note_mod_1122009">際【大】，際最微【甲】</note>
-<note n="1123001" resp="#resp2" type="mod" target="#nkr_note_mod_1123001">別【大】，〔－〕【甲】</note>
-<note n="1123002" resp="#resp2" type="mod" target="#nkr_note_mod_1123002">界界【大】，故故【甲】</note>
-<note n="1123003" resp="#resp2" type="mod" target="#nkr_note_mod_1123003">取別【大】，別取【甲】</note>
-<note n="1123004" resp="#resp2" type="mod" target="#nkr_note_mod_1123004">意【大】，或意【甲】</note>
-<note n="1123005" resp="#resp2" type="mod" target="#nkr_note_mod_1123005">即【大】，故此四相即【甲】</note>
-<note n="1123006" resp="#resp2" type="mod" target="#nkr_note_mod_1123006">前【大】，先【甲】</note>
-<note n="1123007" resp="#resp2" type="mod" target="#nkr_note_mod_1123007">二覺相也【大】，〔－〕【甲】</note>
-<note n="1123008" resp="#resp2" type="mod" target="#nkr_note_mod_1123008">而【大】，初【甲】</note>
-<note n="1124001" resp="#resp2" type="mod" target="#nkr_note_mod_1124001">察【大】，察名觀察【甲】</note>
-<note n="1124002" resp="#resp2" type="mod" target="#nkr_note_mod_1124002">甚差【大】，七卷【甲】</note>
-<note n="1124003" resp="#resp2" type="mod" target="#nkr_note_mod_1124003">於【大】，〔－〕【甲】</note>
-<note n="1124004" resp="#resp2" type="mod" target="#nkr_note_mod_1124004">論【大】，論文【甲】</note>
-<note n="1124005" resp="#resp2" type="mod" target="#nkr_note_mod_1124005">覺【大】，覺初心時無【甲】</note>
-<note n="1124006" resp="#resp2" type="mod" target="#nkr_note_mod_1124006">種【大】，〔－〕【甲】</note>
-<note n="1124007" resp="#resp2" type="mod" target="#nkr_note_mod_1124007">有【大】，有所覺猶【甲】</note>
-<note n="1124008" resp="#resp2" type="mod" target="#nkr_note_mod_1124008">異【大】，不異【甲】</note>
-<note n="1124009" resp="#resp2" type="mod" target="#nkr_note_mod_1124009">三【大】，三舉【甲】</note>
-<note n="1125001" resp="#resp2" type="mod" target="#nkr_note_mod_1125001">四【大】，四顯【甲】</note>
-<note n="1125002" resp="#resp2" type="mod" target="#nkr_note_mod_1125002">覺【大】，〔－〕【甲】</note>
-<note n="1125003" resp="#resp2" type="mod" target="#nkr_note_mod_1125003">論【大】，本【甲】</note>
-<note n="1125004" resp="#resp2" type="mod" target="#nkr_note_mod_1125004">生【大】，〔－〕【甲】</note>
-<note n="1125005" resp="#resp2" type="mod" target="#nkr_note_mod_1125005">有【大】，有者【甲】</note>
-<note n="1125006" resp="#resp2" type="mod" target="#nkr_note_mod_1125006">十【大】，一【甲】</note>
-<note n="1125007" resp="#resp2" type="mod" target="#nkr_note_mod_1125007">緣【大】，染【甲】</note>
-<note n="1125008" resp="#resp2" type="mod" target="#nkr_note_mod_1125008">成【大】，生【甲】</note>
-<note n="1126001" resp="#resp2" type="mod" target="#nkr_note_mod_1126001">隨【大】，緣【甲】</note>
-<note n="1126002" resp="#resp2" type="mod" target="#nkr_note_mod_1126002">不【大】，不異【甲】</note>
-<note n="1126003" resp="#resp2" type="mod" target="#nkr_note_mod_1126003">名【大】，名為【甲】</note>
-<note n="1126004" resp="#resp2" type="mod" target="#nkr_note_mod_1126004">皆【大】，亦【甲】</note>
-<note n="1126005" resp="#resp2" type="mod" target="#nkr_note_mod_1126005">說【大】，現【甲】</note>
-<note n="1126006" resp="#resp2" type="mod" target="#nkr_note_mod_1126006">他【大】，他後一利他非無自利【甲】</note>
-<note n="1126007" resp="#resp2" type="mod" target="#nkr_note_mod_1126007">（後通…用）七字【大】，〔－〕【甲】</note>
-<note n="1126008" resp="#resp2" type="mod" target="#nkr_note_mod_1126008">性【大】，性普現【甲】</note>
-<note n="1126009" resp="#resp2" type="mod" target="#nkr_note_mod_1126009">初【大】，〔－〕【甲】</note>
-<note n="1126010" resp="#resp2" type="mod" target="#nkr_note_mod_1126010">體【大】，〔－〕【甲】</note>
-<note n="1126011" resp="#resp2" type="mod" target="#nkr_note_mod_1126011">至【大】，至足【甲】</note>
-<note n="1126012" resp="#resp2" type="mod" target="#nkr_note_mod_1126012">思【大】，思議【甲】</note>
-<note n="1126013" resp="#resp2" type="mod" target="#nkr_note_mod_1126013">稱真【大】，攝【甲】</note>
-<note n="1126014" resp="#resp2" type="mod" target="#nkr_note_mod_1126014">等【大】，等此【甲】</note>
-<note n="1126015" resp="#resp2" type="mod" target="#nkr_note_mod_1126015">異【大】，異非【甲】</note>
-<note n="1126016" resp="#resp2" type="mod" target="#nkr_note_mod_1126016">故【大】，也【甲】</note>
-<note n="1126017" resp="#resp2" type="mod" target="#nkr_note_mod_1126017">至【大】，至性【甲】</note>
-<note n="1126018" resp="#resp2" type="mod" target="#nkr_note_mod_1126018">即涅槃【大】，〔－〕【甲】</note>
-<note n="1127001" resp="#resp2" type="mod" target="#nkr_note_mod_1127001">相【大】，〔－〕【甲】</note>
-<note n="1127002" resp="#resp2" type="mod" target="#nkr_note_mod_1127002">根【大】，根作【甲】</note>
-<note n="1127003" resp="#resp2" type="mod" target="#nkr_note_mod_1127003">微【大】，〔－〕【甲】</note>
-<note n="1127004" resp="#resp2" type="mod" target="#nkr_note_mod_1127004">二【大】，三【甲】</note>
-<note n="1127005" resp="#resp2" type="mod" target="#nkr_note_mod_1127005">作【大】，化【甲】</note>
-<note n="1127006" resp="#resp2" type="mod" target="#nkr_note_mod_1127006">斷【大】，絕【甲】</note>
-<note n="1127007" resp="#resp2" type="mod" target="#nkr_note_mod_1127007">化【大】，他【甲】</note>
-<note n="1127008" resp="#resp2" type="mod" target="#nkr_note_mod_1127008">過去【大】，遍知【甲】</note>
-<note n="1127009" resp="#resp2" type="mod" target="#nkr_note_mod_1127009">世【大】，去【甲】</note>
-<note n="1127010" resp="#resp2" type="mod" target="#nkr_note_mod_1127010">實【大】，異【甲】</note>
-<note n="1127011" resp="#resp2" type="mod" target="#nkr_note_mod_1127011">用【大】，用果中初明即果後明德果或初果體後即果用【甲】</note>
-<note n="1127012" resp="#resp2" type="mod" target="#nkr_note_mod_1127012">故【大】，〔－〕【甲】</note>
-<note n="1127013" resp="#resp2" type="mod" target="#nkr_note_mod_1127013">如【大】，如明鏡故【甲】</note>
-<note n="1127014" resp="#resp2" type="mod" target="#nkr_note_mod_1127014">智淨【大】，法出【甲】</note>
-<note n="1127015" resp="#resp2" type="mod" target="#nkr_note_mod_1127015">緣【大】，緣緣【甲】</note>
-<note n="1128001" resp="#resp2" type="mod" target="#nkr_note_mod_1128001">空【大】，〔－〕【甲】</note>
-<note n="1128002" resp="#resp2" type="mod" target="#nkr_note_mod_1128002">到【大】，相倒【甲】</note>
-<note n="1128003" resp="#resp2" type="mod" target="#nkr_note_mod_1128003">心【大】，心妄境本不相應故云遠離心【甲】</note>
-<note n="1128004" resp="#resp2" type="mod" target="#nkr_note_mod_1128004">所現【大】，〔－〕【甲】</note>
-<note n="1128005" resp="#resp2" type="mod" target="#nkr_note_mod_1128005">不【大】，不作【甲】</note>
-<note n="1128006" resp="#resp2" type="mod" target="#nkr_note_mod_1128006">從【大】，由【甲】</note>
-<note n="1128007" resp="#resp2" type="mod" target="#nkr_note_mod_1128007">異【大】，實【甲】</note>
-<note n="1128008" resp="#resp2" type="mod" target="#nkr_note_mod_1128008">以【大】，〔－〕【甲】</note>
-<note n="1128009" resp="#resp2" type="mod" target="#nkr_note_mod_1128009">染【大】，染不染【甲】</note>
-<note n="1128010" resp="#resp2" type="mod" target="#nkr_note_mod_1128010">為【大】，而【甲】</note>
-<note n="1128011" resp="#resp2" type="mod" target="#nkr_note_mod_1128011">時【大】，法【甲】</note>
-<note n="1128012" resp="#resp2" type="mod" target="#nkr_note_mod_1128012">中【大】，〔－〕【甲】</note>
-<note n="1128013" resp="#resp2" type="mod" target="#nkr_note_mod_1128013">出【大】，出故【甲】</note>
-<note n="1128014" resp="#resp2" type="mod" target="#nkr_note_mod_1128014">不與生滅【大】，〔－〕【甲】</note>
-<note n="1128015" resp="#resp2" type="mod" target="#nkr_note_mod_1128015">離【大】，離雜【甲】</note>
-<note n="1128016" resp="#resp2" type="mod" target="#nkr_note_mod_1128016">云【大】，之【甲】</note>
-<note n="1128017" resp="#resp2" type="mod" target="#nkr_note_mod_1128017">厭【大】，厭求【甲】</note>
-<note n="1129001" resp="#resp2" type="mod" target="#nkr_note_mod_1129001">謂真實【大】，〔－〕【甲】</note>
-<note n="1129002" resp="#resp2" type="mod" target="#nkr_note_mod_1129002">第【大】，中【甲】</note>
-<note n="1129003" resp="#resp2" type="mod" target="#nkr_note_mod_1129003">覺【大】，覺不覺【甲】</note>
-<note n="1129004" resp="#resp2" type="mod" target="#nkr_note_mod_1129004">性【大】，性因故【甲】</note>
-<note n="1129005" resp="#resp2" type="mod" target="#nkr_note_mod_1129005">與【大】，是【甲】</note>
-<note n="1129006" resp="#resp2" type="mod" target="#nkr_note_mod_1129006">舉【大】，覺【甲】</note>
-<note n="1129007" resp="#resp2" type="mod" target="#nkr_note_mod_1129007">依【大】，各依【甲】</note>
-<note n="1129008" resp="#resp2" type="mod" target="#nkr_note_mod_1129008">其真覺名體【大】，〔－〕【甲】</note>
-<note n="1129009" resp="#resp2" type="mod" target="#nkr_note_mod_1129009">無【大】，無以【甲】</note>
-<note n="1129010" resp="#resp2" type="mod" target="#nkr_note_mod_1129010">悉皆【大】，皆悉【甲】</note>
-<note n="1129011" resp="#resp2" type="mod" target="#nkr_note_mod_1129011">不【大】，依不【甲】</note>
-<note n="1129012" resp="#resp2" type="mod" target="#nkr_note_mod_1129012">於【大】，於中【甲】</note>
-<note n="1129013" resp="#resp2" type="mod" target="#nkr_note_mod_1129013">生【大】，起【甲】</note>
-<note n="1129014" resp="#resp2" type="mod" target="#nkr_note_mod_1129014">順違【大】，違順【甲】</note>
-<note n="1129015" resp="#resp2" type="mod" target="#nkr_note_mod_1129015">名【大】，計名【甲】</note>
-<note n="1129016" resp="#resp2" type="mod" target="#nkr_note_mod_1129016">相【大】，識【甲】</note>
-<note n="1129017" resp="#resp2" type="mod" target="#nkr_note_mod_1129017">屬【大】，成【甲】</note>
-<note n="1129018" resp="#resp2" type="mod" target="#nkr_note_mod_1129018">是【大】，是諸識法執是【甲】</note>
-<note n="1130001" resp="#resp2" type="mod" target="#nkr_note_mod_1130001">是【大】，說【甲】</note>
-<note n="1130002" resp="#resp2" type="mod" target="#nkr_note_mod_1130002">和【大】，和合【甲】</note>
-<note n="1130003" resp="#resp2" type="mod" target="#nkr_note_mod_1130003">以【大】，以依【甲】</note>
-<note n="1130004" resp="#resp2" type="mod" target="#nkr_note_mod_1130004">現【大】，能現【甲】</note>
-<note n="1130005" resp="#resp2" type="mod" target="#nkr_note_mod_1130005">後【大】，後六麁相方屬七識以彼黎耶【甲】</note>
-<note n="1130006" resp="#resp2" type="mod" target="#nkr_note_mod_1130006">波【大】，〔－〕【甲】</note>
-<note n="1130007" resp="#resp2" type="mod" target="#nkr_note_mod_1130007">智【大】，〔－〕【甲】</note>
-<note n="1130008" resp="#resp2" type="mod" target="#nkr_note_mod_1130008">以住【大】，〔－〕【甲】</note>
-<note n="1130009" resp="#resp2" type="mod" target="#nkr_note_mod_1130009">識【大】，塵【甲】</note>
-<note n="1130010" resp="#resp2" type="mod" target="#nkr_note_mod_1130010">作【大】，化【甲】</note>
-<note n="1130011" resp="#resp2" type="mod" target="#nkr_note_mod_1130011">依【大】，依根故是宗法言諸是不共所依【甲】</note>
-<note n="1130012" resp="#resp2" type="mod" target="#nkr_note_mod_1130012">不【大】，爾【甲】</note>
-<note n="1130013" resp="#resp2" type="mod" target="#nkr_note_mod_1130013">非心法【大】，心法非【甲】</note>
-<note n="1130014" resp="#resp2" type="mod" target="#nkr_note_mod_1130014">漏【大】，漏眼等五根若遍緣者必非不共所依根收如下別意根等若以不共所依根故與識同境有漏【甲】</note>
-<note n="1130015" resp="#resp2" type="mod" target="#nkr_note_mod_1130015">識【大】，識故唯識論第十卷云有漏不共必俱同境根發無漏識【甲】</note>
-<note n="1130016" resp="#resp2" type="mod" target="#nkr_note_mod_1130016">謂【大】，非謂【甲】</note>
-<note n="1131001" resp="#resp2" type="mod" target="#nkr_note_mod_1131001">靜【大】，淨【甲】</note>
-<note n="1131002" resp="#resp2" type="mod" target="#nkr_note_mod_1131002">必【大】，必依能見故楞伽經【甲】</note>
-<note n="1131003" resp="#resp2" type="mod" target="#nkr_note_mod_1131003">心【大】，一心【甲】</note>
-<note n="1131004" resp="#resp2" type="mod" target="#nkr_note_mod_1131004">證【大】，證自證【甲】</note>
-<note n="1131005" resp="#resp2" type="mod" target="#nkr_note_mod_1131005">也【大】，也是釋雖【甲】</note>
-<note n="1131006" resp="#resp2" type="mod" target="#nkr_note_mod_1131006">愛【大】，不愛【甲】</note>
-<note n="1131007" resp="#resp2" type="mod" target="#nkr_note_mod_1131007">取【大】，執【甲】</note>
-<note n="1131008" resp="#resp2" type="mod" target="#nkr_note_mod_1131008">言【大】，言相【甲】</note>
-<note n="1131009" resp="#resp2" type="mod" target="#nkr_note_mod_1131009">繫【大】，繫苦【甲】</note>
-<note n="1131010" resp="#resp2" type="mod" target="#nkr_note_mod_1131010">至【大】，至不【甲】</note>
-<note n="1132001" resp="#resp2" type="mod" target="#nkr_note_mod_1132001">等【大】，等者【甲】</note>
-<note n="1132002" resp="#resp2" type="mod" target="#nkr_note_mod_1132002">苦【大】，其【甲】</note>
-<note n="1132003" resp="#resp2" type="mod" target="#nkr_note_mod_1132003">覺【大】，不覺【甲】</note>
-<note n="1132004" resp="#resp2" type="mod" target="#nkr_note_mod_1132004">與【大】，〔－〕【甲】</note>
-<note n="1132005" resp="#resp2" type="mod" target="#nkr_note_mod_1132005">與【大】，〔－〕【甲】</note>
-<note n="1132006" resp="#resp2" type="mod" target="#nkr_note_mod_1132006">異【大】，異異【甲】</note>
-<note n="1132007" resp="#resp2" type="mod" target="#nkr_note_mod_1132007">因【大】，〔－〕【甲】</note>
-<note n="1132008" resp="#resp2" type="mod" target="#nkr_note_mod_1132008">漏【大】，漏至染【甲】</note>
-<note n="1132009" resp="#resp2" type="mod" target="#nkr_note_mod_1132009">者【大】，者是無漏法性染幻差別者【甲】</note>
-<note n="1132010" resp="#resp2" type="mod" target="#nkr_note_mod_1132010">緣【大】，染【甲】</note>
-<note n="1132011" resp="#resp2" type="mod" target="#nkr_note_mod_1132011">言【大】，言所【甲】</note>
-<note n="1132012" resp="#resp2" type="mod" target="#nkr_note_mod_1132012">意【大】，〔－〕【甲】</note>
-<note n="1132013" resp="#resp2" type="mod" target="#nkr_note_mod_1132013">說【大】，〔－〕【甲】</note>
-<note n="1132014" resp="#resp2" type="mod" target="#nkr_note_mod_1132014">為【大】，〔－〕【甲】</note>
-<note n="1132015" resp="#resp2" type="mod" target="#nkr_note_mod_1132015">法相【大】，初教【甲】</note>
-<note n="1132016" resp="#resp2" type="mod" target="#nkr_note_mod_1132016">緣【大】，緣如何說是生滅因緣【甲】</note>
-<note n="1132017" resp="#resp2" type="mod" target="#nkr_note_mod_1132017">依此因緣【大】，〔－〕【甲】</note>
-<note n="1132018" resp="#resp2" type="mod" target="#nkr_note_mod_1132018">鎔融【大】，融通【甲】</note>
-<note n="1132019" resp="#resp2" type="mod" target="#nkr_note_mod_1132019">於【大】，依於【甲】</note>
-<note n="1133001" resp="#resp2" type="mod" target="#nkr_note_mod_1133001">也【大】，云【甲】</note>
-<note n="1133002" resp="#resp2" type="mod" target="#nkr_note_mod_1133002">別【大】，分別【甲】</note>
-<note n="1133003" resp="#resp2" type="mod" target="#nkr_note_mod_1133003">則【大】，於【甲】</note>
-<note n="1133004" resp="#resp2" type="mod" target="#nkr_note_mod_1133004"><!--CBETA todo type: ＊-->心【大】＊，分【甲】＊</note>
-<note n="1133005" resp="#resp2" type="mod" target="#nkr_note_mod_1133005">非【大】，有【甲】</note>
-<note n="1133006" resp="#resp2" type="mod" target="#nkr_note_mod_1133006">麁相說【大】，〔－〕【甲】</note>
-<note n="1133007" resp="#resp2" type="mod" target="#nkr_note_mod_1133007">是【大】，是真【甲】</note>
-<note n="1133008" resp="#resp2" type="mod" target="#nkr_note_mod_1133008">（於中…轉）九字【大】，〔－〕【甲】</note>
-<note n="1133009" resp="#resp2" type="mod" target="#nkr_note_mod_1133009">起【大】，起由迷義合為二識一迷真起【甲】</note>
-<note n="1133010" resp="#resp2" type="mod" target="#nkr_note_mod_1133010">故【大】，者【甲】</note>
-<note n="1133011" resp="#resp2" type="mod" target="#nkr_note_mod_1133011">何【大】，何為【甲】</note>
-<note n="1133012" resp="#resp2" type="mod" target="#nkr_note_mod_1133012">故【大】，故說【甲】</note>
-<note n="1133013" resp="#resp2" type="mod" target="#nkr_note_mod_1133013">心【大】，心所起【甲】</note>
-<note n="1133014" resp="#resp2" type="mod" target="#nkr_note_mod_1133014">識【大】，諸【甲】</note>
-<note n="1134001" resp="#resp2" type="mod" target="#nkr_note_mod_1134001">塵【大】，五塵【甲】</note>
-<note n="1134002" resp="#resp2" type="mod" target="#nkr_note_mod_1134002">智【大】，知【甲】</note>
-<note n="1134003" resp="#resp2" type="mod" target="#nkr_note_mod_1134003">相【大】，相如【甲】</note>
-<note n="1134004" resp="#resp2" type="mod" target="#nkr_note_mod_1134004">轉【大】，於【甲】</note>
-<note n="1134005" resp="#resp2" type="mod" target="#nkr_note_mod_1134005">相【大】，智【甲】</note>
-<note n="1134006" resp="#resp2" type="mod" target="#nkr_note_mod_1134006">教【大】，教異者有義諸教【甲】</note>
-<note n="1134007" resp="#resp2" type="mod" target="#nkr_note_mod_1134007">即【大】，有【甲】</note>
-<note n="1134008" resp="#resp2" type="mod" target="#nkr_note_mod_1134008">所【大】，所執【甲】</note>
-<note n="1134009" resp="#resp2" type="mod" target="#nkr_note_mod_1134009">漏【大】，攝【甲】</note>
-<note n="1134010" resp="#resp2" type="mod" target="#nkr_note_mod_1134010">能【大】，不能【甲】</note>
-<note n="1134011" resp="#resp2" type="mod" target="#nkr_note_mod_1134011">說【大】，不說【甲】</note>
-<note n="1134012" resp="#resp2" type="mod" target="#nkr_note_mod_1134012">論【大】，是論【甲】</note>
-<note n="1134013" resp="#resp2" type="mod" target="#nkr_note_mod_1134013">本在諸識【大】，〔－〕【甲】</note>
-<note n="1134014" resp="#resp2" type="mod" target="#nkr_note_mod_1134014">耳【大】，爾【甲】</note>
-<note n="1134015" resp="#resp2" type="mod" target="#nkr_note_mod_1134015">者【大】，〔－〕【甲】</note>
-<note n="1134016" resp="#resp2" type="mod" target="#nkr_note_mod_1134016">亦【大】，六【甲】</note>
-<note n="1134017" resp="#resp2" type="mod" target="#nkr_note_mod_1134017">屬事識【大】，識事【甲】</note>
-<note n="1134018" resp="#resp2" type="mod" target="#nkr_note_mod_1134018">（故故…違）十七字【大】，〔－〕【甲】</note>
-<note n="1135001" resp="#resp2" type="mod" target="#nkr_note_mod_1135001">未【大】，迷【甲】</note>
-<note n="1135002" resp="#resp2" type="mod" target="#nkr_note_mod_1135002">五【大】，〔－〕【甲】</note>
-<note n="1135003" resp="#resp2" type="mod" target="#nkr_note_mod_1135003">攝【大】，由攝【甲】</note>
-<note n="1135004" resp="#resp2" type="mod" target="#nkr_note_mod_1135004">種【大】，識【甲】</note>
-<note n="1135005" resp="#resp2" type="mod" target="#nkr_note_mod_1135005">善【大】，善惡【甲】</note>
-<note n="1135006" resp="#resp2" type="mod" target="#nkr_note_mod_1135006">果【大】，苦樂【甲】</note>
-<note n="1135007" resp="#resp2" type="mod" target="#nkr_note_mod_1135007">業【大】，〔－〕【甲】</note>
-<note n="1135008" resp="#resp2" type="mod" target="#nkr_note_mod_1135008">意【大】，意識【甲】</note>
-<note n="1135009" resp="#resp2" type="mod" target="#nkr_note_mod_1135009">相【大】，相故【甲】</note>
-<note n="1135010" resp="#resp2" type="mod" target="#nkr_note_mod_1135010">境【大】，憶【甲】</note>
-<note n="1135011" resp="#resp2" type="mod" target="#nkr_note_mod_1135011">此【大】，能此【甲】</note>
-<note n="1136001" resp="#resp2" type="mod" target="#nkr_note_mod_1136001">外【大】，餘【甲】</note>
-<note n="1136002" resp="#resp2" type="mod" target="#nkr_note_mod_1136002">成【大】，〔－〕【甲】</note>
-<note n="1136003" resp="#resp2" type="mod" target="#nkr_note_mod_1136003">引【大】，〔－〕【甲】</note>
-<note n="1136004" resp="#resp2" type="mod" target="#nkr_note_mod_1136004">世【大】，殘世【甲】</note>
-<note n="1136005" resp="#resp2" type="mod" target="#nkr_note_mod_1136005">前【大】，此【甲】</note>
-<note n="1136006" resp="#resp2" type="mod" target="#nkr_note_mod_1136006">法【大】，生【甲】</note>
-<note n="1136007" resp="#resp2" type="mod" target="#nkr_note_mod_1136007">色【大】，立【甲】</note>
-<note n="1136008" resp="#resp2" type="mod" target="#nkr_note_mod_1136008">變【大】，變而緣【甲】</note>
-<note n="1136009" resp="#resp2" type="mod" target="#nkr_note_mod_1136009">善【大】，應【甲】</note>
-<note n="1136010" resp="#resp2" type="mod" target="#nkr_note_mod_1136010">聖【大】，聖教【甲】</note>
-<note n="1136011" resp="#resp2" type="mod" target="#nkr_note_mod_1136011">故【大】，有【甲】</note>
-<note n="1136012" resp="#resp2" type="mod" target="#nkr_note_mod_1136012">爾【大】，許【甲】</note>
-<note n="1136013" resp="#resp2" type="mod" target="#nkr_note_mod_1136013">前【大】，支【甲】</note>
-<note n="1136014" resp="#resp2" type="mod" target="#nkr_note_mod_1136014">害【大】，空【甲】</note>
-<note n="1136015" resp="#resp2" type="mod" target="#nkr_note_mod_1136015">義是【大】，是義【甲】</note>
-<note n="1136016" resp="#resp2" type="mod" target="#nkr_note_mod_1136016">生殺【大】，殺生【甲】</note>
-<note n="1136017" resp="#resp2" type="mod" target="#nkr_note_mod_1136017">習【大】，習力【甲】</note>
-<note n="1136018" resp="#resp2" type="mod" target="#nkr_note_mod_1136018">怨【大】，惡【甲】</note>
-<note n="1136019" resp="#resp2" type="mod" target="#nkr_note_mod_1136019">增上力二識【大】，〔－〕【甲】</note>
-<note n="1136020" resp="#resp2" type="mod" target="#nkr_note_mod_1136020">廣【大】，應【甲】</note>
-<note n="1136021" resp="#resp2" type="mod" target="#nkr_note_mod_1136021">釋【大】，〔－〕【甲】</note>
-<note n="1136022" resp="#resp2" type="mod" target="#nkr_note_mod_1136022">滅【大】，滅故言【甲】</note>
-<note n="1137001" resp="#resp2" type="mod" target="#nkr_note_mod_1137001">勝【大】，就【甲】</note>
-<note n="1137002" resp="#resp2" type="mod" target="#nkr_note_mod_1137002">所【大】，依【甲】</note>
-<note n="1137003" resp="#resp2" type="mod" target="#nkr_note_mod_1137003">續【大】，續識【甲】</note>
-<note n="1137004" resp="#resp2" type="mod" target="#nkr_note_mod_1137004">（我等…執）二十三字【大】，〔－〕【甲】</note>
-<note n="1137005" resp="#resp2" type="mod" target="#nkr_note_mod_1137005">續【大】，相續【甲】</note>
-<note n="1137006" resp="#resp2" type="mod" target="#nkr_note_mod_1137006">二【大】，二出【甲】</note>
-<note n="1137007" resp="#resp2" type="mod" target="#nkr_note_mod_1137007">追【大】，退【甲】</note>
-<note n="1137008" resp="#resp2" type="mod" target="#nkr_note_mod_1137008">顯【大】，現【甲】</note>
-<note n="1137009" resp="#resp2" type="mod" target="#nkr_note_mod_1137009">蘊【大】，蘊非即【甲】</note>
-<note n="1137010" resp="#resp2" type="mod" target="#nkr_note_mod_1137010">事【大】，事者【甲】</note>
-<note n="1137011" resp="#resp2" type="mod" target="#nkr_note_mod_1137011">經【大】，云【甲】</note>
-<note n="1137012" resp="#resp2" type="mod" target="#nkr_note_mod_1137012">知【大】，去【甲】</note>
-<note n="1137013" resp="#resp2" type="mod" target="#nkr_note_mod_1137013">舉最強故【大】，〔－〕【甲】</note>
-<note n="1137014" resp="#resp2" type="mod" target="#nkr_note_mod_1137014">說【大】，說知【甲】</note>
-<note n="1137015" resp="#resp2" type="mod" target="#nkr_note_mod_1137015">識【大】，〔－〕【甲】</note>
-<note n="1137016" resp="#resp2" type="mod" target="#nkr_note_mod_1137016">我【大】，愛【甲】</note>
-<note n="1137017" resp="#resp2" type="mod" target="#nkr_note_mod_1137017">諸【大】，法【甲】</note>
-<note n="1137018" resp="#resp2" type="mod" target="#nkr_note_mod_1137018">依凡【大】，凡夫【甲】</note>
-<note n="1137019" resp="#resp2" type="mod" target="#nkr_note_mod_1137019">說【大】，許【甲】</note>
-<note n="1138001" resp="#resp2" type="mod" target="#nkr_note_mod_1138001">（為無…體）二十一字【大】，〔－〕【甲】</note>
-<note n="1138002" resp="#resp2" type="mod" target="#nkr_note_mod_1138002">分【大】，心【甲】</note>
-<note n="1138003" resp="#resp2" type="mod" target="#nkr_note_mod_1138003">阿【大】，阿陀【甲】</note>
-<note n="1138004" resp="#resp2" type="mod" target="#nkr_note_mod_1138004">至【大】，若至【甲】</note>
-<note n="1138005" resp="#resp2" type="mod" target="#nkr_note_mod_1138005">深【大】，甚深【甲】</note>
-<note n="1138006" resp="#resp2" type="mod" target="#nkr_note_mod_1138006">染【大】，淨【甲】</note>
-<note n="1138007" resp="#resp2" type="mod" target="#nkr_note_mod_1138007">不【大】，常【甲】</note>
-<note n="1138008" resp="#resp2" type="mod" target="#nkr_note_mod_1138008">三【大】，三光遍勘【甲】</note>
-<note n="1142001" resp="#resp2" type="mod" target="#nkr_note_mod_1142001">以境滅時體不【大】，〔－〕【考偽-大】</note>
-<note n="1157001" resp="#resp2" type="mod" target="#nkr_note_mod_1157001">無【大】，無上【考偽-大】</note>
-<note n="1158001" resp="#resp2" type="mod" target="#nkr_note_mod_1158001">因【大】，固【考偽-大】</note>
-<note n="1160002" resp="#resp2" type="mod" target="#nkr_note_mod_1160002">已信【大】，〔－〕【甲】</note>
-<note n="1160003" resp="#resp2" type="mod" target="#nkr_note_mod_1160003">住【大】，〔－〕【甲】</note>
-<note n="1161001" resp="#resp2" type="mod" target="#nkr_note_mod_1161001">解【大】，解者所謂解【甲】</note>
-<note n="1161002" resp="#resp2" type="mod" target="#nkr_note_mod_1161002">顯異前故云深也【大】，〔－〕【甲】</note>
-<note n="1161003" resp="#resp2" type="mod" target="#nkr_note_mod_1161003">波【大】，名波【甲】</note>
-<note n="1162001" resp="#resp2" type="mod" target="#nkr_note_mod_1162001">必【大】，不有【甲】</note>
-<note n="1162002" resp="#resp2" type="mod" target="#nkr_note_mod_1162002">一【大】，一數【甲】</note>
-<note n="1162003" resp="#resp2" type="mod" target="#nkr_note_mod_1162003">義【大】，〔－〕【甲】</note>
-<note n="1163001" resp="#resp2" type="mod" target="#nkr_note_mod_1163001">也【大】，〔－〕【甲】</note>
-<note n="1163002" resp="#resp2" type="mod" target="#nkr_note_mod_1163002">說【大】，自說【甲】</note>
-<note n="1164001" resp="#resp2" type="mod" target="#nkr_note_mod_1164001">境【大】，〔－〕【甲】</note>
-<note n="1164002" resp="#resp2" type="mod" target="#nkr_note_mod_1164002">以彼善【大】，〔－〕【甲】</note>
-<note n="1164003" resp="#resp2" type="mod" target="#nkr_note_mod_1164003">本【大】，〔－〕【甲】</note>
-<note n="1165001" resp="#resp2" type="mod" target="#nkr_note_mod_1165001">現【大】，常現【甲】</note>
-<note n="1165002" resp="#resp2" type="mod" target="#nkr_note_mod_1165002">故常【大】，常樂【甲】</note>
-<note n="1165003" resp="#resp2" type="mod" target="#nkr_note_mod_1165003">皆即【大】，〔－〕【甲】</note>
-<note n="1166001" resp="#resp2" type="mod" target="#nkr_note_mod_1166001">止【大】，止故言隨順止觀【甲】</note>
-<note n="1173001" resp="#resp2" type="mod" target="#nkr_note_mod_1173001">文【大】，聞【考偽-大】</note>
-<note n="1174001" resp="#resp2" type="mod" target="#nkr_note_mod_1174001">理【大】，利【考偽-大】</note>
+<note n="1121001" resp="#resp3" type="mod" target="#nkr_note_mod_1121001"><!--CBETA todo type: newmod-->【原】大英博物館藏燉煌本, S. 2554, 【甲】大英博物館藏燉煌本, S. 2367</note>
+<note n="1121002" resp="#resp3" type="mod" target="#nkr_note_mod_1121002">總【大】，初總【甲】</note>
+<note n="1121003" resp="#resp3" type="mod" target="#nkr_note_mod_1121003">異【大】，異本覺【甲】</note>
+<note n="1121004" resp="#resp3" type="mod" target="#nkr_note_mod_1121004">心【大】，〔－〕【甲】</note>
+<note n="1121005" resp="#resp3" type="mod" target="#nkr_note_mod_1121005">覺業【大】，〔－〕【甲】</note>
+<note n="1122001" resp="#resp3" type="mod" target="#nkr_note_mod_1122001">竟【大】，竟覺【甲】</note>
+<note n="1122002" resp="#resp3" type="mod" target="#nkr_note_mod_1122002">相【大】，智【甲】</note>
+<note n="1122003" resp="#resp3" type="mod" target="#nkr_note_mod_1122003">夫【大】，〔－〕【甲】</note>
+<note n="1122004" resp="#resp3" type="mod" target="#nkr_note_mod_1122004">德【大】，能【甲】</note>
+<note n="1122005" resp="#resp3" type="mod" target="#nkr_note_mod_1122005">相【大】，相所相【甲】</note>
+<note n="1122006" resp="#resp3" type="mod" target="#nkr_note_mod_1122006">等【大】，等故【甲】</note>
+<note n="1122007" resp="#resp3" type="mod" target="#nkr_note_mod_1122007">非【大】，非位【甲】</note>
+<note n="1122008" resp="#resp3" type="mod" target="#nkr_note_mod_1122008">相【大】，四相【甲】</note>
+<note n="1122009" resp="#resp3" type="mod" target="#nkr_note_mod_1122009">際【大】，際最微【甲】</note>
+<note n="1123001" resp="#resp3" type="mod" target="#nkr_note_mod_1123001">別【大】，〔－〕【甲】</note>
+<note n="1123002" resp="#resp3" type="mod" target="#nkr_note_mod_1123002">界界【大】，故故【甲】</note>
+<note n="1123003" resp="#resp3" type="mod" target="#nkr_note_mod_1123003">取別【大】，別取【甲】</note>
+<note n="1123004" resp="#resp3" type="mod" target="#nkr_note_mod_1123004">意【大】，或意【甲】</note>
+<note n="1123005" resp="#resp3" type="mod" target="#nkr_note_mod_1123005">即【大】，故此四相即【甲】</note>
+<note n="1123006" resp="#resp3" type="mod" target="#nkr_note_mod_1123006">前【大】，先【甲】</note>
+<note n="1123007" resp="#resp3" type="mod" target="#nkr_note_mod_1123007">二覺相也【大】，〔－〕【甲】</note>
+<note n="1123008" resp="#resp3" type="mod" target="#nkr_note_mod_1123008">而【大】，初【甲】</note>
+<note n="1124001" resp="#resp3" type="mod" target="#nkr_note_mod_1124001">察【大】，察名觀察【甲】</note>
+<note n="1124002" resp="#resp3" type="mod" target="#nkr_note_mod_1124002">甚差【大】，七卷【甲】</note>
+<note n="1124003" resp="#resp3" type="mod" target="#nkr_note_mod_1124003">於【大】，〔－〕【甲】</note>
+<note n="1124004" resp="#resp3" type="mod" target="#nkr_note_mod_1124004">論【大】，論文【甲】</note>
+<note n="1124005" resp="#resp3" type="mod" target="#nkr_note_mod_1124005">覺【大】，覺初心時無【甲】</note>
+<note n="1124006" resp="#resp3" type="mod" target="#nkr_note_mod_1124006">種【大】，〔－〕【甲】</note>
+<note n="1124007" resp="#resp3" type="mod" target="#nkr_note_mod_1124007">有【大】，有所覺猶【甲】</note>
+<note n="1124008" resp="#resp3" type="mod" target="#nkr_note_mod_1124008">異【大】，不異【甲】</note>
+<note n="1124009" resp="#resp3" type="mod" target="#nkr_note_mod_1124009">三【大】，三舉【甲】</note>
+<note n="1125001" resp="#resp3" type="mod" target="#nkr_note_mod_1125001">四【大】，四顯【甲】</note>
+<note n="1125002" resp="#resp3" type="mod" target="#nkr_note_mod_1125002">覺【大】，〔－〕【甲】</note>
+<note n="1125003" resp="#resp3" type="mod" target="#nkr_note_mod_1125003">論【大】，本【甲】</note>
+<note n="1125004" resp="#resp3" type="mod" target="#nkr_note_mod_1125004">生【大】，〔－〕【甲】</note>
+<note n="1125005" resp="#resp3" type="mod" target="#nkr_note_mod_1125005">有【大】，有者【甲】</note>
+<note n="1125006" resp="#resp3" type="mod" target="#nkr_note_mod_1125006">十【大】，一【甲】</note>
+<note n="1125007" resp="#resp3" type="mod" target="#nkr_note_mod_1125007">緣【大】，染【甲】</note>
+<note n="1125008" resp="#resp3" type="mod" target="#nkr_note_mod_1125008">成【大】，生【甲】</note>
+<note n="1126001" resp="#resp3" type="mod" target="#nkr_note_mod_1126001">隨【大】，緣【甲】</note>
+<note n="1126002" resp="#resp3" type="mod" target="#nkr_note_mod_1126002">不【大】，不異【甲】</note>
+<note n="1126003" resp="#resp3" type="mod" target="#nkr_note_mod_1126003">名【大】，名為【甲】</note>
+<note n="1126004" resp="#resp3" type="mod" target="#nkr_note_mod_1126004">皆【大】，亦【甲】</note>
+<note n="1126005" resp="#resp3" type="mod" target="#nkr_note_mod_1126005">說【大】，現【甲】</note>
+<note n="1126006" resp="#resp3" type="mod" target="#nkr_note_mod_1126006">他【大】，他後一利他非無自利【甲】</note>
+<note n="1126007" resp="#resp3" type="mod" target="#nkr_note_mod_1126007">（後通…用）七字【大】，〔－〕【甲】</note>
+<note n="1126008" resp="#resp3" type="mod" target="#nkr_note_mod_1126008">性【大】，性普現【甲】</note>
+<note n="1126009" resp="#resp3" type="mod" target="#nkr_note_mod_1126009">初【大】，〔－〕【甲】</note>
+<note n="1126010" resp="#resp3" type="mod" target="#nkr_note_mod_1126010">體【大】，〔－〕【甲】</note>
+<note n="1126011" resp="#resp3" type="mod" target="#nkr_note_mod_1126011">至【大】，至足【甲】</note>
+<note n="1126012" resp="#resp3" type="mod" target="#nkr_note_mod_1126012">思【大】，思議【甲】</note>
+<note n="1126013" resp="#resp3" type="mod" target="#nkr_note_mod_1126013">稱真【大】，攝【甲】</note>
+<note n="1126014" resp="#resp3" type="mod" target="#nkr_note_mod_1126014">等【大】，等此【甲】</note>
+<note n="1126015" resp="#resp3" type="mod" target="#nkr_note_mod_1126015">異【大】，異非【甲】</note>
+<note n="1126016" resp="#resp3" type="mod" target="#nkr_note_mod_1126016">故【大】，也【甲】</note>
+<note n="1126017" resp="#resp3" type="mod" target="#nkr_note_mod_1126017">至【大】，至性【甲】</note>
+<note n="1126018" resp="#resp3" type="mod" target="#nkr_note_mod_1126018">即涅槃【大】，〔－〕【甲】</note>
+<note n="1127001" resp="#resp3" type="mod" target="#nkr_note_mod_1127001">相【大】，〔－〕【甲】</note>
+<note n="1127002" resp="#resp3" type="mod" target="#nkr_note_mod_1127002">根【大】，根作【甲】</note>
+<note n="1127003" resp="#resp3" type="mod" target="#nkr_note_mod_1127003">微【大】，〔－〕【甲】</note>
+<note n="1127004" resp="#resp3" type="mod" target="#nkr_note_mod_1127004">二【大】，三【甲】</note>
+<note n="1127005" resp="#resp3" type="mod" target="#nkr_note_mod_1127005">作【大】，化【甲】</note>
+<note n="1127006" resp="#resp3" type="mod" target="#nkr_note_mod_1127006">斷【大】，絕【甲】</note>
+<note n="1127007" resp="#resp3" type="mod" target="#nkr_note_mod_1127007">化【大】，他【甲】</note>
+<note n="1127008" resp="#resp3" type="mod" target="#nkr_note_mod_1127008">過去【大】，遍知【甲】</note>
+<note n="1127009" resp="#resp3" type="mod" target="#nkr_note_mod_1127009">世【大】，去【甲】</note>
+<note n="1127010" resp="#resp3" type="mod" target="#nkr_note_mod_1127010">實【大】，異【甲】</note>
+<note n="1127011" resp="#resp3" type="mod" target="#nkr_note_mod_1127011">用【大】，用果中初明即果後明德果或初果體後即果用【甲】</note>
+<note n="1127012" resp="#resp3" type="mod" target="#nkr_note_mod_1127012">故【大】，〔－〕【甲】</note>
+<note n="1127013" resp="#resp3" type="mod" target="#nkr_note_mod_1127013">如【大】，如明鏡故【甲】</note>
+<note n="1127014" resp="#resp3" type="mod" target="#nkr_note_mod_1127014">智淨【大】，法出【甲】</note>
+<note n="1127015" resp="#resp3" type="mod" target="#nkr_note_mod_1127015">緣【大】，緣緣【甲】</note>
+<note n="1128001" resp="#resp3" type="mod" target="#nkr_note_mod_1128001">空【大】，〔－〕【甲】</note>
+<note n="1128002" resp="#resp3" type="mod" target="#nkr_note_mod_1128002">到【大】，相倒【甲】</note>
+<note n="1128003" resp="#resp3" type="mod" target="#nkr_note_mod_1128003">心【大】，心妄境本不相應故云遠離心【甲】</note>
+<note n="1128004" resp="#resp3" type="mod" target="#nkr_note_mod_1128004">所現【大】，〔－〕【甲】</note>
+<note n="1128005" resp="#resp3" type="mod" target="#nkr_note_mod_1128005">不【大】，不作【甲】</note>
+<note n="1128006" resp="#resp3" type="mod" target="#nkr_note_mod_1128006">從【大】，由【甲】</note>
+<note n="1128007" resp="#resp3" type="mod" target="#nkr_note_mod_1128007">異【大】，實【甲】</note>
+<note n="1128008" resp="#resp3" type="mod" target="#nkr_note_mod_1128008">以【大】，〔－〕【甲】</note>
+<note n="1128009" resp="#resp3" type="mod" target="#nkr_note_mod_1128009">染【大】，染不染【甲】</note>
+<note n="1128010" resp="#resp3" type="mod" target="#nkr_note_mod_1128010">為【大】，而【甲】</note>
+<note n="1128011" resp="#resp3" type="mod" target="#nkr_note_mod_1128011">時【大】，法【甲】</note>
+<note n="1128012" resp="#resp3" type="mod" target="#nkr_note_mod_1128012">中【大】，〔－〕【甲】</note>
+<note n="1128013" resp="#resp3" type="mod" target="#nkr_note_mod_1128013">出【大】，出故【甲】</note>
+<note n="1128014" resp="#resp3" type="mod" target="#nkr_note_mod_1128014">不與生滅【大】，〔－〕【甲】</note>
+<note n="1128015" resp="#resp3" type="mod" target="#nkr_note_mod_1128015">離【大】，離雜【甲】</note>
+<note n="1128016" resp="#resp3" type="mod" target="#nkr_note_mod_1128016">云【大】，之【甲】</note>
+<note n="1128017" resp="#resp3" type="mod" target="#nkr_note_mod_1128017">厭【大】，厭求【甲】</note>
+<note n="1129001" resp="#resp3" type="mod" target="#nkr_note_mod_1129001">謂真實【大】，〔－〕【甲】</note>
+<note n="1129002" resp="#resp3" type="mod" target="#nkr_note_mod_1129002">第【大】，中【甲】</note>
+<note n="1129003" resp="#resp3" type="mod" target="#nkr_note_mod_1129003">覺【大】，覺不覺【甲】</note>
+<note n="1129004" resp="#resp3" type="mod" target="#nkr_note_mod_1129004">性【大】，性因故【甲】</note>
+<note n="1129005" resp="#resp3" type="mod" target="#nkr_note_mod_1129005">與【大】，是【甲】</note>
+<note n="1129006" resp="#resp3" type="mod" target="#nkr_note_mod_1129006">舉【大】，覺【甲】</note>
+<note n="1129007" resp="#resp3" type="mod" target="#nkr_note_mod_1129007">依【大】，各依【甲】</note>
+<note n="1129008" resp="#resp3" type="mod" target="#nkr_note_mod_1129008">其真覺名體【大】，〔－〕【甲】</note>
+<note n="1129009" resp="#resp3" type="mod" target="#nkr_note_mod_1129009">無【大】，無以【甲】</note>
+<note n="1129010" resp="#resp3" type="mod" target="#nkr_note_mod_1129010">悉皆【大】，皆悉【甲】</note>
+<note n="1129011" resp="#resp3" type="mod" target="#nkr_note_mod_1129011">不【大】，依不【甲】</note>
+<note n="1129012" resp="#resp3" type="mod" target="#nkr_note_mod_1129012">於【大】，於中【甲】</note>
+<note n="1129013" resp="#resp3" type="mod" target="#nkr_note_mod_1129013">生【大】，起【甲】</note>
+<note n="1129014" resp="#resp3" type="mod" target="#nkr_note_mod_1129014">順違【大】，違順【甲】</note>
+<note n="1129015" resp="#resp3" type="mod" target="#nkr_note_mod_1129015">名【大】，計名【甲】</note>
+<note n="1129016" resp="#resp3" type="mod" target="#nkr_note_mod_1129016">相【大】，識【甲】</note>
+<note n="1129017" resp="#resp3" type="mod" target="#nkr_note_mod_1129017">屬【大】，成【甲】</note>
+<note n="1129018" resp="#resp3" type="mod" target="#nkr_note_mod_1129018">是【大】，是諸識法執是【甲】</note>
+<note n="1130001" resp="#resp3" type="mod" target="#nkr_note_mod_1130001">是【大】，說【甲】</note>
+<note n="1130002" resp="#resp3" type="mod" target="#nkr_note_mod_1130002">和【大】，和合【甲】</note>
+<note n="1130003" resp="#resp3" type="mod" target="#nkr_note_mod_1130003">以【大】，以依【甲】</note>
+<note n="1130004" resp="#resp3" type="mod" target="#nkr_note_mod_1130004">現【大】，能現【甲】</note>
+<note n="1130005" resp="#resp3" type="mod" target="#nkr_note_mod_1130005">後【大】，後六麁相方屬七識以彼黎耶【甲】</note>
+<note n="1130006" resp="#resp3" type="mod" target="#nkr_note_mod_1130006">波【大】，〔－〕【甲】</note>
+<note n="1130007" resp="#resp3" type="mod" target="#nkr_note_mod_1130007">智【大】，〔－〕【甲】</note>
+<note n="1130008" resp="#resp3" type="mod" target="#nkr_note_mod_1130008">以住【大】，〔－〕【甲】</note>
+<note n="1130009" resp="#resp3" type="mod" target="#nkr_note_mod_1130009">識【大】，塵【甲】</note>
+<note n="1130010" resp="#resp3" type="mod" target="#nkr_note_mod_1130010">作【大】，化【甲】</note>
+<note n="1130011" resp="#resp3" type="mod" target="#nkr_note_mod_1130011">依【大】，依根故是宗法言諸是不共所依【甲】</note>
+<note n="1130012" resp="#resp3" type="mod" target="#nkr_note_mod_1130012">不【大】，爾【甲】</note>
+<note n="1130013" resp="#resp3" type="mod" target="#nkr_note_mod_1130013">非心法【大】，心法非【甲】</note>
+<note n="1130014" resp="#resp3" type="mod" target="#nkr_note_mod_1130014">漏【大】，漏眼等五根若遍緣者必非不共所依根收如下別意根等若以不共所依根故與識同境有漏【甲】</note>
+<note n="1130015" resp="#resp3" type="mod" target="#nkr_note_mod_1130015">識【大】，識故唯識論第十卷云有漏不共必俱同境根發無漏識【甲】</note>
+<note n="1130016" resp="#resp3" type="mod" target="#nkr_note_mod_1130016">謂【大】，非謂【甲】</note>
+<note n="1131001" resp="#resp3" type="mod" target="#nkr_note_mod_1131001">靜【大】，淨【甲】</note>
+<note n="1131002" resp="#resp3" type="mod" target="#nkr_note_mod_1131002">必【大】，必依能見故楞伽經【甲】</note>
+<note n="1131003" resp="#resp3" type="mod" target="#nkr_note_mod_1131003">心【大】，一心【甲】</note>
+<note n="1131004" resp="#resp3" type="mod" target="#nkr_note_mod_1131004">證【大】，證自證【甲】</note>
+<note n="1131005" resp="#resp3" type="mod" target="#nkr_note_mod_1131005">也【大】，也是釋雖【甲】</note>
+<note n="1131006" resp="#resp3" type="mod" target="#nkr_note_mod_1131006">愛【大】，不愛【甲】</note>
+<note n="1131007" resp="#resp3" type="mod" target="#nkr_note_mod_1131007">取【大】，執【甲】</note>
+<note n="1131008" resp="#resp3" type="mod" target="#nkr_note_mod_1131008">言【大】，言相【甲】</note>
+<note n="1131009" resp="#resp3" type="mod" target="#nkr_note_mod_1131009">繫【大】，繫苦【甲】</note>
+<note n="1131010" resp="#resp3" type="mod" target="#nkr_note_mod_1131010">至【大】，至不【甲】</note>
+<note n="1132001" resp="#resp3" type="mod" target="#nkr_note_mod_1132001">等【大】，等者【甲】</note>
+<note n="1132002" resp="#resp3" type="mod" target="#nkr_note_mod_1132002">苦【大】，其【甲】</note>
+<note n="1132003" resp="#resp3" type="mod" target="#nkr_note_mod_1132003">覺【大】，不覺【甲】</note>
+<note n="1132004" resp="#resp3" type="mod" target="#nkr_note_mod_1132004">與【大】，〔－〕【甲】</note>
+<note n="1132005" resp="#resp3" type="mod" target="#nkr_note_mod_1132005">與【大】，〔－〕【甲】</note>
+<note n="1132006" resp="#resp3" type="mod" target="#nkr_note_mod_1132006">異【大】，異異【甲】</note>
+<note n="1132007" resp="#resp3" type="mod" target="#nkr_note_mod_1132007">因【大】，〔－〕【甲】</note>
+<note n="1132008" resp="#resp3" type="mod" target="#nkr_note_mod_1132008">漏【大】，漏至染【甲】</note>
+<note n="1132009" resp="#resp3" type="mod" target="#nkr_note_mod_1132009">者【大】，者是無漏法性染幻差別者【甲】</note>
+<note n="1132010" resp="#resp3" type="mod" target="#nkr_note_mod_1132010">緣【大】，染【甲】</note>
+<note n="1132011" resp="#resp3" type="mod" target="#nkr_note_mod_1132011">言【大】，言所【甲】</note>
+<note n="1132012" resp="#resp3" type="mod" target="#nkr_note_mod_1132012">意【大】，〔－〕【甲】</note>
+<note n="1132013" resp="#resp3" type="mod" target="#nkr_note_mod_1132013">說【大】，〔－〕【甲】</note>
+<note n="1132014" resp="#resp3" type="mod" target="#nkr_note_mod_1132014">為【大】，〔－〕【甲】</note>
+<note n="1132015" resp="#resp3" type="mod" target="#nkr_note_mod_1132015">法相【大】，初教【甲】</note>
+<note n="1132016" resp="#resp3" type="mod" target="#nkr_note_mod_1132016">緣【大】，緣如何說是生滅因緣【甲】</note>
+<note n="1132017" resp="#resp3" type="mod" target="#nkr_note_mod_1132017">依此因緣【大】，〔－〕【甲】</note>
+<note n="1132018" resp="#resp3" type="mod" target="#nkr_note_mod_1132018">鎔融【大】，融通【甲】</note>
+<note n="1132019" resp="#resp3" type="mod" target="#nkr_note_mod_1132019">於【大】，依於【甲】</note>
+<note n="1133001" resp="#resp3" type="mod" target="#nkr_note_mod_1133001">也【大】，云【甲】</note>
+<note n="1133002" resp="#resp3" type="mod" target="#nkr_note_mod_1133002">別【大】，分別【甲】</note>
+<note n="1133003" resp="#resp3" type="mod" target="#nkr_note_mod_1133003">則【大】，於【甲】</note>
+<note n="1133004" resp="#resp3" type="mod" target="#nkr_note_mod_1133004"><!--CBETA todo type: ＊-->心【大】＊，分【甲】＊</note>
+<note n="1133005" resp="#resp3" type="mod" target="#nkr_note_mod_1133005">非【大】，有【甲】</note>
+<note n="1133006" resp="#resp3" type="mod" target="#nkr_note_mod_1133006">麁相說【大】，〔－〕【甲】</note>
+<note n="1133007" resp="#resp3" type="mod" target="#nkr_note_mod_1133007">是【大】，是真【甲】</note>
+<note n="1133008" resp="#resp3" type="mod" target="#nkr_note_mod_1133008">（於中…轉）九字【大】，〔－〕【甲】</note>
+<note n="1133009" resp="#resp3" type="mod" target="#nkr_note_mod_1133009">起【大】，起由迷義合為二識一迷真起【甲】</note>
+<note n="1133010" resp="#resp3" type="mod" target="#nkr_note_mod_1133010">故【大】，者【甲】</note>
+<note n="1133011" resp="#resp3" type="mod" target="#nkr_note_mod_1133011">何【大】，何為【甲】</note>
+<note n="1133012" resp="#resp3" type="mod" target="#nkr_note_mod_1133012">故【大】，故說【甲】</note>
+<note n="1133013" resp="#resp3" type="mod" target="#nkr_note_mod_1133013">心【大】，心所起【甲】</note>
+<note n="1133014" resp="#resp3" type="mod" target="#nkr_note_mod_1133014">識【大】，諸【甲】</note>
+<note n="1134001" resp="#resp3" type="mod" target="#nkr_note_mod_1134001">塵【大】，五塵【甲】</note>
+<note n="1134002" resp="#resp3" type="mod" target="#nkr_note_mod_1134002">智【大】，知【甲】</note>
+<note n="1134003" resp="#resp3" type="mod" target="#nkr_note_mod_1134003">相【大】，相如【甲】</note>
+<note n="1134004" resp="#resp3" type="mod" target="#nkr_note_mod_1134004">轉【大】，於【甲】</note>
+<note n="1134005" resp="#resp3" type="mod" target="#nkr_note_mod_1134005">相【大】，智【甲】</note>
+<note n="1134006" resp="#resp3" type="mod" target="#nkr_note_mod_1134006">教【大】，教異者有義諸教【甲】</note>
+<note n="1134007" resp="#resp3" type="mod" target="#nkr_note_mod_1134007">即【大】，有【甲】</note>
+<note n="1134008" resp="#resp3" type="mod" target="#nkr_note_mod_1134008">所【大】，所執【甲】</note>
+<note n="1134009" resp="#resp3" type="mod" target="#nkr_note_mod_1134009">漏【大】，攝【甲】</note>
+<note n="1134010" resp="#resp3" type="mod" target="#nkr_note_mod_1134010">能【大】，不能【甲】</note>
+<note n="1134011" resp="#resp3" type="mod" target="#nkr_note_mod_1134011">說【大】，不說【甲】</note>
+<note n="1134012" resp="#resp3" type="mod" target="#nkr_note_mod_1134012">論【大】，是論【甲】</note>
+<note n="1134013" resp="#resp3" type="mod" target="#nkr_note_mod_1134013">本在諸識【大】，〔－〕【甲】</note>
+<note n="1134014" resp="#resp3" type="mod" target="#nkr_note_mod_1134014">耳【大】，爾【甲】</note>
+<note n="1134015" resp="#resp3" type="mod" target="#nkr_note_mod_1134015">者【大】，〔－〕【甲】</note>
+<note n="1134016" resp="#resp3" type="mod" target="#nkr_note_mod_1134016">亦【大】，六【甲】</note>
+<note n="1134017" resp="#resp3" type="mod" target="#nkr_note_mod_1134017">屬事識【大】，識事【甲】</note>
+<note n="1134018" resp="#resp3" type="mod" target="#nkr_note_mod_1134018">（故故…違）十七字【大】，〔－〕【甲】</note>
+<note n="1135001" resp="#resp3" type="mod" target="#nkr_note_mod_1135001">未【大】，迷【甲】</note>
+<note n="1135002" resp="#resp3" type="mod" target="#nkr_note_mod_1135002">五【大】，〔－〕【甲】</note>
+<note n="1135003" resp="#resp3" type="mod" target="#nkr_note_mod_1135003">攝【大】，由攝【甲】</note>
+<note n="1135004" resp="#resp3" type="mod" target="#nkr_note_mod_1135004">種【大】，識【甲】</note>
+<note n="1135005" resp="#resp3" type="mod" target="#nkr_note_mod_1135005">善【大】，善惡【甲】</note>
+<note n="1135006" resp="#resp3" type="mod" target="#nkr_note_mod_1135006">果【大】，苦樂【甲】</note>
+<note n="1135007" resp="#resp3" type="mod" target="#nkr_note_mod_1135007">業【大】，〔－〕【甲】</note>
+<note n="1135008" resp="#resp3" type="mod" target="#nkr_note_mod_1135008">意【大】，意識【甲】</note>
+<note n="1135009" resp="#resp3" type="mod" target="#nkr_note_mod_1135009">相【大】，相故【甲】</note>
+<note n="1135010" resp="#resp3" type="mod" target="#nkr_note_mod_1135010">境【大】，憶【甲】</note>
+<note n="1135011" resp="#resp3" type="mod" target="#nkr_note_mod_1135011">此【大】，能此【甲】</note>
+<note n="1136001" resp="#resp3" type="mod" target="#nkr_note_mod_1136001">外【大】，餘【甲】</note>
+<note n="1136002" resp="#resp3" type="mod" target="#nkr_note_mod_1136002">成【大】，〔－〕【甲】</note>
+<note n="1136003" resp="#resp3" type="mod" target="#nkr_note_mod_1136003">引【大】，〔－〕【甲】</note>
+<note n="1136004" resp="#resp3" type="mod" target="#nkr_note_mod_1136004">世【大】，殘世【甲】</note>
+<note n="1136005" resp="#resp3" type="mod" target="#nkr_note_mod_1136005">前【大】，此【甲】</note>
+<note n="1136006" resp="#resp3" type="mod" target="#nkr_note_mod_1136006">法【大】，生【甲】</note>
+<note n="1136007" resp="#resp3" type="mod" target="#nkr_note_mod_1136007">色【大】，立【甲】</note>
+<note n="1136008" resp="#resp3" type="mod" target="#nkr_note_mod_1136008">變【大】，變而緣【甲】</note>
+<note n="1136009" resp="#resp3" type="mod" target="#nkr_note_mod_1136009">善【大】，應【甲】</note>
+<note n="1136010" resp="#resp3" type="mod" target="#nkr_note_mod_1136010">聖【大】，聖教【甲】</note>
+<note n="1136011" resp="#resp3" type="mod" target="#nkr_note_mod_1136011">故【大】，有【甲】</note>
+<note n="1136012" resp="#resp3" type="mod" target="#nkr_note_mod_1136012">爾【大】，許【甲】</note>
+<note n="1136013" resp="#resp3" type="mod" target="#nkr_note_mod_1136013">前【大】，支【甲】</note>
+<note n="1136014" resp="#resp3" type="mod" target="#nkr_note_mod_1136014">害【大】，空【甲】</note>
+<note n="1136015" resp="#resp3" type="mod" target="#nkr_note_mod_1136015">義是【大】，是義【甲】</note>
+<note n="1136016" resp="#resp3" type="mod" target="#nkr_note_mod_1136016">生殺【大】，殺生【甲】</note>
+<note n="1136017" resp="#resp3" type="mod" target="#nkr_note_mod_1136017">習【大】，習力【甲】</note>
+<note n="1136018" resp="#resp3" type="mod" target="#nkr_note_mod_1136018">怨【大】，惡【甲】</note>
+<note n="1136019" resp="#resp3" type="mod" target="#nkr_note_mod_1136019">增上力二識【大】，〔－〕【甲】</note>
+<note n="1136020" resp="#resp3" type="mod" target="#nkr_note_mod_1136020">廣【大】，應【甲】</note>
+<note n="1136021" resp="#resp3" type="mod" target="#nkr_note_mod_1136021">釋【大】，〔－〕【甲】</note>
+<note n="1136022" resp="#resp3" type="mod" target="#nkr_note_mod_1136022">滅【大】，滅故言【甲】</note>
+<note n="1137001" resp="#resp3" type="mod" target="#nkr_note_mod_1137001">勝【大】，就【甲】</note>
+<note n="1137002" resp="#resp3" type="mod" target="#nkr_note_mod_1137002">所【大】，依【甲】</note>
+<note n="1137003" resp="#resp3" type="mod" target="#nkr_note_mod_1137003">續【大】，續識【甲】</note>
+<note n="1137004" resp="#resp3" type="mod" target="#nkr_note_mod_1137004">（我等…執）二十三字【大】，〔－〕【甲】</note>
+<note n="1137005" resp="#resp3" type="mod" target="#nkr_note_mod_1137005">續【大】，相續【甲】</note>
+<note n="1137006" resp="#resp3" type="mod" target="#nkr_note_mod_1137006">二【大】，二出【甲】</note>
+<note n="1137007" resp="#resp3" type="mod" target="#nkr_note_mod_1137007">追【大】，退【甲】</note>
+<note n="1137008" resp="#resp3" type="mod" target="#nkr_note_mod_1137008">顯【大】，現【甲】</note>
+<note n="1137009" resp="#resp3" type="mod" target="#nkr_note_mod_1137009">蘊【大】，蘊非即【甲】</note>
+<note n="1137010" resp="#resp3" type="mod" target="#nkr_note_mod_1137010">事【大】，事者【甲】</note>
+<note n="1137011" resp="#resp3" type="mod" target="#nkr_note_mod_1137011">經【大】，云【甲】</note>
+<note n="1137012" resp="#resp3" type="mod" target="#nkr_note_mod_1137012">知【大】，去【甲】</note>
+<note n="1137013" resp="#resp3" type="mod" target="#nkr_note_mod_1137013">舉最強故【大】，〔－〕【甲】</note>
+<note n="1137014" resp="#resp3" type="mod" target="#nkr_note_mod_1137014">說【大】，說知【甲】</note>
+<note n="1137015" resp="#resp3" type="mod" target="#nkr_note_mod_1137015">識【大】，〔－〕【甲】</note>
+<note n="1137016" resp="#resp3" type="mod" target="#nkr_note_mod_1137016">我【大】，愛【甲】</note>
+<note n="1137017" resp="#resp3" type="mod" target="#nkr_note_mod_1137017">諸【大】，法【甲】</note>
+<note n="1137018" resp="#resp3" type="mod" target="#nkr_note_mod_1137018">依凡【大】，凡夫【甲】</note>
+<note n="1137019" resp="#resp3" type="mod" target="#nkr_note_mod_1137019">說【大】，許【甲】</note>
+<note n="1138001" resp="#resp3" type="mod" target="#nkr_note_mod_1138001">（為無…體）二十一字【大】，〔－〕【甲】</note>
+<note n="1138002" resp="#resp3" type="mod" target="#nkr_note_mod_1138002">分【大】，心【甲】</note>
+<note n="1138003" resp="#resp3" type="mod" target="#nkr_note_mod_1138003">阿【大】，阿陀【甲】</note>
+<note n="1138004" resp="#resp3" type="mod" target="#nkr_note_mod_1138004">至【大】，若至【甲】</note>
+<note n="1138005" resp="#resp3" type="mod" target="#nkr_note_mod_1138005">深【大】，甚深【甲】</note>
+<note n="1138006" resp="#resp3" type="mod" target="#nkr_note_mod_1138006">染【大】，淨【甲】</note>
+<note n="1138007" resp="#resp3" type="mod" target="#nkr_note_mod_1138007">不【大】，常【甲】</note>
+<note n="1138008" resp="#resp3" type="mod" target="#nkr_note_mod_1138008">三【大】，三光遍勘【甲】</note>
+<note n="1142001" resp="#resp3" type="mod" target="#nkr_note_mod_1142001">以境滅時體不【大】，〔－〕【考偽-大】</note>
+<note n="1157001" resp="#resp3" type="mod" target="#nkr_note_mod_1157001">無【大】，無上【考偽-大】</note>
+<note n="1158001" resp="#resp3" type="mod" target="#nkr_note_mod_1158001">因【大】，固【考偽-大】</note>
+<note n="1160002" resp="#resp3" type="mod" target="#nkr_note_mod_1160002">已信【大】，〔－〕【甲】</note>
+<note n="1160003" resp="#resp3" type="mod" target="#nkr_note_mod_1160003">住【大】，〔－〕【甲】</note>
+<note n="1161001" resp="#resp3" type="mod" target="#nkr_note_mod_1161001">解【大】，解者所謂解【甲】</note>
+<note n="1161002" resp="#resp3" type="mod" target="#nkr_note_mod_1161002">顯異前故云深也【大】，〔－〕【甲】</note>
+<note n="1161003" resp="#resp3" type="mod" target="#nkr_note_mod_1161003">波【大】，名波【甲】</note>
+<note n="1162001" resp="#resp3" type="mod" target="#nkr_note_mod_1162001">必【大】，不有【甲】</note>
+<note n="1162002" resp="#resp3" type="mod" target="#nkr_note_mod_1162002">一【大】，一數【甲】</note>
+<note n="1162003" resp="#resp3" type="mod" target="#nkr_note_mod_1162003">義【大】，〔－〕【甲】</note>
+<note n="1163001" resp="#resp3" type="mod" target="#nkr_note_mod_1163001">也【大】，〔－〕【甲】</note>
+<note n="1163002" resp="#resp3" type="mod" target="#nkr_note_mod_1163002">說【大】，自說【甲】</note>
+<note n="1164001" resp="#resp3" type="mod" target="#nkr_note_mod_1164001">境【大】，〔－〕【甲】</note>
+<note n="1164002" resp="#resp3" type="mod" target="#nkr_note_mod_1164002">以彼善【大】，〔－〕【甲】</note>
+<note n="1164003" resp="#resp3" type="mod" target="#nkr_note_mod_1164003">本【大】，〔－〕【甲】</note>
+<note n="1165001" resp="#resp3" type="mod" target="#nkr_note_mod_1165001">現【大】，常現【甲】</note>
+<note n="1165002" resp="#resp3" type="mod" target="#nkr_note_mod_1165002">故常【大】，常樂【甲】</note>
+<note n="1165003" resp="#resp3" type="mod" target="#nkr_note_mod_1165003">皆即【大】，〔－〕【甲】</note>
+<note n="1166001" resp="#resp3" type="mod" target="#nkr_note_mod_1166001">止【大】，止故言隨順止觀【甲】</note>
+<note n="1173001" resp="#resp3" type="mod" target="#nkr_note_mod_1173001">文【大】，聞【考偽-大】</note>
+<note n="1174001" resp="#resp3" type="mod" target="#nkr_note_mod_1174001">理【大】，利【考偽-大】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1121001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1121001">【原】大英博物館藏燉煌本, S. 2554, 【甲】大英博物館藏燉煌本, S. 2367</note>
-<note n="1121002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1121002">（初）＋總【甲】</note>
-<note n="1121003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1121003">異＋（本覺）【甲】</note>
-<note n="1121004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1121004">〔心〕－【甲】</note>
-<note n="1121005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1121005">〔覺業〕－【甲】</note>
-<note n="1122001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122001">竟＋（覺）【甲】</note>
-<note n="1122002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122002">相＝智【甲】</note>
-<note n="1122003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122003">〔夫〕－【甲】</note>
-<note n="1122004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122004">德＝能【甲】</note>
-<note n="1122005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122005">相＋（所相）【甲】</note>
-<note n="1122006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122006">等＋（故）【甲】</note>
-<note n="1122007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122007">非＋（位）【甲】</note>
-<note n="1122008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122008">（四）＋相【甲】</note>
-<note n="1122009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1122009">際＋（最微）【甲】</note>
-<note n="1123001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123001">〔別〕－【甲】</note>
-<note n="1123002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123002">界界＝故故【甲】</note>
-<note n="1123003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123003">取別＝別取【甲】</note>
-<note n="1123004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123004">（或）＋意【甲】</note>
-<note n="1123005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123005">（故此四相）＋即【甲】</note>
-<note n="1123006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123006">前＝先【甲】</note>
-<note n="1123007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123007">〔二覺相也〕－【甲】</note>
-<note n="1123008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1123008">而＝初【甲】</note>
-<note n="1124001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124001">察＋（名觀察）【甲】</note>
-<note n="1124002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124002">甚差＝七卷【甲】</note>
-<note n="1124003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124003">〔於〕－【甲】</note>
-<note n="1124004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124004">論＋（文）【甲】</note>
-<note n="1124005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124005">覺＋（初心時無）【甲】</note>
-<note n="1124006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124006">〔種〕－【甲】</note>
-<note n="1124007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124007">有＋（所覺猶）【甲】</note>
-<note n="1124008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124008">（不）＋異【甲】</note>
-<note n="1124009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1124009">三＋（舉）【甲】</note>
-<note n="1125001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125001">四＋（顯）【甲】</note>
-<note n="1125002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125002">〔覺〕－【甲】</note>
-<note n="1125003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125003">論＝本【甲】</note>
-<note n="1125004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125004">〔生〕－【甲】</note>
-<note n="1125005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125005">有＋（者）【甲】</note>
-<note n="1125006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125006">十＝一【甲】</note>
-<note n="1125007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125007">緣＝染【甲】</note>
-<note n="1125008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1125008">成＝生【甲】</note>
-<note n="1126001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126001">隨＝緣【甲】</note>
-<note n="1126002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126002">不＋（異）【甲】</note>
-<note n="1126003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126003">名＋（為）【甲】</note>
-<note n="1126004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126004">皆＝亦【甲】</note>
-<note n="1126005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126005">說＝現【甲】</note>
-<note n="1126006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126006">他＋（後一利他非無自利）【甲】</note>
-<note n="1126007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126007">〔後通…用〕七字－【甲】</note>
-<note n="1126008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126008">性＋（普現）【甲】</note>
-<note n="1126009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126009">〔初〕－【甲】</note>
-<note n="1126010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126010">〔體〕－【甲】</note>
-<note n="1126011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126011">至＋（足）【甲】</note>
-<note n="1126012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126012">思＋（議）【甲】</note>
-<note n="1126013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126013">稱真＝攝【甲】</note>
-<note n="1126014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126014">等＋（此）【甲】</note>
-<note n="1126015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126015">異＋（非）【甲】</note>
-<note n="1126016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126016">故＝也【甲】</note>
-<note n="1126017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126017">至＋（性）【甲】</note>
-<note n="1126018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1126018">〔即涅槃〕－【甲】</note>
-<note n="1127001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127001">〔相〕－【甲】</note>
-<note n="1127002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127002">根＋（作）【甲】</note>
-<note n="1127003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127003">〔微〕－【甲】</note>
-<note n="1127004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127004">二＝三【甲】</note>
-<note n="1127005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127005">作＝化【甲】</note>
-<note n="1127006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127006">斷＝絕【甲】</note>
-<note n="1127007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127007">化＝他【甲】</note>
-<note n="1127008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127008">過去＝遍知【甲】</note>
-<note n="1127009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127009">世＝去【甲】</note>
-<note n="1127010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127010">實＝異【甲】</note>
-<note n="1127011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127011">用＋（果中初明即果後明德果或初果體後即果用）【甲】</note>
-<note n="1127012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127012">〔故〕－【甲】</note>
-<note n="1127013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127013">如＋（明鏡故）【甲】</note>
-<note n="1127014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127014">智淨＝法出【甲】</note>
-<note n="1127015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1127015">緣＋（緣）【甲】</note>
-<note n="1128001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128001">〔空〕－【甲】</note>
-<note n="1128002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128002">到＝相倒【甲】</note>
-<note n="1128003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128003">心＋（妄境本不相應故云遠離心）【甲】</note>
-<note n="1128004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128004">〔所現〕－【甲】</note>
-<note n="1128005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128005">不＋（作）【甲】</note>
-<note n="1128006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128006">從＝由【甲】</note>
-<note n="1128007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128007">異＝實【甲】</note>
-<note n="1128008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128008">〔以〕－【甲】</note>
-<note n="1128009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128009">染＋（不染）【甲】</note>
-<note n="1128010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128010">為＝而【甲】</note>
-<note n="1128011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128011">時＝法【甲】</note>
-<note n="1128012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128012">〔中〕－【甲】</note>
-<note n="1128013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128013">出＋（故）【甲】</note>
-<note n="1128014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128014">〔不與生滅〕－【甲】</note>
-<note n="1128015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128015">離＋（雜）【甲】</note>
-<note n="1128016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128016">云＝之【甲】</note>
-<note n="1128017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1128017">厭＋（求）【甲】</note>
-<note n="1129001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129001">〔謂真實〕－【甲】</note>
-<note n="1129002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129002">第＝中【甲】</note>
-<note n="1129003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129003">覺＋（不覺）【甲】</note>
-<note n="1129004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129004">性＋（因故）【甲】</note>
-<note n="1129005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129005">與＝是【甲】</note>
-<note n="1129006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129006">舉＝覺【甲】</note>
-<note n="1129007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129007">（各）＋依【甲】</note>
-<note n="1129008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129008">〔其真覺名體〕－【甲】</note>
-<note n="1129009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129009">無＋（以）【甲】</note>
-<note n="1129010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129010">悉皆＝皆悉【甲】</note>
-<note n="1129011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129011">（依）＋不【甲】</note>
-<note n="1129012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129012">於＋（中）【甲】</note>
-<note n="1129013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129013">生＝起【甲】</note>
-<note n="1129014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129014">順違＝違順【甲】</note>
-<note n="1129015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129015">（計）＋名【甲】</note>
-<note n="1129016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129016">相＝識【甲】</note>
-<note n="1129017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129017">屬＝成【甲】</note>
-<note n="1129018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1129018">是＋（諸識法執是）【甲】</note>
-<note n="1130001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130001">是＝說【甲】</note>
-<note n="1130002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130002">和＋（合）【甲】</note>
-<note n="1130003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130003">以＋（依）【甲】</note>
-<note n="1130004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130004">（能）＋現【甲】</note>
-<note n="1130005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130005">後＋（六麁相方屬七識以彼黎耶）【甲】</note>
-<note n="1130006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130006">〔波〕－【甲】</note>
-<note n="1130007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130007">〔智〕－【甲】</note>
-<note n="1130008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130008">〔以住〕－【甲】</note>
-<note n="1130009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130009">識＝塵【甲】</note>
-<note n="1130010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130010">作＝化【甲】</note>
-<note n="1130011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130011">依＋（根故是宗法言諸是不共所依）【甲】</note>
-<note n="1130012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130012">不＝爾【甲】</note>
-<note n="1130013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130013">非心法＝心法非【甲】</note>
-<note n="1130014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130014">漏＋（眼等五根若遍緣者必非不共所依根收如下別意根等若以不共所依根故與識同境有漏）【甲】</note>
-<note n="1130015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130015">識＋（故唯識論第十卷云有漏不共必俱同境根發無漏識）【甲】</note>
-<note n="1130016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1130016">（非）＋謂【甲】</note>
-<note n="1131001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131001">靜＝淨【甲】</note>
-<note n="1131002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131002">必＋（依能見故楞伽經）【甲】</note>
-<note n="1131003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131003">（一）＋心【甲】</note>
-<note n="1131004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131004">證＋（自證）【甲】</note>
-<note n="1131005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131005">也＋（是釋雖）【甲】</note>
-<note n="1131006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131006">（不）＋愛【甲】</note>
-<note n="1131007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131007">取＝執【甲】</note>
-<note n="1131008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131008">言＋（相）【甲】</note>
-<note n="1131009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131009">繫＋（苦）【甲】</note>
-<note n="1131010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1131010">至＋（不）【甲】</note>
-<note n="1132001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132001">等＋（者）【甲】</note>
-<note n="1132002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132002">苦＝其【甲】</note>
-<note n="1132003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132003">（不）＋覺【甲】</note>
-<note n="1132004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132004">〔與〕－【甲】</note>
-<note n="1132005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132005">〔與〕－【甲】</note>
-<note n="1132006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132006">異＋（異）【甲】</note>
-<note n="1132007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132007">〔因〕－【甲】</note>
-<note n="1132008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132008">漏＋（至染）【甲】</note>
-<note n="1132009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132009">者＋（是無漏法性染幻差別者）【甲】</note>
-<note n="1132010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132010">緣＝染【甲】</note>
-<note n="1132011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132011">言＋（所）【甲】</note>
-<note n="1132012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132012">〔意〕－【甲】</note>
-<note n="1132013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132013">〔說〕－【甲】</note>
-<note n="1132014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132014">〔為〕－【甲】</note>
-<note n="1132015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132015">法相＝初教【甲】</note>
-<note n="1132016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132016">緣＋（如何說是生滅因緣）【甲】</note>
-<note n="1132017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132017">〔依此因緣〕－【甲】</note>
-<note n="1132018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132018">鎔融＝融通【甲】</note>
-<note n="1132019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132019">（依）＋於【甲】</note>
-<note n="1133001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133001">也＝云【甲】</note>
-<note n="1133002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133002">（分）＋別【甲】</note>
-<note n="1133003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133003">則＝於【甲】</note>
-<note n="1133004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133004">心＝分【甲】＊</note>
-<note n="1133005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133005">非＝有【甲】</note>
-<note n="1133006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133006">〔麁相說〕－【甲】</note>
-<note n="1133007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133007">是＋（真）【甲】</note>
-<note n="1133008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133008">〔於中…轉〕九字－【甲】</note>
-<note n="1133009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133009">起＋（由迷義合為二識一迷真起）【甲】</note>
-<note n="1133010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133010">故＝者【甲】</note>
-<note n="1133011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133011">何＋（為）【甲】</note>
-<note n="1133012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133012">故＋（說）【甲】</note>
-<note n="1133013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133013">心＋（所起）【甲】</note>
-<note n="1133014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133014">識＝諸【甲】</note>
-<note n="1134001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134001">（五）＋塵【甲】</note>
-<note n="1134002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134002">智＝知【甲】</note>
-<note n="1134003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134003">相＋（如）【甲】</note>
-<note n="1134004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134004">轉＝於【甲】</note>
-<note n="1134005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134005">相＝智【甲】</note>
-<note n="1134006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134006">教＋（異者有義諸教）【甲】</note>
-<note n="1134007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134007">即＝有【甲】</note>
-<note n="1134008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134008">所＋（執）【甲】</note>
-<note n="1134009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134009">漏＝攝【甲】</note>
-<note n="1134010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134010">（不）＋能【甲】</note>
-<note n="1134011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134011">（不）＋說【甲】</note>
-<note n="1134012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134012">（是）＋論【甲】</note>
-<note n="1134013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134013">〔本在諸識〕－【甲】</note>
-<note n="1134014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134014">耳＝爾【甲】</note>
-<note n="1134015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134015">〔者〕－【甲】</note>
-<note n="1134016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134016">亦＝六【甲】</note>
-<note n="1134017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134017">屬事識＝識事【甲】</note>
-<note n="1134018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134018">〔故故…違〕十七字－【甲】</note>
-<note n="1135001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135001">未＝迷【甲】</note>
-<note n="1135002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135002">〔五〕－【甲】</note>
-<note n="1135003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135003">（由）＋攝【甲】</note>
-<note n="1135004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135004">種＝識【甲】</note>
-<note n="1135005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135005">善＋（惡）【甲】</note>
-<note n="1135006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135006">果＝苦樂【甲】</note>
-<note n="1135007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135007">〔業〕－【甲】</note>
-<note n="1135008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135008">意＋（識）【甲】</note>
-<note n="1135009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135009">相＋（故）【甲】</note>
-<note n="1135010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135010">境＝憶【甲】</note>
-<note n="1135011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135011">（能）＋此【甲】</note>
-<note n="1136001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136001">外＝餘【甲】</note>
-<note n="1136002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136002">〔成〕－【甲】</note>
-<note n="1136003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136003">〔引〕－【甲】</note>
-<note n="1136004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136004">（殘）＋世【甲】</note>
-<note n="1136005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136005">前＝此【甲】</note>
-<note n="1136006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136006">法＝生【甲】</note>
-<note n="1136007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136007">色＝立【甲】</note>
-<note n="1136008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136008">變＋（而緣）【甲】</note>
-<note n="1136009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136009">善＝應【甲】</note>
-<note n="1136010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136010">聖＋（教）【甲】</note>
-<note n="1136011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136011">故＝有【甲】</note>
-<note n="1136012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136012">爾＝許【甲】</note>
-<note n="1136013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136013">前＝支【甲】</note>
-<note n="1136014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136014">害＝空【甲】</note>
-<note n="1136015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136015">義是＝是義【甲】</note>
-<note n="1136016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136016">生殺＝殺生【甲】</note>
-<note n="1136017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136017">習＋（力）【甲】</note>
-<note n="1136018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136018">怨＝惡【甲】</note>
-<note n="1136019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136019">〔增上力二識〕－【甲】</note>
-<note n="1136020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136020">廣＝應【甲】</note>
-<note n="1136021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136021">〔釋〕－【甲】</note>
-<note n="1136022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1136022">滅＋（故言）【甲】</note>
-<note n="1137001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137001">勝＝就【甲】</note>
-<note n="1137002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137002">所＝依【甲】</note>
-<note n="1137003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137003">續＋（識）【甲】</note>
-<note n="1137004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137004">〔我等…執〕二十三字－【甲】</note>
-<note n="1137005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137005">（相）＋續【甲】</note>
-<note n="1137006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137006">二＋（出）【甲】</note>
-<note n="1137007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137007">追＝退【甲】</note>
-<note n="1137008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137008">顯＝現【甲】</note>
-<note n="1137009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137009">蘊＋（非即）【甲】</note>
-<note n="1137010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137010">事＋（者）【甲】</note>
-<note n="1137011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137011">經＝云【甲】</note>
-<note n="1137012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137012">知＝去【甲】</note>
-<note n="1137013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137013">〔舉最強故〕－【甲】</note>
-<note n="1137014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137014">說＋（知）【甲】</note>
-<note n="1137015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137015">〔識〕－【甲】</note>
-<note n="1137016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137016">我＝愛【甲】</note>
-<note n="1137017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137017">諸＝法【甲】</note>
-<note n="1137018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137018">依凡＝凡夫【甲】</note>
-<note n="1137019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137019">說＝許【甲】</note>
-<note n="1138001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138001">〔為無…體〕二十一字－【甲】</note>
-<note n="1138002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138002">分＝心【甲】</note>
-<note n="1138003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138003">阿＋（陀）【甲】</note>
-<note n="1138004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138004">（若）＋至【甲】</note>
-<note n="1138005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138005">（甚）＋深【甲】</note>
-<note n="1138006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138006">染＝淨【甲】</note>
-<note n="1138007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138007">不＝常【甲】</note>
-<note n="1138008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138008">三＋（光遍勘）【甲】</note>
-<note n="1138009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138009">【原】大英博物館藏燉煌本, S. 2721, 首題新加</note>
-<note n="1138010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138010">首缺</note>
-<note n="1142001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1142001">〔以境滅時體不〕－？</note>
-<note n="1156001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1156001">【原】燉煌本，【甲】中村不折氏藏燉煌本，甲本首缺</note>
-<note n="1157001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1157001">無＋（上）？</note>
-<note n="1158001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1158001">因＝固？</note>
-<note n="1160001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1160001">以上甲本缺</note>
-<note n="1160002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1160002">〔已信〕－【甲】</note>
-<note n="1160003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1160003">〔住〕－【甲】</note>
-<note n="1161001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1161001">（解者所謂）＋解【甲】</note>
-<note n="1161002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1161002">〔顯異前故云深也〕－【甲】</note>
-<note n="1161003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1161003">（名）＋波【甲】</note>
-<note n="1162001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1162001">必＝不有【甲】</note>
-<note n="1162002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1162002">一＋（數）【甲】</note>
-<note n="1162003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1162003">〔義〕－【甲】</note>
-<note n="1163001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1163001">〔也〕－【甲】</note>
-<note n="1163002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1163002">（自）＋說【甲】</note>
-<note n="1164001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1164001">〔境〕－【甲】</note>
-<note n="1164002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1164002">〔以彼善〕－【甲】</note>
-<note n="1164003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1164003">〔本〕－【甲】</note>
-<note n="1165001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1165001">（常）＋現【甲】</note>
-<note n="1165002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1165002">故常＝常樂【甲】</note>
-<note n="1165003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1165003">〔皆即〕－【甲】</note>
-<note n="1166001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1166001">止＋（故言隨順止觀）【甲】</note>
-<note n="1166002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1166002">以下原本缺今依甲本補載之</note>
-<note n="1173001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1173001">文＝聞？</note>
-<note n="1174001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1174001">理＝利？</note>
+<note n="1121001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1121001">【原】大英博物館藏燉煌本, S. 2554, 【甲】大英博物館藏燉煌本, S. 2367</note>
+<note n="1121002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1121002">（初）＋總【甲】</note>
+<note n="1121003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1121003">異＋（本覺）【甲】</note>
+<note n="1121004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1121004">〔心〕－【甲】</note>
+<note n="1121005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1121005">〔覺業〕－【甲】</note>
+<note n="1122001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122001">竟＋（覺）【甲】</note>
+<note n="1122002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122002">相＝智【甲】</note>
+<note n="1122003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122003">〔夫〕－【甲】</note>
+<note n="1122004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122004">德＝能【甲】</note>
+<note n="1122005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122005">相＋（所相）【甲】</note>
+<note n="1122006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122006">等＋（故）【甲】</note>
+<note n="1122007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122007">非＋（位）【甲】</note>
+<note n="1122008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122008">（四）＋相【甲】</note>
+<note n="1122009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1122009">際＋（最微）【甲】</note>
+<note n="1123001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123001">〔別〕－【甲】</note>
+<note n="1123002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123002">界界＝故故【甲】</note>
+<note n="1123003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123003">取別＝別取【甲】</note>
+<note n="1123004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123004">（或）＋意【甲】</note>
+<note n="1123005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123005">（故此四相）＋即【甲】</note>
+<note n="1123006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123006">前＝先【甲】</note>
+<note n="1123007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123007">〔二覺相也〕－【甲】</note>
+<note n="1123008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1123008">而＝初【甲】</note>
+<note n="1124001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124001">察＋（名觀察）【甲】</note>
+<note n="1124002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124002">甚差＝七卷【甲】</note>
+<note n="1124003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124003">〔於〕－【甲】</note>
+<note n="1124004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124004">論＋（文）【甲】</note>
+<note n="1124005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124005">覺＋（初心時無）【甲】</note>
+<note n="1124006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124006">〔種〕－【甲】</note>
+<note n="1124007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124007">有＋（所覺猶）【甲】</note>
+<note n="1124008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124008">（不）＋異【甲】</note>
+<note n="1124009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1124009">三＋（舉）【甲】</note>
+<note n="1125001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125001">四＋（顯）【甲】</note>
+<note n="1125002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125002">〔覺〕－【甲】</note>
+<note n="1125003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125003">論＝本【甲】</note>
+<note n="1125004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125004">〔生〕－【甲】</note>
+<note n="1125005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125005">有＋（者）【甲】</note>
+<note n="1125006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125006">十＝一【甲】</note>
+<note n="1125007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125007">緣＝染【甲】</note>
+<note n="1125008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1125008">成＝生【甲】</note>
+<note n="1126001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126001">隨＝緣【甲】</note>
+<note n="1126002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126002">不＋（異）【甲】</note>
+<note n="1126003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126003">名＋（為）【甲】</note>
+<note n="1126004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126004">皆＝亦【甲】</note>
+<note n="1126005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126005">說＝現【甲】</note>
+<note n="1126006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126006">他＋（後一利他非無自利）【甲】</note>
+<note n="1126007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126007">〔後通…用〕七字－【甲】</note>
+<note n="1126008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126008">性＋（普現）【甲】</note>
+<note n="1126009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126009">〔初〕－【甲】</note>
+<note n="1126010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126010">〔體〕－【甲】</note>
+<note n="1126011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126011">至＋（足）【甲】</note>
+<note n="1126012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126012">思＋（議）【甲】</note>
+<note n="1126013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126013">稱真＝攝【甲】</note>
+<note n="1126014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126014">等＋（此）【甲】</note>
+<note n="1126015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126015">異＋（非）【甲】</note>
+<note n="1126016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126016">故＝也【甲】</note>
+<note n="1126017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126017">至＋（性）【甲】</note>
+<note n="1126018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1126018">〔即涅槃〕－【甲】</note>
+<note n="1127001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127001">〔相〕－【甲】</note>
+<note n="1127002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127002">根＋（作）【甲】</note>
+<note n="1127003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127003">〔微〕－【甲】</note>
+<note n="1127004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127004">二＝三【甲】</note>
+<note n="1127005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127005">作＝化【甲】</note>
+<note n="1127006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127006">斷＝絕【甲】</note>
+<note n="1127007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127007">化＝他【甲】</note>
+<note n="1127008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127008">過去＝遍知【甲】</note>
+<note n="1127009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127009">世＝去【甲】</note>
+<note n="1127010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127010">實＝異【甲】</note>
+<note n="1127011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127011">用＋（果中初明即果後明德果或初果體後即果用）【甲】</note>
+<note n="1127012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127012">〔故〕－【甲】</note>
+<note n="1127013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127013">如＋（明鏡故）【甲】</note>
+<note n="1127014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127014">智淨＝法出【甲】</note>
+<note n="1127015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1127015">緣＋（緣）【甲】</note>
+<note n="1128001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128001">〔空〕－【甲】</note>
+<note n="1128002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128002">到＝相倒【甲】</note>
+<note n="1128003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128003">心＋（妄境本不相應故云遠離心）【甲】</note>
+<note n="1128004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128004">〔所現〕－【甲】</note>
+<note n="1128005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128005">不＋（作）【甲】</note>
+<note n="1128006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128006">從＝由【甲】</note>
+<note n="1128007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128007">異＝實【甲】</note>
+<note n="1128008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128008">〔以〕－【甲】</note>
+<note n="1128009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128009">染＋（不染）【甲】</note>
+<note n="1128010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128010">為＝而【甲】</note>
+<note n="1128011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128011">時＝法【甲】</note>
+<note n="1128012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128012">〔中〕－【甲】</note>
+<note n="1128013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128013">出＋（故）【甲】</note>
+<note n="1128014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128014">〔不與生滅〕－【甲】</note>
+<note n="1128015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128015">離＋（雜）【甲】</note>
+<note n="1128016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128016">云＝之【甲】</note>
+<note n="1128017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1128017">厭＋（求）【甲】</note>
+<note n="1129001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129001">〔謂真實〕－【甲】</note>
+<note n="1129002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129002">第＝中【甲】</note>
+<note n="1129003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129003">覺＋（不覺）【甲】</note>
+<note n="1129004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129004">性＋（因故）【甲】</note>
+<note n="1129005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129005">與＝是【甲】</note>
+<note n="1129006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129006">舉＝覺【甲】</note>
+<note n="1129007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129007">（各）＋依【甲】</note>
+<note n="1129008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129008">〔其真覺名體〕－【甲】</note>
+<note n="1129009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129009">無＋（以）【甲】</note>
+<note n="1129010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129010">悉皆＝皆悉【甲】</note>
+<note n="1129011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129011">（依）＋不【甲】</note>
+<note n="1129012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129012">於＋（中）【甲】</note>
+<note n="1129013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129013">生＝起【甲】</note>
+<note n="1129014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129014">順違＝違順【甲】</note>
+<note n="1129015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129015">（計）＋名【甲】</note>
+<note n="1129016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129016">相＝識【甲】</note>
+<note n="1129017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129017">屬＝成【甲】</note>
+<note n="1129018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1129018">是＋（諸識法執是）【甲】</note>
+<note n="1130001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130001">是＝說【甲】</note>
+<note n="1130002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130002">和＋（合）【甲】</note>
+<note n="1130003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130003">以＋（依）【甲】</note>
+<note n="1130004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130004">（能）＋現【甲】</note>
+<note n="1130005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130005">後＋（六麁相方屬七識以彼黎耶）【甲】</note>
+<note n="1130006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130006">〔波〕－【甲】</note>
+<note n="1130007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130007">〔智〕－【甲】</note>
+<note n="1130008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130008">〔以住〕－【甲】</note>
+<note n="1130009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130009">識＝塵【甲】</note>
+<note n="1130010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130010">作＝化【甲】</note>
+<note n="1130011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130011">依＋（根故是宗法言諸是不共所依）【甲】</note>
+<note n="1130012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130012">不＝爾【甲】</note>
+<note n="1130013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130013">非心法＝心法非【甲】</note>
+<note n="1130014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130014">漏＋（眼等五根若遍緣者必非不共所依根收如下別意根等若以不共所依根故與識同境有漏）【甲】</note>
+<note n="1130015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130015">識＋（故唯識論第十卷云有漏不共必俱同境根發無漏識）【甲】</note>
+<note n="1130016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1130016">（非）＋謂【甲】</note>
+<note n="1131001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131001">靜＝淨【甲】</note>
+<note n="1131002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131002">必＋（依能見故楞伽經）【甲】</note>
+<note n="1131003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131003">（一）＋心【甲】</note>
+<note n="1131004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131004">證＋（自證）【甲】</note>
+<note n="1131005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131005">也＋（是釋雖）【甲】</note>
+<note n="1131006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131006">（不）＋愛【甲】</note>
+<note n="1131007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131007">取＝執【甲】</note>
+<note n="1131008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131008">言＋（相）【甲】</note>
+<note n="1131009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131009">繫＋（苦）【甲】</note>
+<note n="1131010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1131010">至＋（不）【甲】</note>
+<note n="1132001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132001">等＋（者）【甲】</note>
+<note n="1132002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132002">苦＝其【甲】</note>
+<note n="1132003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132003">（不）＋覺【甲】</note>
+<note n="1132004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132004">〔與〕－【甲】</note>
+<note n="1132005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132005">〔與〕－【甲】</note>
+<note n="1132006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132006">異＋（異）【甲】</note>
+<note n="1132007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132007">〔因〕－【甲】</note>
+<note n="1132008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132008">漏＋（至染）【甲】</note>
+<note n="1132009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132009">者＋（是無漏法性染幻差別者）【甲】</note>
+<note n="1132010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132010">緣＝染【甲】</note>
+<note n="1132011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132011">言＋（所）【甲】</note>
+<note n="1132012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132012">〔意〕－【甲】</note>
+<note n="1132013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132013">〔說〕－【甲】</note>
+<note n="1132014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132014">〔為〕－【甲】</note>
+<note n="1132015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132015">法相＝初教【甲】</note>
+<note n="1132016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132016">緣＋（如何說是生滅因緣）【甲】</note>
+<note n="1132017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132017">〔依此因緣〕－【甲】</note>
+<note n="1132018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132018">鎔融＝融通【甲】</note>
+<note n="1132019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132019">（依）＋於【甲】</note>
+<note n="1133001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133001">也＝云【甲】</note>
+<note n="1133002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133002">（分）＋別【甲】</note>
+<note n="1133003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133003">則＝於【甲】</note>
+<note n="1133004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133004">心＝分【甲】＊</note>
+<note n="1133005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133005">非＝有【甲】</note>
+<note n="1133006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133006">〔麁相說〕－【甲】</note>
+<note n="1133007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133007">是＋（真）【甲】</note>
+<note n="1133008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133008">〔於中…轉〕九字－【甲】</note>
+<note n="1133009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133009">起＋（由迷義合為二識一迷真起）【甲】</note>
+<note n="1133010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133010">故＝者【甲】</note>
+<note n="1133011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133011">何＋（為）【甲】</note>
+<note n="1133012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133012">故＋（說）【甲】</note>
+<note n="1133013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133013">心＋（所起）【甲】</note>
+<note n="1133014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133014">識＝諸【甲】</note>
+<note n="1134001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134001">（五）＋塵【甲】</note>
+<note n="1134002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134002">智＝知【甲】</note>
+<note n="1134003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134003">相＋（如）【甲】</note>
+<note n="1134004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134004">轉＝於【甲】</note>
+<note n="1134005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134005">相＝智【甲】</note>
+<note n="1134006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134006">教＋（異者有義諸教）【甲】</note>
+<note n="1134007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134007">即＝有【甲】</note>
+<note n="1134008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134008">所＋（執）【甲】</note>
+<note n="1134009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134009">漏＝攝【甲】</note>
+<note n="1134010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134010">（不）＋能【甲】</note>
+<note n="1134011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134011">（不）＋說【甲】</note>
+<note n="1134012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134012">（是）＋論【甲】</note>
+<note n="1134013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134013">〔本在諸識〕－【甲】</note>
+<note n="1134014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134014">耳＝爾【甲】</note>
+<note n="1134015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134015">〔者〕－【甲】</note>
+<note n="1134016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134016">亦＝六【甲】</note>
+<note n="1134017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134017">屬事識＝識事【甲】</note>
+<note n="1134018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134018">〔故故…違〕十七字－【甲】</note>
+<note n="1135001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135001">未＝迷【甲】</note>
+<note n="1135002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135002">〔五〕－【甲】</note>
+<note n="1135003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135003">（由）＋攝【甲】</note>
+<note n="1135004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135004">種＝識【甲】</note>
+<note n="1135005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135005">善＋（惡）【甲】</note>
+<note n="1135006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135006">果＝苦樂【甲】</note>
+<note n="1135007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135007">〔業〕－【甲】</note>
+<note n="1135008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135008">意＋（識）【甲】</note>
+<note n="1135009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135009">相＋（故）【甲】</note>
+<note n="1135010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135010">境＝憶【甲】</note>
+<note n="1135011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135011">（能）＋此【甲】</note>
+<note n="1136001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136001">外＝餘【甲】</note>
+<note n="1136002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136002">〔成〕－【甲】</note>
+<note n="1136003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136003">〔引〕－【甲】</note>
+<note n="1136004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136004">（殘）＋世【甲】</note>
+<note n="1136005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136005">前＝此【甲】</note>
+<note n="1136006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136006">法＝生【甲】</note>
+<note n="1136007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136007">色＝立【甲】</note>
+<note n="1136008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136008">變＋（而緣）【甲】</note>
+<note n="1136009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136009">善＝應【甲】</note>
+<note n="1136010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136010">聖＋（教）【甲】</note>
+<note n="1136011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136011">故＝有【甲】</note>
+<note n="1136012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136012">爾＝許【甲】</note>
+<note n="1136013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136013">前＝支【甲】</note>
+<note n="1136014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136014">害＝空【甲】</note>
+<note n="1136015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136015">義是＝是義【甲】</note>
+<note n="1136016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136016">生殺＝殺生【甲】</note>
+<note n="1136017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136017">習＋（力）【甲】</note>
+<note n="1136018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136018">怨＝惡【甲】</note>
+<note n="1136019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136019">〔增上力二識〕－【甲】</note>
+<note n="1136020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136020">廣＝應【甲】</note>
+<note n="1136021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136021">〔釋〕－【甲】</note>
+<note n="1136022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1136022">滅＋（故言）【甲】</note>
+<note n="1137001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137001">勝＝就【甲】</note>
+<note n="1137002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137002">所＝依【甲】</note>
+<note n="1137003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137003">續＋（識）【甲】</note>
+<note n="1137004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137004">〔我等…執〕二十三字－【甲】</note>
+<note n="1137005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137005">（相）＋續【甲】</note>
+<note n="1137006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137006">二＋（出）【甲】</note>
+<note n="1137007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137007">追＝退【甲】</note>
+<note n="1137008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137008">顯＝現【甲】</note>
+<note n="1137009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137009">蘊＋（非即）【甲】</note>
+<note n="1137010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137010">事＋（者）【甲】</note>
+<note n="1137011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137011">經＝云【甲】</note>
+<note n="1137012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137012">知＝去【甲】</note>
+<note n="1137013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137013">〔舉最強故〕－【甲】</note>
+<note n="1137014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137014">說＋（知）【甲】</note>
+<note n="1137015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137015">〔識〕－【甲】</note>
+<note n="1137016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137016">我＝愛【甲】</note>
+<note n="1137017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137017">諸＝法【甲】</note>
+<note n="1137018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137018">依凡＝凡夫【甲】</note>
+<note n="1137019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137019">說＝許【甲】</note>
+<note n="1138001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138001">〔為無…體〕二十一字－【甲】</note>
+<note n="1138002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138002">分＝心【甲】</note>
+<note n="1138003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138003">阿＋（陀）【甲】</note>
+<note n="1138004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138004">（若）＋至【甲】</note>
+<note n="1138005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138005">（甚）＋深【甲】</note>
+<note n="1138006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138006">染＝淨【甲】</note>
+<note n="1138007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138007">不＝常【甲】</note>
+<note n="1138008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138008">三＋（光遍勘）【甲】</note>
+<note n="1138009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138009">【原】大英博物館藏燉煌本, S. 2721, 首題新加</note>
+<note n="1138010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138010">首缺</note>
+<note n="1142001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1142001">〔以境滅時體不〕－？</note>
+<note n="1156001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1156001">【原】燉煌本，【甲】中村不折氏藏燉煌本，甲本首缺</note>
+<note n="1157001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1157001">無＋（上）？</note>
+<note n="1158001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1158001">因＝固？</note>
+<note n="1160001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1160001">以上甲本缺</note>
+<note n="1160002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1160002">〔已信〕－【甲】</note>
+<note n="1160003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1160003">〔住〕－【甲】</note>
+<note n="1161001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1161001">（解者所謂）＋解【甲】</note>
+<note n="1161002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1161002">〔顯異前故云深也〕－【甲】</note>
+<note n="1161003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1161003">（名）＋波【甲】</note>
+<note n="1162001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1162001">必＝不有【甲】</note>
+<note n="1162002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1162002">一＋（數）【甲】</note>
+<note n="1162003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1162003">〔義〕－【甲】</note>
+<note n="1163001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1163001">〔也〕－【甲】</note>
+<note n="1163002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1163002">（自）＋說【甲】</note>
+<note n="1164001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1164001">〔境〕－【甲】</note>
+<note n="1164002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1164002">〔以彼善〕－【甲】</note>
+<note n="1164003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1164003">〔本〕－【甲】</note>
+<note n="1165001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1165001">（常）＋現【甲】</note>
+<note n="1165002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1165002">故常＝常樂【甲】</note>
+<note n="1165003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1165003">〔皆即〕－【甲】</note>
+<note n="1166001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1166001">止＋（故言隨順止觀）【甲】</note>
+<note n="1166002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1166002">以下原本缺今依甲本補載之</note>
+<note n="1173001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1173001">文＝聞？</note>
+<note n="1174001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1174001">理＝利？</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="1150a1201" resp="#resp2" type="add" target="#nkr_note_add_1150a1201">貧【CB】，貪【大】</note>
-<note n="1167a0301" resp="#resp2" type="add" target="#nkr_note_add_1167a0301">謂【CB】，體【大】</note>
+<note n="1150a1201" resp="#resp3" type="add" target="#nkr_note_add_1150a1201">貧【CB】，貪【大】</note>
+<note n="1167a0301" resp="#resp3" type="add" target="#nkr_note_add_1167a0301">謂【CB】，體【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

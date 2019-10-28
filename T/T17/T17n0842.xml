@@ -11,162 +11,74 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.20 $<date>$Date: 2012/08/27 03:15:12 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-		<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.say</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/08/27 03:15:12 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 17, No. 842</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【明】</witness>
-		<witness xml:id="wit3">【宋】</witness>
-		<witness xml:id="wit4">【元】</witness>
-		<witness xml:id="wit5">【CB】</witness>
-		<witness xml:id="wit6">【麗-CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Mr. Christian Wittern, Text as inputted by Mr. Tseng Kuo-Feng and Mr. Leo Flamenco, Text as provided by Anonymous from USA, Punctuated text as provided by Chinese Buddhist Literary Foundation</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，維習安大德提供，曾國豐大德及小八極大德輸入，北美某大德提供，中華佛教百科文獻基金會提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.say</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">17</idno>.<idno type="no">842</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大方廣圓覺修多羅了義經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Mr. Christian Wittern, Text as inputted by Mr. Tseng Kuo-Feng and Mr. Leo Flamenco, Text as provided by Anonymous from USA, Punctuated text as provided by Chinese Buddhist Literary Foundation</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，維習安大德提供，曾國豐大德及小八極大德輸入，北美某大德提供，中華佛教百科文獻基金會提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【明】</witness>
+						<witness xml:id="wit2">【宋】</witness>
+						<witness xml:id="wit3">【元】</witness>
+						<witness xml:id="wit4">【麗-CB】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-10-12T10:16:43">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)</change>
-<!--
-$Log: T17n0842.xml,v $
-Revision 1.20  2012/08/27 03:15:12  maha
-修訂新標小圓點及著重號
-
-Revision 1.19  2010/05/14 07:29:43  amtbgrace
-modified: 按 2010/4/28 maha 來信修訂（主旨為: [經文修訂] [搏>摶]財＆[搏>摶]）
-
-Revision 1.18  2009/04/23 07:59:27  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.17  2009/03/19 09:14:12  saywhat
-TK修訂：p0913b20[波羅密>波羅蜜]
-
-Revision 1.16  2009/03/07 10:32:50  saywhat
-新式標點版
-
-Revision 1.15  2006/05/19 08:58:42  saywhat
-雙圈 改成 anchor 標記
-
-Revision 1.14  2006/04/12 21:55:22  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.12  2004/11/14 03:17:19  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.11  2004/10/12 16:02:56  saywhat
-段落前加入圈點
-
-Revision 1.10  2004/10/12 15:43:16  saywhat
-p0918a01 del <app>
-
-Revision 1.9  2004/09/11 10:23:30  saywhat
-修訂 juan close
-
-Revision 1.8  2004/05/11 14:39:04  saywhat
-修訂經號的<head> → <head type="no">
-
-Revision 1.7  2004/04/20 08:38:30  maha
-「版本日期」標記修訂
-
-Revision 1.6  2004/03/16 02:18:36  ray
-resp 屬性 統一格式為 CBETA.xxx
-
-Revision 1.5  2003/06/26 02:49:43  saywhat
-<corr>→<app>
-
-Revision 1.4  2003/06/23 06:10:30  saywhat
-[＊]校勘插入XML
-
-Revision 1.3  2003/06/02 05:28:05  saywhat
-CVS與2003/04版比對修訂
-
-Revision 1.2  2003/05/26 11:36:14  saywhat
-【宋】【元】【明】＊改成【宋】＊【元】＊【明】＊
-
-Revision 1.1.1.1  2003/05/05 04:09:04  ray
-recover cvs
-
-Revision 1.19  2002/12/05 06:38:03  saywhat
-校勘插入處理
-
-Revision 1.18  2002/11/04 10:43:50  ray
-tei.2 => TEI.2
-
-Revision 1.17  2002/10/07 13:08:39  moved
-modified
-
-Revision 1.16  2002/07/29 09:55:37  vinking
-modified lang
-
-Revision 1.15  2002/07/24 08:52:54  vinking
-modified
-
-Revision 1.14  2002/04/04 09:05:01  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.13  2002/03/15 01:01:56  saywhat
-見T17 經文修訂 20020308(maha).txt
-
-Revision 1.12  2001/07/27 07:12:22  ray
-去除多餘的 <author>
-
-Revision 1.11  2001/07/24 06:52:08  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.10  2001/05/25 08:57:30  ray
-經號統一為四碼
-
-Revision 1.9  2001/05/09 08:45:33  vinking
-modified gaiji
-
-Revision 1.8  2001/03/30 05:47:16  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/03/25 09:07:25  ray
-add <milestone>
-
-Revision 1.6  2001/02/07 06:52:50  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.5  2001/02/03 07:42:30  chris
-Added keywords $Revision: 1.20 $, $Date: 2012/08/27 03:15:12 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-10-12T10:16:43">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -989,187 +901,187 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0913005" to="#end0913005"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit2">經卷上</rdg></app>
-<app from="#beg0913006" to="#end0913006"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0913007" to="#end0913007"><lem wit="#wit1">三藏</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">沙門</rdg></app>
-<app from="#beg0913008" to="#end0913008"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit3 #wit4">于</rdg></app>
-<app from="#beg0913009" to="#end0913009"><lem wit="#wit5 #wit6" resp="#resp3">波羅蜜<note type="cf1">K13n0400_p0075c08</note></lem><rdg wit="#wit1">波羅密</rdg><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">波羅蜜</rdg></app>
-<app from="#beg0913010" to="#end0913010"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit3 #wit4">即</rdg></app>
-<app from="#beg0913011" to="#end0913011"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit3">即</rdg></app>
-<app from="#beg0914001" to="#end0914001"><lem wit="#wit1">由</lem><rdg resp="#resp1" wit="#wit3 #wit4">猶</rdg></app>
-<app from="#beg0914002" to="#end0914002"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit3">即</rdg></app>
-<app from="#beg0914003" to="#end0914003"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit2">即</rdg></app>
-<app from="#beg0914004" to="#end0914004"><lem wit="#wit1">靜</lem><rdg resp="#resp1" wit="#wit3">淨</rdg></app>
-<app from="#beg0914005" to="#end0914005"><lem wit="#wit1">恒</lem><rdg resp="#resp1" wit="#wit3 #wit4">常</rdg></app>
-<app from="#beg0915001" to="#end0915001"><lem wit="#wit1">不可說<lb n="0915a19" ed="T"/>阿僧祇</lem><rdg resp="#resp1" wit="#wit4 #wit2">阿僧祇不可說</rdg></app>
-<app from="#beg0915002" to="#end0915002"><lem wit="#wit1">猶</lem><rdg resp="#resp1" wit="#wit3">由</rdg></app>
-<app from="#beg0915003" to="#end0915003"><lem resp="#resp3" wit="#wit5 #wit6">任<note type="cf1">K13n0400_p0078a16</note></lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">作</rdg><rdg wit="#wit1">住</rdg></app>
-<app from="#beg0915004" to="#end0915004"><lem wit="#wit1">作</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">任</rdg></app>
-<app from="#beg0915005" to="#end0915005"><lem wit="#wit1">蒙</lem><rdg resp="#resp1" wit="#wit3">朦</rdg></app>
-<app from="#beg0915006" to="#end0915006"><lem wit="#wit1">辨</lem><rdg resp="#resp1" wit="#wit2">辯</rdg></app>
-<app from="#beg0915007" to="#end0915007"><lem wit="#wit1">猶</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">由</rdg></app>
-<app from="#beg0915008" to="#end0915008"><lem wit="#wit1">患</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">幻</rdg></app>
-<app from="#beg0915009" to="#end0915009"><lem wit="#wit1">瞖</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">翳</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0915008"><lem wit="#wit1">患</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">幻</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0915009"><lem wit="#wit1">瞖</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">翳</rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0915009"><lem wit="#wit1">瞖</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">翳</rdg></app>
-<app from="#beg_4" to="#end_4" corresp="#0915009"><lem wit="#wit1">瞖</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">翳</rdg></app>
-<app from="#beg_5" to="#end_5" corresp="#0915006"><lem wit="#wit1">辨</lem><rdg resp="#resp1" wit="#wit2">辯</rdg></app>
-<app from="#beg_6" to="#end_6" corresp="#0913011"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit3">即</rdg></app>
-<app from="#beg0916001" to="#end0916001"><lem wit="#wit1">菩提</lem><rdg resp="#resp1" wit="#wit4 #wit2">菩薩</rdg></app>
-<app from="#beg0917001" to="#end0917001"><lem wit="#wit1">一切諸來</lem><rdg resp="#resp1" wit="#wit2">諸來一切</rdg></app>
-<app from="#beg0917002" to="#end0917002"><lem wit="#wit1">諸菩薩及</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0917003" to="#end0917003"><lem wit="#wit1">猶</lem><rdg resp="#resp1" wit="#wit3 #wit4">由</rdg></app>
-<app from="#beg_7" to="#end_7" corresp="#0915006"><lem wit="#wit1">辨</lem><rdg resp="#resp1" wit="#wit2">辯</rdg></app>
-<app from="#beg0917004" to="#end0917004"><lem wit="#wit1">恒沙</lem><rdg resp="#resp1" wit="#wit3">河沙</rdg></app>
-<app from="#beg0917007" to="#end0917007"><lem wit="#wit1">淨</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">靜</rdg></app>
-<app from="#beg0918001" to="#end0918001"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2">于</rdg></app>
-<app from="#beg0918002" to="#end0918002"><lem wit="#wit1">順</lem><rdg resp="#resp1" wit="#wit4 #wit2">於</rdg></app>
-<app from="#beg0918003" to="#end0918003"><lem wit="#wit1">于</lem><rdg resp="#resp1" wit="#wit2">於</rdg></app>
-<app from="#beg0918004" to="#end0918004"><lem wit="#wit1">後</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">復</rdg></app>
-<app from="#beg0918005" to="#end0918005"><lem wit="#wit1">及修</lem><rdg resp="#resp1" wit="#wit4 #wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0918006" to="#end0918006"><lem wit="#wit1">在</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">住</rdg></app>
-<app from="#beg0919001" to="#end0919001"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2">作</rdg></app>
-<app from="#beg0919002" to="#end0919002"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">即</rdg></app>
-<app from="#beg0919003" to="#end0919003"><lem wit="#wit1">以</lem><rdg resp="#resp1" wit="#wit4 #wit2">認</rdg></app>
-<app from="#beg0919004" to="#end0919004"><lem wit="#wit1">即</lem><rdg resp="#resp1" wit="#wit3 #wit4">則</rdg></app>
-<app from="#beg0920001" to="#end0920001"><lem wit="#wit1">憐</lem><rdg resp="#resp1" wit="#wit3 #wit4">怜</rdg></app>
-<app from="#beg_8" to="#end_8" corresp="#0913011"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit3">即</rdg></app>
-<app from="#beg0920b1601" to="#end0920b1601"><lem wit="#wit5" resp="#resp3">摶<note type="cf1">X09n0243_p0407a10</note><note type="cf2">X10n0251_p0164a05</note></lem><rdg wit="#wit1">搏</rdg></app>
-<app from="#beg_9" to="#end_9" corresp="#0913011"><lem wit="#wit1">則</lem><rdg resp="#resp1" wit="#wit3">即</rdg></app>
-<app from="#beg0920002" to="#end0920002"><lem wit="#wit1">正覺</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">正見</rdg></app>
-<app from="#beg0920003" to="#end0920003"><lem wit="#wit1">常</lem><rdg resp="#resp1" wit="#wit4 #wit2">當</rdg></app>
-<app from="#beg0920004" to="#end0920004"><lem wit="#wit1">止</lem><rdg resp="#resp1" wit="#wit4 #wit2">正</rdg></app>
-<app from="#beg0921001" to="#end0921001"><lem wit="#wit1">今</lem><rdg resp="#resp1" wit="#wit3">等</rdg></app>
-<app from="#beg0921002" to="#end0921002"><lem wit="#wit1">齊</lem><rdg resp="#resp1" wit="#wit2">劑</rdg></app>
-<app from="#beg0921003" to="#end0921003"><lem wit="#wit1">行</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">求</rdg></app>
-<app from="#beg0921004" to="#end0921004"><lem resp="#resp4" wit="#wit5">銷</lem><rdg wit="#wit1">鎖</rdg><rdg resp="#resp1" wit="#wit2">消</rdg></app>
-<app from="#beg0921005" to="#end0921005"><lem wit="#wit1">千</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0922001" to="#end0922001"><lem wit="#wit1">足</lem><rdg resp="#resp1" wit="#wit2">足右繞三匝</rdg></app>
-<app from="#beg0922002" to="#end0922002"><lem wit="#wit1">天</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0922003" to="#end0922003"><lem wit="#wit1">茶</lem><rdg resp="#resp1" wit="#wit3 #wit4">荼</rdg></app>
-<app from="#beg0922004" to="#end0922004"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit2">經卷下</rdg></app>
+<app from="#beg0913005" to="#end0913005"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit1">經卷上</rdg></app>
+<app from="#beg0913006" to="#end0913006"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0913007" to="#end0913007"><lem wit="#wit.orig">三藏</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">沙門</rdg></app>
+<app from="#beg0913008" to="#end0913008"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit2 #wit3">于</rdg></app>
+<app from="#beg0913009" to="#end0913009"><lem wit="#wit.cbeta #wit4" resp="#resp3">波羅蜜<note type="cf1">K13n0400_p0075c08</note></lem><rdg wit="#wit.orig">波羅密</rdg><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">波羅蜜</rdg></app>
+<app from="#beg0913010" to="#end0913010"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit2 #wit3">即</rdg></app>
+<app from="#beg0913011" to="#end0913011"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit2">即</rdg></app>
+<app from="#beg0914001" to="#end0914001"><lem wit="#wit.orig">由</lem><rdg resp="#resp2" wit="#wit2 #wit3">猶</rdg></app>
+<app from="#beg0914002" to="#end0914002"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit2">即</rdg></app>
+<app from="#beg0914003" to="#end0914003"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit1">即</rdg></app>
+<app from="#beg0914004" to="#end0914004"><lem wit="#wit.orig">靜</lem><rdg resp="#resp2" wit="#wit2">淨</rdg></app>
+<app from="#beg0914005" to="#end0914005"><lem wit="#wit.orig">恒</lem><rdg resp="#resp2" wit="#wit2 #wit3">常</rdg></app>
+<app from="#beg0915001" to="#end0915001"><lem wit="#wit.orig">不可說<lb n="0915a19" ed="T"/>阿僧祇</lem><rdg resp="#resp2" wit="#wit3 #wit1">阿僧祇不可說</rdg></app>
+<app from="#beg0915002" to="#end0915002"><lem wit="#wit.orig">猶</lem><rdg resp="#resp2" wit="#wit2">由</rdg></app>
+<app from="#beg0915003" to="#end0915003"><lem resp="#resp3" wit="#wit.cbeta #wit4">任<note type="cf1">K13n0400_p0078a16</note></lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">作</rdg><rdg wit="#wit.orig">住</rdg></app>
+<app from="#beg0915004" to="#end0915004"><lem wit="#wit.orig">作</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">任</rdg></app>
+<app from="#beg0915005" to="#end0915005"><lem wit="#wit.orig">蒙</lem><rdg resp="#resp2" wit="#wit2">朦</rdg></app>
+<app from="#beg0915006" to="#end0915006"><lem wit="#wit.orig">辨</lem><rdg resp="#resp2" wit="#wit1">辯</rdg></app>
+<app from="#beg0915007" to="#end0915007"><lem wit="#wit.orig">猶</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">由</rdg></app>
+<app from="#beg0915008" to="#end0915008"><lem wit="#wit.orig">患</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">幻</rdg></app>
+<app from="#beg0915009" to="#end0915009"><lem wit="#wit.orig">瞖</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">翳</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0915008"><lem wit="#wit.orig">患</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">幻</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0915009"><lem wit="#wit.orig">瞖</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">翳</rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0915009"><lem wit="#wit.orig">瞖</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">翳</rdg></app>
+<app from="#beg_4" to="#end_4" corresp="#0915009"><lem wit="#wit.orig">瞖</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">翳</rdg></app>
+<app from="#beg_5" to="#end_5" corresp="#0915006"><lem wit="#wit.orig">辨</lem><rdg resp="#resp2" wit="#wit1">辯</rdg></app>
+<app from="#beg_6" to="#end_6" corresp="#0913011"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit2">即</rdg></app>
+<app from="#beg0916001" to="#end0916001"><lem wit="#wit.orig">菩提</lem><rdg resp="#resp2" wit="#wit3 #wit1">菩薩</rdg></app>
+<app from="#beg0917001" to="#end0917001"><lem wit="#wit.orig">一切諸來</lem><rdg resp="#resp2" wit="#wit1">諸來一切</rdg></app>
+<app from="#beg0917002" to="#end0917002"><lem wit="#wit.orig">諸菩薩及</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0917003" to="#end0917003"><lem wit="#wit.orig">猶</lem><rdg resp="#resp2" wit="#wit2 #wit3">由</rdg></app>
+<app from="#beg_7" to="#end_7" corresp="#0915006"><lem wit="#wit.orig">辨</lem><rdg resp="#resp2" wit="#wit1">辯</rdg></app>
+<app from="#beg0917004" to="#end0917004"><lem wit="#wit.orig">恒沙</lem><rdg resp="#resp2" wit="#wit2">河沙</rdg></app>
+<app from="#beg0917007" to="#end0917007"><lem wit="#wit.orig">淨</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">靜</rdg></app>
+<app from="#beg0918001" to="#end0918001"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1">于</rdg></app>
+<app from="#beg0918002" to="#end0918002"><lem wit="#wit.orig">順</lem><rdg resp="#resp2" wit="#wit3 #wit1">於</rdg></app>
+<app from="#beg0918003" to="#end0918003"><lem wit="#wit.orig">于</lem><rdg resp="#resp2" wit="#wit1">於</rdg></app>
+<app from="#beg0918004" to="#end0918004"><lem wit="#wit.orig">後</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">復</rdg></app>
+<app from="#beg0918005" to="#end0918005"><lem wit="#wit.orig">及修</lem><rdg resp="#resp2" wit="#wit3 #wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0918006" to="#end0918006"><lem wit="#wit.orig">在</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">住</rdg></app>
+<app from="#beg0919001" to="#end0919001"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1">作</rdg></app>
+<app from="#beg0919002" to="#end0919002"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">即</rdg></app>
+<app from="#beg0919003" to="#end0919003"><lem wit="#wit.orig">以</lem><rdg resp="#resp2" wit="#wit3 #wit1">認</rdg></app>
+<app from="#beg0919004" to="#end0919004"><lem wit="#wit.orig">即</lem><rdg resp="#resp2" wit="#wit2 #wit3">則</rdg></app>
+<app from="#beg0920001" to="#end0920001"><lem wit="#wit.orig">憐</lem><rdg resp="#resp2" wit="#wit2 #wit3">怜</rdg></app>
+<app from="#beg_8" to="#end_8" corresp="#0913011"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit2">即</rdg></app>
+<app from="#beg0920b1601" to="#end0920b1601"><lem wit="#wit.cbeta" resp="#resp3">摶<note type="cf1">X09n0243_p0407a10</note><note type="cf2">X10n0251_p0164a05</note></lem><rdg wit="#wit.orig">搏</rdg></app>
+<app from="#beg_9" to="#end_9" corresp="#0913011"><lem wit="#wit.orig">則</lem><rdg resp="#resp2" wit="#wit2">即</rdg></app>
+<app from="#beg0920002" to="#end0920002"><lem wit="#wit.orig">正覺</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">正見</rdg></app>
+<app from="#beg0920003" to="#end0920003"><lem wit="#wit.orig">常</lem><rdg resp="#resp2" wit="#wit3 #wit1">當</rdg></app>
+<app from="#beg0920004" to="#end0920004"><lem wit="#wit.orig">止</lem><rdg resp="#resp2" wit="#wit3 #wit1">正</rdg></app>
+<app from="#beg0921001" to="#end0921001"><lem wit="#wit.orig">今</lem><rdg resp="#resp2" wit="#wit2">等</rdg></app>
+<app from="#beg0921002" to="#end0921002"><lem wit="#wit.orig">齊</lem><rdg resp="#resp2" wit="#wit1">劑</rdg></app>
+<app from="#beg0921003" to="#end0921003"><lem wit="#wit.orig">行</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">求</rdg></app>
+<app from="#beg0921004" to="#end0921004"><lem resp="#resp4" wit="#wit.cbeta">銷</lem><rdg wit="#wit.orig">鎖</rdg><rdg resp="#resp2" wit="#wit1">消</rdg></app>
+<app from="#beg0921005" to="#end0921005"><lem wit="#wit.orig">千</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0922001" to="#end0922001"><lem wit="#wit.orig">足</lem><rdg resp="#resp2" wit="#wit1">足右繞三匝</rdg></app>
+<app from="#beg0922002" to="#end0922002"><lem wit="#wit.orig">天</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0922003" to="#end0922003"><lem wit="#wit.orig">茶</lem><rdg resp="#resp2" wit="#wit2 #wit3">荼</rdg></app>
+<app from="#beg0922004" to="#end0922004"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit1">經卷下</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0913005" resp="#resp2" type="mod" target="#nkr_note_mod_0913005">經【大】，經卷上【明】</note>
-<note n="0913006" resp="#resp2" type="mod" target="#nkr_note_mod_0913006">大【大】，〔－〕【宋】【元】【明】</note>
-<note n="0913007" resp="#resp2" type="mod" target="#nkr_note_mod_0913007">三藏【大】，沙門【宋】【元】【明】</note>
-<note n="0913008" resp="#resp2" type="mod" target="#nkr_note_mod_0913008">於【大】，于【宋】【元】</note>
-<note n="0913009" resp="#resp2" type="mod" target="#nkr_note_mod_0913009">波羅蜜【CB】【麗-CB】【宋】【元】【明】，波羅密【大】</note>
-<note n="0913010" resp="#resp2" type="mod" target="#nkr_note_mod_0913010">則【大】，即【宋】【元】</note>
-<note n="0913011" resp="#resp2" type="mod" target="#nkr_note_mod_0913011">則【大】＊，即【宋】＊</note>
-<note n="0914001" resp="#resp2" type="mod" target="#nkr_note_mod_0914001">由【大】，猶【宋】【元】</note>
-<note n="0914002" resp="#resp2" type="mod" target="#nkr_note_mod_0914002">則【大】，即【宋】，明註曰則流行本作即</note>
-<note n="0914003" resp="#resp2" type="mod" target="#nkr_note_mod_0914003">則【大】，即【明】</note>
-<note n="0914004" resp="#resp2" type="mod" target="#nkr_note_mod_0914004">靜【大】，淨【宋】</note>
-<note n="0914005" resp="#resp2" type="mod" target="#nkr_note_mod_0914005">恒【大】，常【宋】【元】</note>
-<note n="0915001" resp="#resp2" type="mod" target="#nkr_note_mod_0915001">不可說阿僧祇【大】，阿僧祇不可說【元】【明】</note>
-<note n="0915002" resp="#resp2" type="mod" target="#nkr_note_mod_0915002">猶【大】，由【宋】</note>
-<note n="0915003" resp="#resp2" type="mod" target="#nkr_note_mod_0915003">作【CB】【麗-CB】【宋】【元】【明】，住【大】</note>
-<note n="0915004" resp="#resp2" type="mod" target="#nkr_note_mod_0915004">作【大】，任【宋】【元】【明】</note>
-<note n="0915005" resp="#resp2" type="mod" target="#nkr_note_mod_0915005">蒙【大】，朦【宋】</note>
-<note n="0915006" resp="#resp2" type="mod" target="#nkr_note_mod_0915006">辨【大】＊，辯【明】＊</note>
-<note n="0915007" resp="#resp2" type="mod" target="#nkr_note_mod_0915007">猶【大】，由【宋】【元】【明】</note>
-<note n="0915008" resp="#resp2" type="mod" target="#nkr_note_mod_0915008">患【大】＊，幻【宋】＊【元】＊【明】＊</note>
-<note n="0915009" resp="#resp2" type="mod" target="#nkr_note_mod_0915009">瞖【大】＊，翳【宋】＊【元】＊【明】＊</note>
-<note n="0916001" resp="#resp2" type="mod" target="#nkr_note_mod_0916001">菩提【大】，菩薩【元】【明】</note>
-<note n="0917001" resp="#resp2" type="mod" target="#nkr_note_mod_0917001">一切諸來【大】，諸來一切【明】</note>
-<note n="0917002" resp="#resp2" type="mod" target="#nkr_note_mod_0917002">諸菩薩及【大】，〔－〕【宋】【元】【明】</note>
-<note n="0917003" resp="#resp2" type="mod" target="#nkr_note_mod_0917003">猶【大】，由【宋】【元】</note>
-<note n="0917004" resp="#resp2" type="mod" target="#nkr_note_mod_0917004">恒沙【大】，河沙【宋】</note>
-<note n="0917005" resp="#resp2" type="mod" target="#nkr_note_mod_0917005"><!--CBETA todo type: a-->卷上終【明】</note>
-<note n="0917006" resp="#resp2" type="mod" target="#nkr_note_mod_0917006"><!--CBETA todo type: a-->卷下首【明】</note>
-<note n="0917007" resp="#resp2" type="mod" target="#nkr_note_mod_0917007">淨【大】，靜【宋】【元】【明】</note>
-<note n="0918001" resp="#resp2" type="mod" target="#nkr_note_mod_0918001"><!--CBETA todo type: ＊-->於【大】＊，于【明】＊</note>
-<note n="0918002" resp="#resp2" type="mod" target="#nkr_note_mod_0918002">順【大】，於【元】【明】</note>
-<note n="0918003" resp="#resp2" type="mod" target="#nkr_note_mod_0918003">于【大】，於【明】</note>
-<note n="0918004" resp="#resp2" type="mod" target="#nkr_note_mod_0918004">後【大】，復【宋】【元】【明】</note>
-<note n="0918005" resp="#resp2" type="mod" target="#nkr_note_mod_0918005">及修【大】，〔－〕【元】【明】</note>
-<note n="0918006" resp="#resp2" type="mod" target="#nkr_note_mod_0918006">在【大】，住【宋】【元】【明】</note>
-<note n="0919001" resp="#resp2" type="mod" target="#nkr_note_mod_0919001">說【大】，作【明】</note>
-<note n="0919002" resp="#resp2" type="mod" target="#nkr_note_mod_0919002">則【大】，即【宋】【元】【明】</note>
-<note n="0919003" resp="#resp2" type="mod" target="#nkr_note_mod_0919003">以【大】，認【元】【明】</note>
-<note n="0919004" resp="#resp2" type="mod" target="#nkr_note_mod_0919004">即【大】，則【宋】【元】</note>
-<note n="0920001" resp="#resp2" type="mod" target="#nkr_note_mod_0920001">憐【大】，怜【宋】【元】</note>
-<note n="0920002" resp="#resp2" type="mod" target="#nkr_note_mod_0920002">正覺【大】，正見【宋】【元】【明】</note>
-<note n="0920003" resp="#resp2" type="mod" target="#nkr_note_mod_0920003">常【大】，當【元】【明】</note>
-<note n="0920004" resp="#resp2" type="mod" target="#nkr_note_mod_0920004">止【大】，正【元】【明】</note>
-<note n="0921001" resp="#resp2" type="mod" target="#nkr_note_mod_0921001">今【大】，等【宋】</note>
-<note n="0921002" resp="#resp2" type="mod" target="#nkr_note_mod_0921002">齊【大】，劑【明】</note>
-<note n="0921003" resp="#resp2" type="mod" target="#nkr_note_mod_0921003">行【大】，求【宋】【元】【明】</note>
-<note n="0921004" resp="#resp2" type="mod" target="#nkr_note_mod_0921004">銷【大】，消【明】</note>
-<note n="0921005" resp="#resp2" type="mod" target="#nkr_note_mod_0921005">千【大】，〔－〕【宋】【元】【明】</note>
-<note n="0922001" resp="#resp2" type="mod" target="#nkr_note_mod_0922001">足【大】，足右繞三匝【明】</note>
-<note n="0922002" resp="#resp2" type="mod" target="#nkr_note_mod_0922002">天【大】，〔－〕【明】</note>
-<note n="0922003" resp="#resp2" type="mod" target="#nkr_note_mod_0922003">茶【大】，荼【宋】【元】</note>
-<note n="0922004" resp="#resp2" type="mod" target="#nkr_note_mod_0922004">經【大】，經卷下【明】</note>
+<note n="0913005" resp="#resp1" type="mod" target="#nkr_note_mod_0913005">經【大】，經卷上【明】</note>
+<note n="0913006" resp="#resp1" type="mod" target="#nkr_note_mod_0913006">大【大】，〔－〕【宋】【元】【明】</note>
+<note n="0913007" resp="#resp1" type="mod" target="#nkr_note_mod_0913007">三藏【大】，沙門【宋】【元】【明】</note>
+<note n="0913008" resp="#resp1" type="mod" target="#nkr_note_mod_0913008">於【大】，于【宋】【元】</note>
+<note n="0913009" resp="#resp1" type="mod" target="#nkr_note_mod_0913009">波羅蜜【CB】【麗-CB】【宋】【元】【明】，波羅密【大】</note>
+<note n="0913010" resp="#resp1" type="mod" target="#nkr_note_mod_0913010">則【大】，即【宋】【元】</note>
+<note n="0913011" resp="#resp1" type="mod" target="#nkr_note_mod_0913011">則【大】＊，即【宋】＊</note>
+<note n="0914001" resp="#resp1" type="mod" target="#nkr_note_mod_0914001">由【大】，猶【宋】【元】</note>
+<note n="0914002" resp="#resp1" type="mod" target="#nkr_note_mod_0914002">則【大】，即【宋】，明註曰則流行本作即</note>
+<note n="0914003" resp="#resp1" type="mod" target="#nkr_note_mod_0914003">則【大】，即【明】</note>
+<note n="0914004" resp="#resp1" type="mod" target="#nkr_note_mod_0914004">靜【大】，淨【宋】</note>
+<note n="0914005" resp="#resp1" type="mod" target="#nkr_note_mod_0914005">恒【大】，常【宋】【元】</note>
+<note n="0915001" resp="#resp1" type="mod" target="#nkr_note_mod_0915001">不可說阿僧祇【大】，阿僧祇不可說【元】【明】</note>
+<note n="0915002" resp="#resp1" type="mod" target="#nkr_note_mod_0915002">猶【大】，由【宋】</note>
+<note n="0915003" resp="#resp1" type="mod" target="#nkr_note_mod_0915003">作【CB】【麗-CB】【宋】【元】【明】，住【大】</note>
+<note n="0915004" resp="#resp1" type="mod" target="#nkr_note_mod_0915004">作【大】，任【宋】【元】【明】</note>
+<note n="0915005" resp="#resp1" type="mod" target="#nkr_note_mod_0915005">蒙【大】，朦【宋】</note>
+<note n="0915006" resp="#resp1" type="mod" target="#nkr_note_mod_0915006">辨【大】＊，辯【明】＊</note>
+<note n="0915007" resp="#resp1" type="mod" target="#nkr_note_mod_0915007">猶【大】，由【宋】【元】【明】</note>
+<note n="0915008" resp="#resp1" type="mod" target="#nkr_note_mod_0915008">患【大】＊，幻【宋】＊【元】＊【明】＊</note>
+<note n="0915009" resp="#resp1" type="mod" target="#nkr_note_mod_0915009">瞖【大】＊，翳【宋】＊【元】＊【明】＊</note>
+<note n="0916001" resp="#resp1" type="mod" target="#nkr_note_mod_0916001">菩提【大】，菩薩【元】【明】</note>
+<note n="0917001" resp="#resp1" type="mod" target="#nkr_note_mod_0917001">一切諸來【大】，諸來一切【明】</note>
+<note n="0917002" resp="#resp1" type="mod" target="#nkr_note_mod_0917002">諸菩薩及【大】，〔－〕【宋】【元】【明】</note>
+<note n="0917003" resp="#resp1" type="mod" target="#nkr_note_mod_0917003">猶【大】，由【宋】【元】</note>
+<note n="0917004" resp="#resp1" type="mod" target="#nkr_note_mod_0917004">恒沙【大】，河沙【宋】</note>
+<note n="0917005" resp="#resp1" type="mod" target="#nkr_note_mod_0917005"><!--CBETA todo type: a-->卷上終【明】</note>
+<note n="0917006" resp="#resp1" type="mod" target="#nkr_note_mod_0917006"><!--CBETA todo type: a-->卷下首【明】</note>
+<note n="0917007" resp="#resp1" type="mod" target="#nkr_note_mod_0917007">淨【大】，靜【宋】【元】【明】</note>
+<note n="0918001" resp="#resp1" type="mod" target="#nkr_note_mod_0918001"><!--CBETA todo type: ＊-->於【大】＊，于【明】＊</note>
+<note n="0918002" resp="#resp1" type="mod" target="#nkr_note_mod_0918002">順【大】，於【元】【明】</note>
+<note n="0918003" resp="#resp1" type="mod" target="#nkr_note_mod_0918003">于【大】，於【明】</note>
+<note n="0918004" resp="#resp1" type="mod" target="#nkr_note_mod_0918004">後【大】，復【宋】【元】【明】</note>
+<note n="0918005" resp="#resp1" type="mod" target="#nkr_note_mod_0918005">及修【大】，〔－〕【元】【明】</note>
+<note n="0918006" resp="#resp1" type="mod" target="#nkr_note_mod_0918006">在【大】，住【宋】【元】【明】</note>
+<note n="0919001" resp="#resp1" type="mod" target="#nkr_note_mod_0919001">說【大】，作【明】</note>
+<note n="0919002" resp="#resp1" type="mod" target="#nkr_note_mod_0919002">則【大】，即【宋】【元】【明】</note>
+<note n="0919003" resp="#resp1" type="mod" target="#nkr_note_mod_0919003">以【大】，認【元】【明】</note>
+<note n="0919004" resp="#resp1" type="mod" target="#nkr_note_mod_0919004">即【大】，則【宋】【元】</note>
+<note n="0920001" resp="#resp1" type="mod" target="#nkr_note_mod_0920001">憐【大】，怜【宋】【元】</note>
+<note n="0920002" resp="#resp1" type="mod" target="#nkr_note_mod_0920002">正覺【大】，正見【宋】【元】【明】</note>
+<note n="0920003" resp="#resp1" type="mod" target="#nkr_note_mod_0920003">常【大】，當【元】【明】</note>
+<note n="0920004" resp="#resp1" type="mod" target="#nkr_note_mod_0920004">止【大】，正【元】【明】</note>
+<note n="0921001" resp="#resp1" type="mod" target="#nkr_note_mod_0921001">今【大】，等【宋】</note>
+<note n="0921002" resp="#resp1" type="mod" target="#nkr_note_mod_0921002">齊【大】，劑【明】</note>
+<note n="0921003" resp="#resp1" type="mod" target="#nkr_note_mod_0921003">行【大】，求【宋】【元】【明】</note>
+<note n="0921004" resp="#resp1" type="mod" target="#nkr_note_mod_0921004">銷【大】，消【明】</note>
+<note n="0921005" resp="#resp1" type="mod" target="#nkr_note_mod_0921005">千【大】，〔－〕【宋】【元】【明】</note>
+<note n="0922001" resp="#resp1" type="mod" target="#nkr_note_mod_0922001">足【大】，足右繞三匝【明】</note>
+<note n="0922002" resp="#resp1" type="mod" target="#nkr_note_mod_0922002">天【大】，〔－〕【明】</note>
+<note n="0922003" resp="#resp1" type="mod" target="#nkr_note_mod_0922003">茶【大】，荼【宋】【元】</note>
+<note n="0922004" resp="#resp1" type="mod" target="#nkr_note_mod_0922004">經【大】，經卷下【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0913004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913004">本經明本分為二卷</note>
-<note n="0913005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913005">經＋（卷上）【明】</note>
-<note n="0913006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913006">〔大〕－【三】</note>
-<note n="0913007" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913007">三藏＝沙門【三】</note>
-<note n="0913008" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913008">於＝于【宋】【元】</note>
-<note n="0913009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913009">波羅密＝波羅蜜【三】</note>
-<note n="0913010" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913010">則＝即【宋】【元】</note>
-<note n="0913011" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0913011">則＝即【宋】＊</note>
-<note n="0914001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0914001">由＝猶【宋】【元】</note>
-<note n="0914002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0914002">則＝即【宋】，明註曰則流行本作即</note>
-<note n="0914003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0914003">則＝即【明】</note>
-<note n="0914004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0914004">靜＝淨【宋】</note>
-<note n="0914005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0914005">恒＝常【宋】【元】</note>
-<note n="0915001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915001">不可說阿僧祇＝阿僧祇不可說【元】【明】</note>
-<note n="0915002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915002">猶＝由【宋】</note>
-<note n="0915003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915003">住＝作【三】</note>
-<note n="0915004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915004">作＝任【三】</note>
-<note n="0915005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915005">蒙＝朦【宋】</note>
-<note n="0915006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915006">辨＝辯【明】＊</note>
-<note n="0915007" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915007">猶＝由【三】</note>
-<note n="0915008" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915008">患＝幻【三】＊</note>
-<note n="0915009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0915009">瞖＝翳【三】＊</note>
-<note n="0916001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0916001">菩提＝菩薩【元】【明】</note>
-<note n="0917001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0917001">一切諸來＝諸來一切【明】</note>
-<note n="0917002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0917002">〔諸菩薩及〕－【三】</note>
-<note n="0917003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0917003">猶＝由【宋】【元】</note>
-<note n="0917004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0917004">恒沙＝河沙【宋】</note>
-<note n="0917005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0917005">卷上終【明】</note>
-<note n="0917006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0917006">卷下首【明】</note>
-<note n="0917007" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0917007">淨＝靜【三】</note>
-<note n="0918001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0918001">於＝于【明】＊</note>
-<note n="0918002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0918002">順＝於【元】【明】</note>
-<note n="0918003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0918003">于＝於【明】</note>
-<note n="0918004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0918004">後＝復【三】</note>
-<note n="0918005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0918005">〔及修〕－【元】【明】</note>
-<note n="0918006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0918006">在＝住【三】</note>
-<note n="0919001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0919001">說＝作【明】</note>
-<note n="0919002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0919002">則＝即【三】</note>
-<note n="0919003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0919003">以＝認【元】【明】</note>
-<note n="0919004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0919004">即＝則【宋】【元】</note>
-<note n="0920001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0920001">憐＝怜【宋】【元】</note>
-<note n="0920002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0920002">正覺＝正見【三】</note>
-<note n="0920003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0920003">常＝當【元】【明】</note>
-<note n="0920004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0920004">止＝正【元】【明】</note>
-<note n="0921001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0921001">今＝等【宋】</note>
-<note n="0921002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0921002">齊＝劑【明】</note>
-<note n="0921003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0921003">行＝求【三】</note>
-<note n="0921004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0921004">銷＝消【明】</note>
-<note n="0921005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0921005">〔千〕－【三】</note>
-<note n="0922001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0922001">足＋（右繞三匝）【明】</note>
-<note n="0922002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0922002">〔天〕－【明】</note>
-<note n="0922003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0922003">茶＝荼【宋】【元】</note>
-<note n="0922004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0922004">經＋（卷下）【明】</note>
+<note n="0913004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913004">本經明本分為二卷</note>
+<note n="0913005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913005">經＋（卷上）【明】</note>
+<note n="0913006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913006">〔大〕－【三】</note>
+<note n="0913007" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913007">三藏＝沙門【三】</note>
+<note n="0913008" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913008">於＝于【宋】【元】</note>
+<note n="0913009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913009">波羅密＝波羅蜜【三】</note>
+<note n="0913010" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913010">則＝即【宋】【元】</note>
+<note n="0913011" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0913011">則＝即【宋】＊</note>
+<note n="0914001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0914001">由＝猶【宋】【元】</note>
+<note n="0914002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0914002">則＝即【宋】，明註曰則流行本作即</note>
+<note n="0914003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0914003">則＝即【明】</note>
+<note n="0914004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0914004">靜＝淨【宋】</note>
+<note n="0914005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0914005">恒＝常【宋】【元】</note>
+<note n="0915001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915001">不可說阿僧祇＝阿僧祇不可說【元】【明】</note>
+<note n="0915002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915002">猶＝由【宋】</note>
+<note n="0915003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915003">住＝作【三】</note>
+<note n="0915004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915004">作＝任【三】</note>
+<note n="0915005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915005">蒙＝朦【宋】</note>
+<note n="0915006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915006">辨＝辯【明】＊</note>
+<note n="0915007" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915007">猶＝由【三】</note>
+<note n="0915008" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915008">患＝幻【三】＊</note>
+<note n="0915009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0915009">瞖＝翳【三】＊</note>
+<note n="0916001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0916001">菩提＝菩薩【元】【明】</note>
+<note n="0917001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0917001">一切諸來＝諸來一切【明】</note>
+<note n="0917002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0917002">〔諸菩薩及〕－【三】</note>
+<note n="0917003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0917003">猶＝由【宋】【元】</note>
+<note n="0917004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0917004">恒沙＝河沙【宋】</note>
+<note n="0917005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0917005">卷上終【明】</note>
+<note n="0917006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0917006">卷下首【明】</note>
+<note n="0917007" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0917007">淨＝靜【三】</note>
+<note n="0918001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0918001">於＝于【明】＊</note>
+<note n="0918002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0918002">順＝於【元】【明】</note>
+<note n="0918003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0918003">于＝於【明】</note>
+<note n="0918004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0918004">後＝復【三】</note>
+<note n="0918005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0918005">〔及修〕－【元】【明】</note>
+<note n="0918006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0918006">在＝住【三】</note>
+<note n="0919001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0919001">說＝作【明】</note>
+<note n="0919002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0919002">則＝即【三】</note>
+<note n="0919003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0919003">以＝認【元】【明】</note>
+<note n="0919004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0919004">即＝則【宋】【元】</note>
+<note n="0920001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0920001">憐＝怜【宋】【元】</note>
+<note n="0920002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0920002">正覺＝正見【三】</note>
+<note n="0920003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0920003">常＝當【元】【明】</note>
+<note n="0920004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0920004">止＝正【元】【明】</note>
+<note n="0921001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0921001">今＝等【宋】</note>
+<note n="0921002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0921002">齊＝劑【明】</note>
+<note n="0921003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0921003">行＝求【三】</note>
+<note n="0921004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0921004">銷＝消【明】</note>
+<note n="0921005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0921005">〔千〕－【三】</note>
+<note n="0922001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0922001">足＋（右繞三匝）【明】</note>
+<note n="0922002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0922002">〔天〕－【明】</note>
+<note n="0922003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0922003">茶＝荼【宋】【元】</note>
+<note n="0922004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0922004">經＋（卷下）【明】</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0920b1601" resp="#resp2" type="add" target="#nkr_note_add_0920b1601">摶【CB】，搏【大】</note>
+<note n="0920b1601" resp="#resp1" type="add" target="#nkr_note_add_0920b1601">摶【CB】，搏【大】</note>
 </p>
 </cb:div>
 <cb:div type="rest-notes">

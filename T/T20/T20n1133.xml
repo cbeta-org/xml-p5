@@ -11,122 +11,74 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.8 $<date>$Date: 2009/04/23 08:01:21 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:21 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 20, No. 1133</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【甲】</witness>
-		<witness xml:id="wit5">【明】</witness>
-		<witness xml:id="wit6">【乙】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">20</idno>.<idno type="no">1133</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">金剛壽命陀羅尼念誦法</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【甲】</witness>
+						<witness xml:id="wit4">【明】</witness>
+						<witness xml:id="wit5">【乙】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-24T11:15:15">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T20n1133.xml,v $
-Revision 1.8  2009/04/23 08:01:21  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.7  2006/04/12 21:55:46  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.5  2004/10/21 08:20:04  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/04/20 08:39:02  maha
-「版本日期」標記修訂
-
-Revision 1.3  2003/12/05 00:32:26  ray
-<rdg> 版本重複處理
-
-Revision 1.2  2003/06/23 06:16:04  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:22  ray
-recover cvs
-
-Revision 1.17  2002/12/05 05:20:25  saywhat
-校勘插入處理
-
-Revision 1.16  2002/11/04 10:45:37  ray
-tei.2 => TEI.2
-
-Revision 1.15  2002/10/21 08:13:02  ray
-移動 <anchor>+<note>, <anchor>+雙圈
-
-Revision 1.14  2002/10/07 13:11:57  moved
-modified
-
-Revision 1.13  2002/08/28 08:52:22  saywhat
-T20 經文修訂 20020721-maha.txt
-
-Revision 1.12  2002/07/29 09:56:46  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:05:48  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:13:52  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/24 06:53:18  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/04/01 08:18:29  ray
-CB00380 => CB00308
-
-Revision 1.7  2001/03/30 05:55:32  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:15:29  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:56:19  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:46:15  chris
-Added keywords $Revision: 1.8 $, $Date: 2009/04/23 08:01:21 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-24T11:15:15">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -214,102 +166,102 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app cb:word-count="37" from="#beg0575009" to="#end0575009"><lem wit="#wit1">開府儀同三司特進試鴻臚卿肅國<lb n="0575a17" ed="T"/>公食邑三千戶賜紫贈司空諡大鑒<lb n="0575a18" ed="T"/>正號大廣智大興善寺</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">南天竺國</rdg><rdg resp="#resp1" wit="#wit5 #wit6">唐南天竺國</rdg></app>
-<app from="#beg0575010" to="#end0575010"><lem wit="#wit1">藏</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">藏金剛智與</rdg></app>
-<app from="#beg0575011" to="#end0575011"><lem wit="#wit1">峯</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0575012" to="#end0575012"><lem wit="#wit1">法</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit4 #wit6"><space quantity="0"/></rdg></app>
-<app from="#beg0575013" to="#end0575013"><lem wit="#wit1">及</lem><rdg resp="#resp1" wit="#wit5 #wit6">佛</rdg></app>
-<app from="#beg0575014" to="#end0575014"><lem wit="#wit1">唯</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">惟</rdg></app>
-<app from="#beg0575015" to="#end0575015"><lem wit="#wit1">悲</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">慈</rdg></app>
-<app from="#beg0575016" to="#end0575016"><lem wit="#wit1">摩</lem><rdg resp="#resp1" wit="#wit2 #wit3">魔</rdg></app>
-<app from="#beg0575017" to="#end0575017"><lem wit="#wit1">授</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit4 #wit6">受</rdg></app>
-<app from="#beg0575018" to="#end0575018"><lem wit="#wit1">唵</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">唵<note place="inline">引一</note></rdg></app>
-<app from="#beg0575019" to="#end0575019"><lem wit="#wit1">矖</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit4 #wit6">曬</rdg></app>
-<app from="#beg0575020" to="#end0575020"><lem wit="#wit1">引</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">引二</rdg></app>
-<app from="#beg0575021" to="#end0575021"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit4 #wit6"><space quantity="0"/></rdg></app>
-<app from="#beg0575022" to="#end0575022"><lem wit="#wit1">心觀</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">觀心</rdg></app>
-<app from="#beg0575023" to="#end0575023"><lem wit="#wit1">項</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">頂</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0575018"><lem wit="#wit1">唵</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">唵<note place="inline">引一</note></rdg></app>
-<app from="#beg0575024" to="#end0575024"><lem wit="#wit1">砧</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">碪</rdg></app>
-<app from="#beg0575025" to="#end0575025"><lem wit="#wit1">反</lem><rdg resp="#resp1" wit="#wit2 #wit3">反二</rdg><rdg resp="#resp1" wit="#wit5 #wit6">切二</rdg></app>
-<app from="#beg0575026" to="#end0575026"><lem wit="#wit1">合</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">合引</rdg></app>
-<app from="#beg0575027" to="#end0575027"><lem wit="#wit1">欲</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">欲<note place="inline">三</note></rdg></app>
-<app from="#beg0575028" to="#end0575028"><lem wit="#wit1">畫</lem><rdg resp="#resp1" wit="#wit3">盡</rdg></app>
-<app from="#beg0575029" to="#end0575029"><lem wit="#wit1">白</lem><rdg resp="#resp1" wit="#wit2">自</rdg></app>
-<app from="#beg0575030" to="#end0575030"><lem wit="#wit1">緣</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit4 #wit6">安緣</rdg></app>
-<app from="#beg0575031" to="#end0575031"><lem wit="#wit1">莖</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6"><space quantity="0"/></rdg></app>
-<app from="#beg0575032" to="#end0575032"><lem wit="#wit1">酥</lem><rdg resp="#resp1" wit="#wit2 #wit4">蘇</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0575032"><lem wit="#wit1">酥</lem><rdg resp="#resp1" wit="#wit2 #wit4">蘇</rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0575032"><lem wit="#wit1">酥</lem><rdg resp="#resp1" wit="#wit2 #wit4">蘇</rdg></app>
-<app from="#beg0575033" to="#end0575033"><lem wit="#wit1">擲</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5 #wit6">擲一莖</rdg></app>
-<app from="#beg_4" to="#end_4" corresp="#0575032"><lem wit="#wit1">酥</lem><rdg resp="#resp1" wit="#wit2 #wit4">蘇</rdg></app>
-<app from="#beg0576001" to="#end0576001"><lem wit="#wit1">以</lem><rdg resp="#resp1" wit="#wit4">已</rdg></app>
-<app from="#beg0576002" to="#end0576002"><lem wit="#wit1">法</lem><rdg resp="#resp1" wit="#wit2">法三經同卷</rdg></app>
+<app cb:word-count="37" from="#beg0575009" to="#end0575009"><lem wit="#wit.orig">開府儀同三司特進試鴻臚卿肅國<lb n="0575a17" ed="T"/>公食邑三千戶賜紫贈司空諡大鑒<lb n="0575a18" ed="T"/>正號大廣智大興善寺</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">南天竺國</rdg><rdg resp="#resp2" wit="#wit4 #wit5">唐南天竺國</rdg></app>
+<app from="#beg0575010" to="#end0575010"><lem wit="#wit.orig">藏</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">藏金剛智與</rdg></app>
+<app from="#beg0575011" to="#end0575011"><lem wit="#wit.orig">峯</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0575012" to="#end0575012"><lem wit="#wit.orig">法</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit3 #wit5"><space quantity="0"/></rdg></app>
+<app from="#beg0575013" to="#end0575013"><lem wit="#wit.orig">及</lem><rdg resp="#resp2" wit="#wit4 #wit5">佛</rdg></app>
+<app from="#beg0575014" to="#end0575014"><lem wit="#wit.orig">唯</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">惟</rdg></app>
+<app from="#beg0575015" to="#end0575015"><lem wit="#wit.orig">悲</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">慈</rdg></app>
+<app from="#beg0575016" to="#end0575016"><lem wit="#wit.orig">摩</lem><rdg resp="#resp2" wit="#wit1 #wit2">魔</rdg></app>
+<app from="#beg0575017" to="#end0575017"><lem wit="#wit.orig">授</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit3 #wit5">受</rdg></app>
+<app from="#beg0575018" to="#end0575018"><lem wit="#wit.orig">唵</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">唵<note place="inline">引一</note></rdg></app>
+<app from="#beg0575019" to="#end0575019"><lem wit="#wit.orig">矖</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit3 #wit5">曬</rdg></app>
+<app from="#beg0575020" to="#end0575020"><lem wit="#wit.orig">引</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">引二</rdg></app>
+<app from="#beg0575021" to="#end0575021"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit3 #wit5"><space quantity="0"/></rdg></app>
+<app from="#beg0575022" to="#end0575022"><lem wit="#wit.orig">心觀</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">觀心</rdg></app>
+<app from="#beg0575023" to="#end0575023"><lem wit="#wit.orig">項</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">頂</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0575018"><lem wit="#wit.orig">唵</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">唵<note place="inline">引一</note></rdg></app>
+<app from="#beg0575024" to="#end0575024"><lem wit="#wit.orig">砧</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">碪</rdg></app>
+<app from="#beg0575025" to="#end0575025"><lem wit="#wit.orig">反</lem><rdg resp="#resp2" wit="#wit1 #wit2">反二</rdg><rdg resp="#resp2" wit="#wit4 #wit5">切二</rdg></app>
+<app from="#beg0575026" to="#end0575026"><lem wit="#wit.orig">合</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">合引</rdg></app>
+<app from="#beg0575027" to="#end0575027"><lem wit="#wit.orig">欲</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">欲<note place="inline">三</note></rdg></app>
+<app from="#beg0575028" to="#end0575028"><lem wit="#wit.orig">畫</lem><rdg resp="#resp2" wit="#wit2">盡</rdg></app>
+<app from="#beg0575029" to="#end0575029"><lem wit="#wit.orig">白</lem><rdg resp="#resp2" wit="#wit1">自</rdg></app>
+<app from="#beg0575030" to="#end0575030"><lem wit="#wit.orig">緣</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit3 #wit5">安緣</rdg></app>
+<app from="#beg0575031" to="#end0575031"><lem wit="#wit.orig">莖</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5"><space quantity="0"/></rdg></app>
+<app from="#beg0575032" to="#end0575032"><lem wit="#wit.orig">酥</lem><rdg resp="#resp2" wit="#wit1 #wit3">蘇</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0575032"><lem wit="#wit.orig">酥</lem><rdg resp="#resp2" wit="#wit1 #wit3">蘇</rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0575032"><lem wit="#wit.orig">酥</lem><rdg resp="#resp2" wit="#wit1 #wit3">蘇</rdg></app>
+<app from="#beg0575033" to="#end0575033"><lem wit="#wit.orig">擲</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4 #wit5">擲一莖</rdg></app>
+<app from="#beg_4" to="#end_4" corresp="#0575032"><lem wit="#wit.orig">酥</lem><rdg resp="#resp2" wit="#wit1 #wit3">蘇</rdg></app>
+<app from="#beg0576001" to="#end0576001"><lem wit="#wit.orig">以</lem><rdg resp="#resp2" wit="#wit3">已</rdg></app>
+<app from="#beg0576002" to="#end0576002"><lem wit="#wit.orig">法</lem><rdg resp="#resp2" wit="#wit1">法三經同卷</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0575009" resp="#resp2" type="mod" target="#nkr_note_mod_0575009">（開府…寺）三十七字【大】，南天竺國【宋】【元】【甲】，唐南天竺國【明】【乙】</note>
-<note n="0575010" resp="#resp2" type="mod" target="#nkr_note_mod_0575010">藏【大】，藏金剛智與【宋】【元】【明】【乙】</note>
-<note n="0575011" resp="#resp2" type="mod" target="#nkr_note_mod_0575011">峯【大】，〔－〕【宋】【元】【甲】</note>
-<note n="0575012" resp="#resp2" type="mod" target="#nkr_note_mod_0575012">法【大】，〔－〕【宋】【元】【明】【甲】【乙】</note>
-<note n="0575013" resp="#resp2" type="mod" target="#nkr_note_mod_0575013">及【大】，佛【明】【乙】</note>
-<note n="0575014" resp="#resp2" type="mod" target="#nkr_note_mod_0575014">唯【大】，惟【宋】【元】【明】【乙】</note>
-<note n="0575015" resp="#resp2" type="mod" target="#nkr_note_mod_0575015">悲【大】，慈【宋】【元】【明】【乙】</note>
-<note n="0575016" resp="#resp2" type="mod" target="#nkr_note_mod_0575016">摩【大】，魔【宋】【元】</note>
-<note n="0575017" resp="#resp2" type="mod" target="#nkr_note_mod_0575017">授【大】，受【宋】【元】【明】【甲】【乙】</note>
-<note n="0575018" resp="#resp2" type="mod" target="#nkr_note_mod_0575018">唵【大】＊，唵<note place="inline">引一</note>【宋】【元】【明】【乙】＊</note>
-<note n="0575019" resp="#resp2" type="mod" target="#nkr_note_mod_0575019">矖【大】，曬【宋】【元】【明】【甲】【乙】</note>
-<note n="0575020" resp="#resp2" type="mod" target="#nkr_note_mod_0575020">引【大】，引二【宋】【元】【明】【乙】</note>
-<note n="0575021" resp="#resp2" type="mod" target="#nkr_note_mod_0575021">於【大】，〔－〕【宋】【元】【明】【甲】【乙】</note>
-<note n="0575022" resp="#resp2" type="mod" target="#nkr_note_mod_0575022">心觀【大】，觀心【宋】【元】【明】【乙】</note>
-<note n="0575023" resp="#resp2" type="mod" target="#nkr_note_mod_0575023">項【大】，頂【宋】【元】【明】【乙】</note>
-<note n="0575024" resp="#resp2" type="mod" target="#nkr_note_mod_0575024">砧【大】，碪【宋】【元】【明】【乙】</note>
-<note n="0575025" resp="#resp2" type="mod" target="#nkr_note_mod_0575025">反【大】，反二【宋】【元】，切二【明】【乙】</note>
-<note n="0575026" resp="#resp2" type="mod" target="#nkr_note_mod_0575026">合【大】，合引【宋】【元】【明】【乙】</note>
-<note n="0575027" resp="#resp2" type="mod" target="#nkr_note_mod_0575027">欲【大】，欲<note place="inline">三</note>【宋】【元】【明】【乙】</note>
-<note n="0575028" resp="#resp2" type="mod" target="#nkr_note_mod_0575028">畫【大】，盡【元】</note>
-<note n="0575029" resp="#resp2" type="mod" target="#nkr_note_mod_0575029">白【大】，自【宋】</note>
-<note n="0575030" resp="#resp2" type="mod" target="#nkr_note_mod_0575030">緣【大】，安緣【宋】【元】【明】【甲】【乙】</note>
-<note n="0575031" resp="#resp2" type="mod" target="#nkr_note_mod_0575031">莖【大】，〔－〕【宋】【元】【明】【乙】</note>
-<note n="0575032" resp="#resp2" type="mod" target="#nkr_note_mod_0575032">酥【大】＊，蘇【宋】【甲】＊</note>
-<note n="0575033" resp="#resp2" type="mod" target="#nkr_note_mod_0575033">擲【大】，擲一莖【宋】【元】【明】【乙】</note>
-<note n="0576001" resp="#resp2" type="mod" target="#nkr_note_mod_0576001">以【大】，已【甲】</note>
-<note n="0576002" resp="#resp2" type="mod" target="#nkr_note_mod_0576002">法【大】，法三經同卷【宋】，乙本奧書曰貞享元甲子九月二十日校點了淨嚴四十六載，元祿十六年正月二十九日以淨嚴和上之本再校了尊教</note>
+<note n="0575009" resp="#resp3" type="mod" target="#nkr_note_mod_0575009">（開府…寺）三十七字【大】，南天竺國【宋】【元】【甲】，唐南天竺國【明】【乙】</note>
+<note n="0575010" resp="#resp3" type="mod" target="#nkr_note_mod_0575010">藏【大】，藏金剛智與【宋】【元】【明】【乙】</note>
+<note n="0575011" resp="#resp3" type="mod" target="#nkr_note_mod_0575011">峯【大】，〔－〕【宋】【元】【甲】</note>
+<note n="0575012" resp="#resp3" type="mod" target="#nkr_note_mod_0575012">法【大】，〔－〕【宋】【元】【明】【甲】【乙】</note>
+<note n="0575013" resp="#resp3" type="mod" target="#nkr_note_mod_0575013">及【大】，佛【明】【乙】</note>
+<note n="0575014" resp="#resp3" type="mod" target="#nkr_note_mod_0575014">唯【大】，惟【宋】【元】【明】【乙】</note>
+<note n="0575015" resp="#resp3" type="mod" target="#nkr_note_mod_0575015">悲【大】，慈【宋】【元】【明】【乙】</note>
+<note n="0575016" resp="#resp3" type="mod" target="#nkr_note_mod_0575016">摩【大】，魔【宋】【元】</note>
+<note n="0575017" resp="#resp3" type="mod" target="#nkr_note_mod_0575017">授【大】，受【宋】【元】【明】【甲】【乙】</note>
+<note n="0575018" resp="#resp3" type="mod" target="#nkr_note_mod_0575018">唵【大】＊，唵<note place="inline">引一</note>【宋】【元】【明】【乙】＊</note>
+<note n="0575019" resp="#resp3" type="mod" target="#nkr_note_mod_0575019">矖【大】，曬【宋】【元】【明】【甲】【乙】</note>
+<note n="0575020" resp="#resp3" type="mod" target="#nkr_note_mod_0575020">引【大】，引二【宋】【元】【明】【乙】</note>
+<note n="0575021" resp="#resp3" type="mod" target="#nkr_note_mod_0575021">於【大】，〔－〕【宋】【元】【明】【甲】【乙】</note>
+<note n="0575022" resp="#resp3" type="mod" target="#nkr_note_mod_0575022">心觀【大】，觀心【宋】【元】【明】【乙】</note>
+<note n="0575023" resp="#resp3" type="mod" target="#nkr_note_mod_0575023">項【大】，頂【宋】【元】【明】【乙】</note>
+<note n="0575024" resp="#resp3" type="mod" target="#nkr_note_mod_0575024">砧【大】，碪【宋】【元】【明】【乙】</note>
+<note n="0575025" resp="#resp3" type="mod" target="#nkr_note_mod_0575025">反【大】，反二【宋】【元】，切二【明】【乙】</note>
+<note n="0575026" resp="#resp3" type="mod" target="#nkr_note_mod_0575026">合【大】，合引【宋】【元】【明】【乙】</note>
+<note n="0575027" resp="#resp3" type="mod" target="#nkr_note_mod_0575027">欲【大】，欲<note place="inline">三</note>【宋】【元】【明】【乙】</note>
+<note n="0575028" resp="#resp3" type="mod" target="#nkr_note_mod_0575028">畫【大】，盡【元】</note>
+<note n="0575029" resp="#resp3" type="mod" target="#nkr_note_mod_0575029">白【大】，自【宋】</note>
+<note n="0575030" resp="#resp3" type="mod" target="#nkr_note_mod_0575030">緣【大】，安緣【宋】【元】【明】【甲】【乙】</note>
+<note n="0575031" resp="#resp3" type="mod" target="#nkr_note_mod_0575031">莖【大】，〔－〕【宋】【元】【明】【乙】</note>
+<note n="0575032" resp="#resp3" type="mod" target="#nkr_note_mod_0575032">酥【大】＊，蘇【宋】【甲】＊</note>
+<note n="0575033" resp="#resp3" type="mod" target="#nkr_note_mod_0575033">擲【大】，擲一莖【宋】【元】【明】【乙】</note>
+<note n="0576001" resp="#resp3" type="mod" target="#nkr_note_mod_0576001">以【大】，已【甲】</note>
+<note n="0576002" resp="#resp3" type="mod" target="#nkr_note_mod_0576002">法【大】，法三經同卷【宋】，乙本奧書曰貞享元甲子九月二十日校點了淨嚴四十六載，元祿十六年正月二十九日以淨嚴和上之本再校了尊教</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0575008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575008">【原】麗本，【甲】三十帖策子第十九，【乙】黃檗版淨嚴等校訂加筆本</note>
-<note n="0575009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575009">（開府…寺）三十七字＝（南天竺國）四字【宋】【元】【甲】，（唐南天竺國）五字【明】【乙】</note>
-<note n="0575010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575010">藏＋（金剛智與）【三】【乙】</note>
-<note n="0575011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575011">〔峯〕－【宋】【元】【甲】</note>
-<note n="0575012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575012">〔法〕－【三】【甲】【乙】</note>
-<note n="0575013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575013">及＝佛【明】【乙】</note>
-<note n="0575014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575014">唯＝惟【三】【乙】</note>
-<note n="0575015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575015">悲＝慈【三】【乙】</note>
-<note n="0575016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575016">摩＝魔【宋】【元】</note>
-<note n="0575017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575017">授＝受【三】【甲】【乙】</note>
-<note n="0575018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575018">唵＋（引一）細註【三】【乙】＊</note>
-<note n="0575019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575019">矖＝曬【三】【甲】【乙】</note>
-<note n="0575020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575020">引＋（二）【三】【乙】</note>
-<note n="0575021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575021">〔於〕－【三】【甲】【乙】</note>
-<note n="0575022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575022">心觀＝觀心【三】【乙】</note>
-<note n="0575023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575023">項＝頂【三】【乙】</note>
-<note n="0575024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575024">砧＝碪【三】【乙】</note>
-<note n="0575025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575025">反＋（二）【宋】【元】，反＝切二【明】【乙】</note>
-<note n="0575026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575026">合＋（引）【三】【乙】</note>
-<note n="0575027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575027">欲＋（三）細註【三】【乙】</note>
-<note n="0575028" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575028">畫＝盡【元】</note>
-<note n="0575029" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575029">白＝自【宋】</note>
-<note n="0575030" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575030">（安）＋緣【三】【甲】【乙】</note>
-<note n="0575031" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575031">〔莖〕－【三】【乙】</note>
-<note n="0575032" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575032">酥＝蘇【宋】【甲】＊</note>
-<note n="0575033" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0575033">擲＋（一莖）【三】【乙】</note>
-<note n="0576001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0576001">以＝已【甲】</note>
-<note n="0576002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0576002">法＋（三經同卷）【宋】，乙本奧書曰貞享元甲子九月二十日校點了淨嚴四十六載，元祿十六年正月二十九日以淨嚴和上之本再校了尊教</note>
+<note n="0575008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575008">【原】麗本，【甲】三十帖策子第十九，【乙】黃檗版淨嚴等校訂加筆本</note>
+<note n="0575009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575009">（開府…寺）三十七字＝（南天竺國）四字【宋】【元】【甲】，（唐南天竺國）五字【明】【乙】</note>
+<note n="0575010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575010">藏＋（金剛智與）【三】【乙】</note>
+<note n="0575011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575011">〔峯〕－【宋】【元】【甲】</note>
+<note n="0575012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575012">〔法〕－【三】【甲】【乙】</note>
+<note n="0575013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575013">及＝佛【明】【乙】</note>
+<note n="0575014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575014">唯＝惟【三】【乙】</note>
+<note n="0575015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575015">悲＝慈【三】【乙】</note>
+<note n="0575016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575016">摩＝魔【宋】【元】</note>
+<note n="0575017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575017">授＝受【三】【甲】【乙】</note>
+<note n="0575018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575018">唵＋（引一）細註【三】【乙】＊</note>
+<note n="0575019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575019">矖＝曬【三】【甲】【乙】</note>
+<note n="0575020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575020">引＋（二）【三】【乙】</note>
+<note n="0575021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575021">〔於〕－【三】【甲】【乙】</note>
+<note n="0575022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575022">心觀＝觀心【三】【乙】</note>
+<note n="0575023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575023">項＝頂【三】【乙】</note>
+<note n="0575024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575024">砧＝碪【三】【乙】</note>
+<note n="0575025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575025">反＋（二）【宋】【元】，反＝切二【明】【乙】</note>
+<note n="0575026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575026">合＋（引）【三】【乙】</note>
+<note n="0575027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575027">欲＋（三）細註【三】【乙】</note>
+<note n="0575028" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575028">畫＝盡【元】</note>
+<note n="0575029" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575029">白＝自【宋】</note>
+<note n="0575030" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575030">（安）＋緣【三】【甲】【乙】</note>
+<note n="0575031" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575031">〔莖〕－【三】【乙】</note>
+<note n="0575032" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575032">酥＝蘇【宋】【甲】＊</note>
+<note n="0575033" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0575033">擲＋（一莖）【三】【乙】</note>
+<note n="0576001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0576001">以＝已【甲】</note>
+<note n="0576002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0576002">法＋（三經同卷）【宋】，乙本奧書曰貞享元甲子九月二十日校點了淨嚴四十六載，元祿十六年正月二十九日以淨嚴和上之本再校了尊教</note>
 </p>
 </cb:div>
 <cb:div type="rest-notes">

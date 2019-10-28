@@ -11,142 +11,81 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.14 $<date>$Date: 2009/04/23 08:14:35 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:14:35 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 55, No. 2175</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【原】</witness>
-		<witness xml:id="wit3">【CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB01021">
-	<charName>CBETA CHARACTER CB01021</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[口*荼]</value>
-	</charProp>
-	<mapping type="unicode">U+20EEC</mapping>
-	<mapping cb:dec="984061" type="PUA">U+F03FD</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">55</idno>.<idno type="no">2175</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">錄外經等目錄</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB01021">
+				<charName>CBETA CHARACTER CB01021</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[口*荼]</value>
+				</charProp>
+				<mapping type="unicode">U+20EEC</mapping>
+				<mapping cb:dec="984061" type="PUA">U+F03FD</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-02-01T16:31:29">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T55n2175.xml,v $
-Revision 1.14  2009/04/23 08:14:35  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.13  2006/04/12 22:00:38  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.11  2004/12/18 02:19:45  saywhat
-行首的</title></item></list>移到前一行行尾
-
-Revision 1.10  2004/12/18 02:18:29  saywhat
-行首的</item></list></div1>移到前一行行尾
-
-Revision 1.9  2004/10/14 03:32:11  saywhat
-段落前加入圈點
-
-Revision 1.8  2004/07/16 09:13:11  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.7  2004/04/20 08:44:40  maha
-「版本日期」標記修訂
-
-Revision 1.6  2003/06/25 06:27:47  eva
-modified: 執行 corr2app.pl
-
-Revision 1.5  2003/06/25 05:46:11  eva
-modified: copy corr2app 前備份
-
-Revision 1.3  2003/05/10 10:04:36  ray
-add <milestone type="juan"/>
-
-Revision 1.2  2003/05/05 06:33:29  eva
-modified
-
-Revision 1.18  2002/12/05 12:53:00  eva
-modified
-
-Revision 1.16  2002/11/11 11:25:17  eva
-modified
-
-Revision 1.13  2002/11/04 11:04:11  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/08/08 06:56:41  eva
-modified
-
-Revision 1.11  2002/07/29 09:47:42  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:50:00  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/11/05 06:23:39  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.8  2001/07/27 07:15:48  ray
-去除多餘的 <author>
-
-Revision 1.7  2001/07/24 07:03:42  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.6  2001/04/12 13:36:45  vinking
-modified <div>
-
-Revision 1.5  2001/04/01 07:56:44  moved
-modified normal
-
-Revision 1.4  2001/03/30 07:18:38  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.3  2001/02/07 07:46:47  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:18:58  chris
-Added keywords $Revision: 1.14 $, $Date: 2009/04/23 08:14:35 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-02-01T16:31:29">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -285,33 +224,33 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1112002" to="#end1112002"><lem resp="#resp1" wit="#wit1">國家</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">家國</rdg></app>
-<app from="#beg1112003" to="#end1112003"><lem resp="#resp1" wit="#wit1">遮</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">那</rdg></app>
-<app from="#beg1112c2201" to="#end1112c2201"><lem wit="#wit3" resp="#resp2">幢</lem><rdg wit="#wit1">憧</rdg></app>
-<app from="#beg1112c2301" to="#end1112c2301"><lem wit="#wit3" resp="#resp2">幟</lem><rdg wit="#wit1">熾</rdg></app>
+<app from="#beg1112002" to="#end1112002"><lem resp="#resp2" wit="#wit.orig">國家</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">家國</rdg></app>
+<app from="#beg1112003" to="#end1112003"><lem resp="#resp2" wit="#wit.orig">遮</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">那</rdg></app>
+<app from="#beg1112c2201" to="#end1112c2201"><lem wit="#wit.cbeta" resp="#resp3">幢</lem><rdg wit="#wit.orig">憧</rdg></app>
+<app from="#beg1112c2301" to="#end1112c2301"><lem wit="#wit.cbeta" resp="#resp3">幟</lem><rdg wit="#wit.orig">熾</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1112002" resp="#resp2" type="mod" target="#nkr_note_mod_1112002">國家【大】，家國【考偽-原】</note>
-<note n="1112003" resp="#resp2" type="mod" target="#nkr_note_mod_1112003">遮【大】，那【考偽-原】</note>
+<note n="1112002" resp="#resp3" type="mod" target="#nkr_note_mod_1112002">國家【大】，家國【考偽-原】</note>
+<note n="1112003" resp="#resp3" type="mod" target="#nkr_note_mod_1112003">遮【大】，那【考偽-原】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1112001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1112001">【原】東寺寶菩提院藏古寫本</note>
-<note n="1112002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1112002">國家＝家國ヵ【原】</note>
-<note n="1112003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1112003">遮＝那ヵ【原】</note>
-<note n="1112004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1112004">校者曰此經大妙金剛大甘露荼利明鬘熾威佛頂經歟</note>
+<note n="1112001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1112001">【原】東寺寶菩提院藏古寫本</note>
+<note n="1112002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1112002">國家＝家國ヵ【原】</note>
+<note n="1112003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1112003">遮＝那ヵ【原】</note>
+<note n="1112004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1112004">校者曰此經大妙金剛大甘露荼利明鬘熾威佛頂經歟</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="1112c2201" resp="#resp2" type="add" target="#nkr_note_add_1112c2201">幢【CB】，憧【大】</note>
-<note n="1112c2301" resp="#resp2" type="add" target="#nkr_note_add_1112c2301">幟【CB】，熾【大】</note>
+<note n="1112c2201" resp="#resp3" type="add" target="#nkr_note_add_1112c2201">幢【CB】，憧【大】</note>
+<note n="1112c2301" resp="#resp3" type="add" target="#nkr_note_add_1112c2301">幟【CB】，熾【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

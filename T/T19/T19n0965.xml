@@ -11,128 +11,89 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.7 $<date>$Date: 2009/04/23 08:00:03 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:00:03 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 19, No. 965</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【原】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00292">
-	<charName>CBETA CHARACTER CB00292</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[合*牛]</value>
-	</charProp>
-	<mapping type="unicode">U+24656</mapping>
-	<mapping cb:dec="983332" type="PUA">U+F0124</mapping>
-</char>
-<char xml:id="CB03723">
-	<charName>CBETA CHARACTER CB03723</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[尾*(尤-尢+曳)]</value>
-	</charProp>
-	<mapping cb:dec="986763" type="PUA">U+F0E8B</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">19</idno>.<idno type="no">965</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大妙金剛大甘露軍拏利焰鬘熾盛佛頂經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00292">
+				<charName>CBETA CHARACTER CB00292</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[合*牛]</value>
+				</charProp>
+				<mapping type="unicode">U+24656</mapping>
+				<mapping cb:dec="983332" type="PUA">U+F0124</mapping>
+			</char>
+			<char xml:id="CB03723">
+				<charName>CBETA CHARACTER CB03723</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[尾*(尤-尢+曳)]</value>
+				</charProp>
+				<mapping cb:dec="986763" type="PUA">U+F0E8B</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-27T11:51:04">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T19n0965.xml,v $
-Revision 1.7  2009/04/23 08:00:03  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.6  2006/04/12 21:55:34  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.4  2004/11/14 03:17:22  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.3  2004/10/14 16:25:33  saywhat
-段落前加入圈點
-
-Revision 1.2  2004/04/20 08:38:44  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:09:12  ray
-recover cvs
-
-Revision 1.15  2002/11/27 11:26:23  saywhat
-校勘插入處理
-
-Revision 1.14  2002/11/04 10:44:56  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/10/21 08:12:19  ray
-移動 <anchor>+<note>, <anchor>+雙圈
-
-Revision 1.12  2002/07/29 09:56:09  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:03:10  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:13:17  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/24 06:52:44  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/05/25 08:59:10  ray
-經號統一為四碼
-
-Revision 1.7  2001/03/30 06:45:10  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:12:57  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:54:38  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:44:34  chris
-Added keywords $Revision: 1.7 $, $Date: 2009/04/23 08:00:03 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-27T11:51:04">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -429,197 +390,197 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0339018" to="#end0339018"><lem wit="#wit1">以</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">已</rdg></app>
-<app from="#beg0339019" to="#end0339019"><lem resp="#resp1" wit="#wit1">定</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">定起</rdg></app>
-<app from="#beg0339020" to="#end0339020"><lem resp="#resp1" wit="#wit1">曇</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">曇(二)</rdg></app>
-<app from="#beg0339021" to="#end0339021"><lem resp="#resp1" wit="#wit1">二</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">三</rdg></app>
-<app from="#beg0339022" to="#end0339022"><lem resp="#resp1" wit="#wit1">帝</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">帝(四)</rdg></app>
-<app from="#beg0339023" to="#end0339023"><lem resp="#resp1" wit="#wit1">此偈</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">誐他</rdg></app>
-<app from="#beg0339024" to="#end0339024"><lem wit="#wit1">遠</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">遠振</rdg></app>
-<app from="#beg0339025" to="#end0339025"><lem wit="#wit1">剎</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark"><space quantity="0"/></rdg></app>
-<app from="#beg0339026" to="#end0339026"><lem wit="#wit1">黃蓮</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">黃色蓮花</rdg></app>
-<app from="#beg0339027" to="#end0339027"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">於如來</rdg></app>
-<app from="#beg0339028" to="#end0339028"><lem wit="#wit1">中</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark"><space quantity="0"/></rdg></app>
-<app from="#beg0340001" to="#end0340001"><lem wit="#wit1">色</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">色色</rdg></app>
-<app from="#beg0340002" to="#end0340002"><lem wit="#wit1">於後隅</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">於如來後左隅</rdg></app>
-<app from="#beg0340003" to="#end0340003"><lem wit="#wit1">勝</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">勝佛</rdg></app>
-<app from="#beg0340004" to="#end0340004"><lem wit="#wit1">時</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">時攝</rdg></app>
-<app from="#beg0340005" to="#end0340005"><lem resp="#resp1" wit="#wit1">施</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">於</rdg></app>
-<app from="#beg0340006" to="#end0340006"><lem wit="#wit1">寶雨</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark"><space quantity="0"/></rdg></app>
-<app from="#beg0340007" to="#end0340007"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">謂</rdg></app>
-<app from="#beg0340008" to="#end0340008"><lem wit="#wit1">又有</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">爾時佛頂輪王復說真言曰曩莫三滿多重沒馱喃引阿鉢囉二合底賀哆上捨娑曩南引佉佉佉呬吽吽入嚩二合攞入嚩二合攞鉢囉二合入嚩二合攞底瑟吒瑟置哩二合娑頗二合吒娑嚩二合賀若誦此真言者所有執曜惡星陵逼本命胎業等皆悉變為吉祥速離生死流輪疾成無上菩提是時</rdg></app>
-<app from="#beg0340009" to="#end0340009"><lem wit="#wit1">密</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">頌</rdg></app>
-<app from="#beg0340010" to="#end0340010"><lem resp="#resp1" wit="#wit1">合</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">合八</rdg></app>
-<app from="#beg0340011" to="#end0340011"><lem wit="#wit1">已</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">已爾時八大菩薩復說八大密印及一字真言</rdg></app>
-<app from="#beg0340012" to="#end0340012"><lem wit="#wit1">薩</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">薩復</rdg></app>
-<app from="#beg0340013" to="#end0340013"><lem wit="#wit1">現</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">現作</rdg></app>
-<app from="#beg0340014" to="#end0340014"><lem wit="#wit1">輪</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">輪王</rdg></app>
-<app from="#beg0340015" to="#end0340015"><lem wit="#wit1">以</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">以持</rdg></app>
-<app from="#beg0340016" to="#end0340016"><lem wit="#wit1">作</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">作作</rdg></app>
-<app from="#beg0340017" to="#end0340017"><lem wit="#wit1">火</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">光明</rdg></app>
-<app from="#beg0341001" to="#end0341001"><lem wit="#wit1">王</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">王遍身</rdg></app>
-<app from="#beg0341002" to="#end0341002"><lem resp="#resp1" wit="#wit1">十</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">八</rdg></app>
-<app from="#beg0341003" to="#end0341003"><lem wit="#wit1">馳</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">馱</rdg></app>
-<app from="#beg0341004" to="#end0341004"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark"><space quantity="0"/></rdg></app>
-<app from="#beg0341005" to="#end0341005"><lem wit="#wit1">我</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">我等</rdg></app>
-<app from="#beg0341006" to="#end0341006"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">上智</rdg></app>
-<app from="#beg0341007" to="#end0341007"><lem wit="#wit1">佛</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark"><space quantity="0"/></rdg></app>
-<app from="#beg0341008" to="#end0341008"><lem wit="#wit1">身</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">我身</rdg></app>
-<app from="#beg0341009" to="#end0341009"><lem wit="#wit1">中</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">霧中</rdg></app>
-<app from="#beg0341010" to="#end0341010"><lem wit="#wit1">傳</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">法</rdg></app>
-<app from="#beg0341011" to="#end0341011"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">自心月</rdg></app>
-<app from="#beg0341012" to="#end0341012"><lem wit="#wit1">金輪</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">金剛焰輪</rdg></app>
-<app from="#beg0341013" to="#end0341013"><lem wit="#wit1">剛</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">剛焰</rdg></app>
-<app from="#beg0341014" to="#end0341014"><lem wit="#wit1">頂</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">攝一切佛頂</rdg></app>
-<app from="#beg0341015" to="#end0341015"><lem wit="#wit1">印</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">此印</rdg></app>
-<app from="#beg0341016" to="#end0341016"><lem wit="#wit1">輪</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">輪九度旋輪</rdg></app>
-<app from="#beg0341017" to="#end0341017"><lem wit="#wit1">婀字心</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark"><space quantity="0"/></rdg></app>
-<app from="#beg0341018" to="#end0341018"><lem wit="#wit1">惡字</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">部嚕吽三合</rdg></app>
-<app from="#beg0341019" to="#end0341019"><lem wit="#wit1">佛<lb n="0341c20" ed="T"/>形</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">伴頂輪王形</rdg></app>
-<app from="#beg0341020" to="#end0341020"><lem wit="#wit1">空</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">空法界</rdg></app>
-<app from="#beg0341021" to="#end0341021"><lem wit="#wit1">為</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">為彼</rdg></app>
-<app from="#beg0341022" to="#end0341022"><lem wit="#wit1">輪</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">輪從彼頂入</rdg></app>
-<app from="#beg0341023" to="#end0341023"><lem wit="#wit1">法</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">是法</rdg></app>
-<app from="#beg0342001" to="#end0342001"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">是說</rdg></app>
-<app from="#beg0342002" to="#end0342002"><lem wit="#wit1">佛</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">佛等對於佛</rdg></app>
-<app from="#beg0342003" to="#end0342003"><lem wit="#wit1">八</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">時八</rdg></app>
-<app from="#beg0342004" to="#end0342004"><lem wit="#wit1">佛</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">香</rdg></app>
-<app from="#beg0342005" to="#end0342005"><lem wit="#wit1">有</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">一切有</rdg></app>
-<app from="#beg0342006" to="#end0342006"><lem wit="#wit1">時</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">爾時</rdg></app>
-<app from="#beg0342007" to="#end0342007"><lem wit="#wit1">讚</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">讚曰</rdg></app>
-<app from="#beg0342008" to="#end0342008"><lem wit="#wit1">法界位</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">中</rdg></app>
-<app from="#beg0342009" to="#end0342009"><lem wit="#wit1">言</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">言答</rdg></app>
+<app from="#beg0339018" to="#end0339018"><lem wit="#wit.orig">以</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">已</rdg></app>
+<app from="#beg0339019" to="#end0339019"><lem resp="#resp2" wit="#wit.orig">定</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">定起</rdg></app>
+<app from="#beg0339020" to="#end0339020"><lem resp="#resp2" wit="#wit.orig">曇</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">曇(二)</rdg></app>
+<app from="#beg0339021" to="#end0339021"><lem resp="#resp2" wit="#wit.orig">二</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">三</rdg></app>
+<app from="#beg0339022" to="#end0339022"><lem resp="#resp2" wit="#wit.orig">帝</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">帝(四)</rdg></app>
+<app from="#beg0339023" to="#end0339023"><lem resp="#resp2" wit="#wit.orig">此偈</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">誐他</rdg></app>
+<app from="#beg0339024" to="#end0339024"><lem wit="#wit.orig">遠</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">遠振</rdg></app>
+<app from="#beg0339025" to="#end0339025"><lem wit="#wit.orig">剎</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark"><space quantity="0"/></rdg></app>
+<app from="#beg0339026" to="#end0339026"><lem wit="#wit.orig">黃蓮</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">黃色蓮花</rdg></app>
+<app from="#beg0339027" to="#end0339027"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">於如來</rdg></app>
+<app from="#beg0339028" to="#end0339028"><lem wit="#wit.orig">中</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark"><space quantity="0"/></rdg></app>
+<app from="#beg0340001" to="#end0340001"><lem wit="#wit.orig">色</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">色色</rdg></app>
+<app from="#beg0340002" to="#end0340002"><lem wit="#wit.orig">於後隅</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">於如來後左隅</rdg></app>
+<app from="#beg0340003" to="#end0340003"><lem wit="#wit.orig">勝</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">勝佛</rdg></app>
+<app from="#beg0340004" to="#end0340004"><lem wit="#wit.orig">時</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">時攝</rdg></app>
+<app from="#beg0340005" to="#end0340005"><lem resp="#resp2" wit="#wit.orig">施</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">於</rdg></app>
+<app from="#beg0340006" to="#end0340006"><lem wit="#wit.orig">寶雨</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark"><space quantity="0"/></rdg></app>
+<app from="#beg0340007" to="#end0340007"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">謂</rdg></app>
+<app from="#beg0340008" to="#end0340008"><lem wit="#wit.orig">又有</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">爾時佛頂輪王復說真言曰曩莫三滿多重沒馱喃引阿鉢囉二合底賀哆上捨娑曩南引佉佉佉呬吽吽入嚩二合攞入嚩二合攞鉢囉二合入嚩二合攞底瑟吒瑟置哩二合娑頗二合吒娑嚩二合賀若誦此真言者所有執曜惡星陵逼本命胎業等皆悉變為吉祥速離生死流輪疾成無上菩提是時</rdg></app>
+<app from="#beg0340009" to="#end0340009"><lem wit="#wit.orig">密</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">頌</rdg></app>
+<app from="#beg0340010" to="#end0340010"><lem resp="#resp2" wit="#wit.orig">合</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">合八</rdg></app>
+<app from="#beg0340011" to="#end0340011"><lem wit="#wit.orig">已</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">已爾時八大菩薩復說八大密印及一字真言</rdg></app>
+<app from="#beg0340012" to="#end0340012"><lem wit="#wit.orig">薩</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">薩復</rdg></app>
+<app from="#beg0340013" to="#end0340013"><lem wit="#wit.orig">現</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">現作</rdg></app>
+<app from="#beg0340014" to="#end0340014"><lem wit="#wit.orig">輪</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">輪王</rdg></app>
+<app from="#beg0340015" to="#end0340015"><lem wit="#wit.orig">以</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">以持</rdg></app>
+<app from="#beg0340016" to="#end0340016"><lem wit="#wit.orig">作</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">作作</rdg></app>
+<app from="#beg0340017" to="#end0340017"><lem wit="#wit.orig">火</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">光明</rdg></app>
+<app from="#beg0341001" to="#end0341001"><lem wit="#wit.orig">王</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">王遍身</rdg></app>
+<app from="#beg0341002" to="#end0341002"><lem resp="#resp2" wit="#wit.orig">十</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">八</rdg></app>
+<app from="#beg0341003" to="#end0341003"><lem wit="#wit.orig">馳</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">馱</rdg></app>
+<app from="#beg0341004" to="#end0341004"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark"><space quantity="0"/></rdg></app>
+<app from="#beg0341005" to="#end0341005"><lem wit="#wit.orig">我</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">我等</rdg></app>
+<app from="#beg0341006" to="#end0341006"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">上智</rdg></app>
+<app from="#beg0341007" to="#end0341007"><lem wit="#wit.orig">佛</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark"><space quantity="0"/></rdg></app>
+<app from="#beg0341008" to="#end0341008"><lem wit="#wit.orig">身</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">我身</rdg></app>
+<app from="#beg0341009" to="#end0341009"><lem wit="#wit.orig">中</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">霧中</rdg></app>
+<app from="#beg0341010" to="#end0341010"><lem wit="#wit.orig">傳</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">法</rdg></app>
+<app from="#beg0341011" to="#end0341011"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">自心月</rdg></app>
+<app from="#beg0341012" to="#end0341012"><lem wit="#wit.orig">金輪</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">金剛焰輪</rdg></app>
+<app from="#beg0341013" to="#end0341013"><lem wit="#wit.orig">剛</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">剛焰</rdg></app>
+<app from="#beg0341014" to="#end0341014"><lem wit="#wit.orig">頂</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">攝一切佛頂</rdg></app>
+<app from="#beg0341015" to="#end0341015"><lem wit="#wit.orig">印</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">此印</rdg></app>
+<app from="#beg0341016" to="#end0341016"><lem wit="#wit.orig">輪</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">輪九度旋輪</rdg></app>
+<app from="#beg0341017" to="#end0341017"><lem wit="#wit.orig">婀字心</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark"><space quantity="0"/></rdg></app>
+<app from="#beg0341018" to="#end0341018"><lem wit="#wit.orig">惡字</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">部嚕吽三合</rdg></app>
+<app from="#beg0341019" to="#end0341019"><lem wit="#wit.orig">佛<lb n="0341c20" ed="T"/>形</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">伴頂輪王形</rdg></app>
+<app from="#beg0341020" to="#end0341020"><lem wit="#wit.orig">空</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">空法界</rdg></app>
+<app from="#beg0341021" to="#end0341021"><lem wit="#wit.orig">為</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">為彼</rdg></app>
+<app from="#beg0341022" to="#end0341022"><lem wit="#wit.orig">輪</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">輪從彼頂入</rdg></app>
+<app from="#beg0341023" to="#end0341023"><lem wit="#wit.orig">法</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">是法</rdg></app>
+<app from="#beg0342001" to="#end0342001"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">是說</rdg></app>
+<app from="#beg0342002" to="#end0342002"><lem wit="#wit.orig">佛</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">佛等對於佛</rdg></app>
+<app from="#beg0342003" to="#end0342003"><lem wit="#wit.orig">八</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">時八</rdg></app>
+<app from="#beg0342004" to="#end0342004"><lem wit="#wit.orig">佛</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">香</rdg></app>
+<app from="#beg0342005" to="#end0342005"><lem wit="#wit.orig">有</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">一切有</rdg></app>
+<app from="#beg0342006" to="#end0342006"><lem wit="#wit.orig">時</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">爾時</rdg></app>
+<app from="#beg0342007" to="#end0342007"><lem wit="#wit.orig">讚</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">讚曰</rdg></app>
+<app from="#beg0342008" to="#end0342008"><lem wit="#wit.orig">法界位</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">中</rdg></app>
+<app from="#beg0342009" to="#end0342009"><lem wit="#wit.orig">言</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">言答</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0339018" resp="#resp2" type="mod" target="#nkr_note_mod_0339018">以【大】，已【校異-原】</note>
-<note n="0339019" resp="#resp2" type="mod" target="#nkr_note_mod_0339019">定【大】，定起【考偽-原】</note>
-<note n="0339020" resp="#resp2" type="mod" target="#nkr_note_mod_0339020">曇【大】，曇<note place="inline">二</note>【考偽-原】</note>
-<note n="0339021" resp="#resp2" type="mod" target="#nkr_note_mod_0339021">二【大】，三【考偽-原】</note>
-<note n="0339022" resp="#resp2" type="mod" target="#nkr_note_mod_0339022">帝【大】，帝<note place="inline">四</note>【考偽-原】</note>
-<note n="0339023" resp="#resp2" type="mod" target="#nkr_note_mod_0339023">此偈【大】，誐他【考偽-原】</note>
-<note n="0339024" resp="#resp2" type="mod" target="#nkr_note_mod_0339024">遠【大】，遠振【校異-原】</note>
-<note n="0339025" resp="#resp2" type="mod" target="#nkr_note_mod_0339025">剎【大】，〔－〕【校異-原】</note>
-<note n="0339026" resp="#resp2" type="mod" target="#nkr_note_mod_0339026">黃蓮【大】，黃色蓮花【校異-原】</note>
-<note n="0339027" resp="#resp2" type="mod" target="#nkr_note_mod_0339027">於【大】，於如來【校異-原】</note>
-<note n="0339028" resp="#resp2" type="mod" target="#nkr_note_mod_0339028">中【大】，〔－〕【校異-原】</note>
-<note n="0340001" resp="#resp2" type="mod" target="#nkr_note_mod_0340001">色【大】，色色【校異-原】</note>
-<note n="0340002" resp="#resp2" type="mod" target="#nkr_note_mod_0340002">於後隅【大】，於如來後左隅【校異-原】</note>
-<note n="0340003" resp="#resp2" type="mod" target="#nkr_note_mod_0340003">勝【大】，勝佛【校異-原】</note>
-<note n="0340004" resp="#resp2" type="mod" target="#nkr_note_mod_0340004">時【大】，時攝【校異-原】</note>
-<note n="0340005" resp="#resp2" type="mod" target="#nkr_note_mod_0340005">施【大】，於【考偽-原】</note>
-<note n="0340006" resp="#resp2" type="mod" target="#nkr_note_mod_0340006">寶雨【大】，〔－〕【校異-原】</note>
-<note n="0340007" resp="#resp2" type="mod" target="#nkr_note_mod_0340007">說【大】，謂【校異-原】</note>
-<note n="0340008" resp="#resp2" type="mod" target="#nkr_note_mod_0340008">又有【大】，（爾時佛頂輪王復說真言曰曩莫三滿多重沒馱喃引阿鉢囉二合底賀哆上捨娑曩南引佉佉佉呬吽吽入嚩二合攞入嚩二合攞鉢囉二合入嚩二合攞底瑟吒瑟置哩二合娑頗二合吒娑嚩二合賀若誦此真言者所有執曜惡星陵逼本命胎業等皆悉變為吉祥速離生死流輪疾成無上菩提是時）百十九字【校異-原】</note>
-<note n="0340009" resp="#resp2" type="mod" target="#nkr_note_mod_0340009">密【大】，頌【校異-原】</note>
-<note n="0340010" resp="#resp2" type="mod" target="#nkr_note_mod_0340010">合【大】，合八【考偽-原】</note>
-<note n="0340011" resp="#resp2" type="mod" target="#nkr_note_mod_0340011">已【大】，已爾時八大菩薩復說八大密印及一字真言【校異-原】</note>
-<note n="0340012" resp="#resp2" type="mod" target="#nkr_note_mod_0340012">薩【大】，薩復【校異-原】</note>
-<note n="0340013" resp="#resp2" type="mod" target="#nkr_note_mod_0340013">現【大】，現作【校異-原】</note>
-<note n="0340014" resp="#resp2" type="mod" target="#nkr_note_mod_0340014">輪【大】，輪王【校異-原】</note>
-<note n="0340015" resp="#resp2" type="mod" target="#nkr_note_mod_0340015">以【大】，以持【校異-原】</note>
-<note n="0340016" resp="#resp2" type="mod" target="#nkr_note_mod_0340016">作【大】，作作【校異-原】</note>
-<note n="0340017" resp="#resp2" type="mod" target="#nkr_note_mod_0340017">火【大】，光明【校異-原】</note>
-<note n="0341001" resp="#resp2" type="mod" target="#nkr_note_mod_0341001">王【大】，王遍身【校異-原】</note>
-<note n="0341002" resp="#resp2" type="mod" target="#nkr_note_mod_0341002">十【大】，八【考偽-原】</note>
-<note n="0341003" resp="#resp2" type="mod" target="#nkr_note_mod_0341003">馳【大】，馱【校異-原】</note>
-<note n="0341004" resp="#resp2" type="mod" target="#nkr_note_mod_0341004">心【大】，〔－〕【校異-原】</note>
-<note n="0341005" resp="#resp2" type="mod" target="#nkr_note_mod_0341005">我【大】，我等【校異-原】</note>
-<note n="0341006" resp="#resp2" type="mod" target="#nkr_note_mod_0341006">上【大】，上智【校異-原】</note>
-<note n="0341007" resp="#resp2" type="mod" target="#nkr_note_mod_0341007">佛【大】，〔－〕【校異-原】</note>
-<note n="0341008" resp="#resp2" type="mod" target="#nkr_note_mod_0341008">身【大】，我身【校異-原】</note>
-<note n="0341009" resp="#resp2" type="mod" target="#nkr_note_mod_0341009">中【大】，霧中【校異-原】</note>
-<note n="0341010" resp="#resp2" type="mod" target="#nkr_note_mod_0341010">傳【大】，法【校異-原】</note>
-<note n="0341011" resp="#resp2" type="mod" target="#nkr_note_mod_0341011">心【大】，自心月【校異-原】</note>
-<note n="0341012" resp="#resp2" type="mod" target="#nkr_note_mod_0341012">金輪【大】，金剛焰輪【校異-原】</note>
-<note n="0341013" resp="#resp2" type="mod" target="#nkr_note_mod_0341013">剛【大】，剛焰【校異-原】</note>
-<note n="0341014" resp="#resp2" type="mod" target="#nkr_note_mod_0341014">頂【大】，攝一切佛頂【校異-原】</note>
-<note n="0341015" resp="#resp2" type="mod" target="#nkr_note_mod_0341015">印【大】，此印【校異-原】</note>
-<note n="0341016" resp="#resp2" type="mod" target="#nkr_note_mod_0341016">輪【大】，輪九度旋輪【校異-原】</note>
-<note n="0341017" resp="#resp2" type="mod" target="#nkr_note_mod_0341017">婀字心【大】，〔－〕【校異-原】</note>
-<note n="0341018" resp="#resp2" type="mod" target="#nkr_note_mod_0341018">惡字【大】，部嚕吽三合【校異-原】</note>
-<note n="0341019" resp="#resp2" type="mod" target="#nkr_note_mod_0341019">佛形【大】，伴頂輪王形【校異-原】</note>
-<note n="0341020" resp="#resp2" type="mod" target="#nkr_note_mod_0341020">空【大】，空法界【校異-原】</note>
-<note n="0341021" resp="#resp2" type="mod" target="#nkr_note_mod_0341021">為【大】，為彼【校異-原】</note>
-<note n="0341022" resp="#resp2" type="mod" target="#nkr_note_mod_0341022">輪【大】，輪從彼頂入【校異-原】</note>
-<note n="0341023" resp="#resp2" type="mod" target="#nkr_note_mod_0341023">法【大】，是法【校異-原】</note>
-<note n="0342001" resp="#resp2" type="mod" target="#nkr_note_mod_0342001">說【大】，是說【校異-原】</note>
-<note n="0342002" resp="#resp2" type="mod" target="#nkr_note_mod_0342002">佛【大】，佛等對於佛【校異-原】</note>
-<note n="0342003" resp="#resp2" type="mod" target="#nkr_note_mod_0342003">八【大】，時八【校異-原】</note>
-<note n="0342004" resp="#resp2" type="mod" target="#nkr_note_mod_0342004">佛【大】，香【校異-原】</note>
-<note n="0342005" resp="#resp2" type="mod" target="#nkr_note_mod_0342005">有【大】，一切有【校異-原】</note>
-<note n="0342006" resp="#resp2" type="mod" target="#nkr_note_mod_0342006">時【大】，爾時【校異-原】</note>
-<note n="0342007" resp="#resp2" type="mod" target="#nkr_note_mod_0342007">讚【大】，讚曰【校異-原】</note>
-<note n="0342008" resp="#resp2" type="mod" target="#nkr_note_mod_0342008">法界位【大】，中【校異-原】</note>
-<note n="0342009" resp="#resp2" type="mod" target="#nkr_note_mod_0342009">言【大】，言答【校異-原】</note>
+<note n="0339018" resp="#resp3" type="mod" target="#nkr_note_mod_0339018">以【大】，已【校異-原】</note>
+<note n="0339019" resp="#resp3" type="mod" target="#nkr_note_mod_0339019">定【大】，定起【考偽-原】</note>
+<note n="0339020" resp="#resp3" type="mod" target="#nkr_note_mod_0339020">曇【大】，曇<note place="inline">二</note>【考偽-原】</note>
+<note n="0339021" resp="#resp3" type="mod" target="#nkr_note_mod_0339021">二【大】，三【考偽-原】</note>
+<note n="0339022" resp="#resp3" type="mod" target="#nkr_note_mod_0339022">帝【大】，帝<note place="inline">四</note>【考偽-原】</note>
+<note n="0339023" resp="#resp3" type="mod" target="#nkr_note_mod_0339023">此偈【大】，誐他【考偽-原】</note>
+<note n="0339024" resp="#resp3" type="mod" target="#nkr_note_mod_0339024">遠【大】，遠振【校異-原】</note>
+<note n="0339025" resp="#resp3" type="mod" target="#nkr_note_mod_0339025">剎【大】，〔－〕【校異-原】</note>
+<note n="0339026" resp="#resp3" type="mod" target="#nkr_note_mod_0339026">黃蓮【大】，黃色蓮花【校異-原】</note>
+<note n="0339027" resp="#resp3" type="mod" target="#nkr_note_mod_0339027">於【大】，於如來【校異-原】</note>
+<note n="0339028" resp="#resp3" type="mod" target="#nkr_note_mod_0339028">中【大】，〔－〕【校異-原】</note>
+<note n="0340001" resp="#resp3" type="mod" target="#nkr_note_mod_0340001">色【大】，色色【校異-原】</note>
+<note n="0340002" resp="#resp3" type="mod" target="#nkr_note_mod_0340002">於後隅【大】，於如來後左隅【校異-原】</note>
+<note n="0340003" resp="#resp3" type="mod" target="#nkr_note_mod_0340003">勝【大】，勝佛【校異-原】</note>
+<note n="0340004" resp="#resp3" type="mod" target="#nkr_note_mod_0340004">時【大】，時攝【校異-原】</note>
+<note n="0340005" resp="#resp3" type="mod" target="#nkr_note_mod_0340005">施【大】，於【考偽-原】</note>
+<note n="0340006" resp="#resp3" type="mod" target="#nkr_note_mod_0340006">寶雨【大】，〔－〕【校異-原】</note>
+<note n="0340007" resp="#resp3" type="mod" target="#nkr_note_mod_0340007">說【大】，謂【校異-原】</note>
+<note n="0340008" resp="#resp3" type="mod" target="#nkr_note_mod_0340008">又有【大】，（爾時佛頂輪王復說真言曰曩莫三滿多重沒馱喃引阿鉢囉二合底賀哆上捨娑曩南引佉佉佉呬吽吽入嚩二合攞入嚩二合攞鉢囉二合入嚩二合攞底瑟吒瑟置哩二合娑頗二合吒娑嚩二合賀若誦此真言者所有執曜惡星陵逼本命胎業等皆悉變為吉祥速離生死流輪疾成無上菩提是時）百十九字【校異-原】</note>
+<note n="0340009" resp="#resp3" type="mod" target="#nkr_note_mod_0340009">密【大】，頌【校異-原】</note>
+<note n="0340010" resp="#resp3" type="mod" target="#nkr_note_mod_0340010">合【大】，合八【考偽-原】</note>
+<note n="0340011" resp="#resp3" type="mod" target="#nkr_note_mod_0340011">已【大】，已爾時八大菩薩復說八大密印及一字真言【校異-原】</note>
+<note n="0340012" resp="#resp3" type="mod" target="#nkr_note_mod_0340012">薩【大】，薩復【校異-原】</note>
+<note n="0340013" resp="#resp3" type="mod" target="#nkr_note_mod_0340013">現【大】，現作【校異-原】</note>
+<note n="0340014" resp="#resp3" type="mod" target="#nkr_note_mod_0340014">輪【大】，輪王【校異-原】</note>
+<note n="0340015" resp="#resp3" type="mod" target="#nkr_note_mod_0340015">以【大】，以持【校異-原】</note>
+<note n="0340016" resp="#resp3" type="mod" target="#nkr_note_mod_0340016">作【大】，作作【校異-原】</note>
+<note n="0340017" resp="#resp3" type="mod" target="#nkr_note_mod_0340017">火【大】，光明【校異-原】</note>
+<note n="0341001" resp="#resp3" type="mod" target="#nkr_note_mod_0341001">王【大】，王遍身【校異-原】</note>
+<note n="0341002" resp="#resp3" type="mod" target="#nkr_note_mod_0341002">十【大】，八【考偽-原】</note>
+<note n="0341003" resp="#resp3" type="mod" target="#nkr_note_mod_0341003">馳【大】，馱【校異-原】</note>
+<note n="0341004" resp="#resp3" type="mod" target="#nkr_note_mod_0341004">心【大】，〔－〕【校異-原】</note>
+<note n="0341005" resp="#resp3" type="mod" target="#nkr_note_mod_0341005">我【大】，我等【校異-原】</note>
+<note n="0341006" resp="#resp3" type="mod" target="#nkr_note_mod_0341006">上【大】，上智【校異-原】</note>
+<note n="0341007" resp="#resp3" type="mod" target="#nkr_note_mod_0341007">佛【大】，〔－〕【校異-原】</note>
+<note n="0341008" resp="#resp3" type="mod" target="#nkr_note_mod_0341008">身【大】，我身【校異-原】</note>
+<note n="0341009" resp="#resp3" type="mod" target="#nkr_note_mod_0341009">中【大】，霧中【校異-原】</note>
+<note n="0341010" resp="#resp3" type="mod" target="#nkr_note_mod_0341010">傳【大】，法【校異-原】</note>
+<note n="0341011" resp="#resp3" type="mod" target="#nkr_note_mod_0341011">心【大】，自心月【校異-原】</note>
+<note n="0341012" resp="#resp3" type="mod" target="#nkr_note_mod_0341012">金輪【大】，金剛焰輪【校異-原】</note>
+<note n="0341013" resp="#resp3" type="mod" target="#nkr_note_mod_0341013">剛【大】，剛焰【校異-原】</note>
+<note n="0341014" resp="#resp3" type="mod" target="#nkr_note_mod_0341014">頂【大】，攝一切佛頂【校異-原】</note>
+<note n="0341015" resp="#resp3" type="mod" target="#nkr_note_mod_0341015">印【大】，此印【校異-原】</note>
+<note n="0341016" resp="#resp3" type="mod" target="#nkr_note_mod_0341016">輪【大】，輪九度旋輪【校異-原】</note>
+<note n="0341017" resp="#resp3" type="mod" target="#nkr_note_mod_0341017">婀字心【大】，〔－〕【校異-原】</note>
+<note n="0341018" resp="#resp3" type="mod" target="#nkr_note_mod_0341018">惡字【大】，部嚕吽三合【校異-原】</note>
+<note n="0341019" resp="#resp3" type="mod" target="#nkr_note_mod_0341019">佛形【大】，伴頂輪王形【校異-原】</note>
+<note n="0341020" resp="#resp3" type="mod" target="#nkr_note_mod_0341020">空【大】，空法界【校異-原】</note>
+<note n="0341021" resp="#resp3" type="mod" target="#nkr_note_mod_0341021">為【大】，為彼【校異-原】</note>
+<note n="0341022" resp="#resp3" type="mod" target="#nkr_note_mod_0341022">輪【大】，輪從彼頂入【校異-原】</note>
+<note n="0341023" resp="#resp3" type="mod" target="#nkr_note_mod_0341023">法【大】，是法【校異-原】</note>
+<note n="0342001" resp="#resp3" type="mod" target="#nkr_note_mod_0342001">說【大】，是說【校異-原】</note>
+<note n="0342002" resp="#resp3" type="mod" target="#nkr_note_mod_0342002">佛【大】，佛等對於佛【校異-原】</note>
+<note n="0342003" resp="#resp3" type="mod" target="#nkr_note_mod_0342003">八【大】，時八【校異-原】</note>
+<note n="0342004" resp="#resp3" type="mod" target="#nkr_note_mod_0342004">佛【大】，香【校異-原】</note>
+<note n="0342005" resp="#resp3" type="mod" target="#nkr_note_mod_0342005">有【大】，一切有【校異-原】</note>
+<note n="0342006" resp="#resp3" type="mod" target="#nkr_note_mod_0342006">時【大】，爾時【校異-原】</note>
+<note n="0342007" resp="#resp3" type="mod" target="#nkr_note_mod_0342007">讚【大】，讚曰【校異-原】</note>
+<note n="0342008" resp="#resp3" type="mod" target="#nkr_note_mod_0342008">法界位【大】，中【校異-原】</note>
+<note n="0342009" resp="#resp3" type="mod" target="#nkr_note_mod_0342009">言【大】，言答【校異-原】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0339017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339017">【原】享保年間刊豐山大學藏本</note>
-<note n="0339018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339018">以＝已ィ【原】</note>
-<note n="0339019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339019">定＋（起）ヵ【原】</note>
-<note n="0339020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339020">曇＋（二）細註ヵ【原】</note>
-<note n="0339021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339021">二＝三ヵ【原】</note>
-<note n="0339022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339022">帝＋（四）細註ヵ【原】</note>
-<note n="0339023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339023">此偈＝誐他ヵ【原】</note>
-<note n="0339024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339024">遠＋（振）ィ【原】</note>
-<note n="0339025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339025">〔剎〕ィ－【原】</note>
-<note n="0339026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339026">黃蓮＝黃色蓮花ィ【原】</note>
-<note n="0339027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339027">於＋（如來）ィ【原】</note>
-<note n="0339028" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0339028">〔中〕ィ－【原】</note>
-<note n="0340001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340001">（色）ィ＋色【原】</note>
-<note n="0340002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340002">於後隅＝於如來後左隅ィ【原】</note>
-<note n="0340003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340003">勝＋（佛）ィ【原】</note>
-<note n="0340004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340004">時＋（攝）ィ【原】</note>
-<note n="0340005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340005">施＝於ヵ【原】</note>
-<note n="0340006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340006">〔寶雨〕ィ－【原】</note>
-<note n="0340007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340007">說＝謂ィ【原】</note>
-<note n="0340008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340008">（又有）二字＝（爾時佛頂輪王復說真言曰曩莫三滿多重沒馱喃引阿鉢囉二合底賀哆上捨娑曩南引佉佉佉呬吽吽入嚩二合攞入嚩二合攞鉢囉二合入嚩二合攞底瑟吒瑟置哩二合娑頗二合吒娑嚩二合賀若誦此真言者所有執曜惡星陵逼本命胎業等皆悉變為吉祥速離生死流輪疾成無上菩提是時）ィ百十九字【原】</note>
-<note n="0340009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340009">密＝頌ィ【原】</note>
-<note n="0340010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340010">合＋（八）ヵ【原】</note>
-<note n="0340011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340011">已＋（爾時八大菩薩復說八大密印及一字真言）ィ十七字【原】</note>
-<note n="0340012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340012">薩＋（復）ィ【原】</note>
-<note n="0340013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340013">現＋（作）ィ【原】</note>
-<note n="0340014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340014">輪＋（王）ィ【原】</note>
-<note n="0340015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340015">以＋（持）ィ【原】</note>
-<note n="0340016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340016">（作）ィ＋作【原】</note>
-<note n="0340017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0340017">火＝光明ィ【原】</note>
-<note n="0341001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341001">王＋（遍身）ィ【原】</note>
-<note n="0341002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341002">十＝八ヵ【原】</note>
-<note n="0341003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341003">馳＝馱ィ【原】</note>
-<note n="0341004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341004">〔心〕ィ－【原】</note>
-<note n="0341005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341005">我＋（等）ィ【原】</note>
-<note n="0341006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341006">上＋（智）ィ【原】</note>
-<note n="0341007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341007">〔佛〕ィ－【原】</note>
-<note n="0341008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341008">（我）ィ＋身【原】</note>
-<note n="0341009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341009">（霧）ィ＋中【原】</note>
-<note n="0341010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341010">傳＝法ィ【原】</note>
-<note n="0341011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341011">心＝自心月ィ【原】</note>
-<note n="0341012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341012">金輪＝金剛焰輪ィ【原】</note>
-<note n="0341013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341013">剛＋（焰）ィ【原】</note>
-<note n="0341014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341014">（攝一切佛）ィ＋頂【原】</note>
-<note n="0341015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341015">（此）ィ＋印【原】</note>
-<note n="0341016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341016">輪＋（九度旋輪）ィ【原】</note>
-<note n="0341017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341017">〔婀字心〕ィ－【原】</note>
-<note n="0341018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341018">惡字＝部嚕吽三合ィ【原】</note>
-<note n="0341019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341019">佛形＝伴頂輪王形ィ【原】</note>
-<note n="0341020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341020">空＋（法界）ィ【原】</note>
-<note n="0341021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341021">為＋（彼）ィ【原】</note>
-<note n="0341022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341022">輪＋（從彼頂入）ィ【原】</note>
-<note n="0341023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0341023">（是）ィ＋法【原】</note>
-<note n="0342001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342001">（是）ィ＋說【原】</note>
-<note n="0342002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342002">佛＋（等對於佛）ィ【原】</note>
-<note n="0342003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342003">（時）ィ＋八【原】</note>
-<note n="0342004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342004">佛＝香ィ【原】</note>
-<note n="0342005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342005">（一切）ィ＋有【原】</note>
-<note n="0342006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342006">（爾）ィ＋時【原】</note>
-<note n="0342007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342007">讚＋（曰）ィ【原】</note>
-<note n="0342008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342008">法界位＝中ィ【原】</note>
-<note n="0342009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0342009">言＋（答）ィ【原】</note>
+<note n="0339017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339017">【原】享保年間刊豐山大學藏本</note>
+<note n="0339018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339018">以＝已ィ【原】</note>
+<note n="0339019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339019">定＋（起）ヵ【原】</note>
+<note n="0339020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339020">曇＋（二）細註ヵ【原】</note>
+<note n="0339021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339021">二＝三ヵ【原】</note>
+<note n="0339022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339022">帝＋（四）細註ヵ【原】</note>
+<note n="0339023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339023">此偈＝誐他ヵ【原】</note>
+<note n="0339024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339024">遠＋（振）ィ【原】</note>
+<note n="0339025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339025">〔剎〕ィ－【原】</note>
+<note n="0339026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339026">黃蓮＝黃色蓮花ィ【原】</note>
+<note n="0339027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339027">於＋（如來）ィ【原】</note>
+<note n="0339028" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0339028">〔中〕ィ－【原】</note>
+<note n="0340001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340001">（色）ィ＋色【原】</note>
+<note n="0340002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340002">於後隅＝於如來後左隅ィ【原】</note>
+<note n="0340003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340003">勝＋（佛）ィ【原】</note>
+<note n="0340004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340004">時＋（攝）ィ【原】</note>
+<note n="0340005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340005">施＝於ヵ【原】</note>
+<note n="0340006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340006">〔寶雨〕ィ－【原】</note>
+<note n="0340007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340007">說＝謂ィ【原】</note>
+<note n="0340008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340008">（又有）二字＝（爾時佛頂輪王復說真言曰曩莫三滿多重沒馱喃引阿鉢囉二合底賀哆上捨娑曩南引佉佉佉呬吽吽入嚩二合攞入嚩二合攞鉢囉二合入嚩二合攞底瑟吒瑟置哩二合娑頗二合吒娑嚩二合賀若誦此真言者所有執曜惡星陵逼本命胎業等皆悉變為吉祥速離生死流輪疾成無上菩提是時）ィ百十九字【原】</note>
+<note n="0340009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340009">密＝頌ィ【原】</note>
+<note n="0340010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340010">合＋（八）ヵ【原】</note>
+<note n="0340011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340011">已＋（爾時八大菩薩復說八大密印及一字真言）ィ十七字【原】</note>
+<note n="0340012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340012">薩＋（復）ィ【原】</note>
+<note n="0340013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340013">現＋（作）ィ【原】</note>
+<note n="0340014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340014">輪＋（王）ィ【原】</note>
+<note n="0340015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340015">以＋（持）ィ【原】</note>
+<note n="0340016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340016">（作）ィ＋作【原】</note>
+<note n="0340017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0340017">火＝光明ィ【原】</note>
+<note n="0341001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341001">王＋（遍身）ィ【原】</note>
+<note n="0341002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341002">十＝八ヵ【原】</note>
+<note n="0341003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341003">馳＝馱ィ【原】</note>
+<note n="0341004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341004">〔心〕ィ－【原】</note>
+<note n="0341005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341005">我＋（等）ィ【原】</note>
+<note n="0341006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341006">上＋（智）ィ【原】</note>
+<note n="0341007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341007">〔佛〕ィ－【原】</note>
+<note n="0341008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341008">（我）ィ＋身【原】</note>
+<note n="0341009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341009">（霧）ィ＋中【原】</note>
+<note n="0341010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341010">傳＝法ィ【原】</note>
+<note n="0341011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341011">心＝自心月ィ【原】</note>
+<note n="0341012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341012">金輪＝金剛焰輪ィ【原】</note>
+<note n="0341013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341013">剛＋（焰）ィ【原】</note>
+<note n="0341014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341014">（攝一切佛）ィ＋頂【原】</note>
+<note n="0341015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341015">（此）ィ＋印【原】</note>
+<note n="0341016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341016">輪＋（九度旋輪）ィ【原】</note>
+<note n="0341017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341017">〔婀字心〕ィ－【原】</note>
+<note n="0341018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341018">惡字＝部嚕吽三合ィ【原】</note>
+<note n="0341019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341019">佛形＝伴頂輪王形ィ【原】</note>
+<note n="0341020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341020">空＋（法界）ィ【原】</note>
+<note n="0341021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341021">為＋（彼）ィ【原】</note>
+<note n="0341022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341022">輪＋（從彼頂入）ィ【原】</note>
+<note n="0341023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0341023">（是）ィ＋法【原】</note>
+<note n="0342001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342001">（是）ィ＋說【原】</note>
+<note n="0342002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342002">佛＋（等對於佛）ィ【原】</note>
+<note n="0342003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342003">（時）ィ＋八【原】</note>
+<note n="0342004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342004">佛＝香ィ【原】</note>
+<note n="0342005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342005">（一切）ィ＋有【原】</note>
+<note n="0342006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342006">（爾）ィ＋時【原】</note>
+<note n="0342007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342007">讚＋（曰）ィ【原】</note>
+<note n="0342008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342008">法界位＝中ィ【原】</note>
+<note n="0342009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0342009">言＋（答）ィ【原】</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -11,144 +11,86 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2009/04/23 08:15:19 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:15:19 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 85, No. 2826</bibl>
-	<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【大】</witness>
-		<witness xml:id="wit3">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00651">
-	<charName>CBETA CHARACTER CB00651</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[襾/(革*馬)]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>羈</value>
-	</charProp>
-	<mapping type="normal_unicode">U+898A</mapping>
-	<mapping cb:dec="983691" type="PUA">U+F028B</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">85</idno>.<idno type="no">2826</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">略諸經論念佛法門往生淨土集卷上</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00651">
+				<charName>CBETA CHARACTER CB00651</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[襾/(革*馬)]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>羈</value>
+				</charProp>
+				<mapping type="normal_unicode">U+898A</mapping>
+				<mapping cb:dec="983691" type="PUA">U+F028B</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-01-31T11:46:36">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T85n2826.xml,v $
-Revision 1.11  2009/04/23 08:15:19  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.10  2006/04/12 22:00:52  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.8  2005/09/30 09:29:15  saywhat
-p1238a29善[界>男]子, p1238a06報[思>恩]
-
-Revision 1.7  2004/11/14 03:18:27  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.6  2004/11/02 02:15:56  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/04/20 08:44:54  maha
-「版本日期」標記修訂
-
-Revision 1.4  2003/06/25 06:46:02  moved
-執行 corr2app.pl v0.3.1
-
-Revision 1.2  2003/06/23 05:19:37  moved
-＊校勘插入 xml 作業
-
-Revision 1.1.1.1  2003/05/05 04:11:02  ray
-recover cvs
-
-Revision 1.16  2002/12/09 03:45:24  moved
-modified
-
-Revision 1.15  2002/11/04 11:04:57  ray
-tei.2 => TEI.2
-
-Revision 1.14  2002/09/09 08:55:59  moved
-modified
-
-Revision 1.13  2002/07/29 09:48:20  vinking
-modified lang
-
-Revision 1.12  2002/04/08 09:51:08  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/11/05 06:23:56  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.10  2001/07/24 07:04:10  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/05/24 05:49:53  vinking
-比對修訂
-
-Revision 1.8  2001/03/31 11:21:34  moved
-modified normal
-
-Revision 1.7  2001/03/30 12:42:37  moved
-modified normal
-
-Revision 1.6  2001/03/30 07:19:55  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.5  2001/03/25 11:54:40  ray
-add <milestone>
-
-Revision 1.4  2001/02/19 09:32:18  shiachun
-t85
-
-Revision 1.3  2001/02/07 07:50:05  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:20:18  chris
-Added keywords $Revision: 1.11 $, $Date: 2009/04/23 08:15:19 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-01-31T11:46:36">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -755,72 +697,72 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1236b2201" to="#end1236b2201"><lem wit="#wit1" resp="#resp2">土</lem><rdg wit="#wit2">士</rdg></app>
-<app from="#beg1236002" to="#end1236002"><lem wit="#wit2">一</lem><rdg resp="#resp1" wit="#wit3">二</rdg></app>
-<app from="#beg1237002" to="#end1237002"><lem resp="#resp1" wit="#wit2">抵</lem><rdg resp="#resp1" wit="#wit3" type="correctionRemark">控</rdg></app>
-<app from="#beg1237004" to="#end1237004"><lem wit="#wit2">夫</lem><rdg resp="#resp1" wit="#wit3">大</rdg></app>
-<app from="#beg1237005" to="#end1237005"><lem resp="#resp1" wit="#wit2">足</lem><rdg resp="#resp1" wit="#wit3" type="correctionRemark">之</rdg></app>
-<app from="#beg1237006" to="#end1237006"><lem resp="#resp1" wit="#wit2">據</lem><rdg resp="#resp1" wit="#wit3" type="correctionRemark">諸</rdg></app>
-<app from="#beg1238a0601" to="#end1238a0601"><lem wit="#wit1" resp="#resp3">恩<note type="cf1">X73n1456_p0496b03</note></lem><rdg wit="#wit2">思</rdg></app>
-<app from="#beg1238a2901" to="#end1238a2901"><lem wit="#wit1" resp="#resp3">男<note type="cf1">T37n1754_p0305a19</note><note type="cf2">T47n1974_p0375c11</note></lem><rdg wit="#wit2">界</rdg></app>
-<app from="#beg1238001" to="#end1238001"><lem resp="#resp1" wit="#wit2">人</lem><rdg resp="#resp1" wit="#wit3" type="correctionRemark">大</rdg></app>
-<app from="#beg1239001" to="#end1239001"><lem resp="#resp1" wit="#wit2">菩薩</lem><rdg resp="#resp1" wit="#wit3" type="correctionRemark">聲聞</rdg></app>
-<app from="#beg1239002" to="#end1239002"><lem wit="#wit2">王</lem><rdg resp="#resp1" wit="#wit3">法</rdg></app>
-<app from="#beg1239004" to="#end1239004"><lem wit="#wit2">時</lem><rdg resp="#resp1" wit="#wit3">法</rdg></app>
-<app from="#beg1240002" to="#end1240002"><lem wit="#wit2">今</lem><rdg resp="#resp1" wit="#wit3">令</rdg></app>
-<app from="#beg1240003" to="#end1240003"><lem resp="#resp1" wit="#wit2">亡</lem><rdg resp="#resp1" wit="#wit3" type="correctionRemark">無</rdg></app>
-<app from="#beg1241001" to="#end1241001"><lem wit="#wit2">唯</lem><rdg resp="#resp1" wit="#wit3">獨</rdg></app>
+<app from="#beg1236b2201" to="#end1236b2201"><lem wit="#wit.cbeta" resp="#resp3">土</lem><rdg wit="#wit.orig">士</rdg></app>
+<app from="#beg1236002" to="#end1236002"><lem wit="#wit.orig">一</lem><rdg resp="#resp2" wit="#wit1">二</rdg></app>
+<app from="#beg1237002" to="#end1237002"><lem resp="#resp2" wit="#wit.orig">抵</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">控</rdg></app>
+<app from="#beg1237004" to="#end1237004"><lem wit="#wit.orig">夫</lem><rdg resp="#resp2" wit="#wit1">大</rdg></app>
+<app from="#beg1237005" to="#end1237005"><lem resp="#resp2" wit="#wit.orig">足</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">之</rdg></app>
+<app from="#beg1237006" to="#end1237006"><lem resp="#resp2" wit="#wit.orig">據</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">諸</rdg></app>
+<app from="#beg1238a0601" to="#end1238a0601"><lem wit="#wit.cbeta" resp="#resp4">恩<note type="cf1">X73n1456_p0496b03</note></lem><rdg wit="#wit.orig">思</rdg></app>
+<app from="#beg1238a2901" to="#end1238a2901"><lem wit="#wit.cbeta" resp="#resp4">男<note type="cf1">T37n1754_p0305a19</note><note type="cf2">T47n1974_p0375c11</note></lem><rdg wit="#wit.orig">界</rdg></app>
+<app from="#beg1238001" to="#end1238001"><lem resp="#resp2" wit="#wit.orig">人</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">大</rdg></app>
+<app from="#beg1239001" to="#end1239001"><lem resp="#resp2" wit="#wit.orig">菩薩</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">聲聞</rdg></app>
+<app from="#beg1239002" to="#end1239002"><lem wit="#wit.orig">王</lem><rdg resp="#resp2" wit="#wit1">法</rdg></app>
+<app from="#beg1239004" to="#end1239004"><lem wit="#wit.orig">時</lem><rdg resp="#resp2" wit="#wit1">法</rdg></app>
+<app from="#beg1240002" to="#end1240002"><lem wit="#wit.orig">今</lem><rdg resp="#resp2" wit="#wit1">令</rdg></app>
+<app from="#beg1240003" to="#end1240003"><lem resp="#resp2" wit="#wit.orig">亡</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">無</rdg></app>
+<app from="#beg1241001" to="#end1241001"><lem wit="#wit.orig">唯</lem><rdg resp="#resp2" wit="#wit1">獨</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1236002" resp="#resp2" type="mod" target="#nkr_note_mod_1236002">一【大】，二【甲】</note>
-<note n="1237002" resp="#resp2" type="mod" target="#nkr_note_mod_1237002">抵【大】，控【考偽-甲】</note>
-<note n="1237004" resp="#resp2" type="mod" target="#nkr_note_mod_1237004">夫【大】，大【甲】</note>
-<note n="1237005" resp="#resp2" type="mod" target="#nkr_note_mod_1237005">足【大】，之【考偽-甲】</note>
-<note n="1237006" resp="#resp2" type="mod" target="#nkr_note_mod_1237006">據【大】，諸【考偽-甲】</note>
-<note n="1238001" resp="#resp2" type="mod" target="#nkr_note_mod_1238001">人【大】，大【考偽-甲】</note>
-<note n="1239001" resp="#resp2" type="mod" target="#nkr_note_mod_1239001">菩薩【大】，聲聞【考偽-甲】</note>
-<note n="1239002" resp="#resp2" type="mod" target="#nkr_note_mod_1239002">王【大】，法【甲】</note>
-<note n="1239004" resp="#resp2" type="mod" target="#nkr_note_mod_1239004">時【大】，法【甲】</note>
-<note n="1240002" resp="#resp2" type="mod" target="#nkr_note_mod_1240002"><!--CBETA todo type: ＊-->今【大】＊，令【甲】＊</note>
-<note n="1240003" resp="#resp2" type="mod" target="#nkr_note_mod_1240003">亡【大】，無【考偽-甲】</note>
-<note n="1241001" resp="#resp2" type="mod" target="#nkr_note_mod_1241001">唯【大】，獨【甲】</note>
+<note n="1236002" resp="#resp3" type="mod" target="#nkr_note_mod_1236002">一【大】，二【甲】</note>
+<note n="1237002" resp="#resp3" type="mod" target="#nkr_note_mod_1237002">抵【大】，控【考偽-甲】</note>
+<note n="1237004" resp="#resp3" type="mod" target="#nkr_note_mod_1237004">夫【大】，大【甲】</note>
+<note n="1237005" resp="#resp3" type="mod" target="#nkr_note_mod_1237005">足【大】，之【考偽-甲】</note>
+<note n="1237006" resp="#resp3" type="mod" target="#nkr_note_mod_1237006">據【大】，諸【考偽-甲】</note>
+<note n="1238001" resp="#resp3" type="mod" target="#nkr_note_mod_1238001">人【大】，大【考偽-甲】</note>
+<note n="1239001" resp="#resp3" type="mod" target="#nkr_note_mod_1239001">菩薩【大】，聲聞【考偽-甲】</note>
+<note n="1239002" resp="#resp3" type="mod" target="#nkr_note_mod_1239002">王【大】，法【甲】</note>
+<note n="1239004" resp="#resp3" type="mod" target="#nkr_note_mod_1239004">時【大】，法【甲】</note>
+<note n="1240002" resp="#resp3" type="mod" target="#nkr_note_mod_1240002"><!--CBETA todo type: ＊-->今【大】＊，令【甲】＊</note>
+<note n="1240003" resp="#resp3" type="mod" target="#nkr_note_mod_1240003">亡【大】，無【考偽-甲】</note>
+<note n="1241001" resp="#resp3" type="mod" target="#nkr_note_mod_1241001">唯【大】，獨【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1236001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1236001">【原】朝鮮桐花寺藏刊本，【甲】大屋德城氏著鮮支巡禮行之內</note>
-<note n="1236002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1236002">一＝二【甲】</note>
-<note n="1237001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237001">以下第六紙缺丁</note>
-<note n="1237002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237002">抵＝控ヵ【甲】</note>
-<note n="1237003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237003">以下第九，十之二紙缺丁</note>
-<note n="1237004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237004">夫＝大【甲】</note>
-<note n="1237005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237005">足＝之ヵ【甲】</note>
-<note n="1237006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237006">據＝諸ヵ【甲】</note>
-<note n="1237007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237007">以下第十三，十四，十五，十六之四紙缺丁</note>
-<note n="1237008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1237008">堪然乃至無量壽佛少三百六字依甲本補載之</note>
-<note n="1238001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1238001">人＝大ヵ【甲】</note>
-<note n="1239001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1239001">菩薩＝聲聞ヵ【甲】</note>
-<note n="1239002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1239002">王＝法【甲】</note>
-<note n="1239003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1239003">以下第二十三，二十四之二紙缺丁</note>
-<note n="1239004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1239004">時＝法【甲】</note>
-<note n="1240001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1240001">以下第三十一乃至三十八之八紙缺丁</note>
-<note n="1240002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1240002">今＝令【甲】＊</note>
-<note n="1240003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1240003">亡＝無ヵ【甲】</note>
-<note n="1241001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1241001">唯＝獨【甲】</note>
-<note n="1241002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1241002">得見乃至往生安樂三百六字依甲本補載之</note>
-<note n="1242001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1242001">第四十九紙以下缺</note>
+<note n="1236001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1236001">【原】朝鮮桐花寺藏刊本，【甲】大屋德城氏著鮮支巡禮行之內</note>
+<note n="1236002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1236002">一＝二【甲】</note>
+<note n="1237001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237001">以下第六紙缺丁</note>
+<note n="1237002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237002">抵＝控ヵ【甲】</note>
+<note n="1237003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237003">以下第九，十之二紙缺丁</note>
+<note n="1237004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237004">夫＝大【甲】</note>
+<note n="1237005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237005">足＝之ヵ【甲】</note>
+<note n="1237006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237006">據＝諸ヵ【甲】</note>
+<note n="1237007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237007">以下第十三，十四，十五，十六之四紙缺丁</note>
+<note n="1237008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1237008">堪然乃至無量壽佛少三百六字依甲本補載之</note>
+<note n="1238001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1238001">人＝大ヵ【甲】</note>
+<note n="1239001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1239001">菩薩＝聲聞ヵ【甲】</note>
+<note n="1239002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1239002">王＝法【甲】</note>
+<note n="1239003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1239003">以下第二十三，二十四之二紙缺丁</note>
+<note n="1239004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1239004">時＝法【甲】</note>
+<note n="1240001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1240001">以下第三十一乃至三十八之八紙缺丁</note>
+<note n="1240002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1240002">今＝令【甲】＊</note>
+<note n="1240003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1240003">亡＝無ヵ【甲】</note>
+<note n="1241001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1241001">唯＝獨【甲】</note>
+<note n="1241002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1241002">得見乃至往生安樂三百六字依甲本補載之</note>
+<note n="1242001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1242001">第四十九紙以下缺</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="1236b2201" resp="#resp2" type="add" target="#nkr_note_add_1236b2201">土【CB】，士【大】</note>
-<note n="1238a0601" resp="#resp2" type="add" target="#nkr_note_add_1238a0601">恩【CB】，思【大】</note>
-<note n="1238a2901" resp="#resp2" type="add" target="#nkr_note_add_1238a2901">男【CB】，界【大】</note>
+<note n="1236b2201" resp="#resp3" type="add" target="#nkr_note_add_1236b2201">土【CB】，士【大】</note>
+<note n="1238a0601" resp="#resp3" type="add" target="#nkr_note_add_1238a0601">恩【CB】，思【大】</note>
+<note n="1238a2901" resp="#resp3" type="add" target="#nkr_note_add_1238a2901">男【CB】，界【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

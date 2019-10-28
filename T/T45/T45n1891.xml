@@ -11,146 +11,91 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.13 $<date>$Date: 2010/10/25 08:24:57 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2010/10/25 08:24:57 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 45, No. 1891</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-		<witness xml:id="wit3">【CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB05057">
-	<charName>CBETA CHARACTER CB05057</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[牛*羅]</value>
-	</charProp>
-	<mapping type="unicode">U+2DDF7</mapping>
-	<mapping cb:dec="988097" type="PUA">U+F13C1</mapping>
-</char>
-<char xml:id="CB13735">
-	<charName>CBETA CHARACTER CB13735</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[泳-永+刃]</value>
-	</charProp>
-	<mapping type="unicode">U+3CBD</mapping>
-	<mapping cb:dec="996775" type="PUA">U+F35A7</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">45</idno>.<idno type="no">1891</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">文殊指南圖讚</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB05057">
+				<charName>CBETA CHARACTER CB05057</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[牛*羅]</value>
+				</charProp>
+				<mapping type="unicode">U+2DDF7</mapping>
+				<mapping cb:dec="988097" type="PUA">U+F13C1</mapping>
+			</char>
+			<char xml:id="CB13735">
+				<charName>CBETA CHARACTER CB13735</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[泳-永+刃]</value>
+				</charProp>
+				<mapping type="unicode">U+3CBD</mapping>
+				<mapping cb:dec="996775" type="PUA">U+F35A7</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-08-01T15:07:09">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T45n1891.xml,v $
-Revision 1.13  2010/10/25 08:24:57  amtbgrace
-modified: 圖檔檔名修改
-
-Revision 1.12  2009/04/23 08:12:10  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.11  2006/12/22 02:21:12  saywhat
-p0804a23 婆[咀>呾]那
-
-Revision 1.10  2006/10/17 13:34:30  saywhat
-p0799a01[輪>輸]那, p0799a09[名>各]各
-
-Revision 1.9  2006/04/12 21:58:40  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/11/14 03:18:04  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.6  2004/10/29 09:41:46  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/09/09 04:10:56  saywhat
-刪除空的 juan close
-
-Revision 1.4  2004/04/20 08:42:40  maha
-「版本日期」標記修訂
-
-Revision 1.3  2003/06/25 06:43:32  moved
-執行 corr2app.pl v0.3.1
-
-Revision 1.1.1.1  2003/05/05 04:10:26  ray
-recover cvs
-
-Revision 1.15  2002/12/06 03:07:22  moved
-modified
-
-Revision 1.14  2002/11/04 10:57:46  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/07/29 10:14:43  vinking
-modified lang
-
-Revision 1.12  2002/07/05 06:12:18  vinking
-no message
-
-Revision 1.11  2002/07/01 02:58:26  vinking
-no message
-
-Revision 1.10  2002/04/08 09:41:07  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/11/05 06:20:10  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.8  2001/07/24 07:00:18  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/03/30 06:30:21  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/26 02:33:20  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 07:16:53  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 08:06:46  chris
-Added keywords $Revision: 1.13 $, $Date: 2010/10/25 08:24:57 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-08-01T15:07:09">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -1361,135 +1306,135 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0793002" to="#end0793002"><lem wit="#wit1"><space quantity="0"/></lem><rdg resp="#resp1" wit="#wit2">安吉州歸安縣太元鄉獨埧庵募緣重雕印行</rdg></app>
-<app from="#beg0793003" to="#end0793003"><lem wit="#wit1">參</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0793004" to="#end0793004"><lem wit="#wit1">羅</lem><rdg resp="#resp1" wit="#wit2">四維</rdg></app>
-<app from="#beg0793005" to="#end0793005"><lem wit="#wit1">容</lem><rdg resp="#resp1" wit="#wit2">融</rdg></app>
-<app from="#beg0793006" to="#end0793006"><lem wit="#wit1">在</lem><rdg resp="#resp1" wit="#wit2">住</rdg></app>
-<app from="#beg0794001" to="#end0794001"><lem wit="#wit1">在</lem><rdg resp="#resp1" wit="#wit2">住</rdg></app>
-<app from="#beg0794002" to="#end0794002"><lem wit="#wit1">蠻</lem><rdg resp="#resp1" wit="#wit2">藏</rdg></app>
-<app from="#beg0794003" to="#end0794003"><lem wit="#wit1">淵</lem><rdg resp="#resp1" wit="#wit2">潤</rdg></app>
-<app from="#beg0794004" to="#end0794004"><lem wit="#wit1">佛</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">佛佛</note></rdg></app>
-<app from="#beg0794005" to="#end0794005"><lem wit="#wit1">身</lem><rdg resp="#resp1" wit="#wit2">年</rdg></app>
-<app from="#beg0794006" to="#end0794006"><lem wit="#wit1">不</lem><rdg resp="#resp1" wit="#wit2">無</rdg></app>
-<app from="#beg0795a2101" to="#end0795a2101"><lem wit="#wit3" resp="#resp2">卻</lem><rdg wit="#wit1">郤</rdg></app>
-<app from="#beg0795001" to="#end0795001"><lem wit="#wit1">心</lem><rdg resp="#resp1" wit="#wit2">身心</rdg></app>
-<app from="#beg0795002" to="#end0795002"><lem wit="#wit1">慈</lem><rdg resp="#resp1" wit="#wit2">慈行</rdg></app>
-<app from="#beg0796001" to="#end0796001"><lem wit="#wit1">見</lem><rdg resp="#resp1" wit="#wit2">具</rdg></app>
-<app from="#beg0797001" to="#end0797001"><lem wit="#wit1">悲</lem><rdg resp="#resp1" wit="#wit2">志</rdg></app>
-<app from="#beg0797002" to="#end0797002"><lem wit="#wit1">門</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0798001" to="#end0798001"><lem wit="#wit1">憂</lem><rdg resp="#resp1" wit="#wit2">畏</rdg></app>
-<app from="#beg0799a0101" to="#end0799a0101"><lem wit="#wit3" resp="#resp3">輸<note type="cf1">T36n1739_p0860b21</note><note type="cf2">X04n0223_p0302c07</note></lem><rdg wit="#wit1">輪</rdg></app>
-<app from="#beg0799a0901" to="#end0799a0901"><lem wit="#wit3" resp="#resp3">各</lem><rdg wit="#wit1">名</rdg></app>
-<app from="#beg0799001" to="#end0799001"><lem wit="#wit1">應</lem><rdg resp="#resp1" wit="#wit2">皆</rdg></app>
-<app from="#beg0799002" to="#end0799002"><lem wit="#wit1">迤</lem><rdg resp="#resp1" wit="#wit2">迆</rdg></app>
-<app from="#beg0800001" to="#end0800001"><lem wit="#wit1">足</lem><rdg resp="#resp1" wit="#wit2">足指</rdg></app>
-<app from="#beg0800002" to="#end0800002"><lem wit="#wit1">摩</lem><rdg resp="#resp1" wit="#wit2">磨</rdg></app>
-<app from="#beg0800003" to="#end0800003"><lem wit="#wit1">瓢</lem><rdg resp="#resp1" wit="#wit2">飃</rdg></app>
-<app from="#beg0801001" to="#end0801001"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2">第三</rdg></app>
-<app from="#beg0801002" to="#end0801002"><lem wit="#wit1">現前</lem><rdg resp="#resp1" wit="#wit2">難勝</rdg></app>
-<app from="#beg0802001" to="#end0802001"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2">第三</rdg></app>
-<app from="#beg0802002" to="#end0802002"><lem wit="#wit1">難勝</lem><rdg resp="#resp1" wit="#wit2">現前</rdg></app>
-<app from="#beg0802003" to="#end0802003"><lem wit="#wit1">深</lem><rdg resp="#resp1" wit="#wit2">大</rdg></app>
-<app from="#beg0803001" to="#end0803001"><lem wit="#wit1">岳</lem><rdg resp="#resp1" wit="#wit2">山</rdg></app>
-<app from="#beg0803002" to="#end0803002"><lem wit="#wit1">詣</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0803003" to="#end0803003"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit2">天</rdg></app>
-<app from="#beg0804a2301" to="#end0804a2301"><lem wit="#wit3" resp="#resp3">呾<note type="cf1">T36n1742_p1064a01</note></lem><rdg wit="#wit1">咀</rdg></app>
-<app from="#beg0804001" to="#end0804001"><lem wit="#wit1">釰</lem><rdg resp="#resp1" wit="#wit2"><g ref="#CB13735">㲽</g></rdg></app>
-<app from="#beg0804002" to="#end0804002"><lem wit="#wit1">間</lem><rdg resp="#resp1" wit="#wit2">門</rdg></app>
-<app from="#beg0805001" to="#end0805001"><lem wit="#wit1">見</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0805002" to="#end0805002"><lem wit="#wit1">作</lem><rdg resp="#resp1" wit="#wit2">昨</rdg></app>
-<app from="#beg0805003" to="#end0805003"><lem wit="#wit1">成</lem><rdg resp="#resp1" wit="#wit2">求</rdg></app>
+<app from="#beg0793002" to="#end0793002"><lem wit="#wit.orig"><space quantity="0"/></lem><rdg resp="#resp2" wit="#wit1">安吉州歸安縣太元鄉獨埧庵募緣重雕印行</rdg></app>
+<app from="#beg0793003" to="#end0793003"><lem wit="#wit.orig">參</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0793004" to="#end0793004"><lem wit="#wit.orig">羅</lem><rdg resp="#resp2" wit="#wit1">四維</rdg></app>
+<app from="#beg0793005" to="#end0793005"><lem wit="#wit.orig">容</lem><rdg resp="#resp2" wit="#wit1">融</rdg></app>
+<app from="#beg0793006" to="#end0793006"><lem wit="#wit.orig">在</lem><rdg resp="#resp2" wit="#wit1">住</rdg></app>
+<app from="#beg0794001" to="#end0794001"><lem wit="#wit.orig">在</lem><rdg resp="#resp2" wit="#wit1">住</rdg></app>
+<app from="#beg0794002" to="#end0794002"><lem wit="#wit.orig">蠻</lem><rdg resp="#resp2" wit="#wit1">藏</rdg></app>
+<app from="#beg0794003" to="#end0794003"><lem wit="#wit.orig">淵</lem><rdg resp="#resp2" wit="#wit1">潤</rdg></app>
+<app from="#beg0794004" to="#end0794004"><lem wit="#wit.orig">佛</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">佛佛</note></rdg></app>
+<app from="#beg0794005" to="#end0794005"><lem wit="#wit.orig">身</lem><rdg resp="#resp2" wit="#wit1">年</rdg></app>
+<app from="#beg0794006" to="#end0794006"><lem wit="#wit.orig">不</lem><rdg resp="#resp2" wit="#wit1">無</rdg></app>
+<app from="#beg0795a2101" to="#end0795a2101"><lem wit="#wit.cbeta" resp="#resp3">卻</lem><rdg wit="#wit.orig">郤</rdg></app>
+<app from="#beg0795001" to="#end0795001"><lem wit="#wit.orig">心</lem><rdg resp="#resp2" wit="#wit1">身心</rdg></app>
+<app from="#beg0795002" to="#end0795002"><lem wit="#wit.orig">慈</lem><rdg resp="#resp2" wit="#wit1">慈行</rdg></app>
+<app from="#beg0796001" to="#end0796001"><lem wit="#wit.orig">見</lem><rdg resp="#resp2" wit="#wit1">具</rdg></app>
+<app from="#beg0797001" to="#end0797001"><lem wit="#wit.orig">悲</lem><rdg resp="#resp2" wit="#wit1">志</rdg></app>
+<app from="#beg0797002" to="#end0797002"><lem wit="#wit.orig">門</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0798001" to="#end0798001"><lem wit="#wit.orig">憂</lem><rdg resp="#resp2" wit="#wit1">畏</rdg></app>
+<app from="#beg0799a0101" to="#end0799a0101"><lem wit="#wit.cbeta" resp="#resp4">輸<note type="cf1">T36n1739_p0860b21</note><note type="cf2">X04n0223_p0302c07</note></lem><rdg wit="#wit.orig">輪</rdg></app>
+<app from="#beg0799a0901" to="#end0799a0901"><lem wit="#wit.cbeta" resp="#resp4">各</lem><rdg wit="#wit.orig">名</rdg></app>
+<app from="#beg0799001" to="#end0799001"><lem wit="#wit.orig">應</lem><rdg resp="#resp2" wit="#wit1">皆</rdg></app>
+<app from="#beg0799002" to="#end0799002"><lem wit="#wit.orig">迤</lem><rdg resp="#resp2" wit="#wit1">迆</rdg></app>
+<app from="#beg0800001" to="#end0800001"><lem wit="#wit.orig">足</lem><rdg resp="#resp2" wit="#wit1">足指</rdg></app>
+<app from="#beg0800002" to="#end0800002"><lem wit="#wit.orig">摩</lem><rdg resp="#resp2" wit="#wit1">磨</rdg></app>
+<app from="#beg0800003" to="#end0800003"><lem wit="#wit.orig">瓢</lem><rdg resp="#resp2" wit="#wit1">飃</rdg></app>
+<app from="#beg0801001" to="#end0801001"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1">第三</rdg></app>
+<app from="#beg0801002" to="#end0801002"><lem wit="#wit.orig">現前</lem><rdg resp="#resp2" wit="#wit1">難勝</rdg></app>
+<app from="#beg0802001" to="#end0802001"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1">第三</rdg></app>
+<app from="#beg0802002" to="#end0802002"><lem wit="#wit.orig">難勝</lem><rdg resp="#resp2" wit="#wit1">現前</rdg></app>
+<app from="#beg0802003" to="#end0802003"><lem wit="#wit.orig">深</lem><rdg resp="#resp2" wit="#wit1">大</rdg></app>
+<app from="#beg0803001" to="#end0803001"><lem wit="#wit.orig">岳</lem><rdg resp="#resp2" wit="#wit1">山</rdg></app>
+<app from="#beg0803002" to="#end0803002"><lem wit="#wit.orig">詣</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0803003" to="#end0803003"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit1">天</rdg></app>
+<app from="#beg0804a2301" to="#end0804a2301"><lem wit="#wit.cbeta" resp="#resp4">呾<note type="cf1">T36n1742_p1064a01</note></lem><rdg wit="#wit.orig">咀</rdg></app>
+<app from="#beg0804001" to="#end0804001"><lem wit="#wit.orig">釰</lem><rdg resp="#resp2" wit="#wit1"><g ref="#CB13735">㲽</g></rdg></app>
+<app from="#beg0804002" to="#end0804002"><lem wit="#wit.orig">間</lem><rdg resp="#resp2" wit="#wit1">門</rdg></app>
+<app from="#beg0805001" to="#end0805001"><lem wit="#wit.orig">見</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0805002" to="#end0805002"><lem wit="#wit.orig">作</lem><rdg resp="#resp2" wit="#wit1">昨</rdg></app>
+<app from="#beg0805003" to="#end0805003"><lem wit="#wit.orig">成</lem><rdg resp="#resp2" wit="#wit1">求</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0793002" resp="#resp2" type="mod" target="#nkr_note_mod_0793002">〔－〕【大】，安吉州歸安縣太元鄉獨埧庵募緣重雕印行【甲】</note>
-<note n="0793003" resp="#resp2" type="mod" target="#nkr_note_mod_0793003">參【大】，〔－〕【甲】</note>
-<note n="0793004" resp="#resp2" type="mod" target="#nkr_note_mod_0793004">羅【大】，四維【甲】</note>
-<note n="0793005" resp="#resp2" type="mod" target="#nkr_note_mod_0793005">容【大】，融【甲】</note>
-<note n="0793006" resp="#resp2" type="mod" target="#nkr_note_mod_0793006">在【大】，住【甲】</note>
-<note n="0794001" resp="#resp2" type="mod" target="#nkr_note_mod_0794001">在【大】，住【甲】</note>
-<note n="0794002" resp="#resp2" type="mod" target="#nkr_note_mod_0794002">蠻【大】，藏【甲】</note>
-<note n="0794003" resp="#resp2" type="mod" target="#nkr_note_mod_0794003">淵【大】，潤【甲】</note>
-<note n="0794004" resp="#resp2" type="mod" target="#nkr_note_mod_0794004">佛【大】，<note place="inline">佛佛</note>【甲】</note>
-<note n="0794005" resp="#resp2" type="mod" target="#nkr_note_mod_0794005">身【大】，年【甲】</note>
-<note n="0794006" resp="#resp2" type="mod" target="#nkr_note_mod_0794006">不【大】，無【甲】</note>
-<note n="0795001" resp="#resp2" type="mod" target="#nkr_note_mod_0795001">心【大】，身心【甲】</note>
-<note n="0795002" resp="#resp2" type="mod" target="#nkr_note_mod_0795002">慈【大】，慈行【甲】</note>
-<note n="0796001" resp="#resp2" type="mod" target="#nkr_note_mod_0796001">見【大】，具【甲】</note>
-<note n="0797001" resp="#resp2" type="mod" target="#nkr_note_mod_0797001">悲【大】，志【甲】</note>
-<note n="0797002" resp="#resp2" type="mod" target="#nkr_note_mod_0797002">門【大】，〔－〕【甲】</note>
-<note n="0798001" resp="#resp2" type="mod" target="#nkr_note_mod_0798001">憂【大】，畏【甲】</note>
-<note n="0799001" resp="#resp2" type="mod" target="#nkr_note_mod_0799001">應【大】，皆【甲】</note>
-<note n="0799002" resp="#resp2" type="mod" target="#nkr_note_mod_0799002">迤【大】，迆【甲】</note>
-<note n="0800001" resp="#resp2" type="mod" target="#nkr_note_mod_0800001">足【大】，足指【甲】</note>
-<note n="0800002" resp="#resp2" type="mod" target="#nkr_note_mod_0800002">摩【大】，磨【甲】</note>
-<note n="0800003" resp="#resp2" type="mod" target="#nkr_note_mod_0800003">瓢【大】，飃【甲】</note>
-<note n="0801001" resp="#resp2" type="mod" target="#nkr_note_mod_0801001">三【大】，第三【甲】</note>
-<note n="0801002" resp="#resp2" type="mod" target="#nkr_note_mod_0801002">現前【大】，難勝【甲】</note>
-<note n="0802001" resp="#resp2" type="mod" target="#nkr_note_mod_0802001">三【大】，第三【甲】</note>
-<note n="0802002" resp="#resp2" type="mod" target="#nkr_note_mod_0802002">難勝【大】，現前【甲】</note>
-<note n="0802003" resp="#resp2" type="mod" target="#nkr_note_mod_0802003">深【大】，大【甲】</note>
-<note n="0803001" resp="#resp2" type="mod" target="#nkr_note_mod_0803001">岳【大】，山【甲】</note>
-<note n="0803002" resp="#resp2" type="mod" target="#nkr_note_mod_0803002">詣【大】，〔－〕【甲】</note>
-<note n="0803003" resp="#resp2" type="mod" target="#nkr_note_mod_0803003">大【大】，天【甲】</note>
-<note n="0804001" resp="#resp2" type="mod" target="#nkr_note_mod_0804001">釰【大】，<g ref="#CB13735">㲽</g>【甲】</note>
-<note n="0804002" resp="#resp2" type="mod" target="#nkr_note_mod_0804002">間【大】，門【甲】</note>
-<note n="0805001" resp="#resp2" type="mod" target="#nkr_note_mod_0805001">見【大】，〔－〕【甲】</note>
-<note n="0805002" resp="#resp2" type="mod" target="#nkr_note_mod_0805002">作【大】，昨【甲】</note>
-<note n="0805003" resp="#resp2" type="mod" target="#nkr_note_mod_0805003">成【大】，求【甲】</note>
+<note n="0793002" resp="#resp3" type="mod" target="#nkr_note_mod_0793002">〔－〕【大】，安吉州歸安縣太元鄉獨埧庵募緣重雕印行【甲】</note>
+<note n="0793003" resp="#resp3" type="mod" target="#nkr_note_mod_0793003">參【大】，〔－〕【甲】</note>
+<note n="0793004" resp="#resp3" type="mod" target="#nkr_note_mod_0793004">羅【大】，四維【甲】</note>
+<note n="0793005" resp="#resp3" type="mod" target="#nkr_note_mod_0793005">容【大】，融【甲】</note>
+<note n="0793006" resp="#resp3" type="mod" target="#nkr_note_mod_0793006">在【大】，住【甲】</note>
+<note n="0794001" resp="#resp3" type="mod" target="#nkr_note_mod_0794001">在【大】，住【甲】</note>
+<note n="0794002" resp="#resp3" type="mod" target="#nkr_note_mod_0794002">蠻【大】，藏【甲】</note>
+<note n="0794003" resp="#resp3" type="mod" target="#nkr_note_mod_0794003">淵【大】，潤【甲】</note>
+<note n="0794004" resp="#resp3" type="mod" target="#nkr_note_mod_0794004">佛【大】，<note place="inline">佛佛</note>【甲】</note>
+<note n="0794005" resp="#resp3" type="mod" target="#nkr_note_mod_0794005">身【大】，年【甲】</note>
+<note n="0794006" resp="#resp3" type="mod" target="#nkr_note_mod_0794006">不【大】，無【甲】</note>
+<note n="0795001" resp="#resp3" type="mod" target="#nkr_note_mod_0795001">心【大】，身心【甲】</note>
+<note n="0795002" resp="#resp3" type="mod" target="#nkr_note_mod_0795002">慈【大】，慈行【甲】</note>
+<note n="0796001" resp="#resp3" type="mod" target="#nkr_note_mod_0796001">見【大】，具【甲】</note>
+<note n="0797001" resp="#resp3" type="mod" target="#nkr_note_mod_0797001">悲【大】，志【甲】</note>
+<note n="0797002" resp="#resp3" type="mod" target="#nkr_note_mod_0797002">門【大】，〔－〕【甲】</note>
+<note n="0798001" resp="#resp3" type="mod" target="#nkr_note_mod_0798001">憂【大】，畏【甲】</note>
+<note n="0799001" resp="#resp3" type="mod" target="#nkr_note_mod_0799001">應【大】，皆【甲】</note>
+<note n="0799002" resp="#resp3" type="mod" target="#nkr_note_mod_0799002">迤【大】，迆【甲】</note>
+<note n="0800001" resp="#resp3" type="mod" target="#nkr_note_mod_0800001">足【大】，足指【甲】</note>
+<note n="0800002" resp="#resp3" type="mod" target="#nkr_note_mod_0800002">摩【大】，磨【甲】</note>
+<note n="0800003" resp="#resp3" type="mod" target="#nkr_note_mod_0800003">瓢【大】，飃【甲】</note>
+<note n="0801001" resp="#resp3" type="mod" target="#nkr_note_mod_0801001">三【大】，第三【甲】</note>
+<note n="0801002" resp="#resp3" type="mod" target="#nkr_note_mod_0801002">現前【大】，難勝【甲】</note>
+<note n="0802001" resp="#resp3" type="mod" target="#nkr_note_mod_0802001">三【大】，第三【甲】</note>
+<note n="0802002" resp="#resp3" type="mod" target="#nkr_note_mod_0802002">難勝【大】，現前【甲】</note>
+<note n="0802003" resp="#resp3" type="mod" target="#nkr_note_mod_0802003">深【大】，大【甲】</note>
+<note n="0803001" resp="#resp3" type="mod" target="#nkr_note_mod_0803001">岳【大】，山【甲】</note>
+<note n="0803002" resp="#resp3" type="mod" target="#nkr_note_mod_0803002">詣【大】，〔－〕【甲】</note>
+<note n="0803003" resp="#resp3" type="mod" target="#nkr_note_mod_0803003">大【大】，天【甲】</note>
+<note n="0804001" resp="#resp3" type="mod" target="#nkr_note_mod_0804001">釰【大】，<g ref="#CB13735">㲽</g>【甲】</note>
+<note n="0804002" resp="#resp3" type="mod" target="#nkr_note_mod_0804002">間【大】，門【甲】</note>
+<note n="0805001" resp="#resp3" type="mod" target="#nkr_note_mod_0805001">見【大】，〔－〕【甲】</note>
+<note n="0805002" resp="#resp3" type="mod" target="#nkr_note_mod_0805002">作【大】，昨【甲】</note>
+<note n="0805003" resp="#resp3" type="mod" target="#nkr_note_mod_0805003">成【大】，求【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0793001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0793001">【原】大日本續藏經，【甲】建長三年寫小野玄妙氏藏本</note>
-<note n="0793002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0793002">此下甲本有安吉州歸安縣太元鄉獨埧庵募緣重雕印行十八字</note>
-<note n="0793003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0793003">〔參〕－【甲】</note>
-<note n="0793004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0793004">羅＝四維【甲】</note>
-<note n="0793005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0793005">容＝融【甲】</note>
-<note n="0793006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0793006">在＝住【甲】</note>
-<note n="0794001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0794001">在＝住【甲】</note>
-<note n="0794002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0794002">蠻＝藏【甲】</note>
-<note n="0794003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0794003">淵＝潤【甲】</note>
-<note n="0794004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0794004">佛＝佛佛（夾註）【甲】</note>
-<note n="0794005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0794005">身＝年【甲】</note>
-<note n="0794006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0794006">不＝無【甲】</note>
-<note n="0795001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0795001">（身）＋心【甲】</note>
-<note n="0795002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0795002">慈＋（行）【甲】</note>
-<note n="0796001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0796001">見＝具【甲】</note>
-<note n="0797001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0797001">悲＝志【甲】</note>
-<note n="0797002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0797002">〔門〕－【甲】</note>
-<note n="0798001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0798001">憂＝畏【甲】</note>
-<note n="0799001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0799001">應＝皆【甲】</note>
-<note n="0799002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0799002">迤＝迆【甲】</note>
-<note n="0800001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0800001">足＋（指）【甲】</note>
-<note n="0800002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0800002">摩＝磨【甲】</note>
-<note n="0800003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0800003">瓢＝飃【甲】</note>
-<note n="0801001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0801001">（第）＋三【甲】</note>
-<note n="0801002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0801002">現前＝難勝【甲】</note>
-<note n="0802001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0802001">（第）＋三【甲】</note>
-<note n="0802002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0802002">難勝＝現前【甲】</note>
-<note n="0802003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0802003">深＝大【甲】</note>
-<note n="0803001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0803001">岳＝山【甲】</note>
-<note n="0803002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0803002">〔詣〕－【甲】</note>
-<note n="0803003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0803003">大＝天【甲】</note>
-<note n="0804001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0804001">釰＝<g ref="#CB13735">㲽</g>【甲】</note>
-<note n="0804002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0804002">間＝門【甲】</note>
-<note n="0805001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0805001">〔見〕－【甲】</note>
-<note n="0805002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0805002">作＝昨【甲】</note>
-<note n="0805003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0805003">成＝求【甲】</note>
+<note n="0793001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0793001">【原】大日本續藏經，【甲】建長三年寫小野玄妙氏藏本</note>
+<note n="0793002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0793002">此下甲本有安吉州歸安縣太元鄉獨埧庵募緣重雕印行十八字</note>
+<note n="0793003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0793003">〔參〕－【甲】</note>
+<note n="0793004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0793004">羅＝四維【甲】</note>
+<note n="0793005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0793005">容＝融【甲】</note>
+<note n="0793006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0793006">在＝住【甲】</note>
+<note n="0794001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0794001">在＝住【甲】</note>
+<note n="0794002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0794002">蠻＝藏【甲】</note>
+<note n="0794003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0794003">淵＝潤【甲】</note>
+<note n="0794004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0794004">佛＝佛佛（夾註）【甲】</note>
+<note n="0794005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0794005">身＝年【甲】</note>
+<note n="0794006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0794006">不＝無【甲】</note>
+<note n="0795001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0795001">（身）＋心【甲】</note>
+<note n="0795002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0795002">慈＋（行）【甲】</note>
+<note n="0796001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0796001">見＝具【甲】</note>
+<note n="0797001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0797001">悲＝志【甲】</note>
+<note n="0797002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0797002">〔門〕－【甲】</note>
+<note n="0798001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0798001">憂＝畏【甲】</note>
+<note n="0799001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0799001">應＝皆【甲】</note>
+<note n="0799002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0799002">迤＝迆【甲】</note>
+<note n="0800001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0800001">足＋（指）【甲】</note>
+<note n="0800002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0800002">摩＝磨【甲】</note>
+<note n="0800003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0800003">瓢＝飃【甲】</note>
+<note n="0801001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0801001">（第）＋三【甲】</note>
+<note n="0801002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0801002">現前＝難勝【甲】</note>
+<note n="0802001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0802001">（第）＋三【甲】</note>
+<note n="0802002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0802002">難勝＝現前【甲】</note>
+<note n="0802003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0802003">深＝大【甲】</note>
+<note n="0803001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0803001">岳＝山【甲】</note>
+<note n="0803002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0803002">〔詣〕－【甲】</note>
+<note n="0803003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0803003">大＝天【甲】</note>
+<note n="0804001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0804001">釰＝<g ref="#CB13735">㲽</g>【甲】</note>
+<note n="0804002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0804002">間＝門【甲】</note>
+<note n="0805001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0805001">〔見〕－【甲】</note>
+<note n="0805002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0805002">作＝昨【甲】</note>
+<note n="0805003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0805003">成＝求【甲】</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0795a2101" resp="#resp2" type="add" target="#nkr_note_add_0795a2101">卻【CB】，郤【大】</note>
-<note n="0799a0101" resp="#resp2" type="add" target="#nkr_note_add_0799a0101">輸【CB】，輪【大】</note>
-<note n="0799a0901" resp="#resp2" type="add" target="#nkr_note_add_0799a0901">各【CB】，名【大】</note>
-<note n="0804a2301" resp="#resp2" type="add" target="#nkr_note_add_0804a2301">呾【CB】，咀【大】</note>
+<note n="0795a2101" resp="#resp3" type="add" target="#nkr_note_add_0795a2101">卻【CB】，郤【大】</note>
+<note n="0799a0101" resp="#resp3" type="add" target="#nkr_note_add_0799a0101">輸【CB】，輪【大】</note>
+<note n="0799a0901" resp="#resp3" type="add" target="#nkr_note_add_0799a0901">各【CB】，名【大】</note>
+<note n="0804a2301" resp="#resp3" type="add" target="#nkr_note_add_0804a2301">呾【CB】，咀【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

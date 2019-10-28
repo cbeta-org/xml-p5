@@ -11,47 +11,63 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.15 $<date>$Date: 2012/08/27 03:14:37 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/08/27 03:14:37 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 12, No. 348</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【明】</witness>
-		<witness xml:id="wit5">【宮】</witness>
-		<witness xml:id="wit6">【CB】</witness>
-		<witness xml:id="wit7">【麗-CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by The Seeland Monastery</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，西蓮淨苑提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">12</idno>.<idno type="no">348</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說大乘方等要慧經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by The Seeland Monastery</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，西蓮淨苑提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【明】</witness>
+						<witness xml:id="wit4">【宮】</witness>
+						<witness xml:id="wit5">【麗-CB】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 			<language ident="en">English</language>
 		</langUsage>
 	</profileDesc>
@@ -59,44 +75,10 @@
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-06-28T19:58:22">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)</change>
-<!--
-$Log: T12n0348.xml,v $
-Revision 1.15  2012/08/27 03:14:37  maha
-修訂新標小圓點及著重號
-
-Revision 1.14  2009/05/24 09:19:31  saywhat
-<note mod> added 【麗-CB】
-
-Revision 1.13  2009/04/23 07:58:00  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.12  2009/02/26 10:25:40  saywhat
-id="pTp => id="pT12p
-
-Revision 1.11  2007/12/09 10:47:26  saywhat
-新式標點版
-
-Revision 1.10  2007/10/18 04:15:23  saywhat
-p0186c01 [諸會>諸眾會]
-
-Revision 1.9  2006/04/12 21:54:38  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/10/12 13:45:36  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/09/15 01:54:54  saywhat
-juan加上jhead
-
-Revision 1.5  2004/04/20 08:37:40  maha
-「版本日期」標記修訂
-
-Revision 1.4  2004/02/27 00:38:05  ray
-add cvs log
-
--->
- </revisionDesc>
+		<change when="1999-06-28T19:58:22">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -129,37 +111,37 @@ add cvs log
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0186008" to="#end0186008"><lem wit="#wit1">國</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app from="#beg0186009" to="#end0186009"><lem wit="#wit1">所問者乃敢<lb n="0186b17" ed="T"/>陳之</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">敢有所問</rdg></app>
-<app from="#beg0186010" to="#end0186010"><lem wit="#wit1">並</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app from="#beg0186011" to="#end0186011"><lem wit="#wit1">根之相</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">相之根</rdg></app>
-<app from="#beg0186012" to="#end0186012"><lem wit="#wit1">智</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">智地</rdg></app>
-<app from="#beg0186013" to="#end0186013"><lem resp="#resp3" wit="#wit6 #wit7">諸眾會<note type="cf1">K06n0050_p1337a22</note><note type="cf2">T04n0202_p0359b07</note></lem><rdg wit="#wit1">諸會</rdg><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">眾會</rdg></app>
-<app from="#beg0186014" to="#end0186014"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">佛說大</rdg></app>
+<app from="#beg0186008" to="#end0186008"><lem wit="#wit.orig">國</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0186009" to="#end0186009"><lem wit="#wit.orig">所問者乃敢<lb n="0186b17" ed="T"/>陳之</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">敢有所問</rdg></app>
+<app from="#beg0186010" to="#end0186010"><lem wit="#wit.orig">並</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0186011" to="#end0186011"><lem wit="#wit.orig">根之相</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">相之根</rdg></app>
+<app from="#beg0186012" to="#end0186012"><lem wit="#wit.orig">智</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">智地</rdg></app>
+<app from="#beg0186013" to="#end0186013"><lem resp="#resp3" wit="#wit.cbeta #wit5">諸眾會<note type="cf1">K06n0050_p1337a22</note><note type="cf2">T04n0202_p0359b07</note></lem><rdg wit="#wit.orig">諸會</rdg><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">眾會</rdg></app>
+<app from="#beg0186014" to="#end0186014"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">佛說大</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0186008" resp="#resp2" type="mod" target="#nkr_note_mod_0186008">國【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0186009" resp="#resp2" type="mod" target="#nkr_note_mod_0186009">所問者乃敢陳之【大】，敢有所問【宋】【元】【明】【宮】</note>
-<note n="0186010" resp="#resp2" type="mod" target="#nkr_note_mod_0186010">並【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0186011" resp="#resp2" type="mod" target="#nkr_note_mod_0186011">根之相【大】，相之根【宋】【元】【明】【宮】</note>
-<note n="0186012" resp="#resp2" type="mod" target="#nkr_note_mod_0186012">智【大】，智地【宋】【元】【明】【宮】</note>
-<note n="0186013" resp="#resp2" type="mod" target="#nkr_note_mod_0186013">諸眾會【CB】【麗-CB】，諸會【大】，眾會【宋】【元】【明】【宮】</note>
-<note n="0186014" resp="#resp2" type="mod" target="#nkr_note_mod_0186014">大【大】，佛說大【宋】【元】【明】【宮】</note>
+<note n="0186008" resp="#resp1" type="mod" target="#nkr_note_mod_0186008">國【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0186009" resp="#resp1" type="mod" target="#nkr_note_mod_0186009">所問者乃敢陳之【大】，敢有所問【宋】【元】【明】【宮】</note>
+<note n="0186010" resp="#resp1" type="mod" target="#nkr_note_mod_0186010">並【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0186011" resp="#resp1" type="mod" target="#nkr_note_mod_0186011">根之相【大】，相之根【宋】【元】【明】【宮】</note>
+<note n="0186012" resp="#resp1" type="mod" target="#nkr_note_mod_0186012">智【大】，智地【宋】【元】【明】【宮】</note>
+<note n="0186013" resp="#resp1" type="mod" target="#nkr_note_mod_0186013">諸眾會【CB】【麗-CB】，諸會【大】，眾會【宋】【元】【明】【宮】</note>
+<note n="0186014" resp="#resp1" type="mod" target="#nkr_note_mod_0186014">大【大】，佛說大【宋】【元】【明】【宮】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0186008" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0186008">〔國〕－【三】【宮】</note>
-<note n="0186009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0186009">所問者乃敢陳之＝敢有所問【三】【宮】</note>
-<note n="0186010" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0186010">〔並〕－【三】【宮】</note>
-<note n="0186011" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0186011">根之相＝相之根【三】【宮】</note>
-<note n="0186012" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0186012">智＋（地）【三】【宮】</note>
-<note n="0186013" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0186013">諸會＝眾會【三】【宮】</note>
-<note n="0186014" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0186014">（佛說）＋大【三】【宮】</note>
+<note n="0186008" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0186008">〔國〕－【三】【宮】</note>
+<note n="0186009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0186009">所問者乃敢陳之＝敢有所問【三】【宮】</note>
+<note n="0186010" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0186010">〔並〕－【三】【宮】</note>
+<note n="0186011" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0186011">根之相＝相之根【三】【宮】</note>
+<note n="0186012" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0186012">智＋（地）【三】【宮】</note>
+<note n="0186013" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0186013">諸會＝眾會【三】【宮】</note>
+<note n="0186014" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0186014">（佛說）＋大【三】【宮】</note>
 </p>
 </cb:div>
 </back></text></TEI>

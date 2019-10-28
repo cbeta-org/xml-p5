@@ -11,109 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.8 $<date>$Date: 2009/04/23 08:00:01 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:00:01 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 19, No. 924A</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【原】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">19</idno>.<idno type="no">924A</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">藥師如來念誦儀軌</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-27T11:50:55">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T19n0924A.xml,v $
-Revision 1.8  2009/04/23 08:00:01  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.7  2006/04/12 21:55:30  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.5  2004/10/14 16:25:33  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/07/05 13:20:18  saywhat
-修訂 div 位置
-
-Revision 1.3  2004/04/20 08:38:41  maha
-「版本日期」標記修訂
-
-Revision 1.2  2004/04/20 03:25:23  maha
-將 type="inline" 或 rend="inline" 改成 place="inline"
-
-Revision 1.1.1.1  2003/05/05 04:09:09  ray
-recover cvs
-
-Revision 1.14  2002/11/27 11:26:15  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:44:52  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/07/29 09:56:06  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:03:07  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:13:09  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/24 06:52:38  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/05/25 08:59:05  ray
-經號統一為四碼
-
-Revision 1.7  2001/03/30 06:45:00  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:12:53  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:54:13  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:44:06  chris
-Added keywords $Revision: 1.8 $, $Date: 2009/04/23 08:00:01 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-27T11:50:55">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -215,23 +176,23 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0029019" to="#end0029019"><lem wit="#wit1">令</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">令安</rdg><rdg resp="#resp1" wit="#wit2" type="variantRemark">令住</rdg></app>
-<app from="#beg0029020" to="#end0029020"><lem resp="#resp1" wit="#wit1">柱</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">拄</rdg></app>
+<app from="#beg0029019" to="#end0029019"><lem wit="#wit.orig">令</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">令安</rdg><rdg resp="#resp2" wit="#wit1" type="variantRemark">令住</rdg></app>
+<app from="#beg0029020" to="#end0029020"><lem resp="#resp2" wit="#wit.orig">柱</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">拄</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0029019" resp="#resp2" type="mod" target="#nkr_note_mod_0029019">令【大】，令安【校異-原】，<!--CBETA todo type: newmod-->令住【校異-原】</note>
-<note n="0029020" resp="#resp2" type="mod" target="#nkr_note_mod_0029020">柱【大】，拄【考偽-原】</note>
+<note n="0029019" resp="#resp3" type="mod" target="#nkr_note_mod_0029019">令【大】，令安【校異-原】，<!--CBETA todo type: newmod-->令住【校異-原】</note>
+<note n="0029020" resp="#resp3" type="mod" target="#nkr_note_mod_0029020">柱【大】，拄【考偽-原】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0029018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0029018">【原】享和元年刊長谷寺藏本</note>
-<note n="0029019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0029019">令＋（安）ィ【原】，（住）ィ【原】</note>
-<note n="0029020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0029020">柱＝拄ヵ【原】</note>
+<note n="0029018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0029018">【原】享和元年刊長谷寺藏本</note>
+<note n="0029019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0029019">令＋（安）ィ【原】，（住）ィ【原】</note>
+<note n="0029020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0029020">柱＝拄ヵ【原】</note>
 </p>
 </cb:div>
 </back></text></TEI>

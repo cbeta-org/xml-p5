@@ -11,103 +11,71 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.8 $<date>$Date: 2009/04/23 08:01:43 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:43 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 21, No. 1215</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【明】</witness>
-		<witness xml:id="wit3">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">21</idno>.<idno type="no">1215</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大乘方廣曼殊室利菩薩華嚴本教閻曼德迦忿怒王真言大威德儀軌品</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【明】</witness>
+						<witness xml:id="wit2">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-31T09:31:25">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T21n1215.xml,v $
-Revision 1.8  2009/04/23 08:01:43  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.7  2006/04/12 21:55:52  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.5  2004/11/14 03:17:25  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.4  2004/10/22 04:09:41  saywhat
-段落前加入圈點
-
-Revision 1.3  2004/09/09 10:05:01  saywhat
-刪除空的 juan close
-
-Revision 1.2  2004/04/20 08:39:09  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:09:26  ray
-recover cvs
-
-Revision 1.12  2002/11/28 10:06:34  saywhat
-校勘插入處理
-
-Revision 1.11  2002/11/04 10:46:11  ray
-tei.2 => TEI.2
-
-Revision 1.10  2002/07/29 09:57:18  vinking
-modified lang
-
-Revision 1.9  2002/04/08 09:07:11  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.8  2001/07/24 06:53:34  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/03/30 05:57:22  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:18:33  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:57:05  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:46:58  chris
-Added keywords $Revision: 1.8 $, $Date: 2009/04/23 08:01:43 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-31T09:31:25">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -232,63 +200,63 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0076011" to="#end0076011"><lem wit="#wit1">教</lem><rdg resp="#resp1" wit="#wit2">教讚</rdg></app>
-<app from="#beg0076012" to="#end0076012"><lem wit="#wit1">第三<note n="0076013" resp="#resp1" place="foot text" type="orig">此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note><note n="0076013" resp="#resp2" type="mod"><!--CBETA todo type: a-->此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note>十</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0076014" to="#end0076014"><lem wit="#wit1">麼</lem><rdg resp="#resp1" wit="#wit2 #wit3">昧</rdg></app>
-<app from="#beg0076015" to="#end0076015"><lem wit="#wit1">擗</lem><rdg resp="#resp1" wit="#wit2 #wit3">躃</rdg></app>
-<app from="#beg0076016" to="#end0076016"><lem wit="#wit1">輪</lem><rdg resp="#resp1" wit="#wit3">輸</rdg></app>
-<app from="#beg0076017" to="#end0076017"><lem wit="#wit1">嚩</lem><rdg resp="#resp1" wit="#wit2 #wit3">縛</rdg></app>
-<app from="#beg0076018" to="#end0076018"><lem wit="#wit1">時</lem><rdg resp="#resp1" wit="#wit2 #wit3">明</rdg></app>
-<app from="#beg0076019" to="#end0076019"><lem wit="#wit1">麼</lem><rdg resp="#resp1" wit="#wit2 #wit3">摩</rdg></app>
-<app from="#beg0076020" to="#end0076020"><lem wit="#wit1">象</lem><rdg resp="#resp1" wit="#wit2">眾</rdg></app>
-<app from="#beg0076021" to="#end0076021"><lem wit="#wit1">凌</lem><rdg resp="#resp1" wit="#wit3">陵</rdg></app>
-<app from="#beg0076022" to="#end0076022"><lem wit="#wit1">振</lem><rdg resp="#resp1" wit="#wit2 #wit3">震</rdg></app>
-<app from="#beg0077001" to="#end0077001"><lem wit="#wit1">此</lem><rdg resp="#resp1" wit="#wit2 #wit3">在</rdg></app>
-<app from="#beg0077002" to="#end0077002"><lem wit="#wit1">摩</lem><rdg resp="#resp1" wit="#wit2 #wit3">昧</rdg></app>
-<app from="#beg0077003" to="#end0077003"><lem wit="#wit1">怒王</lem><rdg resp="#resp1" wit="#wit2 #wit3">王無</rdg></app>
+<app from="#beg0076011" to="#end0076011"><lem wit="#wit.orig">教</lem><rdg resp="#resp2" wit="#wit1">教讚</rdg></app>
+<app from="#beg0076012" to="#end0076012"><lem wit="#wit.orig">第三<note n="0076013" resp="#resp2" place="foot text" type="orig">此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note><note n="0076013" resp="#resp3" type="mod"><!--CBETA todo type: a-->此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note>十</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0076014" to="#end0076014"><lem wit="#wit.orig">麼</lem><rdg resp="#resp2" wit="#wit1 #wit2">昧</rdg></app>
+<app from="#beg0076015" to="#end0076015"><lem wit="#wit.orig">擗</lem><rdg resp="#resp2" wit="#wit1 #wit2">躃</rdg></app>
+<app from="#beg0076016" to="#end0076016"><lem wit="#wit.orig">輪</lem><rdg resp="#resp2" wit="#wit2">輸</rdg></app>
+<app from="#beg0076017" to="#end0076017"><lem wit="#wit.orig">嚩</lem><rdg resp="#resp2" wit="#wit1 #wit2">縛</rdg></app>
+<app from="#beg0076018" to="#end0076018"><lem wit="#wit.orig">時</lem><rdg resp="#resp2" wit="#wit1 #wit2">明</rdg></app>
+<app from="#beg0076019" to="#end0076019"><lem wit="#wit.orig">麼</lem><rdg resp="#resp2" wit="#wit1 #wit2">摩</rdg></app>
+<app from="#beg0076020" to="#end0076020"><lem wit="#wit.orig">象</lem><rdg resp="#resp2" wit="#wit1">眾</rdg></app>
+<app from="#beg0076021" to="#end0076021"><lem wit="#wit.orig">凌</lem><rdg resp="#resp2" wit="#wit2">陵</rdg></app>
+<app from="#beg0076022" to="#end0076022"><lem wit="#wit.orig">振</lem><rdg resp="#resp2" wit="#wit1 #wit2">震</rdg></app>
+<app from="#beg0077001" to="#end0077001"><lem wit="#wit.orig">此</lem><rdg resp="#resp2" wit="#wit1 #wit2">在</rdg></app>
+<app from="#beg0077002" to="#end0077002"><lem wit="#wit.orig">摩</lem><rdg resp="#resp2" wit="#wit1 #wit2">昧</rdg></app>
+<app from="#beg0077003" to="#end0077003"><lem wit="#wit.orig">怒王</lem><rdg resp="#resp2" wit="#wit1 #wit2">王無</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0076011" resp="#resp2" type="mod" target="#nkr_note_mod_0076011">教【大】，教讚【明】</note>
-<note n="0076012" resp="#resp2" type="mod" target="#nkr_note_mod_0076012">第三十【大】，〔－〕【明】【甲】</note>
-<note n="0076013" resp="#resp2" type="mod" target="#nkr_note_mod_0076013"><!--CBETA todo type: a-->此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note>
-<note n="0076014" resp="#resp2" type="mod" target="#nkr_note_mod_0076014">麼【大】，昧【明】【甲】</note>
-<note n="0076015" resp="#resp2" type="mod" target="#nkr_note_mod_0076015">擗【大】，躃【明】【甲】</note>
-<note n="0076016" resp="#resp2" type="mod" target="#nkr_note_mod_0076016">輪【大】，輸【甲】</note>
-<note n="0076017" resp="#resp2" type="mod" target="#nkr_note_mod_0076017">嚩【大】，縛【明】【甲】</note>
-<note n="0076018" resp="#resp2" type="mod" target="#nkr_note_mod_0076018">時【大】，明【明】【甲】</note>
-<note n="0076019" resp="#resp2" type="mod" target="#nkr_note_mod_0076019">麼【大】，摩【明】【甲】</note>
-<note n="0076020" resp="#resp2" type="mod" target="#nkr_note_mod_0076020">象【大】，眾【明】</note>
-<note n="0076021" resp="#resp2" type="mod" target="#nkr_note_mod_0076021">凌【大】，陵【甲】</note>
-<note n="0076022" resp="#resp2" type="mod" target="#nkr_note_mod_0076022">振【大】，震【明】【甲】</note>
-<note n="0077001" resp="#resp2" type="mod" target="#nkr_note_mod_0077001">此【大】，在【明】【甲】</note>
-<note n="0077002" resp="#resp2" type="mod" target="#nkr_note_mod_0077002">摩【大】，昧【明】【甲】</note>
-<note n="0077003" resp="#resp2" type="mod" target="#nkr_note_mod_0077003">怒王【大】，王無【明】【甲】</note>
-<note n="0077004" resp="#resp2" type="mod" target="#nkr_note_mod_0077004"><!--CBETA todo type: a-->此下明本甲本俱有末題大乘方廣曼殊室利菩薩華嚴本教讚閻曼德迦怒真言大威德儀軌品二十九字</note>
+<note n="0076011" resp="#resp3" type="mod" target="#nkr_note_mod_0076011">教【大】，教讚【明】</note>
+<note n="0076012" resp="#resp3" type="mod" target="#nkr_note_mod_0076012">第三十【大】，〔－〕【明】【甲】</note>
+<note n="0076013" resp="#resp3" type="mod" target="#nkr_note_mod_0076013"><!--CBETA todo type: a-->此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note>
+<note n="0076014" resp="#resp3" type="mod" target="#nkr_note_mod_0076014">麼【大】，昧【明】【甲】</note>
+<note n="0076015" resp="#resp3" type="mod" target="#nkr_note_mod_0076015">擗【大】，躃【明】【甲】</note>
+<note n="0076016" resp="#resp3" type="mod" target="#nkr_note_mod_0076016">輪【大】，輸【甲】</note>
+<note n="0076017" resp="#resp3" type="mod" target="#nkr_note_mod_0076017">嚩【大】，縛【明】【甲】</note>
+<note n="0076018" resp="#resp3" type="mod" target="#nkr_note_mod_0076018">時【大】，明【明】【甲】</note>
+<note n="0076019" resp="#resp3" type="mod" target="#nkr_note_mod_0076019">麼【大】，摩【明】【甲】</note>
+<note n="0076020" resp="#resp3" type="mod" target="#nkr_note_mod_0076020">象【大】，眾【明】</note>
+<note n="0076021" resp="#resp3" type="mod" target="#nkr_note_mod_0076021">凌【大】，陵【甲】</note>
+<note n="0076022" resp="#resp3" type="mod" target="#nkr_note_mod_0076022">振【大】，震【明】【甲】</note>
+<note n="0077001" resp="#resp3" type="mod" target="#nkr_note_mod_0077001">此【大】，在【明】【甲】</note>
+<note n="0077002" resp="#resp3" type="mod" target="#nkr_note_mod_0077002">摩【大】，昧【明】【甲】</note>
+<note n="0077003" resp="#resp3" type="mod" target="#nkr_note_mod_0077003">怒王【大】，王無【明】【甲】</note>
+<note n="0077004" resp="#resp3" type="mod" target="#nkr_note_mod_0077004"><!--CBETA todo type: a-->此下明本甲本俱有末題大乘方廣曼殊室利菩薩華嚴本教讚閻曼德迦怒真言大威德儀軌品二十九字</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0076010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076010">【原】麗本，【甲】黃檗版淨嚴等加筆本</note>
-<note n="0076011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076011">教＋（讚）【明】</note>
-<note n="0076012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076012">〔第三十〕－【明】【甲】</note>
-<note n="0076013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076013">此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note>
-<note n="0076014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076014">麼＝昧【明】【甲】</note>
-<note n="0076015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076015">擗＝躃【明】【甲】</note>
-<note n="0076016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076016">輪＝輸【甲】</note>
-<note n="0076017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076017">嚩＝縛【明】【甲】</note>
-<note n="0076018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076018">時＝明【明】【甲】</note>
-<note n="0076019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076019">麼＝摩【明】【甲】</note>
-<note n="0076020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076020">象＝眾【明】</note>
-<note n="0076021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076021">凌＝陵【甲】</note>
-<note n="0076022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0076022">振＝震【明】【甲】</note>
-<note n="0077001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0077001">此＝在【明】【甲】</note>
-<note n="0077002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0077002">摩＝昧【明】【甲】</note>
-<note n="0077003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0077003">怒王＝王無【明】【甲】</note>
-<note n="0077004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0077004">此下明本甲本俱有末題大乘方廣曼殊室利菩薩華嚴本教讚閻曼德迦怒真言大威德儀軌品二十九字</note>
+<note n="0076010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076010">【原】麗本，【甲】黃檗版淨嚴等加筆本</note>
+<note n="0076011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076011">教＋（讚）【明】</note>
+<note n="0076012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076012">〔第三十〕－【明】【甲】</note>
+<note n="0076013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076013">此下明本甲本俱有唐三藏沙門大廣智不空奉詔譯十三字譯號</note>
+<note n="0076014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076014">麼＝昧【明】【甲】</note>
+<note n="0076015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076015">擗＝躃【明】【甲】</note>
+<note n="0076016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076016">輪＝輸【甲】</note>
+<note n="0076017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076017">嚩＝縛【明】【甲】</note>
+<note n="0076018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076018">時＝明【明】【甲】</note>
+<note n="0076019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076019">麼＝摩【明】【甲】</note>
+<note n="0076020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076020">象＝眾【明】</note>
+<note n="0076021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076021">凌＝陵【甲】</note>
+<note n="0076022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0076022">振＝震【明】【甲】</note>
+<note n="0077001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0077001">此＝在【明】【甲】</note>
+<note n="0077002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0077002">摩＝昧【明】【甲】</note>
+<note n="0077003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0077003">怒王＝王無【明】【甲】</note>
+<note n="0077004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0077004">此下明本甲本俱有末題大乘方廣曼殊室利菩薩華嚴本教讚閻曼德迦怒真言大威德儀軌品二十九字</note>
 </p>
 </cb:div>
 </back></text></TEI>

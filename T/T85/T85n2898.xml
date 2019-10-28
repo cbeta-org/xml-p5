@@ -11,128 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.10 $<date>$Date: 2009/04/23 08:15:20 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:15:20 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 85, No. 2898</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-		<witness xml:id="wit3">【CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Miss Chen Miao-Ru, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，陳妙如大德輸入，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">85</idno>.<idno type="no">2898</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">高王觀世音經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Miss Chen Miao-Ru, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，陳妙如大德輸入，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-01-31T11:46:39">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T85n2898.xml,v $
-Revision 1.10  2009/04/23 08:15:20  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.9  2006/04/12 22:00:57  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/11/02 02:15:56  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/07/16 09:13:14  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.5  2004/04/30 07:09:54  saywhat
-p1425c01 <p type="idharani"> → <p type="dharani" place="inline">
-
-Revision 1.4  2004/04/20 08:44:56  maha
-「版本日期」標記修訂
-
-Revision 1.3  2003/06/25 06:46:02  moved
-執行 corr2app.pl v0.3.1
-
-Revision 1.1.1.1  2003/05/05 04:11:05  ray
-recover cvs
-
-Revision 1.17  2002/12/09 03:45:27  moved
-modified
-
-Revision 1.16  2002/11/04 11:05:01  ray
-tei.2 => TEI.2
-
-Revision 1.15  2002/09/09 08:56:02  moved
-modified
-
-Revision 1.14  2002/07/29 09:48:21  vinking
-modified lang
-
-Revision 1.13  2002/04/08 09:51:09  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.12  2001/11/05 06:23:58  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.11  2001/07/24 07:04:18  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.10  2001/07/11 08:22:47  vinking
-modified for CD7 alphs 2 normal, app, hh
-
-Revision 1.9  2001/05/25 04:04:26  vinking
-modified CB03429  -nor
-
-Revision 1.8  2001/03/31 11:21:39  moved
-modified normal
-
-Revision 1.7  2001/03/30 07:20:02  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 11:54:44  ray
-add <milestone>
-
-Revision 1.5  2001/02/19 09:54:03  shiachun
-t85
-
-Revision 1.4  2001/02/19 09:48:50  shiachun
-t85
-
-Revision 1.3  2001/02/07 07:50:51  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:20:50  chris
-Added keywords $Revision: 1.10 $, $Date: 2009/04/23 08:15:20 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-01-31T11:46:39">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -196,125 +138,125 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1425037" to="#end1425037"><lem wit="#wit1">觀</lem><rdg resp="#resp1" wit="#wit2">南無觀</rdg></app>
-<app from="#beg1425038" to="#end1425038"><lem wit="#wit1">薩</lem><rdg resp="#resp1" wit="#wit2">薩<note place="inline">三說</note></rdg></app>
-<app from="#beg1425039" to="#end1425039"><lem wit="#wit1">光</lem><rdg resp="#resp1" wit="#wit2">光佛</rdg></app>
-<app from="#beg1425b1301" to="#end1425b1301"><lem wit="#wit3" resp="#resp2">密</lem><rdg wit="#wit1">蜜</rdg></app>
-<app from="#beg1425040" to="#end1425040"><lem wit="#wit1">由</lem><rdg resp="#resp1" wit="#wit2">幽</rdg></app>
-<app from="#beg1425041" to="#end1425041"><lem wit="#wit1">告</lem><rdg resp="#resp1" wit="#wit2">高</rdg></app>
-<app from="#beg1425042" to="#end1425042"><lem wit="#wit1">王</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1425043" to="#end1425043"><lem wit="#wit1">賢</lem><rdg resp="#resp1" wit="#wit2">現</rdg></app>
-<app from="#beg1425044" to="#end1425044"><lem wit="#wit1">月</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1425045" to="#end1425045"><lem wit="#wit1">寂</lem><rdg resp="#resp1" wit="#wit2">積</rdg></app>
-<app from="#beg1425046" to="#end1425046"><lem wit="#wit1">彌</lem><rdg resp="#resp1" wit="#wit2">阿彌</rdg></app>
-<app from="#beg1425047" to="#end1425047"><lem wit="#wit1">生</lem><rdg resp="#resp1" wit="#wit2">聖</rdg></app>
-<app from="#beg1425048" to="#end1425048"><lem wit="#wit1">世</lem><rdg resp="#resp1" wit="#wit2">土</rdg></app>
-<app from="#beg1425049" to="#end1425049"><lem wit="#wit1">者</lem><rdg resp="#resp1" wit="#wit2">者梵王帝釋</rdg></app>
-<app from="#beg1425050" to="#end1425050"><lem wit="#wit1">修持</lem><rdg resp="#resp1" wit="#wit2">受持身</rdg></app>
-<app from="#beg1425051" to="#end1425051"><lem wit="#wit1">求</lem><rdg resp="#resp1" wit="#wit2">口</rdg></app>
-<app from="#beg1425b2601" to="#end1425b2601"><lem wit="#wit3" resp="#resp2"><space quantity="0"/></lem><rdg wit="#wit1">於</rdg></app>
-<app from="#beg1425052" to="#end1425052"><lem wit="#wit1">那摩</lem><rdg resp="#resp1" wit="#wit2">南無</rdg></app>
-<app from="#beg1425053" to="#end1425053"><lem wit="#wit1">師利</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1425054" to="#end1425054"><lem wit="#wit1">寶山億</lem><rdg resp="#resp1" wit="#wit2">山臺</rdg></app>
-<app from="#beg1425055" to="#end1425055"><lem wit="#wit1">普</lem><rdg resp="#resp1" wit="#wit2">寶</rdg></app>
-<app from="#beg1425056" to="#end1425056"><lem wit="#wit1">化</lem><rdg resp="#resp1" wit="#wit2">花</rdg></app>
-<app from="#beg1425057" to="#end1425057"><lem wit="#wit1">偈</lem><rdg resp="#resp1" wit="#wit2">經</rdg></app>
-<app from="#beg1425058" to="#end1425058"><lem wit="#wit1">離尼</lem><rdg resp="#resp1" wit="#wit2">尼摩離</rdg></app>
-<app from="#beg1425059" to="#end1425059"><lem wit="#wit1">靈虔</lem><rdg resp="#resp1" wit="#wit2">寧羯</rdg></app>
-<app from="#beg1425060" to="#end1425060"><lem wit="#wit1">娑婆</lem><rdg resp="#resp1" wit="#wit2">沙波</rdg></app>
-<app from="#beg1425061" to="#end1425061"><lem wit="#wit1">智慧</lem><rdg resp="#resp1" wit="#wit2">薄福</rdg></app>
-<app cb:word-count="8" from="#beg1425062" to="#end1425062"><lem wit="#wit1">佛說高王觀世音經</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1425063" to="#end1425063"><lem wit="#wit1">危</lem><rdg resp="#resp1" wit="#wit2">厄</rdg></app>
-<app from="#beg1425064" to="#end1425064"><lem wit="#wit1">死者變成活</lem><rdg resp="#resp1" wit="#wit2">諸事得解脫拜念八菩薩</rdg></app>
-<app cb:word-count="25" from="#beg1425065" to="#end1425065"><lem wit="#wit1"><l>諸佛語不虛</l><l>是故應頂禮</l>
-<lb n="1425c14" ed="T"/><l>持誦滿千遍</l><l>重罪皆消滅</l><l>薄福不信者</l></lem><rdg resp="#resp1" wit="#wit2">持誦滿千遍薄福不信者重罪皆消滅諸佛語不虛是故虛是故應頂禮薄福不誦者</rdg></app>
-<app from="#beg1425066" to="#end1425066"><lem wit="#wit1">貢</lem><rdg resp="#resp1" wit="#wit2">負</rdg></app>
-<app from="#beg1425067" to="#end1425067"><lem wit="#wit1">念</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="7" from="#beg1426002" to="#end1426002"><lem wit="#wit1">佛說高王觀世音</lem><rdg resp="#resp1" wit="#wit2">高王</rdg></app>
+<app from="#beg1425037" to="#end1425037"><lem wit="#wit.orig">觀</lem><rdg resp="#resp2" wit="#wit1">南無觀</rdg></app>
+<app from="#beg1425038" to="#end1425038"><lem wit="#wit.orig">薩</lem><rdg resp="#resp2" wit="#wit1">薩<note place="inline">三說</note></rdg></app>
+<app from="#beg1425039" to="#end1425039"><lem wit="#wit.orig">光</lem><rdg resp="#resp2" wit="#wit1">光佛</rdg></app>
+<app from="#beg1425b1301" to="#end1425b1301"><lem wit="#wit.cbeta" resp="#resp3">密</lem><rdg wit="#wit.orig">蜜</rdg></app>
+<app from="#beg1425040" to="#end1425040"><lem wit="#wit.orig">由</lem><rdg resp="#resp2" wit="#wit1">幽</rdg></app>
+<app from="#beg1425041" to="#end1425041"><lem wit="#wit.orig">告</lem><rdg resp="#resp2" wit="#wit1">高</rdg></app>
+<app from="#beg1425042" to="#end1425042"><lem wit="#wit.orig">王</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1425043" to="#end1425043"><lem wit="#wit.orig">賢</lem><rdg resp="#resp2" wit="#wit1">現</rdg></app>
+<app from="#beg1425044" to="#end1425044"><lem wit="#wit.orig">月</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1425045" to="#end1425045"><lem wit="#wit.orig">寂</lem><rdg resp="#resp2" wit="#wit1">積</rdg></app>
+<app from="#beg1425046" to="#end1425046"><lem wit="#wit.orig">彌</lem><rdg resp="#resp2" wit="#wit1">阿彌</rdg></app>
+<app from="#beg1425047" to="#end1425047"><lem wit="#wit.orig">生</lem><rdg resp="#resp2" wit="#wit1">聖</rdg></app>
+<app from="#beg1425048" to="#end1425048"><lem wit="#wit.orig">世</lem><rdg resp="#resp2" wit="#wit1">土</rdg></app>
+<app from="#beg1425049" to="#end1425049"><lem wit="#wit.orig">者</lem><rdg resp="#resp2" wit="#wit1">者梵王帝釋</rdg></app>
+<app from="#beg1425050" to="#end1425050"><lem wit="#wit.orig">修持</lem><rdg resp="#resp2" wit="#wit1">受持身</rdg></app>
+<app from="#beg1425051" to="#end1425051"><lem wit="#wit.orig">求</lem><rdg resp="#resp2" wit="#wit1">口</rdg></app>
+<app from="#beg1425b2601" to="#end1425b2601"><lem wit="#wit.cbeta" resp="#resp3"><space quantity="0"/></lem><rdg wit="#wit.orig">於</rdg></app>
+<app from="#beg1425052" to="#end1425052"><lem wit="#wit.orig">那摩</lem><rdg resp="#resp2" wit="#wit1">南無</rdg></app>
+<app from="#beg1425053" to="#end1425053"><lem wit="#wit.orig">師利</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1425054" to="#end1425054"><lem wit="#wit.orig">寶山億</lem><rdg resp="#resp2" wit="#wit1">山臺</rdg></app>
+<app from="#beg1425055" to="#end1425055"><lem wit="#wit.orig">普</lem><rdg resp="#resp2" wit="#wit1">寶</rdg></app>
+<app from="#beg1425056" to="#end1425056"><lem wit="#wit.orig">化</lem><rdg resp="#resp2" wit="#wit1">花</rdg></app>
+<app from="#beg1425057" to="#end1425057"><lem wit="#wit.orig">偈</lem><rdg resp="#resp2" wit="#wit1">經</rdg></app>
+<app from="#beg1425058" to="#end1425058"><lem wit="#wit.orig">離尼</lem><rdg resp="#resp2" wit="#wit1">尼摩離</rdg></app>
+<app from="#beg1425059" to="#end1425059"><lem wit="#wit.orig">靈虔</lem><rdg resp="#resp2" wit="#wit1">寧羯</rdg></app>
+<app from="#beg1425060" to="#end1425060"><lem wit="#wit.orig">娑婆</lem><rdg resp="#resp2" wit="#wit1">沙波</rdg></app>
+<app from="#beg1425061" to="#end1425061"><lem wit="#wit.orig">智慧</lem><rdg resp="#resp2" wit="#wit1">薄福</rdg></app>
+<app cb:word-count="8" from="#beg1425062" to="#end1425062"><lem wit="#wit.orig">佛說高王觀世音經</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1425063" to="#end1425063"><lem wit="#wit.orig">危</lem><rdg resp="#resp2" wit="#wit1">厄</rdg></app>
+<app from="#beg1425064" to="#end1425064"><lem wit="#wit.orig">死者變成活</lem><rdg resp="#resp2" wit="#wit1">諸事得解脫拜念八菩薩</rdg></app>
+<app cb:word-count="25" from="#beg1425065" to="#end1425065"><lem wit="#wit.orig"><l>諸佛語不虛</l><l>是故應頂禮</l>
+<lb n="1425c14" ed="T"/><l>持誦滿千遍</l><l>重罪皆消滅</l><l>薄福不信者</l></lem><rdg resp="#resp2" wit="#wit1">持誦滿千遍薄福不信者重罪皆消滅諸佛語不虛是故虛是故應頂禮薄福不誦者</rdg></app>
+<app from="#beg1425066" to="#end1425066"><lem wit="#wit.orig">貢</lem><rdg resp="#resp2" wit="#wit1">負</rdg></app>
+<app from="#beg1425067" to="#end1425067"><lem wit="#wit.orig">念</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="7" from="#beg1426002" to="#end1426002"><lem wit="#wit.orig">佛說高王觀世音</lem><rdg resp="#resp2" wit="#wit1">高王</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1425037" resp="#resp2" type="mod" target="#nkr_note_mod_1425037">觀【大】，南無觀【甲】</note>
-<note n="1425038" resp="#resp2" type="mod" target="#nkr_note_mod_1425038">薩【大】，薩<note place="inline">三說</note>【甲】</note>
-<note n="1425039" resp="#resp2" type="mod" target="#nkr_note_mod_1425039">光【大】，光佛【甲】</note>
-<note n="1425040" resp="#resp2" type="mod" target="#nkr_note_mod_1425040">由【大】，幽【甲】</note>
-<note n="1425041" resp="#resp2" type="mod" target="#nkr_note_mod_1425041">告【大】，高【甲】</note>
-<note n="1425042" resp="#resp2" type="mod" target="#nkr_note_mod_1425042">王【大】，〔－〕【甲】</note>
-<note n="1425043" resp="#resp2" type="mod" target="#nkr_note_mod_1425043">賢【大】，現【甲】</note>
-<note n="1425044" resp="#resp2" type="mod" target="#nkr_note_mod_1425044">月【大】，〔－〕【甲】</note>
-<note n="1425045" resp="#resp2" type="mod" target="#nkr_note_mod_1425045">寂【大】，積【甲】</note>
-<note n="1425046" resp="#resp2" type="mod" target="#nkr_note_mod_1425046">彌【大】，阿彌【甲】</note>
-<note n="1425047" resp="#resp2" type="mod" target="#nkr_note_mod_1425047">生【大】，聖【甲】</note>
-<note n="1425048" resp="#resp2" type="mod" target="#nkr_note_mod_1425048">世【大】，土【甲】</note>
-<note n="1425049" resp="#resp2" type="mod" target="#nkr_note_mod_1425049">者【大】，者梵王帝釋【甲】</note>
-<note n="1425050" resp="#resp2" type="mod" target="#nkr_note_mod_1425050">修持【大】，受持身【甲】</note>
-<note n="1425051" resp="#resp2" type="mod" target="#nkr_note_mod_1425051">求【大】，口【甲】</note>
-<note n="1425052" resp="#resp2" type="mod" target="#nkr_note_mod_1425052">那摩【大】，南無【甲】</note>
-<note n="1425053" resp="#resp2" type="mod" target="#nkr_note_mod_1425053">師利【大】，〔－〕【甲】</note>
-<note n="1425054" resp="#resp2" type="mod" target="#nkr_note_mod_1425054">寶山億【大】，山臺【甲】</note>
-<note n="1425055" resp="#resp2" type="mod" target="#nkr_note_mod_1425055">普【大】，寶【甲】</note>
-<note n="1425056" resp="#resp2" type="mod" target="#nkr_note_mod_1425056">化【大】，花【甲】</note>
-<note n="1425057" resp="#resp2" type="mod" target="#nkr_note_mod_1425057">偈【大】，經【甲】</note>
-<note n="1425058" resp="#resp2" type="mod" target="#nkr_note_mod_1425058">離尼【大】，尼摩離【甲】</note>
-<note n="1425059" resp="#resp2" type="mod" target="#nkr_note_mod_1425059">靈虔【大】，寧羯【甲】</note>
-<note n="1425060" resp="#resp2" type="mod" target="#nkr_note_mod_1425060">娑婆【大】，沙波【甲】</note>
-<note n="1425061" resp="#resp2" type="mod" target="#nkr_note_mod_1425061">智慧【大】，薄福【甲】</note>
-<note n="1425062" resp="#resp2" type="mod" target="#nkr_note_mod_1425062">（佛說…經）八字【大】，〔－〕【甲】</note>
-<note n="1425063" resp="#resp2" type="mod" target="#nkr_note_mod_1425063">危【大】，厄【甲】</note>
-<note n="1425064" resp="#resp2" type="mod" target="#nkr_note_mod_1425064">死者變成活【大】，諸事得解脫拜念八菩薩【甲】</note>
-<note n="1425065" resp="#resp2" type="mod" target="#nkr_note_mod_1425065">（諸佛…者）二十五字【大】，（持誦滿千遍薄福不信者重罪皆消滅諸佛語不虛是故虛是故應頂禮薄福不誦者）三十字【甲】</note>
-<note n="1425066" resp="#resp2" type="mod" target="#nkr_note_mod_1425066">貢【大】，負【甲】</note>
-<note n="1425067" resp="#resp2" type="mod" target="#nkr_note_mod_1425067">念【大】，〔－〕【甲】</note>
-<note n="1426001" resp="#resp2" type="mod" target="#nkr_note_mod_1426001"><!--CBETA todo type: a-->（南無…消滅）六十九字【大】，南無地藏菩薩南無消災障菩薩南無妙吉祥金剛手菩薩摩訶薩【甲】</note>
-<note n="1426002" resp="#resp2" type="mod" target="#nkr_note_mod_1426002">（佛說…音）七字【大】，高王【甲】</note>
+<note n="1425037" resp="#resp3" type="mod" target="#nkr_note_mod_1425037">觀【大】，南無觀【甲】</note>
+<note n="1425038" resp="#resp3" type="mod" target="#nkr_note_mod_1425038">薩【大】，薩<note place="inline">三說</note>【甲】</note>
+<note n="1425039" resp="#resp3" type="mod" target="#nkr_note_mod_1425039">光【大】，光佛【甲】</note>
+<note n="1425040" resp="#resp3" type="mod" target="#nkr_note_mod_1425040">由【大】，幽【甲】</note>
+<note n="1425041" resp="#resp3" type="mod" target="#nkr_note_mod_1425041">告【大】，高【甲】</note>
+<note n="1425042" resp="#resp3" type="mod" target="#nkr_note_mod_1425042">王【大】，〔－〕【甲】</note>
+<note n="1425043" resp="#resp3" type="mod" target="#nkr_note_mod_1425043">賢【大】，現【甲】</note>
+<note n="1425044" resp="#resp3" type="mod" target="#nkr_note_mod_1425044">月【大】，〔－〕【甲】</note>
+<note n="1425045" resp="#resp3" type="mod" target="#nkr_note_mod_1425045">寂【大】，積【甲】</note>
+<note n="1425046" resp="#resp3" type="mod" target="#nkr_note_mod_1425046">彌【大】，阿彌【甲】</note>
+<note n="1425047" resp="#resp3" type="mod" target="#nkr_note_mod_1425047">生【大】，聖【甲】</note>
+<note n="1425048" resp="#resp3" type="mod" target="#nkr_note_mod_1425048">世【大】，土【甲】</note>
+<note n="1425049" resp="#resp3" type="mod" target="#nkr_note_mod_1425049">者【大】，者梵王帝釋【甲】</note>
+<note n="1425050" resp="#resp3" type="mod" target="#nkr_note_mod_1425050">修持【大】，受持身【甲】</note>
+<note n="1425051" resp="#resp3" type="mod" target="#nkr_note_mod_1425051">求【大】，口【甲】</note>
+<note n="1425052" resp="#resp3" type="mod" target="#nkr_note_mod_1425052">那摩【大】，南無【甲】</note>
+<note n="1425053" resp="#resp3" type="mod" target="#nkr_note_mod_1425053">師利【大】，〔－〕【甲】</note>
+<note n="1425054" resp="#resp3" type="mod" target="#nkr_note_mod_1425054">寶山億【大】，山臺【甲】</note>
+<note n="1425055" resp="#resp3" type="mod" target="#nkr_note_mod_1425055">普【大】，寶【甲】</note>
+<note n="1425056" resp="#resp3" type="mod" target="#nkr_note_mod_1425056">化【大】，花【甲】</note>
+<note n="1425057" resp="#resp3" type="mod" target="#nkr_note_mod_1425057">偈【大】，經【甲】</note>
+<note n="1425058" resp="#resp3" type="mod" target="#nkr_note_mod_1425058">離尼【大】，尼摩離【甲】</note>
+<note n="1425059" resp="#resp3" type="mod" target="#nkr_note_mod_1425059">靈虔【大】，寧羯【甲】</note>
+<note n="1425060" resp="#resp3" type="mod" target="#nkr_note_mod_1425060">娑婆【大】，沙波【甲】</note>
+<note n="1425061" resp="#resp3" type="mod" target="#nkr_note_mod_1425061">智慧【大】，薄福【甲】</note>
+<note n="1425062" resp="#resp3" type="mod" target="#nkr_note_mod_1425062">（佛說…經）八字【大】，〔－〕【甲】</note>
+<note n="1425063" resp="#resp3" type="mod" target="#nkr_note_mod_1425063">危【大】，厄【甲】</note>
+<note n="1425064" resp="#resp3" type="mod" target="#nkr_note_mod_1425064">死者變成活【大】，諸事得解脫拜念八菩薩【甲】</note>
+<note n="1425065" resp="#resp3" type="mod" target="#nkr_note_mod_1425065">（諸佛…者）二十五字【大】，（持誦滿千遍薄福不信者重罪皆消滅諸佛語不虛是故虛是故應頂禮薄福不誦者）三十字【甲】</note>
+<note n="1425066" resp="#resp3" type="mod" target="#nkr_note_mod_1425066">貢【大】，負【甲】</note>
+<note n="1425067" resp="#resp3" type="mod" target="#nkr_note_mod_1425067">念【大】，〔－〕【甲】</note>
+<note n="1426001" resp="#resp3" type="mod" target="#nkr_note_mod_1426001"><!--CBETA todo type: a-->（南無…消滅）六十九字【大】，南無地藏菩薩南無消災障菩薩南無妙吉祥金剛手菩薩摩訶薩【甲】</note>
+<note n="1426002" resp="#resp3" type="mod" target="#nkr_note_mod_1426002">（佛說…音）七字【大】，高王【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1425036" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425036">【原】大日本續藏經，【甲】光武二年刊本</note>
-<note n="1425037" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425037">（南無）＋觀【甲】</note>
-<note n="1425038" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425038">薩＋（三說）細註【甲】</note>
-<note n="1425039" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425039">光＋（佛）【甲】</note>
-<note n="1425040" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425040">由＝幽【甲】</note>
-<note n="1425041" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425041">告＝高【甲】</note>
-<note n="1425042" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425042">〔王〕－【甲】</note>
-<note n="1425043" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425043">賢＝現【甲】</note>
-<note n="1425044" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425044">〔月〕－【甲】</note>
-<note n="1425045" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425045">寂＝積【甲】</note>
-<note n="1425046" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425046">（阿）＋彌【甲】</note>
-<note n="1425047" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425047">生＝聖【甲】</note>
-<note n="1425048" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425048">世＝土【甲】</note>
-<note n="1425049" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425049">者＋（梵王帝釋）【甲】</note>
-<note n="1425050" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425050">修持＝受持身【甲】</note>
-<note n="1425051" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425051">求＝口【甲】</note>
-<note n="1425052" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425052">那摩＝南無【甲】</note>
-<note n="1425053" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425053">〔師利〕－【甲】</note>
-<note n="1425054" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425054">寶山億＝山臺【甲】</note>
-<note n="1425055" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425055">普＝寶【甲】</note>
-<note n="1425056" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425056">化＝花【甲】</note>
-<note n="1425057" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425057">偈＝經【甲】</note>
-<note n="1425058" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425058">離尼＝尼摩離【甲】</note>
-<note n="1425059" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425059">靈虔＝寧羯【甲】</note>
-<note n="1425060" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425060">娑婆＝沙波【甲】</note>
-<note n="1425061" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425061">智慧＝薄福【甲】</note>
-<note n="1425062" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425062">〔佛說…經〕八字－【甲】</note>
-<note n="1425063" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425063">危＝厄【甲】</note>
-<note n="1425064" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425064">（（死者變成活））＝（（諸事得解脫拜念八菩薩））【甲】</note>
-<note n="1425065" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425065">（（諸佛…者））二十五字＝（（持誦滿千遍薄福不信者重罪皆消滅諸佛語不虛是故虛是故應頂禮薄福不誦者））三十字【甲】</note>
-<note n="1425066" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425066">貢＝負【甲】</note>
-<note n="1425067" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1425067">〔念〕－【甲】</note>
-<note n="1426001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1426001">（（南無…消滅））六十九字＝（（南無地藏菩薩南無消災障菩薩南無妙吉祥金剛手菩薩摩訶薩））二十六字【甲】</note>
-<note n="1426002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1426002">（（佛說…音））七字＝（（高王））二字【甲】</note>
+<note n="1425036" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425036">【原】大日本續藏經，【甲】光武二年刊本</note>
+<note n="1425037" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425037">（南無）＋觀【甲】</note>
+<note n="1425038" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425038">薩＋（三說）細註【甲】</note>
+<note n="1425039" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425039">光＋（佛）【甲】</note>
+<note n="1425040" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425040">由＝幽【甲】</note>
+<note n="1425041" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425041">告＝高【甲】</note>
+<note n="1425042" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425042">〔王〕－【甲】</note>
+<note n="1425043" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425043">賢＝現【甲】</note>
+<note n="1425044" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425044">〔月〕－【甲】</note>
+<note n="1425045" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425045">寂＝積【甲】</note>
+<note n="1425046" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425046">（阿）＋彌【甲】</note>
+<note n="1425047" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425047">生＝聖【甲】</note>
+<note n="1425048" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425048">世＝土【甲】</note>
+<note n="1425049" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425049">者＋（梵王帝釋）【甲】</note>
+<note n="1425050" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425050">修持＝受持身【甲】</note>
+<note n="1425051" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425051">求＝口【甲】</note>
+<note n="1425052" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425052">那摩＝南無【甲】</note>
+<note n="1425053" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425053">〔師利〕－【甲】</note>
+<note n="1425054" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425054">寶山億＝山臺【甲】</note>
+<note n="1425055" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425055">普＝寶【甲】</note>
+<note n="1425056" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425056">化＝花【甲】</note>
+<note n="1425057" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425057">偈＝經【甲】</note>
+<note n="1425058" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425058">離尼＝尼摩離【甲】</note>
+<note n="1425059" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425059">靈虔＝寧羯【甲】</note>
+<note n="1425060" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425060">娑婆＝沙波【甲】</note>
+<note n="1425061" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425061">智慧＝薄福【甲】</note>
+<note n="1425062" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425062">〔佛說…經〕八字－【甲】</note>
+<note n="1425063" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425063">危＝厄【甲】</note>
+<note n="1425064" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425064">（（死者變成活））＝（（諸事得解脫拜念八菩薩））【甲】</note>
+<note n="1425065" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425065">（（諸佛…者））二十五字＝（（持誦滿千遍薄福不信者重罪皆消滅諸佛語不虛是故虛是故應頂禮薄福不誦者））三十字【甲】</note>
+<note n="1425066" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425066">貢＝負【甲】</note>
+<note n="1425067" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1425067">〔念〕－【甲】</note>
+<note n="1426001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1426001">（（南無…消滅））六十九字＝（（南無地藏菩薩南無消災障菩薩南無妙吉祥金剛手菩薩摩訶薩））二十六字【甲】</note>
+<note n="1426002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1426002">（（佛說…音））七字＝（（高王））二字【甲】</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="1425b1301" resp="#resp2" type="add" target="#nkr_note_add_1425b1301">密【CB】，蜜【大】</note>
-<note n="1425b2601" resp="#resp2" type="add" target="#nkr_note_add_1425b2601">［－］【CB】，於【大】</note>
+<note n="1425b1301" resp="#resp3" type="add" target="#nkr_note_add_1425b1301">密【CB】，蜜【大】</note>
+<note n="1425b2601" resp="#resp3" type="add" target="#nkr_note_add_1425b2601">［－］【CB】，於【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

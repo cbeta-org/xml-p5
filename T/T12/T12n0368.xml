@@ -11,53 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.16 $<date>$Date: 2012/08/27 03:14:38 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/08/27 03:14:38 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 12, No. 368</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【元】</witness>
-		<witness xml:id="wit3">【宋】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, CBETA OCR Group, Punctuated text as provided by Ms. Huang Jin-Ai</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，CBETA 自行掃瞄辨識，黃金愛大德提供新式標點</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00566">
-	<charName>CBETA CHARACTER CB00566</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[跍*月]</value>
-	</charProp>
-	<mapping type="unicode">U+4812</mapping>
-	<mapping cb:dec="983606" type="PUA">U+F0236</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">12</idno>.<idno type="no">368</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">拔一切業障根本得生淨土神呪</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, CBETA OCR Group, Punctuated text as provided by Ms. Huang Jin-Ai</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，CBETA 自行掃瞄辨識，黃金愛大德提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【元】</witness>
+						<witness xml:id="wit2">【宋】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00566">
+				<charName>CBETA CHARACTER CB00566</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[跍*月]</value>
+				</charProp>
+				<mapping type="unicode">U+4812</mapping>
+				<mapping cb:dec="983606" type="PUA">U+F0236</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 			<language ident="en">English</language>
 		</langUsage>
 	</profileDesc>
@@ -65,47 +82,10 @@
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-06-28T19:58:30">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)</change>
-<!--
-$Log: T12n0368.xml,v $
-Revision 1.16  2012/08/27 03:14:38  maha
-修訂新標小圓點及著重號
-
-Revision 1.15  2011/12/01 08:21:08  eva
-上傳 新式標點版
-
-Revision 1.14  2011/10/13 06:40:13  eva
-modified: pushsign 咒語及空格修訂
-
-Revision 1.13  2009/04/23 07:58:01  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.12  2006/05/19 08:27:42  saywhat
-雙圈 改成 anchor 標記
-
-Revision 1.11  2006/04/12 21:54:40  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.9  2004/11/15 05:40:24  saywhat
-◎。 => 。◎
-
-Revision 1.8  2004/11/14 03:17:09  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.7  2004/10/12 13:45:36  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/09/15 02:15:26  saywhat
-juan加上jhead
-
-Revision 1.5  2004/04/20 08:37:42  maha
-「版本日期」標記修訂
-
-Revision 1.4  2004/02/27 00:38:05  ray
-add cvs log
-
--->
- </revisionDesc>
+		<change when="1999-06-28T19:58:30">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -164,57 +144,57 @@ add cvs log
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0351010" to="#end0351010"><lem wit="#wit1">天</lem><rdg resp="#resp1" wit="#wit2">元嘉年天</rdg></app>
-<app from="#beg0351012" to="#end0351012"><lem wit="#wit1">切</lem><rdg resp="#resp1" wit="#wit2 #wit3">反</rdg></app>
-<app from="#beg0351013" to="#end0351013"><lem wit="#wit1">哆</lem><rdg resp="#resp1" wit="#wit2">跢</rdg></app>
-<app cb:word-count="137" from="#beg0351011" to="#end0351011"><lem wit="#wit1"><p cb:type="dharani">南無阿彌多婆夜哆<note place="inline">多曷<note n="0351012" resp="#resp1" type="orig" place="foot text">切＝反【元】【宋】</note><note n="0351012" resp="#resp2" type="mod">切【大】，反【元】【宋】</note><app n="0351012"><lem wit="#wit1">切</lem><rdg resp="#resp1" wit="#wit2 #wit3">反</rdg></app></note><note place="inline">一</note>　他伽<note n="0351013" resp="#resp1" type="orig" place="foot text">哆＝跢【元】</note><note n="0351013" resp="#resp2" type="mod">哆【大】，跢【元】</note><app n="0351013"><lem wit="#wit1">哆</lem><rdg resp="#resp1" wit="#wit2">跢</rdg></app><note place="inline">都餓切</note><note place="inline">二</note>　夜<lb n="0351c09" ed="T"/>哆地<note place="inline">途賣切</note><note place="inline">三</note>　夜他阿彌利<note place="inline">上聲</note><note place="inline">四</note>　都婆毘<note place="inline">五</note>　阿彌利<lb n="0351c10" ed="T"/>哆<note place="inline">六</note>　悉眈婆毘<note place="inline">七</note>　阿彌利哆<note place="inline">八</note>　毘迦蘭諦<note place="inline">九</note>　阿<lb n="0351c11" ed="T"/>彌利哆<note place="inline">十</note>　毘迦蘭哆<note place="inline">十一</note>　伽彌膩<note place="inline">十二</note>　伽伽那<note place="inline">十三</note>　枳<lb n="0351c12" ed="T"/>多迦隷<note place="inline">十四</note>　莎婆訶<note place="inline">十五</note></p>
-<lb n="0351c13" ed="T"/><p>若有善男子善女人能誦此呪者，阿彌陀佛<lb n="0351c14" ed="T"/>常住其頂，日夜擁護，無令怨家而得其便，現<lb n="0351c15" ed="T"/>世常得安隱，臨命終時任運往生。</p></lem><rdg resp="#resp1" wit="#wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0351016" to="#end0351016"><lem wit="#wit1"><note place="inline">附隋錄，未詳作者</note></lem><rdg resp="#resp1" wit="#wit3"><space quantity="0"/></rdg><rdg resp="#resp1" wit="#wit2"><note place="inline">附隋未詳作者</note></rdg></app>
-<app from="#beg0352001" to="#end0352001"><lem wit="#wit1">安樂</lem><rdg resp="#resp1" wit="#wit3">極樂</rdg></app>
-<app from="#beg0352002" to="#end0352002"><lem wit="#wit1">者，乃</lem><rdg resp="#resp1" wit="#wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0352003" to="#end0352003"><lem wit="#wit1">末</lem><rdg resp="#resp1" wit="#wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0352005" to="#end0352005"><lem wit="#wit1">銹</lem><rdg resp="#resp1" wit="#wit3 #wit2">銹<note place="inline">音秀</note></rdg></app>
-<app from="#beg0352006" to="#end0352006"><lem wit="#wit1">胡</lem><rdg resp="#resp1" wit="#wit3"><g ref="#CB00566">䠒</g></rdg></app>
-<app from="#beg0352007" to="#end0352007"><lem wit="#wit1">佛</lem><rdg resp="#resp1" wit="#wit3 #wit2">佛傳竟如前</rdg></app>
+<app from="#beg0351010" to="#end0351010"><lem wit="#wit.orig">天</lem><rdg resp="#resp2" wit="#wit1">元嘉年天</rdg></app>
+<app from="#beg0351012" to="#end0351012"><lem wit="#wit.orig">切</lem><rdg resp="#resp2" wit="#wit1 #wit2">反</rdg></app>
+<app from="#beg0351013" to="#end0351013"><lem wit="#wit.orig">哆</lem><rdg resp="#resp2" wit="#wit1">跢</rdg></app>
+<app cb:word-count="137" from="#beg0351011" to="#end0351011"><lem wit="#wit.orig"><p cb:type="dharani">南無阿彌多婆夜哆<note place="inline">多曷<note n="0351012" resp="#resp2" type="orig" place="foot text">切＝反【元】【宋】</note><note n="0351012" resp="#resp1" type="mod">切【大】，反【元】【宋】</note><app n="0351012"><lem wit="#wit.orig">切</lem><rdg resp="#resp2" wit="#wit1 #wit2">反</rdg></app></note><note place="inline">一</note>　他伽<note n="0351013" resp="#resp2" type="orig" place="foot text">哆＝跢【元】</note><note n="0351013" resp="#resp1" type="mod">哆【大】，跢【元】</note><app n="0351013"><lem wit="#wit.orig">哆</lem><rdg resp="#resp2" wit="#wit1">跢</rdg></app><note place="inline">都餓切</note><note place="inline">二</note>　夜<lb n="0351c09" ed="T"/>哆地<note place="inline">途賣切</note><note place="inline">三</note>　夜他阿彌利<note place="inline">上聲</note><note place="inline">四</note>　都婆毘<note place="inline">五</note>　阿彌利<lb n="0351c10" ed="T"/>哆<note place="inline">六</note>　悉眈婆毘<note place="inline">七</note>　阿彌利哆<note place="inline">八</note>　毘迦蘭諦<note place="inline">九</note>　阿<lb n="0351c11" ed="T"/>彌利哆<note place="inline">十</note>　毘迦蘭哆<note place="inline">十一</note>　伽彌膩<note place="inline">十二</note>　伽伽那<note place="inline">十三</note>　枳<lb n="0351c12" ed="T"/>多迦隷<note place="inline">十四</note>　莎婆訶<note place="inline">十五</note></p>
+<lb n="0351c13" ed="T"/><p>若有善男子善女人能誦此呪者，阿彌陀佛<lb n="0351c14" ed="T"/>常住其頂，日夜擁護，無令怨家而得其便，現<lb n="0351c15" ed="T"/>世常得安隱，臨命終時任運往生。</p></lem><rdg resp="#resp2" wit="#wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0351016" to="#end0351016"><lem wit="#wit.orig"><note place="inline">附隋錄，未詳作者</note></lem><rdg resp="#resp2" wit="#wit2"><space quantity="0"/></rdg><rdg resp="#resp2" wit="#wit1"><note place="inline">附隋未詳作者</note></rdg></app>
+<app from="#beg0352001" to="#end0352001"><lem wit="#wit.orig">安樂</lem><rdg resp="#resp2" wit="#wit2">極樂</rdg></app>
+<app from="#beg0352002" to="#end0352002"><lem wit="#wit.orig">者，乃</lem><rdg resp="#resp2" wit="#wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0352003" to="#end0352003"><lem wit="#wit.orig">末</lem><rdg resp="#resp2" wit="#wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0352005" to="#end0352005"><lem wit="#wit.orig">銹</lem><rdg resp="#resp2" wit="#wit2 #wit1">銹<note place="inline">音秀</note></rdg></app>
+<app from="#beg0352006" to="#end0352006"><lem wit="#wit.orig">胡</lem><rdg resp="#resp2" wit="#wit2"><g ref="#CB00566">䠒</g></rdg></app>
+<app from="#beg0352007" to="#end0352007"><lem wit="#wit.orig">佛</lem><rdg resp="#resp2" wit="#wit2 #wit1">佛傳竟如前</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0351010" resp="#resp2" type="mod" target="#nkr_note_mod_0351010">天【大】，元嘉年天【元】</note>
-<note n="0351011" resp="#resp2" type="mod" target="#nkr_note_mod_0351011">（南無…往生）百三十七字【大】，〔－〕【宋】</note>
-<note n="0351012" resp="#resp2" type="mod" target="#nkr_note_mod_0351012">切【大】，反【元】【宋】</note>
-<note n="0351013" resp="#resp2" type="mod" target="#nkr_note_mod_0351013">哆【大】，跢【元】</note>
-<note n="0351014" resp="#resp2" type="mod" target="#nkr_note_mod_0351014"><!--CBETA todo type: a--><!--CBETA todo type: newmod-->不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
-<note n="0351015" resp="#resp2" type="mod" target="#nkr_note_mod_0351015"><!--CBETA todo type: a--><!--CBETA todo type: newmod-->不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
-<note n="0351016" resp="#resp2" type="mod" target="#nkr_note_mod_0351016">附隋錄未詳作者【大】，〔－〕【宋】，附隋未詳作者【元】</note>
-<note n="0352001" resp="#resp2" type="mod" target="#nkr_note_mod_0352001">安樂【大】，極樂【宋】</note>
-<note n="0352002" resp="#resp2" type="mod" target="#nkr_note_mod_0352002">者乃【大】，〔－〕【宋】</note>
-<note n="0352003" resp="#resp2" type="mod" target="#nkr_note_mod_0352003">末【大】，〔－〕【宋】</note>
-<note n="0352004" resp="#resp2" type="mod" target="#nkr_note_mod_0352004"><!--CBETA todo type: a-->句【大】，句字下有（南無…往生）百三十七字【宋】351頁c段參照</note>
-<note n="0352005" resp="#resp2" type="mod" target="#nkr_note_mod_0352005">銹【大】，銹<note place="inline">音秀</note>【宋】【元】</note>
-<note n="0352006" resp="#resp2" type="mod" target="#nkr_note_mod_0352006">胡【大】，<g ref="#CB00566">䠒</g>【宋】</note>
-<note n="0352007" resp="#resp2" type="mod" target="#nkr_note_mod_0352007">佛【大】，佛傳竟如前【宋】【元】</note>
+<note n="0351010" resp="#resp1" type="mod" target="#nkr_note_mod_0351010">天【大】，元嘉年天【元】</note>
+<note n="0351011" resp="#resp1" type="mod" target="#nkr_note_mod_0351011">（南無…往生）百三十七字【大】，〔－〕【宋】</note>
+<note n="0351012" resp="#resp1" type="mod" target="#nkr_note_mod_0351012">切【大】，反【元】【宋】</note>
+<note n="0351013" resp="#resp1" type="mod" target="#nkr_note_mod_0351013">哆【大】，跢【元】</note>
+<note n="0351014" resp="#resp1" type="mod" target="#nkr_note_mod_0351014"><!--CBETA todo type: a--><!--CBETA todo type: newmod-->不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
+<note n="0351015" resp="#resp1" type="mod" target="#nkr_note_mod_0351015"><!--CBETA todo type: a--><!--CBETA todo type: newmod-->不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
+<note n="0351016" resp="#resp1" type="mod" target="#nkr_note_mod_0351016">附隋錄未詳作者【大】，〔－〕【宋】，附隋未詳作者【元】</note>
+<note n="0352001" resp="#resp1" type="mod" target="#nkr_note_mod_0352001">安樂【大】，極樂【宋】</note>
+<note n="0352002" resp="#resp1" type="mod" target="#nkr_note_mod_0352002">者乃【大】，〔－〕【宋】</note>
+<note n="0352003" resp="#resp1" type="mod" target="#nkr_note_mod_0352003">末【大】，〔－〕【宋】</note>
+<note n="0352004" resp="#resp1" type="mod" target="#nkr_note_mod_0352004"><!--CBETA todo type: a-->句【大】，句字下有（南無…往生）百三十七字【宋】351頁c段參照</note>
+<note n="0352005" resp="#resp1" type="mod" target="#nkr_note_mod_0352005">銹【大】，銹<note place="inline">音秀</note>【宋】【元】</note>
+<note n="0352006" resp="#resp1" type="mod" target="#nkr_note_mod_0352006">胡【大】，<g ref="#CB00566">䠒</g>【宋】</note>
+<note n="0352007" resp="#resp1" type="mod" target="#nkr_note_mod_0352007">佛【大】，佛傳竟如前【宋】【元】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0351009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351009">麗本宋本缺此經，依明本採錄與元本對校</note>
-<note n="0351010" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351010">（元嘉年）＋天【元】</note>
-<note n="0351011" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351011">〔南無…往生〕百三十七字－【宋】</note>
-<note n="0351012" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351012">切＝反【元】【宋】</note>
-<note n="0351013" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351013">哆＝跢【元】</note>
-<note n="0351014" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351014">不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
-<note n="0351015" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351015">不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
-<note n="0351016" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0351016">〔附隋錄未詳作者〕－【宋】，〔錄〕－【元】</note>
-<note n="0352001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0352001">安樂＝極樂【宋】</note>
-<note n="0352002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0352002">〔者乃〕－【宋】</note>
-<note n="0352003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0352003">〔末〕－【宋】</note>
-<note n="0352004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0352004">句＋（南無…往生）百三十七字【宋】351頁c段參照</note>
-<note n="0352005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0352005">銹＋（音秀）夾註【宋】【元】</note>
-<note n="0352006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0352006">胡＝<g ref="#CB00566">䠒</g>【宋】</note>
-<note n="0352007" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0352007">佛＋（傳竟如前）【宋】【元】</note>
+<note n="0351009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351009">麗本宋本缺此經，依明本採錄與元本對校</note>
+<note n="0351010" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351010">（元嘉年）＋天【元】</note>
+<note n="0351011" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351011">〔南無…往生〕百三十七字－【宋】</note>
+<note n="0351012" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351012">切＝反【元】【宋】</note>
+<note n="0351013" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351013">哆＝跢【元】</note>
+<note n="0351014" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351014">不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
+<note n="0351015" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351015">不分卷【元】，麗本缺此傳，依明本採錄與宋本元本對校</note>
+<note n="0351016" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0351016">〔附隋錄未詳作者〕－【宋】，〔錄〕－【元】</note>
+<note n="0352001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0352001">安樂＝極樂【宋】</note>
+<note n="0352002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0352002">〔者乃〕－【宋】</note>
+<note n="0352003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0352003">〔末〕－【宋】</note>
+<note n="0352004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0352004">句＋（南無…往生）百三十七字【宋】351頁c段參照</note>
+<note n="0352005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0352005">銹＋（音秀）夾註【宋】【元】</note>
+<note n="0352006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0352006">胡＝<g ref="#CB00566">䠒</g>【宋】</note>
+<note n="0352007" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0352007">佛＋（傳竟如前）【宋】【元】</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -12,137 +12,80 @@
 			</respStmt>
 		</titleStmt>
 		<editionStmt>
-			<edition>$Revision: 1.8 $<date>$Date: 2009/04/23 08:15:18 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>2卷</extent>
 		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">85</idno>.<idno type="no">2805</idno>
+			</idno>
 			<distributor>
 				<name>中華電子佛典協會 (CBETA)</name>
 				<address>
-					<addrLine>service@cbeta.org</addrLine>
+					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
 			</distributor>
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>$Date: 2009/04/23 08:15:18 $</date>
+			<date>2019-09-12 02:11:51 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>Taishō Tripiṭaka Vol. 85, No. 2805</bibl>
-		<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【CB】</witness>
-	</listWit>
-	</sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">攝大乘講疏卷第五．第七</title>
+			</bibl>
+		</sourceDesc>
 	</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00592">
-	<charName>CBETA CHARACTER CB00592</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[穀-禾+卵]</value>
-	</charProp>
-	<mapping type="unicode">U+3C89</mapping>
-	<mapping cb:dec="983632" type="PUA">U+F0250</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00592">
+				<charName>CBETA CHARACTER CB00592</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[穀-禾+卵]</value>
+				</charProp>
+				<mapping type="unicode">U+3C89</mapping>
+				<mapping cb:dec="983632" type="PUA">U+F0250</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-01-31T11:46:34">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T85n2805.xml,v $
-Revision 1.8  2009/04/23 08:15:18  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.7  2006/04/12 22:00:49  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.5  2005/09/13 10:28:36  saywhat
-p0987b22 [一>二], p0995b13 [名>各]
-
-Revision 1.4  2004/11/14 03:18:27  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.3  2004/11/02 02:15:55  saywhat
-段落前加入圈點
-
-Revision 1.2  2004/04/20 08:44:51  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:11:02  ray
-recover cvs
-
-Revision 1.18  2002/12/09 03:45:22  moved
-modified
-
-Revision 1.17  2002/11/04 11:04:54  ray
-tei.2 => TEI.2
-
-Revision 1.16  2002/09/09 08:55:57  moved
-modified
-
-Revision 1.15  2002/07/29 09:48:17  vinking
-modified lang
-
-Revision 1.14  2002/04/08 09:51:05  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.13  2001/12/12 02:58:34  ray
-改 <milestone> 的屬性 n
-
-Revision 1.12  2001/07/24 07:04:06  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.11  2001/07/11 02:55:36  ray
-新增 <extent> 記錄總卷數
-
-Revision 1.10  2001/05/24 05:49:51  vinking
-比對修訂
-
-Revision 1.9  2001/04/27 10:00:40  vinking
-check htmlhelp
-
-Revision 1.8  2001/03/31 11:21:29  moved
-modified normal
-
-Revision 1.7  2001/03/30 12:42:32  moved
-modified normal
-
-Revision 1.6  2001/03/30 07:19:50  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.5  2001/03/25 11:54:37  ray
-add <milestone>
-
-Revision 1.4  2001/02/19 09:32:15  shiachun
-t85
-
-Revision 1.3  2001/02/07 07:49:52  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:19:58  chris
-Added keywords $Revision: 1.8 $, $Date: 2009/04/23 08:15:18 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-01-31T11:46:34">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="5" unit="juan"/>
@@ -1690,32 +1633,32 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0982003" to="#end0982003"><lem resp="#resp1" wit="#wit1">□□□</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">以世間</rdg></app>
-<app from="#beg0987b2201" to="#end0987b2201"><lem wit="#wit2" resp="#resp3">二</lem><rdg wit="#wit1">一</rdg></app>
-<app from="#beg0995b1301" to="#end0995b1301"><lem wit="#wit2" resp="#resp3">各</lem><rdg wit="#wit1">名</rdg></app>
+<app from="#beg0982003" to="#end0982003"><lem resp="#resp2" wit="#wit.orig">□□□</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">以世間</rdg></app>
+<app from="#beg0987b2201" to="#end0987b2201"><lem wit="#wit.cbeta" resp="#resp4">二</lem><rdg wit="#wit.orig">一</rdg></app>
+<app from="#beg0995b1301" to="#end0995b1301"><lem wit="#wit.cbeta" resp="#resp4">各</lem><rdg wit="#wit.orig">名</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0982003" resp="#resp2" type="mod" target="#nkr_note_mod_0982003">□□□【大】，以世間【考偽-大】</note>
+<note n="0982003" resp="#resp3" type="mod" target="#nkr_note_mod_0982003">□□□【大】，以世間【考偽-大】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0982001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0982001">【原】大英博物館藏燉煌本, S. 274, 首題新加</note>
-<note n="0982002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0982002">首缺</note>
-<note n="0982003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0982003">□□□＝以世間？</note>
-<note n="0990001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0990001">首題新加</note>
-<note n="0990002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0990002">首缺</note>
+<note n="0982001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0982001">【原】大英博物館藏燉煌本, S. 274, 首題新加</note>
+<note n="0982002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0982002">首缺</note>
+<note n="0982003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0982003">□□□＝以世間？</note>
+<note n="0990001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0990001">首題新加</note>
+<note n="0990002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0990002">首缺</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0987b2201" resp="#resp2" type="add" target="#nkr_note_add_0987b2201">二【CB】，一【大】</note>
-<note n="0995b1301" resp="#resp2" type="add" target="#nkr_note_add_0995b1301">各【CB】，名【大】</note>
+<note n="0987b2201" resp="#resp3" type="add" target="#nkr_note_add_0987b2201">二【CB】，一【大】</note>
+<note n="0995b1301" resp="#resp3" type="add" target="#nkr_note_add_0995b1301">各【CB】，名【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

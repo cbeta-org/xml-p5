@@ -11,117 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2009/04/23 08:09:05 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>3卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:09:05 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 34, No. 1730</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>3卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">34</idno>.<idno type="no">1730</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">金剛三昧經論</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-03-29T08:43:15">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T34n1730.xml,v $
-Revision 1.11  2009/04/23 08:09:05  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.10  2006/04/12 21:57:34  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.8  2004/12/15 04:31:18  saywhat
-p1007c29行尾的<div1 type="w">移到下一行行首
-
-Revision 1.7  2004/11/14 03:17:50  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.6  2004/10/27 10:39:43  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/04/20 08:41:15  maha
-「版本日期」標記修訂
-
-Revision 1.4  2004/04/20 03:26:06  maha
-將 type="inline" 或 rend="inline" 改成 place="inline"
-
-Revision 1.3  2003/06/23 05:08:12  moved
-＊校勘插入 xml 作業
-
-Revision 1.2  2003/05/16 13:13:36  ray
-app版100字以上長行加標點
-
-Revision 1.1.1.1  2003/05/05 04:10:05  ray
-recover cvs
-
-Revision 1.16  2002/12/06 03:03:01  moved
-modified
-
-Revision 1.15  2002/11/04 10:53:06  ray
-tei.2 => TEI.2
-
-Revision 1.14  2002/10/07 13:20:42  moved
-modified
-
-Revision 1.13  2002/07/29 10:09:59  vinking
-modified lang
-
-Revision 1.12  2002/04/08 09:30:54  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/07/24 06:57:42  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.10  2001/04/01 08:27:13  ray
-CB00380 => CB00308
-
-Revision 1.9  2001/03/30 06:17:49  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.8  2001/03/25 10:12:13  ray
-add <milestone>
-
-Revision 1.7  2001/02/07 07:08:22  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.6  2001/02/03 07:59:11  chris
-Added keywords $Revision: 1.11 $, $Date: 2009/04/23 08:09:05 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-03-29T08:43:15">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -4370,86 +4323,86 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0962001" to="#end0962001"><lem wit="#wit1">自</lem><rdg resp="#resp1" wit="#wit2">經序品第一自</rdg></app>
-<app from="#beg0964001" to="#end0964001"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit2">無相法品第二經</rdg></app>
-<app from="#beg0973001" to="#end0973001"><lem wit="#wit1">品</lem><rdg resp="#resp1" wit="#wit2">品第三</rdg></app>
-<app from="#beg0976001" to="#end0976001"><lem wit="#wit1">說</lem><rdg resp="#resp1" wit="#wit2">說設</rdg></app>
-<app from="#beg0977001" to="#end0977001"><lem wit="#wit1">品</lem><rdg resp="#resp1" wit="#wit2">品第四</rdg></app>
-<app from="#beg0979001" to="#end0979001"><lem wit="#wit1">切</lem><rdg resp="#resp1" wit="#wit2">切眾</rdg></app>
-<app from="#beg0981001" to="#end0981001"><lem wit="#wit1">准</lem><rdg resp="#resp1" wit="#wit2">淮</rdg></app>
-<app from="#beg0982001" to="#end0982001"><lem wit="#wit1">品</lem><rdg resp="#resp1" wit="#wit2">品第五</rdg></app>
-<app from="#beg0983001" to="#end0983001"><lem wit="#wit1">故</lem><rdg resp="#resp1" wit="#wit2">是故</rdg></app>
-<app from="#beg0983002" to="#end0983002"><lem wit="#wit1">名</lem><rdg resp="#resp1" wit="#wit2">明</rdg></app>
-<app from="#beg0983003" to="#end0983003"><lem wit="#wit1">其</lem><rdg resp="#resp1" wit="#wit2">有</rdg></app>
-<app from="#beg0988001" to="#end0988001"><lem wit="#wit1">始</lem><rdg resp="#resp1" wit="#wit2">如</rdg></app>
-<app from="#beg0990001" to="#end0990001"><lem wit="#wit1">品</lem><rdg resp="#resp1" wit="#wit2">品第六</rdg></app>
-<app from="#beg0992001" to="#end0992001"><lem wit="#wit1">四</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0994001" to="#end0994001"><lem wit="#wit1">密</lem><rdg resp="#resp1" wit="#wit2">蜜</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0994001"><lem wit="#wit1">密</lem><rdg resp="#resp1" wit="#wit2">蜜</rdg></app>
-<app from="#beg0996001" to="#end0996001"><lem wit="#wit1">品</lem><rdg resp="#resp1" wit="#wit2">品第七</rdg></app>
-<app from="#beg0997001" to="#end0997001"><lem wit="#wit1">宜</lem><rdg resp="#resp1" wit="#wit2">意</rdg></app>
-<app from="#beg1001001" to="#end1001001"><lem wit="#wit1">品</lem><rdg resp="#resp1" wit="#wit2">品第八</rdg></app>
-<app from="#beg1002001" to="#end1002001"><lem wit="#wit1">由</lem><rdg resp="#resp1" wit="#wit2">由所</rdg></app>
-<app from="#beg1007001" to="#end1007001"><lem wit="#wit1">土</lem><rdg resp="#resp1" wit="#wit2">士</rdg></app>
-<app from="#beg1007002" to="#end1007002"><lem wit="#wit1">下</lem><rdg resp="#resp1" wit="#wit2">下終</rdg></app>
-<app from="#beg1008001" to="#end1008001"><lem wit="#wit1">遊</lem><rdg resp="#resp1" wit="#wit2">游</rdg></app>
+<app from="#beg0962001" to="#end0962001"><lem wit="#wit.orig">自</lem><rdg resp="#resp2" wit="#wit1">經序品第一自</rdg></app>
+<app from="#beg0964001" to="#end0964001"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit1">無相法品第二經</rdg></app>
+<app from="#beg0973001" to="#end0973001"><lem wit="#wit.orig">品</lem><rdg resp="#resp2" wit="#wit1">品第三</rdg></app>
+<app from="#beg0976001" to="#end0976001"><lem wit="#wit.orig">說</lem><rdg resp="#resp2" wit="#wit1">說設</rdg></app>
+<app from="#beg0977001" to="#end0977001"><lem wit="#wit.orig">品</lem><rdg resp="#resp2" wit="#wit1">品第四</rdg></app>
+<app from="#beg0979001" to="#end0979001"><lem wit="#wit.orig">切</lem><rdg resp="#resp2" wit="#wit1">切眾</rdg></app>
+<app from="#beg0981001" to="#end0981001"><lem wit="#wit.orig">准</lem><rdg resp="#resp2" wit="#wit1">淮</rdg></app>
+<app from="#beg0982001" to="#end0982001"><lem wit="#wit.orig">品</lem><rdg resp="#resp2" wit="#wit1">品第五</rdg></app>
+<app from="#beg0983001" to="#end0983001"><lem wit="#wit.orig">故</lem><rdg resp="#resp2" wit="#wit1">是故</rdg></app>
+<app from="#beg0983002" to="#end0983002"><lem wit="#wit.orig">名</lem><rdg resp="#resp2" wit="#wit1">明</rdg></app>
+<app from="#beg0983003" to="#end0983003"><lem wit="#wit.orig">其</lem><rdg resp="#resp2" wit="#wit1">有</rdg></app>
+<app from="#beg0988001" to="#end0988001"><lem wit="#wit.orig">始</lem><rdg resp="#resp2" wit="#wit1">如</rdg></app>
+<app from="#beg0990001" to="#end0990001"><lem wit="#wit.orig">品</lem><rdg resp="#resp2" wit="#wit1">品第六</rdg></app>
+<app from="#beg0992001" to="#end0992001"><lem wit="#wit.orig">四</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0994001" to="#end0994001"><lem wit="#wit.orig">密</lem><rdg resp="#resp2" wit="#wit1">蜜</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0994001"><lem wit="#wit.orig">密</lem><rdg resp="#resp2" wit="#wit1">蜜</rdg></app>
+<app from="#beg0996001" to="#end0996001"><lem wit="#wit.orig">品</lem><rdg resp="#resp2" wit="#wit1">品第七</rdg></app>
+<app from="#beg0997001" to="#end0997001"><lem wit="#wit.orig">宜</lem><rdg resp="#resp2" wit="#wit1">意</rdg></app>
+<app from="#beg1001001" to="#end1001001"><lem wit="#wit.orig">品</lem><rdg resp="#resp2" wit="#wit1">品第八</rdg></app>
+<app from="#beg1002001" to="#end1002001"><lem wit="#wit.orig">由</lem><rdg resp="#resp2" wit="#wit1">由所</rdg></app>
+<app from="#beg1007001" to="#end1007001"><lem wit="#wit.orig">土</lem><rdg resp="#resp2" wit="#wit1">士</rdg></app>
+<app from="#beg1007002" to="#end1007002"><lem wit="#wit.orig">下</lem><rdg resp="#resp2" wit="#wit1">下終</rdg></app>
+<app from="#beg1008001" to="#end1008001"><lem wit="#wit.orig">遊</lem><rdg resp="#resp2" wit="#wit1">游</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0962001" resp="#resp2" type="mod" target="#nkr_note_mod_0962001">自【大】，經序品第一自【甲】</note>
-<note n="0962002" resp="#resp2" type="mod" target="#nkr_note_mod_0962002"><!--CBETA todo type: newmod-->別＋（如是我聞…六十萬億）經百四十一字【甲】</note>
-<note n="0964001" resp="#resp2" type="mod" target="#nkr_note_mod_0964001">經【大】，無相法品第二經【甲】</note>
-<note n="0973001" resp="#resp2" type="mod" target="#nkr_note_mod_0973001">品【大】，品第三【甲】</note>
-<note n="0976001" resp="#resp2" type="mod" target="#nkr_note_mod_0976001">說【大】，說設【甲】</note>
-<note n="0977001" resp="#resp2" type="mod" target="#nkr_note_mod_0977001">品【大】，品第四【甲】</note>
-<note n="0979001" resp="#resp2" type="mod" target="#nkr_note_mod_0979001">切【大】，切眾【甲】</note>
-<note n="0981001" resp="#resp2" type="mod" target="#nkr_note_mod_0981001">准【大】，淮【甲】</note>
-<note n="0982001" resp="#resp2" type="mod" target="#nkr_note_mod_0982001">品【大】，品第五【甲】</note>
-<note n="0983001" resp="#resp2" type="mod" target="#nkr_note_mod_0983001">故【大】，是故【甲】</note>
-<note n="0983002" resp="#resp2" type="mod" target="#nkr_note_mod_0983002">名【大】，明【甲】</note>
-<note n="0983003" resp="#resp2" type="mod" target="#nkr_note_mod_0983003">其【大】，有【甲】</note>
-<note n="0988001" resp="#resp2" type="mod" target="#nkr_note_mod_0988001">始【大】，如【甲】</note>
-<note n="0990001" resp="#resp2" type="mod" target="#nkr_note_mod_0990001">品【大】，品第六【甲】</note>
-<note n="0992001" resp="#resp2" type="mod" target="#nkr_note_mod_0992001">四【大】，〔－〕【甲】</note>
-<note n="0994001" resp="#resp2" type="mod" target="#nkr_note_mod_0994001">密【大】＊，蜜【甲】＊</note>
-<note n="0996001" resp="#resp2" type="mod" target="#nkr_note_mod_0996001">品【大】，品第七【甲】</note>
-<note n="0997001" resp="#resp2" type="mod" target="#nkr_note_mod_0997001">宜【大】，意【甲】</note>
-<note n="1001001" resp="#resp2" type="mod" target="#nkr_note_mod_1001001">品【大】，品第八【甲】</note>
-<note n="1002001" resp="#resp2" type="mod" target="#nkr_note_mod_1002001">由【大】，由所【甲】</note>
-<note n="1007001" resp="#resp2" type="mod" target="#nkr_note_mod_1007001">土【大】，士【甲】</note>
-<note n="1007002" resp="#resp2" type="mod" target="#nkr_note_mod_1007002">下【大】，下終【甲】</note>
-<note n="1008001" resp="#resp2" type="mod" target="#nkr_note_mod_1008001">遊【大】，游【甲】</note>
+<note n="0962001" resp="#resp3" type="mod" target="#nkr_note_mod_0962001">自【大】，經序品第一自【甲】</note>
+<note n="0962002" resp="#resp3" type="mod" target="#nkr_note_mod_0962002"><!--CBETA todo type: newmod-->別＋（如是我聞…六十萬億）經百四十一字【甲】</note>
+<note n="0964001" resp="#resp3" type="mod" target="#nkr_note_mod_0964001">經【大】，無相法品第二經【甲】</note>
+<note n="0973001" resp="#resp3" type="mod" target="#nkr_note_mod_0973001">品【大】，品第三【甲】</note>
+<note n="0976001" resp="#resp3" type="mod" target="#nkr_note_mod_0976001">說【大】，說設【甲】</note>
+<note n="0977001" resp="#resp3" type="mod" target="#nkr_note_mod_0977001">品【大】，品第四【甲】</note>
+<note n="0979001" resp="#resp3" type="mod" target="#nkr_note_mod_0979001">切【大】，切眾【甲】</note>
+<note n="0981001" resp="#resp3" type="mod" target="#nkr_note_mod_0981001">准【大】，淮【甲】</note>
+<note n="0982001" resp="#resp3" type="mod" target="#nkr_note_mod_0982001">品【大】，品第五【甲】</note>
+<note n="0983001" resp="#resp3" type="mod" target="#nkr_note_mod_0983001">故【大】，是故【甲】</note>
+<note n="0983002" resp="#resp3" type="mod" target="#nkr_note_mod_0983002">名【大】，明【甲】</note>
+<note n="0983003" resp="#resp3" type="mod" target="#nkr_note_mod_0983003">其【大】，有【甲】</note>
+<note n="0988001" resp="#resp3" type="mod" target="#nkr_note_mod_0988001">始【大】，如【甲】</note>
+<note n="0990001" resp="#resp3" type="mod" target="#nkr_note_mod_0990001">品【大】，品第六【甲】</note>
+<note n="0992001" resp="#resp3" type="mod" target="#nkr_note_mod_0992001">四【大】，〔－〕【甲】</note>
+<note n="0994001" resp="#resp3" type="mod" target="#nkr_note_mod_0994001">密【大】＊，蜜【甲】＊</note>
+<note n="0996001" resp="#resp3" type="mod" target="#nkr_note_mod_0996001">品【大】，品第七【甲】</note>
+<note n="0997001" resp="#resp3" type="mod" target="#nkr_note_mod_0997001">宜【大】，意【甲】</note>
+<note n="1001001" resp="#resp3" type="mod" target="#nkr_note_mod_1001001">品【大】，品第八【甲】</note>
+<note n="1002001" resp="#resp3" type="mod" target="#nkr_note_mod_1002001">由【大】，由所【甲】</note>
+<note n="1007001" resp="#resp3" type="mod" target="#nkr_note_mod_1007001">土【大】，士【甲】</note>
+<note n="1007002" resp="#resp3" type="mod" target="#nkr_note_mod_1007002">下【大】，下終【甲】</note>
+<note n="1008001" resp="#resp3" type="mod" target="#nkr_note_mod_1008001">遊【大】，游【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0961001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0961001">【原】高麗○○○年刊大正一切經刊行會藏本，【甲】大正十二年刊朝鮮佛教會本</note>
-<note n="0962001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0962001">（經序品第一）＋自【甲】</note>
-<note n="0962002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0962002">別＋（如是我聞…六十萬億）經百四十一字【甲】</note>
-<note n="0964001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0964001">（無相法品第二）＋經【甲】</note>
-<note n="0973001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0973001">品＋（第三）【甲】</note>
-<note n="0976001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0976001">說＋（設）【甲】</note>
-<note n="0977001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0977001">品＋（第四）【甲】</note>
-<note n="0979001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0979001">切＋（眾）【甲】</note>
-<note n="0981001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0981001">准＝淮【甲】</note>
-<note n="0982001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0982001">品＋（第五）【甲】</note>
-<note n="0983001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0983001">（是）＋故【甲】</note>
-<note n="0983002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0983002">名＝明【甲】</note>
-<note n="0983003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0983003">其＝有【甲】</note>
-<note n="0988001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0988001">始＝如【甲】</note>
-<note n="0990001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0990001">品＋（第六）【甲】</note>
-<note n="0992001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0992001">〔四〕－【甲】</note>
-<note n="0994001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0994001">密＝蜜【甲】＊</note>
-<note n="0996001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0996001">品＋（第七）【甲】</note>
-<note n="0997001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0997001">宜＝意【甲】</note>
-<note n="1001001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1001001">品＋（第八）【甲】</note>
-<note n="1002001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1002001">由＋（所）【甲】</note>
-<note n="1007001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1007001">土＝士【甲】</note>
-<note n="1007002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1007002">下＋（終）【甲】</note>
-<note n="1008001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1008001">遊＝游【甲】</note>
+<note n="0961001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0961001">【原】高麗○○○年刊大正一切經刊行會藏本，【甲】大正十二年刊朝鮮佛教會本</note>
+<note n="0962001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0962001">（經序品第一）＋自【甲】</note>
+<note n="0962002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0962002">別＋（如是我聞…六十萬億）經百四十一字【甲】</note>
+<note n="0964001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0964001">（無相法品第二）＋經【甲】</note>
+<note n="0973001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0973001">品＋（第三）【甲】</note>
+<note n="0976001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0976001">說＋（設）【甲】</note>
+<note n="0977001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0977001">品＋（第四）【甲】</note>
+<note n="0979001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0979001">切＋（眾）【甲】</note>
+<note n="0981001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0981001">准＝淮【甲】</note>
+<note n="0982001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0982001">品＋（第五）【甲】</note>
+<note n="0983001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0983001">（是）＋故【甲】</note>
+<note n="0983002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0983002">名＝明【甲】</note>
+<note n="0983003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0983003">其＝有【甲】</note>
+<note n="0988001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0988001">始＝如【甲】</note>
+<note n="0990001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0990001">品＋（第六）【甲】</note>
+<note n="0992001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0992001">〔四〕－【甲】</note>
+<note n="0994001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0994001">密＝蜜【甲】＊</note>
+<note n="0996001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0996001">品＋（第七）【甲】</note>
+<note n="0997001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0997001">宜＝意【甲】</note>
+<note n="1001001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1001001">品＋（第八）【甲】</note>
+<note n="1002001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1002001">由＋（所）【甲】</note>
+<note n="1007001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1007001">土＝士【甲】</note>
+<note n="1007002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1007002">下＋（終）【甲】</note>
+<note n="1008001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1008001">遊＝游【甲】</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -11,115 +11,73 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.7 $<date>$Date: 2009/04/23 08:13:01 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:13:01 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 49, No. 2032</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【明】</witness>
-		<witness xml:id="wit5">【宮】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">49</idno>.<idno type="no">2032</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">十八部論</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【明】</witness>
+						<witness xml:id="wit4">【宮】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-10-23T09:56:19">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T49n2032.xml,v $
-Revision 1.7  2009/04/23 08:13:01  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.6  2006/04/12 21:59:08  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.4  2004/12/15 06:54:19  saywhat
-p0019c14行尾的<div1 type="w">移到下一行行首
-
-Revision 1.3  2004/11/07 08:25:51  saywhat
-段落前加入圈點
-
-Revision 1.2  2004/04/20 08:43:12  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:10:36  ray
-recover cvs
-
-Revision 1.17  2002/12/09 03:43:41  moved
-modified
-
-Revision 1.16  2002/11/04 10:59:32  ray
-tei.2 => TEI.2
-
-Revision 1.15  2002/07/29 09:45:25  vinking
-modified lang
-
-Revision 1.14  2002/04/08 09:44:24  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.13  2001/11/05 06:21:08  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.12  2001/07/24 07:01:19  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.11  2001/06/20 04:09:39  vinking
-cd7 修訂
-
-Revision 1.10  2001/05/22 11:47:53  eva
-modified normal
-
-Revision 1.9  2001/05/15 09:42:19  eva
-modified normal
-
-Revision 1.8  2001/03/30 06:40:52  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/03/26 04:06:04  ray
-add <milestone>
-
-Revision 1.6  2001/02/07 07:30:06  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.5  2001/02/03 08:09:53  chris
-Added keywords $Revision: 1.7 $, $Date: 2009/04/23 08:13:01 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-10-23T09:56:19">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -356,88 +314,88 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0017013" to="#end0017013"><lem wit="#wit1">一卷</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app from="#beg0017014" to="#end0017014"><lem wit="#wit1">陳真諦譯</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5">失譯</rdg><rdg resp="#resp1" wit="#wit4">失譯人名</rdg></app>
-<app from="#beg0017015" to="#end0017015"><lem wit="#wit1">四</lem><rdg resp="#resp1" wit="#wit4">白</rdg></app>
-<app from="#beg0017016" to="#end0017016"><lem wit="#wit1">密</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">蜜</rdg></app>
-<app cb:word-count="17" from="#beg0017017" to="#end0017017"><lem wit="#wit1">此二部當起。後摩訶僧祇出七<lb n="0017c02" ed="T"/>部。於此百歲</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app cb:word-count="23" from="#beg0017018" to="#end0017018"><lem wit="#wit1">名出世<lb n="0017c04" ed="T"/>間語言<note place="inline">稱讚辭也</note>。於百歲內從出世間語言。出一部</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app from="#beg0017019" to="#end0017019"><lem wit="#wit1">所</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app from="#beg0017020" to="#end0017020"><lem wit="#wit1">處</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">處也</rdg></app>
-<app from="#beg0017021" to="#end0017021"><lem wit="#wit1">賢部</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">名賢</rdg></app>
-<app from="#beg0017022" to="#end0017022"><lem wit="#wit1">義</lem><rdg resp="#resp1" wit="#wit5">我</rdg></app>
-<app from="#beg0017023" to="#end0017023"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">體</rdg></app>
-<app from="#beg0017024" to="#end0017024"><lem wit="#wit1">二十</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">十二</rdg></app>
-<app from="#beg0018001" to="#end0018001"><lem wit="#wit1">得</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5">渴</rdg></app>
-<app from="#beg0018002" to="#end0018002"><lem wit="#wit1">勝</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">聖</rdg></app>
-<app from="#beg0018003" to="#end0018003"><lem wit="#wit1">巴連</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">已達</rdg></app>
-<app from="#beg0018004" to="#end0018004"><lem wit="#wit1">知</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">如</rdg></app>
-<app from="#beg0019001" to="#end0019001"><lem wit="#wit1">起</lem><rdg resp="#resp1" wit="#wit4">超</rdg></app>
-<app from="#beg0019002" to="#end0019002"><lem wit="#wit1">世</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">世世</rdg></app>
-<app from="#beg0019003" to="#end0019003"><lem wit="#wit1">間</lem><rdg resp="#resp1" wit="#wit3 #wit4">聞</rdg></app>
-<app from="#beg0019004" to="#end0019004"><lem wit="#wit1">入</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">得</rdg></app>
-<app from="#beg0019005" to="#end0019005"><lem wit="#wit1">名</lem><rdg resp="#resp1" wit="#wit3 #wit4">明</rdg></app>
-<app from="#beg0019006" to="#end0019006"><lem wit="#wit1">記</lem><rdg resp="#resp1" wit="#wit2">謂</rdg></app>
-<app from="#beg0019007" to="#end0019007"><lem wit="#wit1">太</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">大</rdg></app>
-<app cb:word-count="208" from="#beg0019008" to="#end0019008"><lem wit="#wit1">按此論者宋藏中錯重寫。彼部異執論。名<lb n="0019c16" ed="T"/>為十八部論故今取此國本為正。開元錄<lb n="0019c17" ed="T"/>云右十八部論群錄並云。梁代三藏真諦<lb n="0019c18" ed="T"/>所譯。今詳真諦三藏已譯十八部論。不合<lb n="0019c19" ed="T"/>更譯部異執論。其十八部論初首引文殊<lb n="0019c20" ed="T"/>問經分別部品。後次云羅什法師集後方<lb n="0019c21" ed="T"/>是論。若是羅什所翻。秦時未有文殊問<lb n="0019c22" ed="T"/>經。不合引之置於初也。或可準別錄中文<lb n="0019c23" ed="T"/>殊問經編為失譯。秦時引證此亦無疑。若<lb n="0019c24" ed="T"/>是真諦再譯。論中子注不合有秦言之字。<lb n="0019c25" ed="T"/>詳其文理多是秦時羅什譯出。諸錄脫編<lb n="0019c26" ed="T"/>致有疑焉。其真諦十八部疏。即部異執疏<lb n="0019c27" ed="T"/>是雖有斯理未敢指南。後諸博聞請求實<lb n="0019c28" ed="T"/>錄</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
+<app from="#beg0017013" to="#end0017013"><lem wit="#wit.orig">一卷</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0017014" to="#end0017014"><lem wit="#wit.orig">陳真諦譯</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">失譯</rdg><rdg resp="#resp2" wit="#wit3">失譯人名</rdg></app>
+<app from="#beg0017015" to="#end0017015"><lem wit="#wit.orig">四</lem><rdg resp="#resp2" wit="#wit3">白</rdg></app>
+<app from="#beg0017016" to="#end0017016"><lem wit="#wit.orig">密</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">蜜</rdg></app>
+<app cb:word-count="17" from="#beg0017017" to="#end0017017"><lem wit="#wit.orig">此二部當起。後摩訶僧祇出七<lb n="0017c02" ed="T"/>部。於此百歲</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app cb:word-count="23" from="#beg0017018" to="#end0017018"><lem wit="#wit.orig">名出世<lb n="0017c04" ed="T"/>間語言<note place="inline">稱讚辭也</note>。於百歲內從出世間語言。出一部</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0017019" to="#end0017019"><lem wit="#wit.orig">所</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0017020" to="#end0017020"><lem wit="#wit.orig">處</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">處也</rdg></app>
+<app from="#beg0017021" to="#end0017021"><lem wit="#wit.orig">賢部</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">名賢</rdg></app>
+<app from="#beg0017022" to="#end0017022"><lem wit="#wit.orig">義</lem><rdg resp="#resp2" wit="#wit4">我</rdg></app>
+<app from="#beg0017023" to="#end0017023"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">體</rdg></app>
+<app from="#beg0017024" to="#end0017024"><lem wit="#wit.orig">二十</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">十二</rdg></app>
+<app from="#beg0018001" to="#end0018001"><lem wit="#wit.orig">得</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">渴</rdg></app>
+<app from="#beg0018002" to="#end0018002"><lem wit="#wit.orig">勝</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">聖</rdg></app>
+<app from="#beg0018003" to="#end0018003"><lem wit="#wit.orig">巴連</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">已達</rdg></app>
+<app from="#beg0018004" to="#end0018004"><lem wit="#wit.orig">知</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">如</rdg></app>
+<app from="#beg0019001" to="#end0019001"><lem wit="#wit.orig">起</lem><rdg resp="#resp2" wit="#wit3">超</rdg></app>
+<app from="#beg0019002" to="#end0019002"><lem wit="#wit.orig">世</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">世世</rdg></app>
+<app from="#beg0019003" to="#end0019003"><lem wit="#wit.orig">間</lem><rdg resp="#resp2" wit="#wit2 #wit3">聞</rdg></app>
+<app from="#beg0019004" to="#end0019004"><lem wit="#wit.orig">入</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">得</rdg></app>
+<app from="#beg0019005" to="#end0019005"><lem wit="#wit.orig">名</lem><rdg resp="#resp2" wit="#wit2 #wit3">明</rdg></app>
+<app from="#beg0019006" to="#end0019006"><lem wit="#wit.orig">記</lem><rdg resp="#resp2" wit="#wit1">謂</rdg></app>
+<app from="#beg0019007" to="#end0019007"><lem wit="#wit.orig">太</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">大</rdg></app>
+<app cb:word-count="208" from="#beg0019008" to="#end0019008"><lem wit="#wit.orig">按此論者宋藏中錯重寫。彼部異執論。名<lb n="0019c16" ed="T"/>為十八部論故今取此國本為正。開元錄<lb n="0019c17" ed="T"/>云右十八部論群錄並云。梁代三藏真諦<lb n="0019c18" ed="T"/>所譯。今詳真諦三藏已譯十八部論。不合<lb n="0019c19" ed="T"/>更譯部異執論。其十八部論初首引文殊<lb n="0019c20" ed="T"/>問經分別部品。後次云羅什法師集後方<lb n="0019c21" ed="T"/>是論。若是羅什所翻。秦時未有文殊問<lb n="0019c22" ed="T"/>經。不合引之置於初也。或可準別錄中文<lb n="0019c23" ed="T"/>殊問經編為失譯。秦時引證此亦無疑。若<lb n="0019c24" ed="T"/>是真諦再譯。論中子注不合有秦言之字。<lb n="0019c25" ed="T"/>詳其文理多是秦時羅什譯出。諸錄脫編<lb n="0019c26" ed="T"/>致有疑焉。其真諦十八部疏。即部異執疏<lb n="0019c27" ed="T"/>是雖有斯理未敢指南。後諸博聞請求實<lb n="0019c28" ed="T"/>錄</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0017013" resp="#resp2" type="mod" target="#nkr_note_mod_0017013">一卷【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0017014" resp="#resp2" type="mod" target="#nkr_note_mod_0017014">陳真諦譯【大】，失譯【宋】【元】【宮】，失譯人名【明】</note>
-<note n="0017015" resp="#resp2" type="mod" target="#nkr_note_mod_0017015">四【大】，白【明】</note>
-<note n="0017016" resp="#resp2" type="mod" target="#nkr_note_mod_0017016">密【大】，蜜【宋】【元】【明】【宮】</note>
-<note n="0017017" resp="#resp2" type="mod" target="#nkr_note_mod_0017017">（此二…百歲）十七字【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0017018" resp="#resp2" type="mod" target="#nkr_note_mod_0017018">（名出…一部）二十三字【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0017019" resp="#resp2" type="mod" target="#nkr_note_mod_0017019">所【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0017020" resp="#resp2" type="mod" target="#nkr_note_mod_0017020">處【大】，處也【宋】【元】【明】【宮】</note>
-<note n="0017021" resp="#resp2" type="mod" target="#nkr_note_mod_0017021">賢部【大】，名賢【宋】【元】【明】【宮】</note>
-<note n="0017022" resp="#resp2" type="mod" target="#nkr_note_mod_0017022">義【大】，我【宮】</note>
-<note n="0017023" resp="#resp2" type="mod" target="#nkr_note_mod_0017023">大【大】，體【宋】【元】【明】【宮】</note>
-<note n="0017024" resp="#resp2" type="mod" target="#nkr_note_mod_0017024">二十【大】，十二【宋】【元】【明】【宮】</note>
-<note n="0018001" resp="#resp2" type="mod" target="#nkr_note_mod_0018001">得【大】，渴【宋】【元】【宮】</note>
-<note n="0018002" resp="#resp2" type="mod" target="#nkr_note_mod_0018002">勝【大】，聖【宋】【元】【明】</note>
-<note n="0018003" resp="#resp2" type="mod" target="#nkr_note_mod_0018003">巴連【大】，已達【宋】【元】【明】【宮】</note>
-<note n="0018004" resp="#resp2" type="mod" target="#nkr_note_mod_0018004">知【大】，如【宋】【元】【明】【宮】</note>
-<note n="0019001" resp="#resp2" type="mod" target="#nkr_note_mod_0019001">起【大】，超【明】</note>
-<note n="0019002" resp="#resp2" type="mod" target="#nkr_note_mod_0019002">世【大】，世世【宋】【元】【明】【宮】</note>
-<note n="0019003" resp="#resp2" type="mod" target="#nkr_note_mod_0019003">間【大】，聞【元】【明】</note>
-<note n="0019004" resp="#resp2" type="mod" target="#nkr_note_mod_0019004">入【大】，得【宋】【元】【明】</note>
-<note n="0019005" resp="#resp2" type="mod" target="#nkr_note_mod_0019005">名【大】，明【元】【明】</note>
-<note n="0019006" resp="#resp2" type="mod" target="#nkr_note_mod_0019006">記【大】，謂【宋】</note>
-<note n="0019007" resp="#resp2" type="mod" target="#nkr_note_mod_0019007">太【大】，大【宋】【元】【明】【宮】</note>
-<note n="0019008" resp="#resp2" type="mod" target="#nkr_note_mod_0019008">（按此論…實錄）二百八字【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0017013" resp="#resp3" type="mod" target="#nkr_note_mod_0017013">一卷【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0017014" resp="#resp3" type="mod" target="#nkr_note_mod_0017014">陳真諦譯【大】，失譯【宋】【元】【宮】，失譯人名【明】</note>
+<note n="0017015" resp="#resp3" type="mod" target="#nkr_note_mod_0017015">四【大】，白【明】</note>
+<note n="0017016" resp="#resp3" type="mod" target="#nkr_note_mod_0017016">密【大】，蜜【宋】【元】【明】【宮】</note>
+<note n="0017017" resp="#resp3" type="mod" target="#nkr_note_mod_0017017">（此二…百歲）十七字【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0017018" resp="#resp3" type="mod" target="#nkr_note_mod_0017018">（名出…一部）二十三字【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0017019" resp="#resp3" type="mod" target="#nkr_note_mod_0017019">所【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0017020" resp="#resp3" type="mod" target="#nkr_note_mod_0017020">處【大】，處也【宋】【元】【明】【宮】</note>
+<note n="0017021" resp="#resp3" type="mod" target="#nkr_note_mod_0017021">賢部【大】，名賢【宋】【元】【明】【宮】</note>
+<note n="0017022" resp="#resp3" type="mod" target="#nkr_note_mod_0017022">義【大】，我【宮】</note>
+<note n="0017023" resp="#resp3" type="mod" target="#nkr_note_mod_0017023">大【大】，體【宋】【元】【明】【宮】</note>
+<note n="0017024" resp="#resp3" type="mod" target="#nkr_note_mod_0017024">二十【大】，十二【宋】【元】【明】【宮】</note>
+<note n="0018001" resp="#resp3" type="mod" target="#nkr_note_mod_0018001">得【大】，渴【宋】【元】【宮】</note>
+<note n="0018002" resp="#resp3" type="mod" target="#nkr_note_mod_0018002">勝【大】，聖【宋】【元】【明】</note>
+<note n="0018003" resp="#resp3" type="mod" target="#nkr_note_mod_0018003">巴連【大】，已達【宋】【元】【明】【宮】</note>
+<note n="0018004" resp="#resp3" type="mod" target="#nkr_note_mod_0018004">知【大】，如【宋】【元】【明】【宮】</note>
+<note n="0019001" resp="#resp3" type="mod" target="#nkr_note_mod_0019001">起【大】，超【明】</note>
+<note n="0019002" resp="#resp3" type="mod" target="#nkr_note_mod_0019002">世【大】，世世【宋】【元】【明】【宮】</note>
+<note n="0019003" resp="#resp3" type="mod" target="#nkr_note_mod_0019003">間【大】，聞【元】【明】</note>
+<note n="0019004" resp="#resp3" type="mod" target="#nkr_note_mod_0019004">入【大】，得【宋】【元】【明】</note>
+<note n="0019005" resp="#resp3" type="mod" target="#nkr_note_mod_0019005">名【大】，明【元】【明】</note>
+<note n="0019006" resp="#resp3" type="mod" target="#nkr_note_mod_0019006">記【大】，謂【宋】</note>
+<note n="0019007" resp="#resp3" type="mod" target="#nkr_note_mod_0019007">太【大】，大【宋】【元】【明】【宮】</note>
+<note n="0019008" resp="#resp3" type="mod" target="#nkr_note_mod_0019008">（按此論…實錄）二百八字【大】，〔－〕【宋】【元】【明】【宮】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0017013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017013">〔一卷〕－【三】【宮】</note>
-<note n="0017014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017014">陳真諦譯＝失譯【宋】【元】【宮】，失譯人名【明】</note>
-<note n="0017015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017015">四＝白【明】</note>
-<note n="0017016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017016">密＝蜜【三】【宮】</note>
-<note n="0017017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017017">〔此二…百歲〕十七字－【三】【宮】</note>
-<note n="0017018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017018">〔名出…一部〕二十三字－【三】【宮】</note>
-<note n="0017019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017019">〔所〕－【三】【宮】</note>
-<note n="0017020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017020">處＋（也）【三】【宮】</note>
-<note n="0017021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017021">賢部＝名賢【三】【宮】</note>
-<note n="0017022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017022">義＝我【宮】</note>
-<note n="0017023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017023">大＝體【三】【宮】</note>
-<note n="0017024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0017024">二十＝十二【三】【宮】</note>
-<note n="0018001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018001">得＝渴【宋】【元】【宮】</note>
-<note n="0018002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018002">勝＝聖【三】</note>
-<note n="0018003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018003">巴連＝已達【三】【宮】</note>
-<note n="0018004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0018004">知＝如【三】【宮】</note>
-<note n="0019001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019001">起＝超【明】</note>
-<note n="0019002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019002">世＋（世）【三】【宮】</note>
-<note n="0019003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019003">間＝聞【元】【明】</note>
-<note n="0019004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019004">入＝得【三】</note>
-<note n="0019005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019005">名＝明【元】【明】</note>
-<note n="0019006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019006">記＝謂【宋】</note>
-<note n="0019007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019007">太＝大【三】【宮】</note>
-<note n="0019008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0019008">〔按此論…實錄〕二百八字－【三】【宮】</note>
+<note n="0017013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017013">〔一卷〕－【三】【宮】</note>
+<note n="0017014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017014">陳真諦譯＝失譯【宋】【元】【宮】，失譯人名【明】</note>
+<note n="0017015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017015">四＝白【明】</note>
+<note n="0017016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017016">密＝蜜【三】【宮】</note>
+<note n="0017017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017017">〔此二…百歲〕十七字－【三】【宮】</note>
+<note n="0017018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017018">〔名出…一部〕二十三字－【三】【宮】</note>
+<note n="0017019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017019">〔所〕－【三】【宮】</note>
+<note n="0017020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017020">處＋（也）【三】【宮】</note>
+<note n="0017021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017021">賢部＝名賢【三】【宮】</note>
+<note n="0017022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017022">義＝我【宮】</note>
+<note n="0017023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017023">大＝體【三】【宮】</note>
+<note n="0017024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0017024">二十＝十二【三】【宮】</note>
+<note n="0018001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018001">得＝渴【宋】【元】【宮】</note>
+<note n="0018002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018002">勝＝聖【三】</note>
+<note n="0018003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018003">巴連＝已達【三】【宮】</note>
+<note n="0018004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0018004">知＝如【三】【宮】</note>
+<note n="0019001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019001">起＝超【明】</note>
+<note n="0019002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019002">世＋（世）【三】【宮】</note>
+<note n="0019003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019003">間＝聞【元】【明】</note>
+<note n="0019004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019004">入＝得【三】</note>
+<note n="0019005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019005">名＝明【元】【明】</note>
+<note n="0019006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019006">記＝謂【宋】</note>
+<note n="0019007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019007">太＝大【三】【宮】</note>
+<note n="0019008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0019008">〔按此論…實錄〕二百八字－【三】【宮】</note>
 </p>
 </cb:div>
 </back></text></TEI>

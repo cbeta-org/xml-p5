@@ -11,108 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.6 $<date>$Date: 2009/04/23 08:15:21 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:15:21 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 85, No. 2907</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Miss Cai Ning-Jun, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，蔡寧君大德輸入，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">85</idno>.<idno type="no">2907</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">普賢菩薩行願王經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Miss Cai Ning-Jun, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，蔡寧君大德輸入，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-01-31T11:46:39">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T85n2907.xml,v $
-Revision 1.6  2009/04/23 08:15:21  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.5  2006/04/12 22:00:58  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.3  2004/11/14 03:18:28  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.2  2004/04/20 08:44:56  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:11:05  ray
-recover cvs
-
-Revision 1.14  2002/12/09 03:45:27  moved
-modified
-
-Revision 1.13  2002/11/04 11:05:01  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/09/09 08:56:02  moved
-modified
-
-Revision 1.11  2002/07/29 09:48:21  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:51:09  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/07/24 07:04:18  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/07/11 08:22:47  vinking
-modified for CD7 alphs 2 normal, app, hh
-
-Revision 1.7  2001/05/24 05:49:53  vinking
-比對修訂
-
-Revision 1.6  2001/03/31 11:21:40  moved
-modified normal
-
-Revision 1.5  2001/03/30 07:20:03  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.4  2001/03/25 11:54:44  ray
-add <milestone>
-
-Revision 1.3  2001/02/07 07:50:54  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:20:53  chris
-Added keywords $Revision: 1.6 $, $Date: 2009/04/23 08:15:21 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-01-31T11:46:39">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -251,106 +213,106 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1452003" to="#end1452003"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2">居</rdg></app>
-<app from="#beg1452004" to="#end1452004"><lem wit="#wit1">結</lem><rdg resp="#resp1" wit="#wit2">浩</rdg></app>
-<app from="#beg1452005" to="#end1452005"><lem wit="#wit1">願</lem><rdg resp="#resp1" wit="#wit2">逝</rdg></app>
-<app from="#beg1452006" to="#end1452006"><lem wit="#wit1">鑪</lem><rdg resp="#resp1" wit="#wit2">爐</rdg></app>
-<app from="#beg1452007" to="#end1452007"><lem wit="#wit1">來</lem><rdg resp="#resp1" wit="#wit2">是</rdg></app>
-<app from="#beg1452008" to="#end1452008"><lem wit="#wit1">取</lem><rdg resp="#resp1" wit="#wit2">趣</rdg></app>
-<app cb:word-count="7" from="#beg1453001" to="#end1453001"><lem wit="#wit1">皆得廣大令清淨</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1453002" to="#end1453002"><lem wit="#wit1">薩</lem><rdg resp="#resp1" wit="#wit2">提</rdg></app>
-<app from="#beg1453003" to="#end1453003"><lem wit="#wit1">漏</lem><rdg resp="#resp1" wit="#wit2">病</rdg></app>
-<app from="#beg1453004" to="#end1453004"><lem wit="#wit1">界</lem><rdg resp="#resp1" wit="#wit2">世</rdg></app>
-<app from="#beg1453005" to="#end1453005"><lem wit="#wit1">等</lem><rdg resp="#resp1" wit="#wit2">行</rdg></app>
-<app from="#beg1453006" to="#end1453006"><lem wit="#wit1">忘</lem><rdg resp="#resp1" wit="#wit2">妄</rdg></app>
-<app from="#beg1453007" to="#end1453007"><lem wit="#wit1">安</lem><rdg resp="#resp1" wit="#wit2">令</rdg></app>
-<app from="#beg1453008" to="#end1453008"><lem wit="#wit1">樂</lem><rdg resp="#resp1" wit="#wit2">隱</rdg></app>
-<app from="#beg1453009" to="#end1453009"><lem wit="#wit1">利</lem><rdg resp="#resp1" wit="#wit2">離</rdg></app>
-<app from="#beg1453010" to="#end1453010"><lem wit="#wit1">遇</lem><rdg resp="#resp1" wit="#wit2">隨</rdg></app>
-<app from="#beg1453011" to="#end1453011"><lem wit="#wit1">尊</lem><rdg resp="#resp1" wit="#wit2">導</rdg></app>
-<app from="#beg1453012" to="#end1453012"><lem wit="#wit1">得</lem><rdg resp="#resp1" wit="#wit2">德</rdg></app>
-<app from="#beg1453013" to="#end1453013"><lem wit="#wit1">意</lem><rdg resp="#resp1" wit="#wit2">音</rdg></app>
-<app cb:word-count="7" from="#beg1453014" to="#end1453014"><lem wit="#wit1">常於諸佛上境界</lem><rdg resp="#resp1" wit="#wit2">證得如幻解脫力</rdg></app>
-<app cb:word-count="7" from="#beg1453015" to="#end1453015"><lem wit="#wit1">如幻解脫力所證</lem><rdg resp="#resp1" wit="#wit2">常入諸佛之境界</rdg></app>
-<app from="#beg1453016" to="#end1453016"><lem wit="#wit1">用</lem><rdg resp="#resp1" wit="#wit2">力</rdg></app>
-<app cb:word-count="7" from="#beg1453017" to="#end1453017"><lem wit="#wit1">亦願佛剎遍莊嚴</lem><rdg resp="#resp1" wit="#wit2">我願遍入佛淨土</rdg></app>
-<app from="#beg1453018" to="#end1453018"><lem wit="#wit1">證</lem><rdg resp="#resp1" wit="#wit2">燈</rdg></app>
-<app from="#beg1453019" to="#end1453019"><lem wit="#wit1">有</lem><rdg resp="#resp1" wit="#wit2">於</rdg></app>
-<app from="#beg1453020" to="#end1453020"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit2">天</rdg></app>
-<app from="#beg1453021" to="#end1453021"><lem wit="#wit1">壽</lem><rdg resp="#resp1" wit="#wit2">受</rdg></app>
-<app from="#beg1453022" to="#end1453022"><lem wit="#wit1">道</lem><rdg resp="#resp1" wit="#wit2">通</rdg></app>
-<app from="#beg1453023" to="#end1453023"><lem wit="#wit1">所</lem><rdg resp="#resp1" wit="#wit2">勝</rdg></app>
+<app from="#beg1452003" to="#end1452003"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1">居</rdg></app>
+<app from="#beg1452004" to="#end1452004"><lem wit="#wit.orig">結</lem><rdg resp="#resp2" wit="#wit1">浩</rdg></app>
+<app from="#beg1452005" to="#end1452005"><lem wit="#wit.orig">願</lem><rdg resp="#resp2" wit="#wit1">逝</rdg></app>
+<app from="#beg1452006" to="#end1452006"><lem wit="#wit.orig">鑪</lem><rdg resp="#resp2" wit="#wit1">爐</rdg></app>
+<app from="#beg1452007" to="#end1452007"><lem wit="#wit.orig">來</lem><rdg resp="#resp2" wit="#wit1">是</rdg></app>
+<app from="#beg1452008" to="#end1452008"><lem wit="#wit.orig">取</lem><rdg resp="#resp2" wit="#wit1">趣</rdg></app>
+<app cb:word-count="7" from="#beg1453001" to="#end1453001"><lem wit="#wit.orig">皆得廣大令清淨</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1453002" to="#end1453002"><lem wit="#wit.orig">薩</lem><rdg resp="#resp2" wit="#wit1">提</rdg></app>
+<app from="#beg1453003" to="#end1453003"><lem wit="#wit.orig">漏</lem><rdg resp="#resp2" wit="#wit1">病</rdg></app>
+<app from="#beg1453004" to="#end1453004"><lem wit="#wit.orig">界</lem><rdg resp="#resp2" wit="#wit1">世</rdg></app>
+<app from="#beg1453005" to="#end1453005"><lem wit="#wit.orig">等</lem><rdg resp="#resp2" wit="#wit1">行</rdg></app>
+<app from="#beg1453006" to="#end1453006"><lem wit="#wit.orig">忘</lem><rdg resp="#resp2" wit="#wit1">妄</rdg></app>
+<app from="#beg1453007" to="#end1453007"><lem wit="#wit.orig">安</lem><rdg resp="#resp2" wit="#wit1">令</rdg></app>
+<app from="#beg1453008" to="#end1453008"><lem wit="#wit.orig">樂</lem><rdg resp="#resp2" wit="#wit1">隱</rdg></app>
+<app from="#beg1453009" to="#end1453009"><lem wit="#wit.orig">利</lem><rdg resp="#resp2" wit="#wit1">離</rdg></app>
+<app from="#beg1453010" to="#end1453010"><lem wit="#wit.orig">遇</lem><rdg resp="#resp2" wit="#wit1">隨</rdg></app>
+<app from="#beg1453011" to="#end1453011"><lem wit="#wit.orig">尊</lem><rdg resp="#resp2" wit="#wit1">導</rdg></app>
+<app from="#beg1453012" to="#end1453012"><lem wit="#wit.orig">得</lem><rdg resp="#resp2" wit="#wit1">德</rdg></app>
+<app from="#beg1453013" to="#end1453013"><lem wit="#wit.orig">意</lem><rdg resp="#resp2" wit="#wit1">音</rdg></app>
+<app cb:word-count="7" from="#beg1453014" to="#end1453014"><lem wit="#wit.orig">常於諸佛上境界</lem><rdg resp="#resp2" wit="#wit1">證得如幻解脫力</rdg></app>
+<app cb:word-count="7" from="#beg1453015" to="#end1453015"><lem wit="#wit.orig">如幻解脫力所證</lem><rdg resp="#resp2" wit="#wit1">常入諸佛之境界</rdg></app>
+<app from="#beg1453016" to="#end1453016"><lem wit="#wit.orig">用</lem><rdg resp="#resp2" wit="#wit1">力</rdg></app>
+<app cb:word-count="7" from="#beg1453017" to="#end1453017"><lem wit="#wit.orig">亦願佛剎遍莊嚴</lem><rdg resp="#resp2" wit="#wit1">我願遍入佛淨土</rdg></app>
+<app from="#beg1453018" to="#end1453018"><lem wit="#wit.orig">證</lem><rdg resp="#resp2" wit="#wit1">燈</rdg></app>
+<app from="#beg1453019" to="#end1453019"><lem wit="#wit.orig">有</lem><rdg resp="#resp2" wit="#wit1">於</rdg></app>
+<app from="#beg1453020" to="#end1453020"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit1">天</rdg></app>
+<app from="#beg1453021" to="#end1453021"><lem wit="#wit.orig">壽</lem><rdg resp="#resp2" wit="#wit1">受</rdg></app>
+<app from="#beg1453022" to="#end1453022"><lem wit="#wit.orig">道</lem><rdg resp="#resp2" wit="#wit1">通</rdg></app>
+<app from="#beg1453023" to="#end1453023"><lem wit="#wit.orig">所</lem><rdg resp="#resp2" wit="#wit1">勝</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1452002" resp="#resp2" type="mod" target="#nkr_note_mod_1452002"><!--CBETA todo type: newmod-->【原】大英博物館藏燉煌本, S. 2361, 【甲】大英博物館藏燉煌本, S. 2324</note>
-<note n="1452003" resp="#resp2" type="mod" target="#nkr_note_mod_1452003">於【大】，居【甲】</note>
-<note n="1452004" resp="#resp2" type="mod" target="#nkr_note_mod_1452004">結【大】，浩【甲】</note>
-<note n="1452005" resp="#resp2" type="mod" target="#nkr_note_mod_1452005">願【大】，逝【甲】</note>
-<note n="1452006" resp="#resp2" type="mod" target="#nkr_note_mod_1452006">鑪【大】，爐【甲】</note>
-<note n="1452007" resp="#resp2" type="mod" target="#nkr_note_mod_1452007">來【大】，是【甲】</note>
-<note n="1452008" resp="#resp2" type="mod" target="#nkr_note_mod_1452008">取【大】，趣【甲】</note>
-<note n="1453001" resp="#resp2" type="mod" target="#nkr_note_mod_1453001">（皆得…淨）七字【大】，〔－〕【甲】</note>
-<note n="1453002" resp="#resp2" type="mod" target="#nkr_note_mod_1453002">薩【大】，提【甲】</note>
-<note n="1453003" resp="#resp2" type="mod" target="#nkr_note_mod_1453003">漏【大】，病【甲】</note>
-<note n="1453004" resp="#resp2" type="mod" target="#nkr_note_mod_1453004">界【大】，世【甲】</note>
-<note n="1453005" resp="#resp2" type="mod" target="#nkr_note_mod_1453005">等【大】，行【甲】</note>
-<note n="1453006" resp="#resp2" type="mod" target="#nkr_note_mod_1453006">忘【大】，妄【甲】</note>
-<note n="1453007" resp="#resp2" type="mod" target="#nkr_note_mod_1453007">安【大】，令【甲】</note>
-<note n="1453008" resp="#resp2" type="mod" target="#nkr_note_mod_1453008">樂【大】，隱【甲】</note>
-<note n="1453009" resp="#resp2" type="mod" target="#nkr_note_mod_1453009">利【大】，離【甲】</note>
-<note n="1453010" resp="#resp2" type="mod" target="#nkr_note_mod_1453010">遇【大】，隨【甲】</note>
-<note n="1453011" resp="#resp2" type="mod" target="#nkr_note_mod_1453011">尊【大】，導【甲】</note>
-<note n="1453012" resp="#resp2" type="mod" target="#nkr_note_mod_1453012">得【大】，德【甲】</note>
-<note n="1453013" resp="#resp2" type="mod" target="#nkr_note_mod_1453013">意【大】，音【甲】</note>
-<note n="1453014" resp="#resp2" type="mod" target="#nkr_note_mod_1453014">（常於…界）七字【大】，證得如幻解脫力【甲】</note>
-<note n="1453015" resp="#resp2" type="mod" target="#nkr_note_mod_1453015">（如幻…證）七字【大】，常入諸佛之境界【甲】</note>
-<note n="1453016" resp="#resp2" type="mod" target="#nkr_note_mod_1453016">用【大】，力【甲】</note>
-<note n="1453017" resp="#resp2" type="mod" target="#nkr_note_mod_1453017">（亦願…嚴）七字【大】，我願遍入佛淨土【甲】</note>
-<note n="1453018" resp="#resp2" type="mod" target="#nkr_note_mod_1453018">證【大】，燈【甲】</note>
-<note n="1453019" resp="#resp2" type="mod" target="#nkr_note_mod_1453019">有【大】，於【甲】</note>
-<note n="1453020" resp="#resp2" type="mod" target="#nkr_note_mod_1453020">大【大】，天【甲】</note>
-<note n="1453021" resp="#resp2" type="mod" target="#nkr_note_mod_1453021">壽【大】，受【甲】</note>
-<note n="1453022" resp="#resp2" type="mod" target="#nkr_note_mod_1453022">道【大】，通【甲】</note>
-<note n="1453023" resp="#resp2" type="mod" target="#nkr_note_mod_1453023">所【大】，勝【甲】</note>
+<note n="1452002" resp="#resp3" type="mod" target="#nkr_note_mod_1452002"><!--CBETA todo type: newmod-->【原】大英博物館藏燉煌本, S. 2361, 【甲】大英博物館藏燉煌本, S. 2324</note>
+<note n="1452003" resp="#resp3" type="mod" target="#nkr_note_mod_1452003">於【大】，居【甲】</note>
+<note n="1452004" resp="#resp3" type="mod" target="#nkr_note_mod_1452004">結【大】，浩【甲】</note>
+<note n="1452005" resp="#resp3" type="mod" target="#nkr_note_mod_1452005">願【大】，逝【甲】</note>
+<note n="1452006" resp="#resp3" type="mod" target="#nkr_note_mod_1452006">鑪【大】，爐【甲】</note>
+<note n="1452007" resp="#resp3" type="mod" target="#nkr_note_mod_1452007">來【大】，是【甲】</note>
+<note n="1452008" resp="#resp3" type="mod" target="#nkr_note_mod_1452008">取【大】，趣【甲】</note>
+<note n="1453001" resp="#resp3" type="mod" target="#nkr_note_mod_1453001">（皆得…淨）七字【大】，〔－〕【甲】</note>
+<note n="1453002" resp="#resp3" type="mod" target="#nkr_note_mod_1453002">薩【大】，提【甲】</note>
+<note n="1453003" resp="#resp3" type="mod" target="#nkr_note_mod_1453003">漏【大】，病【甲】</note>
+<note n="1453004" resp="#resp3" type="mod" target="#nkr_note_mod_1453004">界【大】，世【甲】</note>
+<note n="1453005" resp="#resp3" type="mod" target="#nkr_note_mod_1453005">等【大】，行【甲】</note>
+<note n="1453006" resp="#resp3" type="mod" target="#nkr_note_mod_1453006">忘【大】，妄【甲】</note>
+<note n="1453007" resp="#resp3" type="mod" target="#nkr_note_mod_1453007">安【大】，令【甲】</note>
+<note n="1453008" resp="#resp3" type="mod" target="#nkr_note_mod_1453008">樂【大】，隱【甲】</note>
+<note n="1453009" resp="#resp3" type="mod" target="#nkr_note_mod_1453009">利【大】，離【甲】</note>
+<note n="1453010" resp="#resp3" type="mod" target="#nkr_note_mod_1453010">遇【大】，隨【甲】</note>
+<note n="1453011" resp="#resp3" type="mod" target="#nkr_note_mod_1453011">尊【大】，導【甲】</note>
+<note n="1453012" resp="#resp3" type="mod" target="#nkr_note_mod_1453012">得【大】，德【甲】</note>
+<note n="1453013" resp="#resp3" type="mod" target="#nkr_note_mod_1453013">意【大】，音【甲】</note>
+<note n="1453014" resp="#resp3" type="mod" target="#nkr_note_mod_1453014">（常於…界）七字【大】，證得如幻解脫力【甲】</note>
+<note n="1453015" resp="#resp3" type="mod" target="#nkr_note_mod_1453015">（如幻…證）七字【大】，常入諸佛之境界【甲】</note>
+<note n="1453016" resp="#resp3" type="mod" target="#nkr_note_mod_1453016">用【大】，力【甲】</note>
+<note n="1453017" resp="#resp3" type="mod" target="#nkr_note_mod_1453017">（亦願…嚴）七字【大】，我願遍入佛淨土【甲】</note>
+<note n="1453018" resp="#resp3" type="mod" target="#nkr_note_mod_1453018">證【大】，燈【甲】</note>
+<note n="1453019" resp="#resp3" type="mod" target="#nkr_note_mod_1453019">有【大】，於【甲】</note>
+<note n="1453020" resp="#resp3" type="mod" target="#nkr_note_mod_1453020">大【大】，天【甲】</note>
+<note n="1453021" resp="#resp3" type="mod" target="#nkr_note_mod_1453021">壽【大】，受【甲】</note>
+<note n="1453022" resp="#resp3" type="mod" target="#nkr_note_mod_1453022">道【大】，通【甲】</note>
+<note n="1453023" resp="#resp3" type="mod" target="#nkr_note_mod_1453023">所【大】，勝【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1452002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1452002">【原】大英博物館藏燉煌本, S. 2361, 【甲】大英博物館藏燉煌本, S. 2324</note>
-<note n="1452003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1452003">於＝居【甲】</note>
-<note n="1452004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1452004">結＝浩【甲】</note>
-<note n="1452005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1452005">願＝逝【甲】</note>
-<note n="1452006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1452006">鑪＝爐【甲】</note>
-<note n="1452007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1452007">來＝是【甲】</note>
-<note n="1452008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1452008">取＝趣【甲】</note>
-<note n="1453001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453001">〔皆得…淨〕七字－【甲】</note>
-<note n="1453002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453002">薩＝提【甲】</note>
-<note n="1453003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453003">漏＝病【甲】</note>
-<note n="1453004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453004">界＝世【甲】</note>
-<note n="1453005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453005">等＝行【甲】</note>
-<note n="1453006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453006">忘＝妄【甲】</note>
-<note n="1453007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453007">安＝令【甲】</note>
-<note n="1453008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453008">樂＝隱【甲】</note>
-<note n="1453009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453009">利＝離【甲】</note>
-<note n="1453010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453010">遇＝隨【甲】</note>
-<note n="1453011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453011">尊＝導【甲】</note>
-<note n="1453012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453012">得＝德【甲】</note>
-<note n="1453013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453013">意＝音【甲】</note>
-<note n="1453014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453014">（（常於…界））七字＝（（證得如幻解脫力））七字【甲】</note>
-<note n="1453015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453015">（（如幻…證））七字＝（（常入諸佛之境界））七字【甲】</note>
-<note n="1453016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453016">用＝力【甲】</note>
-<note n="1453017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453017">（（亦願…嚴））七字＝（（我願遍入佛淨土））七字【甲】</note>
-<note n="1453018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453018">證＝燈【甲】</note>
-<note n="1453019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453019">有＝於【甲】</note>
-<note n="1453020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453020">大＝天【甲】</note>
-<note n="1453021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453021">壽＝受【甲】</note>
-<note n="1453022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453022">道＝通【甲】</note>
-<note n="1453023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453023">所＝勝【甲】</note>
-<note n="1453024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1453024">已下甲本缺之</note>
+<note n="1452002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1452002">【原】大英博物館藏燉煌本, S. 2361, 【甲】大英博物館藏燉煌本, S. 2324</note>
+<note n="1452003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1452003">於＝居【甲】</note>
+<note n="1452004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1452004">結＝浩【甲】</note>
+<note n="1452005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1452005">願＝逝【甲】</note>
+<note n="1452006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1452006">鑪＝爐【甲】</note>
+<note n="1452007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1452007">來＝是【甲】</note>
+<note n="1452008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1452008">取＝趣【甲】</note>
+<note n="1453001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453001">〔皆得…淨〕七字－【甲】</note>
+<note n="1453002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453002">薩＝提【甲】</note>
+<note n="1453003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453003">漏＝病【甲】</note>
+<note n="1453004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453004">界＝世【甲】</note>
+<note n="1453005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453005">等＝行【甲】</note>
+<note n="1453006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453006">忘＝妄【甲】</note>
+<note n="1453007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453007">安＝令【甲】</note>
+<note n="1453008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453008">樂＝隱【甲】</note>
+<note n="1453009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453009">利＝離【甲】</note>
+<note n="1453010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453010">遇＝隨【甲】</note>
+<note n="1453011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453011">尊＝導【甲】</note>
+<note n="1453012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453012">得＝德【甲】</note>
+<note n="1453013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453013">意＝音【甲】</note>
+<note n="1453014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453014">（（常於…界））七字＝（（證得如幻解脫力））七字【甲】</note>
+<note n="1453015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453015">（（如幻…證））七字＝（（常入諸佛之境界））七字【甲】</note>
+<note n="1453016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453016">用＝力【甲】</note>
+<note n="1453017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453017">（（亦願…嚴））七字＝（（我願遍入佛淨土））七字【甲】</note>
+<note n="1453018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453018">證＝燈【甲】</note>
+<note n="1453019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453019">有＝於【甲】</note>
+<note n="1453020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453020">大＝天【甲】</note>
+<note n="1453021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453021">壽＝受【甲】</note>
+<note n="1453022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453022">道＝通【甲】</note>
+<note n="1453023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453023">所＝勝【甲】</note>
+<note n="1453024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1453024">已下甲本缺之</note>
 </p>
 </cb:div>
 </back></text></TEI>

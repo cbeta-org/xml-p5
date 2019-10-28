@@ -11,154 +11,84 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.18 $<date>$Date: 2012/08/27 03:13:54 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/08/27 03:13:54 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 1, No. 74</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【明】</witness>
-		<witness xml:id="wit3">【宋】</witness>
-		<witness xml:id="wit4">【元】</witness>
-		<witness xml:id="wit5">【CB】</witness>
-		<witness xml:id="wit6">【麗-CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Mr. Chang Wen-Ming, Text as provided by Anonymous from USA, Punctuated text as provided by Dhammavassarama</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，張文明大德提供，北美某大德提供，法雨道場提供新式標點</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00626">
-	<charName>CBETA CHARACTER CB00626</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[疊*毛]</value>
-	</charProp>
-	<mapping type="unicode">U+3CB2</mapping>
-	<mapping cb:dec="983666" type="PUA">U+F0272</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">1</idno>.<idno type="no">74</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">長者施報經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Mr. Chang Wen-Ming, Text as provided by Anonymous from USA, Punctuated text as provided by Dhammavassarama</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，張文明大德提供，北美某大德提供，法雨道場提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【明】</witness>
+						<witness xml:id="wit2">【宋】</witness>
+						<witness xml:id="wit3">【元】</witness>
+						<witness xml:id="wit4">【麗-CB】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00626">
+				<charName>CBETA CHARACTER CB00626</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[疊*毛]</value>
+				</charProp>
+				<mapping type="unicode">U+3CB2</mapping>
+				<mapping cb:dec="983666" type="PUA">U+F0272</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-08-10T22:32:30">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/8/10)</change>
-<!--
-$Log: T01n0074.xml,v $
-Revision 1.18  2012/08/27 03:13:54  maha
-修訂新標小圓點及著重號
-
-Revision 1.17  2010/02/26 08:57:25  eva
-modified: encoding="cp950"
-
-Revision 1.16  2010/02/10 11:23:40  eva
-modified: 新式標點版
-
-Revision 1.15  2009/04/23 07:54:21  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.14  2008/11/30 12:35:11  saywhat
-p0882a07 修訂 cf1
-
-Revision 1.13  2006/04/12 15:27:12  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.11  2005/11/24 03:04:11  saywhat
-p0882a07 [金*本] => CB00425
-
-Revision 1.10  2005/04/24 11:58:36  saywhat
-p0882a07 [>所得果報勝前果報。... ...不妄語不飲酒。]
-
-Revision 1.9  2004/11/14 03:16:54  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.8  2004/10/07 04:49:35  saywhat
-執行圈點程式
-
-Revision 1.7  2004/04/20 08:36:48  maha
-「版本日期」標記修訂
-
-Revision 1.6  2004/03/16 02:17:36  ray
-resp 屬性 統一格式為 CBETA.xxx
-
-Revision 1.5  2004/01/02 05:52:37  maha
-<note mod>裡的corr2app
-
-Revision 1.4  2003/06/26 02:41:22  saywhat
-<corr>→<app>
-
-Revision 1.3  2003/06/23 05:31:46  saywhat
-[＊]校勘插入XML
-
-Revision 1.2  2003/06/09 03:38:15  saywhat
-修訂「疑似對應的＊校勘」
-
-Revision 1.1.1.1  2003/05/05 04:08:20  ray
-recover cvs
-
-Revision 1.16  2002/11/27 11:14:02  saywhat
-校勘插入處理
-
-Revision 1.15  2002/11/04 10:30:57  ray
-tei.2 => TEI.2
-
-Revision 1.14  2002/10/07 13:04:40  moved
-modified
-
-Revision 1.13  2002/07/29 09:43:01  vinking
-modified lang
-
-Revision 1.12  2002/04/03 03:37:27  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/07/24 06:47:14  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.10  2001/05/25 08:41:17  ray
-經號統一為四碼
-
-Revision 1.9  2001/04/01 05:53:52  ray
-heaven 重新加入 <milestone>
-
-Revision 1.8  2001/03/30 00:35:24  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/02/07 06:39:36  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.6  2001/02/03 07:28:19  chris
-Added keywords $Revision: 1.18 $, $Date: 2012/08/27 03:13:54 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-08-10T22:32:30">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/8/10)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -349,57 +279,57 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app cb:word-count="6" from="#beg0880001" to="#end0880001"><lem wit="#wit1">西天譯經三藏</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0880002" to="#end0880002"><lem wit="#wit1">朝</lem><rdg resp="#resp1" wit="#wit2">宋朝</rdg></app>
-<app from="#beg0880003" to="#end0880003"><lem wit="#wit1">鴻臚</lem><rdg resp="#resp1" wit="#wit3 #wit4">光祿</rdg></app>
-<app from="#beg0880004" to="#end0880004"><lem wit="#wit1">傳</lem><rdg resp="#resp1" wit="#wit3 #wit4 #wit2">明</rdg></app>
-<app from="#beg0880005" to="#end0880005"><lem wit="#wit1">臣</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0880006" to="#end0880006"><lem wit="#wit1">洹</lem><rdg resp="#resp1" wit="#wit2">恒</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0880006"><lem wit="#wit1">洹</lem><rdg resp="#resp1" wit="#wit2">恒</rdg></app>
-<app from="#beg0880c2601" to="#end0880c2601"><lem wit="#wit5" resp="#resp2">洹</lem><rdg wit="#wit1"><space quantity="1" unit="chars"/></rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0880006"><lem wit="#wit1">洹</lem><rdg resp="#resp1" wit="#wit2">恒</rdg></app>
-<app from="#beg0881001" to="#end0881001"><lem wit="#wit1">所</lem><rdg resp="#resp1" wit="#wit3 #wit4">人</rdg></app>
-<app from="#beg0881002" to="#end0881002"><lem wit="#wit1">施</lem><rdg resp="#resp1" wit="#wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0881002"><lem wit="#wit1">施</lem><rdg resp="#resp1" wit="#wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0882001" to="#end0882001"><lem wit="#wit1">精舍</lem><rdg resp="#resp1" wit="#wit2">園林</rdg></app>
-<app from="#beg0882a0701" to="#end0882a0701"><lem resp="#resp3" wit="#wit5 #wit6">，所得果報勝前果報<note type="cf1">K34n1181_p0192b09</note></lem><rdg wit="#wit1"><space quantity="0"/></rdg></app>
-<app from="#beg0882a0702" to="#end0882a0702"><lem resp="#resp3" wit="#wit5 #wit6">佛言：「長者！彼彌羅摩如是行施，不如有人以其飲食施一正見人，一正見人不如施百正見人，百正見人不如施一須陀洹，一須陀洹不如施百須陀洹，百須陀洹不如施一阿那含，一阿那含不如施百阿那含，百阿那含不如施一阿羅漢，一阿羅漢不如施百阿羅漢，百阿羅漢不如施一緣覺，一緣覺不如施百緣覺，百緣覺不如施如來、應、正等覺，施如來、應、正等覺不如施佛及隨佛大苾芻眾，施佛及隨佛大苾芻眾不如施四方一切持鉢僧食，施四方一切持鉢僧食不如施四方一切僧園林，施四方一切僧園林不如施四方一切僧精舍，施四方一切僧精舍不如盡形志心歸依佛、法、僧，盡形志心歸依佛、法、僧不如盡形不殺生、不偷盜、不婬欲、不妄語、不飲酒，<note type="cf1">K34n1181_p0192b10-c05</note></lem><rdg wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="6" from="#beg0880001" to="#end0880001"><lem wit="#wit.orig">西天譯經三藏</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0880002" to="#end0880002"><lem wit="#wit.orig">朝</lem><rdg resp="#resp2" wit="#wit1">宋朝</rdg></app>
+<app from="#beg0880003" to="#end0880003"><lem wit="#wit.orig">鴻臚</lem><rdg resp="#resp2" wit="#wit2 #wit3">光祿</rdg></app>
+<app from="#beg0880004" to="#end0880004"><lem wit="#wit.orig">傳</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1">明</rdg></app>
+<app from="#beg0880005" to="#end0880005"><lem wit="#wit.orig">臣</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0880006" to="#end0880006"><lem wit="#wit.orig">洹</lem><rdg resp="#resp2" wit="#wit1">恒</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0880006"><lem wit="#wit.orig">洹</lem><rdg resp="#resp2" wit="#wit1">恒</rdg></app>
+<app from="#beg0880c2601" to="#end0880c2601"><lem wit="#wit.cbeta" resp="#resp1">洹</lem><rdg wit="#wit.orig"><space quantity="1" unit="chars"/></rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0880006"><lem wit="#wit.orig">洹</lem><rdg resp="#resp2" wit="#wit1">恒</rdg></app>
+<app from="#beg0881001" to="#end0881001"><lem wit="#wit.orig">所</lem><rdg resp="#resp2" wit="#wit2 #wit3">人</rdg></app>
+<app from="#beg0881002" to="#end0881002"><lem wit="#wit.orig">施</lem><rdg resp="#resp2" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0881002"><lem wit="#wit.orig">施</lem><rdg resp="#resp2" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0882001" to="#end0882001"><lem wit="#wit.orig">精舍</lem><rdg resp="#resp2" wit="#wit1">園林</rdg></app>
+<app from="#beg0882a0701" to="#end0882a0701"><lem resp="#resp3" wit="#wit.cbeta #wit4">，所得果報勝前果報<note type="cf1">K34n1181_p0192b09</note></lem><rdg wit="#wit.orig"><space quantity="0"/></rdg></app>
+<app from="#beg0882a0702" to="#end0882a0702"><lem resp="#resp3" wit="#wit.cbeta #wit4">佛言：「長者！彼彌羅摩如是行施，不如有人以其飲食施一正見人，一正見人不如施百正見人，百正見人不如施一須陀洹，一須陀洹不如施百須陀洹，百須陀洹不如施一阿那含，一阿那含不如施百阿那含，百阿那含不如施一阿羅漢，一阿羅漢不如施百阿羅漢，百阿羅漢不如施一緣覺，一緣覺不如施百緣覺，百緣覺不如施如來、應、正等覺，施如來、應、正等覺不如施佛及隨佛大苾芻眾，施佛及隨佛大苾芻眾不如施四方一切持鉢僧食，施四方一切持鉢僧食不如施四方一切僧園林，施四方一切僧園林不如施四方一切僧精舍，施四方一切僧精舍不如盡形志心歸依佛、法、僧，盡形志心歸依佛、法、僧不如盡形不殺生、不偷盜、不婬欲、不妄語、不飲酒，<note type="cf1">K34n1181_p0192b10-c05</note></lem><rdg wit="#wit.orig"><space quantity="0"/></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0880001" resp="#resp2" type="mod" target="#nkr_note_mod_0880001">西天…藏【大】，〔－〕【明】</note>
-<note n="0880002" resp="#resp2" type="mod" target="#nkr_note_mod_0880002">朝【大】，宋朝【明】</note>
-<note n="0880003" resp="#resp2" type="mod" target="#nkr_note_mod_0880003">鴻臚【大】，光祿【宋】【元】</note>
-<note n="0880004" resp="#resp2" type="mod" target="#nkr_note_mod_0880004">傳【大】，明【宋】【元】【明】</note>
-<note n="0880005" resp="#resp2" type="mod" target="#nkr_note_mod_0880005">臣【大】，〔－〕【明】</note>
-<note n="0880006" resp="#resp2" type="mod" target="#nkr_note_mod_0880006">洹【大】＊，恒【明】＊</note>
-<note n="0881001" resp="#resp2" type="mod" target="#nkr_note_mod_0881001">所【大】，人【宋】【元】</note>
-<note n="0881002" resp="#resp2" type="mod" target="#nkr_note_mod_0881002">施【大】＊，〔－〕【宋】【元】＊</note>
-<note n="0882001" resp="#resp2" type="mod" target="#nkr_note_mod_0882001">精舍【大】，園林【明】</note>
+<note n="0880001" resp="#resp1" type="mod" target="#nkr_note_mod_0880001">西天…藏【大】，〔－〕【明】</note>
+<note n="0880002" resp="#resp1" type="mod" target="#nkr_note_mod_0880002">朝【大】，宋朝【明】</note>
+<note n="0880003" resp="#resp1" type="mod" target="#nkr_note_mod_0880003">鴻臚【大】，光祿【宋】【元】</note>
+<note n="0880004" resp="#resp1" type="mod" target="#nkr_note_mod_0880004">傳【大】，明【宋】【元】【明】</note>
+<note n="0880005" resp="#resp1" type="mod" target="#nkr_note_mod_0880005">臣【大】，〔－〕【明】</note>
+<note n="0880006" resp="#resp1" type="mod" target="#nkr_note_mod_0880006">洹【大】＊，恒【明】＊</note>
+<note n="0881001" resp="#resp1" type="mod" target="#nkr_note_mod_0881001">所【大】，人【宋】【元】</note>
+<note n="0881002" resp="#resp1" type="mod" target="#nkr_note_mod_0881002">施【大】＊，〔－〕【宋】【元】＊</note>
+<note n="0882001" resp="#resp1" type="mod" target="#nkr_note_mod_0882001">精舍【大】，園林【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0880001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0880001">〔西天…藏〕－【明】</note>
-<note n="0880002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0880002">（宋）＋朝【明】</note>
-<note n="0880003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0880003">鴻臚＝光祿【宋】【元】</note>
-<note n="0880004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0880004">傳＝明【三】</note>
-<note n="0880005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0880005">〔臣〕－【明】</note>
-<note n="0880006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0880006">洹＝恒【明】＊</note>
-<note n="0881001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0881001">所＝人【宋】【元】</note>
-<note n="0881002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0881002">〔施〕－【宋】【元】</note>
-<note n="0882001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0882001">精舍＝園林【明】</note>
+<note n="0880001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0880001">〔西天…藏〕－【明】</note>
+<note n="0880002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0880002">（宋）＋朝【明】</note>
+<note n="0880003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0880003">鴻臚＝光祿【宋】【元】</note>
+<note n="0880004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0880004">傳＝明【三】</note>
+<note n="0880005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0880005">〔臣〕－【明】</note>
+<note n="0880006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0880006">洹＝恒【明】＊</note>
+<note n="0881001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0881001">所＝人【宋】【元】</note>
+<note n="0881002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0881002">〔施〕－【宋】【元】</note>
+<note n="0882001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0882001">精舍＝園林【明】</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0880c2601" resp="#resp2" type="add" target="#nkr_note_add_0880c2601">洹【CB】，<space quantity="1" unit="chars"/>【大】</note>
-<note n="0882a0701" resp="#resp2" type="add" target="#nkr_note_add_0882a0701">所得果報勝前果報【CB】【麗-CB】，［－］【大】</note>
-<note n="0882a0702" resp="#resp2" type="add" target="#nkr_note_add_0882a0702">佛言長者彼彌羅摩如是行施不如有人以其飲食施一正見人一正見人不如施百正見人百正見人不如施一須陀洹一須陀洹不如施百須陀洹百須陀洹不如施一阿那含一阿那含不如施百阿那含百阿那含不如施一阿羅漢一阿羅漢不如施百阿羅漢百阿羅漢不如施一緣覺一緣覺不如施百緣覺百緣覺不如施如來應正等覺施如來應正等覺不如施佛及隨佛大苾芻眾施佛及隨佛大苾芻眾不如施四方一切持鉢僧食施四方一切持鉢僧食不如施四方一切僧園林施四方一切僧園林不如施四方一切僧精舍施四方一切僧精舍不如盡形志心歸依佛法僧盡形志心歸依佛法僧不如盡形不殺生不偷盜不婬欲不妄語不飲酒【CB】【麗-CB】，［－］【大】</note>
+<note n="0880c2601" resp="#resp1" type="add" target="#nkr_note_add_0880c2601">洹【CB】，<space quantity="1" unit="chars"/>【大】</note>
+<note n="0882a0701" resp="#resp1" type="add" target="#nkr_note_add_0882a0701">所得果報勝前果報【CB】【麗-CB】，［－］【大】</note>
+<note n="0882a0702" resp="#resp1" type="add" target="#nkr_note_add_0882a0702">佛言長者彼彌羅摩如是行施不如有人以其飲食施一正見人一正見人不如施百正見人百正見人不如施一須陀洹一須陀洹不如施百須陀洹百須陀洹不如施一阿那含一阿那含不如施百阿那含百阿那含不如施一阿羅漢一阿羅漢不如施百阿羅漢百阿羅漢不如施一緣覺一緣覺不如施百緣覺百緣覺不如施如來應正等覺施如來應正等覺不如施佛及隨佛大苾芻眾施佛及隨佛大苾芻眾不如施四方一切持鉢僧食施四方一切持鉢僧食不如施四方一切僧園林施四方一切僧園林不如施四方一切僧精舍施四方一切僧精舍不如盡形志心歸依佛法僧盡形志心歸依佛法僧不如盡形不殺生不偷盜不婬欲不妄語不飲酒【CB】【麗-CB】，［－］【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

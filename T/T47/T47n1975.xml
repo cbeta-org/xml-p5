@@ -11,121 +11,81 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2012/08/27 03:15:23 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/08/27 03:15:23 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 47, No. 1975</bibl>
-	<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【大】</witness>
-		<witness xml:id="wit3">【原】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, Punctuated text as provided by The Seeland Monastery</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，西蓮淨苑提供新式標點</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB04474">
-	<charName>CBETA CHARACTER CB04474</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[泳-永+曶]</value>
-	</charProp>
-	<mapping type="unicode">U+3CF7</mapping>
-	<mapping cb:dec="987514" type="PUA">U+F117A</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">47</idno>.<idno type="no">1975</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">淨土生無生論</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, Punctuated text as provided by The Seeland Monastery</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，西蓮淨苑提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB04474">
+				<charName>CBETA CHARACTER CB04474</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[泳-永+曶]</value>
+				</charProp>
+				<mapping type="unicode">U+3CF7</mapping>
+				<mapping cb:dec="987514" type="PUA">U+F117A</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-08-10T15:07:50">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T47n1975.xml,v $
-Revision 1.11  2012/08/27 03:15:23  maha
-修訂新標小圓點及著重號
-
-Revision 1.10  2009/04/23 08:12:36  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.9  2006/12/18 13:19:01  saywhat
-新式標點版
-
-Revision 1.8  2006/04/12 21:58:53  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/11/14 03:18:07  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.5  2004/10/31 15:24:45  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/04/20 08:42:56  maha
-「版本日期」標記修訂
-
-Revision 1.3  2004/01/02 05:55:29  maha
-<note mod>裡的corr2app
-
-Revision 1.2  2003/05/05 06:31:27  eva
-modified
-
-Revision 1.14  2002/12/05 12:37:49  eva
-modified
-
-Revision 1.13  2002/11/04 10:58:38  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/07/29 10:15:32  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:42:49  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/07/24 07:00:45  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/03/30 06:32:09  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.8  2001/03/25 10:36:03  ray
-add <milestone>
-
-Revision 1.7  2001/02/07 07:23:52  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.6  2001/02/03 08:08:10  chris
-Added keywords $Revision: 1.11 $, $Date: 2012/08/27 03:15:23 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-08-10T15:07:50">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -394,38 +354,38 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0381002" to="#end0381002"><lem resp="#resp3" wit="#wit1">中<note type="cf1">X61n1164_p0742b03</note></lem><rdg wit="#wit2">真</rdg><rdg resp="#resp1" wit="#wit3" type="variantRemark">中</rdg></app>
-<app from="#beg0381003" to="#end0381003"><lem resp="#resp3" wit="#wit1">真<note type="cf1">X61n1164_p0742b03</note></lem><rdg wit="#wit2">中</rdg><rdg resp="#resp1" wit="#wit3" type="variantRemark">真</rdg></app>
-<app from="#beg0381004" to="#end0381004"><lem wit="#wit2">體</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">體統攝</rdg></app>
-<app from="#beg0382001" to="#end0382001"><lem wit="#wit2">量</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">體</rdg></app>
-<app from="#beg0382002" to="#end0382002"><lem wit="#wit2">體</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">量</rdg></app>
-<app from="#beg0383001" to="#end0383001"><lem wit="#wit2">或</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">若觀若境或</rdg></app>
-<app from="#beg0383002" to="#end0383002"><lem wit="#wit2">念</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">念數數</rdg></app>
+<app from="#beg0381002" to="#end0381002"><lem resp="#resp3" wit="#wit.cbeta">中<note type="cf1">X61n1164_p0742b03</note></lem><rdg wit="#wit.orig">真</rdg><rdg resp="#resp2" wit="#wit1" type="variantRemark">中</rdg></app>
+<app from="#beg0381003" to="#end0381003"><lem resp="#resp3" wit="#wit.cbeta">真<note type="cf1">X61n1164_p0742b03</note></lem><rdg wit="#wit.orig">中</rdg><rdg resp="#resp2" wit="#wit1" type="variantRemark">真</rdg></app>
+<app from="#beg0381004" to="#end0381004"><lem wit="#wit.orig">體</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">體統攝</rdg></app>
+<app from="#beg0382001" to="#end0382001"><lem wit="#wit.orig">量</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">體</rdg></app>
+<app from="#beg0382002" to="#end0382002"><lem wit="#wit.orig">體</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">量</rdg></app>
+<app from="#beg0383001" to="#end0383001"><lem wit="#wit.orig">或</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">若觀若境或</rdg></app>
+<app from="#beg0383002" to="#end0383002"><lem wit="#wit.orig">念</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">念數數</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0381002" resp="#resp2" type="mod" target="#nkr_note_mod_0381002">中【CB】，真【大】，中【校異-原】</note>
-<note n="0381003" resp="#resp2" type="mod" target="#nkr_note_mod_0381003">真【CB】，中【大】，真【校異-原】</note>
-<note n="0381004" resp="#resp2" type="mod" target="#nkr_note_mod_0381004">體【大】，體統攝【校異-原】</note>
-<note n="0382001" resp="#resp2" type="mod" target="#nkr_note_mod_0382001">量【大】，體【校異-原】</note>
-<note n="0382002" resp="#resp2" type="mod" target="#nkr_note_mod_0382002">體【大】，量【校異-原】</note>
-<note n="0383001" resp="#resp2" type="mod" target="#nkr_note_mod_0383001">或【大】，若觀若境或【校異-原】</note>
-<note n="0383002" resp="#resp2" type="mod" target="#nkr_note_mod_0383002">念【大】，念數數【校異-原】</note>
+<note n="0381002" resp="#resp1" type="mod" target="#nkr_note_mod_0381002">中【CB】，真【大】，中【校異-原】</note>
+<note n="0381003" resp="#resp1" type="mod" target="#nkr_note_mod_0381003">真【CB】，中【大】，真【校異-原】</note>
+<note n="0381004" resp="#resp1" type="mod" target="#nkr_note_mod_0381004">體【大】，體統攝【校異-原】</note>
+<note n="0382001" resp="#resp1" type="mod" target="#nkr_note_mod_0382001">量【大】，體【校異-原】</note>
+<note n="0382002" resp="#resp1" type="mod" target="#nkr_note_mod_0382002">體【大】，量【校異-原】</note>
+<note n="0383001" resp="#resp1" type="mod" target="#nkr_note_mod_0383001">或【大】，若觀若境或【校異-原】</note>
+<note n="0383002" resp="#resp1" type="mod" target="#nkr_note_mod_0383002">念【大】，念數數【校異-原】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0381001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0381001">【原】德川時代刊宗教大學藏本</note>
-<note n="0381002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0381002">真＝中ィ【原】</note>
-<note n="0381003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0381003">中＝真ィ【原】</note>
-<note n="0381004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0381004">體＋（統攝）ィ【原】</note>
-<note n="0382001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0382001">里＝體ィ【原】</note>
-<note n="0382002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0382002">體＝里ィ【原】</note>
-<note n="0383001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0383001">（若觀若境）ィ＋或【原】</note>
-<note n="0383002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0383002">念＋（數數）ィ【原】</note>
+<note n="0381001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0381001">【原】德川時代刊宗教大學藏本</note>
+<note n="0381002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0381002">真＝中ィ【原】</note>
+<note n="0381003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0381003">中＝真ィ【原】</note>
+<note n="0381004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0381004">體＋（統攝）ィ【原】</note>
+<note n="0382001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0382001">里＝體ィ【原】</note>
+<note n="0382002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0382002">體＝里ィ【原】</note>
+<note n="0383001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0383001">（若觀若境）ィ＋或【原】</note>
+<note n="0383002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0383002">念＋（數數）ィ【原】</note>
 </p>
 </cb:div>
 </back></text></TEI>

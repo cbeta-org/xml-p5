@@ -11,118 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.10 $<date>$Date: 2012/09/28 08:51:55 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/09/28 08:51:55 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 17, No. 797b</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【宮】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Miss Monica, CBETA OCR Group, Punctuated text as provided by Jasmine</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，Monica 大德輸入，CBETA 自行掃瞄辨識，Jasmine 提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">17</idno>.<idno type="no">797b</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說貧窮老公經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Miss Monica, CBETA OCR Group, Punctuated text as provided by Jasmine</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，Monica 大德輸入，CBETA 自行掃瞄辨識，Jasmine 提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【宮】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-10-12T10:16:33">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)</change>
-<!--
-$Log: T17n0797b.xml,v $
-Revision 1.10  2012/09/28 08:51:55  eva
-新式標點版 上傳
-
-Revision 1.9  2009/04/23 07:59:26  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.8  2006/04/12 21:55:20  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/11/14 03:17:18  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.5  2004/10/12 16:02:55  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/09/13 05:16:00  saywhat
-<trailer> => <juan fun="close"><jhead>
-
-Revision 1.3  2004/04/20 08:38:28  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/06/23 06:10:29  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:03  ray
-recover cvs
-
-Revision 1.16  2002/12/05 06:38:00  saywhat
-校勘插入處理
-
-Revision 1.15  2002/11/04 10:43:48  ray
-tei.2 => TEI.2
-
-Revision 1.14  2002/10/07 13:08:38  moved
-modified
-
-Revision 1.13  2002/07/29 09:55:36  vinking
-modified lang
-
-Revision 1.12  2002/04/04 09:05:00  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/07/27 07:12:16  ray
-去除多餘的 <author>
-
-Revision 1.10  2001/07/24 06:52:03  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/05/25 08:57:28  ray
-經號統一為四碼
-
-Revision 1.8  2001/03/30 05:47:10  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/03/25 09:07:23  ray
-add <milestone>
-
-Revision 1.6  2001/02/07 06:52:33  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.5  2001/02/03 07:42:12  chris
-Added keywords $Revision: 1.10 $, $Date: 2012/09/28 08:51:55 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-10-12T10:16:33">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -205,45 +157,45 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0743003" to="#end0743003"><lem wit="#wit1">沙門</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0743004" to="#end0743004"><lem wit="#wit1">廝</lem><rdg resp="#resp1" wit="#wit3">斯</rdg></app>
-<app from="#beg0743005" to="#end0743005"><lem wit="#wit1">罹</lem><rdg resp="#resp1" wit="#wit2 #wit3">羅</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0743005"><lem wit="#wit1">罹</lem><rdg resp="#resp1" wit="#wit2 #wit3">羅</rdg></app>
-<app from="#beg0743006" to="#end0743006"><lem wit="#wit1">久</lem><rdg resp="#resp1" wit="#wit3">分</rdg></app>
-<app from="#beg0743007" to="#end0743007"><lem wit="#wit1">堪</lem><rdg resp="#resp1" wit="#wit3">進</rdg></app>
-<app from="#beg0743008" to="#end0743008"><lem wit="#wit1">歛</lem><rdg resp="#resp1" wit="#wit3">斂</rdg></app>
-<app from="#beg0743009" to="#end0743009"><lem wit="#wit1">貧寒</lem><rdg resp="#resp1" wit="#wit3">寒索</rdg></app>
-<app from="#beg0744001" to="#end0744001"><lem wit="#wit1">憍貴太子<lb n="0744a17" ed="T"/>者，今卿是也</lem><rdg resp="#resp1" wit="#wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0744002" to="#end0744002"><lem wit="#wit1">殘</lem><rdg resp="#resp1" wit="#wit3">沒</rdg></app>
+<app from="#beg0743003" to="#end0743003"><lem wit="#wit.orig">沙門</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0743004" to="#end0743004"><lem wit="#wit.orig">廝</lem><rdg resp="#resp2" wit="#wit2">斯</rdg></app>
+<app from="#beg0743005" to="#end0743005"><lem wit="#wit.orig">罹</lem><rdg resp="#resp2" wit="#wit1 #wit2">羅</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0743005"><lem wit="#wit.orig">罹</lem><rdg resp="#resp2" wit="#wit1 #wit2">羅</rdg></app>
+<app from="#beg0743006" to="#end0743006"><lem wit="#wit.orig">久</lem><rdg resp="#resp2" wit="#wit2">分</rdg></app>
+<app from="#beg0743007" to="#end0743007"><lem wit="#wit.orig">堪</lem><rdg resp="#resp2" wit="#wit2">進</rdg></app>
+<app from="#beg0743008" to="#end0743008"><lem wit="#wit.orig">歛</lem><rdg resp="#resp2" wit="#wit2">斂</rdg></app>
+<app from="#beg0743009" to="#end0743009"><lem wit="#wit.orig">貧寒</lem><rdg resp="#resp2" wit="#wit2">寒索</rdg></app>
+<app from="#beg0744001" to="#end0744001"><lem wit="#wit.orig">憍貴太子<lb n="0744a17" ed="T"/>者，今卿是也</lem><rdg resp="#resp2" wit="#wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0744002" to="#end0744002"><lem wit="#wit.orig">殘</lem><rdg resp="#resp2" wit="#wit2">沒</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0743003" resp="#resp2" type="mod" target="#nkr_note_mod_0743003">沙門【大】，〔－〕【宋】【宮】</note>
-<note n="0743004" resp="#resp2" type="mod" target="#nkr_note_mod_0743004">廝【大】，斯【宮】</note>
-<note n="0743005" resp="#resp2" type="mod" target="#nkr_note_mod_0743005">罹【大】＊，羅【宋】【宮】＊</note>
-<note n="0743006" resp="#resp2" type="mod" target="#nkr_note_mod_0743006">久【大】，分【宮】</note>
-<note n="0743007" resp="#resp2" type="mod" target="#nkr_note_mod_0743007">堪【大】，進【宮】</note>
-<note n="0743008" resp="#resp2" type="mod" target="#nkr_note_mod_0743008">歛【大】，斂【宮】</note>
-<note n="0743009" resp="#resp2" type="mod" target="#nkr_note_mod_0743009">貧寒【大】，寒索【宮】</note>
-<note n="0744001" resp="#resp2" type="mod" target="#nkr_note_mod_0744001">憍貴太子者今卿是也【大】，〔－〕【宮】</note>
-<note n="0744002" resp="#resp2" type="mod" target="#nkr_note_mod_0744002">殘【大】，沒【宮】</note>
+<note n="0743003" resp="#resp1" type="mod" target="#nkr_note_mod_0743003">沙門【大】，〔－〕【宋】【宮】</note>
+<note n="0743004" resp="#resp1" type="mod" target="#nkr_note_mod_0743004">廝【大】，斯【宮】</note>
+<note n="0743005" resp="#resp1" type="mod" target="#nkr_note_mod_0743005">罹【大】＊，羅【宋】【宮】＊</note>
+<note n="0743006" resp="#resp1" type="mod" target="#nkr_note_mod_0743006">久【大】，分【宮】</note>
+<note n="0743007" resp="#resp1" type="mod" target="#nkr_note_mod_0743007">堪【大】，進【宮】</note>
+<note n="0743008" resp="#resp1" type="mod" target="#nkr_note_mod_0743008">歛【大】，斂【宮】</note>
+<note n="0743009" resp="#resp1" type="mod" target="#nkr_note_mod_0743009">貧寒【大】，寒索【宮】</note>
+<note n="0744001" resp="#resp1" type="mod" target="#nkr_note_mod_0744001">憍貴太子者今卿是也【大】，〔－〕【宮】</note>
+<note n="0744002" resp="#resp1" type="mod" target="#nkr_note_mod_0744002">殘【大】，沒【宮】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0743002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743002">此經明本與宋本元本宮本對校 cf. p. 742</note>
-<note n="0743003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743003">〔沙門〕－【宋】【宮】</note>
-<note n="0743004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743004">廝＝斯【宮】</note>
-<note n="0743005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743005">罹＝羅【宋】【宮】＊</note>
-<note n="0743006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743006">久＝分【宮】</note>
-<note n="0743007" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743007">堪＝進【宮】</note>
-<note n="0743008" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743008">歛＝斂【宮】</note>
-<note n="0743009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0743009">貧寒＝寒索【宮】</note>
-<note n="0744001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0744001">〔憍貴…見也〕九字－【宮】</note>
-<note n="0744002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0744002">殘＝沒【宮】</note>
+<note n="0743002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743002">此經明本與宋本元本宮本對校 cf. p. 742</note>
+<note n="0743003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743003">〔沙門〕－【宋】【宮】</note>
+<note n="0743004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743004">廝＝斯【宮】</note>
+<note n="0743005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743005">罹＝羅【宋】【宮】＊</note>
+<note n="0743006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743006">久＝分【宮】</note>
+<note n="0743007" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743007">堪＝進【宮】</note>
+<note n="0743008" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743008">歛＝斂【宮】</note>
+<note n="0743009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0743009">貧寒＝寒索【宮】</note>
+<note n="0744001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0744001">〔憍貴…見也〕九字－【宮】</note>
+<note n="0744002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0744002">殘＝沒【宮】</note>
 </p>
 </cb:div>
 </back></text></TEI>

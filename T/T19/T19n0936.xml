@@ -11,124 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.9 $<date>$Date: 2009/04/23 08:00:01 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:00:01 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 19, No. 936</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">19</idno>.<idno type="no">936</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大乘無量壽經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-27T11:50:57">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T19n0936.xml,v $
-Revision 1.9  2009/04/23 08:00:01  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.8  2006/04/12 21:55:31  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/11/14 03:17:20  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.5  2004/10/14 16:25:33  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/07/05 13:18:11  saywhat
-<p type="w"> 改用 <div type="w"><p>
-
-Revision 1.3  2004/04/20 08:38:42  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/06/23 06:14:01  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:10  ray
-recover cvs
-
-Revision 1.18  2003/03/10 05:01:55  saywhat
-移動todo type=i位置
-
-Revision 1.17  2002/11/27 11:26:16  saywhat
-校勘插入處理
-
-Revision 1.16  2002/11/04 10:44:53  ray
-tei.2 => TEI.2
-
-Revision 1.15  2002/10/07 13:10:54  moved
-modified
-
-Revision 1.14  2002/07/29 09:56:06  vinking
-modified lang
-
-Revision 1.13  2002/07/25 11:25:05  saywhat
-maha 經文修訂 20020621
-
-Revision 1.12  2002/04/08 09:03:08  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/11/05 06:13:10  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.10  2001/07/27 04:45:16  moved
-modified rtf
-
-Revision 1.9  2001/07/24 06:52:39  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/05/25 08:59:05  ray
-經號統一為四碼
-
-Revision 1.7  2001/03/30 06:45:02  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:12:54  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:54:18  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:44:14  chris
-Added keywords $Revision: 1.9 $, $Date: 2009/04/23 08:00:01 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-27T11:50:57">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -408,184 +354,184 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0082002" to="#end0082002"><lem wit="#wit1">殊</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0082003" to="#end0082003"><lem wit="#wit1">門</lem><rdg resp="#resp1" wit="#wit2">閻</rdg></app>
-<app from="#beg0082004" to="#end0082004"><lem wit="#wit1">短</lem><rdg resp="#resp1" wit="#wit2">矩</rdg></app>
-<app from="#beg0082005" to="#end0082005"><lem wit="#wit1">於</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0082006" to="#end0082006"><lem wit="#wit1">其</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0082007" to="#end0082007"><lem wit="#wit1">便</lem><rdg resp="#resp1" wit="#wit2">更</rdg></app>
-<app from="#beg0082008" to="#end0082008"><lem wit="#wit1">如</lem><rdg resp="#resp1" wit="#wit2">如如</rdg></app>
-<app from="#beg0082009" to="#end0082009"><lem wit="#wit1"><note place="inline">一</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0082010" to="#end0082010"><lem wit="#wit1">指</lem><rdg resp="#resp1" wit="#wit2">尸</rdg></app>
-<app from="#beg0082011" to="#end0082011"><lem wit="#wit1">鉢</lem><rdg resp="#resp1" wit="#wit2">波</rdg></app>
-<app from="#beg0082012" to="#end0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg0082013" to="#end0082013"><lem wit="#wit1">如是</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0082014" to="#end0082014"><lem wit="#wit1">有</lem><rdg resp="#resp1" wit="#wit2">若</rdg></app>
-<app from="#beg0082015" to="#end0082015"><lem wit="#wit1">晝</lem><rdg resp="#resp1" wit="#wit2">書</rdg></app>
-<app from="#beg0082016" to="#end0082016"><lem wit="#wit1"><note place="inline">一</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0082011"><lem wit="#wit1">鉢</lem><rdg resp="#resp1" wit="#wit2">波</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg0082017" to="#end0082017"><lem wit="#wit1">莎</lem><rdg resp="#resp1" wit="#wit2">薩</rdg></app>
-<app from="#beg0082018" to="#end0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0082011"><lem wit="#wit1">鉢</lem><rdg resp="#resp1" wit="#wit2">波</rdg></app>
-<app from="#beg_4" to="#end_4" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_5" to="#end_5" corresp="#0082017"><lem wit="#wit1">莎</lem><rdg resp="#resp1" wit="#wit2">薩</rdg></app>
-<app from="#beg_6" to="#end_6" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_7" to="#end_7" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_8" to="#end_8" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_9" to="#end_9" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_a" to="#end_a" corresp="#0082017"><lem wit="#wit1">莎</lem><rdg resp="#resp1" wit="#wit2">薩</rdg></app>
-<app from="#beg_b" to="#end_b" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_c" to="#end_c" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_d" to="#end_d" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_e" to="#end_e" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_f" to="#end_f" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0082019" to="#end0082019"><lem wit="#wit1">十</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_10" to="#end_10" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_11" to="#end_11" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_12" to="#end_12" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_13" to="#end_13" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_14" to="#end_14" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_15" to="#end_15" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_16" to="#end_16" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_17" to="#end_17" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0083001" to="#end0083001"><lem wit="#wit1">得宿</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_18" to="#end_18" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_19" to="#end_19" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0083002" to="#end0083002"><lem wit="#wit1">量</lem><rdg resp="#resp1" wit="#wit2">量壽</rdg></app>
-<app from="#beg0083003" to="#end0083003"><lem wit="#wit1">受<lb n="0083b03" ed="T"/>持讀誦</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_1a" to="#end_1a" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_1b" to="#end_1b" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0083004" to="#end0083004"><lem wit="#wit1">指</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_1c" to="#end_1c" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_1d" to="#end_1d" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_1e" to="#end_1e" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_1f" to="#end_1f" corresp="#0082017"><lem wit="#wit1">莎</lem><rdg resp="#resp1" wit="#wit2">薩</rdg></app>
-<app from="#beg_20" to="#end_20" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0083005" to="#end0083005"><lem wit="#wit1">罪</lem><rdg resp="#resp1" wit="#wit2">重罪</rdg></app>
-<app from="#beg0083006" to="#end0083006"><lem wit="#wit1">但</lem><rdg resp="#resp1" wit="#wit2">怛</rdg></app>
-<app from="#beg_21" to="#end_21" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_22" to="#end_22" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_23" to="#end_23" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_24" to="#end_24" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0083007" to="#end0083007"><lem wit="#wit1">十</lem><rdg resp="#resp1" wit="#wit2">十九</rdg></app>
-<app from="#beg0083008" to="#end0083008"><lem wit="#wit1">佛</lem><rdg resp="#resp1" wit="#wit2">千佛</rdg></app>
-<app from="#beg_25" to="#end_25" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_26" to="#end_26" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_27" to="#end_27" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_28" to="#end_28" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0084001" to="#end0084001"><lem wit="#wit1">毘儞</lem><rdg resp="#resp1" wit="#wit2">彌</rdg></app>
-<app from="#beg_29" to="#end_29" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg0084002" to="#end0084002"><lem wit="#wit1">寫</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_2a" to="#end_2a" corresp="#0084002"><lem wit="#wit1">寫</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0084003" to="#end0084003"><lem wit="#wit1">是</lem><rdg resp="#resp1" wit="#wit2">為</rdg></app>
-<app from="#beg0084004" to="#end0084004"><lem wit="#wit1">聞</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0084005" to="#end0084005"><lem wit="#wit1">一切</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_2b" to="#end_2b" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_2c" to="#end_2c" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_2d" to="#end_2d" corresp="#0084002"><lem wit="#wit1">寫</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_2e" to="#end_2e" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_2f" to="#end_2f" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_30" to="#end_30" corresp="#0082017"><lem wit="#wit1">莎</lem><rdg resp="#resp1" wit="#wit2">薩</rdg></app>
-<app from="#beg_31" to="#end_31" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0084006" to="#end0084006"><lem wit="#wit1">異</lem><rdg resp="#resp1" wit="#wit2">別異</rdg></app>
-<app from="#beg_32" to="#end_32" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_33" to="#end_33" corresp="#0083006"><lem wit="#wit1">但</lem><rdg resp="#resp1" wit="#wit2">怛</rdg></app>
-<app from="#beg_34" to="#end_34" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_35" to="#end_35" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg_36" to="#end_36" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_37" to="#end_37" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0084007" to="#end0084007"><lem wit="#wit1">四</lem><rdg resp="#resp1" wit="#wit2">是</rdg></app>
-<app from="#beg_38" to="#end_38" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_39" to="#end_39" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0084008" to="#end0084008"><lem wit="#wit1">書</lem><rdg resp="#resp1" wit="#wit2">書寫</rdg></app>
-<app from="#beg0084009" to="#end0084009"><lem wit="#wit1">典</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_3a" to="#end_3a" corresp="#0082012"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2">特</rdg></app>
-<app from="#beg_3b" to="#end_3b" corresp="#0082018"><lem wit="#wit1">囇</lem><rdg resp="#resp1" wit="#wit2">唎</rdg></app>
-<app from="#beg0084010" to="#end0084010"><lem wit="#wit1">揵</lem><rdg resp="#resp1" wit="#wit2">健</rdg></app>
+<app from="#beg0082002" to="#end0082002"><lem wit="#wit.orig">殊</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0082003" to="#end0082003"><lem wit="#wit.orig">門</lem><rdg resp="#resp2" wit="#wit1">閻</rdg></app>
+<app from="#beg0082004" to="#end0082004"><lem wit="#wit.orig">短</lem><rdg resp="#resp2" wit="#wit1">矩</rdg></app>
+<app from="#beg0082005" to="#end0082005"><lem wit="#wit.orig">於</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0082006" to="#end0082006"><lem wit="#wit.orig">其</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0082007" to="#end0082007"><lem wit="#wit.orig">便</lem><rdg resp="#resp2" wit="#wit1">更</rdg></app>
+<app from="#beg0082008" to="#end0082008"><lem wit="#wit.orig">如</lem><rdg resp="#resp2" wit="#wit1">如如</rdg></app>
+<app from="#beg0082009" to="#end0082009"><lem wit="#wit.orig"><note place="inline">一</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0082010" to="#end0082010"><lem wit="#wit.orig">指</lem><rdg resp="#resp2" wit="#wit1">尸</rdg></app>
+<app from="#beg0082011" to="#end0082011"><lem wit="#wit.orig">鉢</lem><rdg resp="#resp2" wit="#wit1">波</rdg></app>
+<app from="#beg0082012" to="#end0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg0082013" to="#end0082013"><lem wit="#wit.orig">如是</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0082014" to="#end0082014"><lem wit="#wit.orig">有</lem><rdg resp="#resp2" wit="#wit1">若</rdg></app>
+<app from="#beg0082015" to="#end0082015"><lem wit="#wit.orig">晝</lem><rdg resp="#resp2" wit="#wit1">書</rdg></app>
+<app from="#beg0082016" to="#end0082016"><lem wit="#wit.orig"><note place="inline">一</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0082011"><lem wit="#wit.orig">鉢</lem><rdg resp="#resp2" wit="#wit1">波</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg0082017" to="#end0082017"><lem wit="#wit.orig">莎</lem><rdg resp="#resp2" wit="#wit1">薩</rdg></app>
+<app from="#beg0082018" to="#end0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0082011"><lem wit="#wit.orig">鉢</lem><rdg resp="#resp2" wit="#wit1">波</rdg></app>
+<app from="#beg_4" to="#end_4" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_5" to="#end_5" corresp="#0082017"><lem wit="#wit.orig">莎</lem><rdg resp="#resp2" wit="#wit1">薩</rdg></app>
+<app from="#beg_6" to="#end_6" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_7" to="#end_7" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_8" to="#end_8" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_9" to="#end_9" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_a" to="#end_a" corresp="#0082017"><lem wit="#wit.orig">莎</lem><rdg resp="#resp2" wit="#wit1">薩</rdg></app>
+<app from="#beg_b" to="#end_b" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_c" to="#end_c" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_d" to="#end_d" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_e" to="#end_e" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_f" to="#end_f" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0082019" to="#end0082019"><lem wit="#wit.orig">十</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_10" to="#end_10" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_11" to="#end_11" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_12" to="#end_12" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_13" to="#end_13" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_14" to="#end_14" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_15" to="#end_15" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_16" to="#end_16" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_17" to="#end_17" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0083001" to="#end0083001"><lem wit="#wit.orig">得宿</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_18" to="#end_18" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_19" to="#end_19" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0083002" to="#end0083002"><lem wit="#wit.orig">量</lem><rdg resp="#resp2" wit="#wit1">量壽</rdg></app>
+<app from="#beg0083003" to="#end0083003"><lem wit="#wit.orig">受<lb n="0083b03" ed="T"/>持讀誦</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_1a" to="#end_1a" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_1b" to="#end_1b" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0083004" to="#end0083004"><lem wit="#wit.orig">指</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_1c" to="#end_1c" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_1d" to="#end_1d" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_1e" to="#end_1e" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_1f" to="#end_1f" corresp="#0082017"><lem wit="#wit.orig">莎</lem><rdg resp="#resp2" wit="#wit1">薩</rdg></app>
+<app from="#beg_20" to="#end_20" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0083005" to="#end0083005"><lem wit="#wit.orig">罪</lem><rdg resp="#resp2" wit="#wit1">重罪</rdg></app>
+<app from="#beg0083006" to="#end0083006"><lem wit="#wit.orig">但</lem><rdg resp="#resp2" wit="#wit1">怛</rdg></app>
+<app from="#beg_21" to="#end_21" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_22" to="#end_22" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_23" to="#end_23" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_24" to="#end_24" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0083007" to="#end0083007"><lem wit="#wit.orig">十</lem><rdg resp="#resp2" wit="#wit1">十九</rdg></app>
+<app from="#beg0083008" to="#end0083008"><lem wit="#wit.orig">佛</lem><rdg resp="#resp2" wit="#wit1">千佛</rdg></app>
+<app from="#beg_25" to="#end_25" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_26" to="#end_26" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_27" to="#end_27" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_28" to="#end_28" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0084001" to="#end0084001"><lem wit="#wit.orig">毘儞</lem><rdg resp="#resp2" wit="#wit1">彌</rdg></app>
+<app from="#beg_29" to="#end_29" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg0084002" to="#end0084002"><lem wit="#wit.orig">寫</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_2a" to="#end_2a" corresp="#0084002"><lem wit="#wit.orig">寫</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0084003" to="#end0084003"><lem wit="#wit.orig">是</lem><rdg resp="#resp2" wit="#wit1">為</rdg></app>
+<app from="#beg0084004" to="#end0084004"><lem wit="#wit.orig">聞</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0084005" to="#end0084005"><lem wit="#wit.orig">一切</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_2b" to="#end_2b" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_2c" to="#end_2c" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_2d" to="#end_2d" corresp="#0084002"><lem wit="#wit.orig">寫</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_2e" to="#end_2e" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_2f" to="#end_2f" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_30" to="#end_30" corresp="#0082017"><lem wit="#wit.orig">莎</lem><rdg resp="#resp2" wit="#wit1">薩</rdg></app>
+<app from="#beg_31" to="#end_31" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0084006" to="#end0084006"><lem wit="#wit.orig">異</lem><rdg resp="#resp2" wit="#wit1">別異</rdg></app>
+<app from="#beg_32" to="#end_32" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_33" to="#end_33" corresp="#0083006"><lem wit="#wit.orig">但</lem><rdg resp="#resp2" wit="#wit1">怛</rdg></app>
+<app from="#beg_34" to="#end_34" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_35" to="#end_35" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg_36" to="#end_36" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_37" to="#end_37" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0084007" to="#end0084007"><lem wit="#wit.orig">四</lem><rdg resp="#resp2" wit="#wit1">是</rdg></app>
+<app from="#beg_38" to="#end_38" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_39" to="#end_39" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0084008" to="#end0084008"><lem wit="#wit.orig">書</lem><rdg resp="#resp2" wit="#wit1">書寫</rdg></app>
+<app from="#beg0084009" to="#end0084009"><lem wit="#wit.orig">典</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_3a" to="#end_3a" corresp="#0082012"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1">特</rdg></app>
+<app from="#beg_3b" to="#end_3b" corresp="#0082018"><lem wit="#wit.orig">囇</lem><rdg resp="#resp2" wit="#wit1">唎</rdg></app>
+<app from="#beg0084010" to="#end0084010"><lem wit="#wit.orig">揵</lem><rdg resp="#resp2" wit="#wit1">健</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0082002" resp="#resp2" type="mod" target="#nkr_note_mod_0082002">殊【大】，〔－〕【甲】</note>
-<note n="0082003" resp="#resp2" type="mod" target="#nkr_note_mod_0082003">門【大】，閻【甲】</note>
-<note n="0082004" resp="#resp2" type="mod" target="#nkr_note_mod_0082004">短【大】，矩【甲】</note>
-<note n="0082005" resp="#resp2" type="mod" target="#nkr_note_mod_0082005">於【大】，〔－〕【甲】</note>
-<note n="0082006" resp="#resp2" type="mod" target="#nkr_note_mod_0082006">其【大】，〔－〕【甲】</note>
-<note n="0082007" resp="#resp2" type="mod" target="#nkr_note_mod_0082007">便【大】，更【甲】</note>
-<note n="0082008" resp="#resp2" type="mod" target="#nkr_note_mod_0082008">如【大】，如如【甲】</note>
-<note n="0082009" resp="#resp2" type="mod" target="#nkr_note_mod_0082009">一【大】，〔－〕【甲】，<!--CBETA todo type: i-->以下數記無＊</note>
-<note n="0082010" resp="#resp2" type="mod" target="#nkr_note_mod_0082010">指【大】，尸【甲】</note>
-<note n="0082011" resp="#resp2" type="mod" target="#nkr_note_mod_0082011">鉢【大】＊，波【甲】＊</note>
-<note n="0082012" resp="#resp2" type="mod" target="#nkr_note_mod_0082012">持【大】＊，特【甲】＊</note>
-<note n="0082013" resp="#resp2" type="mod" target="#nkr_note_mod_0082013">如是【大】，〔－〕【甲】</note>
-<note n="0082014" resp="#resp2" type="mod" target="#nkr_note_mod_0082014">有【大】，若【甲】</note>
-<note n="0082015" resp="#resp2" type="mod" target="#nkr_note_mod_0082015">晝【大】，書【甲】</note>
-<note n="0082016" resp="#resp2" type="mod" target="#nkr_note_mod_0082016">一【大】，〔－〕【甲】，<!--CBETA todo type: i-->以下數記無</note>
-<note n="0082017" resp="#resp2" type="mod" target="#nkr_note_mod_0082017">莎【大】＊，薩【甲】＊</note>
-<note n="0082018" resp="#resp2" type="mod" target="#nkr_note_mod_0082018">囇【大】＊，唎【甲】＊</note>
-<note n="0082019" resp="#resp2" type="mod" target="#nkr_note_mod_0082019">十【大】，〔－〕【甲】</note>
-<note n="0083001" resp="#resp2" type="mod" target="#nkr_note_mod_0083001">得宿【大】，〔－〕【甲】</note>
-<note n="0083002" resp="#resp2" type="mod" target="#nkr_note_mod_0083002">量【大】，量壽【甲】</note>
-<note n="0083003" resp="#resp2" type="mod" target="#nkr_note_mod_0083003">受持讀誦【大】，〔－〕【甲】</note>
-<note n="0083004" resp="#resp2" type="mod" target="#nkr_note_mod_0083004">指【大】，〔－〕【甲】</note>
-<note n="0083005" resp="#resp2" type="mod" target="#nkr_note_mod_0083005">罪【大】，重罪【甲】</note>
-<note n="0083006" resp="#resp2" type="mod" target="#nkr_note_mod_0083006">但【大】＊，怛【甲】＊</note>
-<note n="0083007" resp="#resp2" type="mod" target="#nkr_note_mod_0083007">十【大】，十九【甲】</note>
-<note n="0083008" resp="#resp2" type="mod" target="#nkr_note_mod_0083008">佛【大】，千佛【甲】</note>
-<note n="0084001" resp="#resp2" type="mod" target="#nkr_note_mod_0084001">毘儞【大】，彌【甲】</note>
-<note n="0084002" resp="#resp2" type="mod" target="#nkr_note_mod_0084002">寫【大】＊，〔－〕【甲】＊</note>
-<note n="0084003" resp="#resp2" type="mod" target="#nkr_note_mod_0084003">是【大】，為【甲】</note>
-<note n="0084004" resp="#resp2" type="mod" target="#nkr_note_mod_0084004">聞【大】，〔－〕【甲】</note>
-<note n="0084005" resp="#resp2" type="mod" target="#nkr_note_mod_0084005">一切【大】，〔－〕【甲】</note>
-<note n="0084006" resp="#resp2" type="mod" target="#nkr_note_mod_0084006">異【大】，別異【甲】</note>
-<note n="0084007" resp="#resp2" type="mod" target="#nkr_note_mod_0084007">四【大】，是【甲】</note>
-<note n="0084008" resp="#resp2" type="mod" target="#nkr_note_mod_0084008">書【大】，書寫【甲】</note>
-<note n="0084009" resp="#resp2" type="mod" target="#nkr_note_mod_0084009">典【大】，〔－〕【甲】</note>
-<note n="0084010" resp="#resp2" type="mod" target="#nkr_note_mod_0084010">揵【大】，健【甲】</note>
+<note n="0082002" resp="#resp3" type="mod" target="#nkr_note_mod_0082002">殊【大】，〔－〕【甲】</note>
+<note n="0082003" resp="#resp3" type="mod" target="#nkr_note_mod_0082003">門【大】，閻【甲】</note>
+<note n="0082004" resp="#resp3" type="mod" target="#nkr_note_mod_0082004">短【大】，矩【甲】</note>
+<note n="0082005" resp="#resp3" type="mod" target="#nkr_note_mod_0082005">於【大】，〔－〕【甲】</note>
+<note n="0082006" resp="#resp3" type="mod" target="#nkr_note_mod_0082006">其【大】，〔－〕【甲】</note>
+<note n="0082007" resp="#resp3" type="mod" target="#nkr_note_mod_0082007">便【大】，更【甲】</note>
+<note n="0082008" resp="#resp3" type="mod" target="#nkr_note_mod_0082008">如【大】，如如【甲】</note>
+<note n="0082009" resp="#resp3" type="mod" target="#nkr_note_mod_0082009">一【大】，〔－〕【甲】，<!--CBETA todo type: i-->以下數記無＊</note>
+<note n="0082010" resp="#resp3" type="mod" target="#nkr_note_mod_0082010">指【大】，尸【甲】</note>
+<note n="0082011" resp="#resp3" type="mod" target="#nkr_note_mod_0082011">鉢【大】＊，波【甲】＊</note>
+<note n="0082012" resp="#resp3" type="mod" target="#nkr_note_mod_0082012">持【大】＊，特【甲】＊</note>
+<note n="0082013" resp="#resp3" type="mod" target="#nkr_note_mod_0082013">如是【大】，〔－〕【甲】</note>
+<note n="0082014" resp="#resp3" type="mod" target="#nkr_note_mod_0082014">有【大】，若【甲】</note>
+<note n="0082015" resp="#resp3" type="mod" target="#nkr_note_mod_0082015">晝【大】，書【甲】</note>
+<note n="0082016" resp="#resp3" type="mod" target="#nkr_note_mod_0082016">一【大】，〔－〕【甲】，<!--CBETA todo type: i-->以下數記無</note>
+<note n="0082017" resp="#resp3" type="mod" target="#nkr_note_mod_0082017">莎【大】＊，薩【甲】＊</note>
+<note n="0082018" resp="#resp3" type="mod" target="#nkr_note_mod_0082018">囇【大】＊，唎【甲】＊</note>
+<note n="0082019" resp="#resp3" type="mod" target="#nkr_note_mod_0082019">十【大】，〔－〕【甲】</note>
+<note n="0083001" resp="#resp3" type="mod" target="#nkr_note_mod_0083001">得宿【大】，〔－〕【甲】</note>
+<note n="0083002" resp="#resp3" type="mod" target="#nkr_note_mod_0083002">量【大】，量壽【甲】</note>
+<note n="0083003" resp="#resp3" type="mod" target="#nkr_note_mod_0083003">受持讀誦【大】，〔－〕【甲】</note>
+<note n="0083004" resp="#resp3" type="mod" target="#nkr_note_mod_0083004">指【大】，〔－〕【甲】</note>
+<note n="0083005" resp="#resp3" type="mod" target="#nkr_note_mod_0083005">罪【大】，重罪【甲】</note>
+<note n="0083006" resp="#resp3" type="mod" target="#nkr_note_mod_0083006">但【大】＊，怛【甲】＊</note>
+<note n="0083007" resp="#resp3" type="mod" target="#nkr_note_mod_0083007">十【大】，十九【甲】</note>
+<note n="0083008" resp="#resp3" type="mod" target="#nkr_note_mod_0083008">佛【大】，千佛【甲】</note>
+<note n="0084001" resp="#resp3" type="mod" target="#nkr_note_mod_0084001">毘儞【大】，彌【甲】</note>
+<note n="0084002" resp="#resp3" type="mod" target="#nkr_note_mod_0084002">寫【大】＊，〔－〕【甲】＊</note>
+<note n="0084003" resp="#resp3" type="mod" target="#nkr_note_mod_0084003">是【大】，為【甲】</note>
+<note n="0084004" resp="#resp3" type="mod" target="#nkr_note_mod_0084004">聞【大】，〔－〕【甲】</note>
+<note n="0084005" resp="#resp3" type="mod" target="#nkr_note_mod_0084005">一切【大】，〔－〕【甲】</note>
+<note n="0084006" resp="#resp3" type="mod" target="#nkr_note_mod_0084006">異【大】，別異【甲】</note>
+<note n="0084007" resp="#resp3" type="mod" target="#nkr_note_mod_0084007">四【大】，是【甲】</note>
+<note n="0084008" resp="#resp3" type="mod" target="#nkr_note_mod_0084008">書【大】，書寫【甲】</note>
+<note n="0084009" resp="#resp3" type="mod" target="#nkr_note_mod_0084009">典【大】，〔－〕【甲】</note>
+<note n="0084010" resp="#resp3" type="mod" target="#nkr_note_mod_0084010">揵【大】，健【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0082001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082001">【原】唐代寫高楠順次郎氏藏燉煌本，【甲】大英博物館藏古寫本</note>
-<note n="0082002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082002">〔殊〕－【甲】</note>
-<note n="0082003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082003">門＝閻【甲】</note>
-<note n="0082004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082004">短＝矩【甲】</note>
-<note n="0082005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082005">〔於〕－【甲】</note>
-<note n="0082006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082006">〔其〕－【甲】</note>
-<note n="0082007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082007">便＝更【甲】</note>
-<note n="0082008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082008">如＋（如）【甲】</note>
-<note n="0082009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082009">〔一〕－【甲】以下數記無＊</note>
-<note n="0082010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082010">指＝尸【甲】</note>
-<note n="0082011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082011">鉢＝波【甲】＊</note>
-<note n="0082012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082012">持＝特【甲】＊</note>
-<note n="0082013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082013">〔如是〕－【甲】</note>
-<note n="0082014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082014">有＝若【甲】</note>
-<note n="0082015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082015">晝＝書【甲】</note>
-<note n="0082016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082016">〔一〕－【甲】以下數記無</note>
-<note n="0082017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082017">莎＝薩【甲】＊</note>
-<note n="0082018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082018">囇＝唎【甲】＊</note>
-<note n="0082019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0082019">〔十〕－【甲】</note>
-<note n="0083001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083001">〔得宿〕－【甲】</note>
-<note n="0083002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083002">量＋（壽）【甲】</note>
-<note n="0083003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083003">〔受持讀誦〕－【甲】</note>
-<note n="0083004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083004">〔指〕－【甲】</note>
-<note n="0083005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083005">（重）＋罪【甲】</note>
-<note n="0083006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083006">但＝怛【甲】＊</note>
-<note n="0083007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083007">十＋（九）【甲】</note>
-<note n="0083008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0083008">（千）＋佛【甲】</note>
-<note n="0084001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084001">毘儞＝彌【甲】</note>
-<note n="0084002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084002">〔寫〕－【甲】＊</note>
-<note n="0084003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084003">是＝為【甲】</note>
-<note n="0084004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084004">〔聞〕－【甲】</note>
-<note n="0084005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084005">〔一切〕－【甲】</note>
-<note n="0084006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084006">（別）＋異【甲】</note>
-<note n="0084007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084007">四＝是【甲】</note>
-<note n="0084008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084008">書＋（寫）【甲】</note>
-<note n="0084009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084009">〔典〕－【甲】</note>
-<note n="0084010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0084010">揵＝健【甲】</note>
+<note n="0082001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082001">【原】唐代寫高楠順次郎氏藏燉煌本，【甲】大英博物館藏古寫本</note>
+<note n="0082002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082002">〔殊〕－【甲】</note>
+<note n="0082003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082003">門＝閻【甲】</note>
+<note n="0082004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082004">短＝矩【甲】</note>
+<note n="0082005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082005">〔於〕－【甲】</note>
+<note n="0082006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082006">〔其〕－【甲】</note>
+<note n="0082007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082007">便＝更【甲】</note>
+<note n="0082008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082008">如＋（如）【甲】</note>
+<note n="0082009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082009">〔一〕－【甲】以下數記無＊</note>
+<note n="0082010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082010">指＝尸【甲】</note>
+<note n="0082011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082011">鉢＝波【甲】＊</note>
+<note n="0082012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082012">持＝特【甲】＊</note>
+<note n="0082013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082013">〔如是〕－【甲】</note>
+<note n="0082014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082014">有＝若【甲】</note>
+<note n="0082015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082015">晝＝書【甲】</note>
+<note n="0082016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082016">〔一〕－【甲】以下數記無</note>
+<note n="0082017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082017">莎＝薩【甲】＊</note>
+<note n="0082018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082018">囇＝唎【甲】＊</note>
+<note n="0082019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0082019">〔十〕－【甲】</note>
+<note n="0083001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083001">〔得宿〕－【甲】</note>
+<note n="0083002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083002">量＋（壽）【甲】</note>
+<note n="0083003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083003">〔受持讀誦〕－【甲】</note>
+<note n="0083004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083004">〔指〕－【甲】</note>
+<note n="0083005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083005">（重）＋罪【甲】</note>
+<note n="0083006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083006">但＝怛【甲】＊</note>
+<note n="0083007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083007">十＋（九）【甲】</note>
+<note n="0083008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0083008">（千）＋佛【甲】</note>
+<note n="0084001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084001">毘儞＝彌【甲】</note>
+<note n="0084002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084002">〔寫〕－【甲】＊</note>
+<note n="0084003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084003">是＝為【甲】</note>
+<note n="0084004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084004">〔聞〕－【甲】</note>
+<note n="0084005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084005">〔一切〕－【甲】</note>
+<note n="0084006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084006">（別）＋異【甲】</note>
+<note n="0084007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084007">四＝是【甲】</note>
+<note n="0084008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084008">書＋（寫）【甲】</note>
+<note n="0084009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084009">〔典〕－【甲】</note>
+<note n="0084010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0084010">揵＝健【甲】</note>
 </p>
 </cb:div>
 </back></text></TEI>

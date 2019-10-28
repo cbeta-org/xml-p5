@@ -11,118 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.9 $<date>$Date: 2009/04/23 08:14:36 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:14:36 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 55, No. 2179</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">55</idno>.<idno type="no">2179</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">三論宗章疏</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-02-01T16:31:29">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T55n2179.xml,v $
-Revision 1.9  2009/04/23 08:14:36  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.8  2006/04/12 22:00:39  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/10/14 03:32:11  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/07/16 09:13:11  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.4  2004/04/20 08:44:41  maha
-「版本日期」標記修訂
-
-Revision 1.3  2003/05/10 10:04:37  ray
-add <milestone type="juan"/>
-
-Revision 1.2  2003/05/05 06:33:29  eva
-modified
-
-Revision 1.18  2002/12/05 12:53:00  eva
-modified
-
-Revision 1.16  2002/11/11 11:25:18  eva
-modified
-
-Revision 1.13  2002/11/04 11:04:12  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/08/08 06:56:41  eva
-modified
-
-Revision 1.11  2002/07/29 09:47:44  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:50:00  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/11/05 06:23:40  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.8  2001/07/27 07:15:48  ray
-去除多餘的 <author>
-
-Revision 1.7  2001/07/24 07:03:44  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.6  2001/04/12 14:13:25  vinking
-modified <div>
-
-Revision 1.5  2001/04/01 07:56:44  moved
-modified normal
-
-Revision 1.4  2001/03/30 07:18:39  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.3  2001/02/07 07:47:12  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:19:01  chris
-Added keywords $Revision: 1.9 $, $Date: 2009/04/23 08:14:36 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-02-01T16:31:29">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -212,35 +164,35 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1137015" to="#end1137015"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域云諸錄云二卷而見行本有上中下三卷</rdg></app>
-<app from="#beg1137016" to="#end1137016"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按義記二字東域云疏</rdg></app>
-<app from="#beg1137017" to="#end1137017"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按古本有朱書紙數今加之下皆倣此</rdg></app>
-<app from="#beg1138001" to="#end1138001"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域云亦云無依無得大乘四論玄義</rdg></app>
-<app from="#beg1138002" to="#end1138002"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按宗輪作部執異論東域作部異宗論</rdg></app>
-<app from="#beg1138003" to="#end1138003"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按或云略述</rdg></app>
+<app from="#beg1137015" to="#end1137015"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域云諸錄云二卷而見行本有上中下三卷</rdg></app>
+<app from="#beg1137016" to="#end1137016"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按義記二字東域云疏</rdg></app>
+<app from="#beg1137017" to="#end1137017"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按古本有朱書紙數今加之下皆倣此</rdg></app>
+<app from="#beg1138001" to="#end1138001"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域云亦云無依無得大乘四論玄義</rdg></app>
+<app from="#beg1138002" to="#end1138002"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按宗輪作部執異論東域作部異宗論</rdg></app>
+<app from="#beg1138003" to="#end1138003"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按或云略述</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1137015" resp="#resp2" type="mod" target="#nkr_note_mod_1137015">述【大】，述按東域云諸錄云二卷而見行本有上中下三卷【甲】</note>
-<note n="1137016" resp="#resp2" type="mod" target="#nkr_note_mod_1137016">述【大】，述按義記二字東域云疏【甲】</note>
-<note n="1137017" resp="#resp2" type="mod" target="#nkr_note_mod_1137017">述【大】，述按古本有朱書紙數今加之下皆倣此【甲】</note>
-<note n="1138001" resp="#resp2" type="mod" target="#nkr_note_mod_1138001">述【大】，述按東域云亦云無依無得大乘四論玄義【甲】</note>
-<note n="1138002" resp="#resp2" type="mod" target="#nkr_note_mod_1138002">述【大】，述按宗輪作部執異論東域作部異宗論【甲】</note>
-<note n="1138003" resp="#resp2" type="mod" target="#nkr_note_mod_1138003">述【大】，述按或云略述【甲】</note>
+<note n="1137015" resp="#resp3" type="mod" target="#nkr_note_mod_1137015">述【大】，述按東域云諸錄云二卷而見行本有上中下三卷【甲】</note>
+<note n="1137016" resp="#resp3" type="mod" target="#nkr_note_mod_1137016">述【大】，述按義記二字東域云疏【甲】</note>
+<note n="1137017" resp="#resp3" type="mod" target="#nkr_note_mod_1137017">述【大】，述按古本有朱書紙數今加之下皆倣此【甲】</note>
+<note n="1138001" resp="#resp3" type="mod" target="#nkr_note_mod_1138001">述【大】，述按東域云亦云無依無得大乘四論玄義【甲】</note>
+<note n="1138002" resp="#resp3" type="mod" target="#nkr_note_mod_1138002">述【大】，述按宗輪作部執異論東域作部異宗論【甲】</note>
+<note n="1138003" resp="#resp3" type="mod" target="#nkr_note_mod_1138003">述【大】，述按或云略述【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1137014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137014">【甲】寬政二年刊諸宗章疏錄</note>
-<note n="1137015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137015">述＋（按東域云諸錄云二卷而見行本有上中下三卷）【甲】</note>
-<note n="1137016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137016">述＋（按義記二字東域云疏）【甲】</note>
-<note n="1137017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1137017">述＋（按古本有朱書紙數今加之下皆倣此）【甲】</note>
-<note n="1138001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138001">述＋（按東域云亦云無依無得大乘四論玄義）【甲】</note>
-<note n="1138002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138002">述＋（按宗輪作部執異論東域作部異宗論）【甲】</note>
-<note n="1138003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1138003">述＋（按或云略述）【甲】</note>
+<note n="1137014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137014">【甲】寬政二年刊諸宗章疏錄</note>
+<note n="1137015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137015">述＋（按東域云諸錄云二卷而見行本有上中下三卷）【甲】</note>
+<note n="1137016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137016">述＋（按義記二字東域云疏）【甲】</note>
+<note n="1137017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1137017">述＋（按古本有朱書紙數今加之下皆倣此）【甲】</note>
+<note n="1138001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138001">述＋（按東域云亦云無依無得大乘四論玄義）【甲】</note>
+<note n="1138002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138002">述＋（按宗輪作部執異論東域作部異宗論）【甲】</note>
+<note n="1138003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1138003">述＋（按或云略述）【甲】</note>
 </p>
 </cb:div>
 </back></text></TEI>

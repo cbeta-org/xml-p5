@@ -11,108 +11,68 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.10 $<date>$Date: 2009/04/23 08:08:30 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:08:30 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 32, No. 1643</bibl>
-	<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【大】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Li Ming-Fang</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，李明芳大德提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">32</idno>.<idno type="no">1643</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">尼乾子問無我義經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Li Ming-Fang</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，李明芳大德提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-10-12T10:24:58">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)</change>
-<!--
-$Log: T32n1643.xml,v $
-Revision 1.10  2009/04/23 08:08:30  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.9  2006/04/12 21:57:17  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/10/27 05:10:18  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/04/20 08:40:55  maha
-「版本日期」標記修訂
-
-Revision 1.5  2003/06/25 06:25:37  eva
-modified: 執行 corr2app.pl
-
-Revision 1.4  2003/06/25 05:44:03  eva
-modified: copy corr2app 前備份
-
-Revision 1.2  2003/05/05 06:28:11  eva
-modified
-
-Revision 1.15  2002/12/05 12:34:15  eva
-modified
-
-Revision 1.14  2002/11/04 10:52:08  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/09/11 07:55:00  eva
-modified
-
-Revision 1.11  2002/07/29 10:09:08  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:25:33  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/07/24 06:56:58  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/04/01 08:25:22  ray
-CB00380 => CB00308
-
-Revision 1.7  2001/03/30 06:15:33  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 10:09:13  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 07:06:25  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:57:10  chris
-Added keywords $Revision: 1.10 $, $Date: 2009/04/23 08:08:30 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-10-12T10:24:58">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone unit="juan" n="1"/>
@@ -216,21 +176,21 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0172b2901" to="#end0172b2901"><lem wit="#wit1" resp="#resp2">迴</lem><rdg wit="#wit2">回</rdg></app>
-<app from="#beg0172c2101" to="#end0172c2101"><lem wit="#wit1" resp="#resp2">非</lem><rdg wit="#wit2">世</rdg></app>
+<app from="#beg0172b2901" to="#end0172b2901"><lem wit="#wit.cbeta" resp="#resp1">迴</lem><rdg wit="#wit.orig">回</rdg></app>
+<app from="#beg0172c2101" to="#end0172c2101"><lem wit="#wit.cbeta" resp="#resp1">非</lem><rdg wit="#wit.orig">世</rdg></app>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note resp="#resp1" n="0172003" place="foot text" type="orig" target="#nkr_note_orig_0172003">此經宋元明宮四本俱缺</note>
+<note resp="#resp2" n="0172003" place="foot text" type="orig" target="#nkr_note_orig_0172003">此經宋元明宮四本俱缺</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0172b2901" resp="#resp2" type="add" target="#nkr_note_add_0172b2901">迴【CB】，回【大】</note>
-<note n="0172c2101" resp="#resp2" type="add" target="#nkr_note_add_0172c2101">非【CB】，世【大】</note>
+<note n="0172b2901" resp="#resp1" type="add" target="#nkr_note_add_0172b2901">迴【CB】，回【大】</note>
+<note n="0172c2101" resp="#resp1" type="add" target="#nkr_note_add_0172c2101">非【CB】，世【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

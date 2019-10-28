@@ -11,110 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2009/04/23 08:12:36 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:12:36 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 47, No. 1981</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【原】</witness>
-		<witness xml:id="wit3">【CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">47</idno>.<idno type="no">1981</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">依觀經等明般舟三昧行道往生讚</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-08-10T15:07:52">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T47n1981.xml,v $
-Revision 1.11  2009/04/23 08:12:36  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.10  2006/04/12 21:58:53  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.8  2004/11/14 03:18:07  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.7  2004/10/31 15:24:45  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/04/20 08:42:57  maha
-「版本日期」標記修訂
-
-Revision 1.5  2003/06/25 06:26:49  eva
-modified: 執行 corr2app.pl
-
-Revision 1.4  2003/06/25 05:45:15  eva
-modified: copy corr2app 前備份
-
-Revision 1.2  2003/05/05 06:31:29  eva
-modified
-
-Revision 1.16  2002/12/05 12:37:50  eva
-modified
-
-Revision 1.15  2002/11/04 10:58:39  ray
-tei.2 => TEI.2
-
-Revision 1.14  2002/07/29 10:15:33  vinking
-modified lang
-
-Revision 1.13  2002/04/08 09:42:49  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.12  2001/11/05 06:20:37  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.11  2001/07/24 07:00:46  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.10  2001/03/30 06:32:12  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.9  2001/03/25 10:36:04  ray
-add <milestone>
-
-Revision 1.8  2001/02/07 07:23:56  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.7  2001/02/03 08:08:15  chris
-Added keywords $Revision: 1.11 $, $Date: 2009/04/23 08:12:36 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-08-10T15:07:52">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -766,83 +726,83 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0448004" to="#end0448004"><lem wit="#wit1">得</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">皆</rdg></app>
-<app from="#beg0448005" to="#end0448005"><lem wit="#wit1">普</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">苦</rdg></app>
-<app from="#beg0449001" to="#end0449001"><lem wit="#wit1">食</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">念</rdg></app>
-<app from="#beg0449002" to="#end0449002"><lem wit="#wit1">數億</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">億數</rdg></app>
-<app from="#beg0450001" to="#end0450001"><lem wit="#wit1">至</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">主</rdg></app>
-<app from="#beg0450002" to="#end0450002"><lem wit="#wit1">立</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">互</rdg></app>
-<app from="#beg0450003" to="#end0450003"><lem wit="#wit1">過</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">遇</rdg></app>
-<app from="#beg0451001" to="#end0451001"><lem wit="#wit1">抃</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">挊</rdg></app>
-<app from="#beg0451002" to="#end0451002"><lem wit="#wit1">令</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">合</rdg></app>
-<app from="#beg0452001" to="#end0452001"><lem wit="#wit1">因</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">國</rdg></app>
-<app from="#beg0452002" to="#end0452002"><lem wit="#wit1">地</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">蛇</rdg></app>
-<app from="#beg0454a0901" to="#end0454a0901"><lem wit="#wit3" resp="#resp2">趺</lem><rdg wit="#wit1">跌</rdg></app>
-<app from="#beg0454001" to="#end0454001"><lem resp="#resp1" wit="#wit1">現</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">見</rdg></app>
-<app from="#beg0454002" to="#end0454002"><lem wit="#wit1">當</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">常</rdg></app>
-<app from="#beg0454003" to="#end0454003"><lem wit="#wit1">疑</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">非</rdg></app>
-<app from="#beg0454004" to="#end0454004"><lem wit="#wit1">真</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">佛</rdg></app>
-<app from="#beg0454005" to="#end0454005"><lem wit="#wit1">里</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">重</rdg></app>
-<app from="#beg0455a1701" to="#end0455a1701"><lem wit="#wit3" resp="#resp2">娑</lem><rdg wit="#wit1">裟</rdg></app>
-<app from="#beg0455001" to="#end0455001"><lem wit="#wit1">芬芬</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">芥芥</rdg></app>
-<app from="#beg0455002" to="#end0455002"><lem wit="#wit1">困</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">因</rdg></app>
-<app from="#beg0455003" to="#end0455003"><lem wit="#wit1">貪</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">令</rdg></app>
+<app from="#beg0448004" to="#end0448004"><lem wit="#wit.orig">得</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">皆</rdg></app>
+<app from="#beg0448005" to="#end0448005"><lem wit="#wit.orig">普</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">苦</rdg></app>
+<app from="#beg0449001" to="#end0449001"><lem wit="#wit.orig">食</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">念</rdg></app>
+<app from="#beg0449002" to="#end0449002"><lem wit="#wit.orig">數億</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">億數</rdg></app>
+<app from="#beg0450001" to="#end0450001"><lem wit="#wit.orig">至</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">主</rdg></app>
+<app from="#beg0450002" to="#end0450002"><lem wit="#wit.orig">立</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">互</rdg></app>
+<app from="#beg0450003" to="#end0450003"><lem wit="#wit.orig">過</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">遇</rdg></app>
+<app from="#beg0451001" to="#end0451001"><lem wit="#wit.orig">抃</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">挊</rdg></app>
+<app from="#beg0451002" to="#end0451002"><lem wit="#wit.orig">令</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">合</rdg></app>
+<app from="#beg0452001" to="#end0452001"><lem wit="#wit.orig">因</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">國</rdg></app>
+<app from="#beg0452002" to="#end0452002"><lem wit="#wit.orig">地</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">蛇</rdg></app>
+<app from="#beg0454a0901" to="#end0454a0901"><lem wit="#wit.cbeta" resp="#resp3">趺</lem><rdg wit="#wit.orig">跌</rdg></app>
+<app from="#beg0454001" to="#end0454001"><lem resp="#resp2" wit="#wit.orig">現</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">見</rdg></app>
+<app from="#beg0454002" to="#end0454002"><lem wit="#wit.orig">當</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">常</rdg></app>
+<app from="#beg0454003" to="#end0454003"><lem wit="#wit.orig">疑</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">非</rdg></app>
+<app from="#beg0454004" to="#end0454004"><lem wit="#wit.orig">真</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">佛</rdg></app>
+<app from="#beg0454005" to="#end0454005"><lem wit="#wit.orig">里</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">重</rdg></app>
+<app from="#beg0455a1701" to="#end0455a1701"><lem wit="#wit.cbeta" resp="#resp3">娑</lem><rdg wit="#wit.orig">裟</rdg></app>
+<app from="#beg0455001" to="#end0455001"><lem wit="#wit.orig">芬芬</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">芥芥</rdg></app>
+<app from="#beg0455002" to="#end0455002"><lem wit="#wit.orig">困</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">因</rdg></app>
+<app from="#beg0455003" to="#end0455003"><lem wit="#wit.orig">貪</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">令</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0448004" resp="#resp2" type="mod" target="#nkr_note_mod_0448004">得【大】，皆【校異-原】</note>
-<note n="0448005" resp="#resp2" type="mod" target="#nkr_note_mod_0448005">普【大】，苦【校異-原】</note>
-<note n="0449001" resp="#resp2" type="mod" target="#nkr_note_mod_0449001">食【大】，念【校異-原】</note>
-<note n="0449002" resp="#resp2" type="mod" target="#nkr_note_mod_0449002">數億【大】，億數【校異-原】</note>
-<note n="0450001" resp="#resp2" type="mod" target="#nkr_note_mod_0450001">至【大】，主【校異-原】</note>
-<note n="0450002" resp="#resp2" type="mod" target="#nkr_note_mod_0450002">立【大】，互【校異-原】</note>
-<note n="0450003" resp="#resp2" type="mod" target="#nkr_note_mod_0450003">過【大】，遇【校異-原】</note>
-<note n="0451001" resp="#resp2" type="mod" target="#nkr_note_mod_0451001">抃【大】，挊【校異-原】</note>
-<note n="0451002" resp="#resp2" type="mod" target="#nkr_note_mod_0451002">令【大】，合【校異-原】</note>
-<note n="0452001" resp="#resp2" type="mod" target="#nkr_note_mod_0452001">因【大】，國【校異-原】</note>
-<note n="0452002" resp="#resp2" type="mod" target="#nkr_note_mod_0452002">地【大】，蛇【校異-原】</note>
-<note n="0454001" resp="#resp2" type="mod" target="#nkr_note_mod_0454001">現【大】，見【考偽-原】</note>
-<note n="0454002" resp="#resp2" type="mod" target="#nkr_note_mod_0454002">當【大】，常【校異-原】</note>
-<note n="0454003" resp="#resp2" type="mod" target="#nkr_note_mod_0454003">疑【大】，非【校異-原】</note>
-<note n="0454004" resp="#resp2" type="mod" target="#nkr_note_mod_0454004">真【大】，佛【校異-原】</note>
-<note n="0454005" resp="#resp2" type="mod" target="#nkr_note_mod_0454005">里【大】，重【校異-原】</note>
-<note n="0455001" resp="#resp2" type="mod" target="#nkr_note_mod_0455001">芬芬【大】，芥芥【校異-原】</note>
-<note n="0455002" resp="#resp2" type="mod" target="#nkr_note_mod_0455002">困【大】，因【校異-原】</note>
-<note n="0455003" resp="#resp2" type="mod" target="#nkr_note_mod_0455003">貪【大】，令【校異-原】</note>
+<note n="0448004" resp="#resp3" type="mod" target="#nkr_note_mod_0448004">得【大】，皆【校異-原】</note>
+<note n="0448005" resp="#resp3" type="mod" target="#nkr_note_mod_0448005">普【大】，苦【校異-原】</note>
+<note n="0449001" resp="#resp3" type="mod" target="#nkr_note_mod_0449001">食【大】，念【校異-原】</note>
+<note n="0449002" resp="#resp3" type="mod" target="#nkr_note_mod_0449002">數億【大】，億數【校異-原】</note>
+<note n="0450001" resp="#resp3" type="mod" target="#nkr_note_mod_0450001">至【大】，主【校異-原】</note>
+<note n="0450002" resp="#resp3" type="mod" target="#nkr_note_mod_0450002">立【大】，互【校異-原】</note>
+<note n="0450003" resp="#resp3" type="mod" target="#nkr_note_mod_0450003">過【大】，遇【校異-原】</note>
+<note n="0451001" resp="#resp3" type="mod" target="#nkr_note_mod_0451001">抃【大】，挊【校異-原】</note>
+<note n="0451002" resp="#resp3" type="mod" target="#nkr_note_mod_0451002">令【大】，合【校異-原】</note>
+<note n="0452001" resp="#resp3" type="mod" target="#nkr_note_mod_0452001">因【大】，國【校異-原】</note>
+<note n="0452002" resp="#resp3" type="mod" target="#nkr_note_mod_0452002">地【大】，蛇【校異-原】</note>
+<note n="0454001" resp="#resp3" type="mod" target="#nkr_note_mod_0454001">現【大】，見【考偽-原】</note>
+<note n="0454002" resp="#resp3" type="mod" target="#nkr_note_mod_0454002">當【大】，常【校異-原】</note>
+<note n="0454003" resp="#resp3" type="mod" target="#nkr_note_mod_0454003">疑【大】，非【校異-原】</note>
+<note n="0454004" resp="#resp3" type="mod" target="#nkr_note_mod_0454004">真【大】，佛【校異-原】</note>
+<note n="0454005" resp="#resp3" type="mod" target="#nkr_note_mod_0454005">里【大】，重【校異-原】</note>
+<note n="0455001" resp="#resp3" type="mod" target="#nkr_note_mod_0455001">芬芬【大】，芥芥【校異-原】</note>
+<note n="0455002" resp="#resp3" type="mod" target="#nkr_note_mod_0455002">困【大】，因【校異-原】</note>
+<note n="0455003" resp="#resp3" type="mod" target="#nkr_note_mod_0455003">貪【大】，令【校異-原】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0448003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0448003">【原】元祿六年刊宗教大學藏本，【甲】元祿七年刊大谷大學藏義山刻本</note>
-<note n="0448004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0448004">得＝皆ィ【原】</note>
-<note n="0448005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0448005">普＝苦ィ【原】</note>
-<note n="0449001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0449001">食＝念ィ【原】</note>
-<note n="0449002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0449002">數億＝億數ィ【原】</note>
-<note n="0450001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0450001">至＝主ィ【原】</note>
-<note n="0450002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0450002">立＝互ィ【原】</note>
-<note n="0450003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0450003">過＝遇ィ【原】</note>
-<note n="0451001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0451001">抃＝挊ィ【原】</note>
-<note n="0451002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0451002">令＝合ィ【原】</note>
-<note n="0452001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0452001">因＝國ィ【原】</note>
-<note n="0452002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0452002">地＝蛇ィ【原】</note>
-<note n="0454001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0454001">現＝見ヵ【原】</note>
-<note n="0454002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0454002">當＝常ィ【原】</note>
-<note n="0454003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0454003">疑＝非ィ【原】</note>
-<note n="0454004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0454004">真＝佛ィ【原】</note>
-<note n="0454005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0454005">里＝重ィ【原】</note>
-<note n="0455001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0455001">芬芬＝芥芥ィ【原】</note>
-<note n="0455002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0455002">困＝因ィ【原】</note>
-<note n="0455003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0455003">貪＝令ィ【原】</note>
+<note n="0448003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0448003">【原】元祿六年刊宗教大學藏本，【甲】元祿七年刊大谷大學藏義山刻本</note>
+<note n="0448004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0448004">得＝皆ィ【原】</note>
+<note n="0448005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0448005">普＝苦ィ【原】</note>
+<note n="0449001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0449001">食＝念ィ【原】</note>
+<note n="0449002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0449002">數億＝億數ィ【原】</note>
+<note n="0450001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0450001">至＝主ィ【原】</note>
+<note n="0450002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0450002">立＝互ィ【原】</note>
+<note n="0450003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0450003">過＝遇ィ【原】</note>
+<note n="0451001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0451001">抃＝挊ィ【原】</note>
+<note n="0451002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0451002">令＝合ィ【原】</note>
+<note n="0452001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0452001">因＝國ィ【原】</note>
+<note n="0452002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0452002">地＝蛇ィ【原】</note>
+<note n="0454001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0454001">現＝見ヵ【原】</note>
+<note n="0454002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0454002">當＝常ィ【原】</note>
+<note n="0454003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0454003">疑＝非ィ【原】</note>
+<note n="0454004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0454004">真＝佛ィ【原】</note>
+<note n="0454005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0454005">里＝重ィ【原】</note>
+<note n="0455001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0455001">芬芬＝芥芥ィ【原】</note>
+<note n="0455002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0455002">困＝因ィ【原】</note>
+<note n="0455003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0455003">貪＝令ィ【原】</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0454a0901" resp="#resp2" type="add" target="#nkr_note_add_0454a0901">趺【CB】，跌【大】</note>
-<note n="0455a1701" resp="#resp2" type="add" target="#nkr_note_add_0455a1701">娑【CB】，裟【大】</note>
+<note n="0454a0901" resp="#resp3" type="add" target="#nkr_note_add_0454a0901">趺【CB】，跌【大】</note>
+<note n="0455a1701" resp="#resp3" type="add" target="#nkr_note_add_0455a1701">娑【CB】，裟【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

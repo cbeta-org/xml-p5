@@ -11,127 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2009/04/23 08:14:35 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:14:35 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 55, No. 2177</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">55</idno>.<idno type="no">2177</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">華嚴宗章疏并因明錄</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-02-01T16:31:29">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T55n2177.xml,v $
-Revision 1.11  2009/04/23 08:14:35  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.10  2006/04/12 22:00:39  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.8  2005/12/03 16:00:23  saywhat
-delete <mulu label>裡的全形括號
-
-Revision 1.7  2004/10/14 03:32:11  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/07/16 09:13:11  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.5  2004/04/20 08:44:40  maha
-「版本日期」標記修訂
-
-Revision 1.4  2003/06/19 03:48:13  eva
-modified: 插入星號校勘
-
-Revision 1.3  2003/05/10 10:04:36  ray
-add <milestone type="juan"/>
-
-Revision 1.2  2003/05/05 06:33:29  eva
-modified
-
-Revision 1.19  2002/12/05 12:53:00  eva
-modified
-
-Revision 1.17  2002/11/11 11:25:18  eva
-modified
-
-Revision 1.14  2002/11/04 11:04:11  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/08/08 06:56:41  eva
-modified
-
-Revision 1.12  2002/07/29 09:47:44  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:50:00  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:23:39  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/27 07:15:48  ray
-去除多餘的 <author>
-
-Revision 1.8  2001/07/24 07:03:44  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/04/12 14:13:25  vinking
-modified <div>
-
-Revision 1.6  2001/04/01 07:56:44  moved
-modified normal
-
-Revision 1.5  2001/03/30 07:18:39  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.4  2001/03/28 02:27:22  luchun147
-標記修改
-
-Revision 1.3  2001/02/07 07:46:51  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:19:00  chris
-Added keywords $Revision: 1.11 $, $Date: 2009/04/23 08:14:35 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-02-01T16:31:29">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -365,142 +308,142 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1133001" to="#end1133001"><lem wit="#wit1">譯</lem><rdg resp="#resp1" wit="#wit2">譯按上三部出華嚴傳</rdg></app>
-<app from="#beg1133002" to="#end1133002"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按古來及東域并無撰名一本云堅慧菩薩造未知所據</note></rdg></app>
-<app from="#beg1133003" to="#end1133003"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按上二部出華嚴傳</rdg></app>
-<app from="#beg1133004" to="#end1133004"><lem wit="#wit1">論</lem><rdg resp="#resp1" wit="#wit2">論按東域等諸錄不出待勘</rdg></app>
-<app from="#beg1133005" to="#end1133005"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按海東云九識章三卷</rdg></app>
-<app from="#beg1133006" to="#end1133006"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域亦云十四恐倒海東珍錄義鏡并云四十</rdg></app>
-<app from="#beg1133007" to="#end1133007"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按猶有或八十卷或百卷不同</rdg></app>
-<app from="#beg1133008" to="#end1133008"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按義鏡云搜玄記五卷亦名方軌亦曰略疏</rdg></app>
-<app from="#beg1133009" to="#end1133009"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域義鏡不出海東通路并云略疏十二卷法藏述恐是</rdg></app>
-<app from="#beg1133010" to="#end1133010"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按上十六部出華嚴傳</rdg></app>
-<app from="#beg1133011" to="#end1133011"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按海東云智儼待勘</rdg></app>
-<app from="#beg1133012" to="#end1133012"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域註賢首教分記云亦云五教分記與杜順撰名同義鏡云五教止觀</rdg></app>
-<app from="#beg1133013" to="#end1133013"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按上四部出華嚴傳</rdg></app>
-<app from="#beg1133014" to="#end1133014"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按內題云華嚴經內章門雜孔目</rdg></app>
-<app from="#beg1133015" to="#end1133015"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按義鏡云五十要問答</rdg></app>
-<app from="#beg1133016" to="#end1133016"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域云或作漩洑或作漩澓十卷</rdg></app>
-<app from="#beg1133017" to="#end1133017"><lem wit="#wit1">數</lem><rdg resp="#resp1" wit="#wit2">數按通路云三寶對辨懸談一卷法藏述逸而不行未知何正</rdg></app>
-<app from="#beg1133018" to="#end1133018"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按一本云亦名五教分記或云一乘教分記</rdg></app>
-<app from="#beg1133019" to="#end1133019"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按上五部出華嚴傳</rdg></app>
-<app from="#beg1133020" to="#end1133020"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域註華嚴綱目云亦云八會綱目章不可別舉八會章通路義鏡亦不出待勘</rdg></app>
-<app from="#beg1133021" to="#end1133021"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按有謂探玄中指唯識章者非法藏自撰指孔目中唯識章耳通路義鏡亦不出待勘</rdg></app>
-<app from="#beg1133022" to="#end1133022"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按亦名義海百門</rdg></app>
-<app from="#beg1133023" to="#end1133023"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按若准通路與上三昧觀同卷</rdg></app>
-<app from="#beg1133024" to="#end1133024"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按義鏡云釋新華嚴</rdg></app>
-<app from="#beg1133025" to="#end1133025"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按華嚴傳標上二部云右不知誰集但鳩集闕略未能備盡今賢首更廣其塵頗為詳悉</note></rdg></app>
-<app from="#beg1133026" to="#end1133026"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按上八部出華嚴傳</rdg></app>
-<app from="#beg1133027" to="#end1133027"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按東域亦亡名</note></rdg></app>
-<app from="#beg1134001" to="#end1134001"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按上二部請來東域並亡名</note></rdg></app>
-<app from="#beg1134002" to="#end1134002"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按請來東域並亡名</note></rdg></app>
-<app from="#beg1134003" to="#end1134003"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按亦名義記</rdg></app>
-<app from="#beg1134004" to="#end1134004"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按准東域此釋新譯論</rdg></app>
-<app from="#beg1134005" to="#end1134005"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域云文與元曉別記同可考</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#1133027"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按東域亦亡名</note></rdg></app>
-<app from="#beg1134006" to="#end1134006"><lem wit="#wit1">矣</lem><rdg resp="#resp1" wit="#wit2">矣按云廬山誤也故東域云華嚴宗錄云廬山近代學者勘續高僧傳隋淨影寺慧遠</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#1133027"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按東域亦亡名</note></rdg></app>
-<app from="#beg1134007" to="#end1134007"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域云道璿</rdg></app>
-<app from="#beg1134008" to="#end1134008"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按通路云起信唯識同異章</rdg></app>
-<app from="#beg1134009" to="#end1134009"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按此一部可入下和書中</rdg></app>
-<app from="#beg1134010" to="#end1134010"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域云亦云鈔多入因明錄</rdg></app>
-<app from="#beg1134011" to="#end1134011"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按海東云宗要</rdg></app>
-<app from="#beg1135001" to="#end1135001"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域云亦云紀衡亦云前記亦云略記</rdg></app>
-<app from="#beg1135002" to="#end1135002"><lem wit="#wit1">述</lem><rdg resp="#resp1" wit="#wit2">述按東域作智頴俊錄作智頻未知何正</rdg></app>
-<app from="#beg1135003" to="#end1135003"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷<note place="inline">按與上別數不符合總別數中恐有寫誤</note></rdg></app>
+<app from="#beg1133001" to="#end1133001"><lem wit="#wit.orig">譯</lem><rdg resp="#resp2" wit="#wit1">譯按上三部出華嚴傳</rdg></app>
+<app from="#beg1133002" to="#end1133002"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按古來及東域并無撰名一本云堅慧菩薩造未知所據</note></rdg></app>
+<app from="#beg1133003" to="#end1133003"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按上二部出華嚴傳</rdg></app>
+<app from="#beg1133004" to="#end1133004"><lem wit="#wit.orig">論</lem><rdg resp="#resp2" wit="#wit1">論按東域等諸錄不出待勘</rdg></app>
+<app from="#beg1133005" to="#end1133005"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按海東云九識章三卷</rdg></app>
+<app from="#beg1133006" to="#end1133006"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域亦云十四恐倒海東珍錄義鏡并云四十</rdg></app>
+<app from="#beg1133007" to="#end1133007"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按猶有或八十卷或百卷不同</rdg></app>
+<app from="#beg1133008" to="#end1133008"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按義鏡云搜玄記五卷亦名方軌亦曰略疏</rdg></app>
+<app from="#beg1133009" to="#end1133009"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域義鏡不出海東通路并云略疏十二卷法藏述恐是</rdg></app>
+<app from="#beg1133010" to="#end1133010"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按上十六部出華嚴傳</rdg></app>
+<app from="#beg1133011" to="#end1133011"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按海東云智儼待勘</rdg></app>
+<app from="#beg1133012" to="#end1133012"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域註賢首教分記云亦云五教分記與杜順撰名同義鏡云五教止觀</rdg></app>
+<app from="#beg1133013" to="#end1133013"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按上四部出華嚴傳</rdg></app>
+<app from="#beg1133014" to="#end1133014"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按內題云華嚴經內章門雜孔目</rdg></app>
+<app from="#beg1133015" to="#end1133015"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按義鏡云五十要問答</rdg></app>
+<app from="#beg1133016" to="#end1133016"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域云或作漩洑或作漩澓十卷</rdg></app>
+<app from="#beg1133017" to="#end1133017"><lem wit="#wit.orig">數</lem><rdg resp="#resp2" wit="#wit1">數按通路云三寶對辨懸談一卷法藏述逸而不行未知何正</rdg></app>
+<app from="#beg1133018" to="#end1133018"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按一本云亦名五教分記或云一乘教分記</rdg></app>
+<app from="#beg1133019" to="#end1133019"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按上五部出華嚴傳</rdg></app>
+<app from="#beg1133020" to="#end1133020"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域註華嚴綱目云亦云八會綱目章不可別舉八會章通路義鏡亦不出待勘</rdg></app>
+<app from="#beg1133021" to="#end1133021"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按有謂探玄中指唯識章者非法藏自撰指孔目中唯識章耳通路義鏡亦不出待勘</rdg></app>
+<app from="#beg1133022" to="#end1133022"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按亦名義海百門</rdg></app>
+<app from="#beg1133023" to="#end1133023"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按若准通路與上三昧觀同卷</rdg></app>
+<app from="#beg1133024" to="#end1133024"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按義鏡云釋新華嚴</rdg></app>
+<app from="#beg1133025" to="#end1133025"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按華嚴傳標上二部云右不知誰集但鳩集闕略未能備盡今賢首更廣其塵頗為詳悉</note></rdg></app>
+<app from="#beg1133026" to="#end1133026"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按上八部出華嚴傳</rdg></app>
+<app from="#beg1133027" to="#end1133027"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按東域亦亡名</note></rdg></app>
+<app from="#beg1134001" to="#end1134001"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按上二部請來東域並亡名</note></rdg></app>
+<app from="#beg1134002" to="#end1134002"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按請來東域並亡名</note></rdg></app>
+<app from="#beg1134003" to="#end1134003"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按亦名義記</rdg></app>
+<app from="#beg1134004" to="#end1134004"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按准東域此釋新譯論</rdg></app>
+<app from="#beg1134005" to="#end1134005"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域云文與元曉別記同可考</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#1133027"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按東域亦亡名</note></rdg></app>
+<app from="#beg1134006" to="#end1134006"><lem wit="#wit.orig">矣</lem><rdg resp="#resp2" wit="#wit1">矣按云廬山誤也故東域云華嚴宗錄云廬山近代學者勘續高僧傳隋淨影寺慧遠</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#1133027"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按東域亦亡名</note></rdg></app>
+<app from="#beg1134007" to="#end1134007"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域云道璿</rdg></app>
+<app from="#beg1134008" to="#end1134008"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按通路云起信唯識同異章</rdg></app>
+<app from="#beg1134009" to="#end1134009"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按此一部可入下和書中</rdg></app>
+<app from="#beg1134010" to="#end1134010"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域云亦云鈔多入因明錄</rdg></app>
+<app from="#beg1134011" to="#end1134011"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按海東云宗要</rdg></app>
+<app from="#beg1135001" to="#end1135001"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域云亦云紀衡亦云前記亦云略記</rdg></app>
+<app from="#beg1135002" to="#end1135002"><lem wit="#wit.orig">述</lem><rdg resp="#resp2" wit="#wit1">述按東域作智頴俊錄作智頻未知何正</rdg></app>
+<app from="#beg1135003" to="#end1135003"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷<note place="inline">按與上別數不符合總別數中恐有寫誤</note></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1133001" resp="#resp2" type="mod" target="#nkr_note_mod_1133001">譯【大】，譯按上三部出華嚴傳【甲】</note>
-<note n="1133002" resp="#resp2" type="mod" target="#nkr_note_mod_1133002">卷【大】，卷<note place="inline">按古來及東域并無撰名一本云堅慧菩薩造未知所據</note>【甲】</note>
-<note n="1133003" resp="#resp2" type="mod" target="#nkr_note_mod_1133003">述【大】，述按上二部出華嚴傳【甲】</note>
-<note n="1133004" resp="#resp2" type="mod" target="#nkr_note_mod_1133004">論【大】，論按東域等諸錄不出待勘【甲】</note>
-<note n="1133005" resp="#resp2" type="mod" target="#nkr_note_mod_1133005">述【大】，述按海東云九識章三卷【甲】</note>
-<note n="1133006" resp="#resp2" type="mod" target="#nkr_note_mod_1133006">述【大】，述按東域亦云十四恐倒海東珍錄義鏡并云四十【甲】</note>
-<note n="1133007" resp="#resp2" type="mod" target="#nkr_note_mod_1133007">述【大】，述按猶有或八十卷或百卷不同【甲】</note>
-<note n="1133008" resp="#resp2" type="mod" target="#nkr_note_mod_1133008">述【大】，述按義鏡云搜玄記五卷亦名方軌亦曰略疏【甲】</note>
-<note n="1133009" resp="#resp2" type="mod" target="#nkr_note_mod_1133009">述【大】，述按東域義鏡不出海東通路并云略疏十二卷法藏述恐是【甲】</note>
-<note n="1133010" resp="#resp2" type="mod" target="#nkr_note_mod_1133010">述【大】，述按上十六部出華嚴傳【甲】</note>
-<note n="1133011" resp="#resp2" type="mod" target="#nkr_note_mod_1133011">述【大】，述按海東云智儼待勘【甲】</note>
-<note n="1133012" resp="#resp2" type="mod" target="#nkr_note_mod_1133012">述【大】，述按東域註賢首教分記云亦云五教分記與杜順撰名同義鏡云五教止觀【甲】</note>
-<note n="1133013" resp="#resp2" type="mod" target="#nkr_note_mod_1133013">述【大】，述按上四部出華嚴傳【甲】</note>
-<note n="1133014" resp="#resp2" type="mod" target="#nkr_note_mod_1133014">述【大】，述按內題云華嚴經內章門雜孔目【甲】</note>
-<note n="1133015" resp="#resp2" type="mod" target="#nkr_note_mod_1133015">述【大】，述按義鏡云五十要問答【甲】</note>
-<note n="1133016" resp="#resp2" type="mod" target="#nkr_note_mod_1133016">述【大】，述按東域云或作漩洑或作漩澓十卷【甲】</note>
-<note n="1133017" resp="#resp2" type="mod" target="#nkr_note_mod_1133017">數【大】，數按通路云三寶對辨懸談一卷法藏述逸而不行未知何正【甲】</note>
-<note n="1133018" resp="#resp2" type="mod" target="#nkr_note_mod_1133018">述【大】，述按一本云亦名五教分記或云一乘教分記【甲】</note>
-<note n="1133019" resp="#resp2" type="mod" target="#nkr_note_mod_1133019">述【大】，述按上五部出華嚴傳【甲】</note>
-<note n="1133020" resp="#resp2" type="mod" target="#nkr_note_mod_1133020">述【大】，述按東域註華嚴綱目云亦云八會綱目章不可別舉八會章通路義鏡亦不出待勘【甲】</note>
-<note n="1133021" resp="#resp2" type="mod" target="#nkr_note_mod_1133021">述【大】，述按有謂探玄中指唯識章者非法藏自撰指孔目中唯識章耳通路義鏡亦不出待勘【甲】</note>
-<note n="1133022" resp="#resp2" type="mod" target="#nkr_note_mod_1133022">述【大】，述按亦名義海百門【甲】</note>
-<note n="1133023" resp="#resp2" type="mod" target="#nkr_note_mod_1133023">述【大】，述按若准通路與上三昧觀同卷【甲】</note>
-<note n="1133024" resp="#resp2" type="mod" target="#nkr_note_mod_1133024">述【大】，述按義鏡云釋新華嚴【甲】</note>
-<note n="1133025" resp="#resp2" type="mod" target="#nkr_note_mod_1133025">卷【大】，卷<note place="inline">按華嚴傳標上二部云右不知誰集但鳩集闕略未能備盡今賢首更廣其塵頗為詳悉</note>【甲】</note>
-<note n="1133026" resp="#resp2" type="mod" target="#nkr_note_mod_1133026">述【大】，述按上八部出華嚴傳【甲】</note>
-<note n="1133027" resp="#resp2" type="mod" target="#nkr_note_mod_1133027">卷【大】＊，卷<note place="inline">按東域亦亡名</note>【甲】＊</note>
-<note n="1134001" resp="#resp2" type="mod" target="#nkr_note_mod_1134001">卷【大】，卷<note place="inline">按上二部請來東域並亡名</note>【甲】</note>
-<note n="1134002" resp="#resp2" type="mod" target="#nkr_note_mod_1134002">卷【大】，卷<note place="inline">按請來東域並亡名</note>【甲】</note>
-<note n="1134003" resp="#resp2" type="mod" target="#nkr_note_mod_1134003">述【大】，述按亦名義記【甲】</note>
-<note n="1134004" resp="#resp2" type="mod" target="#nkr_note_mod_1134004">述【大】，述按准東域此釋新譯論【甲】</note>
-<note n="1134005" resp="#resp2" type="mod" target="#nkr_note_mod_1134005">述【大】，述按東域云文與元曉別記同可考【甲】</note>
-<note n="1134006" resp="#resp2" type="mod" target="#nkr_note_mod_1134006">矣【大】，矣按云廬山誤也故東域云華嚴宗錄云廬山近代學者勘續高僧傳隋淨影寺慧遠【甲】</note>
-<note n="1134007" resp="#resp2" type="mod" target="#nkr_note_mod_1134007">述【大】，述按東域云道璿【甲】</note>
-<note n="1134008" resp="#resp2" type="mod" target="#nkr_note_mod_1134008">述【大】，述按通路云起信唯識同異章【甲】</note>
-<note n="1134009" resp="#resp2" type="mod" target="#nkr_note_mod_1134009">述【大】，述按此一部可入下和書中【甲】</note>
-<note n="1134010" resp="#resp2" type="mod" target="#nkr_note_mod_1134010">述【大】，述按東域云亦云鈔多入因明錄【甲】</note>
-<note n="1134011" resp="#resp2" type="mod" target="#nkr_note_mod_1134011">述【大】，述按海東云宗要【甲】</note>
-<note n="1135001" resp="#resp2" type="mod" target="#nkr_note_mod_1135001">述【大】，述按東域云亦云紀衡亦云前記亦云略記【甲】</note>
-<note n="1135002" resp="#resp2" type="mod" target="#nkr_note_mod_1135002">述【大】，述按東域作智頴俊錄作智頻未知何正【甲】</note>
-<note n="1135003" resp="#resp2" type="mod" target="#nkr_note_mod_1135003">卷【大】，卷<note place="inline">按與上別數不符合總別數中恐有寫誤</note>【甲】</note>
+<note n="1133001" resp="#resp3" type="mod" target="#nkr_note_mod_1133001">譯【大】，譯按上三部出華嚴傳【甲】</note>
+<note n="1133002" resp="#resp3" type="mod" target="#nkr_note_mod_1133002">卷【大】，卷<note place="inline">按古來及東域并無撰名一本云堅慧菩薩造未知所據</note>【甲】</note>
+<note n="1133003" resp="#resp3" type="mod" target="#nkr_note_mod_1133003">述【大】，述按上二部出華嚴傳【甲】</note>
+<note n="1133004" resp="#resp3" type="mod" target="#nkr_note_mod_1133004">論【大】，論按東域等諸錄不出待勘【甲】</note>
+<note n="1133005" resp="#resp3" type="mod" target="#nkr_note_mod_1133005">述【大】，述按海東云九識章三卷【甲】</note>
+<note n="1133006" resp="#resp3" type="mod" target="#nkr_note_mod_1133006">述【大】，述按東域亦云十四恐倒海東珍錄義鏡并云四十【甲】</note>
+<note n="1133007" resp="#resp3" type="mod" target="#nkr_note_mod_1133007">述【大】，述按猶有或八十卷或百卷不同【甲】</note>
+<note n="1133008" resp="#resp3" type="mod" target="#nkr_note_mod_1133008">述【大】，述按義鏡云搜玄記五卷亦名方軌亦曰略疏【甲】</note>
+<note n="1133009" resp="#resp3" type="mod" target="#nkr_note_mod_1133009">述【大】，述按東域義鏡不出海東通路并云略疏十二卷法藏述恐是【甲】</note>
+<note n="1133010" resp="#resp3" type="mod" target="#nkr_note_mod_1133010">述【大】，述按上十六部出華嚴傳【甲】</note>
+<note n="1133011" resp="#resp3" type="mod" target="#nkr_note_mod_1133011">述【大】，述按海東云智儼待勘【甲】</note>
+<note n="1133012" resp="#resp3" type="mod" target="#nkr_note_mod_1133012">述【大】，述按東域註賢首教分記云亦云五教分記與杜順撰名同義鏡云五教止觀【甲】</note>
+<note n="1133013" resp="#resp3" type="mod" target="#nkr_note_mod_1133013">述【大】，述按上四部出華嚴傳【甲】</note>
+<note n="1133014" resp="#resp3" type="mod" target="#nkr_note_mod_1133014">述【大】，述按內題云華嚴經內章門雜孔目【甲】</note>
+<note n="1133015" resp="#resp3" type="mod" target="#nkr_note_mod_1133015">述【大】，述按義鏡云五十要問答【甲】</note>
+<note n="1133016" resp="#resp3" type="mod" target="#nkr_note_mod_1133016">述【大】，述按東域云或作漩洑或作漩澓十卷【甲】</note>
+<note n="1133017" resp="#resp3" type="mod" target="#nkr_note_mod_1133017">數【大】，數按通路云三寶對辨懸談一卷法藏述逸而不行未知何正【甲】</note>
+<note n="1133018" resp="#resp3" type="mod" target="#nkr_note_mod_1133018">述【大】，述按一本云亦名五教分記或云一乘教分記【甲】</note>
+<note n="1133019" resp="#resp3" type="mod" target="#nkr_note_mod_1133019">述【大】，述按上五部出華嚴傳【甲】</note>
+<note n="1133020" resp="#resp3" type="mod" target="#nkr_note_mod_1133020">述【大】，述按東域註華嚴綱目云亦云八會綱目章不可別舉八會章通路義鏡亦不出待勘【甲】</note>
+<note n="1133021" resp="#resp3" type="mod" target="#nkr_note_mod_1133021">述【大】，述按有謂探玄中指唯識章者非法藏自撰指孔目中唯識章耳通路義鏡亦不出待勘【甲】</note>
+<note n="1133022" resp="#resp3" type="mod" target="#nkr_note_mod_1133022">述【大】，述按亦名義海百門【甲】</note>
+<note n="1133023" resp="#resp3" type="mod" target="#nkr_note_mod_1133023">述【大】，述按若准通路與上三昧觀同卷【甲】</note>
+<note n="1133024" resp="#resp3" type="mod" target="#nkr_note_mod_1133024">述【大】，述按義鏡云釋新華嚴【甲】</note>
+<note n="1133025" resp="#resp3" type="mod" target="#nkr_note_mod_1133025">卷【大】，卷<note place="inline">按華嚴傳標上二部云右不知誰集但鳩集闕略未能備盡今賢首更廣其塵頗為詳悉</note>【甲】</note>
+<note n="1133026" resp="#resp3" type="mod" target="#nkr_note_mod_1133026">述【大】，述按上八部出華嚴傳【甲】</note>
+<note n="1133027" resp="#resp3" type="mod" target="#nkr_note_mod_1133027">卷【大】＊，卷<note place="inline">按東域亦亡名</note>【甲】＊</note>
+<note n="1134001" resp="#resp3" type="mod" target="#nkr_note_mod_1134001">卷【大】，卷<note place="inline">按上二部請來東域並亡名</note>【甲】</note>
+<note n="1134002" resp="#resp3" type="mod" target="#nkr_note_mod_1134002">卷【大】，卷<note place="inline">按請來東域並亡名</note>【甲】</note>
+<note n="1134003" resp="#resp3" type="mod" target="#nkr_note_mod_1134003">述【大】，述按亦名義記【甲】</note>
+<note n="1134004" resp="#resp3" type="mod" target="#nkr_note_mod_1134004">述【大】，述按准東域此釋新譯論【甲】</note>
+<note n="1134005" resp="#resp3" type="mod" target="#nkr_note_mod_1134005">述【大】，述按東域云文與元曉別記同可考【甲】</note>
+<note n="1134006" resp="#resp3" type="mod" target="#nkr_note_mod_1134006">矣【大】，矣按云廬山誤也故東域云華嚴宗錄云廬山近代學者勘續高僧傳隋淨影寺慧遠【甲】</note>
+<note n="1134007" resp="#resp3" type="mod" target="#nkr_note_mod_1134007">述【大】，述按東域云道璿【甲】</note>
+<note n="1134008" resp="#resp3" type="mod" target="#nkr_note_mod_1134008">述【大】，述按通路云起信唯識同異章【甲】</note>
+<note n="1134009" resp="#resp3" type="mod" target="#nkr_note_mod_1134009">述【大】，述按此一部可入下和書中【甲】</note>
+<note n="1134010" resp="#resp3" type="mod" target="#nkr_note_mod_1134010">述【大】，述按東域云亦云鈔多入因明錄【甲】</note>
+<note n="1134011" resp="#resp3" type="mod" target="#nkr_note_mod_1134011">述【大】，述按海東云宗要【甲】</note>
+<note n="1135001" resp="#resp3" type="mod" target="#nkr_note_mod_1135001">述【大】，述按東域云亦云紀衡亦云前記亦云略記【甲】</note>
+<note n="1135002" resp="#resp3" type="mod" target="#nkr_note_mod_1135002">述【大】，述按東域作智頴俊錄作智頻未知何正【甲】</note>
+<note n="1135003" resp="#resp3" type="mod" target="#nkr_note_mod_1135003">卷【大】，卷<note place="inline">按與上別數不符合總別數中恐有寫誤</note>【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1132013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1132013">寬政二年刊諸宗章疏錄</note>
-<note n="1133001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133001">譯＋（按上三部出華嚴傳）【甲】</note>
-<note n="1133002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133002">卷＋（按古來及東域并無撰名一本云堅慧菩薩造未知所據）細註【甲】</note>
-<note n="1133003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133003">述＋（按上二部出華嚴傳）【甲】</note>
-<note n="1133004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133004">論＋（按東域等諸錄不出待勘）【甲】</note>
-<note n="1133005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133005">述＋（按海東云九識章三卷）【甲】</note>
-<note n="1133006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133006">述＋（按東域亦云十四恐倒海東珍錄義鏡并云四十）【甲】</note>
-<note n="1133007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133007">述＋（按猶有或八十卷或百卷不同）【甲】</note>
-<note n="1133008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133008">述＋（按義鏡云搜玄記五卷亦名方軌亦曰略疏）【甲】</note>
-<note n="1133009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133009">述＋（按東域義鏡不出海東通路并云略疏十二卷法藏述恐是）【甲】</note>
-<note n="1133010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133010">述＋（按上十六部出華嚴傳）【甲】</note>
-<note n="1133011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133011">述＋（按海東云智儼待勘）【甲】</note>
-<note n="1133012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133012">述＋（按東域註賢首教分記云亦云五教分記與杜順撰名同義鏡云五教止觀）【甲】</note>
-<note n="1133013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133013">述＋（按上四部出華嚴傳）【甲】</note>
-<note n="1133014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133014">述＋（按內題云華嚴經內章門雜孔目）【甲】</note>
-<note n="1133015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133015">述＋（按義鏡云五十要問答）【甲】</note>
-<note n="1133016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133016">述＋（按東域云或作漩洑或作漩澓十卷）【甲】</note>
-<note n="1133017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133017">數＋（按通路云三寶對辨懸談一卷法藏述逸而不行未知何正）【甲】</note>
-<note n="1133018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133018">述＋（按一本云亦名五教分記或云一乘教分記）【甲】</note>
-<note n="1133019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133019">述＋（按上五部出華嚴傳）【甲】</note>
-<note n="1133020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133020">述＋（按東域註華嚴綱目云亦云八會綱目章不可別舉八會章通路義鏡亦不出待勘）【甲】</note>
-<note n="1133021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133021">述＋（按有謂探玄中指唯識章者非法藏自撰指孔目中唯識章耳通路義鏡亦不出待勘）【甲】</note>
-<note n="1133022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133022">述＋（按亦名義海百門）【甲】</note>
-<note n="1133023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133023">述＋（按若准通路與上三昧觀同卷）【甲】</note>
-<note n="1133024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133024">述＋（按義鏡云釋新華嚴）【甲】</note>
-<note n="1133025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133025">卷＋（按華嚴傳標上二部云右不知誰集但鳩集闕略未能備盡今賢首更廣其塵頗為詳悉）細註【甲】</note>
-<note n="1133026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133026">述＋（按上八部出華嚴傳）【甲】</note>
-<note n="1133027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1133027">卷＋（按東域亦亡名）細註【甲】＊</note>
-<note n="1134001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134001">卷＋（按上二部請來東域並亡名）細註【甲】</note>
-<note n="1134002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134002">卷＋（按請來東域並亡名）細註【甲】</note>
-<note n="1134003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134003">述＋（按亦名義記）【甲】</note>
-<note n="1134004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134004">述＋（按准東域此釋新譯論）【甲】</note>
-<note n="1134005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134005">述＋（按東域云文與元曉別記同可考）【甲】</note>
-<note n="1134006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134006">矣＋（按云廬山誤也故東域云華嚴宗錄云廬山近代學者勘續高僧傳隋淨影寺慧遠）【甲】</note>
-<note n="1134007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134007">述＋（按東域云道璿）【甲】</note>
-<note n="1134008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134008">述＋（按通路云起信唯識同異章）【甲】</note>
-<note n="1134009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134009">述＋（按此一部可入下和書中）【甲】</note>
-<note n="1134010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134010">述＋（按東域云亦云鈔多入因明錄）【甲】</note>
-<note n="1134011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1134011">述＋（按海東云宗要）【甲】</note>
-<note n="1135001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135001">述＋（按東域云亦云紀衡亦云前記亦云略記）【甲】</note>
-<note n="1135002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135002">述＋（按東域作智頴俊錄作智頻未知何正）【甲】</note>
-<note n="1135003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1135003">卷＋（按與上別數不符合總別數中恐有寫誤）細註【甲】</note>
+<note n="1132013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1132013">寬政二年刊諸宗章疏錄</note>
+<note n="1133001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133001">譯＋（按上三部出華嚴傳）【甲】</note>
+<note n="1133002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133002">卷＋（按古來及東域并無撰名一本云堅慧菩薩造未知所據）細註【甲】</note>
+<note n="1133003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133003">述＋（按上二部出華嚴傳）【甲】</note>
+<note n="1133004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133004">論＋（按東域等諸錄不出待勘）【甲】</note>
+<note n="1133005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133005">述＋（按海東云九識章三卷）【甲】</note>
+<note n="1133006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133006">述＋（按東域亦云十四恐倒海東珍錄義鏡并云四十）【甲】</note>
+<note n="1133007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133007">述＋（按猶有或八十卷或百卷不同）【甲】</note>
+<note n="1133008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133008">述＋（按義鏡云搜玄記五卷亦名方軌亦曰略疏）【甲】</note>
+<note n="1133009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133009">述＋（按東域義鏡不出海東通路并云略疏十二卷法藏述恐是）【甲】</note>
+<note n="1133010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133010">述＋（按上十六部出華嚴傳）【甲】</note>
+<note n="1133011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133011">述＋（按海東云智儼待勘）【甲】</note>
+<note n="1133012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133012">述＋（按東域註賢首教分記云亦云五教分記與杜順撰名同義鏡云五教止觀）【甲】</note>
+<note n="1133013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133013">述＋（按上四部出華嚴傳）【甲】</note>
+<note n="1133014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133014">述＋（按內題云華嚴經內章門雜孔目）【甲】</note>
+<note n="1133015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133015">述＋（按義鏡云五十要問答）【甲】</note>
+<note n="1133016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133016">述＋（按東域云或作漩洑或作漩澓十卷）【甲】</note>
+<note n="1133017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133017">數＋（按通路云三寶對辨懸談一卷法藏述逸而不行未知何正）【甲】</note>
+<note n="1133018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133018">述＋（按一本云亦名五教分記或云一乘教分記）【甲】</note>
+<note n="1133019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133019">述＋（按上五部出華嚴傳）【甲】</note>
+<note n="1133020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133020">述＋（按東域註華嚴綱目云亦云八會綱目章不可別舉八會章通路義鏡亦不出待勘）【甲】</note>
+<note n="1133021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133021">述＋（按有謂探玄中指唯識章者非法藏自撰指孔目中唯識章耳通路義鏡亦不出待勘）【甲】</note>
+<note n="1133022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133022">述＋（按亦名義海百門）【甲】</note>
+<note n="1133023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133023">述＋（按若准通路與上三昧觀同卷）【甲】</note>
+<note n="1133024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133024">述＋（按義鏡云釋新華嚴）【甲】</note>
+<note n="1133025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133025">卷＋（按華嚴傳標上二部云右不知誰集但鳩集闕略未能備盡今賢首更廣其塵頗為詳悉）細註【甲】</note>
+<note n="1133026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133026">述＋（按上八部出華嚴傳）【甲】</note>
+<note n="1133027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1133027">卷＋（按東域亦亡名）細註【甲】＊</note>
+<note n="1134001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134001">卷＋（按上二部請來東域並亡名）細註【甲】</note>
+<note n="1134002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134002">卷＋（按請來東域並亡名）細註【甲】</note>
+<note n="1134003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134003">述＋（按亦名義記）【甲】</note>
+<note n="1134004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134004">述＋（按准東域此釋新譯論）【甲】</note>
+<note n="1134005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134005">述＋（按東域云文與元曉別記同可考）【甲】</note>
+<note n="1134006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134006">矣＋（按云廬山誤也故東域云華嚴宗錄云廬山近代學者勘續高僧傳隋淨影寺慧遠）【甲】</note>
+<note n="1134007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134007">述＋（按東域云道璿）【甲】</note>
+<note n="1134008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134008">述＋（按通路云起信唯識同異章）【甲】</note>
+<note n="1134009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134009">述＋（按此一部可入下和書中）【甲】</note>
+<note n="1134010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134010">述＋（按東域云亦云鈔多入因明錄）【甲】</note>
+<note n="1134011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1134011">述＋（按海東云宗要）【甲】</note>
+<note n="1135001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135001">述＋（按東域云亦云紀衡亦云前記亦云略記）【甲】</note>
+<note n="1135002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135002">述＋（按東域作智頴俊錄作智頻未知何正）【甲】</note>
+<note n="1135003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1135003">卷＋（按與上別數不符合總別數中恐有寫誤）細註【甲】</note>
 </p>
 </cb:div>
 </back></text></TEI>

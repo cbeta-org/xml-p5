@@ -11,85 +11,102 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.22 $<date>$Date: 2010/10/28 07:59:01 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2010/10/28 07:59:01 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 47, No. 1986A</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-		<witness xml:id="wit3">【原】</witness>
-		<witness xml:id="wit4">【CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Electronic Buddhadharma Society (EBS), Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，佛教電腦資訊庫功德會提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB01403">
-	<charName>CBETA CHARACTER CB01403</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[囗@力]</value>
-	</charProp>
-	<mapping type="unicode">U+361E</mapping>
-	<mapping cb:dec="984443" type="PUA">U+F057B</mapping>
-</char>
-<char xml:id="CB04622">
-	<charName>CBETA CHARACTER CB04622</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[邱-丘+(厂@墨)]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>廛</value>
-	</charProp>
-	<mapping cb:dec="987662" type="PUA">U+F120E</mapping>
-</char>
-<char xml:id="CB05240">
-	<charName>CBETA CHARACTER CB05240</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[彖*頁]</value>
-	</charProp>
-	<mapping type="unicode">U+29502</mapping>
-	<mapping cb:dec="988280" type="PUA">U+F1478</mapping>
-</char>
-<char xml:id="CB05271">
-	<charName>CBETA CHARACTER CB05271</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[泳-永+防]</value>
-	</charProp>
-	<mapping type="unicode">U+2DC24</mapping>
-	<mapping cb:dec="988311" type="PUA">U+F1497</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">47</idno>.<idno type="no">1986A</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">筠州洞山悟本禪師語錄</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Electronic Buddhadharma Society (EBS), Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，佛教電腦資訊庫功德會提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+						<witness xml:id="wit2">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB01403">
+				<charName>CBETA CHARACTER CB01403</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[囗@力]</value>
+				</charProp>
+				<mapping type="unicode">U+361E</mapping>
+				<mapping cb:dec="984443" type="PUA">U+F057B</mapping>
+			</char>
+			<char xml:id="CB04622">
+				<charName>CBETA CHARACTER CB04622</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[邱-丘+(厂@墨)]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>廛</value>
+				</charProp>
+				<mapping cb:dec="987662" type="PUA">U+F120E</mapping>
+			</char>
+			<char xml:id="CB05240">
+				<charName>CBETA CHARACTER CB05240</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[彖*頁]</value>
+				</charProp>
+				<mapping type="unicode">U+29502</mapping>
+				<mapping cb:dec="988280" type="PUA">U+F1478</mapping>
+			</char>
+			<char xml:id="CB05271">
+				<charName>CBETA CHARACTER CB05271</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[泳-永+防]</value>
+				</charProp>
+				<mapping type="unicode">U+2DC24</mapping>
+				<mapping cb:dec="988311" type="PUA">U+F1497</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 			<language ident="en">English</language>
 		</langUsage>
 	</profileDesc>
@@ -97,115 +114,10 @@
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-08-10T15:07:54">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T47n1986A.xml,v $
-Revision 1.22  2010/10/28 07:59:01  eva
-modified: resp CBETA．eva  修訂成 CBETA.eva
-
-Revision 1.21  2009/04/23 08:12:36  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.20  2009/01/01 02:14:23  saywhat
-p0512a29 [樂>藥]山
-
-Revision 1.19  2007/01/04 11:54:58  saywhat
-p0517a15,p0518b17 rend裡的空格改以margin-left表示
-
-Revision 1.18  2006/04/12 21:58:54  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.16  2006/03/08 06:55:45  saywhat
-CI0010 改成 琅&CB04712;
-
-Revision 1.15  2004/11/14 03:18:07  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.14  2004/10/31 15:24:45  saywhat
-段落前加入圈點
-
-Revision 1.13  2004/10/30 03:03:47  saywhat
-p0516a08 added <div2><mulu><head>
-
-Revision 1.12  2004/07/16 09:12:55  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.11  2004/06/12 12:42:19  saywhat
-修訂<div1 type="xu">包含<juan>的問題
-
-Revision 1.10  2004/04/20 08:42:57  maha
-「版本日期」標記修訂
-
-Revision 1.9  2004/01/02 05:55:29  maha
-<note mod>裡的corr2app
-
-Revision 1.8  2003/11/30 23:50:16  saywhat
-en=>eng , zh=>chi
-
-Revision 1.7  2003/11/14 07:34:21  eva
-modified
-
-Revision 1.6  2003/06/25 06:26:49  eva
-modified: 執行 corr2app.pl
-
-Revision 1.5  2003/06/25 05:45:16  eva
-modified: copy corr2app 前備份
-
-Revision 1.3  2003/06/19 03:47:20  eva
-modified: 插入星號校勘
-
-Revision 1.2  2003/05/05 06:31:29  eva
-modified
-
-Revision 1.22  2002/12/06 10:15:41  eva
-modified
-
-Revision 1.21  2002/12/05 12:37:51  eva
-modified
-
-Revision 1.20  2002/11/04 10:58:39  ray
-tei.2 => TEI.2
-
-Revision 1.19  2002/10/21 08:21:25  ray
-移動 <anchor>+<note>, <anchor>+雙圈
-
-Revision 1.18  2002/10/07 13:28:44  moved
-modified
-
-Revision 1.17  2002/04/08 09:42:50  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.16  2001/12/10 07:19:08  vinking
-modified heaven CD8
-
-Revision 1.15  2001/11/05 06:20:39  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.14  2001/07/24 07:00:47  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.13  2001/06/28 12:07:55  vinking
-modified for app
-
-Revision 1.12  2001/04/07 08:59:51  ray
-no message
-
-Revision 1.11  2001/03/30 06:32:15  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.10  2001/03/25 10:36:05  ray
-add <milestone>
-
-Revision 1.9  2001/02/07 07:24:00  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.8  2001/02/03 08:08:19  chris
-Added keywords $Revision: 1.22 $, $Date: 2010/10/28 07:59:01 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-08-10T15:07:54">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -1324,391 +1236,391 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0507003" to="#end0507003"><lem wit="#wit1">曰</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0507004" to="#end0507004"><lem wit="#wit1">日</lem><rdg resp="#resp1" wit="#wit3 #wit2" type="variantRemark">月</rdg></app>
-<app from="#beg0507005" to="#end0507005"><lem wit="#wit1">特</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">犢</rdg></app>
-<app from="#beg0507006" to="#end0507006"><lem wit="#wit1">自是和尚</lem><rdg resp="#resp1" wit="#wit2">何以</rdg></app>
-<app from="#beg0508001" to="#end0508001"><lem wit="#wit1">近前曰</lem><rdg resp="#resp1" wit="#wit2">問</rdg></app>
-<app from="#beg0508002" to="#end0508002"><lem wit="#wit1">一尼</lem><rdg resp="#resp1" wit="#wit2">尼眾</rdg></app>
-<app from="#beg0508003" to="#end0508003"><lem wit="#wit1">這</lem><rdg resp="#resp1" wit="#wit2">這箇</rdg></app>
-<app from="#beg0508004" to="#end0508004"><lem wit="#wit1">良久</lem><rdg resp="#resp1" wit="#wit2">沈吟</rdg></app>
-<app from="#beg0508005" to="#end0508005"><lem wit="#wit1">細</lem><rdg resp="#resp1" wit="#wit2">細師猶涉疑</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0507003"><lem wit="#wit1">曰</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="36" from="#beg0508006" to="#end0508006"><lem wit="#wit1">師侍雲巖。巖問。如何是价子神通妙用。師<lb n="0508b03" ed="T"/>叉手近前而立。又問。如何是神通妙用。師便<lb n="0508b04" ed="T"/>珍重出</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0508007" to="#end0508007"><lem wit="#wit1">合</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="10" from="#beg0508008" to="#end0508008"><lem wit="#wit1">曹山後聞乃云。一子親得</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">曹山後聞乃云一子親得</note></rdg></app>
-<app from="#beg0508009" to="#end0508009"><lem wit="#wit1">師</lem><rdg resp="#resp1" wit="#wit2">師初</rdg></app>
-<app from="#beg0508010" to="#end0508010"><lem wit="#wit1">它且</lem><rdg resp="#resp1" wit="#wit2">渠</rdg></app>
-<app from="#beg0508011" to="#end0508011"><lem wit="#wit1">它亦</lem><rdg resp="#resp1" wit="#wit2">渠</rdg></app>
-<app cb:word-count="16" from="#beg0508012" to="#end0508012"><lem wit="#wit1">保福云。洞山自是一家。乃<lb n="0508c01" ed="T"/>別云。覓得幾人</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">保福云洞山自是一家乃別云覓得幾人</note></rdg></app>
-<app from="#beg0508013" to="#end0508013"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">薯</rdg></app>
-<app from="#beg0508014" to="#end0508014"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">龍</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0508014"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">龍</rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0508014"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">龍</rdg></app>
-<app from="#beg_4" to="#end_4" corresp="#0508014"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">龍</rdg></app>
-<app from="#beg_5" to="#end_5" corresp="#0508014"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">龍</rdg></app>
-<app from="#beg_6" to="#end_6" corresp="#0508014"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">龍</rdg></app>
-<app from="#beg_7" to="#end_7" corresp="#0508014"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">龍</rdg></app>
-<app from="#beg0509001" to="#end0509001"><lem wit="#wit1">似</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">次</rdg></app>
-<app cb:word-count="11" from="#beg0509002" to="#end0509002"><lem wit="#wit1">法眼<lb n="0509a25" ed="T"/>代云。恁麼則弟子不註</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">法眼代云恁麼則弟子不註</note></rdg></app>
-<app from="#beg0509003" to="#end0509003"><lem wit="#wit1">柏巖</lem><rdg resp="#resp1" wit="#wit2">百顏</rdg></app>
-<app from="#beg0509004" to="#end0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_8" to="#end_8" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_9" to="#end_9" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_a" to="#end_a" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_b" to="#end_b" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_c" to="#end_c" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_d" to="#end_d" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_e" to="#end_e" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg_f" to="#end_f" corresp="#0509004"><lem wit="#wit1">巖</lem><rdg resp="#resp1" wit="#wit2">顏</rdg></app>
-<app from="#beg0509005" to="#end0509005"><lem wit="#wit1">夏</lem><rdg resp="#resp1" wit="#wit2">夏<note place="inline">此語諸本誤改易文字還作混尊卑語又開粥下加飯字最不可也</note></rdg></app>
-<app from="#beg0509007" to="#end0509007"><lem wit="#wit1">洎</lem><rdg resp="#resp1" wit="#wit2">幾</rdg></app>
-<app cb:word-count="20" from="#beg0509008" to="#end0509008"><lem wit="#wit1">長慶云。既知有。為甚麼恁麼道。又云。養子<lb n="0509b16" ed="T"/>方知父慈</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">長慶云既知有為甚麼恁麼道又云養子方知父慈</note></rdg></app>
-<app from="#beg0509009" to="#end0509009"><lem wit="#wit1">佛</lem><rdg resp="#resp1" wit="#wit2">亦不為佛</rdg></app>
-<app from="#beg0509010" to="#end0509010"><lem wit="#wit1">牙</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">涯</rdg></app>
-<app cb:word-count="44" from="#beg0509011" to="#end0509011"><lem wit="#wit1">雲居代云。恁<lb n="0509b27" ed="T"/>麼則不見和尚本來師也。僧問長慶。如何是<lb n="0509b28" ed="T"/>年牙相似者。慶云。古人恁麼道。闍黎又向這<lb n="0509b29" ed="T"/>裏覓箇甚麼</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">雲居代云恁麼則不見和尚本來師也僧問長慶如何是年牙相似者慶云古人恁麼道闍黎又向這裏覓箇甚麼</note></rdg></app>
-<app cb:word-count="64" from="#beg0509012" to="#end0509012"><lem wit="#wit1">因有官人設齋施淨財。請師看轉大藏經。師<lb n="0509c02" ed="T"/>下禪床向官人揖。官人揖師。師引官人俱遶<lb n="0509c03" ed="T"/>禪床一匝。向官人揖。良久曰。會麼。云不會。<lb n="0509c04" ed="T"/>師曰。我與汝看轉大藏經。如何不會</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0509013" to="#end0509013"><lem wit="#wit1">佛言教</lem><rdg resp="#resp1" wit="#wit2">教佛教</rdg></app>
-<app from="#beg0510001" to="#end0510001"><lem wit="#wit1">玄旨</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="39" from="#beg0510002" to="#end0510002"><lem wit="#wit1">後僧問曹山。如何是一老。<lb n="0510a21" ed="T"/>山云。不扶持。云如何是一不老。山云枯木。僧<lb n="0510a22" ed="T"/>又舉似逍遙忠。忠云。三從六義</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">後僧問曹山如何是一老山云不扶持云如何是一不老山云枯木僧又舉似逍遙忠忠云三從六義</note></rdg></app>
-<app from="#beg0510003" to="#end0510003"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit2">別云大</rdg></app>
-<app cb:word-count="15" from="#beg0510004" to="#end0510004"><lem wit="#wit1">後明安曰。直是不出門。亦<lb n="0510b03" ed="T"/>是草漫漫地</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="12" from="#beg0510005" to="#end0510005"><lem wit="#wit1">又曰。得力須<lb n="0510b07" ed="T"/>忘飽。休糧更不飢</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="12" from="#beg0510006" to="#end0510006"><lem wit="#wit1">又曰。只知朱紫貴。孤負本來人</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="12" from="#beg0510007" to="#end0510007"><lem wit="#wit1">又曰。撒<lb n="0510b10" ed="T"/>手端然坐。白雲幽處閒</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="12" from="#beg0510008" to="#end0510008"><lem wit="#wit1">又曰。素粉難沈跡。長安不久居</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="18" from="#beg0510009" to="#end0510009"><lem wit="#wit1">又曰。混然無諱處。<lb n="0510b13" ed="T"/>此外更何求<note place="inline">偈頌至下記志</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0510010" to="#end0510010"><lem wit="#wit1">齋</lem><rdg resp="#resp1" wit="#wit2">齋<note place="inline">曹山曰如今人如佛味祖味盡為滯著</note></rdg></app>
-<app cb:word-count="28" from="#beg0510011" to="#end0510011"><lem wit="#wit1">保福別云<lb n="0510b18" ed="T"/>佛非。雲門云。名不得狀不得。所以言非。法眼<lb n="0510b19" ed="T"/>別云。方便呼為佛</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">保福別云佛非雲門云名不得狀不得所以言非法眼別云方便呼為佛</note></rdg></app>
-<app from="#beg0510012" to="#end0510012"><lem wit="#wit1">師</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="17" from="#beg0510013" to="#end0510013"><lem wit="#wit1">雲門云。拄杖但喚作拄杖。一切但喚作<lb n="0510b21" ed="T"/>一切</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">雲門云拄杖但喚作拄杖一切但喚作一切</note></rdg></app>
-<app from="#beg0510014" to="#end0510014"><lem wit="#wit1">僧</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_10" to="#end_10" corresp="#0510014"><lem wit="#wit1">僧</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="42" from="#beg0510015" to="#end0510015"><lem wit="#wit1">僧問曹山。先師道。吾常於此切。意<lb n="0510b26" ed="T"/>作麼生。山云。要頭便斫去。又問雪峯。峯以拄<lb n="0510b27" ed="T"/>杖劈口打云。我亦曾到洞山來</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">僧問曹山先師道吾常於此切意作麼生山云要頭便斫去又問雪峯峯以拄杖劈口打云我亦曾到洞山來</note></rdg></app>
-<app from="#beg0511001" to="#end0511001"><lem wit="#wit1">節</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">夜</rdg></app>
-<app from="#beg0511002" to="#end0511002"><lem wit="#wit1">泰首座</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">太長老</rdg></app>
-<app from="#beg0511006" to="#end0511006"><lem wit="#wit1">私</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">絲</rdg></app>
-<app from="#beg0511007" to="#end0511007"><lem wit="#wit1">無對。趙州代僧</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0511008" to="#end0511008"><lem wit="#wit1">若</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0511010" to="#end0511010"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">山之</rdg></app>
-<app cb:word-count="266" from="#beg0511011" to="#end0511011"><lem wit="#wit1">意上座問。如如遍居前。不如如遍居前。師<lb n="0511b14" ed="T"/>曰。如如遍居前。不如如遍亦居前。意云。如如<lb n="0511b15" ed="T"/>遍分其優劣。不如如遍分其優劣。師曰。如如<lb n="0511b16" ed="T"/>遍分其優劣。不如如遍亦分其優劣。意云。何<lb n="0511b17" ed="T"/>分彼此。師曰。亦分不分。意云。如何是分。師<lb n="0511b18" ed="T"/>曰。如如遍。意云。如何是不分。師曰。不如如<lb n="0511b19" ed="T"/>遍。意云。莫便是通身不通身邊事。師曰。不是<lb n="0511b20" ed="T"/>者箇道理。意云。是甚麼道理。師曰。是如如遍<lb n="0511b21" ed="T"/>不如如遍道理。復曰。意上座欲知麼。一似八<lb n="0511b22" ed="T"/>十老婆嫁與三歲兒子。年雖長大。要且被他<lb n="0511b23" ed="T"/>三歲兒子索喚不得自由。後僧舉問曹山。如<lb n="0511b24" ed="T"/>何是八十老婆。山曰。紛紛白髮連頭雪。僧云。<lb n="0511b25" ed="T"/>如何是三歲兒子。山曰。不為主。僧云。為甚麼<lb n="0511b26" ed="T"/>不為主。山曰。不見道。三歲兒子一切過不得。<lb n="0511b27" ed="T"/>僧云。既是八十老婆。為甚麼嫁他三歲兒子。<lb n="0511b28" ed="T"/>山曰。直得似八十老婆。始解奉重他</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0511012" to="#end0511012"><lem wit="#wit1">羅</lem><rdg resp="#resp1" wit="#wit2">羅<note place="inline">東禪齊拈云此還有疑訛也無若有且道甚麼處不得若無他又道最苦是新羅還點檢出麼他道行則不無有覺即乖却令再問是其麼行又道佛行那僧是會了問不會了問請斷看</note></rdg></app>
-<app from="#beg0511c0801" to="#end0511c0801"><lem wit="#wit4" resp="#resp3">掐<note type="cf1">T47n1986Bp0523b15</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0511c0802" to="#end0511c0802"><lem wit="#wit4" resp="#resp3">掐<note type="cf1">T47n1986Bp0523b15</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0512001" to="#end0512001"><lem wit="#wit1">便</lem><rdg resp="#resp1" wit="#wit2">便即</rdg></app>
-<app from="#beg0512002" to="#end0512002"><lem wit="#wit1">僧</lem><rdg resp="#resp1" wit="#wit2">師因僧</rdg></app>
-<app cb:word-count="13" from="#beg0512003" to="#end0512003"><lem wit="#wit1">法眼別云。和尚若去。某甲提笠子</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">法眼別云和尚若去某甲提笠子</note></rdg></app>
-<app cb:word-count="35" from="#beg0512004" to="#end0512004"><lem wit="#wit1">雲<lb n="0512a23" ed="T"/>居云。行時無說路。說時無行路。不說不行時<lb n="0512a24" ed="T"/>合行什麼路。樂普云。行說俱不到即本事在</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">雲居云行時無說路說時無行路不說不行時合行什麼路樂普云行說俱不到即本事在</note></rdg></app>
-<app from="#beg0512005" to="#end0512005"><lem wit="#wit1">師</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="12" from="#beg0512006" to="#end0512006"><lem wit="#wit1">道吾代云滿也。雲巖云。湛湛地</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0512007" to="#end0512007"><lem wit="#wit1">舉</lem><rdg resp="#resp1" wit="#wit2">舉示眾曰</rdg></app>
-<app from="#beg0512a2901" to="#end0512a2901"><lem wit="#wit4" resp="#resp3">藥<note type="cf1">T47n1986Bp0525b14</note><note type="cf2">X66n1297_p0620b14</note></lem><rdg wit="#wit1">樂</rdg></app>
-<app from="#beg0512008" to="#end0512008"><lem wit="#wit1">在</lem><rdg resp="#resp1" wit="#wit2">在舉無著和尚因日勉遂問文殊云擬投一宿得否殊云爾有執心在不得此宿著云某甲無執心殊云爾受戒否著云受戒久矣殊云爾若無執心何用受戒著遂辭遏均提童子送著出著云適來和尚道前三三後三三是多少童子召云大德著回首童子云是多少師曰欲觀其父先觀其子</rdg></app>
-<app from="#beg0512011" to="#end0512011"><lem wit="#wit1">著</lem><rdg resp="#resp1" wit="#wit2">著曰</rdg></app>
-<app from="#beg0512012" to="#end0512012"><lem wit="#wit1">否</lem><rdg resp="#resp1" wit="#wit2">否石霜因僧問咫尺之間為甚不覩師顏霜曰我道遍界不曾藏僧後問雪峰遍界不曾藏意旨如何峰云什麼處不是石霜僧回舉似霜霜曰這老漢有什麼死急師聞曰笑殺土地西園一日自開俗次僧問何不使沙彌園乃撫掌三下師曰一種是時節因緣就中西園精妙</rdg></app>
-<app from="#beg0512013" to="#end0512013"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">山寶積禪師</rdg></app>
-<app from="#beg0512014" to="#end0512014"><lem wit="#wit1">舉</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app cb:word-count="11" from="#beg0512015" to="#end0512015"><lem wit="#wit1">雲巖曰。坐則佛。<lb n="0512b29" ed="T"/>不坐則非佛</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0512016" to="#end0512016"><lem wit="#wit1">瀧</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">霜</rdg></app>
-<app from="#beg0512017" to="#end0512017"><lem wit="#wit1">几</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">向</rdg></app>
-<app from="#beg0512018" to="#end0512018"><lem wit="#wit1">太</lem><rdg resp="#resp1" wit="#wit2">大</rdg></app>
-<app from="#beg0513001" to="#end0513001"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit3 #wit2" type="variantRemark">生</rdg></app>
-<app cb:word-count="10" from="#beg0513002" to="#end0513002"><lem wit="#wit1">自爾洞山許為室中領袖</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0513003" to="#end0513003"><lem wit="#wit1">謁</lem><rdg resp="#resp1" wit="#wit2">謁師</rdg></app>
-<app from="#beg0513004" to="#end0513004"><lem wit="#wit1">山</lem><rdg resp="#resp1" wit="#wit2">曹</rdg></app>
-<app from="#beg0513005" to="#end0513005"><lem wit="#wit1">曰古佛</lem><rdg resp="#resp1" wit="#wit2">深肯之</rdg></app>
-<app from="#beg0513006" to="#end0513006"><lem wit="#wit1">云</lem><rdg resp="#resp1" wit="#wit2">曹云</rdg></app>
-<app from="#beg_11" to="#end_11" corresp="#0513006"><lem wit="#wit1">云</lem><rdg resp="#resp1" wit="#wit2">曹云</rdg></app>
-<app from="#beg_12" to="#end_12" corresp="#0513006"><lem wit="#wit1">云</lem><rdg resp="#resp1" wit="#wit2">曹云</rdg></app>
-<app from="#beg_13" to="#end_13" corresp="#0513006"><lem wit="#wit1">云</lem><rdg resp="#resp1" wit="#wit2">曹云</rdg></app>
-<app from="#beg_14" to="#end_14" corresp="#0513006"><lem wit="#wit1">云</lem><rdg resp="#resp1" wit="#wit2">曹云</rdg></app>
-<app from="#beg0513007" to="#end0513007"><lem wit="#wit1">問</lem><rdg resp="#resp1" wit="#wit2">問師</rdg></app>
-<app from="#beg0513008" to="#end0513008"><lem wit="#wit1">僧舉</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0513009" to="#end0513009"><lem wit="#wit1">問</lem><rdg resp="#resp1" wit="#wit2">有僧舉問</rdg></app>
-<app from="#beg0513010" to="#end0513010"><lem wit="#wit1">又舉某甲日前</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0513011" to="#end0513011"><lem wit="#wit1">近前曰<lb n="0513c27" ed="T"/><g ref="#CB01403">㘞</g></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0513012" to="#end0513012"><lem wit="#wit1">笑</lem><rdg resp="#resp1" wit="#wit2">笑牙後參師舉前語</rdg></app>
-<app from="#beg0514001" to="#end0514001"><lem wit="#wit1">逆</lem><rdg resp="#resp1" wit="#wit3 #wit2" type="variantRemark">泝</rdg></app>
-<app from="#beg0514002" to="#end0514002"><lem wit="#wit1">見</lem><rdg resp="#resp1" wit="#wit2">見師</rdg></app>
-<app from="#beg0514003" to="#end0514003"><lem wit="#wit1">士</lem><rdg resp="#resp1" wit="#wit2">士<note place="inline">師沒廬於塔傍至中和始乃辭塔北遊</note></rdg></app>
-<app from="#beg0514004" to="#end0514004"><lem wit="#wit1">長長</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">青青</rdg></app>
-<app from="#beg0514005" to="#end0514005"><lem wit="#wit1">青</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">荒</rdg></app>
-<app from="#beg0514006" to="#end0514006"><lem wit="#wit1">時號钁頭通</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">時號钁頭通</note></rdg></app>
-<app cb:word-count="13" from="#beg0514007" to="#end0514007"><lem wit="#wit1">法眼云。不盡師意不易承嗣<lb n="0514b11" ed="T"/>得他</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">法眼云不盡師意不易承嗣得他</note></rdg></app>
-<app from="#beg0514008" to="#end0514008"><lem wit="#wit1">閉</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">開</rdg></app>
-<app cb:word-count="10" from="#beg0514010" to="#end0514010"><lem wit="#wit1">雲居云。待某甲有口即道</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">先雲居云待某甲有口即道長慶云與麼則某甲謹退雲居徵云秖如雪峰與麼道是入門語不是入門語</note></rdg></app>
-<app from="#beg0514011" to="#end0514011"><lem wit="#wit1">琅瑘覺云。<lb n="0514c13" ed="T"/>巖頭無人問著。不妨奇特。纔被洞山腦後一<lb n="0514c14" ed="T"/>錐。直得瓦解氷消</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">琅瑘覺云巖頭無人問著不妨奇特纔被洞山腦後一錐直得瓦解氷消</note></rdg></app>
-<app from="#beg0514013" to="#end0514013"><lem wit="#wit1">也</lem><rdg resp="#resp1" wit="#wit2">也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note></rdg></app>
-<app cb:word-count="15" from="#beg0514012" to="#end0514012"><lem wit="#wit1">同安顯代曰。<lb n="0514c22" ed="T"/>恁麼則雲巖一枝不墜<note n="0514013" resp="#resp1" place="foot text" type="orig">也＋（雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生）夾註【甲】</note><note n="0514013" resp="#resp2" type="mod">也【大】，也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note>【甲】</note><app n="0514013"><lem wit="#wit1">也</lem><rdg resp="#resp1" wit="#wit2">也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note></rdg></app></lem><rdg resp="#resp1" wit="#wit2"><note place="inline">同安顯代曰。恁麼則雲巖一枝不墜也</note></rdg></app>
-<app cb:word-count="43" from="#beg0514014" to="#end0514014"><lem wit="#wit1">石霜云。無人得他肯。雲居<lb n="0514c26" ed="T"/>云。若有間名非吾先師。曹山云。從古至今無<lb n="0514c27" ed="T"/>人辯得。疎山云。龍有出水之機。無人辨得</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">石霜云無人得他肯雲居云若有間名非吾先師曹山云從古至今無人辯得疎山云龍有出水之機無人辨得</note></rdg></app>
-<app from="#beg0515001" to="#end0515001"><lem wit="#wit1">復</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0515002" to="#end0515002"><lem wit="#wit1">覺</lem><rdg resp="#resp1" wit="#wit2">覺<note place="inline">師昔在<g ref="#CB05271">𭰤</g>潭尋繹大藏纂出大乘經要一卷并激勵道俗偈頌誡等流布諸方</note></rdg></app>
-<app from="#beg0515004" to="#end0515004"><lem wit="#wit1">重</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">如</rdg></app>
-<app from="#beg0516002" to="#end0516002"><lem wit="#wit1">五位</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0516003" to="#end0516003"><lem wit="#wit1">本則既已出上</lem><rdg resp="#resp1" wit="#wit2">異本作上堂次示問話僧頌</rdg></app>
-<app from="#beg0516005" to="#end0516005"><lem wit="#wit1"><note place="inline">向</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0516007" to="#end0516007"><lem wit="#wit1"><note place="inline">奉</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0516009" to="#end0516009"><lem wit="#wit1"><note place="inline">功</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0516011" to="#end0516011"><lem wit="#wit1"><note place="inline">共功</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0516013" to="#end0516013"><lem wit="#wit1"><note place="inline">功功</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0516c2001" to="#end0516c2001"><lem wit="#wit4" resp="#resp2">命</lem><rdg wit="#wit1">侖</rdg></app>
-<app cb:word-count="30" from="#beg0517001" to="#end0517001"><lem wit="#wit1">師昔在泐潭。尋繹大藏。纂出大乘經要一<lb n="0517a09" ed="T"/>卷。並激勵道俗偈頌誡等。流布諸方</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0517002" to="#end0517002"><lem resp="#resp1" wit="#wit1">日</lem><rdg resp="#resp1" wit="#wit3" type="correctionRemark">自</rdg></app>
+<app from="#beg0507003" to="#end0507003"><lem wit="#wit.orig">曰</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0507004" to="#end0507004"><lem wit="#wit.orig">日</lem><rdg resp="#resp2" wit="#wit2 #wit1" type="variantRemark">月</rdg></app>
+<app from="#beg0507005" to="#end0507005"><lem wit="#wit.orig">特</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">犢</rdg></app>
+<app from="#beg0507006" to="#end0507006"><lem wit="#wit.orig">自是和尚</lem><rdg resp="#resp2" wit="#wit1">何以</rdg></app>
+<app from="#beg0508001" to="#end0508001"><lem wit="#wit.orig">近前曰</lem><rdg resp="#resp2" wit="#wit1">問</rdg></app>
+<app from="#beg0508002" to="#end0508002"><lem wit="#wit.orig">一尼</lem><rdg resp="#resp2" wit="#wit1">尼眾</rdg></app>
+<app from="#beg0508003" to="#end0508003"><lem wit="#wit.orig">這</lem><rdg resp="#resp2" wit="#wit1">這箇</rdg></app>
+<app from="#beg0508004" to="#end0508004"><lem wit="#wit.orig">良久</lem><rdg resp="#resp2" wit="#wit1">沈吟</rdg></app>
+<app from="#beg0508005" to="#end0508005"><lem wit="#wit.orig">細</lem><rdg resp="#resp2" wit="#wit1">細師猶涉疑</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0507003"><lem wit="#wit.orig">曰</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="36" from="#beg0508006" to="#end0508006"><lem wit="#wit.orig">師侍雲巖。巖問。如何是价子神通妙用。師<lb n="0508b03" ed="T"/>叉手近前而立。又問。如何是神通妙用。師便<lb n="0508b04" ed="T"/>珍重出</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0508007" to="#end0508007"><lem wit="#wit.orig">合</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="10" from="#beg0508008" to="#end0508008"><lem wit="#wit.orig">曹山後聞乃云。一子親得</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">曹山後聞乃云一子親得</note></rdg></app>
+<app from="#beg0508009" to="#end0508009"><lem wit="#wit.orig">師</lem><rdg resp="#resp2" wit="#wit1">師初</rdg></app>
+<app from="#beg0508010" to="#end0508010"><lem wit="#wit.orig">它且</lem><rdg resp="#resp2" wit="#wit1">渠</rdg></app>
+<app from="#beg0508011" to="#end0508011"><lem wit="#wit.orig">它亦</lem><rdg resp="#resp2" wit="#wit1">渠</rdg></app>
+<app cb:word-count="16" from="#beg0508012" to="#end0508012"><lem wit="#wit.orig">保福云。洞山自是一家。乃<lb n="0508c01" ed="T"/>別云。覓得幾人</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">保福云洞山自是一家乃別云覓得幾人</note></rdg></app>
+<app from="#beg0508013" to="#end0508013"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">薯</rdg></app>
+<app from="#beg0508014" to="#end0508014"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">龍</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0508014"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">龍</rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0508014"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">龍</rdg></app>
+<app from="#beg_4" to="#end_4" corresp="#0508014"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">龍</rdg></app>
+<app from="#beg_5" to="#end_5" corresp="#0508014"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">龍</rdg></app>
+<app from="#beg_6" to="#end_6" corresp="#0508014"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">龍</rdg></app>
+<app from="#beg_7" to="#end_7" corresp="#0508014"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">龍</rdg></app>
+<app from="#beg0509001" to="#end0509001"><lem wit="#wit.orig">似</lem><rdg resp="#resp2" wit="#wit2" type="variantRemark">次</rdg></app>
+<app cb:word-count="11" from="#beg0509002" to="#end0509002"><lem wit="#wit.orig">法眼<lb n="0509a25" ed="T"/>代云。恁麼則弟子不註</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">法眼代云恁麼則弟子不註</note></rdg></app>
+<app from="#beg0509003" to="#end0509003"><lem wit="#wit.orig">柏巖</lem><rdg resp="#resp2" wit="#wit1">百顏</rdg></app>
+<app from="#beg0509004" to="#end0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_8" to="#end_8" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_9" to="#end_9" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_a" to="#end_a" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_b" to="#end_b" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_c" to="#end_c" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_d" to="#end_d" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_e" to="#end_e" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg_f" to="#end_f" corresp="#0509004"><lem wit="#wit.orig">巖</lem><rdg resp="#resp2" wit="#wit1">顏</rdg></app>
+<app from="#beg0509005" to="#end0509005"><lem wit="#wit.orig">夏</lem><rdg resp="#resp2" wit="#wit1">夏<note place="inline">此語諸本誤改易文字還作混尊卑語又開粥下加飯字最不可也</note></rdg></app>
+<app from="#beg0509007" to="#end0509007"><lem wit="#wit.orig">洎</lem><rdg resp="#resp2" wit="#wit1">幾</rdg></app>
+<app cb:word-count="20" from="#beg0509008" to="#end0509008"><lem wit="#wit.orig">長慶云。既知有。為甚麼恁麼道。又云。養子<lb n="0509b16" ed="T"/>方知父慈</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">長慶云既知有為甚麼恁麼道又云養子方知父慈</note></rdg></app>
+<app from="#beg0509009" to="#end0509009"><lem wit="#wit.orig">佛</lem><rdg resp="#resp2" wit="#wit1">亦不為佛</rdg></app>
+<app from="#beg0509010" to="#end0509010"><lem wit="#wit.orig">牙</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">涯</rdg></app>
+<app cb:word-count="44" from="#beg0509011" to="#end0509011"><lem wit="#wit.orig">雲居代云。恁<lb n="0509b27" ed="T"/>麼則不見和尚本來師也。僧問長慶。如何是<lb n="0509b28" ed="T"/>年牙相似者。慶云。古人恁麼道。闍黎又向這<lb n="0509b29" ed="T"/>裏覓箇甚麼</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">雲居代云恁麼則不見和尚本來師也僧問長慶如何是年牙相似者慶云古人恁麼道闍黎又向這裏覓箇甚麼</note></rdg></app>
+<app cb:word-count="64" from="#beg0509012" to="#end0509012"><lem wit="#wit.orig">因有官人設齋施淨財。請師看轉大藏經。師<lb n="0509c02" ed="T"/>下禪床向官人揖。官人揖師。師引官人俱遶<lb n="0509c03" ed="T"/>禪床一匝。向官人揖。良久曰。會麼。云不會。<lb n="0509c04" ed="T"/>師曰。我與汝看轉大藏經。如何不會</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0509013" to="#end0509013"><lem wit="#wit.orig">佛言教</lem><rdg resp="#resp2" wit="#wit1">教佛教</rdg></app>
+<app from="#beg0510001" to="#end0510001"><lem wit="#wit.orig">玄旨</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="39" from="#beg0510002" to="#end0510002"><lem wit="#wit.orig">後僧問曹山。如何是一老。<lb n="0510a21" ed="T"/>山云。不扶持。云如何是一不老。山云枯木。僧<lb n="0510a22" ed="T"/>又舉似逍遙忠。忠云。三從六義</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">後僧問曹山如何是一老山云不扶持云如何是一不老山云枯木僧又舉似逍遙忠忠云三從六義</note></rdg></app>
+<app from="#beg0510003" to="#end0510003"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit1">別云大</rdg></app>
+<app cb:word-count="15" from="#beg0510004" to="#end0510004"><lem wit="#wit.orig">後明安曰。直是不出門。亦<lb n="0510b03" ed="T"/>是草漫漫地</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="12" from="#beg0510005" to="#end0510005"><lem wit="#wit.orig">又曰。得力須<lb n="0510b07" ed="T"/>忘飽。休糧更不飢</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="12" from="#beg0510006" to="#end0510006"><lem wit="#wit.orig">又曰。只知朱紫貴。孤負本來人</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="12" from="#beg0510007" to="#end0510007"><lem wit="#wit.orig">又曰。撒<lb n="0510b10" ed="T"/>手端然坐。白雲幽處閒</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="12" from="#beg0510008" to="#end0510008"><lem wit="#wit.orig">又曰。素粉難沈跡。長安不久居</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="18" from="#beg0510009" to="#end0510009"><lem wit="#wit.orig">又曰。混然無諱處。<lb n="0510b13" ed="T"/>此外更何求<note place="inline">偈頌至下記志</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0510010" to="#end0510010"><lem wit="#wit.orig">齋</lem><rdg resp="#resp2" wit="#wit1">齋<note place="inline">曹山曰如今人如佛味祖味盡為滯著</note></rdg></app>
+<app cb:word-count="28" from="#beg0510011" to="#end0510011"><lem wit="#wit.orig">保福別云<lb n="0510b18" ed="T"/>佛非。雲門云。名不得狀不得。所以言非。法眼<lb n="0510b19" ed="T"/>別云。方便呼為佛</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">保福別云佛非雲門云名不得狀不得所以言非法眼別云方便呼為佛</note></rdg></app>
+<app from="#beg0510012" to="#end0510012"><lem wit="#wit.orig">師</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="17" from="#beg0510013" to="#end0510013"><lem wit="#wit.orig">雲門云。拄杖但喚作拄杖。一切但喚作<lb n="0510b21" ed="T"/>一切</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">雲門云拄杖但喚作拄杖一切但喚作一切</note></rdg></app>
+<app from="#beg0510014" to="#end0510014"><lem wit="#wit.orig">僧</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_10" to="#end_10" corresp="#0510014"><lem wit="#wit.orig">僧</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="42" from="#beg0510015" to="#end0510015"><lem wit="#wit.orig">僧問曹山。先師道。吾常於此切。意<lb n="0510b26" ed="T"/>作麼生。山云。要頭便斫去。又問雪峯。峯以拄<lb n="0510b27" ed="T"/>杖劈口打云。我亦曾到洞山來</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">僧問曹山先師道吾常於此切意作麼生山云要頭便斫去又問雪峯峯以拄杖劈口打云我亦曾到洞山來</note></rdg></app>
+<app from="#beg0511001" to="#end0511001"><lem wit="#wit.orig">節</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">夜</rdg></app>
+<app from="#beg0511002" to="#end0511002"><lem wit="#wit.orig">泰首座</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">太長老</rdg></app>
+<app from="#beg0511006" to="#end0511006"><lem wit="#wit.orig">私</lem><rdg resp="#resp2" wit="#wit2" type="variantRemark">絲</rdg></app>
+<app from="#beg0511007" to="#end0511007"><lem wit="#wit.orig">無對。趙州代僧</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0511008" to="#end0511008"><lem wit="#wit.orig">若</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0511010" to="#end0511010"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">山之</rdg></app>
+<app cb:word-count="266" from="#beg0511011" to="#end0511011"><lem wit="#wit.orig">意上座問。如如遍居前。不如如遍居前。師<lb n="0511b14" ed="T"/>曰。如如遍居前。不如如遍亦居前。意云。如如<lb n="0511b15" ed="T"/>遍分其優劣。不如如遍分其優劣。師曰。如如<lb n="0511b16" ed="T"/>遍分其優劣。不如如遍亦分其優劣。意云。何<lb n="0511b17" ed="T"/>分彼此。師曰。亦分不分。意云。如何是分。師<lb n="0511b18" ed="T"/>曰。如如遍。意云。如何是不分。師曰。不如如<lb n="0511b19" ed="T"/>遍。意云。莫便是通身不通身邊事。師曰。不是<lb n="0511b20" ed="T"/>者箇道理。意云。是甚麼道理。師曰。是如如遍<lb n="0511b21" ed="T"/>不如如遍道理。復曰。意上座欲知麼。一似八<lb n="0511b22" ed="T"/>十老婆嫁與三歲兒子。年雖長大。要且被他<lb n="0511b23" ed="T"/>三歲兒子索喚不得自由。後僧舉問曹山。如<lb n="0511b24" ed="T"/>何是八十老婆。山曰。紛紛白髮連頭雪。僧云。<lb n="0511b25" ed="T"/>如何是三歲兒子。山曰。不為主。僧云。為甚麼<lb n="0511b26" ed="T"/>不為主。山曰。不見道。三歲兒子一切過不得。<lb n="0511b27" ed="T"/>僧云。既是八十老婆。為甚麼嫁他三歲兒子。<lb n="0511b28" ed="T"/>山曰。直得似八十老婆。始解奉重他</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0511012" to="#end0511012"><lem wit="#wit.orig">羅</lem><rdg resp="#resp2" wit="#wit1">羅<note place="inline">東禪齊拈云此還有疑訛也無若有且道甚麼處不得若無他又道最苦是新羅還點檢出麼他道行則不無有覺即乖却令再問是其麼行又道佛行那僧是會了問不會了問請斷看</note></rdg></app>
+<app from="#beg0511c0801" to="#end0511c0801"><lem wit="#wit.cbeta" resp="#resp4">掐<note type="cf1">T47n1986Bp0523b15</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0511c0802" to="#end0511c0802"><lem wit="#wit.cbeta" resp="#resp4">掐<note type="cf1">T47n1986Bp0523b15</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0512001" to="#end0512001"><lem wit="#wit.orig">便</lem><rdg resp="#resp2" wit="#wit1">便即</rdg></app>
+<app from="#beg0512002" to="#end0512002"><lem wit="#wit.orig">僧</lem><rdg resp="#resp2" wit="#wit1">師因僧</rdg></app>
+<app cb:word-count="13" from="#beg0512003" to="#end0512003"><lem wit="#wit.orig">法眼別云。和尚若去。某甲提笠子</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">法眼別云和尚若去某甲提笠子</note></rdg></app>
+<app cb:word-count="35" from="#beg0512004" to="#end0512004"><lem wit="#wit.orig">雲<lb n="0512a23" ed="T"/>居云。行時無說路。說時無行路。不說不行時<lb n="0512a24" ed="T"/>合行什麼路。樂普云。行說俱不到即本事在</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">雲居云行時無說路說時無行路不說不行時合行什麼路樂普云行說俱不到即本事在</note></rdg></app>
+<app from="#beg0512005" to="#end0512005"><lem wit="#wit.orig">師</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="12" from="#beg0512006" to="#end0512006"><lem wit="#wit.orig">道吾代云滿也。雲巖云。湛湛地</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0512007" to="#end0512007"><lem wit="#wit.orig">舉</lem><rdg resp="#resp2" wit="#wit1">舉示眾曰</rdg></app>
+<app from="#beg0512a2901" to="#end0512a2901"><lem wit="#wit.cbeta" resp="#resp4">藥<note type="cf1">T47n1986Bp0525b14</note><note type="cf2">X66n1297_p0620b14</note></lem><rdg wit="#wit.orig">樂</rdg></app>
+<app from="#beg0512008" to="#end0512008"><lem wit="#wit.orig">在</lem><rdg resp="#resp2" wit="#wit1">在舉無著和尚因日勉遂問文殊云擬投一宿得否殊云爾有執心在不得此宿著云某甲無執心殊云爾受戒否著云受戒久矣殊云爾若無執心何用受戒著遂辭遏均提童子送著出著云適來和尚道前三三後三三是多少童子召云大德著回首童子云是多少師曰欲觀其父先觀其子</rdg></app>
+<app from="#beg0512011" to="#end0512011"><lem wit="#wit.orig">著</lem><rdg resp="#resp2" wit="#wit1">著曰</rdg></app>
+<app from="#beg0512012" to="#end0512012"><lem wit="#wit.orig">否</lem><rdg resp="#resp2" wit="#wit1">否石霜因僧問咫尺之間為甚不覩師顏霜曰我道遍界不曾藏僧後問雪峰遍界不曾藏意旨如何峰云什麼處不是石霜僧回舉似霜霜曰這老漢有什麼死急師聞曰笑殺土地西園一日自開俗次僧問何不使沙彌園乃撫掌三下師曰一種是時節因緣就中西園精妙</rdg></app>
+<app from="#beg0512013" to="#end0512013"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">山寶積禪師</rdg></app>
+<app from="#beg0512014" to="#end0512014"><lem wit="#wit.orig">舉</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app cb:word-count="11" from="#beg0512015" to="#end0512015"><lem wit="#wit.orig">雲巖曰。坐則佛。<lb n="0512b29" ed="T"/>不坐則非佛</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0512016" to="#end0512016"><lem wit="#wit.orig">瀧</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">霜</rdg></app>
+<app from="#beg0512017" to="#end0512017"><lem wit="#wit.orig">几</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">向</rdg></app>
+<app from="#beg0512018" to="#end0512018"><lem wit="#wit.orig">太</lem><rdg resp="#resp2" wit="#wit1">大</rdg></app>
+<app from="#beg0513001" to="#end0513001"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit2 #wit1" type="variantRemark">生</rdg></app>
+<app cb:word-count="10" from="#beg0513002" to="#end0513002"><lem wit="#wit.orig">自爾洞山許為室中領袖</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0513003" to="#end0513003"><lem wit="#wit.orig">謁</lem><rdg resp="#resp2" wit="#wit1">謁師</rdg></app>
+<app from="#beg0513004" to="#end0513004"><lem wit="#wit.orig">山</lem><rdg resp="#resp2" wit="#wit1">曹</rdg></app>
+<app from="#beg0513005" to="#end0513005"><lem wit="#wit.orig">曰古佛</lem><rdg resp="#resp2" wit="#wit1">深肯之</rdg></app>
+<app from="#beg0513006" to="#end0513006"><lem wit="#wit.orig">云</lem><rdg resp="#resp2" wit="#wit1">曹云</rdg></app>
+<app from="#beg_11" to="#end_11" corresp="#0513006"><lem wit="#wit.orig">云</lem><rdg resp="#resp2" wit="#wit1">曹云</rdg></app>
+<app from="#beg_12" to="#end_12" corresp="#0513006"><lem wit="#wit.orig">云</lem><rdg resp="#resp2" wit="#wit1">曹云</rdg></app>
+<app from="#beg_13" to="#end_13" corresp="#0513006"><lem wit="#wit.orig">云</lem><rdg resp="#resp2" wit="#wit1">曹云</rdg></app>
+<app from="#beg_14" to="#end_14" corresp="#0513006"><lem wit="#wit.orig">云</lem><rdg resp="#resp2" wit="#wit1">曹云</rdg></app>
+<app from="#beg0513007" to="#end0513007"><lem wit="#wit.orig">問</lem><rdg resp="#resp2" wit="#wit1">問師</rdg></app>
+<app from="#beg0513008" to="#end0513008"><lem wit="#wit.orig">僧舉</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0513009" to="#end0513009"><lem wit="#wit.orig">問</lem><rdg resp="#resp2" wit="#wit1">有僧舉問</rdg></app>
+<app from="#beg0513010" to="#end0513010"><lem wit="#wit.orig">又舉某甲日前</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0513011" to="#end0513011"><lem wit="#wit.orig">近前曰<lb n="0513c27" ed="T"/><g ref="#CB01403">㘞</g></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0513012" to="#end0513012"><lem wit="#wit.orig">笑</lem><rdg resp="#resp2" wit="#wit1">笑牙後參師舉前語</rdg></app>
+<app from="#beg0514001" to="#end0514001"><lem wit="#wit.orig">逆</lem><rdg resp="#resp2" wit="#wit2 #wit1" type="variantRemark">泝</rdg></app>
+<app from="#beg0514002" to="#end0514002"><lem wit="#wit.orig">見</lem><rdg resp="#resp2" wit="#wit1">見師</rdg></app>
+<app from="#beg0514003" to="#end0514003"><lem wit="#wit.orig">士</lem><rdg resp="#resp2" wit="#wit1">士<note place="inline">師沒廬於塔傍至中和始乃辭塔北遊</note></rdg></app>
+<app from="#beg0514004" to="#end0514004"><lem wit="#wit.orig">長長</lem><rdg resp="#resp2" wit="#wit2" type="variantRemark">青青</rdg></app>
+<app from="#beg0514005" to="#end0514005"><lem wit="#wit.orig">青</lem><rdg resp="#resp2" wit="#wit2" type="variantRemark">荒</rdg></app>
+<app from="#beg0514006" to="#end0514006"><lem wit="#wit.orig">時號钁頭通</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">時號钁頭通</note></rdg></app>
+<app cb:word-count="13" from="#beg0514007" to="#end0514007"><lem wit="#wit.orig">法眼云。不盡師意不易承嗣<lb n="0514b11" ed="T"/>得他</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">法眼云不盡師意不易承嗣得他</note></rdg></app>
+<app from="#beg0514008" to="#end0514008"><lem wit="#wit.orig">閉</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">開</rdg></app>
+<app cb:word-count="10" from="#beg0514010" to="#end0514010"><lem wit="#wit.orig">雲居云。待某甲有口即道</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">先雲居云待某甲有口即道長慶云與麼則某甲謹退雲居徵云秖如雪峰與麼道是入門語不是入門語</note></rdg></app>
+<app from="#beg0514011" to="#end0514011"><lem wit="#wit.orig">琅瑘覺云。<lb n="0514c13" ed="T"/>巖頭無人問著。不妨奇特。纔被洞山腦後一<lb n="0514c14" ed="T"/>錐。直得瓦解氷消</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">琅瑘覺云巖頭無人問著不妨奇特纔被洞山腦後一錐直得瓦解氷消</note></rdg></app>
+<app from="#beg0514013" to="#end0514013"><lem wit="#wit.orig">也</lem><rdg resp="#resp2" wit="#wit1">也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note></rdg></app>
+<app cb:word-count="15" from="#beg0514012" to="#end0514012"><lem wit="#wit.orig">同安顯代曰。<lb n="0514c22" ed="T"/>恁麼則雲巖一枝不墜<note n="0514013" resp="#resp2" place="foot text" type="orig">也＋（雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生）夾註【甲】</note><note n="0514013" resp="#resp3" type="mod">也【大】，也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note>【甲】</note><app n="0514013"><lem wit="#wit.orig">也</lem><rdg resp="#resp2" wit="#wit1">也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note></rdg></app></lem><rdg resp="#resp2" wit="#wit1"><note place="inline">同安顯代曰。恁麼則雲巖一枝不墜也</note></rdg></app>
+<app cb:word-count="43" from="#beg0514014" to="#end0514014"><lem wit="#wit.orig">石霜云。無人得他肯。雲居<lb n="0514c26" ed="T"/>云。若有間名非吾先師。曹山云。從古至今無<lb n="0514c27" ed="T"/>人辯得。疎山云。龍有出水之機。無人辨得</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">石霜云無人得他肯雲居云若有間名非吾先師曹山云從古至今無人辯得疎山云龍有出水之機無人辨得</note></rdg></app>
+<app from="#beg0515001" to="#end0515001"><lem wit="#wit.orig">復</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0515002" to="#end0515002"><lem wit="#wit.orig">覺</lem><rdg resp="#resp2" wit="#wit1">覺<note place="inline">師昔在<g ref="#CB05271">𭰤</g>潭尋繹大藏纂出大乘經要一卷并激勵道俗偈頌誡等流布諸方</note></rdg></app>
+<app from="#beg0515004" to="#end0515004"><lem wit="#wit.orig">重</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">如</rdg></app>
+<app from="#beg0516002" to="#end0516002"><lem wit="#wit.orig">五位</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0516003" to="#end0516003"><lem wit="#wit.orig">本則既已出上</lem><rdg resp="#resp2" wit="#wit1">異本作上堂次示問話僧頌</rdg></app>
+<app from="#beg0516005" to="#end0516005"><lem wit="#wit.orig"><note place="inline">向</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0516007" to="#end0516007"><lem wit="#wit.orig"><note place="inline">奉</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0516009" to="#end0516009"><lem wit="#wit.orig"><note place="inline">功</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0516011" to="#end0516011"><lem wit="#wit.orig"><note place="inline">共功</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0516013" to="#end0516013"><lem wit="#wit.orig"><note place="inline">功功</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0516c2001" to="#end0516c2001"><lem wit="#wit.cbeta" resp="#resp3">命</lem><rdg wit="#wit.orig">侖</rdg></app>
+<app cb:word-count="30" from="#beg0517001" to="#end0517001"><lem wit="#wit.orig">師昔在泐潭。尋繹大藏。纂出大乘經要一<lb n="0517a09" ed="T"/>卷。並激勵道俗偈頌誡等。流布諸方</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0517002" to="#end0517002"><lem resp="#resp2" wit="#wit.orig">日</lem><rdg resp="#resp2" wit="#wit2" type="correctionRemark">自</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0507003" resp="#resp2" type="mod" target="#nkr_note_mod_0507003">曰【大】＊，〔－〕【甲】＊</note>
-<note n="0507004" resp="#resp2" type="mod" target="#nkr_note_mod_0507004">日【大】，月【校異-原】【甲】</note>
-<note n="0507005" resp="#resp2" type="mod" target="#nkr_note_mod_0507005">特【大】，犢【校異-甲】</note>
-<note n="0507006" resp="#resp2" type="mod" target="#nkr_note_mod_0507006">自是和尚【大】，何以【甲】</note>
-<note n="0508001" resp="#resp2" type="mod" target="#nkr_note_mod_0508001">近前曰【大】，問【甲】</note>
-<note n="0508002" resp="#resp2" type="mod" target="#nkr_note_mod_0508002">一尼【大】，尼眾【甲】</note>
-<note n="0508003" resp="#resp2" type="mod" target="#nkr_note_mod_0508003">這【大】，這箇【甲】</note>
-<note n="0508004" resp="#resp2" type="mod" target="#nkr_note_mod_0508004">良久【大】，沈吟【甲】</note>
-<note n="0508005" resp="#resp2" type="mod" target="#nkr_note_mod_0508005">細【大】，細師猶涉疑【甲】</note>
-<note n="0508006" resp="#resp2" type="mod" target="#nkr_note_mod_0508006">（師侍…出）三十六字【大】，〔－〕【甲】</note>
-<note n="0508007" resp="#resp2" type="mod" target="#nkr_note_mod_0508007">合【大】，〔－〕【甲】</note>
-<note n="0508008" resp="#resp2" type="mod" target="#nkr_note_mod_0508008">（曹山…親得）十字【大】，<note place="inline">曹山後聞乃云一子親得</note>【甲】</note>
-<note n="0508009" resp="#resp2" type="mod" target="#nkr_note_mod_0508009">師【大】，師初【甲】</note>
-<note n="0508010" resp="#resp2" type="mod" target="#nkr_note_mod_0508010">它且【大】，渠【甲】</note>
-<note n="0508011" resp="#resp2" type="mod" target="#nkr_note_mod_0508011">它亦【大】，渠【甲】</note>
-<note n="0508012" resp="#resp2" type="mod" target="#nkr_note_mod_0508012">（保福…幾人）十六字【大】，<note place="inline">保福云洞山自是一家乃別云覓得幾人</note>【甲】</note>
-<note n="0508013" resp="#resp2" type="mod" target="#nkr_note_mod_0508013">山【大】，薯【甲】</note>
-<note n="0508014" resp="#resp2" type="mod" target="#nkr_note_mod_0508014">山【大】＊，龍【甲】＊</note>
-<note n="0509001" resp="#resp2" type="mod" target="#nkr_note_mod_0509001">似【大】，次【校異-原】</note>
-<note n="0509002" resp="#resp2" type="mod" target="#nkr_note_mod_0509002">（法眼…不註）十一字【大】，<note place="inline">法眼代云恁麼則弟子不註</note>【甲】</note>
-<note n="0509003" resp="#resp2" type="mod" target="#nkr_note_mod_0509003">柏巖【大】，百顏【甲】</note>
-<note n="0509004" resp="#resp2" type="mod" target="#nkr_note_mod_0509004">巖【大】＊，顏【甲】＊</note>
-<note n="0509005" resp="#resp2" type="mod" target="#nkr_note_mod_0509005">夏【大】，夏<note place="inline">此語諸本誤改易文字還作混尊卑語又開粥下加飯字最不可也</note>【甲】</note>
-<note n="0509007" resp="#resp2" type="mod" target="#nkr_note_mod_0509007">洎【大】，幾【甲】</note>
-<note n="0509008" resp="#resp2" type="mod" target="#nkr_note_mod_0509008">（長慶…父慈）二十字【大】，<note place="inline">長慶云既知有為甚麼恁麼道又云養子方知父慈</note>【甲】</note>
-<note n="0509009" resp="#resp2" type="mod" target="#nkr_note_mod_0509009">佛【大】，亦不為佛【甲】</note>
-<note n="0509010" resp="#resp2" type="mod" target="#nkr_note_mod_0509010">牙【大】，涯【校異-甲】</note>
-<note n="0509011" resp="#resp2" type="mod" target="#nkr_note_mod_0509011">（雲居…甚麼）四十四字【大】，<note place="inline">雲居代云恁麼則不見和尚本來師也僧問長慶如何是年牙相似者慶云古人恁麼道闍黎又向這裏覓箇甚麼</note>【甲】</note>
-<note n="0509012" resp="#resp2" type="mod" target="#nkr_note_mod_0509012">（因有…不會）六十四字【大】，〔－〕【甲】</note>
-<note n="0509013" resp="#resp2" type="mod" target="#nkr_note_mod_0509013">佛言教【大】，教佛教【甲】</note>
-<note n="0510001" resp="#resp2" type="mod" target="#nkr_note_mod_0510001">玄旨【大】，〔－〕【甲】</note>
-<note n="0510002" resp="#resp2" type="mod" target="#nkr_note_mod_0510002">（後僧…六義）三十九字【大】，<note place="inline">後僧問曹山如何是一老山云不扶持云如何是一不老山云枯木僧又舉似逍遙忠忠云三從六義</note>【甲】</note>
-<note n="0510003" resp="#resp2" type="mod" target="#nkr_note_mod_0510003">大【大】，別云大【甲】</note>
-<note n="0510004" resp="#resp2" type="mod" target="#nkr_note_mod_0510004">（後明安…地）十五字【大】，〔－〕【甲】</note>
-<note n="0510005" resp="#resp2" type="mod" target="#nkr_note_mod_0510005">（又曰…飢）十二字【大】，〔－〕【甲】</note>
-<note n="0510006" resp="#resp2" type="mod" target="#nkr_note_mod_0510006">（又曰…人）十二字【大】，〔－〕【甲】</note>
-<note n="0510007" resp="#resp2" type="mod" target="#nkr_note_mod_0510007">（又曰…閒）十二字【大】，〔－〕【甲】</note>
-<note n="0510008" resp="#resp2" type="mod" target="#nkr_note_mod_0510008">（又曰…居）十二字【大】，〔－〕【甲】</note>
-<note n="0510009" resp="#resp2" type="mod" target="#nkr_note_mod_0510009">（又曰…志）十八字【大】，〔－〕【甲】</note>
-<note n="0510010" resp="#resp2" type="mod" target="#nkr_note_mod_0510010">齋【大】，齋<note place="inline">曹山曰如今人如佛味祖味盡為滯著</note>【甲】</note>
-<note n="0510011" resp="#resp2" type="mod" target="#nkr_note_mod_0510011">（保福…為佛）二十八字【大】，<note place="inline">保福別云佛非雲門云名不得狀不得所以言非法眼別云方便呼為佛</note>【甲】</note>
-<note n="0510012" resp="#resp2" type="mod" target="#nkr_note_mod_0510012">師【大】，〔－〕【甲】</note>
-<note n="0510013" resp="#resp2" type="mod" target="#nkr_note_mod_0510013">（雲門…一切）十七字【大】，<note place="inline">雲門云拄杖但喚作拄杖一切但喚作一切</note>【甲】</note>
-<note n="0510014" resp="#resp2" type="mod" target="#nkr_note_mod_0510014">僧【大】＊，〔－〕【甲】＊</note>
-<note n="0510015" resp="#resp2" type="mod" target="#nkr_note_mod_0510015">（僧問…來）四十二字【大】，<note place="inline">僧問曹山先師道吾常於此切意作麼生山云要頭便斫去又問雪峯峯以拄杖劈口打云我亦曾到洞山來</note>【甲】</note>
-<note n="0511001" resp="#resp2" type="mod" target="#nkr_note_mod_0511001">節【大】，夜【校異-甲】</note>
-<note n="0511002" resp="#resp2" type="mod" target="#nkr_note_mod_0511002">泰首座【大】，太長老【校異-甲】</note>
-<note n="0511003" resp="#resp2" type="mod" target="#nkr_note_mod_0511003"><!--CBETA todo type: ＊-->原本註曰宏智錄互作顧＊</note>
-<note n="0511005" resp="#resp2" type="mod" target="#nkr_note_mod_0511005"><!--CBETA todo type: a-->（師示眾…不違）百五十七字【大】∞（有庵主…莖茆）八十二字【甲】</note>
-<note n="0511006" resp="#resp2" type="mod" target="#nkr_note_mod_0511006">私【大】，絲【校異-原】</note>
-<note n="0511007" resp="#resp2" type="mod" target="#nkr_note_mod_0511007">無對趙州代僧【大】，〔－〕【甲】</note>
-<note n="0511008" resp="#resp2" type="mod" target="#nkr_note_mod_0511008">若【大】，〔－〕【甲】</note>
-<note n="0511009" resp="#resp2" type="mod" target="#nkr_note_mod_0511009"><!--CBETA todo type: a-->（有庵主…莖茆）八十二字【大】∞（師示眾…不違）百五十七字【甲】</note>
-<note n="0511010" resp="#resp2" type="mod" target="#nkr_note_mod_0511010">山【大】，山之【甲】</note>
-<note n="0511011" resp="#resp2" type="mod" target="#nkr_note_mod_0511011">（意上座…重他）二百六十六字【大】，〔－〕【甲】</note>
-<note n="0511012" resp="#resp2" type="mod" target="#nkr_note_mod_0511012">羅【大】，羅<note place="inline">東禪齊拈云此還有疑訛也無若有且道甚麼處不得若無他又道最苦是新羅還點檢出麼他道行則不無有覺即乖却令再問是其麼行又道佛行那僧是會了問不會了問請斷看</note>【甲】</note>
-<note n="0512001" resp="#resp2" type="mod" target="#nkr_note_mod_0512001">便【大】，便即【甲】</note>
-<note n="0512002" resp="#resp2" type="mod" target="#nkr_note_mod_0512002">僧【大】，師因僧【甲】</note>
-<note n="0512003" resp="#resp2" type="mod" target="#nkr_note_mod_0512003">（法眼…笠子）十三字【大】，<note place="inline">法眼別云和尚若去某甲提笠子</note>【甲】</note>
-<note n="0512004" resp="#resp2" type="mod" target="#nkr_note_mod_0512004">（雲居…在）三十五字【大】，<note place="inline">雲居云行時無說路說時無行路不說不行時合行什麼路樂普云行說俱不到即本事在</note>【甲】</note>
-<note n="0512005" resp="#resp2" type="mod" target="#nkr_note_mod_0512005">師【大】，〔－〕【甲】</note>
-<note n="0512006" resp="#resp2" type="mod" target="#nkr_note_mod_0512006">（道吾…地）十二字【大】，〔－〕【甲】</note>
-<note n="0512007" resp="#resp2" type="mod" target="#nkr_note_mod_0512007">舉【大】，舉示眾曰【甲】</note>
-<note n="0512008" resp="#resp2" type="mod" target="#nkr_note_mod_0512008">在【大】，在舉無著和尚因日勉遂問文殊云擬投一宿得否殊云爾有執心在不得此宿著云某甲無執心殊云爾受戒否著云受戒久矣殊云爾若無執心何用受戒著遂辭遏均提童子送著出著云適來和尚道前三三後三三是多少童子召云大德著回首童子云是多少師曰欲觀其父先觀其子【甲】</note>
-<note n="0512009" resp="#resp2" type="mod" target="#nkr_note_mod_0512009"><!--CBETA todo type: a-->（師示眾…在）二十六字【大】∞（舉文殊…何物）九十九字【甲】</note>
-<note n="0512010" resp="#resp2" type="mod" target="#nkr_note_mod_0512010"><!--CBETA todo type: a-->（舉文殊…何物）九十九字【大】∞（師示眾…在）二十六字【甲】</note>
-<note n="0512011" resp="#resp2" type="mod" target="#nkr_note_mod_0512011">著【大】，著曰【甲】</note>
-<note n="0512012" resp="#resp2" type="mod" target="#nkr_note_mod_0512012">否【大】，否石霜因僧問咫尺之間為甚不覩師顏霜曰我道遍界不曾藏僧後問雪峰遍界不曾藏意旨如何峰云什麼處不是石霜僧回舉似霜霜曰這老漢有什麼死急師聞曰笑殺土地西園一日自開俗次僧問何不使沙彌園乃撫掌三下師曰一種是時節因緣就中西園精妙【甲】</note>
-<note n="0512013" resp="#resp2" type="mod" target="#nkr_note_mod_0512013">山【大】，山寶積禪師【甲】</note>
-<note n="0512014" resp="#resp2" type="mod" target="#nkr_note_mod_0512014">舉【大】，〔－〕【甲】</note>
-<note n="0512015" resp="#resp2" type="mod" target="#nkr_note_mod_0512015">（雲巖…非佛）十一字【大】，〔－〕【甲】</note>
-<note n="0512016" resp="#resp2" type="mod" target="#nkr_note_mod_0512016">瀧【大】，霜【校異-甲】</note>
-<note n="0512017" resp="#resp2" type="mod" target="#nkr_note_mod_0512017">几【大】，向【校異-甲】</note>
-<note n="0512018" resp="#resp2" type="mod" target="#nkr_note_mod_0512018">太【大】，大【甲】</note>
-<note n="0513001" resp="#resp2" type="mod" target="#nkr_note_mod_0513001">山【大】，生【校異-原】【甲】</note>
-<note n="0513002" resp="#resp2" type="mod" target="#nkr_note_mod_0513002">（自爾…袖）十字【大】，〔－〕【甲】</note>
-<note n="0513003" resp="#resp2" type="mod" target="#nkr_note_mod_0513003">謁【大】，謁師【甲】</note>
-<note n="0513004" resp="#resp2" type="mod" target="#nkr_note_mod_0513004">山【大】，曹【甲】</note>
-<note n="0513005" resp="#resp2" type="mod" target="#nkr_note_mod_0513005">曰古佛【大】，深肯之【甲】</note>
-<note n="0513006" resp="#resp2" type="mod" target="#nkr_note_mod_0513006">云【大】＊，曹云【甲】＊</note>
-<note n="0513007" resp="#resp2" type="mod" target="#nkr_note_mod_0513007">問【大】，問師【甲】</note>
-<note n="0513008" resp="#resp2" type="mod" target="#nkr_note_mod_0513008">僧舉【大】，〔－〕【甲】</note>
-<note n="0513009" resp="#resp2" type="mod" target="#nkr_note_mod_0513009">問【大】，有僧舉問【甲】</note>
-<note n="0513010" resp="#resp2" type="mod" target="#nkr_note_mod_0513010">又舉某甲日前【大】，〔－〕【甲】</note>
-<note n="0513011" resp="#resp2" type="mod" target="#nkr_note_mod_0513011">近前曰<g ref="#CB01403">㘞</g>【大】，〔－〕【甲】</note>
-<note n="0513012" resp="#resp2" type="mod" target="#nkr_note_mod_0513012">笑【大】，笑牙後參師舉前語【甲】</note>
-<note n="0514001" resp="#resp2" type="mod" target="#nkr_note_mod_0514001">逆【大】，泝【校異-原】【甲】</note>
-<note n="0514002" resp="#resp2" type="mod" target="#nkr_note_mod_0514002">見【大】，見師【甲】</note>
-<note n="0514003" resp="#resp2" type="mod" target="#nkr_note_mod_0514003">士【大】，士<note place="inline">師沒廬於塔傍至中和始乃辭塔北遊</note>【甲】</note>
-<note n="0514004" resp="#resp2" type="mod" target="#nkr_note_mod_0514004">長長【大】，青青【校異-原】</note>
-<note n="0514005" resp="#resp2" type="mod" target="#nkr_note_mod_0514005">青【大】，荒【校異-原】</note>
-<note n="0514006" resp="#resp2" type="mod" target="#nkr_note_mod_0514006">時號钁頭通【大】，<note place="inline">時號钁頭通</note>【甲】</note>
-<note n="0514007" resp="#resp2" type="mod" target="#nkr_note_mod_0514007">（法眼…他）十三字【大】，<note place="inline">法眼云不盡師意不易承嗣得他</note>【甲】</note>
-<note n="0514008" resp="#resp2" type="mod" target="#nkr_note_mod_0514008">閉【大】，開【校異-甲】</note>
-<note n="0514010" resp="#resp2" type="mod" target="#nkr_note_mod_0514010">（雲居…道）十字【大】，<note place="inline">先雲居云待某甲有口即道長慶云與麼則某甲謹退雲居徵云秖如雪峰與麼道是入門語不是入門語</note>【甲】</note>
-<note n="0514011" resp="#resp2" type="mod" target="#nkr_note_mod_0514011">琅瑘覺云巖頭無人問著不妨奇特纔被洞山腦後一錐直得瓦解氷消【大】，<note place="inline">琅瑘覺云巖頭無人問著不妨奇特纔被洞山腦後一錐直得瓦解氷消</note>【甲】</note>
-<note n="0514012" resp="#resp2" type="mod" target="#nkr_note_mod_0514012">（同安顯…也）十五字【大】，（<note place="inline">同安顯代曰。恁麼則雲巖一枝不墜也</note>）十五字【甲】</note>
-<note n="0514013" resp="#resp2" type="mod" target="#nkr_note_mod_0514013">也【大】，也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note>【甲】</note>
-<note n="0514014" resp="#resp2" type="mod" target="#nkr_note_mod_0514014">（石霜…辨得）四十三字【大】，<note place="inline">石霜云無人得他肯雲居云若有間名非吾先師曹山云從古至今無人辯得疎山云龍有出水之機無人辨得</note>【甲】</note>
-<note n="0515001" resp="#resp2" type="mod" target="#nkr_note_mod_0515001">復【大】，〔－〕【甲】</note>
-<note n="0515002" resp="#resp2" type="mod" target="#nkr_note_mod_0515002">覺【大】，覺<note place="inline">師昔在<g ref="#CB05271">𭰤</g>潭尋繹大藏纂出大乘經要一卷并激勵道俗偈頌誡等流布諸方</note>【甲】</note>
-<note n="0515004" resp="#resp2" type="mod" target="#nkr_note_mod_0515004">重【大】，如【校異-甲】</note>
-<note n="0516002" resp="#resp2" type="mod" target="#nkr_note_mod_0516002">五位【大】，〔－〕【甲】</note>
-<note n="0516003" resp="#resp2" type="mod" target="#nkr_note_mod_0516003">本則既已出上【大】，異本作上堂次示問話僧頌【甲】</note>
-<note n="0516005" resp="#resp2" type="mod" target="#nkr_note_mod_0516005">向【大】，〔－〕【甲】</note>
-<note n="0516007" resp="#resp2" type="mod" target="#nkr_note_mod_0516007">奉【大】，〔－〕【甲】</note>
-<note n="0516009" resp="#resp2" type="mod" target="#nkr_note_mod_0516009">功【大】，〔－〕【甲】</note>
-<note n="0516011" resp="#resp2" type="mod" target="#nkr_note_mod_0516011">共功【大】，〔－〕【甲】</note>
-<note n="0516013" resp="#resp2" type="mod" target="#nkr_note_mod_0516013">功功【大】，〔－〕【甲】</note>
-<note n="0517001" resp="#resp2" type="mod" target="#nkr_note_mod_0517001">（師昔…諸方）三十字【大】，〔－〕【甲】</note>
-<note n="0517002" resp="#resp2" type="mod" target="#nkr_note_mod_0517002">日【大】，自【考偽-原】</note>
+<note n="0507003" resp="#resp3" type="mod" target="#nkr_note_mod_0507003">曰【大】＊，〔－〕【甲】＊</note>
+<note n="0507004" resp="#resp3" type="mod" target="#nkr_note_mod_0507004">日【大】，月【校異-原】【甲】</note>
+<note n="0507005" resp="#resp3" type="mod" target="#nkr_note_mod_0507005">特【大】，犢【校異-甲】</note>
+<note n="0507006" resp="#resp3" type="mod" target="#nkr_note_mod_0507006">自是和尚【大】，何以【甲】</note>
+<note n="0508001" resp="#resp3" type="mod" target="#nkr_note_mod_0508001">近前曰【大】，問【甲】</note>
+<note n="0508002" resp="#resp3" type="mod" target="#nkr_note_mod_0508002">一尼【大】，尼眾【甲】</note>
+<note n="0508003" resp="#resp3" type="mod" target="#nkr_note_mod_0508003">這【大】，這箇【甲】</note>
+<note n="0508004" resp="#resp3" type="mod" target="#nkr_note_mod_0508004">良久【大】，沈吟【甲】</note>
+<note n="0508005" resp="#resp3" type="mod" target="#nkr_note_mod_0508005">細【大】，細師猶涉疑【甲】</note>
+<note n="0508006" resp="#resp3" type="mod" target="#nkr_note_mod_0508006">（師侍…出）三十六字【大】，〔－〕【甲】</note>
+<note n="0508007" resp="#resp3" type="mod" target="#nkr_note_mod_0508007">合【大】，〔－〕【甲】</note>
+<note n="0508008" resp="#resp3" type="mod" target="#nkr_note_mod_0508008">（曹山…親得）十字【大】，<note place="inline">曹山後聞乃云一子親得</note>【甲】</note>
+<note n="0508009" resp="#resp3" type="mod" target="#nkr_note_mod_0508009">師【大】，師初【甲】</note>
+<note n="0508010" resp="#resp3" type="mod" target="#nkr_note_mod_0508010">它且【大】，渠【甲】</note>
+<note n="0508011" resp="#resp3" type="mod" target="#nkr_note_mod_0508011">它亦【大】，渠【甲】</note>
+<note n="0508012" resp="#resp3" type="mod" target="#nkr_note_mod_0508012">（保福…幾人）十六字【大】，<note place="inline">保福云洞山自是一家乃別云覓得幾人</note>【甲】</note>
+<note n="0508013" resp="#resp3" type="mod" target="#nkr_note_mod_0508013">山【大】，薯【甲】</note>
+<note n="0508014" resp="#resp3" type="mod" target="#nkr_note_mod_0508014">山【大】＊，龍【甲】＊</note>
+<note n="0509001" resp="#resp3" type="mod" target="#nkr_note_mod_0509001">似【大】，次【校異-原】</note>
+<note n="0509002" resp="#resp3" type="mod" target="#nkr_note_mod_0509002">（法眼…不註）十一字【大】，<note place="inline">法眼代云恁麼則弟子不註</note>【甲】</note>
+<note n="0509003" resp="#resp3" type="mod" target="#nkr_note_mod_0509003">柏巖【大】，百顏【甲】</note>
+<note n="0509004" resp="#resp3" type="mod" target="#nkr_note_mod_0509004">巖【大】＊，顏【甲】＊</note>
+<note n="0509005" resp="#resp3" type="mod" target="#nkr_note_mod_0509005">夏【大】，夏<note place="inline">此語諸本誤改易文字還作混尊卑語又開粥下加飯字最不可也</note>【甲】</note>
+<note n="0509007" resp="#resp3" type="mod" target="#nkr_note_mod_0509007">洎【大】，幾【甲】</note>
+<note n="0509008" resp="#resp3" type="mod" target="#nkr_note_mod_0509008">（長慶…父慈）二十字【大】，<note place="inline">長慶云既知有為甚麼恁麼道又云養子方知父慈</note>【甲】</note>
+<note n="0509009" resp="#resp3" type="mod" target="#nkr_note_mod_0509009">佛【大】，亦不為佛【甲】</note>
+<note n="0509010" resp="#resp3" type="mod" target="#nkr_note_mod_0509010">牙【大】，涯【校異-甲】</note>
+<note n="0509011" resp="#resp3" type="mod" target="#nkr_note_mod_0509011">（雲居…甚麼）四十四字【大】，<note place="inline">雲居代云恁麼則不見和尚本來師也僧問長慶如何是年牙相似者慶云古人恁麼道闍黎又向這裏覓箇甚麼</note>【甲】</note>
+<note n="0509012" resp="#resp3" type="mod" target="#nkr_note_mod_0509012">（因有…不會）六十四字【大】，〔－〕【甲】</note>
+<note n="0509013" resp="#resp3" type="mod" target="#nkr_note_mod_0509013">佛言教【大】，教佛教【甲】</note>
+<note n="0510001" resp="#resp3" type="mod" target="#nkr_note_mod_0510001">玄旨【大】，〔－〕【甲】</note>
+<note n="0510002" resp="#resp3" type="mod" target="#nkr_note_mod_0510002">（後僧…六義）三十九字【大】，<note place="inline">後僧問曹山如何是一老山云不扶持云如何是一不老山云枯木僧又舉似逍遙忠忠云三從六義</note>【甲】</note>
+<note n="0510003" resp="#resp3" type="mod" target="#nkr_note_mod_0510003">大【大】，別云大【甲】</note>
+<note n="0510004" resp="#resp3" type="mod" target="#nkr_note_mod_0510004">（後明安…地）十五字【大】，〔－〕【甲】</note>
+<note n="0510005" resp="#resp3" type="mod" target="#nkr_note_mod_0510005">（又曰…飢）十二字【大】，〔－〕【甲】</note>
+<note n="0510006" resp="#resp3" type="mod" target="#nkr_note_mod_0510006">（又曰…人）十二字【大】，〔－〕【甲】</note>
+<note n="0510007" resp="#resp3" type="mod" target="#nkr_note_mod_0510007">（又曰…閒）十二字【大】，〔－〕【甲】</note>
+<note n="0510008" resp="#resp3" type="mod" target="#nkr_note_mod_0510008">（又曰…居）十二字【大】，〔－〕【甲】</note>
+<note n="0510009" resp="#resp3" type="mod" target="#nkr_note_mod_0510009">（又曰…志）十八字【大】，〔－〕【甲】</note>
+<note n="0510010" resp="#resp3" type="mod" target="#nkr_note_mod_0510010">齋【大】，齋<note place="inline">曹山曰如今人如佛味祖味盡為滯著</note>【甲】</note>
+<note n="0510011" resp="#resp3" type="mod" target="#nkr_note_mod_0510011">（保福…為佛）二十八字【大】，<note place="inline">保福別云佛非雲門云名不得狀不得所以言非法眼別云方便呼為佛</note>【甲】</note>
+<note n="0510012" resp="#resp3" type="mod" target="#nkr_note_mod_0510012">師【大】，〔－〕【甲】</note>
+<note n="0510013" resp="#resp3" type="mod" target="#nkr_note_mod_0510013">（雲門…一切）十七字【大】，<note place="inline">雲門云拄杖但喚作拄杖一切但喚作一切</note>【甲】</note>
+<note n="0510014" resp="#resp3" type="mod" target="#nkr_note_mod_0510014">僧【大】＊，〔－〕【甲】＊</note>
+<note n="0510015" resp="#resp3" type="mod" target="#nkr_note_mod_0510015">（僧問…來）四十二字【大】，<note place="inline">僧問曹山先師道吾常於此切意作麼生山云要頭便斫去又問雪峯峯以拄杖劈口打云我亦曾到洞山來</note>【甲】</note>
+<note n="0511001" resp="#resp3" type="mod" target="#nkr_note_mod_0511001">節【大】，夜【校異-甲】</note>
+<note n="0511002" resp="#resp3" type="mod" target="#nkr_note_mod_0511002">泰首座【大】，太長老【校異-甲】</note>
+<note n="0511003" resp="#resp3" type="mod" target="#nkr_note_mod_0511003"><!--CBETA todo type: ＊-->原本註曰宏智錄互作顧＊</note>
+<note n="0511005" resp="#resp3" type="mod" target="#nkr_note_mod_0511005"><!--CBETA todo type: a-->（師示眾…不違）百五十七字【大】∞（有庵主…莖茆）八十二字【甲】</note>
+<note n="0511006" resp="#resp3" type="mod" target="#nkr_note_mod_0511006">私【大】，絲【校異-原】</note>
+<note n="0511007" resp="#resp3" type="mod" target="#nkr_note_mod_0511007">無對趙州代僧【大】，〔－〕【甲】</note>
+<note n="0511008" resp="#resp3" type="mod" target="#nkr_note_mod_0511008">若【大】，〔－〕【甲】</note>
+<note n="0511009" resp="#resp3" type="mod" target="#nkr_note_mod_0511009"><!--CBETA todo type: a-->（有庵主…莖茆）八十二字【大】∞（師示眾…不違）百五十七字【甲】</note>
+<note n="0511010" resp="#resp3" type="mod" target="#nkr_note_mod_0511010">山【大】，山之【甲】</note>
+<note n="0511011" resp="#resp3" type="mod" target="#nkr_note_mod_0511011">（意上座…重他）二百六十六字【大】，〔－〕【甲】</note>
+<note n="0511012" resp="#resp3" type="mod" target="#nkr_note_mod_0511012">羅【大】，羅<note place="inline">東禪齊拈云此還有疑訛也無若有且道甚麼處不得若無他又道最苦是新羅還點檢出麼他道行則不無有覺即乖却令再問是其麼行又道佛行那僧是會了問不會了問請斷看</note>【甲】</note>
+<note n="0512001" resp="#resp3" type="mod" target="#nkr_note_mod_0512001">便【大】，便即【甲】</note>
+<note n="0512002" resp="#resp3" type="mod" target="#nkr_note_mod_0512002">僧【大】，師因僧【甲】</note>
+<note n="0512003" resp="#resp3" type="mod" target="#nkr_note_mod_0512003">（法眼…笠子）十三字【大】，<note place="inline">法眼別云和尚若去某甲提笠子</note>【甲】</note>
+<note n="0512004" resp="#resp3" type="mod" target="#nkr_note_mod_0512004">（雲居…在）三十五字【大】，<note place="inline">雲居云行時無說路說時無行路不說不行時合行什麼路樂普云行說俱不到即本事在</note>【甲】</note>
+<note n="0512005" resp="#resp3" type="mod" target="#nkr_note_mod_0512005">師【大】，〔－〕【甲】</note>
+<note n="0512006" resp="#resp3" type="mod" target="#nkr_note_mod_0512006">（道吾…地）十二字【大】，〔－〕【甲】</note>
+<note n="0512007" resp="#resp3" type="mod" target="#nkr_note_mod_0512007">舉【大】，舉示眾曰【甲】</note>
+<note n="0512008" resp="#resp3" type="mod" target="#nkr_note_mod_0512008">在【大】，在舉無著和尚因日勉遂問文殊云擬投一宿得否殊云爾有執心在不得此宿著云某甲無執心殊云爾受戒否著云受戒久矣殊云爾若無執心何用受戒著遂辭遏均提童子送著出著云適來和尚道前三三後三三是多少童子召云大德著回首童子云是多少師曰欲觀其父先觀其子【甲】</note>
+<note n="0512009" resp="#resp3" type="mod" target="#nkr_note_mod_0512009"><!--CBETA todo type: a-->（師示眾…在）二十六字【大】∞（舉文殊…何物）九十九字【甲】</note>
+<note n="0512010" resp="#resp3" type="mod" target="#nkr_note_mod_0512010"><!--CBETA todo type: a-->（舉文殊…何物）九十九字【大】∞（師示眾…在）二十六字【甲】</note>
+<note n="0512011" resp="#resp3" type="mod" target="#nkr_note_mod_0512011">著【大】，著曰【甲】</note>
+<note n="0512012" resp="#resp3" type="mod" target="#nkr_note_mod_0512012">否【大】，否石霜因僧問咫尺之間為甚不覩師顏霜曰我道遍界不曾藏僧後問雪峰遍界不曾藏意旨如何峰云什麼處不是石霜僧回舉似霜霜曰這老漢有什麼死急師聞曰笑殺土地西園一日自開俗次僧問何不使沙彌園乃撫掌三下師曰一種是時節因緣就中西園精妙【甲】</note>
+<note n="0512013" resp="#resp3" type="mod" target="#nkr_note_mod_0512013">山【大】，山寶積禪師【甲】</note>
+<note n="0512014" resp="#resp3" type="mod" target="#nkr_note_mod_0512014">舉【大】，〔－〕【甲】</note>
+<note n="0512015" resp="#resp3" type="mod" target="#nkr_note_mod_0512015">（雲巖…非佛）十一字【大】，〔－〕【甲】</note>
+<note n="0512016" resp="#resp3" type="mod" target="#nkr_note_mod_0512016">瀧【大】，霜【校異-甲】</note>
+<note n="0512017" resp="#resp3" type="mod" target="#nkr_note_mod_0512017">几【大】，向【校異-甲】</note>
+<note n="0512018" resp="#resp3" type="mod" target="#nkr_note_mod_0512018">太【大】，大【甲】</note>
+<note n="0513001" resp="#resp3" type="mod" target="#nkr_note_mod_0513001">山【大】，生【校異-原】【甲】</note>
+<note n="0513002" resp="#resp3" type="mod" target="#nkr_note_mod_0513002">（自爾…袖）十字【大】，〔－〕【甲】</note>
+<note n="0513003" resp="#resp3" type="mod" target="#nkr_note_mod_0513003">謁【大】，謁師【甲】</note>
+<note n="0513004" resp="#resp3" type="mod" target="#nkr_note_mod_0513004">山【大】，曹【甲】</note>
+<note n="0513005" resp="#resp3" type="mod" target="#nkr_note_mod_0513005">曰古佛【大】，深肯之【甲】</note>
+<note n="0513006" resp="#resp3" type="mod" target="#nkr_note_mod_0513006">云【大】＊，曹云【甲】＊</note>
+<note n="0513007" resp="#resp3" type="mod" target="#nkr_note_mod_0513007">問【大】，問師【甲】</note>
+<note n="0513008" resp="#resp3" type="mod" target="#nkr_note_mod_0513008">僧舉【大】，〔－〕【甲】</note>
+<note n="0513009" resp="#resp3" type="mod" target="#nkr_note_mod_0513009">問【大】，有僧舉問【甲】</note>
+<note n="0513010" resp="#resp3" type="mod" target="#nkr_note_mod_0513010">又舉某甲日前【大】，〔－〕【甲】</note>
+<note n="0513011" resp="#resp3" type="mod" target="#nkr_note_mod_0513011">近前曰<g ref="#CB01403">㘞</g>【大】，〔－〕【甲】</note>
+<note n="0513012" resp="#resp3" type="mod" target="#nkr_note_mod_0513012">笑【大】，笑牙後參師舉前語【甲】</note>
+<note n="0514001" resp="#resp3" type="mod" target="#nkr_note_mod_0514001">逆【大】，泝【校異-原】【甲】</note>
+<note n="0514002" resp="#resp3" type="mod" target="#nkr_note_mod_0514002">見【大】，見師【甲】</note>
+<note n="0514003" resp="#resp3" type="mod" target="#nkr_note_mod_0514003">士【大】，士<note place="inline">師沒廬於塔傍至中和始乃辭塔北遊</note>【甲】</note>
+<note n="0514004" resp="#resp3" type="mod" target="#nkr_note_mod_0514004">長長【大】，青青【校異-原】</note>
+<note n="0514005" resp="#resp3" type="mod" target="#nkr_note_mod_0514005">青【大】，荒【校異-原】</note>
+<note n="0514006" resp="#resp3" type="mod" target="#nkr_note_mod_0514006">時號钁頭通【大】，<note place="inline">時號钁頭通</note>【甲】</note>
+<note n="0514007" resp="#resp3" type="mod" target="#nkr_note_mod_0514007">（法眼…他）十三字【大】，<note place="inline">法眼云不盡師意不易承嗣得他</note>【甲】</note>
+<note n="0514008" resp="#resp3" type="mod" target="#nkr_note_mod_0514008">閉【大】，開【校異-甲】</note>
+<note n="0514010" resp="#resp3" type="mod" target="#nkr_note_mod_0514010">（雲居…道）十字【大】，<note place="inline">先雲居云待某甲有口即道長慶云與麼則某甲謹退雲居徵云秖如雪峰與麼道是入門語不是入門語</note>【甲】</note>
+<note n="0514011" resp="#resp3" type="mod" target="#nkr_note_mod_0514011">琅瑘覺云巖頭無人問著不妨奇特纔被洞山腦後一錐直得瓦解氷消【大】，<note place="inline">琅瑘覺云巖頭無人問著不妨奇特纔被洞山腦後一錐直得瓦解氷消</note>【甲】</note>
+<note n="0514012" resp="#resp3" type="mod" target="#nkr_note_mod_0514012">（同安顯…也）十五字【大】，（<note place="inline">同安顯代曰。恁麼則雲巖一枝不墜也</note>）十五字【甲】</note>
+<note n="0514013" resp="#resp3" type="mod" target="#nkr_note_mod_0514013">也【大】，也<note place="inline">雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生</note>【甲】</note>
+<note n="0514014" resp="#resp3" type="mod" target="#nkr_note_mod_0514014">（石霜…辨得）四十三字【大】，<note place="inline">石霜云無人得他肯雲居云若有間名非吾先師曹山云從古至今無人辯得疎山云龍有出水之機無人辨得</note>【甲】</note>
+<note n="0515001" resp="#resp3" type="mod" target="#nkr_note_mod_0515001">復【大】，〔－〕【甲】</note>
+<note n="0515002" resp="#resp3" type="mod" target="#nkr_note_mod_0515002">覺【大】，覺<note place="inline">師昔在<g ref="#CB05271">𭰤</g>潭尋繹大藏纂出大乘經要一卷并激勵道俗偈頌誡等流布諸方</note>【甲】</note>
+<note n="0515004" resp="#resp3" type="mod" target="#nkr_note_mod_0515004">重【大】，如【校異-甲】</note>
+<note n="0516002" resp="#resp3" type="mod" target="#nkr_note_mod_0516002">五位【大】，〔－〕【甲】</note>
+<note n="0516003" resp="#resp3" type="mod" target="#nkr_note_mod_0516003">本則既已出上【大】，異本作上堂次示問話僧頌【甲】</note>
+<note n="0516005" resp="#resp3" type="mod" target="#nkr_note_mod_0516005">向【大】，〔－〕【甲】</note>
+<note n="0516007" resp="#resp3" type="mod" target="#nkr_note_mod_0516007">奉【大】，〔－〕【甲】</note>
+<note n="0516009" resp="#resp3" type="mod" target="#nkr_note_mod_0516009">功【大】，〔－〕【甲】</note>
+<note n="0516011" resp="#resp3" type="mod" target="#nkr_note_mod_0516011">共功【大】，〔－〕【甲】</note>
+<note n="0516013" resp="#resp3" type="mod" target="#nkr_note_mod_0516013">功功【大】，〔－〕【甲】</note>
+<note n="0517001" resp="#resp3" type="mod" target="#nkr_note_mod_0517001">（師昔…諸方）三十字【大】，〔－〕【甲】</note>
+<note n="0517002" resp="#resp3" type="mod" target="#nkr_note_mod_0517002">日【大】，自【考偽-原】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0507001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0507001">【原】明和三年刊駒澤大學藏本，【甲】元文四年刊玄契編次本大谷大學藏，甲本無此序</note>
-<note n="0507002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0507002">甲本自師幼歲至死中得活題為行由而置於歌頌之前 cf. P. 509b, P. 515a</note>
-<note n="0507003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0507003">〔曰〕－【甲】＊</note>
-<note n="0507004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0507004">日＝月ィ【原】【甲】</note>
-<note n="0507005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0507005">特＝犢ィ【甲】</note>
-<note n="0507006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0507006">自是和尚＝何以【甲】</note>
-<note n="0508001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508001">近前日＝問【甲】</note>
-<note n="0508002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508002">一尼＝尼眾【甲】</note>
-<note n="0508003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508003">這＋（箇）【甲】</note>
-<note n="0508004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508004">良久＝沈吟【甲】</note>
-<note n="0508005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508005">細＋（師猶涉疑）【甲】</note>
-<note n="0508006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508006">〔師侍…出〕三十六字－【甲】</note>
-<note n="0508007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508007">〔合〕－【甲】</note>
-<note n="0508008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508008">甲本曹山乃至親得十字作夾註</note>
-<note n="0508009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508009">師＋（初）【甲】</note>
-<note n="0508010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508010">它且＝渠【甲】</note>
-<note n="0508011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508011">它亦＝渠【甲】</note>
-<note n="0508012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508012">甲本保福乃至幾人十六字作夾註</note>
-<note n="0508013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508013">山＝薯【甲】</note>
-<note n="0508014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0508014">山＝龍【甲】＊</note>
-<note n="0509001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509001">似＝次ィ【原】</note>
-<note n="0509002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509002">甲本法眼乃至不註十一字作夾註</note>
-<note n="0509003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509003">柏巖＝百顏【甲】</note>
-<note n="0509004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509004">巖＝顏【甲】＊</note>
-<note n="0509005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509005">夏＋（此語諸本誤改易文字還作混尊卑語又開粥下加飯字最不可也）夾註【甲】</note>
-<note n="0509006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509006">甲本起首于茲</note>
-<note n="0509007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509007">洎＝幾【甲】</note>
-<note n="0509008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509008">甲本長慶乃至父慈二十字作夾註</note>
-<note n="0509009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509009">（亦不為）＋佛【甲】</note>
-<note n="0509010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509010">牙＝涯ィ【甲】</note>
-<note n="0509011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509011">甲本雲居乃至甚麼四十四字作夾註</note>
-<note n="0509012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509012">〔因有…不會〕六十四字－【甲】</note>
-<note n="0509013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0509013">佛言教＝教佛教【甲】</note>
-<note n="0510001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510001">〔玄旨〕－【甲】</note>
-<note n="0510002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510002">甲本後僧乃至六義三十九字作夾註</note>
-<note n="0510003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510003">（別云）＋大【甲】</note>
-<note n="0510004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510004">〔後明安…地〕十五字－【甲】</note>
-<note n="0510005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510005">〔又曰…飢〕十二字－【甲】</note>
-<note n="0510006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510006">〔又曰…人〕十二字－【甲】</note>
-<note n="0510007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510007">〔又曰…間〕十二字－【甲】</note>
-<note n="0510008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510008">〔又曰…居〕十二字－【甲】</note>
-<note n="0510009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510009">〔又曰…志〕十八字－【甲】</note>
-<note n="0510010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510010">齋＋（曹山曰如今人如佛味祖味盡為滯著）夾註【甲】</note>
-<note n="0510011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510011">甲本保福乃至為佛二十八字作夾註</note>
-<note n="0510012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510012">〔師〕－【甲】</note>
-<note n="0510013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510013">甲本雲門乃至一切十七字作夾註</note>
-<note n="0510014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510014">〔僧〕－【甲】＊</note>
-<note n="0510015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0510015">甲本僧問乃至來四十二字作夾註</note>
-<note n="0511001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511001">節＝夜ィ【甲】</note>
-<note n="0511002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511002">泰首座＝太長老ィ【甲】</note>
-<note n="0511003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511003">原本註曰宏智錄互作顧＊</note>
-<note n="0511004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511004">此次甲本有蟾首座問師佛真法身猶若虛空應物現形如水中月作麼生說箇應底道理師曰如驢覷井座云是則是只道得八成師曰首座作麼生座云如井覷驢五十九字</note>
-<note n="0511005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511005">（師示眾…不違）百五十七字∞（有庵主…莖茆）八十二字【甲】</note>
-<note n="0511006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511006">私＝絲ィ【原】</note>
-<note n="0511007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511007">〔無對趙州代僧〕－【甲】</note>
-<note n="0511008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511008">〔若〕－【甲】</note>
-<note n="0511009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511009">（師示眾…不違）百五十七字∞（有庵主…莖茆）八十二字【甲】</note>
-<note n="0511010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511010">山＋（之）【甲】</note>
-<note n="0511011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511011">〔意上座…重他〕二百六十六字－【甲】</note>
-<note n="0511012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0511012">羅＋（東禪齊拈云此還有疑訛也無若有且道甚麼處不得若無他又道最苦是新羅還點檢出麼他道行則不無有覺即乖却令再問是其麼行又道佛行那僧是會了問不會了問請斷看）七十一字夾註【甲】</note>
-<note n="0512001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512001">便＋（即）【甲】</note>
-<note n="0512002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512002">（師因）＋僧【甲】</note>
-<note n="0512003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512003">甲本法眼乃至笠子十三字作夾註</note>
-<note n="0512004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512004">甲本雲居乃至在三十五字作夾註</note>
-<note n="0512005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512005">〔師〕－【甲】</note>
-<note n="0512006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512006">〔道吾…地〕十二字－【甲】</note>
-<note n="0512007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512007">舉＋（示眾曰）【甲】</note>
-<note n="0512008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512008">甲本在字次有舉無著和尚因日勉遂問文殊云擬投一宿得否殊云爾有執心在不得此宿著云某甲無執心殊云爾受戒否著云受戒久矣殊云爾若無執心何用受戒著遂辭遏均提童子送著出著云適來和尚道前三三後三三是多少童子召云大德著回首童子云是多少師曰欲觀其父先觀其子百十二字</note>
-<note n="0512009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512009">（師示眾…在）二十六字∞（舉文殊…何物）九十九字【甲】</note>
-<note n="0512010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512010">（師示眾…在）二十六字∞（舉文殊…何物）九十九字【甲】</note>
-<note n="0512011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512011">著＋（曰）【甲】</note>
-<note n="0512012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512012">甲本否字次有石霜因僧問咫尺之間為甚不覩師顏霜曰我道遍界不曾藏僧後問雪峰遍界不曾藏意旨如何峰云什麼處不是石霜僧回舉似霜霜曰這老漢有什麼死急師聞曰笑殺土地西園一日自開俗次僧問何不使沙彌園乃撫掌三下師曰一種是時節因緣就中西園精妙百五字</note>
-<note n="0512013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512013">山＋（寶積禪師）【甲】</note>
-<note n="0512014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512014">〔舉〕－【甲】</note>
-<note n="0512015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512015">〔雲巖…非佛〕十一字－【甲】</note>
-<note n="0512016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512016">瀧＝霜ィ【甲】</note>
-<note n="0512017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512017">几＝向ィ【甲】</note>
-<note n="0512018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0512018">太＝大【甲】</note>
-<note n="0513001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513001">山＝生ィ【原】【甲】</note>
-<note n="0513002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513002">〔自爾…袖〕十字－【甲】</note>
-<note n="0513003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513003">謁＋（師）【甲】</note>
-<note n="0513004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513004">山＝曹【甲】</note>
-<note n="0513005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513005">曰古佛＝深肯之【甲】</note>
-<note n="0513006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513006">（曹）＋云【甲】＊</note>
-<note n="0513007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513007">問＋（師）【甲】</note>
-<note n="0513008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513008">〔僧舉〕－【甲】</note>
-<note n="0513009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513009">（有僧舉）＋問【甲】</note>
-<note n="0513010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513010">〔又舉某甲日前〕－【甲】</note>
-<note n="0513011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513011">〔近前曰<g ref="#CB01403">㘞</g>〕－【甲】</note>
-<note n="0513012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0513012">笑＋（牙後參師舉前語）【甲】</note>
-<note n="0514001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514001">逆＝泝ィ【原】【甲】</note>
-<note n="0514002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514002">見＋（師）【甲】</note>
-<note n="0514003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514003">士＋（師沒廬於塔傍至中和始乃辭塔北遊）夾註【甲】</note>
-<note n="0514004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514004">長長＝青青ィ【原】</note>
-<note n="0514005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514005">青＝荒ィ【原】</note>
-<note n="0514006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514006">甲本時號钁頭通五字作夾註</note>
-<note n="0514007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514007">甲本法眼乃至他十三字作夾註</note>
-<note n="0514008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514008">閉＝開ィ【甲】</note>
-<note n="0514009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514009">甲本雲字上有先字先雲居乃至者十四字作夾註</note>
-<note n="0514010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514010">（（雲居…道））十字＝（（先雲居云待某甲有口即道長慶云與麼則某甲謹退雲居徵云秖如雪峰與麼道是入門語不是入門語））四十一字夾註【甲】</note>
-<note n="0514011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514011">甲本琅瑘覺乃至氷消二十八字作夾註</note>
-<note n="0514012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514012">甲本同安顯乃至也十五字作夾註</note>
-<note n="0514013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514013">也＋（雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生）夾註【甲】</note>
-<note n="0514014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0514014">甲本石霜乃至辯得四十三字作夾註</note>
-<note n="0515001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0515001">〔復〕－【甲】</note>
-<note n="0515002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0515002">覺＋（師昔在<g ref="#CB05271">𭰤</g>潭尋繹大藏纂出大乘經要一卷并激勵道俗偈頌誡等流布諸方）三十字夾註【甲】</note>
-<note n="0515003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0515003">甲本歌頌之前有行由 cf. P. 507a.</note>
-<note n="0515004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0515004">重＝如ィ【甲】</note>
-<note n="0516001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516001">甲本五位並五位頌詳載之</note>
-<note n="0516002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516002">〔五位〕－【甲】</note>
-<note n="0516003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516003">本則既已出上＝異本作上堂次示問話僧頌【甲】</note>
-<note n="0516004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516004">甲本聖字前有問如何是向師曰得力須忘飽休糧更不饑十七字</note>
-<note n="0516005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516005">〔向〕－【甲】</note>
-<note n="0516006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516006">甲本淨字前有問如何是奉師曰只知朱紫貴辠負本來人十七字</note>
-<note n="0516007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516007">〔奉〕－【甲】</note>
-<note n="0516008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516008">甲本枯字前有問如何是功師曰撒手端然坐白雲深處間十七字</note>
-<note n="0516009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516009">〔功〕－【甲】</note>
-<note n="0516010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516010">甲本眾字前有問如何是共功師曰素粉難沈跡長安不久居十八字</note>
-<note n="0516011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516011">〔共功〕－【甲】</note>
-<note n="0516012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516012">甲本頭字前有問如何是功功師曰混然無諱處此外更何求十八字</note>
-<note n="0516013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516013">〔功功〕－【甲】</note>
-<note n="0516014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0516014">甲本真讚前有王子頌五首，誕生，天然貴胤本非功，德合乾坤育勢隆，始末一期無雜種，分宮六宅不他宗，上和下睦陰陽順，共氣連枝器量同，欲識誕生王子父，鶴騰霄漢出銀籠，朝生，苦學論情世不群，出來凡事已超倫，詩成五字三冬雪，筆落分毫四海雲，萬卷積功彰聖代，一心忠孝輔明君，鹽梅不是生知得，金榜何勞顯至勳，末生，久棲巖嶽用功夫，草榻柴扉守志孤，十載見聞心自委，一身冬夏衣縑無，澄凝愁看三秋思，情苦高名上哲圖，業就巍科酬極志，比來臣相不當途，化生，傍分帝化為傳持，萬里山河布分政威，紅影日輪凝下界，碧油風冷，暑炎時，高低豈廢尊卑奉，五袴蘇途遠近知，妙印手持煙塞靜，當陽那肯露纖機，內生，九重深密復何宣，挂弊繇來顯妙傳，秖奉一人天地貴，從他諸道自分權，紫羅帳合君臣隔，黃閤簾垂禁制全，為汝方隅官屬戀，遂將黃葉止啼錢</note>
-<note n="0517001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0517001">〔師昔…諸方〕三十字－【甲】</note>
-<note n="0517002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0517002">日＝自ヵ【原】</note>
-<note n="0518001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0518001">以下序贊並跋等依甲本載之</note>
+<note n="0507001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0507001">【原】明和三年刊駒澤大學藏本，【甲】元文四年刊玄契編次本大谷大學藏，甲本無此序</note>
+<note n="0507002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0507002">甲本自師幼歲至死中得活題為行由而置於歌頌之前 cf. P. 509b, P. 515a</note>
+<note n="0507003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0507003">〔曰〕－【甲】＊</note>
+<note n="0507004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0507004">日＝月ィ【原】【甲】</note>
+<note n="0507005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0507005">特＝犢ィ【甲】</note>
+<note n="0507006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0507006">自是和尚＝何以【甲】</note>
+<note n="0508001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508001">近前日＝問【甲】</note>
+<note n="0508002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508002">一尼＝尼眾【甲】</note>
+<note n="0508003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508003">這＋（箇）【甲】</note>
+<note n="0508004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508004">良久＝沈吟【甲】</note>
+<note n="0508005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508005">細＋（師猶涉疑）【甲】</note>
+<note n="0508006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508006">〔師侍…出〕三十六字－【甲】</note>
+<note n="0508007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508007">〔合〕－【甲】</note>
+<note n="0508008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508008">甲本曹山乃至親得十字作夾註</note>
+<note n="0508009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508009">師＋（初）【甲】</note>
+<note n="0508010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508010">它且＝渠【甲】</note>
+<note n="0508011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508011">它亦＝渠【甲】</note>
+<note n="0508012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508012">甲本保福乃至幾人十六字作夾註</note>
+<note n="0508013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508013">山＝薯【甲】</note>
+<note n="0508014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0508014">山＝龍【甲】＊</note>
+<note n="0509001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509001">似＝次ィ【原】</note>
+<note n="0509002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509002">甲本法眼乃至不註十一字作夾註</note>
+<note n="0509003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509003">柏巖＝百顏【甲】</note>
+<note n="0509004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509004">巖＝顏【甲】＊</note>
+<note n="0509005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509005">夏＋（此語諸本誤改易文字還作混尊卑語又開粥下加飯字最不可也）夾註【甲】</note>
+<note n="0509006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509006">甲本起首于茲</note>
+<note n="0509007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509007">洎＝幾【甲】</note>
+<note n="0509008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509008">甲本長慶乃至父慈二十字作夾註</note>
+<note n="0509009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509009">（亦不為）＋佛【甲】</note>
+<note n="0509010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509010">牙＝涯ィ【甲】</note>
+<note n="0509011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509011">甲本雲居乃至甚麼四十四字作夾註</note>
+<note n="0509012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509012">〔因有…不會〕六十四字－【甲】</note>
+<note n="0509013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0509013">佛言教＝教佛教【甲】</note>
+<note n="0510001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510001">〔玄旨〕－【甲】</note>
+<note n="0510002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510002">甲本後僧乃至六義三十九字作夾註</note>
+<note n="0510003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510003">（別云）＋大【甲】</note>
+<note n="0510004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510004">〔後明安…地〕十五字－【甲】</note>
+<note n="0510005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510005">〔又曰…飢〕十二字－【甲】</note>
+<note n="0510006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510006">〔又曰…人〕十二字－【甲】</note>
+<note n="0510007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510007">〔又曰…間〕十二字－【甲】</note>
+<note n="0510008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510008">〔又曰…居〕十二字－【甲】</note>
+<note n="0510009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510009">〔又曰…志〕十八字－【甲】</note>
+<note n="0510010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510010">齋＋（曹山曰如今人如佛味祖味盡為滯著）夾註【甲】</note>
+<note n="0510011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510011">甲本保福乃至為佛二十八字作夾註</note>
+<note n="0510012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510012">〔師〕－【甲】</note>
+<note n="0510013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510013">甲本雲門乃至一切十七字作夾註</note>
+<note n="0510014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510014">〔僧〕－【甲】＊</note>
+<note n="0510015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0510015">甲本僧問乃至來四十二字作夾註</note>
+<note n="0511001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511001">節＝夜ィ【甲】</note>
+<note n="0511002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511002">泰首座＝太長老ィ【甲】</note>
+<note n="0511003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511003">原本註曰宏智錄互作顧＊</note>
+<note n="0511004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511004">此次甲本有蟾首座問師佛真法身猶若虛空應物現形如水中月作麼生說箇應底道理師曰如驢覷井座云是則是只道得八成師曰首座作麼生座云如井覷驢五十九字</note>
+<note n="0511005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511005">（師示眾…不違）百五十七字∞（有庵主…莖茆）八十二字【甲】</note>
+<note n="0511006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511006">私＝絲ィ【原】</note>
+<note n="0511007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511007">〔無對趙州代僧〕－【甲】</note>
+<note n="0511008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511008">〔若〕－【甲】</note>
+<note n="0511009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511009">（師示眾…不違）百五十七字∞（有庵主…莖茆）八十二字【甲】</note>
+<note n="0511010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511010">山＋（之）【甲】</note>
+<note n="0511011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511011">〔意上座…重他〕二百六十六字－【甲】</note>
+<note n="0511012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0511012">羅＋（東禪齊拈云此還有疑訛也無若有且道甚麼處不得若無他又道最苦是新羅還點檢出麼他道行則不無有覺即乖却令再問是其麼行又道佛行那僧是會了問不會了問請斷看）七十一字夾註【甲】</note>
+<note n="0512001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512001">便＋（即）【甲】</note>
+<note n="0512002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512002">（師因）＋僧【甲】</note>
+<note n="0512003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512003">甲本法眼乃至笠子十三字作夾註</note>
+<note n="0512004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512004">甲本雲居乃至在三十五字作夾註</note>
+<note n="0512005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512005">〔師〕－【甲】</note>
+<note n="0512006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512006">〔道吾…地〕十二字－【甲】</note>
+<note n="0512007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512007">舉＋（示眾曰）【甲】</note>
+<note n="0512008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512008">甲本在字次有舉無著和尚因日勉遂問文殊云擬投一宿得否殊云爾有執心在不得此宿著云某甲無執心殊云爾受戒否著云受戒久矣殊云爾若無執心何用受戒著遂辭遏均提童子送著出著云適來和尚道前三三後三三是多少童子召云大德著回首童子云是多少師曰欲觀其父先觀其子百十二字</note>
+<note n="0512009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512009">（師示眾…在）二十六字∞（舉文殊…何物）九十九字【甲】</note>
+<note n="0512010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512010">（師示眾…在）二十六字∞（舉文殊…何物）九十九字【甲】</note>
+<note n="0512011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512011">著＋（曰）【甲】</note>
+<note n="0512012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512012">甲本否字次有石霜因僧問咫尺之間為甚不覩師顏霜曰我道遍界不曾藏僧後問雪峰遍界不曾藏意旨如何峰云什麼處不是石霜僧回舉似霜霜曰這老漢有什麼死急師聞曰笑殺土地西園一日自開俗次僧問何不使沙彌園乃撫掌三下師曰一種是時節因緣就中西園精妙百五字</note>
+<note n="0512013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512013">山＋（寶積禪師）【甲】</note>
+<note n="0512014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512014">〔舉〕－【甲】</note>
+<note n="0512015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512015">〔雲巖…非佛〕十一字－【甲】</note>
+<note n="0512016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512016">瀧＝霜ィ【甲】</note>
+<note n="0512017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512017">几＝向ィ【甲】</note>
+<note n="0512018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0512018">太＝大【甲】</note>
+<note n="0513001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513001">山＝生ィ【原】【甲】</note>
+<note n="0513002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513002">〔自爾…袖〕十字－【甲】</note>
+<note n="0513003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513003">謁＋（師）【甲】</note>
+<note n="0513004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513004">山＝曹【甲】</note>
+<note n="0513005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513005">曰古佛＝深肯之【甲】</note>
+<note n="0513006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513006">（曹）＋云【甲】＊</note>
+<note n="0513007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513007">問＋（師）【甲】</note>
+<note n="0513008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513008">〔僧舉〕－【甲】</note>
+<note n="0513009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513009">（有僧舉）＋問【甲】</note>
+<note n="0513010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513010">〔又舉某甲日前〕－【甲】</note>
+<note n="0513011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513011">〔近前曰<g ref="#CB01403">㘞</g>〕－【甲】</note>
+<note n="0513012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0513012">笑＋（牙後參師舉前語）【甲】</note>
+<note n="0514001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514001">逆＝泝ィ【原】【甲】</note>
+<note n="0514002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514002">見＋（師）【甲】</note>
+<note n="0514003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514003">士＋（師沒廬於塔傍至中和始乃辭塔北遊）夾註【甲】</note>
+<note n="0514004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514004">長長＝青青ィ【原】</note>
+<note n="0514005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514005">青＝荒ィ【原】</note>
+<note n="0514006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514006">甲本時號钁頭通五字作夾註</note>
+<note n="0514007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514007">甲本法眼乃至他十三字作夾註</note>
+<note n="0514008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514008">閉＝開ィ【甲】</note>
+<note n="0514009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514009">甲本雲字上有先字先雲居乃至者十四字作夾註</note>
+<note n="0514010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514010">（（雲居…道））十字＝（（先雲居云待某甲有口即道長慶云與麼則某甲謹退雲居徵云秖如雪峰與麼道是入門語不是入門語））四十一字夾註【甲】</note>
+<note n="0514011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514011">甲本琅瑘覺乃至氷消二十八字作夾註</note>
+<note n="0514012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514012">甲本同安顯乃至也十五字作夾註</note>
+<note n="0514013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514013">也＋（雲居錫云上座具道雲巖路絕不絕崇壽稠云古人打此一棒意作麼生）夾註【甲】</note>
+<note n="0514014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0514014">甲本石霜乃至辯得四十三字作夾註</note>
+<note n="0515001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0515001">〔復〕－【甲】</note>
+<note n="0515002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0515002">覺＋（師昔在<g ref="#CB05271">𭰤</g>潭尋繹大藏纂出大乘經要一卷并激勵道俗偈頌誡等流布諸方）三十字夾註【甲】</note>
+<note n="0515003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0515003">甲本歌頌之前有行由 cf. P. 507a.</note>
+<note n="0515004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0515004">重＝如ィ【甲】</note>
+<note n="0516001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516001">甲本五位並五位頌詳載之</note>
+<note n="0516002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516002">〔五位〕－【甲】</note>
+<note n="0516003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516003">本則既已出上＝異本作上堂次示問話僧頌【甲】</note>
+<note n="0516004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516004">甲本聖字前有問如何是向師曰得力須忘飽休糧更不饑十七字</note>
+<note n="0516005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516005">〔向〕－【甲】</note>
+<note n="0516006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516006">甲本淨字前有問如何是奉師曰只知朱紫貴辠負本來人十七字</note>
+<note n="0516007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516007">〔奉〕－【甲】</note>
+<note n="0516008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516008">甲本枯字前有問如何是功師曰撒手端然坐白雲深處間十七字</note>
+<note n="0516009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516009">〔功〕－【甲】</note>
+<note n="0516010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516010">甲本眾字前有問如何是共功師曰素粉難沈跡長安不久居十八字</note>
+<note n="0516011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516011">〔共功〕－【甲】</note>
+<note n="0516012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516012">甲本頭字前有問如何是功功師曰混然無諱處此外更何求十八字</note>
+<note n="0516013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516013">〔功功〕－【甲】</note>
+<note n="0516014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0516014">甲本真讚前有王子頌五首，誕生，天然貴胤本非功，德合乾坤育勢隆，始末一期無雜種，分宮六宅不他宗，上和下睦陰陽順，共氣連枝器量同，欲識誕生王子父，鶴騰霄漢出銀籠，朝生，苦學論情世不群，出來凡事已超倫，詩成五字三冬雪，筆落分毫四海雲，萬卷積功彰聖代，一心忠孝輔明君，鹽梅不是生知得，金榜何勞顯至勳，末生，久棲巖嶽用功夫，草榻柴扉守志孤，十載見聞心自委，一身冬夏衣縑無，澄凝愁看三秋思，情苦高名上哲圖，業就巍科酬極志，比來臣相不當途，化生，傍分帝化為傳持，萬里山河布分政威，紅影日輪凝下界，碧油風冷，暑炎時，高低豈廢尊卑奉，五袴蘇途遠近知，妙印手持煙塞靜，當陽那肯露纖機，內生，九重深密復何宣，挂弊繇來顯妙傳，秖奉一人天地貴，從他諸道自分權，紫羅帳合君臣隔，黃閤簾垂禁制全，為汝方隅官屬戀，遂將黃葉止啼錢</note>
+<note n="0517001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0517001">〔師昔…諸方〕三十字－【甲】</note>
+<note n="0517002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0517002">日＝自ヵ【原】</note>
+<note n="0518001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0518001">以下序贊並跋等依甲本載之</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0511c0801" resp="#resp2" type="add" target="#nkr_note_add_0511c0801">掐【CB】，搯【大】</note>
-<note n="0511c0802" resp="#resp2" type="add" target="#nkr_note_add_0511c0802">掐【CB】，搯【大】</note>
-<note n="0512a2901" resp="#resp2" type="add" target="#nkr_note_add_0512a2901">藥【CB】，樂【大】</note>
-<note n="0516c2001" resp="#resp2" type="add" target="#nkr_note_add_0516c2001">命【CB】，侖【大】</note>
+<note n="0511c0801" resp="#resp3" type="add" target="#nkr_note_add_0511c0801">掐【CB】，搯【大】</note>
+<note n="0511c0802" resp="#resp3" type="add" target="#nkr_note_add_0511c0802">掐【CB】，搯【大】</note>
+<note n="0512a2901" resp="#resp3" type="add" target="#nkr_note_add_0512a2901">藥【CB】，樂【大】</note>
+<note n="0516c2001" resp="#resp3" type="add" target="#nkr_note_add_0516c2001">命【CB】，侖【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

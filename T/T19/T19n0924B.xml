@@ -11,105 +11,72 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.6 $<date>$Date: 2009/04/23 08:00:01 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:00:01 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 19, No. 924B</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-		<witness xml:id="wit3">【原】</witness>
-		<witness xml:id="wit4">【乙】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">19</idno>.<idno type="no">924B</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">藥師如來念誦儀軌</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+						<witness xml:id="wit2">【原】</witness>
+						<witness xml:id="wit3">【乙】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-27T11:50:55">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T19n0924B.xml,v $
-Revision 1.6  2009/04/23 08:00:01  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.5  2006/04/12 21:55:30  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.3  2004/10/14 16:25:33  saywhat
-段落前加入圈點
-
-Revision 1.2  2004/04/20 08:38:41  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:09:09  ray
-recover cvs
-
-Revision 1.14  2002/11/27 11:26:15  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:44:52  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/07/29 09:56:06  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:03:07  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:13:09  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/24 06:52:38  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/05/25 08:59:05  ray
-經號統一為四碼
-
-Revision 1.7  2001/03/30 06:45:00  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:12:53  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:54:13  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:44:07  chris
-Added keywords $Revision: 1.6 $, $Date: 2009/04/23 08:00:01 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-27T11:50:55">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -145,102 +112,102 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0030002" to="#end0030002"><lem wit="#wit1">音樂</lem><rdg resp="#resp1" wit="#wit2">樂音</rdg></app>
-<app from="#beg0030003" to="#end0030003"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">大菩薩三</rdg></app>
-<app from="#beg0030004" to="#end0030004"><lem wit="#wit1">丘</lem><rdg resp="#resp1" wit="#wit3" type="variantRemark">丘八萬</rdg></app>
-<app from="#beg0030005" to="#end0030005"><lem wit="#wit1">即名</lem><rdg resp="#resp1" wit="#wit2 #wit4">名即</rdg></app>
-<app from="#beg0030006" to="#end0030006"><lem wit="#wit1">社</lem><rdg resp="#resp1" wit="#wit4">耶</rdg></app>
-<app from="#beg0030007" to="#end0030007"><lem wit="#wit1">喝</lem><rdg resp="#resp1" wit="#wit2 #wit4">羯</rdg></app>
-<app from="#beg0030008" to="#end0030008"><lem wit="#wit1">多</lem><rdg resp="#resp1" wit="#wit4">多耶阿羅歇帝三藐三勃陀耶</rdg></app>
-<app from="#beg0030009" to="#end0030009"><lem wit="#wit1">逝</lem><rdg resp="#resp1" wit="#wit4">逝鞞殺逝</rdg></app>
-<app from="#beg0030010" to="#end0030010"><lem wit="#wit1">三沒</lem><rdg resp="#resp1" wit="#wit4">沒哩</rdg></app>
-<app from="#beg0030011" to="#end0030011"><lem wit="#wit1">婆</lem><rdg resp="#resp1" wit="#wit2 #wit4">沙</rdg></app>
-<app from="#beg0030012" to="#end0030012"><lem wit="#wit1">塗</lem><rdg resp="#resp1" wit="#wit2 #wit4">途</rdg></app>
-<app from="#beg0030013" to="#end0030013"><lem wit="#wit1">苦</lem><rdg resp="#resp1" wit="#wit4">苦七佛經并陀羅尼集經有此三字</rdg></app>
-<app from="#beg0030014" to="#end0030014"><lem wit="#wit1">手</lem><rdg resp="#resp1" wit="#wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0030015" to="#end0030015"><lem wit="#wit1">叉</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0030016" to="#end0030016"><lem wit="#wit1">哩</lem><rdg resp="#resp1" wit="#wit4">哩<note place="inline">二合</note></rdg></app>
-<app from="#beg0030017" to="#end0030017"><lem wit="#wit1">娑</lem><rdg resp="#resp1" wit="#wit2">沙</rdg></app>
-<app from="#beg0030018" to="#end0030018"><lem wit="#wit1">次</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0030019" to="#end0030019"><lem wit="#wit1">護</lem><rdg resp="#resp1" wit="#wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0030020" to="#end0030020"><lem wit="#wit1">薩</lem><rdg resp="#resp1" wit="#wit2">曩莫薩</rdg></app>
-<app from="#beg0030021" to="#end0030021"><lem wit="#wit1">曩</lem><rdg resp="#resp1" wit="#wit4">奈</rdg></app>
-<app from="#beg0030022" to="#end0030022"><lem wit="#wit1"><note place="inline">引</note></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0030023" to="#end0030023"><lem wit="#wit1">存</lem><rdg resp="#resp1" wit="#wit2 #wit4">在</rdg></app>
-<app from="#beg0030024" to="#end0030024"><lem wit="#wit1">怛</lem><rdg resp="#resp1" wit="#wit2 #wit4">入縛羅怛</rdg></app>
-<app from="#beg0030025" to="#end0030025"><lem wit="#wit1">多麼訶捺</lem><rdg resp="#resp1" wit="#wit4">哆訶摩捨</rdg></app>
-<app from="#beg0030026" to="#end0030026"><lem wit="#wit1">成</lem><rdg resp="#resp1" wit="#wit2 #wit4">辯才成</rdg></app>
-<app from="#beg0030028" to="#end0030028"><lem wit="#wit1">念誦</lem><rdg resp="#resp1" wit="#wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0030027" to="#end0030027"><lem wit="#wit1">如來<note n="0030028" resp="#resp1" place="foot text" type="orig">〔念誦〕－【乙】</note><note n="0030028" resp="#resp2" type="mod">念誦【大】，〔－〕【乙】</note><app n="0030028"><lem wit="#wit1">念誦</lem><rdg resp="#resp1" wit="#wit4"><space quantity="0"/></rdg></app></lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0030029" to="#end0030029"><lem wit="#wit1">一卷</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0030002" to="#end0030002"><lem wit="#wit.orig">音樂</lem><rdg resp="#resp2" wit="#wit1">樂音</rdg></app>
+<app from="#beg0030003" to="#end0030003"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit2" type="variantRemark">大菩薩三</rdg></app>
+<app from="#beg0030004" to="#end0030004"><lem wit="#wit.orig">丘</lem><rdg resp="#resp2" wit="#wit2" type="variantRemark">丘八萬</rdg></app>
+<app from="#beg0030005" to="#end0030005"><lem wit="#wit.orig">即名</lem><rdg resp="#resp2" wit="#wit1 #wit3">名即</rdg></app>
+<app from="#beg0030006" to="#end0030006"><lem wit="#wit.orig">社</lem><rdg resp="#resp2" wit="#wit3">耶</rdg></app>
+<app from="#beg0030007" to="#end0030007"><lem wit="#wit.orig">喝</lem><rdg resp="#resp2" wit="#wit1 #wit3">羯</rdg></app>
+<app from="#beg0030008" to="#end0030008"><lem wit="#wit.orig">多</lem><rdg resp="#resp2" wit="#wit3">多耶阿羅歇帝三藐三勃陀耶</rdg></app>
+<app from="#beg0030009" to="#end0030009"><lem wit="#wit.orig">逝</lem><rdg resp="#resp2" wit="#wit3">逝鞞殺逝</rdg></app>
+<app from="#beg0030010" to="#end0030010"><lem wit="#wit.orig">三沒</lem><rdg resp="#resp2" wit="#wit3">沒哩</rdg></app>
+<app from="#beg0030011" to="#end0030011"><lem wit="#wit.orig">婆</lem><rdg resp="#resp2" wit="#wit1 #wit3">沙</rdg></app>
+<app from="#beg0030012" to="#end0030012"><lem wit="#wit.orig">塗</lem><rdg resp="#resp2" wit="#wit1 #wit3">途</rdg></app>
+<app from="#beg0030013" to="#end0030013"><lem wit="#wit.orig">苦</lem><rdg resp="#resp2" wit="#wit3">苦七佛經并陀羅尼集經有此三字</rdg></app>
+<app from="#beg0030014" to="#end0030014"><lem wit="#wit.orig">手</lem><rdg resp="#resp2" wit="#wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0030015" to="#end0030015"><lem wit="#wit.orig">叉</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0030016" to="#end0030016"><lem wit="#wit.orig">哩</lem><rdg resp="#resp2" wit="#wit3">哩<note place="inline">二合</note></rdg></app>
+<app from="#beg0030017" to="#end0030017"><lem wit="#wit.orig">娑</lem><rdg resp="#resp2" wit="#wit1">沙</rdg></app>
+<app from="#beg0030018" to="#end0030018"><lem wit="#wit.orig">次</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0030019" to="#end0030019"><lem wit="#wit.orig">護</lem><rdg resp="#resp2" wit="#wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0030020" to="#end0030020"><lem wit="#wit.orig">薩</lem><rdg resp="#resp2" wit="#wit1">曩莫薩</rdg></app>
+<app from="#beg0030021" to="#end0030021"><lem wit="#wit.orig">曩</lem><rdg resp="#resp2" wit="#wit3">奈</rdg></app>
+<app from="#beg0030022" to="#end0030022"><lem wit="#wit.orig"><note place="inline">引</note></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0030023" to="#end0030023"><lem wit="#wit.orig">存</lem><rdg resp="#resp2" wit="#wit1 #wit3">在</rdg></app>
+<app from="#beg0030024" to="#end0030024"><lem wit="#wit.orig">怛</lem><rdg resp="#resp2" wit="#wit1 #wit3">入縛羅怛</rdg></app>
+<app from="#beg0030025" to="#end0030025"><lem wit="#wit.orig">多麼訶捺</lem><rdg resp="#resp2" wit="#wit3">哆訶摩捨</rdg></app>
+<app from="#beg0030026" to="#end0030026"><lem wit="#wit.orig">成</lem><rdg resp="#resp2" wit="#wit1 #wit3">辯才成</rdg></app>
+<app from="#beg0030028" to="#end0030028"><lem wit="#wit.orig">念誦</lem><rdg resp="#resp2" wit="#wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0030027" to="#end0030027"><lem wit="#wit.orig">如來<note n="0030028" resp="#resp2" place="foot text" type="orig">〔念誦〕－【乙】</note><note n="0030028" resp="#resp3" type="mod">念誦【大】，〔－〕【乙】</note><app n="0030028"><lem wit="#wit.orig">念誦</lem><rdg resp="#resp2" wit="#wit3"><space quantity="0"/></rdg></app></lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0030029" to="#end0030029"><lem wit="#wit.orig">一卷</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0030002" resp="#resp2" type="mod" target="#nkr_note_mod_0030002">音樂【大】，樂音【甲】</note>
-<note n="0030003" resp="#resp2" type="mod" target="#nkr_note_mod_0030003">三【大】，大菩薩三【校異-原】</note>
-<note n="0030004" resp="#resp2" type="mod" target="#nkr_note_mod_0030004">丘【大】，丘八萬【校異-原】</note>
-<note n="0030005" resp="#resp2" type="mod" target="#nkr_note_mod_0030005">即名【大】，名即【甲】【乙】</note>
-<note n="0030006" resp="#resp2" type="mod" target="#nkr_note_mod_0030006">社【大】，耶【乙】</note>
-<note n="0030007" resp="#resp2" type="mod" target="#nkr_note_mod_0030007">喝【大】，羯【甲】【乙】</note>
-<note n="0030008" resp="#resp2" type="mod" target="#nkr_note_mod_0030008">多【大】，多耶阿羅歇帝三藐三勃陀耶【乙】</note>
-<note n="0030009" resp="#resp2" type="mod" target="#nkr_note_mod_0030009">逝【大】，逝鞞殺逝【乙】</note>
-<note n="0030010" resp="#resp2" type="mod" target="#nkr_note_mod_0030010">三沒【大】，沒哩【乙】</note>
-<note n="0030011" resp="#resp2" type="mod" target="#nkr_note_mod_0030011">婆【大】，沙【甲】【乙】</note>
-<note n="0030012" resp="#resp2" type="mod" target="#nkr_note_mod_0030012">塗【大】，途【甲】【乙】</note>
-<note n="0030013" resp="#resp2" type="mod" target="#nkr_note_mod_0030013">苦【大】，苦七佛經并陀羅尼集經有此三字【乙】</note>
-<note n="0030014" resp="#resp2" type="mod" target="#nkr_note_mod_0030014">手【大】，〔－〕【乙】</note>
-<note n="0030015" resp="#resp2" type="mod" target="#nkr_note_mod_0030015">叉【大】，〔－〕【甲】</note>
-<note n="0030016" resp="#resp2" type="mod" target="#nkr_note_mod_0030016">哩【大】，哩<note place="inline">二合</note>【乙】</note>
-<note n="0030017" resp="#resp2" type="mod" target="#nkr_note_mod_0030017">娑【大】，沙【甲】</note>
-<note n="0030018" resp="#resp2" type="mod" target="#nkr_note_mod_0030018">次【大】，〔－〕【甲】</note>
-<note n="0030019" resp="#resp2" type="mod" target="#nkr_note_mod_0030019">護【大】，〔－〕【乙】</note>
-<note n="0030020" resp="#resp2" type="mod" target="#nkr_note_mod_0030020">薩【大】，曩莫薩【甲】</note>
-<note n="0030021" resp="#resp2" type="mod" target="#nkr_note_mod_0030021">曩【大】，奈【乙】</note>
-<note n="0030022" resp="#resp2" type="mod" target="#nkr_note_mod_0030022">引【大】，〔－〕【甲】</note>
-<note n="0030023" resp="#resp2" type="mod" target="#nkr_note_mod_0030023">存【大】，在【甲】【乙】</note>
-<note n="0030024" resp="#resp2" type="mod" target="#nkr_note_mod_0030024">怛【大】，入縛羅怛【甲】【乙】</note>
-<note n="0030025" resp="#resp2" type="mod" target="#nkr_note_mod_0030025">多麼訶捺【大】，哆訶摩捨【乙】</note>
-<note n="0030026" resp="#resp2" type="mod" target="#nkr_note_mod_0030026">成【大】，辯才成【甲】【乙】</note>
-<note n="0030027" resp="#resp2" type="mod" target="#nkr_note_mod_0030027">如來念誦【大】，〔－〕【甲】</note>
-<note n="0030028" resp="#resp2" type="mod" target="#nkr_note_mod_0030028">念誦【大】，〔－〕【乙】</note>
-<note n="0030029" resp="#resp2" type="mod" target="#nkr_note_mod_0030029">一卷【大】，〔－〕【甲】</note>
+<note n="0030002" resp="#resp3" type="mod" target="#nkr_note_mod_0030002">音樂【大】，樂音【甲】</note>
+<note n="0030003" resp="#resp3" type="mod" target="#nkr_note_mod_0030003">三【大】，大菩薩三【校異-原】</note>
+<note n="0030004" resp="#resp3" type="mod" target="#nkr_note_mod_0030004">丘【大】，丘八萬【校異-原】</note>
+<note n="0030005" resp="#resp3" type="mod" target="#nkr_note_mod_0030005">即名【大】，名即【甲】【乙】</note>
+<note n="0030006" resp="#resp3" type="mod" target="#nkr_note_mod_0030006">社【大】，耶【乙】</note>
+<note n="0030007" resp="#resp3" type="mod" target="#nkr_note_mod_0030007">喝【大】，羯【甲】【乙】</note>
+<note n="0030008" resp="#resp3" type="mod" target="#nkr_note_mod_0030008">多【大】，多耶阿羅歇帝三藐三勃陀耶【乙】</note>
+<note n="0030009" resp="#resp3" type="mod" target="#nkr_note_mod_0030009">逝【大】，逝鞞殺逝【乙】</note>
+<note n="0030010" resp="#resp3" type="mod" target="#nkr_note_mod_0030010">三沒【大】，沒哩【乙】</note>
+<note n="0030011" resp="#resp3" type="mod" target="#nkr_note_mod_0030011">婆【大】，沙【甲】【乙】</note>
+<note n="0030012" resp="#resp3" type="mod" target="#nkr_note_mod_0030012">塗【大】，途【甲】【乙】</note>
+<note n="0030013" resp="#resp3" type="mod" target="#nkr_note_mod_0030013">苦【大】，苦七佛經并陀羅尼集經有此三字【乙】</note>
+<note n="0030014" resp="#resp3" type="mod" target="#nkr_note_mod_0030014">手【大】，〔－〕【乙】</note>
+<note n="0030015" resp="#resp3" type="mod" target="#nkr_note_mod_0030015">叉【大】，〔－〕【甲】</note>
+<note n="0030016" resp="#resp3" type="mod" target="#nkr_note_mod_0030016">哩【大】，哩<note place="inline">二合</note>【乙】</note>
+<note n="0030017" resp="#resp3" type="mod" target="#nkr_note_mod_0030017">娑【大】，沙【甲】</note>
+<note n="0030018" resp="#resp3" type="mod" target="#nkr_note_mod_0030018">次【大】，〔－〕【甲】</note>
+<note n="0030019" resp="#resp3" type="mod" target="#nkr_note_mod_0030019">護【大】，〔－〕【乙】</note>
+<note n="0030020" resp="#resp3" type="mod" target="#nkr_note_mod_0030020">薩【大】，曩莫薩【甲】</note>
+<note n="0030021" resp="#resp3" type="mod" target="#nkr_note_mod_0030021">曩【大】，奈【乙】</note>
+<note n="0030022" resp="#resp3" type="mod" target="#nkr_note_mod_0030022">引【大】，〔－〕【甲】</note>
+<note n="0030023" resp="#resp3" type="mod" target="#nkr_note_mod_0030023">存【大】，在【甲】【乙】</note>
+<note n="0030024" resp="#resp3" type="mod" target="#nkr_note_mod_0030024">怛【大】，入縛羅怛【甲】【乙】</note>
+<note n="0030025" resp="#resp3" type="mod" target="#nkr_note_mod_0030025">多麼訶捺【大】，哆訶摩捨【乙】</note>
+<note n="0030026" resp="#resp3" type="mod" target="#nkr_note_mod_0030026">成【大】，辯才成【甲】【乙】</note>
+<note n="0030027" resp="#resp3" type="mod" target="#nkr_note_mod_0030027">如來念誦【大】，〔－〕【甲】</note>
+<note n="0030028" resp="#resp3" type="mod" target="#nkr_note_mod_0030028">念誦【大】，〔－〕【乙】</note>
+<note n="0030029" resp="#resp3" type="mod" target="#nkr_note_mod_0030029">一卷【大】，〔－〕【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0030001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030001">【原】享保年間刊豐山大學藏本，【甲】保延三年寫高山寺藏本，【乙】高山寺藏古寫本</note>
-<note n="0030002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030002">音樂＝樂音【甲】</note>
-<note n="0030003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030003">（大菩薩）ィ＋三【原】</note>
-<note n="0030004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030004">丘＋（八萬）ィ【原】</note>
-<note n="0030005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030005">即名＝名即【甲】【乙】</note>
-<note n="0030006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030006">社＝耶【乙】</note>
-<note n="0030007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030007">喝＝羯【甲】【乙】</note>
-<note n="0030008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030008">多＋（耶阿羅歇帝三藐三勃陀耶）【乙】</note>
-<note n="0030009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030009">逝＋（鞞殺逝）【乙】</note>
-<note n="0030010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030010">三沒＝沒哩【乙】</note>
-<note n="0030011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030011">婆＝沙【甲】【乙】</note>
-<note n="0030012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030012">塗＝途【甲】【乙】</note>
-<note n="0030013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030013">苦＋（七佛經并陀羅尼集經有此三字）【乙】</note>
-<note n="0030014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030014">〔手〕－【乙】</note>
-<note n="0030015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030015">〔叉〕－【甲】</note>
-<note n="0030016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030016">哩＋（二合）夾註【乙】</note>
-<note n="0030017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030017">娑＝沙【甲】</note>
-<note n="0030018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030018">〔次〕－【甲】</note>
-<note n="0030019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030019">〔護〕－【乙】</note>
-<note n="0030020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030020">（曩莫）＋薩【甲】</note>
-<note n="0030021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030021">曩＝奈【乙】</note>
-<note n="0030022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030022">〔引〕－【甲】</note>
-<note n="0030023" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030023">存＝在【甲】【乙】</note>
-<note n="0030024" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030024">（入縛羅）＋怛【甲】【乙】</note>
-<note n="0030025" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030025">多麼訶捺＝哆訶摩捨【乙】</note>
-<note n="0030026" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030026">（辯才）＋成【甲】【乙】</note>
-<note n="0030027" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030027">〔如來念誦〕－【甲】</note>
-<note n="0030028" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030028">〔念誦〕－【乙】</note>
-<note n="0030029" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030029">〔一卷〕－【甲】</note>
-<note n="0030030" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0030030">甲本奧書曰保延三年五月十八日已時許執筆，同時一校了，後世菩提出離生死因也，同年七月二日酉時點了</note>
+<note n="0030001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030001">【原】享保年間刊豐山大學藏本，【甲】保延三年寫高山寺藏本，【乙】高山寺藏古寫本</note>
+<note n="0030002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030002">音樂＝樂音【甲】</note>
+<note n="0030003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030003">（大菩薩）ィ＋三【原】</note>
+<note n="0030004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030004">丘＋（八萬）ィ【原】</note>
+<note n="0030005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030005">即名＝名即【甲】【乙】</note>
+<note n="0030006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030006">社＝耶【乙】</note>
+<note n="0030007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030007">喝＝羯【甲】【乙】</note>
+<note n="0030008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030008">多＋（耶阿羅歇帝三藐三勃陀耶）【乙】</note>
+<note n="0030009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030009">逝＋（鞞殺逝）【乙】</note>
+<note n="0030010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030010">三沒＝沒哩【乙】</note>
+<note n="0030011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030011">婆＝沙【甲】【乙】</note>
+<note n="0030012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030012">塗＝途【甲】【乙】</note>
+<note n="0030013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030013">苦＋（七佛經并陀羅尼集經有此三字）【乙】</note>
+<note n="0030014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030014">〔手〕－【乙】</note>
+<note n="0030015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030015">〔叉〕－【甲】</note>
+<note n="0030016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030016">哩＋（二合）夾註【乙】</note>
+<note n="0030017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030017">娑＝沙【甲】</note>
+<note n="0030018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030018">〔次〕－【甲】</note>
+<note n="0030019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030019">〔護〕－【乙】</note>
+<note n="0030020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030020">（曩莫）＋薩【甲】</note>
+<note n="0030021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030021">曩＝奈【乙】</note>
+<note n="0030022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030022">〔引〕－【甲】</note>
+<note n="0030023" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030023">存＝在【甲】【乙】</note>
+<note n="0030024" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030024">（入縛羅）＋怛【甲】【乙】</note>
+<note n="0030025" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030025">多麼訶捺＝哆訶摩捨【乙】</note>
+<note n="0030026" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030026">（辯才）＋成【甲】【乙】</note>
+<note n="0030027" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030027">〔如來念誦〕－【甲】</note>
+<note n="0030028" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030028">〔念誦〕－【乙】</note>
+<note n="0030029" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030029">〔一卷〕－【甲】</note>
+<note n="0030030" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0030030">甲本奧書曰保延三年五月十八日已時許執筆，同時一校了，後世菩提出離生死因也，同年七月二日酉時點了</note>
 </p>
 </cb:div>
 </back></text></TEI>

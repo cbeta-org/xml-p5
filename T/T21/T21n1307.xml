@@ -11,115 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.8 $<date>$Date: 2010/10/25 08:23:01 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2010/10/25 08:23:01 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 21, No. 1307</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【原】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">21</idno>.<idno type="no">1307</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說北斗七星延命經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-31T09:31:37">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T21n1307.xml,v $
-Revision 1.8  2010/10/25 08:23:01  amtbgrace
-modified: 圖檔檔名修改
-
-Revision 1.7  2009/04/23 08:01:46  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.6  2006/04/12 21:55:57  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.4  2004/10/22 04:03:44  saywhat
-段落前加入圈點
-
-Revision 1.3  2004/06/09 04:31:14  saywhat
-<pb>後的</p></div>移到上一行
-
-Revision 1.2  2004/04/20 08:39:14  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:09:30  ray
-recover cvs
-
-Revision 1.18  2002/11/28 10:06:39  saywhat
-校勘插入處理
-
-Revision 1.17  2002/11/04 10:46:14  ray
-tei.2 => TEI.2
-
-Revision 1.16  2002/08/27 05:10:31  vinking
-no message
-
-Revision 1.15  2002/08/27 02:47:32  saywhat
-modified p0425c05~c27
-
-Revision 1.14  2002/08/27 02:28:36  saywhat
-p0425c05~c27 改回原本勘誤的地方
-
-Revision 1.13  2002/07/29 09:57:22  vinking
-modified lang
-
-Revision 1.12  2002/04/08 09:07:15  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/11/05 06:14:23  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.10  2001/07/24 06:53:46  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/03/30 05:57:37  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.8  2001/03/25 09:18:39  ray
-add <milestone>
-
-Revision 1.7  2001/02/07 06:57:44  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.6  2001/02/03 07:47:37  chris
-Added keywords $Revision: 1.8 $, $Date: 2010/10/25 08:23:01 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-31T09:31:37">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -235,38 +190,38 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0425015" to="#end0425015"><lem wit="#wit1">黍</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">麥米</rdg></app>
-<app from="#beg0425016" to="#end0425016"><lem wit="#wit1">豆</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">麥</rdg></app>
-<app from="#beg0426001" to="#end0426001"><lem wit="#wit1">行年災厄</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">年災月厄</rdg></app>
-<app from="#beg0426002" to="#end0426002"><lem resp="#resp1" wit="#wit1">丘</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">丘尼</rdg></app>
-<app from="#beg0426003" to="#end0426003"><lem wit="#wit1">一</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark"><space quantity="0"/></rdg></app>
-<app from="#beg0426004" to="#end0426004"><lem wit="#wit1">若</lem><rdg resp="#resp1" wit="#wit2" type="variantRemark">若有</rdg></app>
-<app from="#beg0426005" to="#end0426005"><lem resp="#resp1" wit="#wit1">命</lem><rdg resp="#resp1" wit="#wit2" type="correctionRemark">命星供</rdg></app>
+<app from="#beg0425015" to="#end0425015"><lem wit="#wit.orig">黍</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">麥米</rdg></app>
+<app from="#beg0425016" to="#end0425016"><lem wit="#wit.orig">豆</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">麥</rdg></app>
+<app from="#beg0426001" to="#end0426001"><lem wit="#wit.orig">行年災厄</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">年災月厄</rdg></app>
+<app from="#beg0426002" to="#end0426002"><lem resp="#resp2" wit="#wit.orig">丘</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">丘尼</rdg></app>
+<app from="#beg0426003" to="#end0426003"><lem wit="#wit.orig">一</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark"><space quantity="0"/></rdg></app>
+<app from="#beg0426004" to="#end0426004"><lem wit="#wit.orig">若</lem><rdg resp="#resp2" wit="#wit1" type="variantRemark">若有</rdg></app>
+<app from="#beg0426005" to="#end0426005"><lem resp="#resp2" wit="#wit.orig">命</lem><rdg resp="#resp2" wit="#wit1" type="correctionRemark">命星供</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0425015" resp="#resp2" type="mod" target="#nkr_note_mod_0425015">黍【大】，麥米【校異-原】</note>
-<note n="0425016" resp="#resp2" type="mod" target="#nkr_note_mod_0425016">豆【大】，麥【校異-原】</note>
-<note n="0426001" resp="#resp2" type="mod" target="#nkr_note_mod_0426001">行年災厄【大】，年災月厄【校異-原】</note>
-<note n="0426002" resp="#resp2" type="mod" target="#nkr_note_mod_0426002">丘【大】，丘尼【考偽-原】</note>
-<note n="0426003" resp="#resp2" type="mod" target="#nkr_note_mod_0426003">一【大】，〔－〕【校異-原】</note>
-<note n="0426004" resp="#resp2" type="mod" target="#nkr_note_mod_0426004">若【大】，若有【校異-原】</note>
-<note n="0426005" resp="#resp2" type="mod" target="#nkr_note_mod_0426005">命【大】，命星供【考偽-原】</note>
+<note n="0425015" resp="#resp3" type="mod" target="#nkr_note_mod_0425015">黍【大】，麥米【校異-原】</note>
+<note n="0425016" resp="#resp3" type="mod" target="#nkr_note_mod_0425016">豆【大】，麥【校異-原】</note>
+<note n="0426001" resp="#resp3" type="mod" target="#nkr_note_mod_0426001">行年災厄【大】，年災月厄【校異-原】</note>
+<note n="0426002" resp="#resp3" type="mod" target="#nkr_note_mod_0426002">丘【大】，丘尼【考偽-原】</note>
+<note n="0426003" resp="#resp3" type="mod" target="#nkr_note_mod_0426003">一【大】，〔－〕【校異-原】</note>
+<note n="0426004" resp="#resp3" type="mod" target="#nkr_note_mod_0426004">若【大】，若有【校異-原】</note>
+<note n="0426005" resp="#resp3" type="mod" target="#nkr_note_mod_0426005">命【大】，命星供【考偽-原】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0425014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0425014">【原】享和二年刊長谷寺藏本</note>
-<note n="0425015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0425015">黍＝麥米ィ【原】</note>
-<note n="0425016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0425016">豆＝麥ィ【原】</note>
-<note n="0426001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0426001">行年災厄＝年災月厄ィ【原】</note>
-<note n="0426002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0426002">丘＋（尼）ヵ【原】</note>
-<note n="0426003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0426003">〔一〕－ィ【原】</note>
-<note n="0426004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0426004">若＋（有）ィ【原】</note>
-<note n="0426005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0426005">命＋（星供）ヵ【原】</note>
+<note n="0425014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0425014">【原】享和二年刊長谷寺藏本</note>
+<note n="0425015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0425015">黍＝麥米ィ【原】</note>
+<note n="0425016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0425016">豆＝麥ィ【原】</note>
+<note n="0426001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0426001">行年災厄＝年災月厄ィ【原】</note>
+<note n="0426002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0426002">丘＋（尼）ヵ【原】</note>
+<note n="0426003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0426003">〔一〕－ィ【原】</note>
+<note n="0426004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0426004">若＋（有）ィ【原】</note>
+<note n="0426005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0426005">命＋（星供）ヵ【原】</note>
 </p>
 </cb:div>
 </back></text></TEI>

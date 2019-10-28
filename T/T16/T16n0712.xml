@@ -11,120 +11,68 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.12 $<date>$Date: 2012/08/27 03:15:10 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.pan</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/08/27 03:15:10 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 16, No. 712</bibl>
-	<listWit>
-		<witness xml:id="wit1">【CB】</witness>
-		<witness xml:id="wit2">【大】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, CBETA OCR Group, Punctuated text as provided by Ven. Shi Zhen-Pu</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，CBETA 自行掃瞄辨識，釋振溥法師提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA.pan</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">16</idno>.<idno type="no">712</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說大乘稻芉經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, CBETA OCR Group, Punctuated text as provided by Ven. Shi Zhen-Pu</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，CBETA 自行掃瞄辨識，釋振溥法師提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-10-12T09:45:22">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)</change>
-<!--
-$Log: T16n0712.xml,v $
-Revision 1.12  2012/08/27 03:15:10  maha
-修訂新標小圓點及著重號
-
-Revision 1.11  2012/08/03 09:06:25  eva
-上傳 新式標點版
-
-Revision 1.10  2009/04/23 07:59:10  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.9  2006/04/12 21:55:13  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/10/12 15:02:18  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/09/13 09:00:11  saywhat
-<trailer> => <juan fun="close"><jhead>
-
-Revision 1.5  2004/04/20 08:38:22  maha
-「版本日期」標記修訂
-
-Revision 1.4  2004/03/16 02:18:33  ray
-resp 屬性 統一格式為 CBETA.xxx
-
-Revision 1.3  2003/06/25 06:40:42  moved
-執行 corr2app.pl v0.3.1
-
-Revision 1.1.1.1  2003/05/05 04:09:00  ray
-recover cvs
-
-Revision 1.15  2002/12/05 05:48:50  saywhat
-校勘插入處理
-
-Revision 1.14  2002/11/04 10:42:52  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/07/29 09:55:10  vinking
-modified lang
-
-Revision 1.12  2002/07/01 02:58:00  vinking
-no message
-
-Revision 1.11  2002/04/04 08:42:09  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/07/27 07:11:58  ray
-去除多餘的 <author>
-
-Revision 1.9  2001/07/24 06:51:47  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/05/25 08:56:53  ray
-經號統一為四碼
-
-Revision 1.7  2001/03/30 05:45:24  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:05:19  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:51:42  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:41:18  chris
-Added keywords $Revision: 1.12 $, $Date: 2012/08/27 03:15:10 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-10-12T09:45:22">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -384,7 +332,7 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0823b2701" to="#end0823b2701"><lem wit="#wit1" resp="#resp2">芉</lem><rdg wit="#wit2">芋</rdg></app>
+<app from="#beg0823b2701" to="#end0823b2701"><lem wit="#wit.cbeta" resp="#resp2">芉</lem><rdg wit="#wit.orig">芋</rdg></app>
 </p>
 </cb:div>
 <cb:div type="add-notes">

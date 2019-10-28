@@ -11,128 +11,83 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.10 $<date>$Date: 2009/04/23 08:01:44 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:44 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 21, No. 1240</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-		<witness xml:id="wit3">【乙】</witness>
-		<witness xml:id="wit4">【原】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00211">
-	<charName>CBETA CHARACTER CB00211</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[牛*句]</value>
-	</charProp>
-	<mapping type="unicode">U+2463D</mapping>
-	<mapping cb:dec="983251" type="PUA">U+F00D3</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">21</idno>.<idno type="no">1240</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">阿吒薄<g ref="#CB00211">𤘽</g>付囑呪</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+						<witness xml:id="wit2">【乙】</witness>
+						<witness xml:id="wit3">【原】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00211">
+				<charName>CBETA CHARACTER CB00211</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[牛*句]</value>
+				</charProp>
+				<mapping type="unicode">U+2463D</mapping>
+				<mapping cb:dec="983251" type="PUA">U+F00D3</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-31T09:31:29">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T21n1240.xml,v $
-Revision 1.10  2009/04/23 08:01:44  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.9  2006/04/12 21:55:54  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/10/22 04:03:43  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/09/09 09:58:07  saywhat
-刪除空的 juan close
-
-Revision 1.5  2004/04/20 08:39:10  maha
-「版本日期」標記修訂
-
-Revision 1.4  2003/06/23 06:16:50  saywhat
-[＊]校勘插入XML
-
-Revision 1.3  2003/06/17 01:23:32  ray
-app版100字以上長行咒語由惠敏法師斷詞
-
-Revision 1.2  2003/05/21 05:44:37  saywhat
-modified star
-
-Revision 1.1.1.1  2003/05/05 04:09:27  ray
-recover cvs
-
-Revision 1.14  2002/11/28 10:06:36  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:46:13  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/10/07 13:13:02  moved
-modified
-
-Revision 1.11  2002/07/29 09:57:19  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:07:12  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/11/05 06:14:13  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.8  2001/07/24 06:53:37  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/03/30 05:57:27  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:18:35  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:57:18  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:47:11  chris
-Added keywords $Revision: 1.10 $, $Date: 2009/04/23 08:01:44 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-31T09:31:29">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -172,59 +127,59 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0202011" to="#end0202011"><lem wit="#wit1">耶</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0202012" to="#end0202012"><lem wit="#wit1">伐</lem><rdg resp="#resp1" wit="#wit2">代</rdg></app>
-<app from="#beg0202013" to="#end0202013"><lem wit="#wit1">呵</lem><rdg resp="#resp1" wit="#wit2">呵呵</rdg></app>
-<app from="#beg0202014" to="#end0202014"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit2">泮泮</rdg></app>
-<app from="#beg0202015" to="#end0202015"><lem wit="#wit1">莎訶</lem><rdg resp="#resp1" wit="#wit2"><note place="inline">莎訶</note></rdg></app>
-<app from="#beg0202016" to="#end0202016"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit3">伴</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0202016"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit3">伴</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0202016"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit3">伴</rdg></app>
-<app from="#beg0202017" to="#end0202017"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit2">伴伴</rdg></app>
-<app from="#beg0202018" to="#end0202018"><lem wit="#wit1">槃</lem><rdg resp="#resp1" wit="#wit2">盤</rdg></app>
-<app from="#beg0202019" to="#end0202019"><lem resp="#resp1" wit="#wit1">怨</lem><rdg resp="#resp1" wit="#wit4" type="correctionRemark">怨耶</rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0202016"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit3">伴</rdg></app>
-<app from="#beg_4" to="#end_4" corresp="#0202016"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit3">伴</rdg></app>
-<app from="#beg_5" to="#end_5" corresp="#0202016"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit3">伴</rdg></app>
-<app from="#beg0202020" to="#end0202020"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit2">伴伴</rdg></app>
-<app from="#beg0202021" to="#end0202021"><lem wit="#wit1">勅</lem><rdg resp="#resp1" wit="#wit2">勅勅</rdg></app>
-<app from="#beg0202022" to="#end0202022"><lem wit="#wit1">吒</lem><rdg resp="#resp1" wit="#wit2">吒吒</rdg></app>
-<app from="#beg_6" to="#end_6" corresp="#0202016"><lem wit="#wit1">泮</lem><rdg resp="#resp1" wit="#wit3">伴</rdg></app>
+<app from="#beg0202011" to="#end0202011"><lem wit="#wit.orig">耶</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0202012" to="#end0202012"><lem wit="#wit.orig">伐</lem><rdg resp="#resp2" wit="#wit1">代</rdg></app>
+<app from="#beg0202013" to="#end0202013"><lem wit="#wit.orig">呵</lem><rdg resp="#resp2" wit="#wit1">呵呵</rdg></app>
+<app from="#beg0202014" to="#end0202014"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit1">泮泮</rdg></app>
+<app from="#beg0202015" to="#end0202015"><lem wit="#wit.orig">莎訶</lem><rdg resp="#resp2" wit="#wit1"><note place="inline">莎訶</note></rdg></app>
+<app from="#beg0202016" to="#end0202016"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit2">伴</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0202016"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit2">伴</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0202016"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit2">伴</rdg></app>
+<app from="#beg0202017" to="#end0202017"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit1">伴伴</rdg></app>
+<app from="#beg0202018" to="#end0202018"><lem wit="#wit.orig">槃</lem><rdg resp="#resp2" wit="#wit1">盤</rdg></app>
+<app from="#beg0202019" to="#end0202019"><lem resp="#resp2" wit="#wit.orig">怨</lem><rdg resp="#resp2" wit="#wit3" type="correctionRemark">怨耶</rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0202016"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit2">伴</rdg></app>
+<app from="#beg_4" to="#end_4" corresp="#0202016"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit2">伴</rdg></app>
+<app from="#beg_5" to="#end_5" corresp="#0202016"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit2">伴</rdg></app>
+<app from="#beg0202020" to="#end0202020"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit1">伴伴</rdg></app>
+<app from="#beg0202021" to="#end0202021"><lem wit="#wit.orig">勅</lem><rdg resp="#resp2" wit="#wit1">勅勅</rdg></app>
+<app from="#beg0202022" to="#end0202022"><lem wit="#wit.orig">吒</lem><rdg resp="#resp2" wit="#wit1">吒吒</rdg></app>
+<app from="#beg_6" to="#end_6" corresp="#0202016"><lem wit="#wit.orig">泮</lem><rdg resp="#resp2" wit="#wit2">伴</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0202011" resp="#resp2" type="mod" target="#nkr_note_mod_0202011">耶【大】，〔－〕【甲】</note>
-<note n="0202012" resp="#resp2" type="mod" target="#nkr_note_mod_0202012">伐【大】，代【甲】</note>
-<note n="0202013" resp="#resp2" type="mod" target="#nkr_note_mod_0202013">呵【大】，呵呵【甲】</note>
-<note n="0202014" resp="#resp2" type="mod" target="#nkr_note_mod_0202014">泮【大】，泮泮【甲】</note>
-<note n="0202015" resp="#resp2" type="mod" target="#nkr_note_mod_0202015">莎訶【大】，<note place="inline">莎訶</note>【甲】</note>
-<note n="0202016" resp="#resp2" type="mod" target="#nkr_note_mod_0202016">泮【大】＊，伴【乙】＊</note>
-<note n="0202017" resp="#resp2" type="mod" target="#nkr_note_mod_0202017">泮【大】，伴伴【甲】</note>
-<note n="0202018" resp="#resp2" type="mod" target="#nkr_note_mod_0202018">槃【大】，盤【甲】</note>
-<note n="0202019" resp="#resp2" type="mod" target="#nkr_note_mod_0202019">怨【大】，怨耶【考偽-原】</note>
-<note n="0202020" resp="#resp2" type="mod" target="#nkr_note_mod_0202020">泮【大】，伴伴【甲】</note>
-<note n="0202021" resp="#resp2" type="mod" target="#nkr_note_mod_0202021">勅【大】，勅勅【甲】</note>
-<note n="0202022" resp="#resp2" type="mod" target="#nkr_note_mod_0202022">吒【大】，吒吒【甲】</note>
+<note n="0202011" resp="#resp3" type="mod" target="#nkr_note_mod_0202011">耶【大】，〔－〕【甲】</note>
+<note n="0202012" resp="#resp3" type="mod" target="#nkr_note_mod_0202012">伐【大】，代【甲】</note>
+<note n="0202013" resp="#resp3" type="mod" target="#nkr_note_mod_0202013">呵【大】，呵呵【甲】</note>
+<note n="0202014" resp="#resp3" type="mod" target="#nkr_note_mod_0202014">泮【大】，泮泮【甲】</note>
+<note n="0202015" resp="#resp3" type="mod" target="#nkr_note_mod_0202015">莎訶【大】，<note place="inline">莎訶</note>【甲】</note>
+<note n="0202016" resp="#resp3" type="mod" target="#nkr_note_mod_0202016">泮【大】＊，伴【乙】＊</note>
+<note n="0202017" resp="#resp3" type="mod" target="#nkr_note_mod_0202017">泮【大】，伴伴【甲】</note>
+<note n="0202018" resp="#resp3" type="mod" target="#nkr_note_mod_0202018">槃【大】，盤【甲】</note>
+<note n="0202019" resp="#resp3" type="mod" target="#nkr_note_mod_0202019">怨【大】，怨耶【考偽-原】</note>
+<note n="0202020" resp="#resp3" type="mod" target="#nkr_note_mod_0202020">泮【大】，伴伴【甲】</note>
+<note n="0202021" resp="#resp3" type="mod" target="#nkr_note_mod_0202021">勅【大】，勅勅【甲】</note>
+<note n="0202022" resp="#resp3" type="mod" target="#nkr_note_mod_0202022">吒【大】，吒吒【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0202010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202010">【原】享保年間刊豐山大學藏本，【甲】高山寺藏古寫本</note>
-<note n="0202011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202011">〔耶〕－【甲】</note>
-<note n="0202012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202012">伐＝代【甲】</note>
-<note n="0202013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202013">呵＋（呵）【甲】</note>
-<note n="0202014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202014">泮＋（泮）【甲】</note>
-<note n="0202015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202015">莎訶之二字甲本作夾註</note>
-<note n="0202016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202016">泮＝伴【乙】＊</note>
-<note n="0202017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202017">泮＝伴伴【甲】</note>
-<note n="0202018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202018">槃＝盤【甲】</note>
-<note n="0202019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202019">怨＋（耶）ヵ【原】</note>
-<note n="0202020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202020">泮＝伴伴【甲】</note>
-<note n="0202021" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202021">勅＋（勅）【甲】</note>
-<note n="0202022" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0202022">吒＋（吒）【甲】</note>
+<note n="0202010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202010">【原】享保年間刊豐山大學藏本，【甲】高山寺藏古寫本</note>
+<note n="0202011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202011">〔耶〕－【甲】</note>
+<note n="0202012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202012">伐＝代【甲】</note>
+<note n="0202013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202013">呵＋（呵）【甲】</note>
+<note n="0202014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202014">泮＋（泮）【甲】</note>
+<note n="0202015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202015">莎訶之二字甲本作夾註</note>
+<note n="0202016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202016">泮＝伴【乙】＊</note>
+<note n="0202017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202017">泮＝伴伴【甲】</note>
+<note n="0202018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202018">槃＝盤【甲】</note>
+<note n="0202019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202019">怨＋（耶）ヵ【原】</note>
+<note n="0202020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202020">泮＝伴伴【甲】</note>
+<note n="0202021" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202021">勅＋（勅）【甲】</note>
+<note n="0202022" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0202022">吒＋（吒）【甲】</note>
 </p>
 </cb:div>
 </back></text></TEI>

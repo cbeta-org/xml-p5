@@ -11,135 +11,93 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.9 $<date>$Date: 2009/04/23 08:01:22 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:22 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 20, No. 1162</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【元】</witness>
-		<witness xml:id="wit3">【明】</witness>
-		<witness xml:id="wit4">【宋】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00600">
-	<charName>CBETA CHARACTER CB00600</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[齒*來]</value>
-	</charProp>
-	<mapping type="unicode">U+2A628</mapping>
-	<mapping cb:dec="983640" type="PUA">U+F0258</mapping>
-</char>
-<char xml:id="CB03888">
-	<charName>CBETA CHARACTER CB03888</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[狂-王+央]</value>
-	</charProp>
-	<mapping type="unicode">U+3E67</mapping>
-	<mapping cb:dec="986928" type="PUA">U+F0F30</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">20</idno>.<idno type="no">1162</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">持世陀羅尼經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【元】</witness>
+						<witness xml:id="wit2">【明】</witness>
+						<witness xml:id="wit3">【宋】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00600">
+				<charName>CBETA CHARACTER CB00600</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[齒*來]</value>
+				</charProp>
+				<mapping type="unicode">U+2A628</mapping>
+				<mapping cb:dec="983640" type="PUA">U+F0258</mapping>
+			</char>
+			<char xml:id="CB03888">
+				<charName>CBETA CHARACTER CB03888</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[狂-王+央]</value>
+				</charProp>
+				<mapping type="unicode">U+3E67</mapping>
+				<mapping cb:dec="986928" type="PUA">U+F0F30</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="sa">Sanskrit</language>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-24T11:15:17">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T20n1162.xml,v $
-Revision 1.9  2009/04/23 08:01:22  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.8  2006/04/12 21:55:47  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/10/21 08:20:04  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/04/20 08:39:03  maha
-「版本日期」標記修訂
-
-Revision 1.4  2003/06/23 06:16:04  saywhat
-[＊]校勘插入XML
-
-Revision 1.3  2003/06/02 06:26:31  saywhat
-CVS與2003/04版比對修訂
-
-Revision 1.2  2003/05/26 11:33:14  saywhat
-【宋】【元】【明】＊改成【宋】＊【元】＊【明】＊
-
-Revision 1.1.1.1  2003/05/05 04:09:23  ray
-recover cvs
-
-Revision 1.14  2002/12/05 05:20:27  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:45:39  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/10/07 13:11:58  moved
-modified
-
-Revision 1.11  2002/07/29 09:56:47  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:05:50  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/11/05 06:13:57  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.8  2001/07/24 06:53:22  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/03/30 05:55:37  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:15:31  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:56:32  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:46:28  chris
-Added keywords $Revision: 1.9 $, $Date: 2009/04/23 08:01:22 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-24T11:15:17">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -250,105 +208,105 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0666005" to="#end0666005"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit2 #wit3">佛說持</rdg></app>
-<app from="#beg0666006" to="#end0666006"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit3">經<note place="inline">與唐不空雨寶經及趙宋法天吉祥持世經同</note></rdg></app>
-<app from="#beg0666007" to="#end0666007"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit4 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0666010" to="#end0666010"><lem wit="#wit1">礫</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">磔</rdg></app>
-<app from="#beg0666011" to="#end0666011"><lem wit="#wit1">薩</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">薩過</rdg></app>
-<app from="#beg0666013" to="#end0666013"><lem wit="#wit1">韻</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">願</rdg></app>
-<app from="#beg0666014" to="#end0666014"><lem wit="#wit1">令</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0666015" to="#end0666015"><lem wit="#wit1">請</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">說</rdg></app>
-<app from="#beg0667002" to="#end0667002"><lem wit="#wit1">神呪</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">呪神</rdg></app>
-<app from="#beg0667003" to="#end0667003"><lem wit="#wit1">呾姪他</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0667004" to="#end0667004"><lem wit="#wit1">喝</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">嗢</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0667004"><lem wit="#wit1">喝</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">嗢</rdg></app>
-<app from="#beg0667005" to="#end0667005"><lem wit="#wit1">呾他揭多薩點</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">娑揭洛昵懼衫呾他揭耽頞奴颯沫洛</rdg></app>
-<app from="#beg0667006" to="#end0667006"><lem wit="#wit1">娑揭洛　昵<lb n="0667a19" ed="T"/>懼衫　呾他揭耽頞　奴颯沫洛</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">呾他揭多薩點</rdg></app>
-<app from="#beg0667007" to="#end0667007"><lem wit="#wit1">制</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">刺</rdg></app>
-<app from="#beg0667008" to="#end0667008"><lem wit="#wit1">絰</lem><rdg resp="#resp1" wit="#wit4">經</rdg></app>
-<app from="#beg0667009" to="#end0667009"><lem wit="#wit1">沫</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">沫洛</rdg></app>
-<app from="#beg0667010" to="#end0667010"><lem wit="#wit1">末</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">來</rdg></app>
-<app from="#beg0667011" to="#end0667011"><lem wit="#wit1">雨</lem><rdg resp="#resp1" wit="#wit4 #wit3">護</rdg></app>
-<app from="#beg0667012" to="#end0667012"><lem wit="#wit1">覺</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">等</rdg></app>
-<app from="#beg0667013" to="#end0667013"><lem wit="#wit1">陀</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">他</rdg></app>
-<app from="#beg0667014" to="#end0667014"><lem wit="#wit1">行</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3">持</rdg></app>
+<app from="#beg0666005" to="#end0666005"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit1 #wit2">佛說持</rdg></app>
+<app from="#beg0666006" to="#end0666006"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit2">經<note place="inline">與唐不空雨寶經及趙宋法天吉祥持世經同</note></rdg></app>
+<app from="#beg0666007" to="#end0666007"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit3 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0666010" to="#end0666010"><lem wit="#wit.orig">礫</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">磔</rdg></app>
+<app from="#beg0666011" to="#end0666011"><lem wit="#wit.orig">薩</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">薩過</rdg></app>
+<app from="#beg0666013" to="#end0666013"><lem wit="#wit.orig">韻</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">願</rdg></app>
+<app from="#beg0666014" to="#end0666014"><lem wit="#wit.orig">令</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0666015" to="#end0666015"><lem wit="#wit.orig">請</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">說</rdg></app>
+<app from="#beg0667002" to="#end0667002"><lem wit="#wit.orig">神呪</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">呪神</rdg></app>
+<app from="#beg0667003" to="#end0667003"><lem wit="#wit.orig">呾姪他</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0667004" to="#end0667004"><lem wit="#wit.orig">喝</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">嗢</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0667004"><lem wit="#wit.orig">喝</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">嗢</rdg></app>
+<app from="#beg0667005" to="#end0667005"><lem wit="#wit.orig">呾他揭多薩點</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">娑揭洛昵懼衫呾他揭耽頞奴颯沫洛</rdg></app>
+<app from="#beg0667006" to="#end0667006"><lem wit="#wit.orig">娑揭洛　昵<lb n="0667a19" ed="T"/>懼衫　呾他揭耽頞　奴颯沫洛</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">呾他揭多薩點</rdg></app>
+<app from="#beg0667007" to="#end0667007"><lem wit="#wit.orig">制</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">刺</rdg></app>
+<app from="#beg0667008" to="#end0667008"><lem wit="#wit.orig">絰</lem><rdg resp="#resp2" wit="#wit3">經</rdg></app>
+<app from="#beg0667009" to="#end0667009"><lem wit="#wit.orig">沫</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">沫洛</rdg></app>
+<app from="#beg0667010" to="#end0667010"><lem wit="#wit.orig">末</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">來</rdg></app>
+<app from="#beg0667011" to="#end0667011"><lem wit="#wit.orig">雨</lem><rdg resp="#resp2" wit="#wit3 #wit2">護</rdg></app>
+<app from="#beg0667012" to="#end0667012"><lem wit="#wit.orig">覺</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">等</rdg></app>
+<app from="#beg0667013" to="#end0667013"><lem wit="#wit.orig">陀</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">他</rdg></app>
+<app from="#beg0667014" to="#end0667014"><lem wit="#wit.orig">行</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2">持</rdg></app>
 </p>
 </cb:div>
 <cb:div type="tt">
 <head>多語詞條對照</head>
 <p>
 <cb:tt type="app" from="#beg0666012" to="#end0666012">
-	<cb:t resp="#resp1" xml:lang="zh-Hant">妙月</cb:t>
-	<cb:t resp="#resp1" xml:lang="sa" place="foot">Sucandra.</cb:t>
+	<cb:t resp="#resp2" xml:lang="zh-Hant">妙月</cb:t>
+	<cb:t resp="#resp2" xml:lang="sa" place="foot">Sucandra.</cb:t>
 </cb:tt>
 <cb:tt type="app" from="#beg0667001" to="#end0667001">
-	<cb:t resp="#resp1" xml:lang="zh-Hant">金剛海音如來</cb:t>
-	<cb:t resp="#resp1" xml:lang="sa" place="foot">Śrī-vajra-dhara-sāgara-nirghosa.</cb:t>
+	<cb:t resp="#resp2" xml:lang="zh-Hant">金剛海音如來</cb:t>
+	<cb:t resp="#resp2" xml:lang="sa" place="foot">Śrī-vajra-dhara-sāgara-nirghosa.</cb:t>
 </cb:tt>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0666005" resp="#resp2" type="mod" target="#nkr_note_mod_0666005">持【大】，佛說持【元】【明】，【原】麗本，題名 Vasudhāra-dhāraṇī. 東京帝國大學所藏梵本 No. 261. Mo. 272. 梵本與漢譯不合致</note>
-<note n="0666006" resp="#resp2" type="mod" target="#nkr_note_mod_0666006">經【大】，經<note place="inline">與唐不空雨寶經及趙宋法天吉祥持世經同</note>【明】</note>
-<note n="0666007" resp="#resp2" type="mod" target="#nkr_note_mod_0666007">大【大】，〔－〕【宋】【明】</note>
-<note n="0666010" resp="#resp2" type="mod" target="#nkr_note_mod_0666010">礫【大】，磔【宋】【元】【明】</note>
-<note n="0666011" resp="#resp2" type="mod" target="#nkr_note_mod_0666011">薩【大】，薩過【宋】【元】【明】</note>
-<note n="0666013" resp="#resp2" type="mod" target="#nkr_note_mod_0666013">韻【大】，願【宋】【元】【明】</note>
-<note n="0666014" resp="#resp2" type="mod" target="#nkr_note_mod_0666014">令【大】，〔－〕【宋】【元】【明】</note>
-<note n="0666015" resp="#resp2" type="mod" target="#nkr_note_mod_0666015">請【大】，說【宋】【元】【明】</note>
-<note n="0667002" resp="#resp2" type="mod" target="#nkr_note_mod_0667002">神呪【大】，呪神【宋】【元】【明】</note>
-<note n="0667003" resp="#resp2" type="mod" target="#nkr_note_mod_0667003">呾姪他【大】，〔－〕【宋】【元】【明】，梵字真言 cf. P. 669a [01]</note>
-<note n="0667004" resp="#resp2" type="mod" target="#nkr_note_mod_0667004">喝【大】＊，嗢【宋】＊【元】＊【明】＊</note>
-<note n="0667005" resp="#resp2" type="mod" target="#nkr_note_mod_0667005">呾他揭多薩點【大】∞娑揭洛昵懼衫呾他揭耽頞奴颯沫洛【宋】【元】【明】</note>
-<note n="0667006" resp="#resp2" type="mod" target="#nkr_note_mod_0667006">娑揭洛昵懼衫呾他揭耽頞奴颯沫洛【大】∞呾他揭多薩點【宋】【元】【明】</note>
-<note n="0667007" resp="#resp2" type="mod" target="#nkr_note_mod_0667007">制【大】，刺【宋】【元】【明】</note>
-<note n="0667008" resp="#resp2" type="mod" target="#nkr_note_mod_0667008">絰【大】，經【宋】</note>
-<note n="0667009" resp="#resp2" type="mod" target="#nkr_note_mod_0667009">沫【大】，沫洛【宋】【元】【明】</note>
-<note n="0667010" resp="#resp2" type="mod" target="#nkr_note_mod_0667010">末【大】，來【宋】【元】【明】</note>
-<note n="0667011" resp="#resp2" type="mod" target="#nkr_note_mod_0667011">雨【大】，護【宋】【明】</note>
-<note n="0667012" resp="#resp2" type="mod" target="#nkr_note_mod_0667012">覺【大】，等【宋】【元】【明】</note>
-<note n="0667013" resp="#resp2" type="mod" target="#nkr_note_mod_0667013">陀【大】，他【宋】【元】【明】</note>
-<note n="0667014" resp="#resp2" type="mod" target="#nkr_note_mod_0667014">行【大】，持【宋】【元】【明】</note>
+<note n="0666005" resp="#resp3" type="mod" target="#nkr_note_mod_0666005">持【大】，佛說持【元】【明】，【原】麗本，題名 Vasudhāra-dhāraṇī. 東京帝國大學所藏梵本 No. 261. Mo. 272. 梵本與漢譯不合致</note>
+<note n="0666006" resp="#resp3" type="mod" target="#nkr_note_mod_0666006">經【大】，經<note place="inline">與唐不空雨寶經及趙宋法天吉祥持世經同</note>【明】</note>
+<note n="0666007" resp="#resp3" type="mod" target="#nkr_note_mod_0666007">大【大】，〔－〕【宋】【明】</note>
+<note n="0666010" resp="#resp3" type="mod" target="#nkr_note_mod_0666010">礫【大】，磔【宋】【元】【明】</note>
+<note n="0666011" resp="#resp3" type="mod" target="#nkr_note_mod_0666011">薩【大】，薩過【宋】【元】【明】</note>
+<note n="0666013" resp="#resp3" type="mod" target="#nkr_note_mod_0666013">韻【大】，願【宋】【元】【明】</note>
+<note n="0666014" resp="#resp3" type="mod" target="#nkr_note_mod_0666014">令【大】，〔－〕【宋】【元】【明】</note>
+<note n="0666015" resp="#resp3" type="mod" target="#nkr_note_mod_0666015">請【大】，說【宋】【元】【明】</note>
+<note n="0667002" resp="#resp3" type="mod" target="#nkr_note_mod_0667002">神呪【大】，呪神【宋】【元】【明】</note>
+<note n="0667003" resp="#resp3" type="mod" target="#nkr_note_mod_0667003">呾姪他【大】，〔－〕【宋】【元】【明】，梵字真言 cf. P. 669a [01]</note>
+<note n="0667004" resp="#resp3" type="mod" target="#nkr_note_mod_0667004">喝【大】＊，嗢【宋】＊【元】＊【明】＊</note>
+<note n="0667005" resp="#resp3" type="mod" target="#nkr_note_mod_0667005">呾他揭多薩點【大】∞娑揭洛昵懼衫呾他揭耽頞奴颯沫洛【宋】【元】【明】</note>
+<note n="0667006" resp="#resp3" type="mod" target="#nkr_note_mod_0667006">娑揭洛昵懼衫呾他揭耽頞奴颯沫洛【大】∞呾他揭多薩點【宋】【元】【明】</note>
+<note n="0667007" resp="#resp3" type="mod" target="#nkr_note_mod_0667007">制【大】，刺【宋】【元】【明】</note>
+<note n="0667008" resp="#resp3" type="mod" target="#nkr_note_mod_0667008">絰【大】，經【宋】</note>
+<note n="0667009" resp="#resp3" type="mod" target="#nkr_note_mod_0667009">沫【大】，沫洛【宋】【元】【明】</note>
+<note n="0667010" resp="#resp3" type="mod" target="#nkr_note_mod_0667010">末【大】，來【宋】【元】【明】</note>
+<note n="0667011" resp="#resp3" type="mod" target="#nkr_note_mod_0667011">雨【大】，護【宋】【明】</note>
+<note n="0667012" resp="#resp3" type="mod" target="#nkr_note_mod_0667012">覺【大】，等【宋】【元】【明】</note>
+<note n="0667013" resp="#resp3" type="mod" target="#nkr_note_mod_0667013">陀【大】，他【宋】【元】【明】</note>
+<note n="0667014" resp="#resp3" type="mod" target="#nkr_note_mod_0667014">行【大】，持【宋】【元】【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0666005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666005">【原】麗本，題名 Vasudhāra-dhāraṇī. 東京帝國大學所藏梵本 No. 261. Mo. 272. 梵本與漢譯不合致，（佛說）＋持【元】【明】</note>
-<note n="0666006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666006">經＋（與唐不空雨寶經及趙宋法天吉祥持世經同）十八字細註【明】</note>
-<note n="0666007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666007">〔大〕－【宋】【明】</note>
-<note n="0666008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666008">Kauśambī.</note>
-<note n="0666009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666009">Kaṇṭaka.</note>
-<note n="0666010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666010">礫＝磔【三】</note>
-<note n="0666011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666011">薩＋（過）【三】</note>
-<note n="0666012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666012">妙月 Sucandra.</note>
-<note n="0666013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666013">韻＝願【三】</note>
-<note n="0666014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666014">〔令〕－【三】</note>
-<note n="0666015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0666015">請＝說【三】</note>
-<note n="0667001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667001">金剛海音如來 Śrī-vajra-dhara-sāgara-nirghosa.</note>
-<note n="0667002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667002">神呪＝呪神【三】</note>
-<note n="0667003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667003">梵字真言 cf. P. 669a [01]，〔呾姪他〕－【三】</note>
-<note n="0667004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667004">喝＝嗢【三】＊</note>
-<note n="0667005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667005">（咀他…點）六字∞（娑揭…洛）十五字【三】</note>
-<note n="0667006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667006">（咀他…點）六字∞（娑揭…洛）十五字【三】</note>
-<note n="0667007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667007">制＝刺【三】</note>
-<note n="0667008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667008">絰＝經【宋】</note>
-<note n="0667009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667009">沫＋（洛）【三】</note>
-<note n="0667010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667010">末＝來【三】</note>
-<note n="0667011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667011">雨＝護【宋】【明】</note>
-<note n="0667012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667012">覺＝等【三】</note>
-<note n="0667013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667013">陀＝他【三】</note>
-<note n="0667014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0667014">行＝持【三】</note>
+<note n="0666005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666005">【原】麗本，題名 Vasudhāra-dhāraṇī. 東京帝國大學所藏梵本 No. 261. Mo. 272. 梵本與漢譯不合致，（佛說）＋持【元】【明】</note>
+<note n="0666006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666006">經＋（與唐不空雨寶經及趙宋法天吉祥持世經同）十八字細註【明】</note>
+<note n="0666007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666007">〔大〕－【宋】【明】</note>
+<note n="0666008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666008">Kauśambī.</note>
+<note n="0666009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666009">Kaṇṭaka.</note>
+<note n="0666010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666010">礫＝磔【三】</note>
+<note n="0666011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666011">薩＋（過）【三】</note>
+<note n="0666012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666012">妙月 Sucandra.</note>
+<note n="0666013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666013">韻＝願【三】</note>
+<note n="0666014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666014">〔令〕－【三】</note>
+<note n="0666015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0666015">請＝說【三】</note>
+<note n="0667001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667001">金剛海音如來 Śrī-vajra-dhara-sāgara-nirghosa.</note>
+<note n="0667002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667002">神呪＝呪神【三】</note>
+<note n="0667003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667003">梵字真言 cf. P. 669a [01]，〔呾姪他〕－【三】</note>
+<note n="0667004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667004">喝＝嗢【三】＊</note>
+<note n="0667005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667005">（咀他…點）六字∞（娑揭…洛）十五字【三】</note>
+<note n="0667006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667006">（咀他…點）六字∞（娑揭…洛）十五字【三】</note>
+<note n="0667007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667007">制＝刺【三】</note>
+<note n="0667008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667008">絰＝經【宋】</note>
+<note n="0667009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667009">沫＋（洛）【三】</note>
+<note n="0667010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667010">末＝來【三】</note>
+<note n="0667011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667011">雨＝護【宋】【明】</note>
+<note n="0667012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667012">覺＝等【三】</note>
+<note n="0667013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667013">陀＝他【三】</note>
+<note n="0667014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0667014">行＝持【三】</note>
 </p>
 </cb:div>
 <cb:div type="rest-notes">
 <head>其他校註</head>
 <p>
 <note n="0666005" type="rest" place="foot" target="#nkr_note_rest_0666005">【原】麗本，題名 Vasudhāra-dhāraṇī. 東京帝國大學所藏梵本 No. 261. Mo. 272. 梵本與漢譯不合致</note>
-<note target="#nkr_note_foreign_0666008"><foreign n="0666008" cb:resp="#resp1" xml:lang="sa" cb:place="foot">Kauśambī.</foreign></note>
-<note target="#nkr_note_foreign_0666009"><foreign n="0666009" cb:resp="#resp1" xml:lang="sa" cb:place="foot">Kaṇṭaka.</foreign></note>
+<note target="#nkr_note_foreign_0666008"><foreign n="0666008" cb:resp="#resp2" xml:lang="sa" cb:place="foot">Kauśambī.</foreign></note>
+<note target="#nkr_note_foreign_0666009"><foreign n="0666009" cb:resp="#resp2" xml:lang="sa" cb:place="foot">Kaṇṭaka.</foreign></note>
 <note n="0667003" type="rest" place="foot" target="#nkr_note_rest_0667003">梵字真言 cf. P. 669a [01]</note>
 </p>
 </cb:div>

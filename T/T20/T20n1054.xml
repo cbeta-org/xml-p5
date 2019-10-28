@@ -11,164 +11,122 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.8 $<date>$Date: 2009/04/23 08:01:18 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:18 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 20, No. 1054</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00155">
-	<charName>CBETA CHARACTER CB00155</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[曰/月]</value>
-	</charProp>
-	<mapping type="normal_unicode">U+5190</mapping>
-	<mapping cb:dec="983195" type="PUA">U+F009B</mapping>
-</char>
-<char xml:id="CB00718">
-	<charName>CBETA CHARACTER CB00718</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[赤*皮]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>赧</value>
-	</charProp>
-	<mapping type="unicode">U+27E5E</mapping>
-	<mapping cb:dec="983758" type="PUA">U+F02CE</mapping>
-</char>
-<char xml:id="CB00761">
-	<charName>CBETA CHARACTER CB00761</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[口*女]</value>
-	</charProp>
-	<mapping type="unicode">U+20BC6</mapping>
-	<mapping cb:dec="983801" type="PUA">U+F02F9</mapping>
-</char>
-<char xml:id="CB02735">
-	<charName>CBETA CHARACTER CB02735</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[口*束*頁]</value>
-	</charProp>
-	<mapping type="normal_unicode">U+21096</mapping>
-	<mapping cb:dec="985775" type="PUA">U+F0AAF</mapping>
-</char>
-<char xml:id="CB03129">
-	<charName>CBETA CHARACTER CB03129</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[口*尒]</value>
-	</charProp>
-	<mapping type="unicode">U+20C12</mapping>
-	<mapping cb:dec="986169" type="PUA">U+F0C39</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">20</idno>.<idno type="no">1054</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">聖觀自在菩薩一百八名經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00155">
+				<charName>CBETA CHARACTER CB00155</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[曰/月]</value>
+				</charProp>
+				<mapping type="normal_unicode">U+5190</mapping>
+				<mapping cb:dec="983195" type="PUA">U+F009B</mapping>
+			</char>
+			<char xml:id="CB00718">
+				<charName>CBETA CHARACTER CB00718</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[赤*皮]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>赧</value>
+				</charProp>
+				<mapping type="unicode">U+27E5E</mapping>
+				<mapping cb:dec="983758" type="PUA">U+F02CE</mapping>
+			</char>
+			<char xml:id="CB00761">
+				<charName>CBETA CHARACTER CB00761</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[口*女]</value>
+				</charProp>
+				<mapping type="unicode">U+20BC6</mapping>
+				<mapping cb:dec="983801" type="PUA">U+F02F9</mapping>
+			</char>
+			<char xml:id="CB02735">
+				<charName>CBETA CHARACTER CB02735</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[口*束*頁]</value>
+				</charProp>
+				<mapping type="normal_unicode">U+21096</mapping>
+				<mapping cb:dec="985775" type="PUA">U+F0AAF</mapping>
+			</char>
+			<char xml:id="CB03129">
+				<charName>CBETA CHARACTER CB03129</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[口*尒]</value>
+				</charProp>
+				<mapping type="unicode">U+20C12</mapping>
+				<mapping cb:dec="986169" type="PUA">U+F0C39</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-24T11:15:03">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T20n1054.xml,v $
-Revision 1.8  2009/04/23 08:01:18  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.7  2006/04/12 21:55:39  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.5  2004/11/14 03:17:23  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.4  2004/10/21 08:20:03  saywhat
-段落前加入圈點
-
-Revision 1.3  2004/04/20 08:38:51  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/06/23 06:16:02  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:18  ray
-recover cvs
-
-Revision 1.15  2002/12/05 05:20:18  saywhat
-校勘插入處理
-
-Revision 1.14  2002/11/04 10:45:29  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/10/21 08:12:56  ray
-移動 <anchor>+<note>, <anchor>+雙圈
-
-Revision 1.12  2002/10/07 13:11:50  moved
-modified
-
-Revision 1.11  2002/07/29 09:56:39  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:05:42  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/11/05 06:13:34  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.8  2001/07/24 06:52:59  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/03/30 05:55:12  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:15:20  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:55:27  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:45:25  chris
-Added keywords $Revision: 1.8 $, $Date: 2009/04/23 08:01:18 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-24T11:15:03">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -303,99 +261,99 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app cb:word-count="11" from="#beg0069006" to="#end0069006"><lem wit="#wit1">宋西天中印度惹爛馱羅國</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0069007" to="#end0069007"><lem wit="#wit1">師</lem><rdg resp="#resp1" wit="#wit2 #wit3">師賜紫沙門</rdg></app>
-<app from="#beg0069008" to="#end0069008"><lem wit="#wit1">二合一</lem><rdg resp="#resp1" wit="#wit2 #wit3">一二合</rdg></app>
-<app from="#beg0069009" to="#end0069009"><lem wit="#wit1">二合四</lem><rdg resp="#resp1" wit="#wit2 #wit3">四二合</rdg></app>
-<app from="#beg0069010" to="#end0069010"><lem wit="#wit1">二合八</lem><rdg resp="#resp1" wit="#wit2 #wit3">八二合</rdg></app>
-<app from="#beg0069011" to="#end0069011"><lem wit="#wit1">二合十三</lem><rdg resp="#resp1" wit="#wit2 #wit3">十三二合</rdg></app>
-<app from="#beg0069012" to="#end0069012"><lem wit="#wit1">囉</lem><rdg resp="#resp1" wit="#wit2 #wit3">羅</rdg></app>
-<app from="#beg0069013" to="#end0069013"><lem wit="#wit1">去聲引</lem><rdg resp="#resp1" wit="#wit2 #wit3">引去</rdg></app>
-<app from="#beg0069014" to="#end0069014"><lem wit="#wit1">二合二十六</lem><rdg resp="#resp1" wit="#wit2 #wit3">二十六二合</rdg></app>
-<app from="#beg0069015" to="#end0069015"><lem wit="#wit1">二合二十九</lem><rdg resp="#resp1" wit="#wit2 #wit3">二十九二合</rdg></app>
-<app from="#beg0070001" to="#end0070001"><lem wit="#wit1">二合四十六</lem><rdg resp="#resp1" wit="#wit2 #wit3">四十六二合</rdg></app>
-<app from="#beg0070002" to="#end0070002"><lem wit="#wit1">引</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0070003" to="#end0070003"><lem wit="#wit1">囉</lem><rdg resp="#resp1" wit="#wit2 #wit3">羅</rdg></app>
-<app from="#beg0070004" to="#end0070004"><lem wit="#wit1">二合五十九</lem><rdg resp="#resp1" wit="#wit2 #wit3">五十九二合</rdg></app>
-<app from="#beg0070005" to="#end0070005"><lem wit="#wit1">二</lem><rdg resp="#resp1" wit="#wit2 #wit3">二合</rdg></app>
-<app from="#beg0070006" to="#end0070006"><lem wit="#wit1">二合<lb n="0070a19" ed="T"/>六十八</lem><rdg resp="#resp1" wit="#wit2 #wit3">六十八二合</rdg></app>
-<app from="#beg0070007" to="#end0070007"><lem wit="#wit1">二合七十<lb n="0070a21" ed="T"/>二</lem><rdg resp="#resp1" wit="#wit2 #wit3">七十二二合</rdg></app>
-<app from="#beg0070008" to="#end0070008"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2 #wit3">二</rdg></app>
-<app from="#beg0070009" to="#end0070009"><lem wit="#wit1">二合七十九</lem><rdg resp="#resp1" wit="#wit2 #wit3">七十九二合</rdg></app>
-<app from="#beg0070010" to="#end0070010"><lem wit="#wit1">二合八十四</lem><rdg resp="#resp1" wit="#wit2 #wit3">八十四二合</rdg></app>
-<app from="#beg0070011" to="#end0070011"><lem wit="#wit1">二合八十七</lem><rdg resp="#resp1" wit="#wit2 #wit3">八十七二合</rdg></app>
-<app from="#beg0070012" to="#end0070012"><lem wit="#wit1">二合八十九</lem><rdg resp="#resp1" wit="#wit2 #wit3">八十九二合</rdg></app>
-<app from="#beg0070013" to="#end0070013"><lem wit="#wit1">二合九十一</lem><rdg resp="#resp1" wit="#wit2 #wit3">九十一二合</rdg></app>
-<app from="#beg0070014" to="#end0070014"><lem wit="#wit1">二</lem><rdg resp="#resp1" wit="#wit2">三</rdg></app>
-<app from="#beg0070015" to="#end0070015"><lem wit="#wit1">聲</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0070016" to="#end0070016"><lem wit="#wit1">然</lem><rdg resp="#resp1" wit="#wit2">鉢</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0070015"><lem wit="#wit1">聲</lem><rdg resp="#resp1" wit="#wit2 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0070017" to="#end0070017"><lem wit="#wit1">持</lem><rdg resp="#resp1" wit="#wit3">時</rdg></app>
+<app cb:word-count="11" from="#beg0069006" to="#end0069006"><lem wit="#wit.orig">宋西天中印度惹爛馱羅國</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0069007" to="#end0069007"><lem wit="#wit.orig">師</lem><rdg resp="#resp2" wit="#wit1 #wit2">師賜紫沙門</rdg></app>
+<app from="#beg0069008" to="#end0069008"><lem wit="#wit.orig">二合一</lem><rdg resp="#resp2" wit="#wit1 #wit2">一二合</rdg></app>
+<app from="#beg0069009" to="#end0069009"><lem wit="#wit.orig">二合四</lem><rdg resp="#resp2" wit="#wit1 #wit2">四二合</rdg></app>
+<app from="#beg0069010" to="#end0069010"><lem wit="#wit.orig">二合八</lem><rdg resp="#resp2" wit="#wit1 #wit2">八二合</rdg></app>
+<app from="#beg0069011" to="#end0069011"><lem wit="#wit.orig">二合十三</lem><rdg resp="#resp2" wit="#wit1 #wit2">十三二合</rdg></app>
+<app from="#beg0069012" to="#end0069012"><lem wit="#wit.orig">囉</lem><rdg resp="#resp2" wit="#wit1 #wit2">羅</rdg></app>
+<app from="#beg0069013" to="#end0069013"><lem wit="#wit.orig">去聲引</lem><rdg resp="#resp2" wit="#wit1 #wit2">引去</rdg></app>
+<app from="#beg0069014" to="#end0069014"><lem wit="#wit.orig">二合二十六</lem><rdg resp="#resp2" wit="#wit1 #wit2">二十六二合</rdg></app>
+<app from="#beg0069015" to="#end0069015"><lem wit="#wit.orig">二合二十九</lem><rdg resp="#resp2" wit="#wit1 #wit2">二十九二合</rdg></app>
+<app from="#beg0070001" to="#end0070001"><lem wit="#wit.orig">二合四十六</lem><rdg resp="#resp2" wit="#wit1 #wit2">四十六二合</rdg></app>
+<app from="#beg0070002" to="#end0070002"><lem wit="#wit.orig">引</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0070003" to="#end0070003"><lem wit="#wit.orig">囉</lem><rdg resp="#resp2" wit="#wit1 #wit2">羅</rdg></app>
+<app from="#beg0070004" to="#end0070004"><lem wit="#wit.orig">二合五十九</lem><rdg resp="#resp2" wit="#wit1 #wit2">五十九二合</rdg></app>
+<app from="#beg0070005" to="#end0070005"><lem wit="#wit.orig">二</lem><rdg resp="#resp2" wit="#wit1 #wit2">二合</rdg></app>
+<app from="#beg0070006" to="#end0070006"><lem wit="#wit.orig">二合<lb n="0070a19" ed="T"/>六十八</lem><rdg resp="#resp2" wit="#wit1 #wit2">六十八二合</rdg></app>
+<app from="#beg0070007" to="#end0070007"><lem wit="#wit.orig">二合七十<lb n="0070a21" ed="T"/>二</lem><rdg resp="#resp2" wit="#wit1 #wit2">七十二二合</rdg></app>
+<app from="#beg0070008" to="#end0070008"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1 #wit2">二</rdg></app>
+<app from="#beg0070009" to="#end0070009"><lem wit="#wit.orig">二合七十九</lem><rdg resp="#resp2" wit="#wit1 #wit2">七十九二合</rdg></app>
+<app from="#beg0070010" to="#end0070010"><lem wit="#wit.orig">二合八十四</lem><rdg resp="#resp2" wit="#wit1 #wit2">八十四二合</rdg></app>
+<app from="#beg0070011" to="#end0070011"><lem wit="#wit.orig">二合八十七</lem><rdg resp="#resp2" wit="#wit1 #wit2">八十七二合</rdg></app>
+<app from="#beg0070012" to="#end0070012"><lem wit="#wit.orig">二合八十九</lem><rdg resp="#resp2" wit="#wit1 #wit2">八十九二合</rdg></app>
+<app from="#beg0070013" to="#end0070013"><lem wit="#wit.orig">二合九十一</lem><rdg resp="#resp2" wit="#wit1 #wit2">九十一二合</rdg></app>
+<app from="#beg0070014" to="#end0070014"><lem wit="#wit.orig">二</lem><rdg resp="#resp2" wit="#wit1">三</rdg></app>
+<app from="#beg0070015" to="#end0070015"><lem wit="#wit.orig">聲</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0070016" to="#end0070016"><lem wit="#wit.orig">然</lem><rdg resp="#resp2" wit="#wit1">鉢</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0070015"><lem wit="#wit.orig">聲</lem><rdg resp="#resp2" wit="#wit1 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0070017" to="#end0070017"><lem wit="#wit.orig">持</lem><rdg resp="#resp2" wit="#wit2">時</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0069006" resp="#resp2" type="mod" target="#nkr_note_mod_0069006">（宋西…國）十一字【大】，〔－〕【宋】【元】</note>
-<note n="0069007" resp="#resp2" type="mod" target="#nkr_note_mod_0069007">師【大】，師賜紫沙門【宋】【元】</note>
-<note n="0069008" resp="#resp2" type="mod" target="#nkr_note_mod_0069008">二合一【大】，一二合【宋】【元】</note>
-<note n="0069009" resp="#resp2" type="mod" target="#nkr_note_mod_0069009">二合四【大】，四二合【宋】【元】</note>
-<note n="0069010" resp="#resp2" type="mod" target="#nkr_note_mod_0069010">二合八【大】，八二合【宋】【元】</note>
-<note n="0069011" resp="#resp2" type="mod" target="#nkr_note_mod_0069011">二合十三【大】，十三二合【宋】【元】</note>
-<note n="0069012" resp="#resp2" type="mod" target="#nkr_note_mod_0069012">囉【大】，羅【宋】【元】</note>
-<note n="0069013" resp="#resp2" type="mod" target="#nkr_note_mod_0069013">去聲引【大】，引去【宋】【元】</note>
-<note n="0069014" resp="#resp2" type="mod" target="#nkr_note_mod_0069014">二合二十六【大】，二十六二合【宋】【元】</note>
-<note n="0069015" resp="#resp2" type="mod" target="#nkr_note_mod_0069015">二合二十九【大】，二十九二合【宋】【元】</note>
-<note n="0070001" resp="#resp2" type="mod" target="#nkr_note_mod_0070001">二合四十六【大】，四十六二合【宋】【元】</note>
-<note n="0070002" resp="#resp2" type="mod" target="#nkr_note_mod_0070002">引【大】，〔－〕【宋】【元】</note>
-<note n="0070003" resp="#resp2" type="mod" target="#nkr_note_mod_0070003">囉【大】，羅【宋】【元】</note>
-<note n="0070004" resp="#resp2" type="mod" target="#nkr_note_mod_0070004">二合五十九【大】，五十九二合【宋】【元】</note>
-<note n="0070005" resp="#resp2" type="mod" target="#nkr_note_mod_0070005">二【大】，二合【宋】【元】</note>
-<note n="0070006" resp="#resp2" type="mod" target="#nkr_note_mod_0070006">二合六十八【大】，六十八二合【宋】【元】</note>
-<note n="0070007" resp="#resp2" type="mod" target="#nkr_note_mod_0070007">二合七十二【大】，七十二二合【宋】【元】</note>
-<note n="0070008" resp="#resp2" type="mod" target="#nkr_note_mod_0070008">三【大】，二【宋】【元】</note>
-<note n="0070009" resp="#resp2" type="mod" target="#nkr_note_mod_0070009">二合七十九【大】，七十九二合【宋】【元】</note>
-<note n="0070010" resp="#resp2" type="mod" target="#nkr_note_mod_0070010">二合八十四【大】，八十四二合【宋】【元】</note>
-<note n="0070011" resp="#resp2" type="mod" target="#nkr_note_mod_0070011">二合八十七【大】，八十七二合【宋】【元】</note>
-<note n="0070012" resp="#resp2" type="mod" target="#nkr_note_mod_0070012">二合八十九【大】，八十九二合【宋】【元】</note>
-<note n="0070013" resp="#resp2" type="mod" target="#nkr_note_mod_0070013">二合九十一【大】，九十一二合【宋】【元】</note>
-<note n="0070014" resp="#resp2" type="mod" target="#nkr_note_mod_0070014">二【大】，三【宋】</note>
-<note n="0070015" resp="#resp2" type="mod" target="#nkr_note_mod_0070015">聲【大】＊，〔－〕【宋】【元】＊</note>
-<note n="0070016" resp="#resp2" type="mod" target="#nkr_note_mod_0070016">然【大】，鉢【宋】</note>
-<note n="0070017" resp="#resp2" type="mod" target="#nkr_note_mod_0070017">持【大】，時【元】</note>
+<note n="0069006" resp="#resp3" type="mod" target="#nkr_note_mod_0069006">（宋西…國）十一字【大】，〔－〕【宋】【元】</note>
+<note n="0069007" resp="#resp3" type="mod" target="#nkr_note_mod_0069007">師【大】，師賜紫沙門【宋】【元】</note>
+<note n="0069008" resp="#resp3" type="mod" target="#nkr_note_mod_0069008">二合一【大】，一二合【宋】【元】</note>
+<note n="0069009" resp="#resp3" type="mod" target="#nkr_note_mod_0069009">二合四【大】，四二合【宋】【元】</note>
+<note n="0069010" resp="#resp3" type="mod" target="#nkr_note_mod_0069010">二合八【大】，八二合【宋】【元】</note>
+<note n="0069011" resp="#resp3" type="mod" target="#nkr_note_mod_0069011">二合十三【大】，十三二合【宋】【元】</note>
+<note n="0069012" resp="#resp3" type="mod" target="#nkr_note_mod_0069012">囉【大】，羅【宋】【元】</note>
+<note n="0069013" resp="#resp3" type="mod" target="#nkr_note_mod_0069013">去聲引【大】，引去【宋】【元】</note>
+<note n="0069014" resp="#resp3" type="mod" target="#nkr_note_mod_0069014">二合二十六【大】，二十六二合【宋】【元】</note>
+<note n="0069015" resp="#resp3" type="mod" target="#nkr_note_mod_0069015">二合二十九【大】，二十九二合【宋】【元】</note>
+<note n="0070001" resp="#resp3" type="mod" target="#nkr_note_mod_0070001">二合四十六【大】，四十六二合【宋】【元】</note>
+<note n="0070002" resp="#resp3" type="mod" target="#nkr_note_mod_0070002">引【大】，〔－〕【宋】【元】</note>
+<note n="0070003" resp="#resp3" type="mod" target="#nkr_note_mod_0070003">囉【大】，羅【宋】【元】</note>
+<note n="0070004" resp="#resp3" type="mod" target="#nkr_note_mod_0070004">二合五十九【大】，五十九二合【宋】【元】</note>
+<note n="0070005" resp="#resp3" type="mod" target="#nkr_note_mod_0070005">二【大】，二合【宋】【元】</note>
+<note n="0070006" resp="#resp3" type="mod" target="#nkr_note_mod_0070006">二合六十八【大】，六十八二合【宋】【元】</note>
+<note n="0070007" resp="#resp3" type="mod" target="#nkr_note_mod_0070007">二合七十二【大】，七十二二合【宋】【元】</note>
+<note n="0070008" resp="#resp3" type="mod" target="#nkr_note_mod_0070008">三【大】，二【宋】【元】</note>
+<note n="0070009" resp="#resp3" type="mod" target="#nkr_note_mod_0070009">二合七十九【大】，七十九二合【宋】【元】</note>
+<note n="0070010" resp="#resp3" type="mod" target="#nkr_note_mod_0070010">二合八十四【大】，八十四二合【宋】【元】</note>
+<note n="0070011" resp="#resp3" type="mod" target="#nkr_note_mod_0070011">二合八十七【大】，八十七二合【宋】【元】</note>
+<note n="0070012" resp="#resp3" type="mod" target="#nkr_note_mod_0070012">二合八十九【大】，八十九二合【宋】【元】</note>
+<note n="0070013" resp="#resp3" type="mod" target="#nkr_note_mod_0070013">二合九十一【大】，九十一二合【宋】【元】</note>
+<note n="0070014" resp="#resp3" type="mod" target="#nkr_note_mod_0070014">二【大】，三【宋】</note>
+<note n="0070015" resp="#resp3" type="mod" target="#nkr_note_mod_0070015">聲【大】＊，〔－〕【宋】【元】＊</note>
+<note n="0070016" resp="#resp3" type="mod" target="#nkr_note_mod_0070016">然【大】，鉢【宋】</note>
+<note n="0070017" resp="#resp3" type="mod" target="#nkr_note_mod_0070017">持【大】，時【元】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0069005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069005">【原】增上寺報恩藏明本</note>
-<note n="0069006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069006">〔宋西…國〕十一字－【宋】【元】</note>
-<note n="0069007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069007">師＋（賜紫沙門）【宋】【元】</note>
-<note n="0069008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069008">二合一＝一二合【宋】【元】</note>
-<note n="0069009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069009">二合四＝四二合【宋】【元】</note>
-<note n="0069010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069010">二合八＝八二合【宋】【元】</note>
-<note n="0069011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069011">二合十三＝十三二合【宋】【元】</note>
-<note n="0069012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069012">囉＝羅【宋】【元】</note>
-<note n="0069013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069013">去聲引＝引去【宋】【元】</note>
-<note n="0069014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069014">二合二十六＝二十六二合【宋】【元】</note>
-<note n="0069015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0069015">二合二十九＝二十九二合【宋】【元】</note>
-<note n="0070001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070001">二合四十六＝四十六二合【宋】【元】</note>
-<note n="0070002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070002">〔引〕－【宋】【元】</note>
-<note n="0070003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070003">囉＝羅【宋】【元】</note>
-<note n="0070004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070004">二合五十九＝五十九二合【宋】【元】</note>
-<note n="0070005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070005">二＋（合）【宋】【元】</note>
-<note n="0070006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070006">二合六十八＝六十八二合【宋】【元】</note>
-<note n="0070007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070007">二合七十二＝七十二二合【宋】【元】</note>
-<note n="0070008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070008">三＝二【宋】【元】</note>
-<note n="0070009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070009">二合七十九＝七十九二合【宋】【元】</note>
-<note n="0070010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070010">二合八十四＝八十四二合【宋】【元】</note>
-<note n="0070011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070011">二合八十七＝八十七二合【宋】【元】</note>
-<note n="0070012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070012">二合八十九＝八十九二合【宋】【元】</note>
-<note n="0070013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070013">二合九十一＝九十一二合【宋】【元】</note>
-<note n="0070014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070014">二＝三【宋】</note>
-<note n="0070015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070015">〔聲〕－【宋】【元】＊</note>
-<note n="0070016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070016">然＝鉢【宋】</note>
-<note n="0070017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0070017">持＝時【元】</note>
+<note n="0069005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069005">【原】增上寺報恩藏明本</note>
+<note n="0069006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069006">〔宋西…國〕十一字－【宋】【元】</note>
+<note n="0069007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069007">師＋（賜紫沙門）【宋】【元】</note>
+<note n="0069008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069008">二合一＝一二合【宋】【元】</note>
+<note n="0069009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069009">二合四＝四二合【宋】【元】</note>
+<note n="0069010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069010">二合八＝八二合【宋】【元】</note>
+<note n="0069011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069011">二合十三＝十三二合【宋】【元】</note>
+<note n="0069012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069012">囉＝羅【宋】【元】</note>
+<note n="0069013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069013">去聲引＝引去【宋】【元】</note>
+<note n="0069014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069014">二合二十六＝二十六二合【宋】【元】</note>
+<note n="0069015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0069015">二合二十九＝二十九二合【宋】【元】</note>
+<note n="0070001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070001">二合四十六＝四十六二合【宋】【元】</note>
+<note n="0070002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070002">〔引〕－【宋】【元】</note>
+<note n="0070003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070003">囉＝羅【宋】【元】</note>
+<note n="0070004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070004">二合五十九＝五十九二合【宋】【元】</note>
+<note n="0070005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070005">二＋（合）【宋】【元】</note>
+<note n="0070006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070006">二合六十八＝六十八二合【宋】【元】</note>
+<note n="0070007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070007">二合七十二＝七十二二合【宋】【元】</note>
+<note n="0070008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070008">三＝二【宋】【元】</note>
+<note n="0070009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070009">二合七十九＝七十九二合【宋】【元】</note>
+<note n="0070010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070010">二合八十四＝八十四二合【宋】【元】</note>
+<note n="0070011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070011">二合八十七＝八十七二合【宋】【元】</note>
+<note n="0070012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070012">二合八十九＝八十九二合【宋】【元】</note>
+<note n="0070013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070013">二合九十一＝九十一二合【宋】【元】</note>
+<note n="0070014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070014">二＝三【宋】</note>
+<note n="0070015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070015">〔聲〕－【宋】【元】＊</note>
+<note n="0070016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070016">然＝鉢【宋】</note>
+<note n="0070017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0070017">持＝時【元】</note>
 </p>
 </cb:div>
 </back></text></TEI>

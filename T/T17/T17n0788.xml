@@ -11,117 +11,74 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.9 $<date>$Date: 2012/09/28 08:51:55 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-		<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/09/28 08:51:55 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 17, No. 788</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【元】</witness>
-		<witness xml:id="wit3">【明】</witness>
-		<witness xml:id="wit4">【宋】</witness>
-		<witness xml:id="wit5">【宮】</witness>
-		<witness xml:id="wit6">【CB】</witness>
-		<witness xml:id="wit7">【麗-CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Qi Gai</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，齊丐提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">17</idno>.<idno type="no">788</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說校量數珠功德經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Qi Gai</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，齊丐提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【元】</witness>
+						<witness xml:id="wit2">【明】</witness>
+						<witness xml:id="wit3">【宋】</witness>
+						<witness xml:id="wit4">【宮】</witness>
+						<witness xml:id="wit5">【麗-CB】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-10-12T10:16:32">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)</change>
-<!--
-$Log: T17n0788.xml,v $
-Revision 1.9  2012/09/28 08:51:55  eva
-新式標點版 上傳
-
-Revision 1.8  2009/04/23 07:59:26  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.7  2006/04/12 21:55:20  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.5  2004/10/12 16:02:55  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/09/13 05:08:31  saywhat
-<trailer> => <juan fun="close"><jhead>
-
-Revision 1.3  2004/05/11 14:39:03  saywhat
-修訂經號的<head> → <head type="no">
-
-Revision 1.2  2004/04/20 08:38:28  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:09:03  ray
-recover cvs
-
-Revision 1.15  2002/12/05 06:38:00  saywhat
-校勘插入處理
-
-Revision 1.14  2002/11/04 10:43:48  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/07/29 09:55:35  vinking
-modified lang
-
-Revision 1.12  2002/04/04 09:05:00  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.11  2001/07/27 07:12:14  ray
-去除多餘的 <author>
-
-Revision 1.10  2001/07/24 06:52:02  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/05/25 08:57:28  ray
-經號統一為四碼
-
-Revision 1.8  2001/03/30 05:47:10  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/03/25 09:07:22  ray
-add <milestone>
-
-Revision 1.6  2001/02/07 06:52:29  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.5  2001/02/03 07:42:08  chris
-Added keywords $Revision: 1.9 $, $Date: 2012/09/28 08:51:55 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-10-12T10:16:32">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -177,66 +134,66 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0727002" to="#end0727002"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit2 #wit3">經<note place="inline">出趙宋天息災新譯文殊根本儀軏經中</note></rdg></app>
-<app from="#beg0727003" to="#end0727003"><lem wit="#wit1">大</lem><rdg resp="#resp1" wit="#wit4 #wit3"><space quantity="0"/></rdg></app>
-<app from="#beg0727004" to="#end0727004"><lem wit="#wit1">天竺</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3 #wit5">迦濕蜜羅國</rdg></app>
-<app from="#beg0727005" to="#end0727005"><lem wit="#wit1">譯</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3 #wit5">於福先寺譯</rdg></app>
-<app from="#beg0727a2201" to="#end0727a2201"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a10</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727a2301" to="#end0727a2301"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a11</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727a2401" to="#end0727a2401"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a12</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727a2501" to="#end0727a2501"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a13</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727a2701" to="#end0727a2701"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a16</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727006" to="#end0727006"><lem wit="#wit1">囉</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3 #wit5">羅</rdg></app>
-<app from="#beg0727a2801" to="#end0727a2801"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a17</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727007" to="#end0727007"><lem wit="#wit1">囉</lem><rdg resp="#resp1" wit="#wit4">羅</rdg></app>
-<app from="#beg0727b0101" to="#end0727b0101"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a17</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727b0201" to="#end0727b0201"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a20</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727008" to="#end0727008"><lem wit="#wit1">若</lem><rdg resp="#resp1" wit="#wit4 #wit2 #wit3 #wit5">若用</rdg></app>
-<app from="#beg0727b0301" to="#end0727b0301"><lem wit="#wit6 #wit7" resp="#resp3">掐<note type="cf1">K11n0285_p0637a21</note></lem><rdg wit="#wit1">搯</rdg></app>
-<app from="#beg0727009" to="#end0727009"><lem wit="#wit1">相</lem><rdg resp="#resp1" wit="#wit4 #wit2">因</rdg></app>
-<app from="#beg0727010" to="#end0727010"><lem wit="#wit1">視</lem><rdg resp="#resp1" wit="#wit2 #wit3">示</rdg></app>
+<app from="#beg0727002" to="#end0727002"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit1 #wit2">經<note place="inline">出趙宋天息災新譯文殊根本儀軏經中</note></rdg></app>
+<app from="#beg0727003" to="#end0727003"><lem wit="#wit.orig">大</lem><rdg resp="#resp2" wit="#wit3 #wit2"><space quantity="0"/></rdg></app>
+<app from="#beg0727004" to="#end0727004"><lem wit="#wit.orig">天竺</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2 #wit4">迦濕蜜羅國</rdg></app>
+<app from="#beg0727005" to="#end0727005"><lem wit="#wit.orig">譯</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2 #wit4">於福先寺譯</rdg></app>
+<app from="#beg0727a2201" to="#end0727a2201"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a10</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727a2301" to="#end0727a2301"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a11</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727a2401" to="#end0727a2401"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a12</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727a2501" to="#end0727a2501"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a13</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727a2701" to="#end0727a2701"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a16</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727006" to="#end0727006"><lem wit="#wit.orig">囉</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2 #wit4">羅</rdg></app>
+<app from="#beg0727a2801" to="#end0727a2801"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a17</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727007" to="#end0727007"><lem wit="#wit.orig">囉</lem><rdg resp="#resp2" wit="#wit3">羅</rdg></app>
+<app from="#beg0727b0101" to="#end0727b0101"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a17</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727b0201" to="#end0727b0201"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a20</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727008" to="#end0727008"><lem wit="#wit.orig">若</lem><rdg resp="#resp2" wit="#wit3 #wit1 #wit2 #wit4">若用</rdg></app>
+<app from="#beg0727b0301" to="#end0727b0301"><lem wit="#wit.cbeta #wit5" resp="#resp3">掐<note type="cf1">K11n0285_p0637a21</note></lem><rdg wit="#wit.orig">搯</rdg></app>
+<app from="#beg0727009" to="#end0727009"><lem wit="#wit.orig">相</lem><rdg resp="#resp2" wit="#wit3 #wit1">因</rdg></app>
+<app from="#beg0727010" to="#end0727010"><lem wit="#wit.orig">視</lem><rdg resp="#resp2" wit="#wit1 #wit2">示</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0727002" resp="#resp2" type="mod" target="#nkr_note_mod_0727002">經【大】，經<note place="inline">出趙宋天息災新譯文殊根本儀軏經中</note>【元】【明】</note>
-<note n="0727003" resp="#resp2" type="mod" target="#nkr_note_mod_0727003">大【大】，〔－〕【宋】【明】</note>
-<note n="0727004" resp="#resp2" type="mod" target="#nkr_note_mod_0727004">天竺【大】，迦濕蜜羅國【宋】【元】【明】【宮】</note>
-<note n="0727005" resp="#resp2" type="mod" target="#nkr_note_mod_0727005">譯【大】，於福先寺譯【宋】【元】【明】【宮】</note>
-<note n="0727006" resp="#resp2" type="mod" target="#nkr_note_mod_0727006">囉【大】，羅【宋】【元】【明】【宮】</note>
-<note n="0727007" resp="#resp2" type="mod" target="#nkr_note_mod_0727007">囉【大】，羅【宋】</note>
-<note n="0727008" resp="#resp2" type="mod" target="#nkr_note_mod_0727008">若【大】，若用【宋】【元】【明】【宮】</note>
-<note n="0727009" resp="#resp2" type="mod" target="#nkr_note_mod_0727009">相【大】，因【宋】【元】</note>
-<note n="0727010" resp="#resp2" type="mod" target="#nkr_note_mod_0727010">視【大】，示【元】【明】</note>
+<note n="0727002" resp="#resp1" type="mod" target="#nkr_note_mod_0727002">經【大】，經<note place="inline">出趙宋天息災新譯文殊根本儀軏經中</note>【元】【明】</note>
+<note n="0727003" resp="#resp1" type="mod" target="#nkr_note_mod_0727003">大【大】，〔－〕【宋】【明】</note>
+<note n="0727004" resp="#resp1" type="mod" target="#nkr_note_mod_0727004">天竺【大】，迦濕蜜羅國【宋】【元】【明】【宮】</note>
+<note n="0727005" resp="#resp1" type="mod" target="#nkr_note_mod_0727005">譯【大】，於福先寺譯【宋】【元】【明】【宮】</note>
+<note n="0727006" resp="#resp1" type="mod" target="#nkr_note_mod_0727006">囉【大】，羅【宋】【元】【明】【宮】</note>
+<note n="0727007" resp="#resp1" type="mod" target="#nkr_note_mod_0727007">囉【大】，羅【宋】</note>
+<note n="0727008" resp="#resp1" type="mod" target="#nkr_note_mod_0727008">若【大】，若用【宋】【元】【明】【宮】</note>
+<note n="0727009" resp="#resp1" type="mod" target="#nkr_note_mod_0727009">相【大】，因【宋】【元】</note>
+<note n="0727010" resp="#resp1" type="mod" target="#nkr_note_mod_0727010">視【大】，示【元】【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0727002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727002">經＋（出趙宋天息災新譯文殊根本儀軏經中）夾註【元】【明】</note>
-<note n="0727003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727003">〔大〕－【宋】【明】</note>
-<note n="0727004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727004">天竺＝迦濕蜜羅國【三】【宮】</note>
-<note n="0727005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727005">（於福先寺）＋譯【三】【宮】</note>
-<note n="0727006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727006">囉＝羅【三】【宮】</note>
-<note n="0727007" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727007">囉＝羅【宋】</note>
-<note n="0727008" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727008">若＋（用）【三】【宮】</note>
-<note n="0727009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727009">相＝因【宋】【元】</note>
-<note n="0727010" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0727010">視＝示【元】【明】</note>
+<note n="0727002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727002">經＋（出趙宋天息災新譯文殊根本儀軏經中）夾註【元】【明】</note>
+<note n="0727003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727003">〔大〕－【宋】【明】</note>
+<note n="0727004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727004">天竺＝迦濕蜜羅國【三】【宮】</note>
+<note n="0727005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727005">（於福先寺）＋譯【三】【宮】</note>
+<note n="0727006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727006">囉＝羅【三】【宮】</note>
+<note n="0727007" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727007">囉＝羅【宋】</note>
+<note n="0727008" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727008">若＋（用）【三】【宮】</note>
+<note n="0727009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727009">相＝因【宋】【元】</note>
+<note n="0727010" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0727010">視＝示【元】【明】</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0727a2201" resp="#resp2" type="add" target="#nkr_note_add_0727a2201">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727a2301" resp="#resp2" type="add" target="#nkr_note_add_0727a2301">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727a2401" resp="#resp2" type="add" target="#nkr_note_add_0727a2401">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727a2501" resp="#resp2" type="add" target="#nkr_note_add_0727a2501">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727a2701" resp="#resp2" type="add" target="#nkr_note_add_0727a2701">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727a2801" resp="#resp2" type="add" target="#nkr_note_add_0727a2801">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727b0101" resp="#resp2" type="add" target="#nkr_note_add_0727b0101">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727b0201" resp="#resp2" type="add" target="#nkr_note_add_0727b0201">掐【CB】【麗-CB】，搯【大】</note>
-<note n="0727b0301" resp="#resp2" type="add" target="#nkr_note_add_0727b0301">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727a2201" resp="#resp1" type="add" target="#nkr_note_add_0727a2201">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727a2301" resp="#resp1" type="add" target="#nkr_note_add_0727a2301">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727a2401" resp="#resp1" type="add" target="#nkr_note_add_0727a2401">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727a2501" resp="#resp1" type="add" target="#nkr_note_add_0727a2501">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727a2701" resp="#resp1" type="add" target="#nkr_note_add_0727a2701">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727a2801" resp="#resp1" type="add" target="#nkr_note_add_0727a2801">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727b0101" resp="#resp1" type="add" target="#nkr_note_add_0727b0101">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727b0201" resp="#resp1" type="add" target="#nkr_note_add_0727b0201">掐【CB】【麗-CB】，搯【大】</note>
+<note n="0727b0301" resp="#resp1" type="add" target="#nkr_note_add_0727b0301">掐【CB】【麗-CB】，搯【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

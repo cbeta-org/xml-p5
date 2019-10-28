@@ -11,108 +11,72 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.8 $<date>$Date: 2009/04/23 08:01:47 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:47 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 21, No. 1316</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【明】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">21</idno>.<idno type="no">1316</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說甘露經陀羅尼呪</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【明】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-31T09:31:38">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T21n1316.xml,v $
-Revision 1.8  2009/04/23 08:01:47  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.7  2006/04/12 21:55:57  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.5  2004/10/22 04:03:44  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/09/09 09:06:28  saywhat
-刪除空的 juan close
-
-Revision 1.3  2004/04/20 08:39:14  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/12/05 01:04:07  ray
-<rdg> 版本重複處理
-
-Revision 1.1.1.1  2003/05/05 04:09:30  ray
-recover cvs
-
-Revision 1.13  2002/11/28 10:06:40  saywhat
-校勘插入處理
-
-Revision 1.12  2002/11/04 10:46:15  ray
-tei.2 => TEI.2
-
-Revision 1.11  2002/07/29 09:57:22  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:07:15  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/11/05 06:14:24  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.8  2001/07/24 06:53:47  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/03/30 05:57:39  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:18:39  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:57:49  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:47:41  chris
-Added keywords $Revision: 1.8 $, $Date: 2009/04/23 08:01:47 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-31T09:31:38">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -132,29 +96,29 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0468017" to="#end0468017"><lem wit="#wit1">呪</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg><rdg resp="#resp1" wit="#wit3 #wit4">唐于闐三藏實叉難陀譯</rdg></app>
-<app from="#beg0468018" to="#end0468018"><lem wit="#wit1">呼之</lem><rdg resp="#resp1" wit="#wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0468019" to="#end0468019"><lem wit="#wit1">十</lem><rdg resp="#resp1" wit="#wit2">中</rdg></app>
-<app from="#beg0468020" to="#end0468020"><lem wit="#wit1">滿</lem><rdg resp="#resp1" wit="#wit3 #wit4">滿佛說甘露經陀羅尼</rdg></app>
+<app from="#beg0468017" to="#end0468017"><lem wit="#wit.orig">呪</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg><rdg resp="#resp2" wit="#wit2 #wit3">唐于闐三藏實叉難陀譯</rdg></app>
+<app from="#beg0468018" to="#end0468018"><lem wit="#wit.orig">呼之</lem><rdg resp="#resp2" wit="#wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0468019" to="#end0468019"><lem wit="#wit.orig">十</lem><rdg resp="#resp2" wit="#wit1">中</rdg></app>
+<app from="#beg0468020" to="#end0468020"><lem wit="#wit.orig">滿</lem><rdg resp="#resp2" wit="#wit2 #wit3">滿佛說甘露經陀羅尼</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0468017" resp="#resp2" type="mod" target="#nkr_note_mod_0468017">呪【大】，〔－〕【宋】【元】【明】，呪唐于闐三藏實叉難陀譯【元】【明】</note>
-<note n="0468018" resp="#resp2" type="mod" target="#nkr_note_mod_0468018">呼之【大】，〔－〕【明】</note>
-<note n="0468019" resp="#resp2" type="mod" target="#nkr_note_mod_0468019">十【大】，中【宋】</note>
-<note n="0468020" resp="#resp2" type="mod" target="#nkr_note_mod_0468020">滿【大】，滿佛說甘露經陀羅尼【元】【明】</note>
+<note n="0468017" resp="#resp3" type="mod" target="#nkr_note_mod_0468017">呪【大】，〔－〕【宋】【元】【明】，呪唐于闐三藏實叉難陀譯【元】【明】</note>
+<note n="0468018" resp="#resp3" type="mod" target="#nkr_note_mod_0468018">呼之【大】，〔－〕【明】</note>
+<note n="0468019" resp="#resp3" type="mod" target="#nkr_note_mod_0468019">十【大】，中【宋】</note>
+<note n="0468020" resp="#resp3" type="mod" target="#nkr_note_mod_0468020">滿【大】，滿佛說甘露經陀羅尼【元】【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0468016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0468016">【原】麗本</note>
-<note n="0468017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0468017">〔呪〕－【三】，＋（唐于闐三藏實叉難陀譯）【元】【明】</note>
-<note n="0468018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0468018">〔呼之〕－【明】</note>
-<note n="0468019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0468019">十＝中【宋】</note>
-<note n="0468020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0468020">滿＋（佛說甘露經陀羅尼）【元】【明】</note>
+<note n="0468016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0468016">【原】麗本</note>
+<note n="0468017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0468017">〔呪〕－【三】，＋（唐于闐三藏實叉難陀譯）【元】【明】</note>
+<note n="0468018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0468018">〔呼之〕－【明】</note>
+<note n="0468019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0468019">十＝中【宋】</note>
+<note n="0468020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0468020">滿＋（佛說甘露經陀羅尼）【元】【明】</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -11,120 +11,72 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.10 $<date>$Date: 2012/09/28 08:51:56 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2012/09/28 08:51:56 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 17, No. 819</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【宮】</witness>
-		<witness xml:id="wit4">【元】</witness>
-		<witness xml:id="wit5">【明】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p cb:type="ly" xml:lang="en">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Huang Gui-Fang, Re-proofing punctuated text as provided by Mr. Zhang Ge-Feng</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，黃桂芳大德提供新式標點，張革豐大德提供新式標點重校</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">17</idno>.<idno type="no">819</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說法常住經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p cb:type="ly" xml:lang="en">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Huang Gui-Fang, Re-proofing punctuated text as provided by Mr. Zhang Ge-Feng</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，黃桂芳大德提供新式標點，張革豐大德提供新式標點重校</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【宮】</witness>
+						<witness xml:id="wit3">【元】</witness>
+						<witness xml:id="wit4">【明】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-10-12T10:16:38">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)</change>
-<!--
-$Log: T17n0819.xml,v $
-Revision 1.10  2012/09/28 08:51:56  eva
-新式標點版 上傳
-
-Revision 1.9  2009/04/23 07:59:27  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.8  2006/04/12 21:55:21  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/10/12 16:02:55  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/09/12 06:34:07  saywhat
-<trailer> => <juan fun="close"><jhead>
-
-Revision 1.4  2004/05/11 14:39:04  saywhat
-修訂經號的<head> → <head type="no">
-
-Revision 1.3  2004/04/20 08:38:29  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/06/23 06:10:29  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:04  ray
-recover cvs
-
-Revision 1.15  2002/12/05 06:38:02  saywhat
-校勘插入處理
-
-Revision 1.14  2002/11/18 10:24:50  saywhat
-no message
-
-Revision 1.13  2002/11/04 10:43:49  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/10/07 13:08:39  moved
-modified
-
-Revision 1.11  2002/07/29 09:55:36  vinking
-modified lang
-
-Revision 1.10  2002/04/04 09:05:01  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/07/27 07:12:18  ray
-去除多餘的 <author>
-
-Revision 1.8  2001/07/24 06:52:06  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/05/25 08:57:29  ray
-經號統一為四碼
-
-Revision 1.6  2001/03/25 09:07:24  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:52:41  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:42:21  chris
-Added keywords $Revision: 1.10 $, $Date: 2012/09/28 08:51:56 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-10-12T10:16:38">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/10/12)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone unit="juan" n="1"/>
@@ -167,41 +119,41 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0833005" to="#end0833005"><lem wit="#wit1">佛說</lem><rdg wit="#wit2 #wit3" resp="#resp1"><space quantity="0"/></rdg></app>
-<app cb:word-count="16" from="#beg0833006" to="#end0833006"><lem wit="#wit1">僧祐錄云安公失譯經人名今附西晉錄</lem><rdg resp="#resp1" wit="#wit2">失譯</rdg><rdg resp="#resp1" wit="#wit4 #wit5">出安祐二錄開元錄云今附西晉錄</rdg><rdg wit="#wit3" resp="#resp1">安公失譯</rdg></app>
-<app from="#beg0833007" to="#end0833007"><lem wit="#wit1">在</lem><rdg wit="#wit2 #wit4 #wit5 #wit3" resp="#resp1">存</rdg></app>
-<app from="#beg0833008" to="#end0833008"><lem wit="#wit1">習</lem><rdg wit="#wit5" resp="#resp1">集</rdg></app>
-<app from="#beg0833009" to="#end0833009"><lem wit="#wit1">滅</lem><rdg wit="#wit2 #wit4 #wit5 #wit3" resp="#resp1"><space quantity="0"/></rdg></app>
-<app from="#beg0833010" to="#end0833010"><lem wit="#wit1">輒</lem><rdg resp="#resp1" wit="#wit5">轉</rdg></app>
-<app from="#beg0834001" to="#end0834001"><lem wit="#wit1">以</lem><rdg resp="#resp1" wit="#wit2 #wit4 #wit5 #wit3">更以</rdg></app>
-<app from="#beg0834002" to="#end0834002"><lem wit="#wit1">聞佛所說，歡喜奉行</lem><rdg wit="#wit2 #wit4 #wit5 #wit3" resp="#resp1">阿須倫聞經歡喜皆前為佛作禮而去</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0833005"><lem wit="#wit1">佛說</lem><rdg wit="#wit2 #wit3" resp="#resp1"><space quantity="0"/></rdg></app>
+<app from="#beg0833005" to="#end0833005"><lem wit="#wit.orig">佛說</lem><rdg wit="#wit1 #wit2" resp="#resp2"><space quantity="0"/></rdg></app>
+<app cb:word-count="16" from="#beg0833006" to="#end0833006"><lem wit="#wit.orig">僧祐錄云安公失譯經人名今附西晉錄</lem><rdg resp="#resp2" wit="#wit1">失譯</rdg><rdg resp="#resp2" wit="#wit3 #wit4">出安祐二錄開元錄云今附西晉錄</rdg><rdg wit="#wit2" resp="#resp2">安公失譯</rdg></app>
+<app from="#beg0833007" to="#end0833007"><lem wit="#wit.orig">在</lem><rdg wit="#wit1 #wit3 #wit4 #wit2" resp="#resp2">存</rdg></app>
+<app from="#beg0833008" to="#end0833008"><lem wit="#wit.orig">習</lem><rdg wit="#wit4" resp="#resp2">集</rdg></app>
+<app from="#beg0833009" to="#end0833009"><lem wit="#wit.orig">滅</lem><rdg wit="#wit1 #wit3 #wit4 #wit2" resp="#resp2"><space quantity="0"/></rdg></app>
+<app from="#beg0833010" to="#end0833010"><lem wit="#wit.orig">輒</lem><rdg resp="#resp2" wit="#wit4">轉</rdg></app>
+<app from="#beg0834001" to="#end0834001"><lem wit="#wit.orig">以</lem><rdg resp="#resp2" wit="#wit1 #wit3 #wit4 #wit2">更以</rdg></app>
+<app from="#beg0834002" to="#end0834002"><lem wit="#wit.orig">聞佛所說，歡喜奉行</lem><rdg wit="#wit1 #wit3 #wit4 #wit2" resp="#resp2">阿須倫聞經歡喜皆前為佛作禮而去</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0833005"><lem wit="#wit.orig">佛說</lem><rdg wit="#wit1 #wit2" resp="#resp2"><space quantity="0"/></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0833005" type="mod" resp="#resp2" target="#nkr_note_mod_0833005">佛說【大】＊，〔－〕【宋】【宮】＊</note>
-<note n="0833006" resp="#resp2" type="mod" target="#nkr_note_mod_0833006">（僧祐…錄）十六字【大】，失譯【宋】，出安祐二錄開元錄云今附西晉錄【元】【明】，安公失譯【宮】</note>
-<note n="0833007" type="mod" resp="#resp2" target="#nkr_note_mod_0833007">在【大】，存【宋】【元】【明】【宮】</note>
-<note resp="#resp2" type="mod" n="0833008" target="#nkr_note_mod_0833008">習【大】，集【明】</note>
-<note n="0833009" type="mod" resp="#resp2" target="#nkr_note_mod_0833009">滅【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0833010" type="mod" resp="#resp2" target="#nkr_note_mod_0833010">輒【大】，轉【明】</note>
-<note n="0834001" resp="#resp2" type="mod" target="#nkr_note_mod_0834001">以【大】，更以【宋】【元】【明】【宮】</note>
-<note n="0834002" resp="#resp2" type="mod" target="#nkr_note_mod_0834002">聞佛所說歡喜奉行【大】，阿須倫聞經歡喜皆前為佛作禮而去【宋】【元】【明】【宮】</note>
+<note n="0833005" type="mod" resp="#resp1" target="#nkr_note_mod_0833005">佛說【大】＊，〔－〕【宋】【宮】＊</note>
+<note n="0833006" resp="#resp1" type="mod" target="#nkr_note_mod_0833006">（僧祐…錄）十六字【大】，失譯【宋】，出安祐二錄開元錄云今附西晉錄【元】【明】，安公失譯【宮】</note>
+<note n="0833007" type="mod" resp="#resp1" target="#nkr_note_mod_0833007">在【大】，存【宋】【元】【明】【宮】</note>
+<note resp="#resp1" type="mod" n="0833008" target="#nkr_note_mod_0833008">習【大】，集【明】</note>
+<note n="0833009" type="mod" resp="#resp1" target="#nkr_note_mod_0833009">滅【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0833010" type="mod" resp="#resp1" target="#nkr_note_mod_0833010">輒【大】，轉【明】</note>
+<note n="0834001" resp="#resp1" type="mod" target="#nkr_note_mod_0834001">以【大】，更以【宋】【元】【明】【宮】</note>
+<note n="0834002" resp="#resp1" type="mod" target="#nkr_note_mod_0834002">聞佛所說歡喜奉行【大】，阿須倫聞經歡喜皆前為佛作禮而去【宋】【元】【明】【宮】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0833005" place="foot text" type="orig" resp="#resp1" target="#nkr_note_orig_0833005">〔佛說〕－【宋】【宮】＊</note>
-<note n="0833006" place="foot text" resp="#resp1" type="orig" target="#nkr_note_orig_0833006">（（僧祐…錄））十六字＝（（失譯））二字【宋】，（（出安祐二錄開元錄云今附西晉錄））十四字【元】【明】，（（安公失譯））四字【宮】</note>
-<note resp="#resp1" type="orig" place="foot text" n="0833007" target="#nkr_note_orig_0833007">在＝存【三】【宮】</note>
-<note resp="#resp1" type="orig" n="0833008" place="foot text" target="#nkr_note_orig_0833008">習＝集【明】</note>
-<note n="0833009" place="foot text" resp="#resp1" type="orig" target="#nkr_note_orig_0833009">〔滅〕－【三】【宮】</note>
-<note place="foot text" n="0833010" type="orig" resp="#resp1" target="#nkr_note_orig_0833010">輒＝轉【明】</note>
-<note place="foot text" n="0834001" type="orig" resp="#resp1" target="#nkr_note_orig_0834001">（更）＋以【三】【宮】</note>
-<note type="orig" resp="#resp1" n="0834002" place="foot text" target="#nkr_note_orig_0834002">聞佛所說歡喜奉行＝阿須倫聞經歡喜皆前為佛作禮而去【三】【宮】</note>
+<note n="0833005" place="foot text" type="orig" resp="#resp2" target="#nkr_note_orig_0833005">〔佛說〕－【宋】【宮】＊</note>
+<note n="0833006" place="foot text" resp="#resp2" type="orig" target="#nkr_note_orig_0833006">（（僧祐…錄））十六字＝（（失譯））二字【宋】，（（出安祐二錄開元錄云今附西晉錄））十四字【元】【明】，（（安公失譯））四字【宮】</note>
+<note resp="#resp2" type="orig" place="foot text" n="0833007" target="#nkr_note_orig_0833007">在＝存【三】【宮】</note>
+<note resp="#resp2" type="orig" n="0833008" place="foot text" target="#nkr_note_orig_0833008">習＝集【明】</note>
+<note n="0833009" place="foot text" resp="#resp2" type="orig" target="#nkr_note_orig_0833009">〔滅〕－【三】【宮】</note>
+<note place="foot text" n="0833010" type="orig" resp="#resp2" target="#nkr_note_orig_0833010">輒＝轉【明】</note>
+<note place="foot text" n="0834001" type="orig" resp="#resp2" target="#nkr_note_orig_0834001">（更）＋以【三】【宮】</note>
+<note type="orig" resp="#resp2" n="0834002" place="foot text" target="#nkr_note_orig_0834002">聞佛所說歡喜奉行＝阿須倫聞經歡喜皆前為佛作禮而去【三】【宮】</note>
 </p>
 </cb:div>
 </back></text></TEI>

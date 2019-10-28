@@ -11,118 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2009/04/23 07:59:45 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 07:59:45 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 18, No. 878</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-		<witness xml:id="wit3">【CB】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">18</idno>.<idno type="no">878</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">金剛頂經金剛界大道場毘盧遮那如來自受用身內證智眷屬法身異名佛最上乘祕密三摩地禮懺文</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-05T17:54:07">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T18n0878.xml,v $
-Revision 1.11  2009/04/23 07:59:45  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.10  2006/04/12 21:55:25  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.8  2004/11/14 03:17:20  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.7  2004/10/17 11:34:27  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/07/04 13:28:29  saywhat
-修訂 div 位置；<p type="w"> 改用 <div type="w"><p>
-
-Revision 1.5  2004/04/20 08:38:35  maha
-「版本日期」標記修訂
-
-Revision 1.4  2004/01/02 05:53:41  maha
-<note mod>裡的corr2app
-
-Revision 1.3  2003/06/26 02:50:38  saywhat
-<corr>→<app>
-
-Revision 1.2  2003/06/23 06:13:21  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:06  ray
-recover cvs
-
-Revision 1.14  2002/12/04 01:47:39  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:44:22  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/10/07 13:09:52  moved
-modified
-
-Revision 1.11  2002/07/29 09:44:54  vinking
-modified lang
-
-Revision 1.10  2002/04/08 08:58:21  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/07/24 06:52:20  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/05/25 08:58:08  ray
-經號統一為四碼
-
-Revision 1.7  2001/03/30 05:48:00  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:09:16  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:53:27  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:43:12  chris
-Added keywords $Revision: 1.11 $, $Date: 2009/04/23 07:59:45 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-05T17:54:07">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -256,58 +208,58 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app cb:word-count="30" from="#beg0335017" to="#end0335017"><lem wit="#wit1">開府儀同三司特進試鴻臚卿肅國<lb n="0335c26" ed="T"/>公食邑三千戶賜紫贈司空諡大鑑<lb n="0335c27" ed="T"/>正號</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0335018" to="#end0335018"><lem wit="#wit1">大廣智</lem><rdg resp="#resp1" wit="#wit2">大興善寺三藏沙門</rdg></app>
-<app from="#beg0335019" to="#end0335019"><lem wit="#wit1">大興善寺三藏沙門</lem><rdg resp="#resp1" wit="#wit2">大廣智</rdg></app>
-<app cb:word-count="8" from="#beg0335020" to="#end0335020"><lem wit="#wit1">初禮請佛梵歎依常</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0336001" to="#end0336001"><lem wit="#wit1">不空成就</lem><rdg resp="#resp1" wit="#wit2">釋迦牟尼</rdg></app>
-<app from="#beg0336a2701" to="#end0336a2701"><lem wit="#wit3" resp="#resp2">幢</lem><rdg wit="#wit1">憧</rdg></app>
-<app from="#beg0336002" to="#end0336002"><lem wit="#wit1">界</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0336002"><lem wit="#wit1">界</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0336003" to="#end0336003"><lem wit="#wit1">薩</lem><rdg resp="#resp1" wit="#wit2">薩等</rdg></app>
-<app from="#beg0336004" to="#end0336004"><lem wit="#wit1">常供養</lem><rdg resp="#resp1" wit="#wit2">五分法身</rdg></app>
-<app from="#beg0336005" to="#end0336005"><lem wit="#wit1">茶</lem><rdg resp="#resp1" wit="#wit2">荼</rdg></app>
-<app cb:word-count="22" from="#beg0337001" to="#end0337001"><lem wit="#wit1">身內證智眷屬法身異名佛最上乘祕密<lb n="0337a20" ed="T"/>三摩地禮懺文</lem><rdg resp="#resp1" wit="#wit2">法身體讚文一卷</rdg></app>
-<app cb:word-count="9" from="#beg0337002" to="#end0337002"><lem wit="#wit1">亦名三十七尊禮懺文</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
+<app cb:word-count="30" from="#beg0335017" to="#end0335017"><lem wit="#wit.orig">開府儀同三司特進試鴻臚卿肅國<lb n="0335c26" ed="T"/>公食邑三千戶賜紫贈司空諡大鑑<lb n="0335c27" ed="T"/>正號</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0335018" to="#end0335018"><lem wit="#wit.orig">大廣智</lem><rdg resp="#resp2" wit="#wit1">大興善寺三藏沙門</rdg></app>
+<app from="#beg0335019" to="#end0335019"><lem wit="#wit.orig">大興善寺三藏沙門</lem><rdg resp="#resp2" wit="#wit1">大廣智</rdg></app>
+<app cb:word-count="8" from="#beg0335020" to="#end0335020"><lem wit="#wit.orig">初禮請佛梵歎依常</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0336001" to="#end0336001"><lem wit="#wit.orig">不空成就</lem><rdg resp="#resp2" wit="#wit1">釋迦牟尼</rdg></app>
+<app from="#beg0336a2701" to="#end0336a2701"><lem wit="#wit.cbeta" resp="#resp3">幢</lem><rdg wit="#wit.orig">憧</rdg></app>
+<app from="#beg0336002" to="#end0336002"><lem wit="#wit.orig">界</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0336002"><lem wit="#wit.orig">界</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0336003" to="#end0336003"><lem wit="#wit.orig">薩</lem><rdg resp="#resp2" wit="#wit1">薩等</rdg></app>
+<app from="#beg0336004" to="#end0336004"><lem wit="#wit.orig">常供養</lem><rdg resp="#resp2" wit="#wit1">五分法身</rdg></app>
+<app from="#beg0336005" to="#end0336005"><lem wit="#wit.orig">茶</lem><rdg resp="#resp2" wit="#wit1">荼</rdg></app>
+<app cb:word-count="22" from="#beg0337001" to="#end0337001"><lem wit="#wit.orig">身內證智眷屬法身異名佛最上乘祕密<lb n="0337a20" ed="T"/>三摩地禮懺文</lem><rdg resp="#resp2" wit="#wit1">法身體讚文一卷</rdg></app>
+<app cb:word-count="9" from="#beg0337002" to="#end0337002"><lem wit="#wit.orig">亦名三十七尊禮懺文</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0335017" resp="#resp2" type="mod" target="#nkr_note_mod_0335017">（開府…號）三十字【大】，〔－〕【甲】</note>
-<note n="0335018" resp="#resp2" type="mod" target="#nkr_note_mod_0335018">大廣智【大】∞大興善寺三藏沙門【甲】</note>
-<note n="0335019" resp="#resp2" type="mod" target="#nkr_note_mod_0335019">大興善寺三藏沙門【大】∞大廣智【甲】</note>
-<note n="0335020" resp="#resp2" type="mod" target="#nkr_note_mod_0335020">（初禮…常）八字【大】，〔－〕【甲】</note>
-<note n="0336001" resp="#resp2" type="mod" target="#nkr_note_mod_0336001">不空成就【大】，釋迦牟尼【甲】</note>
-<note n="0336002" resp="#resp2" type="mod" target="#nkr_note_mod_0336002">界【大】＊，〔－〕【甲】＊</note>
-<note n="0336003" resp="#resp2" type="mod" target="#nkr_note_mod_0336003">薩【大】，薩等【甲】</note>
-<note n="0336004" resp="#resp2" type="mod" target="#nkr_note_mod_0336004">常供養【大】，五分法身【甲】</note>
-<note n="0336005" resp="#resp2" type="mod" target="#nkr_note_mod_0336005">茶【大】，荼【甲】</note>
-<note n="0337001" resp="#resp2" type="mod" target="#nkr_note_mod_0337001">（身內…文）二十二字【大】，法身體讚文一卷【甲】</note>
-<note n="0337002" resp="#resp2" type="mod" target="#nkr_note_mod_0337002">（亦名…文）九字【大】，〔－〕【甲】</note>
+<note n="0335017" resp="#resp3" type="mod" target="#nkr_note_mod_0335017">（開府…號）三十字【大】，〔－〕【甲】</note>
+<note n="0335018" resp="#resp3" type="mod" target="#nkr_note_mod_0335018">大廣智【大】∞大興善寺三藏沙門【甲】</note>
+<note n="0335019" resp="#resp3" type="mod" target="#nkr_note_mod_0335019">大興善寺三藏沙門【大】∞大廣智【甲】</note>
+<note n="0335020" resp="#resp3" type="mod" target="#nkr_note_mod_0335020">（初禮…常）八字【大】，〔－〕【甲】</note>
+<note n="0336001" resp="#resp3" type="mod" target="#nkr_note_mod_0336001">不空成就【大】，釋迦牟尼【甲】</note>
+<note n="0336002" resp="#resp3" type="mod" target="#nkr_note_mod_0336002">界【大】＊，〔－〕【甲】＊</note>
+<note n="0336003" resp="#resp3" type="mod" target="#nkr_note_mod_0336003">薩【大】，薩等【甲】</note>
+<note n="0336004" resp="#resp3" type="mod" target="#nkr_note_mod_0336004">常供養【大】，五分法身【甲】</note>
+<note n="0336005" resp="#resp3" type="mod" target="#nkr_note_mod_0336005">茶【大】，荼【甲】</note>
+<note n="0337001" resp="#resp3" type="mod" target="#nkr_note_mod_0337001">（身內…文）二十二字【大】，法身體讚文一卷【甲】</note>
+<note n="0337002" resp="#resp3" type="mod" target="#nkr_note_mod_0337002">（亦名…文）九字【大】，〔－〕【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0335016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335016">【原】麗本，【甲】三十帖策子第二十</note>
-<note n="0335017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335017">〔開府…號〕三十字－【甲】</note>
-<note n="0335018" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335018">（（大廣智））三字∞（（大興…門））八字【甲】</note>
-<note n="0335019" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335019">（（大廣智））三字∞（（大興…門））八字【甲】</note>
-<note n="0335020" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0335020">〔初禮…常〕八字－【甲】</note>
-<note n="0336001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336001">不空成就＝釋迦牟尼【甲】</note>
-<note n="0336002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336002">〔界〕－【甲】＊</note>
-<note n="0336003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336003">薩＋（等）【甲】</note>
-<note n="0336004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336004">常供養＝五分法身【甲】</note>
-<note n="0336005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0336005">茶＝荼【甲】</note>
-<note n="0337001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337001">（（身內…丈））二十二字＝（（法身體讚文一卷））七字【甲】</note>
-<note n="0337002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0337002">〔亦名…文〕九字－【甲】</note>
+<note n="0335016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335016">【原】麗本，【甲】三十帖策子第二十</note>
+<note n="0335017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335017">〔開府…號〕三十字－【甲】</note>
+<note n="0335018" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335018">（（大廣智））三字∞（（大興…門））八字【甲】</note>
+<note n="0335019" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335019">（（大廣智））三字∞（（大興…門））八字【甲】</note>
+<note n="0335020" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0335020">〔初禮…常〕八字－【甲】</note>
+<note n="0336001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336001">不空成就＝釋迦牟尼【甲】</note>
+<note n="0336002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336002">〔界〕－【甲】＊</note>
+<note n="0336003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336003">薩＋（等）【甲】</note>
+<note n="0336004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336004">常供養＝五分法身【甲】</note>
+<note n="0336005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0336005">茶＝荼【甲】</note>
+<note n="0337001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337001">（（身內…丈））二十二字＝（（法身體讚文一卷））七字【甲】</note>
+<note n="0337002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0337002">〔亦名…文〕九字－【甲】</note>
 </p>
 </cb:div>
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
-<note n="0336a2701" resp="#resp2" type="add" target="#nkr_note_add_0336a2701">幢【CB】，憧【大】</note>
+<note n="0336a2701" resp="#resp3" type="add" target="#nkr_note_add_0336a2701">幢【CB】，憧【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>

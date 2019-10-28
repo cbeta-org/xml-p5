@@ -11,114 +11,72 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.9 $<date>$Date: 2009/04/23 08:08:01 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:08:01 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 31, No. 1612</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【明】</witness>
-		<witness xml:id="wit5">【宮】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Po-Luo</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，波羅大德提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">31</idno>.<idno type="no">1612</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大乘五蘊論</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Tripitaka Koreana as provided by Mr. Christian Wittern, Text as provided by Anonymous from USA, Punctuated text as provided by Po-Luo</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，維習安大德提供之高麗藏 CD 經文，北美某大德提供，波羅大德提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【明】</witness>
+						<witness xml:id="wit4">【宮】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="1999-06-28T20:51:26">CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)</change>
-<!--
-$Log: T31n1612.xml,v $
-Revision 1.9  2009/04/23 08:08:01  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.8  2006/04/12 21:57:14  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.6  2004/11/14 03:17:45  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.5  2004/10/27 04:11:24  saywhat
-段落前加入圈點
-
-Revision 1.4  2004/06/01 05:05:45  saywhat
-added jhead, title
-
-Revision 1.3  2004/04/20 08:40:53  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/06/23 06:18:22  saywhat
-[＊]校勘插入XML
-
-Revision 1.1.1.1  2003/05/05 04:09:57  ray
-recover cvs
-
-Revision 1.15  2002/12/05 09:00:53  saywhat
-校勘插入處理
-
-Revision 1.14  2002/11/04 10:51:43  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/10/07 13:19:15  moved
-modified
-
-Revision 1.12  2002/07/29 10:08:50  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:24:51  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/07/24 06:56:53  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.9  2001/04/01 08:25:15  ray
-CB00380 => CB00308
-
-Revision 1.8  2001/03/30 06:14:44  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.7  2001/03/25 10:07:49  ray
-add <milestone>
-
-Revision 1.6  2001/02/07 07:06:10  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.5  2001/02/03 07:56:55  chris
-Added keywords $Revision: 1.9 $, $Date: 2009/04/23 08:08:01 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="1999-06-28T20:51:26">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (99/6/28)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -350,60 +308,60 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0848005" to="#end0848005"><lem wit="#wit1">一卷</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app from="#beg0848006" to="#end0848006"><lem wit="#wit1">三藏</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">唐三藏</rdg></app>
-<app from="#beg0848007" to="#end0848007"><lem wit="#wit1">為</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">名為</rdg></app>
-<app from="#beg0848008" to="#end0848008"><lem wit="#wit1">串</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">慣</rdg></app>
-<app from="#beg0848009" to="#end0848009"><lem wit="#wit1">寶</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5">實</rdg></app>
-<app from="#beg0849001" to="#end0849001"><lem wit="#wit1">德</lem><rdg resp="#resp1" wit="#wit4">得</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0848009"><lem wit="#wit1">寶</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5">實</rdg></app>
-<app from="#beg0849002" to="#end0849002"><lem wit="#wit1">唯</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">惟</rdg></app>
-<app from="#beg0849003" to="#end0849003"><lem wit="#wit1">今</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit5">令</rdg></app>
-<app from="#beg0849004" to="#end0849004"><lem wit="#wit1">採</lem><rdg resp="#resp1" wit="#wit3 #wit4">積</rdg><rdg resp="#resp1" wit="#wit5">采</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0849004"><lem wit="#wit1">採</lem><rdg resp="#resp1" wit="#wit3 #wit4">積</rdg><rdg resp="#resp1" wit="#wit5">采</rdg></app>
-<app from="#beg0850001" to="#end0850001"><lem wit="#wit1">與</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">與我慢</rdg></app>
-<app from="#beg0850002" to="#end0850002"><lem wit="#wit1">我慢</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
-<app from="#beg0850003" to="#end0850003"><lem wit="#wit1">彼</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">彼識</rdg></app>
-<app from="#beg0850004" to="#end0850004"><lem wit="#wit1">意界、意識界</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5">意識界意界</rdg></app>
-<app from="#beg0850005" to="#end0850005"><lem wit="#wit1">一卷</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4 #wit5"><space quantity="0"/></rdg></app>
+<app from="#beg0848005" to="#end0848005"><lem wit="#wit.orig">一卷</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0848006" to="#end0848006"><lem wit="#wit.orig">三藏</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">唐三藏</rdg></app>
+<app from="#beg0848007" to="#end0848007"><lem wit="#wit.orig">為</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">名為</rdg></app>
+<app from="#beg0848008" to="#end0848008"><lem wit="#wit.orig">串</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">慣</rdg></app>
+<app from="#beg0848009" to="#end0848009"><lem wit="#wit.orig">寶</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">實</rdg></app>
+<app from="#beg0849001" to="#end0849001"><lem wit="#wit.orig">德</lem><rdg resp="#resp2" wit="#wit3">得</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0848009"><lem wit="#wit.orig">寶</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">實</rdg></app>
+<app from="#beg0849002" to="#end0849002"><lem wit="#wit.orig">唯</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">惟</rdg></app>
+<app from="#beg0849003" to="#end0849003"><lem wit="#wit.orig">今</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">令</rdg></app>
+<app from="#beg0849004" to="#end0849004"><lem wit="#wit.orig">採</lem><rdg resp="#resp2" wit="#wit2 #wit3">積</rdg><rdg resp="#resp2" wit="#wit4">采</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0849004"><lem wit="#wit.orig">採</lem><rdg resp="#resp2" wit="#wit2 #wit3">積</rdg><rdg resp="#resp2" wit="#wit4">采</rdg></app>
+<app from="#beg0850001" to="#end0850001"><lem wit="#wit.orig">與</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">與我慢</rdg></app>
+<app from="#beg0850002" to="#end0850002"><lem wit="#wit.orig">我慢</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0850003" to="#end0850003"><lem wit="#wit.orig">彼</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">彼識</rdg></app>
+<app from="#beg0850004" to="#end0850004"><lem wit="#wit.orig">意界、意識界</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">意識界意界</rdg></app>
+<app from="#beg0850005" to="#end0850005"><lem wit="#wit.orig">一卷</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0848005" resp="#resp2" type="mod" target="#nkr_note_mod_0848005">一卷【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0848006" resp="#resp2" type="mod" target="#nkr_note_mod_0848006">三藏【大】，唐三藏【宋】【元】【明】【宮】</note>
-<note n="0848007" resp="#resp2" type="mod" target="#nkr_note_mod_0848007">為【大】，名為【宋】【元】【明】【宮】</note>
-<note n="0848008" resp="#resp2" type="mod" target="#nkr_note_mod_0848008">串【大】，慣【宋】【元】【明】【宮】</note>
-<note n="0848009" resp="#resp2" type="mod" target="#nkr_note_mod_0848009">寶【大】＊，實【宋】【元】【宮】＊</note>
-<note n="0849001" resp="#resp2" type="mod" target="#nkr_note_mod_0849001">德【大】，得【明】</note>
-<note n="0849002" resp="#resp2" type="mod" target="#nkr_note_mod_0849002">唯【大】，惟【宋】【元】【明】【宮】</note>
-<note n="0849003" resp="#resp2" type="mod" target="#nkr_note_mod_0849003">今【大】，令【宋】【元】【宮】</note>
-<note n="0849004" resp="#resp2" type="mod" target="#nkr_note_mod_0849004">採【大】＊，積【元】【明】＊，采【宮】＊</note>
-<note n="0850001" resp="#resp2" type="mod" target="#nkr_note_mod_0850001">與【大】，與我慢【宋】【元】【明】【宮】</note>
-<note n="0850002" resp="#resp2" type="mod" target="#nkr_note_mod_0850002">我慢【大】，〔－〕【宋】【元】【明】【宮】</note>
-<note n="0850003" resp="#resp2" type="mod" target="#nkr_note_mod_0850003">彼【大】，彼識【宋】【元】【明】【宮】</note>
-<note n="0850004" resp="#resp2" type="mod" target="#nkr_note_mod_0850004">意界意識界【大】，意識界意界【宋】【元】【明】【宮】</note>
-<note n="0850005" resp="#resp2" type="mod" target="#nkr_note_mod_0850005">一卷【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0848005" resp="#resp1" type="mod" target="#nkr_note_mod_0848005">一卷【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0848006" resp="#resp1" type="mod" target="#nkr_note_mod_0848006">三藏【大】，唐三藏【宋】【元】【明】【宮】</note>
+<note n="0848007" resp="#resp1" type="mod" target="#nkr_note_mod_0848007">為【大】，名為【宋】【元】【明】【宮】</note>
+<note n="0848008" resp="#resp1" type="mod" target="#nkr_note_mod_0848008">串【大】，慣【宋】【元】【明】【宮】</note>
+<note n="0848009" resp="#resp1" type="mod" target="#nkr_note_mod_0848009">寶【大】＊，實【宋】【元】【宮】＊</note>
+<note n="0849001" resp="#resp1" type="mod" target="#nkr_note_mod_0849001">德【大】，得【明】</note>
+<note n="0849002" resp="#resp1" type="mod" target="#nkr_note_mod_0849002">唯【大】，惟【宋】【元】【明】【宮】</note>
+<note n="0849003" resp="#resp1" type="mod" target="#nkr_note_mod_0849003">今【大】，令【宋】【元】【宮】</note>
+<note n="0849004" resp="#resp1" type="mod" target="#nkr_note_mod_0849004">採【大】＊，積【元】【明】＊，采【宮】＊</note>
+<note n="0850001" resp="#resp1" type="mod" target="#nkr_note_mod_0850001">與【大】，與我慢【宋】【元】【明】【宮】</note>
+<note n="0850002" resp="#resp1" type="mod" target="#nkr_note_mod_0850002">我慢【大】，〔－〕【宋】【元】【明】【宮】</note>
+<note n="0850003" resp="#resp1" type="mod" target="#nkr_note_mod_0850003">彼【大】，彼識【宋】【元】【明】【宮】</note>
+<note n="0850004" resp="#resp1" type="mod" target="#nkr_note_mod_0850004">意界意識界【大】，意識界意界【宋】【元】【明】【宮】</note>
+<note n="0850005" resp="#resp1" type="mod" target="#nkr_note_mod_0850005">一卷【大】，〔－〕【宋】【元】【明】【宮】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0848005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0848005">〔一卷〕－【三】【宮】</note>
-<note n="0848006" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0848006">（唐）＋三藏【三】【宮】</note>
-<note n="0848007" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0848007">（名）＋為【三】【宮】</note>
-<note n="0848008" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0848008">串＝慣【三】【宮】</note>
-<note n="0848009" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0848009">寶＝實【宋】【元】【宮】＊</note>
-<note n="0849001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0849001">德＝得【明】</note>
-<note n="0849002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0849002">唯＝惟【三】【宮】</note>
-<note n="0849003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0849003">今＝令【宋】【元】【宮】</note>
-<note n="0849004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0849004">採＝積【元】【明】＊，采【宮】＊</note>
-<note n="0850001" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0850001">與＋（我慢）【三】【宮】</note>
-<note n="0850002" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0850002">〔我慢〕－【三】【宮】</note>
-<note n="0850003" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0850003">彼＋（識）【三】【宮】</note>
-<note n="0850004" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0850004">意界意識界＝意識界意界【三】【宮】</note>
-<note n="0850005" resp="#resp1" type="orig" place="foot text" target="#nkr_note_orig_0850005">〔一卷〕－【三】【宮】</note>
+<note n="0848005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0848005">〔一卷〕－【三】【宮】</note>
+<note n="0848006" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0848006">（唐）＋三藏【三】【宮】</note>
+<note n="0848007" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0848007">（名）＋為【三】【宮】</note>
+<note n="0848008" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0848008">串＝慣【三】【宮】</note>
+<note n="0848009" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0848009">寶＝實【宋】【元】【宮】＊</note>
+<note n="0849001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0849001">德＝得【明】</note>
+<note n="0849002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0849002">唯＝惟【三】【宮】</note>
+<note n="0849003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0849003">今＝令【宋】【元】【宮】</note>
+<note n="0849004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0849004">採＝積【元】【明】＊，采【宮】＊</note>
+<note n="0850001" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850001">與＋（我慢）【三】【宮】</note>
+<note n="0850002" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850002">〔我慢〕－【三】【宮】</note>
+<note n="0850003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850003">彼＋（識）【三】【宮】</note>
+<note n="0850004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850004">意界意識界＝意識界意界【三】【宮】</note>
+<note n="0850005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850005">〔一卷〕－【三】【宮】</note>
 </p>
 </cb:div>
 </back></text></TEI>

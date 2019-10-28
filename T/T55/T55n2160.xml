@@ -11,139 +11,85 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2009/04/23 08:14:35 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:14:35 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 55, No. 2160</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB04584">
-	<charName>CBETA CHARACTER CB04584</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[遽-虍+穴]</value>
-	</charProp>
-	<charProp>
-		<localName>normalized form</localName>
-		<value>邃</value>
-	</charProp>
-	<mapping type="unicode">U+285C9</mapping>
-	<mapping cb:dec="987624" type="PUA">U+F11E8</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">55</idno>.<idno type="no">2160</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">傳教大師將來越州錄</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB04584">
+				<charName>CBETA CHARACTER CB04584</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[遽-虍+穴]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>邃</value>
+				</charProp>
+				<mapping type="unicode">U+285C9</mapping>
+				<mapping cb:dec="987624" type="PUA">U+F11E8</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-02-01T16:31:28">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T55n2160.xml,v $
-Revision 1.11  2009/04/23 08:14:35  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.10  2006/04/12 22:00:37  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.8  2005/05/03 01:02:41  saywhat
-p1060a22 行尾的<div1><head>移到下一行行首
-
-Revision 1.7  2004/10/14 03:32:11  saywhat
-段落前加入圈點
-
-Revision 1.6  2004/07/16 09:13:11  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.5  2004/04/20 08:44:39  maha
-「版本日期」標記修訂
-
-Revision 1.4  2003/06/19 03:48:13  eva
-modified: 插入星號校勘
-
-Revision 1.3  2003/05/10 10:04:36  ray
-add <milestone type="juan"/>
-
-Revision 1.2  2003/05/05 06:33:28  eva
-modified
-
-Revision 1.16  2002/12/05 12:52:58  eva
-modified
-
-Revision 1.14  2002/11/04 11:04:09  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/08/08 06:56:39  eva
-modified
-
-Revision 1.12  2002/07/29 09:47:41  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:49:58  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:23:36  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/27 07:15:45  ray
-去除多餘的 <author>
-
-Revision 1.8  2001/07/24 07:03:39  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/04/12 13:36:44  vinking
-modified <div>
-
-Revision 1.6  2001/04/01 07:56:41  moved
-modified normal
-
-Revision 1.5  2001/03/30 07:18:35  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.4  2001/03/28 02:27:20  luchun147
-標記修改
-
-Revision 1.3  2001/02/07 07:46:41  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:18:52  chris
-Added keywords $Revision: 1.11 $, $Date: 2009/04/23 08:14:35 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-02-01T16:31:28">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -343,67 +289,67 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1058003" to="#end1058003"><lem wit="#wit1">毒</lem><rdg resp="#resp1" wit="#wit2">童</rdg></app>
-<app from="#beg1058004" to="#end1058004"><lem wit="#wit1">枚</lem><rdg resp="#resp1" wit="#wit2">張</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#1058004"><lem wit="#wit1">枚</lem><rdg resp="#resp1" wit="#wit2">張</rdg></app>
-<app from="#beg1058005" to="#end1058005"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2">五</rdg></app>
-<app from="#beg1059001" to="#end1059001"><lem wit="#wit1">稽神邕述</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1059002" to="#end1059002"><lem wit="#wit1">卷同帙</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1059003" to="#end1059003"><lem wit="#wit1">韋</lem><rdg resp="#resp1" wit="#wit2">婁</rdg></app>
-<app from="#beg1059004" to="#end1059004"><lem wit="#wit1">卷</lem><rdg resp="#resp1" wit="#wit2">卷十五紙</rdg></app>
-<app from="#beg1059005" to="#end1059005"><lem wit="#wit1">五</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1059006" to="#end1059006"><lem wit="#wit1">十紙</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1059007" to="#end1059007"><lem wit="#wit1">同帙</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1059008" to="#end1059008"><lem wit="#wit1">錄</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1060002" to="#end1060002"><lem wit="#wit1">險</lem><rdg resp="#resp1" wit="#wit2">隃</rdg></app>
-<app from="#beg1060003" to="#end1060003"><lem wit="#wit1">掾</lem><rdg resp="#resp1" wit="#wit2">拯</rdg></app>
-<app from="#beg1060004" to="#end1060004"><lem wit="#wit1">田作</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1060005" to="#end1060005"><lem wit="#wit1">少</lem><rdg resp="#resp1" wit="#wit2">麻呂</rdg></app>
-<app from="#beg1060006" to="#end1060006"><lem wit="#wit1">少目</lem><rdg resp="#resp1" wit="#wit2">省</rdg></app>
+<app from="#beg1058003" to="#end1058003"><lem wit="#wit.orig">毒</lem><rdg resp="#resp2" wit="#wit1">童</rdg></app>
+<app from="#beg1058004" to="#end1058004"><lem wit="#wit.orig">枚</lem><rdg resp="#resp2" wit="#wit1">張</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#1058004"><lem wit="#wit.orig">枚</lem><rdg resp="#resp2" wit="#wit1">張</rdg></app>
+<app from="#beg1058005" to="#end1058005"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1">五</rdg></app>
+<app from="#beg1059001" to="#end1059001"><lem wit="#wit.orig">稽神邕述</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1059002" to="#end1059002"><lem wit="#wit.orig">卷同帙</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1059003" to="#end1059003"><lem wit="#wit.orig">韋</lem><rdg resp="#resp2" wit="#wit1">婁</rdg></app>
+<app from="#beg1059004" to="#end1059004"><lem wit="#wit.orig">卷</lem><rdg resp="#resp2" wit="#wit1">卷十五紙</rdg></app>
+<app from="#beg1059005" to="#end1059005"><lem wit="#wit.orig">五</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1059006" to="#end1059006"><lem wit="#wit.orig">十紙</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1059007" to="#end1059007"><lem wit="#wit.orig">同帙</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1059008" to="#end1059008"><lem wit="#wit.orig">錄</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1060002" to="#end1060002"><lem wit="#wit.orig">險</lem><rdg resp="#resp2" wit="#wit1">隃</rdg></app>
+<app from="#beg1060003" to="#end1060003"><lem wit="#wit.orig">掾</lem><rdg resp="#resp2" wit="#wit1">拯</rdg></app>
+<app from="#beg1060004" to="#end1060004"><lem wit="#wit.orig">田作</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1060005" to="#end1060005"><lem wit="#wit.orig">少</lem><rdg resp="#resp2" wit="#wit1">麻呂</rdg></app>
+<app from="#beg1060006" to="#end1060006"><lem wit="#wit.orig">少目</lem><rdg resp="#resp2" wit="#wit1">省</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1058003" resp="#resp2" type="mod" target="#nkr_note_mod_1058003">毒【大】，童【甲】</note>
-<note n="1058004" resp="#resp2" type="mod" target="#nkr_note_mod_1058004">枚【大】＊，張【甲】＊</note>
-<note n="1058005" resp="#resp2" type="mod" target="#nkr_note_mod_1058005">三【大】，五【甲】</note>
-<note n="1059001" resp="#resp2" type="mod" target="#nkr_note_mod_1059001">稽神邕述【大】，〔－〕【甲】</note>
-<note n="1059002" resp="#resp2" type="mod" target="#nkr_note_mod_1059002">卷同帙【大】，〔－〕【甲】</note>
-<note n="1059003" resp="#resp2" type="mod" target="#nkr_note_mod_1059003">韋【大】，婁【甲】</note>
-<note n="1059004" resp="#resp2" type="mod" target="#nkr_note_mod_1059004">卷【大】，卷十五紙【甲】</note>
-<note n="1059005" resp="#resp2" type="mod" target="#nkr_note_mod_1059005">五【大】，〔－〕【甲】</note>
-<note n="1059006" resp="#resp2" type="mod" target="#nkr_note_mod_1059006">十紙【大】，〔－〕【甲】</note>
-<note n="1059007" resp="#resp2" type="mod" target="#nkr_note_mod_1059007">同帙【大】，〔－〕【甲】</note>
-<note n="1059008" resp="#resp2" type="mod" target="#nkr_note_mod_1059008">錄【大】，〔－〕【甲】</note>
-<note n="1060002" resp="#resp2" type="mod" target="#nkr_note_mod_1060002">險【大】，隃【甲】</note>
-<note n="1060003" resp="#resp2" type="mod" target="#nkr_note_mod_1060003">掾【大】，拯【甲】</note>
-<note n="1060004" resp="#resp2" type="mod" target="#nkr_note_mod_1060004">田作【大】，〔－〕【甲】</note>
-<note n="1060005" resp="#resp2" type="mod" target="#nkr_note_mod_1060005">少【大】，麻呂【甲】</note>
-<note n="1060006" resp="#resp2" type="mod" target="#nkr_note_mod_1060006">少目【大】，省【甲】</note>
+<note n="1058003" resp="#resp3" type="mod" target="#nkr_note_mod_1058003">毒【大】，童【甲】</note>
+<note n="1058004" resp="#resp3" type="mod" target="#nkr_note_mod_1058004">枚【大】＊，張【甲】＊</note>
+<note n="1058005" resp="#resp3" type="mod" target="#nkr_note_mod_1058005">三【大】，五【甲】</note>
+<note n="1059001" resp="#resp3" type="mod" target="#nkr_note_mod_1059001">稽神邕述【大】，〔－〕【甲】</note>
+<note n="1059002" resp="#resp3" type="mod" target="#nkr_note_mod_1059002">卷同帙【大】，〔－〕【甲】</note>
+<note n="1059003" resp="#resp3" type="mod" target="#nkr_note_mod_1059003">韋【大】，婁【甲】</note>
+<note n="1059004" resp="#resp3" type="mod" target="#nkr_note_mod_1059004">卷【大】，卷十五紙【甲】</note>
+<note n="1059005" resp="#resp3" type="mod" target="#nkr_note_mod_1059005">五【大】，〔－〕【甲】</note>
+<note n="1059006" resp="#resp3" type="mod" target="#nkr_note_mod_1059006">十紙【大】，〔－〕【甲】</note>
+<note n="1059007" resp="#resp3" type="mod" target="#nkr_note_mod_1059007">同帙【大】，〔－〕【甲】</note>
+<note n="1059008" resp="#resp3" type="mod" target="#nkr_note_mod_1059008">錄【大】，〔－〕【甲】</note>
+<note n="1060002" resp="#resp3" type="mod" target="#nkr_note_mod_1060002">險【大】，隃【甲】</note>
+<note n="1060003" resp="#resp3" type="mod" target="#nkr_note_mod_1060003">掾【大】，拯【甲】</note>
+<note n="1060004" resp="#resp3" type="mod" target="#nkr_note_mod_1060004">田作【大】，〔－〕【甲】</note>
+<note n="1060005" resp="#resp3" type="mod" target="#nkr_note_mod_1060005">少【大】，麻呂【甲】</note>
+<note n="1060006" resp="#resp3" type="mod" target="#nkr_note_mod_1060006">少目【大】，省【甲】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1058002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1058002">【原】文政四年刊大谷大學藏本，【甲】德川時代刊大谷大學藏本</note>
-<note n="1058003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1058003">毒＝童【甲】</note>
-<note n="1058004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1058004">枚＝張【甲】＊</note>
-<note n="1058005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1058005">三＝五【甲】</note>
-<note n="1059001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059001">〔稽神邕述〕－【甲】</note>
-<note n="1059002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059002">〔卷同帙〕－【甲】</note>
-<note n="1059003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059003">韋＝婁【甲】</note>
-<note n="1059004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059004">卷＋（十五紙）【甲】</note>
-<note n="1059005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059005">〔五〕－【甲】</note>
-<note n="1059006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059006">〔十紙〕－【甲】</note>
-<note n="1059007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059007">〔同帙〕－【甲】</note>
-<note n="1059008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1059008">〔錄〕－【甲】</note>
-<note n="1060001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1060001">此次行甲本有儉從使屬唐封常清傳秦儉從三十人十五字</note>
-<note n="1060002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1060002">險＝隃【甲】</note>
-<note n="1060003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1060003">掾＝拯【甲】</note>
-<note n="1060004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1060004">〔田作〕－【甲】</note>
-<note n="1060005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1060005">少＝麻呂【甲】</note>
-<note n="1060006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1060006">少目＝省【甲】</note>
+<note n="1058002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1058002">【原】文政四年刊大谷大學藏本，【甲】德川時代刊大谷大學藏本</note>
+<note n="1058003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1058003">毒＝童【甲】</note>
+<note n="1058004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1058004">枚＝張【甲】＊</note>
+<note n="1058005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1058005">三＝五【甲】</note>
+<note n="1059001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059001">〔稽神邕述〕－【甲】</note>
+<note n="1059002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059002">〔卷同帙〕－【甲】</note>
+<note n="1059003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059003">韋＝婁【甲】</note>
+<note n="1059004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059004">卷＋（十五紙）【甲】</note>
+<note n="1059005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059005">〔五〕－【甲】</note>
+<note n="1059006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059006">〔十紙〕－【甲】</note>
+<note n="1059007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059007">〔同帙〕－【甲】</note>
+<note n="1059008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1059008">〔錄〕－【甲】</note>
+<note n="1060001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1060001">此次行甲本有儉從使屬唐封常清傳秦儉從三十人十五字</note>
+<note n="1060002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1060002">險＝隃【甲】</note>
+<note n="1060003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1060003">掾＝拯【甲】</note>
+<note n="1060004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1060004">〔田作〕－【甲】</note>
+<note n="1060005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1060005">少＝麻呂【甲】</note>
+<note n="1060006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1060006">少目＝省【甲】</note>
 </p>
 </cb:div>
 </back></text></TEI>

@@ -11,131 +11,92 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.7 $<date>$Date: 2009/04/23 08:00:03 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:00:03 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 19, No. 968</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【明】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
-	</projectDesc>
-<charDecl>
-<char xml:id="CB00069">
-	<charName>CBETA CHARACTER CB00069</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[口*栗]</value>
-	</charProp>
-	<mapping type="unicode">U+35DA</mapping>
-	<mapping cb:dec="983109" type="PUA">U+F0045</mapping>
-</char>
-<char xml:id="CB00771">
-	<charName>CBETA CHARACTER CB00771</charName>
-	<charProp>
-		<localName>composition</localName>
-		<value>[口*藍]</value>
-	</charProp>
-	<mapping type="unicode">U+3615</mapping>
-	<mapping cb:dec="983811" type="PUA">U+F0303</mapping>
-</char>
-</charDecl>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">19</idno>.<idno type="no">968</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛頂尊勝陀羅尼經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【明】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		<charDecl>
+			<char xml:id="CB00069">
+				<charName>CBETA CHARACTER CB00069</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[口*栗]</value>
+				</charProp>
+				<mapping type="unicode">U+35DA</mapping>
+				<mapping cb:dec="983109" type="PUA">U+F0045</mapping>
+			</char>
+			<char xml:id="CB00771">
+				<charName>CBETA CHARACTER CB00771</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[口*藍]</value>
+				</charProp>
+				<mapping type="unicode">U+3615</mapping>
+				<mapping cb:dec="983811" type="PUA">U+F0303</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-27T11:51:05">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T19n0968.xml,v $
-Revision 1.7  2009/04/23 08:00:03  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.6  2006/04/12 21:55:34  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.4  2004/11/14 03:17:22  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.3  2004/10/14 16:25:33  saywhat
-段落前加入圈點
-
-Revision 1.2  2004/04/20 08:38:45  maha
-「版本日期」標記修訂
-
-Revision 1.1.1.1  2003/05/05 04:09:12  ray
-recover cvs
-
-Revision 1.15  2002/11/27 11:26:23  saywhat
-校勘插入處理
-
-Revision 1.14  2002/11/04 10:44:56  ray
-tei.2 => TEI.2
-
-Revision 1.13  2002/10/21 08:12:19  ray
-移動 <anchor>+<note>, <anchor>+雙圈
-
-Revision 1.12  2002/07/29 09:56:09  vinking
-modified lang
-
-Revision 1.11  2002/04/08 09:03:11  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.10  2001/11/05 06:13:18  ray
-<note type="foot"> => <note place="foot">
-<note type="inline"> => <note place="inline">
-
-Revision 1.9  2001/07/24 06:52:46  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.8  2001/05/25 08:59:10  ray
-經號統一為四碼
-
-Revision 1.7  2001/03/30 06:45:10  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:12:58  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:54:40  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:44:36  chris
-Added keywords $Revision: 1.7 $, $Date: 2009/04/23 08:00:03 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-27T11:51:05">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -329,83 +290,83 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0353002" to="#end0353002"><lem wit="#wit1">尊</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg0353003" to="#end0353003"><lem wit="#wit1">大唐京兆</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">唐朝散朗</rdg></app>
-<app from="#beg0353004" to="#end0353004"><lem wit="#wit1">詔</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">制</rdg></app>
-<app from="#beg0353005" to="#end0353005"><lem wit="#wit1">愛</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">受</rdg></app>
-<app from="#beg0353006" to="#end0353006"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit4">上聲</rdg></app>
-<app from="#beg0353007" to="#end0353007"><lem wit="#wit1">帝底</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">低咥</rdg></app>
-<app from="#beg0353008" to="#end0353008"><lem wit="#wit1">反</lem><rdg resp="#resp1" wit="#wit4">切</rdg></app>
-<app from="#beg0353009" to="#end0353009"><lem wit="#wit1"><note place="inline">上</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0353010" to="#end0353010"><lem wit="#wit1">囉</lem><rdg resp="#resp1" wit="#wit2 #wit3">囉<note place="inline">上</note></rdg><rdg resp="#resp1" wit="#wit4">囉<note place="inline">上音</note></rdg></app>
-<app from="#beg0353011" to="#end0353011"><lem wit="#wit1">長</lem><rdg resp="#resp1" wit="#wit4">長呼</rdg></app>
-<app from="#beg0353012" to="#end0353012"><lem wit="#wit1">入</lem><rdg resp="#resp1" wit="#wit2 #wit3">入上</rdg><rdg resp="#resp1" wit="#wit4">入上音</rdg></app>
-<app from="#beg0353013" to="#end0353013"><lem wit="#wit1"><note place="inline">入</note></lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0353014" to="#end0353014"><lem wit="#wit1">上</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><space quantity="0"/></rdg></app>
-<app from="#beg0353015" to="#end0353015"><lem wit="#wit1">重二十六二合</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">重二合二十六</rdg></app>
-<app from="#beg0353016" to="#end0353016"><lem wit="#wit1">藍</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4"><g ref="#CB00771">㘕</g></rdg></app>
-<app from="#beg0353017" to="#end0353017"><lem wit="#wit1">長</lem><rdg resp="#resp1" wit="#wit4">長聲</rdg></app>
-<app from="#beg0354001" to="#end0354001"><lem wit="#wit1">閻</lem><rdg resp="#resp1" wit="#wit4">闍</rdg></app>
-<app from="#beg0354002" to="#end0354002"><lem wit="#wit1">嬰</lem><rdg resp="#resp1" wit="#wit2">瓔</rdg></app>
-<app from="#beg0354003" to="#end0354003"><lem wit="#wit1">骸</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">體</rdg></app>
-<app from="#beg0354004" to="#end0354004"><lem wit="#wit1">耶</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">耶<note place="inline">二合</note></rdg></app>
-<app from="#beg0355001" to="#end0355001"><lem wit="#wit1">申</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">伸</rdg></app>
-<app from="#beg0355002" to="#end0355002"><lem wit="#wit1">經</lem><rdg resp="#resp1" wit="#wit2">經第二</rdg></app>
+<app from="#beg0353002" to="#end0353002"><lem wit="#wit.orig">尊</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg0353003" to="#end0353003"><lem wit="#wit.orig">大唐京兆</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">唐朝散朗</rdg></app>
+<app from="#beg0353004" to="#end0353004"><lem wit="#wit.orig">詔</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">制</rdg></app>
+<app from="#beg0353005" to="#end0353005"><lem wit="#wit.orig">愛</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">受</rdg></app>
+<app from="#beg0353006" to="#end0353006"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit3">上聲</rdg></app>
+<app from="#beg0353007" to="#end0353007"><lem wit="#wit.orig">帝底</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">低咥</rdg></app>
+<app from="#beg0353008" to="#end0353008"><lem wit="#wit.orig">反</lem><rdg resp="#resp2" wit="#wit3">切</rdg></app>
+<app from="#beg0353009" to="#end0353009"><lem wit="#wit.orig"><note place="inline">上</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0353010" to="#end0353010"><lem wit="#wit.orig">囉</lem><rdg resp="#resp2" wit="#wit1 #wit2">囉<note place="inline">上</note></rdg><rdg resp="#resp2" wit="#wit3">囉<note place="inline">上音</note></rdg></app>
+<app from="#beg0353011" to="#end0353011"><lem wit="#wit.orig">長</lem><rdg resp="#resp2" wit="#wit3">長呼</rdg></app>
+<app from="#beg0353012" to="#end0353012"><lem wit="#wit.orig">入</lem><rdg resp="#resp2" wit="#wit1 #wit2">入上</rdg><rdg resp="#resp2" wit="#wit3">入上音</rdg></app>
+<app from="#beg0353013" to="#end0353013"><lem wit="#wit.orig"><note place="inline">入</note></lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0353014" to="#end0353014"><lem wit="#wit.orig">上</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><space quantity="0"/></rdg></app>
+<app from="#beg0353015" to="#end0353015"><lem wit="#wit.orig">重二十六二合</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">重二合二十六</rdg></app>
+<app from="#beg0353016" to="#end0353016"><lem wit="#wit.orig">藍</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3"><g ref="#CB00771">㘕</g></rdg></app>
+<app from="#beg0353017" to="#end0353017"><lem wit="#wit.orig">長</lem><rdg resp="#resp2" wit="#wit3">長聲</rdg></app>
+<app from="#beg0354001" to="#end0354001"><lem wit="#wit.orig">閻</lem><rdg resp="#resp2" wit="#wit3">闍</rdg></app>
+<app from="#beg0354002" to="#end0354002"><lem wit="#wit.orig">嬰</lem><rdg resp="#resp2" wit="#wit1">瓔</rdg></app>
+<app from="#beg0354003" to="#end0354003"><lem wit="#wit.orig">骸</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">體</rdg></app>
+<app from="#beg0354004" to="#end0354004"><lem wit="#wit.orig">耶</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">耶<note place="inline">二合</note></rdg></app>
+<app from="#beg0355001" to="#end0355001"><lem wit="#wit.orig">申</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">伸</rdg></app>
+<app from="#beg0355002" to="#end0355002"><lem wit="#wit.orig">經</lem><rdg resp="#resp2" wit="#wit1">經第二</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0353002" resp="#resp2" type="mod" target="#nkr_note_mod_0353002">尊【大】，〔－〕【宋】</note>
-<note n="0353003" resp="#resp2" type="mod" target="#nkr_note_mod_0353003">大唐京兆【大】，唐朝散朗【宋】【元】【明】</note>
-<note n="0353004" resp="#resp2" type="mod" target="#nkr_note_mod_0353004">詔【大】，制【宋】【元】【明】</note>
-<note n="0353005" resp="#resp2" type="mod" target="#nkr_note_mod_0353005">愛【大】，受【宋】【元】【明】</note>
-<note n="0353006" resp="#resp2" type="mod" target="#nkr_note_mod_0353006">上【大】下同，上聲【明】下同</note>
-<note n="0353007" resp="#resp2" type="mod" target="#nkr_note_mod_0353007">帝底【大】，低咥【宋】【元】【明】</note>
-<note n="0353008" resp="#resp2" type="mod" target="#nkr_note_mod_0353008">反【大】下同，切【明】下同</note>
-<note n="0353009" resp="#resp2" type="mod" target="#nkr_note_mod_0353009">上【大】，〔－〕【宋】【元】【明】</note>
-<note n="0353010" resp="#resp2" type="mod" target="#nkr_note_mod_0353010">囉【大】，囉<note place="inline">上</note>【宋】【元】，<!--CBETA todo type: newmod-->囉<note place="inline">上音</note>【明】</note>
-<note n="0353011" resp="#resp2" type="mod" target="#nkr_note_mod_0353011">長【大】，長呼【明】</note>
-<note n="0353012" resp="#resp2" type="mod" target="#nkr_note_mod_0353012">入【大】，入上【宋】【元】，<!--CBETA todo type: newmod-->入上音【明】</note>
-<note n="0353013" resp="#resp2" type="mod" target="#nkr_note_mod_0353013">入【大】，〔－〕【宋】【元】【明】</note>
-<note n="0353014" resp="#resp2" type="mod" target="#nkr_note_mod_0353014">上【大】，〔－〕【宋】【元】【明】</note>
-<note n="0353015" resp="#resp2" type="mod" target="#nkr_note_mod_0353015">重二十六二合【大】，重二合二十六【宋】【元】【明】</note>
-<note n="0353016" resp="#resp2" type="mod" target="#nkr_note_mod_0353016">藍【大】，<g ref="#CB00771">㘕</g>【宋】【元】【明】</note>
-<note n="0353017" resp="#resp2" type="mod" target="#nkr_note_mod_0353017">長【大】，長聲【明】</note>
-<note n="0354001" resp="#resp2" type="mod" target="#nkr_note_mod_0354001">閻【大】，闍【明】</note>
-<note n="0354002" resp="#resp2" type="mod" target="#nkr_note_mod_0354002">嬰【大】，瓔【宋】</note>
-<note n="0354003" resp="#resp2" type="mod" target="#nkr_note_mod_0354003">骸【大】，體【宋】【元】【明】</note>
-<note n="0354004" resp="#resp2" type="mod" target="#nkr_note_mod_0354004">耶【大】，耶<note place="inline">二合</note>【宋】【元】【明】</note>
-<note n="0355001" resp="#resp2" type="mod" target="#nkr_note_mod_0355001">申【大】，伸【宋】【元】【明】</note>
-<note n="0355002" resp="#resp2" type="mod" target="#nkr_note_mod_0355002">經【大】，經第二【宋】</note>
+<note n="0353002" resp="#resp3" type="mod" target="#nkr_note_mod_0353002">尊【大】，〔－〕【宋】</note>
+<note n="0353003" resp="#resp3" type="mod" target="#nkr_note_mod_0353003">大唐京兆【大】，唐朝散朗【宋】【元】【明】</note>
+<note n="0353004" resp="#resp3" type="mod" target="#nkr_note_mod_0353004">詔【大】，制【宋】【元】【明】</note>
+<note n="0353005" resp="#resp3" type="mod" target="#nkr_note_mod_0353005">愛【大】，受【宋】【元】【明】</note>
+<note n="0353006" resp="#resp3" type="mod" target="#nkr_note_mod_0353006">上【大】下同，上聲【明】下同</note>
+<note n="0353007" resp="#resp3" type="mod" target="#nkr_note_mod_0353007">帝底【大】，低咥【宋】【元】【明】</note>
+<note n="0353008" resp="#resp3" type="mod" target="#nkr_note_mod_0353008">反【大】下同，切【明】下同</note>
+<note n="0353009" resp="#resp3" type="mod" target="#nkr_note_mod_0353009">上【大】，〔－〕【宋】【元】【明】</note>
+<note n="0353010" resp="#resp3" type="mod" target="#nkr_note_mod_0353010">囉【大】，囉<note place="inline">上</note>【宋】【元】，<!--CBETA todo type: newmod-->囉<note place="inline">上音</note>【明】</note>
+<note n="0353011" resp="#resp3" type="mod" target="#nkr_note_mod_0353011">長【大】，長呼【明】</note>
+<note n="0353012" resp="#resp3" type="mod" target="#nkr_note_mod_0353012">入【大】，入上【宋】【元】，<!--CBETA todo type: newmod-->入上音【明】</note>
+<note n="0353013" resp="#resp3" type="mod" target="#nkr_note_mod_0353013">入【大】，〔－〕【宋】【元】【明】</note>
+<note n="0353014" resp="#resp3" type="mod" target="#nkr_note_mod_0353014">上【大】，〔－〕【宋】【元】【明】</note>
+<note n="0353015" resp="#resp3" type="mod" target="#nkr_note_mod_0353015">重二十六二合【大】，重二合二十六【宋】【元】【明】</note>
+<note n="0353016" resp="#resp3" type="mod" target="#nkr_note_mod_0353016">藍【大】，<g ref="#CB00771">㘕</g>【宋】【元】【明】</note>
+<note n="0353017" resp="#resp3" type="mod" target="#nkr_note_mod_0353017">長【大】，長聲【明】</note>
+<note n="0354001" resp="#resp3" type="mod" target="#nkr_note_mod_0354001">閻【大】，闍【明】</note>
+<note n="0354002" resp="#resp3" type="mod" target="#nkr_note_mod_0354002">嬰【大】，瓔【宋】</note>
+<note n="0354003" resp="#resp3" type="mod" target="#nkr_note_mod_0354003">骸【大】，體【宋】【元】【明】</note>
+<note n="0354004" resp="#resp3" type="mod" target="#nkr_note_mod_0354004">耶【大】，耶<note place="inline">二合</note>【宋】【元】【明】</note>
+<note n="0355001" resp="#resp3" type="mod" target="#nkr_note_mod_0355001">申【大】，伸【宋】【元】【明】</note>
+<note n="0355002" resp="#resp3" type="mod" target="#nkr_note_mod_0355002">經【大】，經第二【宋】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="0353001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353001">【原】麗本</note>
-<note n="0353002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353002">〔尊〕－【宋】</note>
-<note n="0353003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353003">大唐京兆＝唐朝散朗【三】</note>
-<note n="0353004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353004">詔＝制【三】</note>
-<note n="0353005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353005">愛＝受【三】</note>
-<note n="0353006" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353006">上＋（聲）【明】下同</note>
-<note n="0353007" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353007">帝底＝低咥【三】</note>
-<note n="0353008" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353008">反＝切【明】下同</note>
-<note n="0353009" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353009">〔上〕－【三】</note>
-<note n="0353010" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353010">囉＋（上）夾註【宋】【元】，（上音）夾註【明】</note>
-<note n="0353011" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353011">長＋（呼）【明】</note>
-<note n="0353012" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353012">入＋（上）【宋】【元】，（上音）【明】</note>
-<note n="0353013" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353013">〔入〕－【三】</note>
-<note n="0353014" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353014">〔上〕－【三】</note>
-<note n="0353015" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353015">重二十六二合＝重二合二十六【三】</note>
-<note n="0353016" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353016">藍＝<g ref="#CB00771">㘕</g>【三】</note>
-<note n="0353017" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0353017">長＋（聲）【明】</note>
-<note n="0354001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354001">閻＝闍【明】</note>
-<note n="0354002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354002">嬰＝瓔【宋】</note>
-<note n="0354003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354003">骸＝體【三】</note>
-<note n="0354004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0354004">耶＋（二合）夾註【三】</note>
-<note n="0355001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355001">申＝伸【三】</note>
-<note n="0355002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_0355002">經＋（第二）【宋】</note>
+<note n="0353001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353001">【原】麗本</note>
+<note n="0353002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353002">〔尊〕－【宋】</note>
+<note n="0353003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353003">大唐京兆＝唐朝散朗【三】</note>
+<note n="0353004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353004">詔＝制【三】</note>
+<note n="0353005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353005">愛＝受【三】</note>
+<note n="0353006" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353006">上＋（聲）【明】下同</note>
+<note n="0353007" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353007">帝底＝低咥【三】</note>
+<note n="0353008" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353008">反＝切【明】下同</note>
+<note n="0353009" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353009">〔上〕－【三】</note>
+<note n="0353010" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353010">囉＋（上）夾註【宋】【元】，（上音）夾註【明】</note>
+<note n="0353011" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353011">長＋（呼）【明】</note>
+<note n="0353012" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353012">入＋（上）【宋】【元】，（上音）【明】</note>
+<note n="0353013" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353013">〔入〕－【三】</note>
+<note n="0353014" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353014">〔上〕－【三】</note>
+<note n="0353015" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353015">重二十六二合＝重二合二十六【三】</note>
+<note n="0353016" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353016">藍＝<g ref="#CB00771">㘕</g>【三】</note>
+<note n="0353017" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0353017">長＋（聲）【明】</note>
+<note n="0354001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354001">閻＝闍【明】</note>
+<note n="0354002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354002">嬰＝瓔【宋】</note>
+<note n="0354003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354003">骸＝體【三】</note>
+<note n="0354004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0354004">耶＋（二合）夾註【三】</note>
+<note n="0355001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355001">申＝伸【三】</note>
+<note n="0355002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0355002">經＋（第二）【宋】</note>
 </p>
 </cb:div>
 </back></text></TEI>

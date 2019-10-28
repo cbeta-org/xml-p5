@@ -11,119 +11,71 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.11 $<date>$Date: 2009/04/23 08:01:45 $</date>新式標點版</edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>1卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:01:45 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 21, No. 1262</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【宋】</witness>
-		<witness xml:id="wit3">【元】</witness>
-		<witness xml:id="wit4">【明】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p cb:type="ly" xml:lang="en">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Zhang Ge-Feng</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，張革豐大德提供新式標點</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+		</editionStmt>
+		<extent>1卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">21</idno>.<idno type="no">1262</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">佛說鬼子母經</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p cb:type="ly" xml:lang="en">Text as provided by Mr. Hsiao Chen-Kuo, Text as provided by Anonymous from USA, Punctuated text as provided by Mr. Zhang Ge-Feng</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，北美某大德提供，張革豐大德提供新式標點</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>新式標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【宋】</witness>
+						<witness xml:id="wit2">【元】</witness>
+						<witness xml:id="wit3">【明】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2000-01-31T09:31:32">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)</change>
-<!--
-$Log: T21n1262.xml,v $
-Revision 1.11  2009/04/23 08:01:45  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.10  2006/04/12 21:55:55  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.8  2004/10/22 04:03:44  saywhat
-段落前加入圈點
-
-Revision 1.7  2004/04/20 08:39:12  maha
-「版本日期」標記修訂
-
-Revision 1.6  2004/03/16 02:18:53  ray
-resp 屬性 統一格式為 CBETA.xxx
-
-Revision 1.5  2004/01/02 05:54:00  maha
-<note mod>裡的corr2app
-
-Revision 1.4  2003/06/23 06:16:50  saywhat
-[＊]校勘插入XML
-
-Revision 1.3  2003/05/26 08:07:49  saywhat
-modified star
-
-Revision 1.2  2003/05/21 05:44:37  saywhat
-modified star
-
-Revision 1.1.1.1  2003/05/05 04:09:28  ray
-recover cvs
-
-Revision 1.14  2002/11/28 10:06:37  saywhat
-校勘插入處理
-
-Revision 1.13  2002/11/04 10:46:13  ray
-tei.2 => TEI.2
-
-Revision 1.12  2002/10/07 13:13:02  moved
-modified
-
-Revision 1.11  2002/07/29 09:57:20  vinking
-modified lang
-
-Revision 1.10  2002/04/08 09:07:13  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.9  2001/07/27 07:12:34  ray
-去除多餘的 <author>
-
-Revision 1.8  2001/07/24 06:53:41  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.7  2001/03/30 05:57:31  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.6  2001/03/25 09:18:36  ray
-add <milestone>
-
-Revision 1.5  2001/02/07 06:57:28  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.4  2001/02/03 07:47:21  chris
-Added keywords $Revision: 1.11 $, $Date: 2009/04/23 08:01:45 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2000-01-31T09:31:32">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/05)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone unit="juan" n="1"/>
@@ -227,56 +179,56 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg0290029" to="#end0290029"><lem wit="#wit1">人</lem><rdg wit="#wit2 #wit3" resp="#resp1"><space quantity="0"/></rdg><rdg resp="#resp1" wit="#wit4">人名</rdg></app>
-<app from="#beg0290030" to="#end0290030"><lem wit="#wit1">何</lem><rdg wit="#wit2 #wit3 #wit4" resp="#resp1">阿</rdg></app>
-<app from="#beg0290031" to="#end0290031"><lem wit="#wit1">啼</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">渧</rdg></app>
-<app from="#beg0290032" to="#end0290032"><lem wit="#wit1">一</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">於一</rdg></app>
-<app from="#beg_1" to="#end_1" corresp="#0290031"><lem wit="#wit1">啼</lem><rdg wit="#wit2 #wit3 #wit4" resp="#resp1">渧</rdg></app>
-<app from="#beg0290033" to="#end0290033"><lem wit="#wit1">千</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">十</rdg></app>
-<app from="#beg0290034" to="#end0290034"><lem wit="#wit1">遍</lem><rdg wit="#wit2 #wit3 #wit4" resp="#resp1">逼</rdg></app>
-<app from="#beg_2" to="#end_2" corresp="#0290031"><lem wit="#wit1">啼</lem><rdg wit="#wit2 #wit3 #wit4" resp="#resp1">渧</rdg></app>
-<app from="#beg0291001" to="#end0291001"><lem wit="#wit1">撲</lem><rdg resp="#resp1" wit="#wit3 #wit4">自撲</rdg></app>
-<app from="#beg_3" to="#end_3" corresp="#0290031"><lem wit="#wit1">啼</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">渧</rdg></app>
-<app from="#beg0291002" to="#end0291002"><lem wit="#wit1">成</lem><rdg wit="#wit3 #wit4" resp="#resp1">誠</rdg></app>
-<app from="#beg0291003" to="#end0291003"><lem wit="#wit1">姓</lem><rdg resp="#resp1" wit="#wit2 #wit3 #wit4">性</rdg></app>
-<app from="#beg0291004" to="#end0291004"><lem wit="#wit1">尼</lem><rdg wit="#wit3" resp="#resp1">足</rdg></app>
-<app from="#beg0291005" to="#end0291005"><lem wit="#wit1">皆</lem><rdg resp="#resp1" wit="#wit2">比</rdg></app>
-<app from="#beg0291006" to="#end0291006"><lem wit="#wit1"><title>佛說鬼子母經</title></lem><rdg resp="#resp1" wit="#wit4"><space quantity="0"/></rdg></app>
+<app from="#beg0290029" to="#end0290029"><lem wit="#wit.orig">人</lem><rdg wit="#wit1 #wit2" resp="#resp2"><space quantity="0"/></rdg><rdg resp="#resp2" wit="#wit3">人名</rdg></app>
+<app from="#beg0290030" to="#end0290030"><lem wit="#wit.orig">何</lem><rdg wit="#wit1 #wit2 #wit3" resp="#resp2">阿</rdg></app>
+<app from="#beg0290031" to="#end0290031"><lem wit="#wit.orig">啼</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">渧</rdg></app>
+<app from="#beg0290032" to="#end0290032"><lem wit="#wit.orig">一</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">於一</rdg></app>
+<app from="#beg_1" to="#end_1" corresp="#0290031"><lem wit="#wit.orig">啼</lem><rdg wit="#wit1 #wit2 #wit3" resp="#resp2">渧</rdg></app>
+<app from="#beg0290033" to="#end0290033"><lem wit="#wit.orig">千</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">十</rdg></app>
+<app from="#beg0290034" to="#end0290034"><lem wit="#wit.orig">遍</lem><rdg wit="#wit1 #wit2 #wit3" resp="#resp2">逼</rdg></app>
+<app from="#beg_2" to="#end_2" corresp="#0290031"><lem wit="#wit.orig">啼</lem><rdg wit="#wit1 #wit2 #wit3" resp="#resp2">渧</rdg></app>
+<app from="#beg0291001" to="#end0291001"><lem wit="#wit.orig">撲</lem><rdg resp="#resp2" wit="#wit2 #wit3">自撲</rdg></app>
+<app from="#beg_3" to="#end_3" corresp="#0290031"><lem wit="#wit.orig">啼</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">渧</rdg></app>
+<app from="#beg0291002" to="#end0291002"><lem wit="#wit.orig">成</lem><rdg wit="#wit2 #wit3" resp="#resp2">誠</rdg></app>
+<app from="#beg0291003" to="#end0291003"><lem wit="#wit.orig">姓</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3">性</rdg></app>
+<app from="#beg0291004" to="#end0291004"><lem wit="#wit.orig">尼</lem><rdg wit="#wit2" resp="#resp2">足</rdg></app>
+<app from="#beg0291005" to="#end0291005"><lem wit="#wit.orig">皆</lem><rdg resp="#resp2" wit="#wit1">比</rdg></app>
+<app from="#beg0291006" to="#end0291006"><lem wit="#wit.orig"><title>佛說鬼子母經</title></lem><rdg resp="#resp2" wit="#wit3"><space quantity="0"/></rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="0290029" resp="#resp2" type="mod" target="#nkr_note_mod_0290029">人【大】，〔－〕【宋】【元】，人名【明】</note>
-<note n="0290030" resp="#resp2" type="mod" target="#nkr_note_mod_0290030">何【大】，阿【宋】【元】【明】</note>
-<note type="mod" resp="#resp2" n="0290031" target="#nkr_note_mod_0290031">啼【大】＊，渧【宋】【元】【明】＊</note>
-<note type="mod" resp="#resp2" n="0290032" target="#nkr_note_mod_0290032">一【大】，於一【宋】【元】【明】</note>
-<note n="0290033" resp="#resp2" type="mod" target="#nkr_note_mod_0290033">千【大】，十【宋】【元】【明】</note>
-<note type="mod" resp="#resp2" n="0290034" target="#nkr_note_mod_0290034">遍【大】，逼【宋】【元】【明】</note>
-<note type="mod" resp="#resp2" n="0291001" target="#nkr_note_mod_0291001">撲【大】，自撲【元】【明】</note>
-<note n="0291002" resp="#resp2" type="mod" target="#nkr_note_mod_0291002">成【大】，誠【元】【明】</note>
-<note n="0291003" resp="#resp2" type="mod" target="#nkr_note_mod_0291003">姓【大】，性【宋】【元】【明】</note>
-<note type="mod" resp="#resp2" n="0291004" target="#nkr_note_mod_0291004">尼【大】，足【元】</note>
-<note resp="#resp2" type="mod" n="0291005" target="#nkr_note_mod_0291005">皆【大】，比【宋】</note>
-<note n="0291006" type="mod" resp="#resp2" target="#nkr_note_mod_0291006">佛說鬼子母經【大】，〔－〕【明】</note>
+<note n="0290029" resp="#resp1" type="mod" target="#nkr_note_mod_0290029">人【大】，〔－〕【宋】【元】，人名【明】</note>
+<note n="0290030" resp="#resp1" type="mod" target="#nkr_note_mod_0290030">何【大】，阿【宋】【元】【明】</note>
+<note type="mod" resp="#resp1" n="0290031" target="#nkr_note_mod_0290031">啼【大】＊，渧【宋】【元】【明】＊</note>
+<note type="mod" resp="#resp1" n="0290032" target="#nkr_note_mod_0290032">一【大】，於一【宋】【元】【明】</note>
+<note n="0290033" resp="#resp1" type="mod" target="#nkr_note_mod_0290033">千【大】，十【宋】【元】【明】</note>
+<note type="mod" resp="#resp1" n="0290034" target="#nkr_note_mod_0290034">遍【大】，逼【宋】【元】【明】</note>
+<note type="mod" resp="#resp1" n="0291001" target="#nkr_note_mod_0291001">撲【大】，自撲【元】【明】</note>
+<note n="0291002" resp="#resp1" type="mod" target="#nkr_note_mod_0291002">成【大】，誠【元】【明】</note>
+<note n="0291003" resp="#resp1" type="mod" target="#nkr_note_mod_0291003">姓【大】，性【宋】【元】【明】</note>
+<note type="mod" resp="#resp1" n="0291004" target="#nkr_note_mod_0291004">尼【大】，足【元】</note>
+<note resp="#resp1" type="mod" n="0291005" target="#nkr_note_mod_0291005">皆【大】，比【宋】</note>
+<note n="0291006" type="mod" resp="#resp1" target="#nkr_note_mod_0291006">佛說鬼子母經【大】，〔－〕【明】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note place="foot text" n="0290028" type="orig" resp="#resp1" target="#nkr_note_orig_0290028">【原】麗本</note>
-<note n="0290029" place="foot text" resp="#resp1" type="orig" target="#nkr_note_orig_0290029">〔人〕－【宋】【元】，人＋（名）【明】</note>
-<note resp="#resp1" type="orig" n="0290030" place="foot text" target="#nkr_note_orig_0290030">何＝阿【三】</note>
-<note place="foot text" n="0290031" type="orig" resp="#resp1" target="#nkr_note_orig_0290031">啼＝渧【三】</note>
-<note type="orig" resp="#resp1" place="foot text" n="0290032" target="#nkr_note_orig_0290032">（於）＋一【三】</note>
-<note resp="#resp1" type="orig" n="0290033" place="foot text" target="#nkr_note_orig_0290033">千＝十【三】</note>
-<note place="foot text" n="0290034" type="orig" resp="#resp1" target="#nkr_note_orig_0290034">遍＝逼【三】</note>
-<note type="orig" resp="#resp1" place="foot text" n="0291001" target="#nkr_note_orig_0291001">（自）＋撲【元】【明】</note>
-<note n="0291002" place="foot text" resp="#resp1" type="orig" target="#nkr_note_orig_0291002">成＝誠【元】【明】</note>
-<note place="foot text" n="0291003" type="orig" resp="#resp1" target="#nkr_note_orig_0291003">姓＝性【三】</note>
-<note type="orig" resp="#resp1" place="foot text" n="0291004" target="#nkr_note_orig_0291004">尼＝足【元】</note>
-<note resp="#resp1" type="orig" n="0291005" place="foot text" target="#nkr_note_orig_0291005">皆＝比【宋】</note>
-<note place="foot text" n="0291006" type="orig" resp="#resp1" target="#nkr_note_orig_0291006">〔佛說鬼子母經〕－【明】</note>
+<note place="foot text" n="0290028" type="orig" resp="#resp2" target="#nkr_note_orig_0290028">【原】麗本</note>
+<note n="0290029" place="foot text" resp="#resp2" type="orig" target="#nkr_note_orig_0290029">〔人〕－【宋】【元】，人＋（名）【明】</note>
+<note resp="#resp2" type="orig" n="0290030" place="foot text" target="#nkr_note_orig_0290030">何＝阿【三】</note>
+<note place="foot text" n="0290031" type="orig" resp="#resp2" target="#nkr_note_orig_0290031">啼＝渧【三】</note>
+<note type="orig" resp="#resp2" place="foot text" n="0290032" target="#nkr_note_orig_0290032">（於）＋一【三】</note>
+<note resp="#resp2" type="orig" n="0290033" place="foot text" target="#nkr_note_orig_0290033">千＝十【三】</note>
+<note place="foot text" n="0290034" type="orig" resp="#resp2" target="#nkr_note_orig_0290034">遍＝逼【三】</note>
+<note type="orig" resp="#resp2" place="foot text" n="0291001" target="#nkr_note_orig_0291001">（自）＋撲【元】【明】</note>
+<note n="0291002" place="foot text" resp="#resp2" type="orig" target="#nkr_note_orig_0291002">成＝誠【元】【明】</note>
+<note place="foot text" n="0291003" type="orig" resp="#resp2" target="#nkr_note_orig_0291003">姓＝性【三】</note>
+<note type="orig" resp="#resp2" place="foot text" n="0291004" target="#nkr_note_orig_0291004">尼＝足【元】</note>
+<note resp="#resp2" type="orig" n="0291005" place="foot text" target="#nkr_note_orig_0291005">皆＝比【宋】</note>
+<note place="foot text" n="0291006" type="orig" resp="#resp2" target="#nkr_note_orig_0291006">〔佛說鬼子母經〕－【明】</note>
 </p>
 </cb:div>
 </back></text></TEI>

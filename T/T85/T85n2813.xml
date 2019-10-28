@@ -11,132 +11,70 @@
 				<name>CBETA</name>
 			</respStmt>
 		</titleStmt>
-	<editionStmt>
-		<edition>$Revision: 1.10 $<date>$Date: 2009/04/23 08:15:18 $</date></edition>
-		<respStmt xml:id="resp1"><resp>corrections</resp><name>Taisho</name></respStmt>
-		<respStmt xml:id="resp2"><resp>corrections</resp><name>CBETA</name></respStmt>
-	</editionStmt>
-	<extent>2卷</extent>
-	<publicationStmt>
-		<distributor>
-			<name>中華電子佛典協會 (CBETA)</name>
-			<address>
-				<addrLine>service@cbeta.org</addrLine>
-			</address>
-		</distributor>
-		<availability>
-			<p>Available for non-commercial use when distributed with this header intact.</p>
-		</availability>
-		<date>$Date: 2009/04/23 08:15:18 $</date>
-	</publicationStmt>
-	<sourceDesc>
-		<bibl>Taishō Tripiṭaka Vol. 85, No. 2813</bibl>
-	<listWit>
-		<witness xml:id="wit1">【大】</witness>
-		<witness xml:id="wit2">【甲】</witness>
-	</listWit>
-	</sourceDesc>
-</fileDesc>
-<encodingDesc>
-	<projectDesc>
-		<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Mr. Tian Wan-Ding and Miss Yang Wen-Yan, Text as provided by Anonymous from USA</p>
-		<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，田萬頂、楊穩燕大德輸入，北美某大德提供</p>
-	</projectDesc>
-</encodingDesc>
-<profileDesc>
+		<editionStmt>
+			<edition>XML TEI P5</edition>
+			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
+			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+		</editionStmt>
+		<extent>2卷</extent>
+		<publicationStmt>
+			<idno type="CBETA">
+				<idno type="canon">T</idno>.<idno type="vol">85</idno>.<idno type="no">2813</idno>
+			</idno>
+			<distributor>
+				<name>中華電子佛典協會 (CBETA)</name>
+				<address>
+					<addrLine><email>service@cbeta.org</email></addrLine>
+				</address>
+			</distributor>
+			<availability>
+				<p>Available for non-commercial use when distributed with this header intact.</p>
+			</availability>
+			<date>2019-09-12 02:11:51 +0800</date>
+		</publicationStmt>
+		<sourceDesc>
+			<bibl>
+				<title level="s">Taishō Tripiṭaka</title>
+				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+				<title level="m" xml:lang="zh-Hant">大乘起信論略述</title>
+			</bibl>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<projectDesc>
+			<p xml:lang="en" cb:type="ly">Text as provided by Mr. Hsiao Chen-Kuo, Text as inputted by Mr. Tian Wan-Ding and Miss Yang Wen-Yan, Text as provided by Anonymous from USA</p>
+			<p xml:lang="zh-Hant" cb:type="ly">蕭鎮國大德提供，田萬頂、楊穩燕大德輸入，北美某大德提供</p>
+		</projectDesc>
+		<editorialDecl>
+			<punctuation resp="#resp1"><p>原書標點</p></punctuation>
+		</editorialDecl>
+		<tagsDecl>
+			<namespace name="http://www.tei-c.org/ns/1.0">
+				<tagUsage gi="rdg">
+					<listWit>
+						<witness xml:id="wit.cbeta">【CB】</witness>
+						<witness xml:id="wit.orig">【大】</witness>
+						<witness xml:id="wit1">【甲】</witness>
+					</listWit>
+				</tagUsage>
+			</namespace>
+		</tagsDecl>
+		</encodingDesc>
+	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
-			<language ident="zh">Chinese</language>
+			<language ident="zh-Hant">Chinese (Traditional)</language>
 		</langUsage>
 	</profileDesc>
 	<revisionDesc>
 		<change when="2013-05-20">
 			<name>CW</name><name>Ray Chou 周邦信</name>P4 to P5 conversion by p4top5a.py, intended for publication
 		</change>
-	<change when="2001-01-31T11:46:35">CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)</change>
-<!--
-$Log: T85n2813.xml,v $
-Revision 1.10  2009/04/23 08:15:18  amtbgrace
-modified: 檔頭編碼由 big5 改為 cp950。
-
-Revision 1.9  2006/04/12 22:00:50  saywhat
-lem 加 wit 屬性，p, lg, item 第二次加 id 屬性
-
-Revision 1.7  2004/11/14 03:18:27  maha
-將八個M碼(M024261 M040426 M034294 M005505 M010528 M010527 M026945 M006710) 取代為 Big5 系統字(碁 銹 裏 墻 恒 恒 粧 嫺)
-
-Revision 1.6  2004/11/02 02:15:56  saywhat
-段落前加入圈點
-
-Revision 1.5  2004/07/16 09:13:13  moved
-modified：執行 margin.pl，加入 em 單位。
-
-Revision 1.4  2004/05/25 04:07:59  saywhat
-修訂<div1 type="xu"> 包含 <juan> 的問題
-
-Revision 1.3  2004/04/20 08:44:52  maha
-「版本日期」標記修訂
-
-Revision 1.2  2003/11/28 07:26:23  moved
-modified：修訂 <milestone>
-
-Revision 1.1.1.1  2003/05/05 04:11:02  ray
-recover cvs
-
-Revision 1.18  2002/12/09 03:45:23  moved
-modified
-
-Revision 1.17  2002/11/04 11:04:55  ray
-tei.2 => TEI.2
-
-Revision 1.16  2002/09/09 08:55:58  moved
-modified
-
-Revision 1.15  2002/07/29 09:48:18  vinking
-modified lang
-
-Revision 1.14  2002/04/08 09:51:06  ray
-xml:stylesheet => xml-stylesheet
-
-Revision 1.13  2001/11/19 02:48:23  vinking
-modified
-
-Revision 1.12  2001/07/24 07:04:08  ray
-add 作者、譯者 <author> 卷數 <extent>
-
-Revision 1.11  2001/07/11 08:22:44  vinking
-modified for CD7 alphs 2 normal, app, hh
-
-Revision 1.10  2001/05/24 05:49:52  vinking
-比對修訂
-
-Revision 1.9  2001/04/06 06:12:07  moved
-modified normal
-
-Revision 1.8  2001/03/31 11:21:31  moved
-modified normal
-
-Revision 1.7  2001/03/30 12:42:34  moved
-modified normal
-
-Revision 1.6  2001/03/30 07:19:52  ray
-缺字CB碼由四碼增長為五碼
-
-Revision 1.5  2001/03/25 11:54:38  ray
-add <milestone>
-
-Revision 1.4  2001/02/19 09:32:16  shiachun
-t85
-
-Revision 1.3  2001/02/07 07:49:58  chris
-Fixed problem with comment in the previous checkin
-
-Revision 1.2  2001/02/03 08:20:04  chris
-Added keywords $Revision: 1.10 $, $Date: 2009/04/23 08:15:18 $ and $Log.
-Added comment  for Emacs
-
--->
- </revisionDesc>
+		<change when="2001-01-31T11:46:35">
+			CW (ed.) Created initial TEI XML version with BASICX.BAT (00/01/24)
+		</change>
+	</revisionDesc>
 </teiHeader>
 <text><body>
 <milestone n="1" unit="juan"/>
@@ -3099,44 +3037,44 @@ Added comment  for Emacs
 <cb:div type="apparatus">
 <head>校註</head>
 <p>
-<app from="#beg1089002" to="#end1089002"><lem wit="#wit1">建康</lem><rdg resp="#resp1" wit="#wit2"><space quantity="0"/></rdg></app>
-<app from="#beg1089003" to="#end1089003"><lem wit="#wit1">為</lem><rdg resp="#resp1" wit="#wit2">謂</rdg></app>
-<app from="#beg1089004" to="#end1089004"><lem wit="#wit1">三</lem><rdg resp="#resp1" wit="#wit2">一</rdg></app>
-<app from="#beg1089005" to="#end1089005"><lem wit="#wit1">一<lb n="1089c22" ed="T"/>一剎土</lem><rdg resp="#resp1" wit="#wit2">天外在</rdg></app>
-<app from="#beg1090001" to="#end1090001"><lem wit="#wit1">數</lem><rdg resp="#resp1" wit="#wit2">依數</rdg></app>
-<app from="#beg1091001" to="#end1091001"><lem resp="#resp1" wit="#wit1">解</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">等解</rdg></app>
-<app from="#beg1093001" to="#end1093001"><lem resp="#resp1" wit="#wit1">之</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">發趣之</rdg></app>
-<app from="#beg1098001" to="#end1098001"><lem resp="#resp1" wit="#wit1">所</lem><rdg resp="#resp1" wit="#wit1" type="correctionRemark">所覺</rdg></app>
+<app from="#beg1089002" to="#end1089002"><lem wit="#wit.orig">建康</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
+<app from="#beg1089003" to="#end1089003"><lem wit="#wit.orig">為</lem><rdg resp="#resp2" wit="#wit1">謂</rdg></app>
+<app from="#beg1089004" to="#end1089004"><lem wit="#wit.orig">三</lem><rdg resp="#resp2" wit="#wit1">一</rdg></app>
+<app from="#beg1089005" to="#end1089005"><lem wit="#wit.orig">一<lb n="1089c22" ed="T"/>一剎土</lem><rdg resp="#resp2" wit="#wit1">天外在</rdg></app>
+<app from="#beg1090001" to="#end1090001"><lem wit="#wit.orig">數</lem><rdg resp="#resp2" wit="#wit1">依數</rdg></app>
+<app from="#beg1091001" to="#end1091001"><lem resp="#resp2" wit="#wit.orig">解</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">等解</rdg></app>
+<app from="#beg1093001" to="#end1093001"><lem resp="#resp2" wit="#wit.orig">之</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">發趣之</rdg></app>
+<app from="#beg1098001" to="#end1098001"><lem resp="#resp2" wit="#wit.orig">所</lem><rdg resp="#resp2" wit="#wit.orig" type="correctionRemark">所覺</rdg></app>
 </p>
 </cb:div>
 <cb:div type="cbeta-notes">
 <head>CBETA 校註</head>
 <p>
-<note n="1089001" resp="#resp2" type="mod" target="#nkr_note_mod_1089001"><!--CBETA todo type: newmod-->【原】佛蘭西國民圖書館藏燉煌本, P. 2141, 【甲】大英博物館藏燉煌本, S. 2436, 甲本序文缺之</note>
-<note n="1089002" resp="#resp2" type="mod" target="#nkr_note_mod_1089002">建康【大】，〔－〕【甲】</note>
-<note n="1089003" resp="#resp2" type="mod" target="#nkr_note_mod_1089003">為【大】，謂【甲】</note>
-<note n="1089004" resp="#resp2" type="mod" target="#nkr_note_mod_1089004">三【大】，一【甲】</note>
-<note n="1089005" resp="#resp2" type="mod" target="#nkr_note_mod_1089005">一一剎土【大】，天外在【甲】</note>
-<note n="1090001" resp="#resp2" type="mod" target="#nkr_note_mod_1090001">數【大】，依數【甲】</note>
-<note n="1091001" resp="#resp2" type="mod" target="#nkr_note_mod_1091001">解【大】，等解【考偽-大】</note>
-<note n="1093001" resp="#resp2" type="mod" target="#nkr_note_mod_1093001">之【大】，發趣之【考偽-大】</note>
-<note n="1098001" resp="#resp2" type="mod" target="#nkr_note_mod_1098001">所【大】，所覺【考偽-大】</note>
+<note n="1089001" resp="#resp3" type="mod" target="#nkr_note_mod_1089001"><!--CBETA todo type: newmod-->【原】佛蘭西國民圖書館藏燉煌本, P. 2141, 【甲】大英博物館藏燉煌本, S. 2436, 甲本序文缺之</note>
+<note n="1089002" resp="#resp3" type="mod" target="#nkr_note_mod_1089002">建康【大】，〔－〕【甲】</note>
+<note n="1089003" resp="#resp3" type="mod" target="#nkr_note_mod_1089003">為【大】，謂【甲】</note>
+<note n="1089004" resp="#resp3" type="mod" target="#nkr_note_mod_1089004">三【大】，一【甲】</note>
+<note n="1089005" resp="#resp3" type="mod" target="#nkr_note_mod_1089005">一一剎土【大】，天外在【甲】</note>
+<note n="1090001" resp="#resp3" type="mod" target="#nkr_note_mod_1090001">數【大】，依數【甲】</note>
+<note n="1091001" resp="#resp3" type="mod" target="#nkr_note_mod_1091001">解【大】，等解【考偽-大】</note>
+<note n="1093001" resp="#resp3" type="mod" target="#nkr_note_mod_1093001">之【大】，發趣之【考偽-大】</note>
+<note n="1098001" resp="#resp3" type="mod" target="#nkr_note_mod_1098001">所【大】，所覺【考偽-大】</note>
 </p>
 </cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
-<note n="1089001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1089001">【原】佛蘭西國民圖書館藏燉煌本, P. 2141, 【甲】大英博物館藏燉煌本, S. 2436, 甲本序文缺之</note>
-<note n="1089002" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1089002">〔建康〕－【甲】</note>
-<note n="1089003" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1089003">為＝謂【甲】</note>
-<note n="1089004" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1089004">三＝一【甲】</note>
-<note n="1089005" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1089005">一一剎土＝天外在【甲】</note>
-<note n="1090001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1090001">（依）＋數【甲】</note>
-<note n="1091001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1091001">（等）＋解？</note>
-<note n="1093001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1093001">（發趣）＋之？</note>
-<note n="1098001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1098001">所＋（覺）？</note>
-<note n="1103001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1103001">以下原本缺依甲本補載之</note>
-<note n="1105001" resp="#resp1" place="foot text" type="orig" target="#nkr_note_orig_1105001">【原】佛蘭西國民圖書館藏燉煌本, P. 2051</note>
+<note n="1089001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1089001">【原】佛蘭西國民圖書館藏燉煌本, P. 2141, 【甲】大英博物館藏燉煌本, S. 2436, 甲本序文缺之</note>
+<note n="1089002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1089002">〔建康〕－【甲】</note>
+<note n="1089003" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1089003">為＝謂【甲】</note>
+<note n="1089004" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1089004">三＝一【甲】</note>
+<note n="1089005" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1089005">一一剎土＝天外在【甲】</note>
+<note n="1090001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1090001">（依）＋數【甲】</note>
+<note n="1091001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1091001">（等）＋解？</note>
+<note n="1093001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1093001">（發趣）＋之？</note>
+<note n="1098001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1098001">所＋（覺）？</note>
+<note n="1103001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1103001">以下原本缺依甲本補載之</note>
+<note n="1105001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1105001">【原】佛蘭西國民圖書館藏燉煌本, P. 2051</note>
 </p>
 </cb:div>
 </back></text></TEI>
