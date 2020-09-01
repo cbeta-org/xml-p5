@@ -2196,7 +2196,7 @@ tei_l =
   
   ## (verse line) contains a single, possibly incomplete, line of verse.
   element l {
-    tei_macro.paraContent,
+    (tei_macro.paraContent | tei_caesura)*,
     att.global.attributes,
     
     ## specifies whether or not the line is metrically complete. 
@@ -4101,6 +4101,7 @@ tei_lem =
   ## (lemma) contains the lemma, or base text, of a textual variation.
   element lem {
     (text
+     | tei_caesura
      | tei_model.gLike
      | tei_model.phrase
      | tei_model.inter
@@ -4116,6 +4117,7 @@ tei_rdg =
   ## (reading) contains a single reading within a textual variation.
   element rdg {
     (text
+     | tei_caesura
      | tei_model.gLike
      | tei_model.phrase
      | tei_model.inter
@@ -4682,6 +4684,14 @@ tei_g =
     attribute ref { xsd:anyURI }?,
     empty
   }
+
+tei_caesura =
+
+  element caesura {
+    att.global.attributes,
+    empty
+  }
+
 tei_char =
   
   ## (character) provides descriptive information about a character. 
