@@ -15,6 +15,8 @@
 			<edition>XML TEI P5</edition>
 			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
 			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.maha</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
@@ -30,7 +32,7 @@
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>2019-09-12 02:11:51 +0800</date>
+			<date>2020-11-17 20:11:21 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
 			<bibl>
@@ -85,6 +87,19 @@
 				<mapping type="unicode">U+2231E</mapping>
 				<mapping cb:dec="989913" type="PUA">U+F1AD9</mapping>
 			</char>
+			<char xml:id="CB07411">
+				<charName>CBETA CHARACTER CB07411</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[〡*臣*責]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>賾</value>
+				</charProp>
+				<mapping type="unicode">U+27DE4</mapping>
+				<mapping cb:dec="990451" type="PUA">U+F1CF3</mapping>
+			</char>
 		</charDecl>
 	</encodingDesc>
 	<profileDesc>
@@ -122,7 +137,7 @@
 <lb n="1055a15" ed="T"/><p xml:id="pT55p1055a1501">文政四年辛巳大師千年遠忌之初夏</p>
 <lb n="1055a16" ed="T"/><p xml:id="pT55p1055a1601" style="margin-left:2em">叡嶽新探題權僧正真超識</p></cb:div>
 <lb n="1055a17" ed="T"/><cb:div type="other"><cb:mulu level="2" type="其他">進官錄上表</cb:mulu><head>進官錄上表</head>
-<lb n="1055a18" ed="T"/><p xml:id="pT55p1055a1801">沙門最澄言。最澄聞。六爻探頤局於生滅之
+<lb n="1055a18" ed="T"/><p xml:id="pT55p1055a1801">沙門最澄言。最澄聞。六爻探<anchor xml:id="nkr_note_add_1055a1801" n="1055a1801"/><anchor xml:id="beg1055a1801" n="1055a1801"/><g ref="#CB07411">𧷤</g><anchor xml:id="end1055a1801"/>局於生滅之
 <lb n="1055a19" ed="T"/>場。百物正名未涉真如之境。豈若隨他權教
 <lb n="1055a20" ed="T"/>開三乘於機門。隨自實教示一乘於道場哉。
 <lb n="1055a21" ed="T"/>然則。圓教難說。演其義者天台。妙法難傳。暢
@@ -393,11 +408,23 @@
 <lb n="1058a23" ed="T"/><p xml:id="pT55p1058a2301" style="margin-left:9em">上毛野公　穎　人</p></cb:div></cb:div></cb:div>
 </body>
 <back>
+<cb:div type="apparatus">
+<head>校註</head>
+<p>
+<app from="#beg1055a1801" to="#end1055a1801"><lem wit="#wit.cbeta" resp="#resp4"><g ref="#CB07411">𧷤</g><note type="cf1">T49n2036_p0574a19</note></lem><rdg wit="#wit.orig">頥</rdg></app>
+</p>
+</cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
 <note n="1055001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1055001">文政四年刊大谷大學藏本</note>
 <note n="1058001" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_1058001">校者曰天下顯戒緣起有台字</note>
+</p>
+</cb:div>
+<cb:div type="add-notes">
+<head>新增校註</head>
+<p>
+<note n="1055a1801" resp="#resp3" type="add" target="#nkr_note_add_1055a1801"><g ref="#CB07411">𧷤</g>【CB】，頥【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>
