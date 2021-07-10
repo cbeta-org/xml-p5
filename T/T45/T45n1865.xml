@@ -15,6 +15,8 @@
 			<edition>XML TEI P5</edition>
 			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
 			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.liyi</name></respStmt>
 		</editionStmt>
 		<extent>2卷</extent>
 		<publicationStmt>
@@ -30,7 +32,7 @@
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>2019-09-12 02:11:51 +0800</date>
+			<date>2021-04-30 03:41:30 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
 			<bibl>
@@ -58,7 +60,18 @@
 				</tagUsage>
 			</namespace>
 		</tagsDecl>
-		</encodingDesc>
+		<charDecl>
+			<char xml:id="CB01043">
+				<charName>CBETA CHARACTER CB01043</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[虫*旦]</value>
+				</charProp>
+				<mapping type="unicode">U+45A7</mapping>
+				<mapping cb:dec="984083" type="PUA">U+F0413</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
@@ -421,7 +434,7 @@
 <lb n="0471b25" ed="T"/>故。忿恨俱嗔一分也。覆者。於自作罪恐失利
 <lb n="0471b26" ed="T"/>譽隱藏為性。能障不覆悔惱為業。謂覆罪者。
 <lb n="0471b27" ed="T"/>後必悔惱不安隱故。貪癡二分也。惱者。由忿
-<lb n="0471b28" ed="T"/>恨為先追觸暴惡恨戾為性。能障不惱蛆螫
+<lb n="0471b28" ed="T"/>恨為先追觸暴惡恨戾為性。能障不惱<anchor xml:id="nkr_note_add_0471b2801" n="0471b2801"/><anchor xml:id="beg0471b2801" n="0471b2801"/><g ref="#CB01043">䖧</g><anchor xml:id="end0471b2801"/>螫
 <pb n="0471c" xml:id="T45.1865.0471c" ed="T"/>
 <lb n="0471c01" ed="T"/>為業。亦嗔分也。嫉者。殉自名利不耐他榮妬
 <lb n="0471c02" ed="T"/>忌為性。能障不嫉憂戚為業。謂嫉者。聞見他
@@ -875,10 +888,22 @@
 <lb n="0476b29" ed="T"/>釋。</p></cb:div>
 </body>
 <back>
+<cb:div type="apparatus">
+<head>校註</head>
+<p>
+<app from="#beg0471b2801" to="#end0471b2801"><lem wit="#wit.cbeta" resp="#resp4" cb:provider="施得勝 (2021-04-04)"><g ref="#CB01043">䖧</g></lem><rdg wit="#wit.orig">蛆</rdg></app>
+</p>
+</cb:div>
 <cb:div type="taisho-notes">
 <head>大正 校註</head>
 <p>
 <note n="0467002" resp="#resp2" place="foot text" type="orig" target="#nkr_note_orig_0467002">【原】明萬曆十八年刊增上寺報恩藏本</note>
+</p>
+</cb:div>
+<cb:div type="add-notes">
+<head>新增校註</head>
+<p>
+<note n="0471b2801" resp="#resp3" type="add" target="#nkr_note_add_0471b2801"><g ref="#CB01043">䖧</g>【CB】，蛆【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>
