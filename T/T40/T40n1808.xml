@@ -16,6 +16,7 @@
 			<respStmt xml:id="resp1"><resp>corrections</resp><name>orig</name></respStmt>
 			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
 			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA</name></respStmt>
+			<respStmt xml:id="resp4"><resp>corrections</resp><name>CBETA.ting</name></respStmt>
 		</editionStmt>
 		<extent>2卷</extent>
 		<publicationStmt>
@@ -31,7 +32,7 @@
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>2019-09-12 02:11:51 +0800</date>
+			<date>2022-01-05 21:34:14 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
 			<bibl>
@@ -59,6 +60,7 @@
 						<witness xml:id="wit2">【宋】</witness>
 						<witness xml:id="wit3">【元】</witness>
 						<witness xml:id="wit4">【宮】</witness>
+						<witness xml:id="wit5">【麗-CB】</witness>
 					</listWit>
 				</tagUsage>
 			</namespace>
@@ -90,6 +92,19 @@
 				</charProp>
 				<mapping type="unicode">U+238CB</mapping>
 				<mapping cb:dec="983694" type="PUA">U+F028E</mapping>
+			</char>
+			<char xml:id="CB00716">
+				<charName>CBETA CHARACTER CB00716</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[宋-木+禹]</value>
+				</charProp>
+				<charProp>
+					<localName>normalized form</localName>
+					<value>宇</value>
+				</charProp>
+				<mapping type="unicode">U+3762</mapping>
+				<mapping cb:dec="983756" type="PUA">U+F02CC</mapping>
 			</char>
 			<char xml:id="CB01679">
 				<charName>CBETA CHARACTER CB01679</charName>
@@ -190,7 +205,7 @@
 <lb n="0492a04" ed="T"/>羯磨序</head>
 <lb n="0492a05" ed="T"/>
 <lb n="0492a06" ed="T"/><byline cb:type="Collector"><anchor xml:id="nkr_note_orig_0492002" n="0492002"/><anchor xml:id="nkr_note_mod_0492002" n="0492002"/><anchor xml:id="beg0492002" n="0492002"/>京<anchor xml:id="end0492002"/>兆崇義寺沙門道宣<anchor xml:id="nkr_note_orig_0492003" n="0492003"/><anchor xml:id="nkr_note_mod_0492003" n="0492003"/><anchor xml:id="beg0492003" n="0492003"/>集<anchor xml:id="end0492003"/></byline>
-<lb n="0492a07" ed="T"/><p xml:id="pT40p0492a0701">原夫大雄御寓。<anchor xml:id="nkr_note_orig_0492004" n="0492004"/><anchor xml:id="nkr_note_mod_0492004" n="0492004"/><anchor xml:id="beg0492004" n="0492004"/>意<anchor xml:id="end0492004"/>惟拯拔一人。大教膺期總
+<lb n="0492a07" ed="T"/><p xml:id="pT40p0492a0701">原夫大雄御<anchor xml:id="nkr_note_add_0492a0701" n="0492a0701"/><anchor xml:id="beg0492a0701" n="0492a0701"/><g ref="#CB00716">㝢</g><anchor xml:id="end0492a0701"/>。<anchor xml:id="nkr_note_orig_0492004" n="0492004"/><anchor xml:id="nkr_note_mod_0492004" n="0492004"/><anchor xml:id="beg0492004" n="0492004"/>意<anchor xml:id="end0492004"/>惟拯拔一人。大教膺期總
 <lb n="0492a08" ed="T"/>歸為顯一理。但由群生著欲。欲本所謂我心。
 <lb n="0492a09" ed="T"/>故能隨其所懷。開示止心之法。然則心為生
 <lb n="0492a10" ed="T"/>欲之本。滅欲必止心元。止心由乎明慧。慧起
@@ -1781,6 +1796,7 @@
 <p>
 <app from="#beg0492002" to="#end0492002"><lem wit="#wit.orig">京</lem><rdg resp="#resp2" wit="#wit1">唐京</rdg></app>
 <app from="#beg0492003" to="#end0492003"><lem wit="#wit.orig">集</lem><rdg resp="#resp2" wit="#wit2 #wit3 #wit1 #wit4">撰</rdg></app>
+<app from="#beg0492a0701" to="#end0492a0701"><lem wit="#wit.cbeta #wit5" resp="#resp4"><g ref="#CB00716">㝢</g><note type="cf1">K23n0922_p0972a03</note></lem><rdg wit="#wit.orig">寓</rdg></app>
 <app from="#beg0492004" to="#end0492004"><lem wit="#wit.orig">意</lem><rdg resp="#resp2" wit="#wit1">豈</rdg></app>
 <app from="#beg0492005" to="#end0492005"><lem wit="#wit.orig">功</lem><rdg resp="#resp2" wit="#wit4">法</rdg></app>
 <app from="#beg0492006" to="#end0492006"><lem wit="#wit.orig">唯</lem><rdg resp="#resp2" wit="#wit4">准</rdg></app>
@@ -4251,6 +4267,7 @@
 <cb:div type="add-notes">
 <head>新增校註</head>
 <p>
+<note n="0492a0701" resp="#resp3" type="add" target="#nkr_note_add_0492a0701"><g ref="#CB00716">㝢</g>【CB】【麗-CB】，寓【大】</note>
 <note n="0497a1601" resp="#resp3" type="add" target="#nkr_note_add_0497a1601">已【CB】，巳【大】</note>
 <note n="0503c0301" resp="#resp3" type="add" target="#nkr_note_add_0503c0301">祇【CB】，祗【大】</note>
 <note n="0504a1301" resp="#resp3" type="add" target="#nkr_note_add_0504a1301">叉【CB】，又【大】</note>
