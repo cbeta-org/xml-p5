@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/cbeta-org/xml-p5/master/schema/cbeta-p5.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cb="http://www.cbeta.org/ns/1.0" xml:id="T31n1612">
 <teiHeader>
 	<fileDesc>
@@ -15,6 +16,7 @@
 			<edition>XML TEI P5</edition>
 			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
 			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.poyung</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
@@ -30,7 +32,7 @@
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>2019-09-12 02:11:51 +0800</date>
+			<date>2022-10-15 17:14:39 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
 			<bibl>
@@ -62,7 +64,18 @@
 				</tagUsage>
 			</namespace>
 		</tagsDecl>
-		</encodingDesc>
+		<charDecl>
+			<char xml:id="CB01043">
+				<charName>CBETA CHARACTER CB01043</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[虫*旦]</value>
+				</charProp>
+				<mapping type="unicode">U+45A7</mapping>
+				<mapping cb:dec="984083" type="PUA">U+F0413</mapping>
+			</char>
+		</charDecl>
+	</encodingDesc>
 	<profileDesc>
 		<langUsage>
 			<language ident="en">English</language>
@@ -180,7 +193,7 @@
 <lb n="0849b05" ed="T"/>起，餘通俱生及分別起。</p>
 <lb n="0849b06" ed="T"/><p xml:id="pT31p0849b0601">云何為忿？謂遇現前不饒益事心損惱為性。</p>
 <lb n="0849b07" ed="T"/><p xml:id="pT31p0849b0701">云何為恨？謂結怨不捨為性。</p><p xml:id="pT31p0849b0712" cb:place="inline">云何為覆？謂於
-<lb n="0849b08" ed="T"/>自罪覆藏為性。</p><p xml:id="pT31p0849b0807" cb:place="inline">云何為惱？謂發暴惡言尤蛆
+<lb n="0849b08" ed="T"/>自罪覆藏為性。</p><p xml:id="pT31p0849b0807" cb:place="inline">云何為惱？謂發暴惡言尤<anchor xml:id="nkr_note_add_0849b0801" n="0849b0801"/><anchor xml:id="beg0849b0801" n="0849b0801"/><g ref="#CB01043">䖧</g><anchor xml:id="end0849b0801"/>
 <lb n="0849b09" ed="T"/>為性。</p><p xml:id="pT31p0849b0903" cb:place="inline">云何為嫉？謂於他盛事心妬為性。</p><p xml:id="pT31p0849b0916" cb:place="inline">云何
 <lb n="0849b10" ed="T"/>為慳？謂施相違心悋為性。</p><p xml:id="pT31p0849b1011" cb:place="inline">云何為誑？謂為誑
 <lb n="0849b11" ed="T"/>他詐現不實事為性。</p><p xml:id="pT31p0849b1109" cb:place="inline">云何為諂？謂覆藏自過
@@ -316,6 +329,7 @@
 <app from="#beg0849001" to="#end0849001"><lem wit="#wit.orig">德</lem><rdg resp="#resp2" wit="#wit3">得</rdg></app>
 <app from="#beg_1" to="#end_1" corresp="#0848009"><lem wit="#wit.orig">寶</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">實</rdg></app>
 <app from="#beg0849002" to="#end0849002"><lem wit="#wit.orig">唯</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit3 #wit4">惟</rdg></app>
+<app from="#beg0849b0801" to="#end0849b0801"><lem wit="#wit.cbeta" resp="#resp3" cb:provider="趙文平 (2021-07-27)"><g ref="#CB01043">䖧</g></lem><rdg wit="#wit.orig">蛆</rdg></app>
 <app from="#beg0849003" to="#end0849003"><lem wit="#wit.orig">今</lem><rdg resp="#resp2" wit="#wit1 #wit2 #wit4">令</rdg></app>
 <app from="#beg0849004" to="#end0849004"><lem wit="#wit.orig">採</lem><rdg resp="#resp2" wit="#wit2 #wit3">積</rdg><rdg resp="#resp2" wit="#wit4">采</rdg></app>
 <app from="#beg_2" to="#end_2" corresp="#0849004"><lem wit="#wit.orig">採</lem><rdg resp="#resp2" wit="#wit2 #wit3">積</rdg><rdg resp="#resp2" wit="#wit4">采</rdg></app>
@@ -362,6 +376,12 @@
 <note n="0850003" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850003">彼＋（識）【三】【宮】</note>
 <note n="0850004" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850004">意界意識界＝意識界意界【三】【宮】</note>
 <note n="0850005" resp="#resp2" type="orig" place="foot text" target="#nkr_note_orig_0850005">〔一卷〕－【三】【宮】</note>
+</p>
+</cb:div>
+<cb:div type="add-notes">
+<head>新增校注</head>
+<p>
+<note n="0849b0801" resp="#resp1" type="add" cb:note_key="T31.0849b08.17" target="#nkr_note_add_0849b0801"><g ref="#CB01043">䖧</g>【CB】，蛆【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>
