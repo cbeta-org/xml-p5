@@ -1663,19 +1663,19 @@ tei_ref =
     att.global.attributes,
     att.pointing.attributes,
     att.declaring.attributes,
-    (
+    
      ## specifies the destination of the reference by supplying one or more URI References
      attribute target {
        list { xsd:anyURI+ }
      }?
-     | 
+     , 
        ## (canonical reference) specifies the destination of the reference by supplying a canonical reference from
        ##                 a scheme defined in a refsDecl element in the TEI header
        attribute cRef {
          list {
            xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
          }
-       }?),
+       }?,
     empty
   }
 tei_list =
