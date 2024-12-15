@@ -4672,7 +4672,8 @@ tei_figDesc =
   ## of a graphic figure, for use when documenting an image without
   ## displaying it.
   element figDesc {
-    tei_macro.limitedContent, att.global.attributes, empty
+    (tei_macro.limitedContent
+    | tei_unclear)*, att.global.attributes, empty
   }
 tei_g =
   
