@@ -4,6 +4,9 @@
 <teiHeader>
 	<fileDesc>
 		<titleStmt>
+			<title level="s">Taishō Tripiṭaka</title>
+			<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
+			<title level="m" xml:lang="zh-Hant">諸教決定名義論</title>
 			<title>Taishō Tripiṭaka, Electronic version, No. 1658 諸教決定名義論</title>
 			<title xml:lang="zh-Hant">大正新脩大藏經數位版, No. 1658 諸教決定名義論</title>
 			<author>慈氏菩薩造  宋 施護譯</author>
@@ -16,6 +19,7 @@
 			<edition>XML TEI P5</edition>
 			<respStmt xml:id="resp1"><resp>corrections</resp><name>CBETA</name></respStmt>
 			<respStmt xml:id="resp2"><resp>corrections</resp><name>Taisho</name></respStmt>
+			<respStmt xml:id="resp3"><resp>corrections</resp><name>CBETA.ting</name></respStmt>
 		</editionStmt>
 		<extent>1卷</extent>
 		<publicationStmt>
@@ -23,7 +27,7 @@
 				<idno type="canon">T</idno>.<idno type="vol">32</idno>.<idno type="no">1658</idno>
 			</idno>
 			<distributor>
-				<name>中華電子佛典協會 (CBETA)</name>
+				<name>財團法人佛教電子佛典基金會 (CBETA)</name>
 				<address>
 					<addrLine><email>service@cbeta.org</email></addrLine>
 				</address>
@@ -31,14 +35,10 @@
 			<availability>
 				<p>Available for non-commercial use when distributed with this header intact.</p>
 			</availability>
-			<date>2022-10-12 23:43:51 +0800</date>
+			<date>2025-01-30 01:37:50 +0800</date>
 		</publicationStmt>
 		<sourceDesc>
-			<bibl>
-				<title level="s">Taishō Tripiṭaka</title>
-				<title level="s" xml:lang="zh-Hant">大正新脩大藏經</title>
-				<title level="m" xml:lang="zh-Hant">諸教決定名義論</title>
-			</bibl>
+			<bibl>大正新脩大藏經</bibl>
 		</sourceDesc>
 	</fileDesc>
 	<encodingDesc>
@@ -56,11 +56,21 @@
 						<witness xml:id="wit.cbeta">【CB】</witness>
 						<witness xml:id="wit.orig">【大】</witness>
 						<witness xml:id="wit1">【明】</witness>
+						<witness xml:id="wit2">【麗-CB】</witness>
 					</listWit>
 				</tagUsage>
 			</namespace>
 		</tagsDecl>
 		<charDecl>
+			<char xml:id="CB00780">
+				<charName>CBETA CHARACTER CB00780</charName>
+				<charProp>
+					<localName>composition</localName>
+					<value>[亢*欠]</value>
+				</charProp>
+				<mapping type="unicode">U+3C20</mapping>
+				<mapping cb:dec="983820" type="PUA">U+F030C</mapping>
+			</char>
 			<char xml:id="CB03129">
 				<charName>CBETA CHARACTER CB03129</charName>
 				<charProp>
@@ -125,7 +135,7 @@
 <lb n="0507c03" ed="T"/><p xml:id="pT32p0507c0301">迦<note place="inline">訖當切</note>佉<note place="inline">去當切</note>誐<note place="inline">宜當切</note>伽<note place="inline">其當切</note>左<note place="inline">左當切</note>蹉<note place="inline">悽當切</note>惹<note place="inline"><g ref="#CB03129">𠰒</g>當切</note>
 <lb n="0507c04" ed="T"/>　酇<note place="inline">齊當切</note>吒<note place="inline">知江切</note>姹<note place="inline">敕江切</note>拏<note place="inline">尼江切</note>　茶<note place="inline">直江切</note>多<note place="inline">低剛切</note>他<note place="inline">梯剛切</note>
 <lb n="0507c05" ed="T"/>那<note place="inline">泥剛切</note>　馱<note place="inline">蹄剛切</note>波<note place="inline">卑剛切</note>頗<note place="inline">紕剛切</note>摩<note place="inline">縻剛切</note>　婆<note place="inline">步剛切</note>羊囉
-<lb n="0507c06" ed="T"/>羅罔桑<g ref="#CB03135">𭭅</g><note place="inline">呼郎切</note>。</p>
+<lb n="0507c06" ed="T"/>羅罔桑<anchor xml:id="nkr_note_add_0507c0601" n="0507c0601"/><anchor xml:id="beg0507c0601" n="0507c0601"/><g ref="#CB00780">㰠</g><anchor xml:id="end0507c0601"/><note place="inline">呼郎切</note>。</p>
 <lb n="0507c07" ed="T"/><p xml:id="pT32p0507c0701">如是諸字，即如前說彼盎字攝。此相今說，
 <lb n="0507c08" ed="T"/>是即空性，出生甚深一切教法，此復名為空
 <lb n="0507c09" ed="T"/>空。出現一切說相，所謂迦佉誐伽左蹉惹
@@ -219,6 +229,7 @@
 <app from="#beg0507008" to="#end0507008"><lem wit="#wit.orig">西天譯經</lem><rdg resp="#resp2" wit="#wit1">宋西天</rdg></app>
 <app from="#beg0507009" to="#end0507009"><lem wit="#wit.orig">臣</lem><rdg resp="#resp2" wit="#wit1"><space quantity="0"/></rdg></app>
 <app from="#beg0507010" to="#end0507010"><lem wit="#wit.orig">住</lem><rdg resp="#resp2" wit="#wit1">生</rdg></app>
+<app from="#beg0507c0601" to="#end0507c0601"><lem wit="#wit.cbeta #wit2" resp="#resp3"><g ref="#CB00780">㰠</g><note type="cf1">K40n1420_p0150b18</note></lem><rdg wit="#wit.orig"><g ref="#CB03135">𭭅</g></rdg></app>
 <app from="#beg0507011" to="#end0507011"><lem wit="#wit.orig">里</lem><rdg resp="#resp2" wit="#wit1">哩</rdg></app>
 </p>
 </cb:div>
@@ -238,6 +249,12 @@
 <note resp="#resp2" n="0507009" place="foot text" type="orig" target="#nkr_note_orig_0507009">〔臣〕－【明】</note>
 <note resp="#resp2" n="0507010" place="foot text" type="orig" target="#nkr_note_orig_0507010">住＝生【明】</note>
 <note resp="#resp2" n="0507011" place="foot text" type="orig" target="#nkr_note_orig_0507011">里＝哩【明】</note>
+</p>
+</cb:div>
+<cb:div type="add-notes">
+<head>新增校注</head>
+<p>
+<note n="0507c0601" resp="#resp1" type="add" cb:note_key="T32.0507c06.04" target="#nkr_note_add_0507c0601"><g ref="#CB00780">㰠</g>【CB】【麗-CB】，<g ref="#CB03135">𭭅</g>【大】</note>
 </p>
 </cb:div>
 </back></text></TEI>
