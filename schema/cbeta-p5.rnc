@@ -1367,7 +1367,9 @@ tei_orig =
   
   ## (original form) contains a reading which is marked as following the original, rather than being normalized
   ##         or corrected.
-  element orig { tei_macro.paraContent, att.global.attributes, empty }
+  element orig { tei_macro.paraContent, att.global.attributes, empty,
+  attribute reg { text }?
+  }
 tei_gap =
   
   ## (gap) indicates a point where material has been omitted in a transcription, whether for editorial
@@ -6260,26 +6262,23 @@ tei_tt =
   
   ## Container element for parallel <t> elements
   element ns1:tt {
-    tei_macro.phraseSeq,
-    tei_t*,
-    
-    ##
-    attribute type { text }?,
-    
-    ##
-    attribute word-count { text }?,
-    
-    ##
+   ((tei_t | tei_lb | tei_pb)* | (tei_ttr | tei_lb | tei_pb)*),
+
+    attribute type { "app" | "tr" | "single-line" }?,
+
+    ## 字數
+    attribute word-count { xsd:nonNegativeInteger }?,
+    attribute place { "inline" }?,
     attribute from { text }?,
-    
-    ##
     attribute to { text }?,
-    
-    ##
-    attribute rend { text }?,
-    
-    ##
-    attribute place { text }?,
+    attribute n { text }?,
+    empty
+  }
+
+tei_ttr =
+  ## <tt> 中的一列 (row), 包含逐字對照的 <t>
+  element ns1:ttr {
+    mixed { (tei_t | tei_note | tei_anchor | tei_app)* },
     empty
   }
 
